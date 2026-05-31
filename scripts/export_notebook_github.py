@@ -25,12 +25,16 @@ def _clean_metadata(nb) -> None:
 
 def _strip_cell_outputs(cell) -> None:
     kept = []
+    exec_count = cell.get("execution_count") if isinstance(cell, dict) else cell.execution_count
     for out in cell.outputs:
         otype = out.output_type
         if otype == "stream":
             text = out.text if isinstance(out.text, str) else "".join(out.text)
             if len(text) > 6000:
-                out.text = text[:6000] + "\n… (truncated)\n"
+                text = text[:6000] + "\n… (truncated)\n"
+            if not getattr(out, "name", None):
+                out.name = "stdout"
+            out.text = text
             kept.append(out)
         elif otype == "display_data" and "image/png" in out.data:
             out.data = {"image/png": out.data["image/png"]}
@@ -45,6 +49,9 @@ def _strip_cell_outputs(cell) -> None:
             if "<Figure size" in plain or len(plain) >= 4000:
                 continue
             out.data = {"text/plain": plain}
+            out.metadata = getattr(out, "metadata", None) or {}
+            if otype == "execute_result" and exec_count is not None:
+                out.execution_count = exec_count
             kept.append(out)
     cell.outputs = kept
 
