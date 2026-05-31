@@ -1,0 +1,44 @@
+{
+  "data": {
+    "search_by_raw_query": {
+      "search_timeline": {
+        "timeline": {
+          "instructions": [
+            {
+              "type": "TimelineAddEntries",
+              "entries": [
+                {
+                  "entryId": "tweet-1",
+                  "content": {
+                    "entryType": "TimelineTimelineItem",
+                    "itemContent": {
+                      "tweet_results": {
+                        "result": {
+                          "rest_id": "1001",
+                          "core": {
+                            "user_results": {
+                              "result": {
+                                "rest_id": "42",
+                                "legacy": { "id_str": "42", "screen_name": "alice" },
+                                "core": { "screen_name": "alice" }
+                              }
+                            }
+                          },
+                          "legacy": {
+                            "id_str": "1001",
+                            "full_text": "border crisis narrative spike",
+                            "created_at": "Mon Jun 01 12:00:00 +0000 2026"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -12,6 +12,8 @@ from heimdall.ingestion.mock import MockIngester
 from heimdall.ingestion.rate_limit import TokenBucketRateLimiter
 from heimdall.ingestion.reddit import RedditIngester
 from heimdall.ingestion.tweet_eval import build_tweet_eval_ingester
+from heimdall.ingestion.x import XIngester
+from heimdall.ingestion.x_guard import XIngestPlan, plan_x_ingest
 from heimdall.ingestion.schemas import RawPost
 from heimdall.ingestion.text_clean import clean_post_text
 from heimdall.nlp.outrage import OutrageAnalyzer
@@ -38,6 +40,8 @@ def build_ingester(platform: Platform | None = None) -> PlatformIngester:
         return MastodonIngester()
     if platform == Platform.TWEET_EVAL:
         return build_tweet_eval_ingester()
+    if platform == Platform.X:
+        return XIngester()
     if platform is None:
         default = settings.default_ingester.lower()
         if default == "mastodon":
@@ -57,10 +61,18 @@ class IngestionPipeline:
         ingester: PlatformIngester | None = None,
         analyzer: OutrageAnalyzer | None = None,
         platform: Platform | None = None,
+        *,
+        x_plan: XIngestPlan | None = None,
     ) -> None:
         settings = get_settings()
         self._session = session
-        self._ingester = ingester or build_ingester(platform)
+        if ingester is not None:
+            self._ingester = ingester
+        elif platform == Platform.X and x_plan is not None:
+            self._ingester = XIngester(plan=x_plan)
+        else:
+            self._ingester = build_ingester(platform)
+        self._x_plan = x_plan
         self._limiter = TokenBucketRateLimiter(
             settings.ingest_requests_per_minute,
             settings.ingest_burst,
@@ -128,13 +140,25 @@ class IngestionPipeline:
                 edges += 1
 
         await self._session.commit()
-        return {
+        result = {
             "narrative_id": narrative.id,
             "fetched": len(raw_posts),
             "inserted": inserted,
             "scored": scored,
             "edges": edges,
         }
+        if isinstance(self._ingester, XIngester):
+            guardrails: dict = {"notes": list(self._x_plan.notes) if self._x_plan else []}
+            if self._ingester.last_usage:
+                guardrails["usage"] = self._ingester.last_usage
+            if self._x_plan:
+                guardrails["plan"] = {
+                    "keywords": self._x_plan.keywords,
+                    "limit": self._x_plan.limit,
+                    "graphql_requests": self._x_plan.graphql_requests,
+                }
+            result["guardrails"] = guardrails
+        return result
 
     async def _upsert_post(self, narrative_id: int, raw: RawPost) -> int | None:
         text = clean_post_text(raw.text)

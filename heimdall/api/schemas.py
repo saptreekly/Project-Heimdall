@@ -32,6 +32,7 @@ class IngestResponse(BaseModel):
     inserted: int
     scored: int
     edges: int
+    guardrails: dict | None = None
 
 
 class PostOut(BaseModel):

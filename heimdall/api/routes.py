@@ -1,3 +1,4 @@
+import httpx
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -12,6 +13,7 @@ from heimdall.api.schemas import (
     Neo4jSyncResponse,
     PostOut,
 )
+from heimdall.config import get_settings
 from heimdall.datasets.astroturf import count_known_bots, import_astroturf, narrative_bot_overlap
 from heimdall.datasets.tweet_eval import ALL_SUBSETS, RAGEBAIT_SUBSETS, parse_tweet_eval_meta
 from heimdall.nlp.calibrate import tweet_eval_calibration
@@ -22,6 +24,11 @@ from heimdall.graph.export import build_graph_export
 from heimdall.graph.neo4j_sync import Neo4jGraphSync
 from heimdall.graph.networkx_analysis import NarrativeGraphAnalyzer
 from heimdall.ingestion.pipeline import IngestionPipeline
+from heimdall.ingestion.x_guard import (
+    XDailyBudgetExceeded,
+    XIngestDisabled,
+    plan_x_ingest,
+)
 
 router = APIRouter()
 
@@ -47,22 +54,61 @@ def _parse_platform(name: str | None) -> Platform | None:
     except ValueError as exc:
         raise HTTPException(
             status_code=400,
-            detail=f"Unknown platform '{name}'. Use: hackernews, mastodon, mock, reddit, tweet_eval",
+            detail=f"Unknown platform '{name}'. Use: hackernews, mastodon, mock, reddit, tweet_eval, x",
         ) from exc
 
 
 @router.post("/ingest", response_model=IngestResponse)
 async def ingest(body: IngestRequest, db: AsyncSession = Depends(get_db)) -> IngestResponse:
+    platform = _parse_platform(body.platform)
+    x_plan = None
+    keywords = body.keywords
+    limit = body.limit
+
+    if platform == Platform.X:
+        try:
+            x_plan = plan_x_ingest(keywords, limit)
+        except XIngestDisabled as exc:
+            raise HTTPException(status_code=403, detail=str(exc)) from exc
+        except ValueError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from exc
+        keywords = x_plan.keywords
+        limit = x_plan.limit
+
     try:
-        pipeline = IngestionPipeline(db, platform=_parse_platform(body.platform))
+        pipeline = IngestionPipeline(db, platform=platform, x_plan=x_plan)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
-    result = await pipeline.ingest_narrative(
-        body.narrative_name,
-        body.keywords,
-        limit=body.limit,
-    )
+    try:
+        result = await pipeline.ingest_narrative(
+            body.narrative_name,
+            keywords,
+            limit=limit,
+        )
+    except XDailyBudgetExceeded as exc:
+        raise HTTPException(status_code=429, detail=str(exc)) from exc
+    except (RuntimeError, httpx.HTTPStatusError) as exc:
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
     return IngestResponse(**result)
+
+
+@router.get("/platforms/x/usage")
+async def x_usage() -> dict:
+    from heimdall.ingestion.x_guard import daily_usage_snapshot
+
+    usage = await daily_usage_snapshot()
+    settings = get_settings()
+    return {
+        **usage,
+        "limits": {
+            "max_keywords_per_ingest": settings.x_max_keywords_per_ingest,
+            "max_posts_per_ingest": settings.x_max_posts_per_ingest,
+            "max_tweets_per_search": settings.x_max_tweets_per_search,
+            "min_seconds_between_searches": settings.x_min_seconds_between_searches,
+            "max_graphql_requests_per_day": settings.x_max_graphql_requests_per_day,
+            "ingest_enabled": settings.x_ingest_enabled,
+        },
+    }
 
 
 @router.get("/narratives/{narrative_id}/posts", response_model=list[PostOut])

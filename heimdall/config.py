@@ -1,5 +1,6 @@
 from functools import lru_cache
 
+from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -19,6 +20,22 @@ class Settings(BaseSettings):
     reddit_user_agent: str = "heimdall/0.1"
 
     x_bearer_token: str = ""
+    x_auth_token: str = Field(
+        default="",
+        validation_alias=AliasChoices("X_AUTH_TOKEN", "AUTH_TOKEN"),
+    )
+    x_ct0: str = Field(
+        default="",
+        validation_alias=AliasChoices("X_CT0", "CT0"),
+    )
+
+    # X ingest guardrails (unofficial GraphQL — keep conservative)
+    x_ingest_enabled: bool = True
+    x_max_keywords_per_ingest: int = 5
+    x_max_posts_per_ingest: int = 80
+    x_max_tweets_per_search: int = 20
+    x_min_seconds_between_searches: float = 3.0
+    x_max_graphql_requests_per_day: int = 30
 
     # Default ingester when /ingest omits platform: hackernews needs no credentials
     default_ingester: str = "hackernews"

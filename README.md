@@ -111,6 +111,41 @@ curl http://127.0.0.1:8000/api/v1/datasets/astroturf/stats
 
 `/cib` responses include `iu_astroturf` overlap for **`platform=x` posts only**. Mastodon numeric account IDs are not Twitter IDs — overlap stays 0 until you ingest X/Twitter data.
 
+### X / Twitter (session cookies)
+
+Copy `auth_token` and `ct0` from browser devtools (Application → Cookies for `x.com`) into `.env`:
+
+```bash
+X_AUTH_TOKEN=your_auth_token
+X_CT0=your_ct0
+```
+
+```bash
+curl -X POST http://127.0.0.1:8000/api/v1/ingest \
+  -H "Content-Type: application/json" \
+  -d '{"narrative_name":"x_border","keywords":["border crisis"],"limit":40,"platform":"x"}'
+
+# List timeline instead of search:
+# "keywords": ["list:1234567890123456789"]
+```
+
+After ingest, `GET /api/v1/narratives/{id}/cib` can report IU astroturf overlap on `platform=x` author IDs.
+
+**Ban-risk guardrails** (defaults are conservative; tune in `.env`):
+
+| Limit | Default | Purpose |
+|-------|---------|---------|
+| `X_MAX_KEYWORDS_PER_INGEST` | 5 | Cap searches per request |
+| `X_MAX_POSTS_PER_INGEST` | 80 | Cap tweets stored per ingest |
+| `X_MAX_TWEETS_PER_SEARCH` | 20 | Cap tweets per GraphQL call |
+| `X_MIN_SECONDS_BETWEEN_SEARCHES` | 3 | Pause between keyword/list pulls |
+| `X_MAX_GRAPHQL_REQUESTS_PER_DAY` | 30 | Daily budget (tracked in `data/x_rate_state.json`) |
+| `X_INGEST_ENABLED` | true | Kill switch (`false` blocks all X ingest) |
+
+Check today's usage: `GET /api/v1/platforms/x/usage`. Ingest responses include a `guardrails` object when limits were applied.
+
+Use a **research alt account** for cookies; ingest manually a few times per day—not on a tight cron.
+
 Neo4j authors get `known_bot` and `bot_label` when matched.
 
 ## Configuration
@@ -119,7 +154,9 @@ Neo4j authors get `known_bot` and `bot_label` when matched.
 |----------|---------|
 | `DATABASE_URL` | Async Postgres (SQLAlchemy + asyncpg) |
 | `REDDIT_*` | PRAW credentials for Reddit search |
-| `X_BEARER_TOKEN` | X API v2 (add `heimdall/ingestion/x.py` when ready) |
+| `X_AUTH_TOKEN` / `X_CT0` | Session cookies for `platform=x` ingest (aliases: `AUTH_TOKEN`, `CT0`) |
+| `X_BEARER_TOKEN` | Reserved for official API v2 (not required for cookie ingest) |
+| `X_MAX_*`, `X_MIN_*`, `X_INGEST_ENABLED` | X GraphQL guardrails (see table above) |
 | `NEO4J_*` | Graph export via `POST /narratives/{id}/graph/neo4j` |
 | `MASTODON_INSTANCE_URL` | Instance for hashtag timelines |
 | `DEFAULT_INGESTER` | `hackernews`, `mastodon`, `mock`, etc. |
@@ -145,6 +182,6 @@ tests/
 
 ## Next steps
 
-- [ ] X/Twitter ingester (API v2 recent search + retweet expansion)
+- [x] X/Twitter ingester (GraphQL search + list timelines; retweet → SHARE edges)
 - [ ] Bot detection features (account age, posting velocity) as graph node attributes
 - [ ] Dashboard (e.g. React + sigma.js) fed from Neo4j or `/cib`
