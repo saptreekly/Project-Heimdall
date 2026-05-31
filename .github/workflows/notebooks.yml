@@ -4,6 +4,7 @@
 name: notebooks
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -17,12 +18,11 @@ on:
       - "scripts/export_notebook_github.py"
       - "heimdall/analysis/**"
 
-permissions:
-  contents: write
-
 jobs:
   sanitize:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -37,7 +37,7 @@ jobs:
         run: python scripts/export_notebook_github.py --no-execute
 
       - name: Verify nbconvert can render (same stack GitHub uses)
-        run: jupyter nbconvert --to html notebooks/analyze_narrative.ipynb --output /tmp/out.html
+        run: python -m jupyter nbconvert --to html notebooks/analyze_narrative.ipynb --output /tmp/out.html
 
       - name: Commit refreshed notebook artifacts on main
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -49,10 +49,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add notebooks/analyze_narrative.ipynb notebooks/analyze_narrative.html
-          git commit -m "$(cat <<'EOF'
-ci: sanitize notebook (PNG outputs, nbformat 4.4)
-
-Strip widget/HTML metadata so GitHub ipynb preview can render.
-EOF
-)"
+          git commit -m "ci: sanitize notebook for GitHub (PNG outputs, nbformat 4.4)"
           git push
