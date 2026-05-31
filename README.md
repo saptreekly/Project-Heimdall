@@ -167,10 +167,24 @@ Install transformer-backed sentiment: `pip install -e ".[ml]"` and pass `Outrage
 
 Only collect **public** data in compliance with platform Terms of Service and applicable law. This scaffold is for research and defensive analysis—not for harassment, doxxing, or targeting individuals. Tune lexicons and thresholds with human review; automated CIB scores are **heuristic**, not ground truth.
 
+## Analysis (Jupyter)
+
+Ingest is **saved** to the app database (`heimdall.db` by default). Posts, outrage scores, edges, and narratives survive restarts.
+
+```bash
+pip install -e ".[notebook]"
+jupyter notebook notebooks/analyze_narrative.ipynb
+```
+
+The notebook loads narratives from SQLite, plots outrage distributions, finds duplicate-text (copypasta) clusters, and lists repeat authors. Helpers live in `heimdall/analysis/`.
+
 ## Project layout
 
 ```
+notebooks/
+  analyze_narrative.ipynb
 heimdall/
+  analysis/            # pandas loaders, duplicate-text detection
   main.py              # FastAPI app
   api/routes.py        # REST endpoints
   ingestion/           # Platform ingesters, rate limit, pipeline
