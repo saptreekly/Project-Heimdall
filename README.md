@@ -184,7 +184,7 @@ The notebook loads narratives from SQLite, plots outrage distributions, finds du
 python scripts/export_notebook_github.py   # re-execute + strip HTML outputs
 ```
 
-If GitHub still shows `Using nbformat v5.10.4…`, that line is often a **platform-side** renderer failure — try [nbviewer](https://nbviewer.org/github/saptreekly/Project-Heimdall/blob/main/notebooks/analyze_narrative.ipynb) or view locally.
+If GitHub’s `.ipynb` tab still shows `Using nbformat v5.10.4…`, open the rendered **[HTML notebook](notebooks/analyze_narrative.html)** or [nbviewer](https://nbviewer.org/github/saptreekly/Project-Heimdall/blob/main/notebooks/analyze_narrative.ipynb) instead (see [notebooks/README.md](notebooks/README.md)).
 
 ## Project layout
 

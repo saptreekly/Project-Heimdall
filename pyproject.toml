@@ -43,6 +43,8 @@ notebook = [
     "matplotlib>=3.9.0",
     "jupyter>=1.1.0",
     "ipykernel>=6.29.0",
+    "nbconvert>=7.16.0",
+    "nbformat>=5.10.0",
 ]
 
 [build-system]
