@@ -178,6 +178,14 @@ jupyter notebook notebooks/analyze_narrative.ipynb
 
 The notebook loads narratives from SQLite, plots outrage distributions, finds duplicate-text (copypasta) clusters, and lists repeat authors. Helpers live in `heimdall/analysis/`.
 
+**GitHub preview:** GitHub’s renderer is picky about Python notebooks (nbformat 5 cell `id`s, large HTML tables). This repo keeps the notebook at **nbformat 4.4** with **PNG chart outputs** (like Julia notebooks). After local changes, refresh the GitHub view:
+
+```bash
+python scripts/export_notebook_github.py   # re-execute + strip HTML outputs
+```
+
+If GitHub still shows `Using nbformat v5.10.4…`, that line is often a **platform-side** renderer failure — try [nbviewer](https://nbviewer.org/github/saptreekly/Project-Heimdall/blob/main/notebooks/analyze_narrative.ipynb) or view locally.
+
 ## Project layout
 
 ```
