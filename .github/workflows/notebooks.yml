@@ -1,0 +1,58 @@
+# Keep committed notebooks GitHub-safe: PNG-only outputs, nbformat 4.4, no broken widgets metadata.
+# Primary workflow is local: python scripts/export_notebook_github.py && git add notebooks/*.ipynb
+
+name: notebooks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "notebooks/**"
+      - "scripts/export_notebook_github.py"
+      - "heimdall/analysis/**"
+      - ".github/workflows/notebooks.yml"
+  pull_request:
+    paths:
+      - "notebooks/**"
+      - "scripts/export_notebook_github.py"
+      - "heimdall/analysis/**"
+
+permissions:
+  contents: write
+
+jobs:
+  sanitize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install package and notebook tools
+        run: pip install -e ".[notebook]"
+
+      - name: Sanitize notebook and build HTML
+        run: python scripts/export_notebook_github.py --no-execute
+
+      - name: Verify nbconvert can render (same stack GitHub uses)
+        run: jupyter nbconvert --to html notebooks/analyze_narrative.ipynb --output /tmp/out.html
+
+      - name: Commit refreshed notebook artifacts on main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          if git diff --quiet notebooks/; then
+            echo "No notebook changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add notebooks/analyze_narrative.ipynb notebooks/analyze_narrative.html
+          git commit -m "$(cat <<'EOF'
+ci: sanitize notebook (PNG outputs, nbformat 4.4)
+
+Strip widget/HTML metadata so GitHub ipynb preview can render.
+EOF
+)"
+          git push

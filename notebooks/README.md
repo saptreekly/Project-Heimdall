@@ -4,24 +4,26 @@
 
 Loads persisted ingest data from `heimdall.db` and charts outrage / copypasta clusters.
 
-### View on GitHub
+### How we commit it (same idea as Julia notebooks)
 
-GitHub’s built-in `.ipynb` preview often fails with a generic message (`Using nbformat v5.10.4 and nbconvert v7.17.1`) — a known platform issue, not your data.
+The checked-in `.ipynb` is **pre-rendered for GitHub**:
 
-**Reliable options:**
+- **PNG charts** (`%matplotlib inline`) — not `<Figure size…>` text
+- **nbformat 4.4**, no cell `id`s, no `metadata.widgets`
+- **No HTML** table outputs from pandas (text only)
 
-1. **Rendered HTML (recommended on GitHub)**  
-   Open [analyze_narrative.html](analyze_narrative.html) in the repo (download or use [HTML preview](https://htmlpreview.github.io/?https://github.com/saptreekly/Project-Heimdall/blob/main/notebooks/analyze_narrative.html)).
-
-2. **NBViewer**  
-   https://nbviewer.org/github/saptreekly/Project-Heimdall/blob/main/notebooks/analyze_narrative.ipynb
-
-3. **Local Jupyter**  
-   `pip install -e ".[notebook]" && jupyter notebook notebooks/analyze_narrative.ipynb`
-
-### Refresh GitHub artifacts after edits
+Generate that artifact before you commit:
 
 ```bash
-python scripts/export_notebook_github.py
-git add notebooks/analyze_narrative.ipynb notebooks/analyze_narrative.html
+pip install -e ".[notebook]"
+python scripts/export_notebook_github.py   # needs heimdall.db to refresh charts
+git add notebooks/analyze_narrative.ipynb
 ```
+
+`analyze_narrative.html` is an optional static copy for browsers; the `.ipynb` with PNGs is the primary artifact.
+
+### If GitHub’s `.ipynb` tab still errors
+
+GitHub sometimes shows only `Using nbformat v5.10.4 and nbconvert v7.17.1` during **platform outages** — not much a repo can do. Fallbacks: [nbviewer](https://nbviewer.org/github/saptreekly/Project-Heimdall/blob/main/notebooks/analyze_narrative.ipynb) or open `analyze_narrative.html`.
+
+CI (`.github/workflows/notebooks.yml`) re-sanitizes the notebook on push so a local Jupyter save doesn’t re-introduce broken widgets metadata.

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -13,17 +14,13 @@ DB = ROOT / "heimdall.db"
 
 
 def _clean_metadata(nb) -> None:
-    """GitHub nbconvert fails when metadata.widgets exists without state (common Jupyter/VS Code bug)."""
+    """GitHub nbconvert fails when metadata.widgets lacks state (VS Code / Jupyter bug)."""
     widgets = nb.metadata.get("widgets")
     if widgets is None:
         return
     if "state" not in widgets:
-        nb.metadata["widgets"] = {
-            **widgets,
-            "state": {},
-            "version_major": widgets.get("version_major", 2),
-            "version_minor": widgets.get("version_minor", 0),
-        }
+        # Remove broken widgets block; GitHub's renderer rejects it (see community #155944).
+        nb.metadata.pop("widgets", None)
 
 
 def _strip_cell_outputs(cell) -> None:
@@ -64,29 +61,40 @@ def _clean_cells(nb) -> None:
         _strip_cell_outputs(cell)
 
 
-def main() -> int:
+def sanitize_notebook(nb, *, execute: bool) -> None:
     import nbformat
-    from nbconvert import HTMLExporter
     from nbconvert.preprocessors import ExecutePreprocessor
 
-    nb = nbformat.read(NOTEBOOK, as_version=4)
-
-    if DB.exists():
+    if execute and DB.exists():
         ep = ExecutePreprocessor(timeout=120, kernel_name="python3")
         ep.preprocess(nb, {"metadata": {"path": str(ROOT)}})
-    else:
-        print("No heimdall.db — skipping execute; cleaning format only.", file=sys.stderr)
+    elif execute:
+        print("No heimdall.db — skipping execute.", file=sys.stderr)
 
     _clean_cells(nb)
     _clean_metadata(nb)
-
     nb.nbformat = 4
     nb.nbformat_minor = 4
     for cell in nb.cells:
         if hasattr(cell, "id"):
             del cell["id"]
-
     nbformat.validate(nb)
+
+
+def main() -> int:
+    import nbformat
+    from nbconvert import HTMLExporter
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--no-execute",
+        action="store_true",
+        help="Sanitize committed outputs only (for CI without heimdall.db).",
+    )
+    args = parser.parse_args()
+
+    nb = nbformat.read(NOTEBOOK, as_version=4)
+    sanitize_notebook(nb, execute=not args.no_execute)
     nbformat.write(nb, NOTEBOOK)
 
     html, _ = HTMLExporter().from_notebook_node(nb)
@@ -94,7 +102,6 @@ def main() -> int:
 
     print(f"Wrote {NOTEBOOK}")
     print(f"Wrote {HTML_OUT}")
-    print("GitHub preview: open the .html file or use nbviewer (see notebooks/README.md)")
     return 0
 
 
