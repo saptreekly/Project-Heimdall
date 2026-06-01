@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-06-01T18:30:05.538351+00:00",
+  "generated_at": "2026-06-01T21:10:30.611979+00:00",
   "narratives": [
     {
       "id": 1,
@@ -230,8 +230,8 @@
             "internal_density": 0.5,
             "members": [
               "bot_alpha",
-              "bot_gamma",
-              "bot_beta"
+              "bot_beta",
+              "bot_gamma"
             ]
           }
         ],
@@ -6690,7 +6690,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-01",
-      "count": 14
+      "count": 15
     }
   }
 }
