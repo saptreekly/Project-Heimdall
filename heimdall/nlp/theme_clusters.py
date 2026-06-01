@@ -11,7 +11,26 @@ import numpy as np
 from heimdall.nlp.embeddings import DEFAULT_EMBEDDING_MODEL, encode_texts
 from heimdall.nlp.lexicon import lexicon_hit_strength
 
-_TOKEN_RE = re.compile(r"[a-z]{4,}")
+_TOKEN_RE = re.compile(r"[a-z]{3,}")
+
+# Extra fillers common on social posts (sklearn ENGLISH_STOP_WORDS covers most English glue words).
+_EXTRA_THEME_STOPWORDS = frozenset(
+    {
+        "amp",
+        "com",
+        "http",
+        "https",
+        "just",
+        "like",
+        "link",
+        "nbsp",
+        "rt",
+        "via",
+        "www",
+    }
+)
+
+_THEME_STOPWORDS: frozenset[str] | None = None
 
 # DBSCAN cosine distance on MiniLM unit vectors; tune for short social posts.
 DBSCAN_EPS = 0.35
@@ -45,6 +64,27 @@ class ThemeClusterReport:
     post_theme_boost: dict[int, float] = field(default_factory=dict)
 
 
+def _theme_stopwords() -> frozenset[str]:
+    global _THEME_STOPWORDS
+    if _THEME_STOPWORDS is None:
+        try:
+            from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
+
+            base = set(ENGLISH_STOP_WORDS)
+        except ImportError:
+            base = set()
+        base.update(_EXTRA_THEME_STOPWORDS)
+        _THEME_STOPWORDS = frozenset(base)
+    return _THEME_STOPWORDS
+
+
+def _is_meaningful_label_term(word: str) -> bool:
+    w = (word or "").lower().strip()
+    if len(w) < 3 or w.isdigit():
+        return False
+    return w not in _theme_stopwords()
+
+
 def _tokenize(text: str) -> list[str]:
     return _TOKEN_RE.findall((text or "").lower())
 
@@ -52,7 +92,9 @@ def _tokenize(text: str) -> list[str]:
 def _label_terms(texts: list[str], *, top_n: int = 6) -> list[str]:
     counts: Counter[str] = Counter()
     for text in texts:
-        counts.update(_tokenize(text))
+        for word in _tokenize(text):
+            if _is_meaningful_label_term(word):
+                counts[word] += 1
     return [word for word, _ in counts.most_common(top_n)]
 
 

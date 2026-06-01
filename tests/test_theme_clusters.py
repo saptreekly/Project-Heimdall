@@ -3,6 +3,7 @@ import pytest
 
 from heimdall.nlp.theme_clusters import (
     EMERGING_LEXICON_MAX,
+    _label_terms,
     cluster_posts,
     report_to_dict,
 )
@@ -77,6 +78,20 @@ def test_cluster_posts_lexicon_heavy_not_emerging(monkeypatch: pytest.MonkeyPatc
     )
     report = cluster_posts(posts, narrative_id=1)
     assert all(not c.emerging_theme for c in report.clusters)
+
+
+def test_label_terms_excludes_stopwords() -> None:
+    terms = _label_terms(
+        [
+            "The election fraud with the deep state and corrupt officials",
+            "Election fraud corrupt officials deep state accountability",
+        ],
+        top_n=8,
+    )
+    assert "the" not in terms
+    assert "with" not in terms
+    assert "and" not in terms
+    assert "election" in terms or "fraud" in terms
 
 
 def test_report_to_dict_shape() -> None:
