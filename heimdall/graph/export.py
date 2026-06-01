@@ -119,6 +119,7 @@ async def build_graph_export(
             cast(InteractionEdge.interaction_type, String),
             InteractionEdge.source_post_id,
             InteractionEdge.target_post_id,
+            InteractionEdge.occurred_at,
         ).where(InteractionEdge.narrative_id == narrative_id)
     )
     amplifications = [
@@ -128,8 +129,9 @@ async def build_graph_export(
             "type": (itype or "").strip().lower(),
             "source_post_id": source_post_id,
             "target_post_id": target_post_id,
+            "occurred_at": occurred_at.isoformat() if occurred_at else None,
         }
-        for source, target, itype, source_post_id, target_post_id in edges_result.all()
+        for source, target, itype, source_post_id, target_post_id, occurred_at in edges_result.all()
     ]
 
     cib_data = None

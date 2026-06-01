@@ -39,6 +39,26 @@ class MockIngester(PlatformIngester):
                         target_external_id=posts[0].external_id if posts else None,
                     )
                 )
+            if i == 9 and posts:
+                interactions.append(
+                    RawInteraction(
+                        source_author_id=author,
+                        target_author_id=organic[0],
+                        interaction_type=InteractionType.REPLY,
+                        occurred_at=now - timedelta(minutes=i),
+                        target_external_id=posts[0].external_id,
+                    )
+                )
+            if i == 10 and posts:
+                interactions.append(
+                    RawInteraction(
+                        source_author_id=author,
+                        target_author_id=organic[1],
+                        interaction_type=InteractionType.QUOTE,
+                        occurred_at=now - timedelta(minutes=i),
+                        target_external_id=posts[1].external_id if len(posts) > 1 else posts[0].external_id,
+                    )
+                )
             posts.append(
                 RawPost(
                     platform=Platform.MOCK,

@@ -33,6 +33,7 @@ from heimdall.datasets.tweet_eval import parse_tweet_eval_meta
 from heimdall.config import get_settings
 from heimdall.db.models import Narrative, OutrageScore, Platform, Post
 from heimdall.graph.export import build_graph_export
+from heimdall.graph.stats import build_graph_stats
 from heimdall.nlp.narrative_themes import narrative_theme_clusters
 from heimdall.graph.networkx_analysis import NarrativeGraphAnalyzer
 
@@ -293,10 +294,18 @@ async def narrative_graph(db: AsyncSession, narrative_id: int) -> dict:
     try:
         payload = await build_graph_export(db, narrative_id, include_cib=False)
     except ValueError:
-        return {"authors": [], "edges": []}
+        return {
+            "authors": [],
+            "edges": [],
+            "stats": build_graph_stats([], []),
+        }
+    authors = payload.authors
+    edges = payload.amplifications
+
     return {
-        "authors": payload.authors,
-        "edges": payload.amplifications,
+        "authors": authors,
+        "edges": edges,
+        "stats": build_graph_stats(authors, edges),
     }
 
 
@@ -390,7 +399,7 @@ async def build_dashboard_snapshot(db: AsyncSession) -> dict:
         }
 
     return {
-        "version": 3,
+        "version": 4,
         "generated_at": datetime.now(UTC).isoformat(),
         "narratives": [s.model_dump(mode="json") for s in summaries],
         "by_narrative_id": by_id,

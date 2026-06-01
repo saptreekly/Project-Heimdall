@@ -108,6 +108,13 @@ class ParsedXTweet:
     retweet_tweet_id: str | None = None
     retweet_author_id: str | None = None
     retweet_screen_name: str | None = None
+    is_reply: bool = False
+    reply_tweet_id: str | None = None
+    reply_author_id: str | None = None
+    is_quote: bool = False
+    quote_tweet_id: str | None = None
+    quote_author_id: str | None = None
+    quote_screen_name: str | None = None
 
 
 def _deep_get(data: Any, *keys: Any) -> Any:
@@ -199,6 +206,35 @@ def parse_tweet_result(result: dict[str, Any]) -> ParsedXTweet | None:
     if not tweet_id:
         return None
 
+    is_reply = False
+    reply_tweet_id: str | None = None
+    reply_author_id: str | None = None
+    reply_status = legacy.get("in_reply_to_status_id_str")
+    reply_user = legacy.get("in_reply_to_user_id_str")
+    if reply_status and reply_user:
+        is_reply = True
+        reply_tweet_id = str(reply_status)
+        reply_author_id = str(reply_user)
+
+    is_quote = False
+    quote_tweet_id: str | None = None
+    quote_author_id: str | None = None
+    quote_screen_name: str | None = None
+    if not is_retweet:
+        quote_result = _deep_get(legacy, "quoted_status_result", "result")
+        if isinstance(quote_result, dict):
+            inner = _unwrap_tweet_result(quote_result) or {}
+            inner_legacy = inner.get("legacy") if isinstance(inner, dict) else {}
+            inner_core = inner.get("core") if isinstance(inner, dict) else {}
+            if isinstance(inner_legacy, dict) and isinstance(inner_core, dict):
+                is_quote = True
+                inner_user = _deep_get(inner_core, "user_results", "result") or {}
+                if isinstance(inner_user, dict):
+                    quote_author_id, quote_screen_name = _user_ids(inner_user)
+                    quote_tweet_id = str(
+                        inner.get("rest_id") or inner_legacy.get("id_str") or ""
+                    ) or None
+
     return ParsedXTweet(
         tweet_id=tweet_id,
         author_id=author_id,
@@ -209,6 +245,13 @@ def parse_tweet_result(result: dict[str, Any]) -> ParsedXTweet | None:
         retweet_tweet_id=retweet_tweet_id,
         retweet_author_id=retweet_author_id,
         retweet_screen_name=retweet_screen_name,
+        is_reply=is_reply,
+        reply_tweet_id=reply_tweet_id,
+        reply_author_id=reply_author_id,
+        is_quote=is_quote,
+        quote_tweet_id=quote_tweet_id,
+        quote_author_id=quote_author_id,
+        quote_screen_name=quote_screen_name,
     )
 
 

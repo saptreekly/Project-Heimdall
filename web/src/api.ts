@@ -162,7 +162,18 @@ function graphFromPosts(posts: Post[]): PropagationGraph {
       existing.max_outrage = Math.max(existing.max_outrage, outrage);
     }
   }
-  return { authors: [...authors.values()], edges: [] };
+  const authorList = [...authors.values()];
+  return {
+    authors: authorList,
+    edges: [],
+    stats: {
+      edge_count: 0,
+      author_count: authorList.length,
+      connected_author_count: 0,
+      isolated_author_count: authorList.length,
+      by_type: {},
+    },
+  };
 }
 
 const EMPTY_THEMES: ThemesReport = {
@@ -190,8 +201,41 @@ export async function fetchThemes(narrativeId: number): Promise<ThemesReport> {
 export async function fetchPropagationGraph(narrativeId: number): Promise<PropagationGraph> {
   await loadSnapshot();
   const bundle = bundleFor(narrativeId);
-  if (bundle.graph?.authors?.length) {
-    return bundle.graph;
+  if (bundle.graph?.authors?.length || bundle.graph?.edges?.length) {
+    const g = bundle.graph;
+    if (g.stats) return g;
+    const edges = g.edges ?? [];
+    const authors = g.authors ?? [];
+    return {
+      ...g,
+      stats: computeGraphStatsClient(authors, edges),
+    };
   }
   return graphFromPosts(bundle.posts);
+}
+
+function computeGraphStatsClient(
+  authors: GraphAuthor[],
+  edges: PropagationGraph["edges"]
+): NonNullable<PropagationGraph["stats"]> {
+  const authorIds = new Set(authors.map((a) => a.author_id));
+  const byType: Record<string, number> = {};
+  const incident = new Set<string>();
+  for (const e of edges) {
+    const t = (e.type || "unknown").toLowerCase();
+    byType[t] = (byType[t] ?? 0) + 1;
+    incident.add(e.source);
+    incident.add(e.target);
+  }
+  let connected = 0;
+  for (const id of authorIds) {
+    if (incident.has(id)) connected += 1;
+  }
+  return {
+    edge_count: edges.length,
+    author_count: authorIds.size,
+    connected_author_count: connected,
+    isolated_author_count: Math.max(0, authorIds.size - connected),
+    by_type: byType,
+  };
 }

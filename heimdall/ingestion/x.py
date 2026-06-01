@@ -88,6 +88,27 @@ def _raw_posts_from_tweet(parsed: ParsedXTweet) -> list[RawPost]:
                 target_external_id=parsed.retweet_tweet_id,
             )
         )
+    elif parsed.is_quote and parsed.quote_author_id and parsed.quote_tweet_id:
+        interactions.append(
+            RawInteraction(
+                source_author_id=parsed.author_id,
+                target_author_id=parsed.quote_author_id,
+                interaction_type=InteractionType.QUOTE,
+                occurred_at=posted_at,
+                target_external_id=parsed.quote_tweet_id,
+            )
+        )
+
+    if parsed.is_reply and parsed.reply_author_id and parsed.reply_tweet_id:
+        interactions.append(
+            RawInteraction(
+                source_author_id=parsed.author_id,
+                target_author_id=parsed.reply_author_id,
+                interaction_type=InteractionType.REPLY,
+                occurred_at=posted_at,
+                target_external_id=parsed.reply_tweet_id,
+            )
+        )
 
     primary = RawPost(
         platform=Platform.X,
@@ -102,6 +123,12 @@ def _raw_posts_from_tweet(parsed: ParsedXTweet) -> list[RawPost]:
                 "is_retweet": parsed.is_retweet,
                 "retweet_tweet_id": parsed.retweet_tweet_id,
                 "retweet_author_id": parsed.retweet_author_id,
+                "is_reply": parsed.is_reply,
+                "reply_tweet_id": parsed.reply_tweet_id,
+                "reply_author_id": parsed.reply_author_id,
+                "is_quote": parsed.is_quote,
+                "quote_tweet_id": parsed.quote_tweet_id,
+                "quote_author_id": parsed.quote_author_id,
             }
         ),
         interactions=interactions,

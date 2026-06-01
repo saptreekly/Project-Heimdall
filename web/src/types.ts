@@ -191,11 +191,21 @@ export interface GraphEdge {
   type: string;
   source_post_id?: number;
   target_post_id?: number | null;
+  occurred_at?: string | null;
+}
+
+export interface GraphInteractionStats {
+  edge_count: number;
+  author_count: number;
+  connected_author_count: number;
+  isolated_author_count: number;
+  by_type: Record<string, number>;
 }
 
 export interface PropagationGraph {
   authors: GraphAuthor[];
   edges: GraphEdge[];
+  stats?: GraphInteractionStats;
 }
 
 export interface ThemeCluster {

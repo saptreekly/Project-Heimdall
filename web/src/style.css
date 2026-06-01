@@ -910,12 +910,111 @@ html:not(.chart-density-compact) .graph-canvas {
   line-height: 1.45;
 }
 
+.graph-canvas-wrap {
+  width: 100%;
+}
+
 .graph-canvas {
   height: 420px;
   width: 100%;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: var(--bg);
+}
+
+.graph-diagnostics-host {
+  margin-bottom: 0.65rem;
+}
+
+.graph-diagnostics {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--warn);
+  border-radius: var(--radius-sm);
+  background: rgba(17, 24, 32, 0.65);
+  font-size: 0.84rem;
+}
+
+.graph-diagnostics-empty {
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.graph-diagnostics-title {
+  margin: 0 0 0.4rem;
+}
+
+.graph-diagnostics-body,
+.graph-diagnostics-metrics,
+.graph-diagnostics-types,
+.graph-diagnostics-topology {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.graph-diagnostics-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.graph-edge-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+  margin: 0.35rem 0 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.graph-edge-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.graph-edge-key::before {
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.graph-edge-key-share::before {
+  background: rgba(245, 166, 35, 0.85);
+}
+
+.graph-edge-key-reply::before {
+  background: rgba(93, 173, 226, 0.9);
+  border-style: dashed;
+  height: 0;
+  border-width: 0 0 2px;
+  border-color: rgba(93, 173, 226, 0.9);
+  width: 1.1rem;
+}
+
+.graph-edge-key-quote::before {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(187, 143, 206, 0.95) 0 4px,
+    transparent 4px 7px
+  );
+}
+
+.graph-empty-state {
+  padding: 1rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.chart-density-compact .graph-canvas {
+  height: clamp(220px, 30vh, 340px);
 }
 
 .graph-hint {

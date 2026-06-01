@@ -90,6 +90,7 @@ import {
   graphPanelHtml,
   renderPropagationGraph,
   setPropagationAuthorHandler,
+  updatePropagationGraphBadge,
 } from "./propagation-graph";
 import {
   buildAuthorPriorityPoints,
@@ -672,7 +673,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       </section>
 
       <section class="analysis-section" data-analysis-section-panel="graphs"${analysisSectionHiddenAttr("graphs")}>
-        ${graphPanelHtml(null)}
+        ${graphPanelHtml()}
       </section>
 
       <section class="analysis-section" data-analysis-section-panel="anomalies"${analysisSectionHiddenAttr("anomalies")}>
@@ -773,18 +774,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         const graphEl = document.getElementById("propagation-graph");
         if (graphEl) {
           const meta = renderPropagationGraph(graphEl, graph, cib);
-          const badgeHost = graphEl.parentElement?.querySelector("h2");
-          if (badgeHost) {
-            const badge =
-              meta.topology === "star"
-                ? '<span class="topology-badge topology-star">star / coordinated</span>'
-                : meta.topology === "distributed"
-                  ? '<span class="topology-badge topology-organic">distributed / organic-like</span>'
-                  : meta.topology === "isolated"
-                    ? '<span class="topology-badge topology-isolated">no edges</span>'
-                    : '<span class="topology-badge topology-sparse">sparse</span>';
-            badgeHost.innerHTML = `Propagation network ${badge}`;
-          }
+          updatePropagationGraphBadge(meta);
         }
       },
       mountAnomalies: () => {},

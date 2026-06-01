@@ -2,7 +2,7 @@ import { DataSet } from "vis-data";
 import { Network } from "vis-network";
 import "vis-network/styles/vis-network.min.css";
 
-import type { CibReport, GraphEdge, PropagationGraph } from "./types";
+import type { CibReport, GraphEdge, GraphInteractionStats, PropagationGraph } from "./types";
 
 interface AggregatedEdge {
   id: string;
@@ -22,6 +22,13 @@ export interface GraphLayoutMeta {
   edgeCount: number;
 }
 
+const EDGE_TYPE_LABELS: Record<string, string> = {
+  share: "Share / RT",
+  retweet: "Retweet",
+  reply: "Reply",
+  quote: "Quote",
+};
+
 let activeNetwork: Network | null = null;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let activeEdges: DataSet<any> | null = null;
@@ -34,17 +41,18 @@ function aggregateEdges(raw: GraphEdge[]): AggregatedEdge[] {
   const map = new Map<string, AggregatedEdge>();
   for (const e of raw) {
     const id = `${e.source}→${e.target}`;
+    const t = (e.type || "unknown").toLowerCase();
     const existing = map.get(id);
     if (existing) {
       existing.weight += 1;
-      if (!existing.types.includes(e.type)) existing.types.push(e.type);
+      if (!existing.types.includes(t)) existing.types.push(t);
     } else {
       map.set(id, {
         id,
         from: e.source,
         to: e.target,
         weight: 1,
-        types: [e.type],
+        types: [t],
       });
     }
   }
@@ -53,6 +61,30 @@ function aggregateEdges(raw: GraphEdge[]): AggregatedEdge[] {
 
 function maxEdgeWeight(edges: AggregatedEdge[]): number {
   return edges.reduce((m, e) => Math.max(m, e.weight), 1);
+}
+
+function primaryEdgeType(types: string[]): string {
+  const order = ["share", "retweet", "quote", "reply"];
+  for (const t of order) {
+    if (types.includes(t)) return t;
+  }
+  return types[0] ?? "unknown";
+}
+
+function edgeColorForTypes(types: string[], hubAuthorId: string | null, from: string): string {
+  const primary = primaryEdgeType(types);
+  if (from === hubAuthorId) return "rgba(245,166,35,0.9)";
+  if (primary === "quote") return "rgba(187,143,206,0.9)";
+  if (primary === "reply") return "rgba(93,173,226,0.9)";
+  if (primary === "share" || primary === "retweet") return "rgba(245,166,35,0.75)";
+  return "rgba(42,56,76,0.9)";
+}
+
+function edgeDashForTypes(types: string[]): number[] | undefined {
+  const primary = primaryEdgeType(types);
+  if (primary === "reply") return [6, 4];
+  if (primary === "quote") return [2, 3];
+  return undefined;
 }
 
 function applyEdgeWeightFilter(minWeight: number): void {
@@ -183,6 +215,56 @@ function topologyCaption(meta: GraphLayoutMeta): string {
   }
 }
 
+function formatTypeBreakdown(byType: Record<string, number>): string {
+  const parts = Object.entries(byType)
+    .sort((a, b) => b[1] - a[1])
+    .map(([t, n]) => `${EDGE_TYPE_LABELS[t] ?? t}: ${n}`);
+  return parts.length ? parts.join(" · ") : "none recorded";
+}
+
+export function renderGraphDiagnostics(
+  host: HTMLElement,
+  graph: PropagationGraph,
+  meta: GraphLayoutMeta
+): void {
+  const stats: GraphInteractionStats = graph.stats ?? {
+    edge_count: graph.edges.length,
+    author_count: graph.authors.length,
+    connected_author_count: 0,
+    isolated_author_count: graph.authors.length,
+    by_type: {},
+  };
+
+  const empty = stats.edge_count === 0;
+  host.innerHTML = empty
+    ? `
+    <div class="graph-diagnostics graph-diagnostics-empty" role="status">
+      <p class="graph-diagnostics-title"><strong>No propagation edges in this snapshot</strong></p>
+      <p class="graph-diagnostics-body">
+        ${stats.author_count} author(s) ingested · ${stats.isolated_author_count} with no SHARE, REPLY, or QUOTE target in the batch.
+        Search-only X pulls often miss retweet/reply/quote metadata until those interaction types appear in results.
+      </p>
+      <ul class="graph-diagnostics-list">
+        <li>Re-run ingest after deploying reply/quote edge parsing (Phase 1).</li>
+        <li>Check <strong>Anomalies</strong> and duplicate panels for text-level coordination meanwhile.</li>
+        <li>List timelines (<code>list:&lt;id&gt;</code>) can surface more retweets than keyword search alone.</li>
+      </ul>
+    </div>
+  `
+    : `
+    <div class="graph-diagnostics" role="status">
+      <p class="graph-diagnostics-metrics">
+        <strong>${stats.edge_count}</strong> edge(s) ·
+        <strong>${stats.author_count}</strong> authors ·
+        <strong>${stats.connected_author_count}</strong> in network ·
+        <strong>${stats.isolated_author_count}</strong> isolated
+      </p>
+      <p class="graph-diagnostics-types">${formatTypeBreakdown(stats.by_type)}</p>
+      <p class="graph-diagnostics-topology">${topologyCaption(meta)}</p>
+    </div>
+  `;
+}
+
 export function focusPropagationAuthor(authorId: string | null): void {
   if (!activeNetwork) return;
   if (!authorId) {
@@ -219,6 +301,42 @@ export function renderPropagationGraph(
   graphMeta = analyzeTopology(graph, cib);
   const meta = graphMeta;
   physicsFrozen = false;
+
+  const emptyHost = document.getElementById("graph-empty-state");
+  const canvasWrap = document.getElementById("propagation-graph-wrap");
+  const controls = document.getElementById("graph-controls-row");
+  const isEmpty = graph.edges.length === 0;
+
+  if (emptyHost) {
+    if (isEmpty) {
+      emptyHost.hidden = false;
+      emptyHost.innerHTML =
+        "<p class=\"graph-empty-placeholder\">No edges to render — ingest SHARE, REPLY, or QUOTE interactions, then re-export the snapshot.</p>";
+    } else {
+      emptyHost.hidden = true;
+      emptyHost.innerHTML = "";
+    }
+  }
+  if (canvasWrap) {
+    canvasWrap.hidden = isEmpty;
+  }
+  if (controls) {
+    controls.hidden = isEmpty;
+  }
+
+  const diagHost = document.getElementById("graph-diagnostics-host");
+  if (diagHost) {
+    renderGraphDiagnostics(diagHost, graph, meta);
+  }
+
+  if (isEmpty) {
+    container.innerHTML = "";
+    const legend = container.parentElement?.querySelector(".graph-legend");
+    if (legend) {
+      legend.textContent = topologyCaption(meta);
+    }
+    return meta;
+  }
 
   const outDegree = new Map<string, number>();
   const inDegree = new Map<string, number>();
@@ -259,14 +377,12 @@ export function renderPropagationGraph(
       to: e.to,
       value: e.weight,
       arrows: "to",
-      title: `${e.types.join(", ")} · weight ${e.weight}`,
+      title: `${e.types.map((t) => EDGE_TYPE_LABELS[t] ?? t).join(" + ")} · weight ${e.weight}`,
       color: {
-        color:
-          e.from === meta.hubAuthorId
-            ? "rgba(245,166,35,0.75)"
-            : "rgba(42,56,76,0.9)",
+        color: edgeColorForTypes(e.types, meta.hubAuthorId, e.from),
         highlight: "#c0392b",
       },
+      dashes: edgeDashForTypes(e.types),
       width: Math.min(6, 1 + e.weight * 0.65),
       hidden: false,
     }))
@@ -314,21 +430,19 @@ export function renderPropagationGraph(
   return meta;
 }
 
-export function graphPanelHtml(meta: GraphLayoutMeta | null): string {
-  const badge =
-    meta?.topology === "star"
-      ? '<span class="topology-badge topology-star">star / coordinated</span>'
-      : meta?.topology === "distributed"
-        ? '<span class="topology-badge topology-organic">distributed / organic-like</span>'
-        : meta?.topology === "isolated"
-          ? '<span class="topology-badge topology-isolated">no edges</span>'
-          : '<span class="topology-badge topology-sparse">sparse</span>';
-
+export function graphPanelHtml(): string {
   return `
     <section class="panel graph-panel" id="propagation-graph-panel">
-      <h2>Propagation network ${badge}</h2>
+      <h2 id="propagation-graph-heading">Propagation network</h2>
+      <div id="graph-diagnostics-host" class="graph-diagnostics-host"></div>
       <p class="graph-legend">Loading graph…</p>
-      <div class="graph-controls">
+      <div class="graph-edge-legend" aria-hidden="false">
+        <span class="graph-edge-key graph-edge-key-share">Share / RT</span>
+        <span class="graph-edge-key graph-edge-key-reply">Reply</span>
+        <span class="graph-edge-key graph-edge-key-quote">Quote</span>
+      </div>
+      <div id="graph-empty-state" class="graph-empty-state" hidden></div>
+      <div id="graph-controls-row" class="graph-controls">
         <label class="graph-control">
           <span>Min edge weight <strong id="edge-weight-value">1</strong></span>
           <input
@@ -350,8 +464,24 @@ export function graphPanelHtml(meta: GraphLayoutMeta | null): string {
           Freeze layout
         </button>
       </div>
-      <div id="propagation-graph" class="graph-canvas" role="img" aria-label="Author propagation network"></div>
-      <p class="metric-sub graph-hint">Raise min weight to hide single-share links · freeze layout after it settles · click nodes to filter posts</p>
+      <div id="propagation-graph-wrap" class="graph-canvas-wrap">
+        <div id="propagation-graph" class="graph-canvas" role="img" aria-label="Author propagation network"></div>
+      </div>
+      <p class="metric-sub graph-hint">Edge colors: orange = share/RT · blue dashed = reply · purple dotted = quote · click nodes to filter posts</p>
     </section>
   `;
+}
+
+export function updatePropagationGraphBadge(meta: GraphLayoutMeta): void {
+  const badgeHost = document.getElementById("propagation-graph-heading");
+  if (!badgeHost) return;
+  const badge =
+    meta.topology === "star"
+      ? '<span class="topology-badge topology-star">star / coordinated</span>'
+      : meta.topology === "distributed"
+        ? '<span class="topology-badge topology-organic">distributed / organic-like</span>'
+        : meta.topology === "isolated"
+          ? '<span class="topology-badge topology-isolated">no edges</span>'
+          : '<span class="topology-badge topology-sparse">sparse</span>';
+  badgeHost.innerHTML = `Propagation network ${badge}`;
 }
