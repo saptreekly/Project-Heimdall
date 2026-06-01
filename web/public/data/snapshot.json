@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-06-01T09:34:18.132784+00:00",
+  "generated_at": "2026-06-01T10:09:21.730169+00:00",
   "narratives": [
     {
       "id": 1,
@@ -18,7 +18,7 @@
       "id": 3,
       "name": "midterms_2026",
       "keywords": "2026 midterms,midterm elections 2026,2026 midterm fraud,2026 red wave,2026 blue wave,Senate race 2026,House race 2026",
-      "post_count": 127
+      "post_count": 128
     },
     {
       "id": 4,
@@ -1423,6 +1423,21 @@
     },
     "3": {
       "posts": [
+        {
+          "id": 168,
+          "platform": "x",
+          "external_id": "2061370632059642272",
+          "author_id": "1909841318026592256",
+          "author_handle": "@davidslosttt",
+          "text": "If 2026 is a blue wave year, it might be the year that Lauren Boebert finally goes down Despite repping the Trump+19 safe red CO-4 in eastern Colorado, Boebert only won by 10 in 2024 and she's running against a former Navy admiral",
+          "posted_at": "2026-06-01T08:53:51",
+          "outrage_index": 0.0035,
+          "sentiment_label": "neutral",
+          "benchmark_label": null,
+          "near_duplicate_group": null,
+          "copypasta_score": 0.0256,
+          "status_url": "https://x.com/i/web/status/2061370632059642272"
+        },
         {
           "id": 154,
           "platform": "x",
@@ -3334,7 +3349,7 @@
         "suspicion_score": 0.0,
         "organic_score": 1.0,
         "signals": [],
-        "node_count": 106,
+        "node_count": 107,
         "edge_count": 0,
         "density": 0.0,
         "top_amplifiers": [
@@ -3401,11 +3416,11 @@
         ],
         "coordinated_clusters": [],
         "iu_astroturf": {
-          "authors_in_narrative": 106,
+          "authors_in_narrative": 107,
           "platforms": [
             "x"
           ],
-          "x_authors_checked": 106,
+          "x_authors_checked": 107,
           "known_political_bots": 0,
           "known_bot_ratio": 0.0,
           "labeled_accounts": [],
@@ -3472,8 +3487,8 @@
           },
           {
             "date": "2026-06-01",
-            "mean_outrage": 0.1514,
-            "count": 34
+            "mean_outrage": 0.1472,
+            "count": 35
           }
         ],
         "trend": "stable"
@@ -4576,243 +4591,359 @@
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
+          },
+          {
+            "author_id": "1909841318026592256",
+            "handle": "@davidslosttt",
+            "max_outrage": 0.0035,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
           }
         ],
         "edges": []
       },
       "themes": {
         "narrative_id": 3,
-        "post_count": 127,
-        "cluster_count": 8,
-        "method": "kmeans",
+        "post_count": 128,
+        "cluster_count": 17,
+        "method": "dbscan",
         "model": "all-MiniLM-L6-v2",
         "clusters": [
           {
-            "cluster_id": 7,
+            "cluster_id": 11,
             "post_ids": [
-              102,
-              107,
-              152,
-              150,
-              149,
-              104,
-              95,
-              94,
-              67,
-              66,
-              65,
-              64,
-              105,
-              74,
-              63,
-              51,
-              91,
-              85,
-              83,
-              42,
-              81,
-              41,
-              34,
-              33,
-              32,
-              130,
-              166,
-              162
+              100,
+              133,
+              129,
+              128,
+              127,
+              126,
+              125,
+              160
             ],
-            "size": 28,
-            "cohesion": 0.6617,
-            "lexicon_hit_rate": 0.0204,
+            "size": 8,
+            "cohesion": 0.9846,
+            "lexicon_hit_rate": 0.1429,
             "emerging_theme": true,
             "label_terms": [
-              "race",
-              "republicans",
-              "house",
-              "senate",
-              "red",
-              "wave"
+              "nazi",
+              "losers",
+              "feel",
+              "sorry",
+              "senile",
+              "pig"
             ],
-            "sample_text": "No, they arent,.... With roughly one-third of the 2026 Republican primaries in the books, every candidate President Trump has backed in a House, Senate, or gubernatorial race has won, and I couldn't care less about \"trumps candidates\" and \"\u2026",
-            "first_seen": "2026-05-23",
+            "sample_text": "I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 We will destro\u2026",
+            "first_seen": "2026-05-31",
             "last_seen": "2026-06-01",
-            "active_days": 5
+            "active_days": 2
           },
           {
-            "cluster_id": 5,
+            "cluster_id": 0,
             "post_ids": [
-              56,
-              96,
-              106,
-              46,
-              44,
-              62,
-              40,
-              39,
-              36,
-              35,
-              31,
-              137,
-              136,
-              165,
-              164,
-              163,
-              157,
-              155,
-              154
+              144,
+              143,
+              140,
+              139,
+              101,
+              58,
+              55,
+              52
             ],
-            "size": 19,
-            "cohesion": 0.6157,
-            "lexicon_hit_rate": 0.0226,
+            "size": 8,
+            "cohesion": 0.9554,
+            "lexicon_hit_rate": 0.1429,
             "emerging_theme": true,
             "label_terms": [
-              "midterms",
+              "fraud",
+              "election",
+              "accountability",
               "midterm",
-              "elections",
-              "bitcoin",
-              "buy",
-              "says"
-            ],
-            "sample_text": "Hot Crypto Headlines Today \ud83d\udd25\ud83d\udea8 \u2022 Cathie Wood says the Trump administration could introduce a crypto de minimis tax exemption before the 2026 midterms. \u2022 Citibank forecasts Bitcoin could reach $189,000 in 2026. \u2022 Senator Cynthia Lummis says \"\u2026",
-            "first_seen": "2026-05-26",
-            "last_seen": "2026-06-01",
-            "active_days": 4
-          },
-          {
-            "cluster_id": 2,
-            "post_ids": [
-              108,
-              70,
-              80,
-              79,
-              76,
-              73,
-              88,
-              71,
-              86,
-              38,
-              135,
-              123,
-              122,
-              120,
-              167,
-              147,
-              161,
-              158
-            ],
-            "size": 18,
-            "cohesion": 0.6354,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
-            "label_terms": [
-              "midterms",
-              "wave",
-              "economic",
-              "blue",
-              "win",
+              "issue",
               "trump"
             ],
-            "sample_text": "Today per Pew Research: \u25c6 60% of Americans view Israel unfavorably \u25c6 80% of Democrats view Israel unfavorably \u25c6 57% of Republicans under 50 view Israel unfavorably \u25c6 73% of Americans do not trust Netanyahu 2026 midterms are coming. Politici\u2026",
-            "first_seen": "2026-05-28",
-            "last_seen": "2026-06-01",
-            "active_days": 4
-          },
-          {
-            "cluster_id": 1,
-            "post_ids": [
-              145,
-              142,
-              54,
-              53,
-              97,
-              50,
-              49,
-              48,
-              47,
-              45,
-              37,
-              134,
-              132,
-              131,
-              124,
-              121,
-              119,
-              156
-            ],
-            "size": 18,
-            "cohesion": 0.6245,
-            "lexicon_hit_rate": 0.0556,
-            "emerging_theme": true,
-            "label_terms": [
-              "elections",
-              "election",
-              "mail",
-              "vote",
-              "fraud",
-              "federal"
-            ],
-            "sample_text": "YOU ARE BUSTED! Democrats paid homeless to vote May 21, 2026 By: Frank Holmes, reporter That thing that Democrats claim never happens just happened again. A key player in largest Democratic state in the union just got busted coaching and pa\u2026",
+            "sample_text": "Elections are still not secure. DemoKKKrats still cheat. Republicans still don't seem to care. Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accou\u2026",
             "first_seen": "2026-05-21",
-            "last_seen": "2026-06-01",
+            "last_seen": "2026-05-27",
             "active_days": 5
           },
           {
             "cluster_id": 6,
             "post_ids": [
-              144,
-              143,
-              141,
-              140,
-              139,
-              138,
-              101,
-              60,
-              59,
-              58,
-              57,
-              55,
-              52,
-              43,
-              99
+              69,
+              79,
+              76,
+              72,
+              71,
+              168
             ],
-            "size": 15,
-            "cohesion": 0.7445,
-            "lexicon_hit_rate": 0.1238,
+            "size": 6,
+            "cohesion": 0.8683,
+            "lexicon_hit_rate": 0.0,
             "emerging_theme": true,
             "label_terms": [
-              "fraud",
-              "midterm",
-              "trump",
-              "election",
-              "doj",
-              "held"
+              "wave",
+              "blue",
+              "year",
+              "red",
+              "won",
+              "boebert"
             ],
-            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
-            "first_seen": "2026-05-21",
-            "last_seen": "2026-05-31",
-            "active_days": 8
+            "sample_text": "If 2026 is a blue wave year, it might be the year that Lauren Boebert finally goes down Despite repping the Trump+19 safe red CO-4 in eastern Colorado, Boebert only won by 10 in 2024 and she's running against a former Navy admiral",
+            "first_seen": "2026-05-30",
+            "last_seen": "2026-06-01",
+            "active_days": 3
           },
           {
-            "cluster_id": 0,
+            "cluster_id": 1,
             "post_ids": [
-              153,
+              102,
+              94,
+              65,
+              74,
+              51,
+              91
+            ],
+            "size": 6,
+            "cohesion": 0.8359,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "republicans",
+              "house",
+              "seats",
+              "redistricting",
+              "fraud",
+              "midterm"
+            ],
+            "sample_text": "JUST IN: Temu Obama Hakeem Jeffries has fallen into DESPAIR after realizing Republicans stand to gain A DOZEN US House seats on the 2026 map, throwing massive cold water on their \"blue wave\" hopes Texas, Missouri, Ohio, North Carolina, Flor\u2026",
+            "first_seen": "2026-05-23",
+            "last_seen": "2026-05-31",
+            "active_days": 3
+          },
+          {
+            "cluster_id": 8,
+            "post_ids": [
+              50,
+              49,
+              48
+            ],
+            "size": 3,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "remember",
+              "vote",
+              "nov",
+              "midterm",
+              "elections",
+              "dem"
+            ],
+            "sample_text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 15,
+            "post_ids": [
+              123,
+              122,
+              120
+            ],
+            "size": 3,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "economic",
+              "affordability",
+              "set",
+              "dominate",
+              "midterms",
+              "migration"
+            ],
+            "sample_text": "With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations on President",
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-01",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 3,
+            "post_ids": [
               98,
+              93,
+              92
+            ],
+            "size": 3,
+            "cohesion": 0.9452,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "live",
+              "love",
+              "loud",
+              "fan",
+              "fest",
+              "heart"
+            ],
+            "sample_text": "2026/05/25 \u0e1a\u0e38\u0e01\u0e2b\u0e25\u0e31\u0e07\u0e40\u0e27\u0e17\u0e35 LOVE OUT LOUD FAN FEST 2026 : HEART RACE | GMMTV LIVE HOUSE 2026/05/30 \ud83d\udd34LIVE \u0e2a\u0e31\u0e21\u0e20\u0e32\u0e29\u0e13\u0e4c \"\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c \u0e15\u0e31\u0e49\u0e07\u0e28\u0e31\u0e01\u0e14\u0e34\u0e4c\u0e22\u0e37\u0e19\" \u0e1e\u0e23\u0e35\u0e40\u0e0b\u0e19\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e04\u0e19\u0e43\u0e2b\u0e21\u0e48\u0e02\u0e2d\u0e07 Birdy Barista \u0e1b\u0e2d\u0e19\u0e14\u0e4c\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c ppnaravit phuwintang",
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-05-31",
+            "active_days": 2
+          },
+          {
+            "cluster_id": 12,
+            "post_ids": [
+              39,
+              137,
+              165
+            ],
+            "size": 3,
+            "cohesion": 0.9093,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "midterms",
+              "think",
+              "free",
+              "fair",
+              "according",
+              "political"
+            ],
+            "sample_text": "Do you think the 2026 midterms will be free and fair?: 59.4% of 26,048 Total Votes say, \"NO!\"",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-06-01",
+            "active_days": 2
+          },
+          {
+            "cluster_id": 7,
+            "post_ids": [
+              105,
+              88,
+              83
+            ],
+            "size": 3,
+            "cohesion": 0.8927,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "texas",
+              "senate",
+              "race",
+              "new",
+              "boom",
+              "latino"
+            ],
+            "sample_text": "Axios: Texas population boom, Latino backlash scramble 2026 Senate race \"Texas has gained more than 2.5 million new residents since 2020  -  roughly the entire population of New Mexico  -  reshaping the electorate and injecting new uncertai\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 4,
+            "post_ids": [
+              152,
+              150,
+              64
+            ],
+            "size": 3,
+            "cohesion": 0.8798,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "red",
+              "wave",
+              "republicans",
+              "democrats",
+              "doing",
+              "november"
+            ],
+            "sample_text": "No Republicans will be doing ANOTHER \u201cRED WAVE\u201d this November 2026! Get ready to loose democrats!",
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-05-31",
+            "active_days": 2
+          },
+          {
+            "cluster_id": -1,
+            "post_ids": [
+              145,
+              142,
+              141,
+              138,
+              60,
+              56,
+              54,
+              53,
+              108,
+              107,
+              153,
               151,
+              97,
+              96,
               148,
               103,
-              69,
+              70,
+              95,
               68,
-              93,
-              92,
+              67,
+              66,
+              80,
               78,
               77,
+              106,
               75,
-              72,
+              47,
+              46,
+              45,
+              44,
+              63,
+              89,
+              73,
+              62,
+              43,
+              86,
+              85,
+              61,
+              42,
+              81,
+              40,
+              41,
+              38,
+              37,
+              36,
+              35,
+              32,
+              31,
+              99,
+              136,
+              135,
+              134,
+              132,
+              131,
+              130,
+              121,
+              167,
+              166,
+              164,
+              163,
+              162,
+              147,
+              161,
               159,
-              146
+              158,
+              157,
+              156,
+              155,
+              146,
+              154
             ],
-            "size": 15,
-            "cohesion": 0.5867,
-            "lexicon_hit_rate": 0.019,
-            "emerging_theme": true,
+            "size": 70,
+            "cohesion": 0.492,
+            "lexicon_hit_rate": 0.0306,
+            "emerging_theme": false,
             "label_terms": [
               "oil",
               "mkt",
@@ -4822,256 +4953,180 @@
               "vix"
             ],
             "sample_text": "5/25-29 MKT/\ud83c\uddfa\ud83c\uddf8\u23f8\ufe0f!?\ufe0f\ud83d\udd25\ud83c\uddee\ud83c\uddf7; \ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7\u23f8\ufe0f\ud83d\udd25.OpenHormuz\\10yR; '26e/Mkt W,5/27-, Jensen GTC/COMPUTEX 2026\ud83c\uddf9\ud83c\uddfc M,6/1, Jensen Keynote\ud83d\udde3\ufe0f/AI/Quantum SS \ud83c\uddfa\ud83c\uddf8\u23f8\ufe0f\ud83d\udd25\ud83c\uddee\ud83c\uddf7:GOP\ud83d\udc41\ufe0fMidterms^GCC+EU+Asia:\ud83d\udeab\ud83c\udf86\ud83d\udd25Strike; +Oil\\6.5%~90, BTC~/ GLD ~/ MKT/NDX+1.4%/SPX+1%/DJI+1% *M* Memor\u2026",
-            "first_seen": "2026-05-29",
+            "first_seen": "2026-05-21",
             "last_seen": "2026-06-01",
-            "active_days": 4
+            "active_days": 11
           },
           {
-            "cluster_id": 3,
+            "cluster_id": 2,
             "post_ids": [
-              61,
-              100,
-              133,
-              129,
-              128,
-              127,
-              126,
-              125,
-              160
+              59,
+              57
             ],
-            "size": 9,
-            "cohesion": 0.9374,
-            "lexicon_hit_rate": 0.127,
-            "emerging_theme": true,
+            "size": 2,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.2857,
+            "emerging_theme": false,
             "label_terms": [
-              "nazi",
-              "losers",
-              "america",
-              "feel",
-              "sorry",
-              "senile"
+              "sidney",
+              "powell",
+              "elections",
+              "president",
+              "trump",
+              "breaking"
             ],
-            "sample_text": "The hearts of those little boys in 2026, now BEAT in the bodies of maga cowards who proudly wave the Confederate flag and DEFEND rapists &amp; pedophiles, NOT America! Their red hat of HATred just replaced the sheets they love to claim only\u2026",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-06-01",
+            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
+            "first_seen": "2026-05-25",
+            "last_seen": "2026-05-26",
             "active_days": 2
           },
           {
-            "cluster_id": 4,
+            "cluster_id": 13,
             "post_ids": [
-              90,
-              89,
-              87,
+              34,
+              33
+            ],
+            "size": 2,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "fascist",
+              "redneck",
+              "judges",
+              "cut",
+              "chase",
+              "block"
+            ],
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 10,
+            "post_ids": [
               84,
               82
             ],
-            "size": 5,
-            "cohesion": 0.7709,
-            "lexicon_hit_rate": 0.0286,
-            "emerging_theme": true,
+            "size": 2,
+            "cohesion": 0.9625,
+            "lexicon_hit_rate": 0.0714,
+            "emerging_theme": false,
             "label_terms": [
-              "senate",
-              "race",
               "texas",
-              "odds",
-              "maine",
-              "talarico"
+              "talarico",
+              "senate",
+              "internal",
+              "james",
+              "ken"
             ],
             "sample_text": "The X post from polling account highlights a May 27-28, 2026 internal poll by Slingshot Strategies for Democrat James Talarico showing him leading Republican Ken Paxton 47%-44% in the Texas 2026 US Senate race among 1,670 likely voters. Las\u2026",
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "active_days": 1
+          },
+          {
+            "cluster_id": 9,
+            "post_ids": [
+              90,
+              87
+            ],
+            "size": 2,
+            "cohesion": 0.9606,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "odds",
+              "maine",
+              "senate",
+              "graham",
+              "platner",
+              "susan"
+            ],
+            "sample_text": "Graham Platner odds to win the Maine Senate Race Drop after the story about his Sexually Explicit Texts drop 2026 Maine Senate Winner Odds Per \ud83d\udd35 Graham Platner: 59% (-15) \ud83d\udd34 Susan Collins: 41% (+15) (+/- vs May 19)",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 14,
+            "post_ids": [
+              124,
+              119
+            ],
+            "size": 2,
+            "cohesion": 0.953,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "federal",
+              "order",
+              "mail",
+              "trump",
+              "ballot",
+              "executive"
+            ],
+            "sample_text": "\ud83d\udea8Federal Judge Declines to Block Trump\u2019s Mail-In Ballot Verification Order Ahead of 2026 Midterms Washington, D.C., U.S. District Judge Carl Nichols on May 28 declined to immediately halt President Donald Trump\u2019s executive order directing f\u2026",
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-01",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 5,
+            "post_ids": [
+              149,
+              104
+            ],
+            "size": 2,
+            "cohesion": 0.9223,
+            "lexicon_hit_rate": 0.1429,
+            "emerging_theme": false,
+            "label_terms": [
+              "louisiana",
+              "red",
+              "wave",
+              "seats",
+              "hits",
+              "senate"
+            ],
+            "sample_text": "\ud83d\udea8 LOUISIANA RED WAVE HITS Senate passes redrawn congressional map, crushing racial gerrymandering and ELIMINATING a Democrat safe seat for good. Louisiana flips to solid 5R-1D dominance ahead of 2026 midterms. Heads straight to Gov. Jeff La\u2026",
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-05-30",
+            "active_days": 2
           }
         ],
-        "emerging_theme_count": 8,
+        "emerging_theme_count": 10,
         "available": true,
         "reason": null,
         "timeline": [
           {
-            "cluster_id": 1,
-            "label_terms": [
-              "elections",
-              "election",
-              "mail",
-              "vote",
-              "fraud",
-              "federal"
-            ],
-            "emerging_theme": true,
-            "size": 18,
-            "first_seen": "2026-05-21",
-            "last_seen": "2026-06-01",
-            "post_ids": [
-              145,
-              142,
-              54,
-              53,
-              97,
-              50,
-              49,
-              48,
-              47,
-              45,
-              37,
-              134,
-              132,
-              131,
-              124,
-              121,
-              119,
-              156
-            ]
-          },
-          {
-            "cluster_id": 6,
+            "cluster_id": 0,
             "label_terms": [
               "fraud",
-              "midterm",
-              "trump",
               "election",
-              "doj",
-              "held"
-            ],
-            "emerging_theme": true,
-            "size": 15,
-            "first_seen": "2026-05-21",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              144,
-              143,
-              141,
-              140,
-              139,
-              138,
-              101,
-              60,
-              59,
-              58,
-              57,
-              55,
-              52,
-              43,
-              99
-            ]
-          },
-          {
-            "cluster_id": 7,
-            "label_terms": [
-              "race",
-              "republicans",
-              "house",
-              "senate",
-              "red",
-              "wave"
-            ],
-            "emerging_theme": true,
-            "size": 28,
-            "first_seen": "2026-05-23",
-            "last_seen": "2026-06-01",
-            "post_ids": [
-              102,
-              107,
-              152,
-              150,
-              149,
-              104,
-              95,
-              94,
-              67,
-              66,
-              65,
-              64,
-              105,
-              74,
-              63,
-              51,
-              91,
-              85,
-              83,
-              42,
-              81,
-              41,
-              34,
-              33,
-              32,
-              130,
-              166,
-              162
-            ]
-          },
-          {
-            "cluster_id": 5,
-            "label_terms": [
-              "midterms",
+              "accountability",
               "midterm",
-              "elections",
-              "bitcoin",
-              "buy",
-              "says"
-            ],
-            "emerging_theme": true,
-            "size": 19,
-            "first_seen": "2026-05-26",
-            "last_seen": "2026-06-01",
-            "post_ids": [
-              56,
-              96,
-              106,
-              46,
-              44,
-              62,
-              40,
-              39,
-              36,
-              35,
-              31,
-              137,
-              136,
-              165,
-              164,
-              163,
-              157,
-              155,
-              154
-            ]
-          },
-          {
-            "cluster_id": 2,
-            "label_terms": [
-              "midterms",
-              "wave",
-              "economic",
-              "blue",
-              "win",
+              "issue",
               "trump"
             ],
             "emerging_theme": true,
-            "size": 18,
-            "first_seen": "2026-05-28",
-            "last_seen": "2026-06-01",
+            "size": 8,
+            "first_seen": "2026-05-21",
+            "last_seen": "2026-05-27",
             "post_ids": [
-              108,
-              70,
-              80,
-              79,
-              76,
-              73,
-              88,
-              71,
-              86,
-              38,
-              135,
-              123,
-              122,
-              120,
-              167,
-              147,
-              161,
-              158
+              144,
+              143,
+              140,
+              139,
+              101,
+              58,
+              55,
+              52
             ]
           },
           {
-            "cluster_id": 0,
+            "cluster_id": -1,
             "label_terms": [
               "oil",
               "mkt",
@@ -5080,44 +5135,222 @@
               "btc",
               "vix"
             ],
-            "emerging_theme": true,
-            "size": 15,
-            "first_seen": "2026-05-29",
+            "emerging_theme": false,
+            "size": 70,
+            "first_seen": "2026-05-21",
             "last_seen": "2026-06-01",
             "post_ids": [
+              145,
+              142,
+              141,
+              138,
+              60,
+              56,
+              54,
+              53,
+              108,
+              107,
               153,
-              98,
               151,
+              97,
+              96,
               148,
               103,
-              69,
+              70,
+              95,
               68,
-              93,
-              92,
+              67,
+              66,
+              80,
               78,
               77,
+              106,
               75,
-              72,
+              47,
+              46,
+              45,
+              44,
+              63,
+              89,
+              73,
+              62,
+              43,
+              86,
+              85,
+              61,
+              42,
+              81,
+              40,
+              41,
+              38,
+              37,
+              36,
+              35,
+              32,
+              31,
+              99,
+              136,
+              135,
+              134,
+              132,
+              131,
+              130,
+              121,
+              167,
+              166,
+              164,
+              163,
+              162,
+              147,
+              161,
               159,
-              146
+              158,
+              157,
+              156,
+              155,
+              146,
+              154
+            ]
+          },
+          {
+            "cluster_id": 1,
+            "label_terms": [
+              "republicans",
+              "house",
+              "seats",
+              "redistricting",
+              "fraud",
+              "midterm"
+            ],
+            "emerging_theme": true,
+            "size": 6,
+            "first_seen": "2026-05-23",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              102,
+              94,
+              65,
+              74,
+              51,
+              91
+            ]
+          },
+          {
+            "cluster_id": 2,
+            "label_terms": [
+              "sidney",
+              "powell",
+              "elections",
+              "president",
+              "trump",
+              "breaking"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-25",
+            "last_seen": "2026-05-26",
+            "post_ids": [
+              59,
+              57
             ]
           },
           {
             "cluster_id": 3,
             "label_terms": [
-              "nazi",
-              "losers",
-              "america",
-              "feel",
-              "sorry",
-              "senile"
+              "live",
+              "love",
+              "loud",
+              "fan",
+              "fest",
+              "heart"
             ],
             "emerging_theme": true,
-            "size": 9,
+            "size": 3,
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              98,
+              93,
+              92
+            ]
+          },
+          {
+            "cluster_id": 4,
+            "label_terms": [
+              "red",
+              "wave",
+              "republicans",
+              "democrats",
+              "doing",
+              "november"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              152,
+              150,
+              64
+            ]
+          },
+          {
+            "cluster_id": 5,
+            "label_terms": [
+              "louisiana",
+              "red",
+              "wave",
+              "seats",
+              "hits",
+              "senate"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-05-30",
+            "post_ids": [
+              149,
+              104
+            ]
+          },
+          {
+            "cluster_id": 6,
+            "label_terms": [
+              "wave",
+              "blue",
+              "year",
+              "red",
+              "won",
+              "boebert"
+            ],
+            "emerging_theme": true,
+            "size": 6,
+            "first_seen": "2026-05-30",
+            "last_seen": "2026-06-01",
+            "post_ids": [
+              69,
+              79,
+              76,
+              72,
+              71,
+              168
+            ]
+          },
+          {
+            "cluster_id": 11,
+            "label_terms": [
+              "nazi",
+              "losers",
+              "feel",
+              "sorry",
+              "senile",
+              "pig"
+            ],
+            "emerging_theme": true,
+            "size": 8,
             "first_seen": "2026-05-31",
             "last_seen": "2026-06-01",
             "post_ids": [
-              61,
               100,
               133,
               129,
@@ -5129,25 +5362,159 @@
             ]
           },
           {
-            "cluster_id": 4,
+            "cluster_id": 8,
             "label_terms": [
-              "senate",
-              "race",
-              "texas",
-              "odds",
-              "maine",
-              "talarico"
+              "remember",
+              "vote",
+              "nov",
+              "midterm",
+              "elections",
+              "dem"
             ],
             "emerging_theme": true,
-            "size": 5,
+            "size": 3,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              50,
+              49,
+              48
+            ]
+          },
+          {
+            "cluster_id": 12,
+            "label_terms": [
+              "midterms",
+              "think",
+              "free",
+              "fair",
+              "according",
+              "political"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-06-01",
+            "post_ids": [
+              39,
+              137,
+              165
+            ]
+          },
+          {
+            "cluster_id": 7,
+            "label_terms": [
+              "texas",
+              "senate",
+              "race",
+              "new",
+              "boom",
+              "latino"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              105,
+              88,
+              83
+            ]
+          },
+          {
+            "cluster_id": 13,
+            "label_terms": [
+              "fascist",
+              "redneck",
+              "judges",
+              "cut",
+              "chase",
+              "block"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              34,
+              33
+            ]
+          },
+          {
+            "cluster_id": 10,
+            "label_terms": [
+              "texas",
+              "talarico",
+              "senate",
+              "internal",
+              "james",
+              "ken"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              84,
+              82
+            ]
+          },
+          {
+            "cluster_id": 9,
+            "label_terms": [
+              "odds",
+              "maine",
+              "senate",
+              "graham",
+              "platner",
+              "susan"
+            ],
+            "emerging_theme": false,
+            "size": 2,
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "post_ids": [
               90,
-              89,
-              87,
-              84,
-              82
+              87
+            ]
+          },
+          {
+            "cluster_id": 15,
+            "label_terms": [
+              "economic",
+              "affordability",
+              "set",
+              "dominate",
+              "midterms",
+              "migration"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-01",
+            "post_ids": [
+              123,
+              122,
+              120
+            ]
+          },
+          {
+            "cluster_id": 14,
+            "label_terms": [
+              "federal",
+              "order",
+              "mail",
+              "trump",
+              "ballot",
+              "executive"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-01",
+            "post_ids": [
+              124,
+              119
             ]
           }
         ]
@@ -5671,7 +6038,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-01",
-      "count": 8
+      "count": 9
     }
   }
 }
