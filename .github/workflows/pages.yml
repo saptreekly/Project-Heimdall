@@ -1,5 +1,5 @@
 # Build analysis data + dashboard, deploy to GitHub Pages.
-# Enable: Settings → Pages → Source: GitHub Actions.
+# One-time: Settings → Pages → Source must be "GitHub Actions" (Not Found until enabled).
 #
 # Data sources (first match wins):
 #   1. Committed data/dashboard/heimdall.db (copy local DB here and push)
