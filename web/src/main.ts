@@ -30,8 +30,10 @@ import {
   renderNarrativeCrossPollination,
 } from "./cross-pollination";
 import {
+  bindFuzzyJaccardHud,
   fuzzyAmplificationPanelHtml,
   renderFuzzyClusters,
+  syncJaccardThresholdHud,
   updateFuzzyThresholdBadge,
 } from "./fuzzy-amplification";
 import {
@@ -182,10 +184,9 @@ function applyJaccardThreshold(threshold: number): void {
   );
   setInvestigationPosts(applyClusterTagsToPosts(clusterSourcePosts, lastNearDup));
   const fuzzyHost = document.getElementById("fuzzy-clusters-host");
-  if (fuzzyHost) renderFuzzyClusters(fuzzyHost, lastNearDup);
+  if (fuzzyHost) renderFuzzyClusters(fuzzyHost, lastNearDup, { pulse: true });
   updateFuzzyThresholdBadge(threshold, lastNearDup.cross_author_fuzzy_count ?? 0);
-  const label = document.getElementById("jaccard-threshold-value");
-  if (label) label.textContent = threshold.toFixed(2);
+  syncJaccardThresholdHud(threshold, resolveThresholdBounds(lastNearDup));
   updatePostsPanel();
 }
 
@@ -303,10 +304,6 @@ function bindPostToolbar(): void {
     groupAuthorPosts = (e.target as HTMLInputElement).checked;
     updatePostsPanel();
   });
-  const jaccardSlider = document.getElementById("jaccard-threshold") as HTMLInputElement | null;
-  jaccardSlider?.addEventListener("input", () => {
-    applyJaccardThreshold(parseFloat(jaccardSlider.value));
-  });
 }
 
 function refreshBriefPanel(): void {
@@ -358,9 +355,6 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
             </select>
             <label class="toolbar-check"><input type="checkbox" id="group-authors-toggle" checked /> Group busy authors</label>
             <label class="toolbar-check"><input type="checkbox" id="blur-sensitive-toggle" ${blurSensitive ? "checked" : ""} /> Blur sensitive text</label>
-            <label for="jaccard-threshold" class="toolbar-label">Jaccard</label>
-            <input type="range" id="jaccard-threshold" class="toolbar-range" min="0.55" max="0.98" step="0.01" value="0.82" aria-label="Jaccard similarity threshold" />
-            <span id="jaccard-threshold-value" class="toolbar-range-value">0.82</span>
             <button type="button" id="refresh-btn" class="btn btn-secondary">Reload snapshot</button>
           </div>
         </div>
@@ -432,15 +426,6 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     );
     lastNearDup = recomputeNearDuplicatesReport(posts, jaccardThreshold, nearDup);
     setInvestigationPosts(applyClusterTagsToPosts(posts, lastNearDup));
-    const jaccardSlider = document.getElementById("jaccard-threshold") as HTMLInputElement | null;
-    const jaccardLabel = document.getElementById("jaccard-threshold-value");
-    if (jaccardSlider) {
-      jaccardSlider.min = String(bounds.min);
-      jaccardSlider.max = String(bounds.max);
-      jaccardSlider.step = String(bounds.step);
-      jaccardSlider.value = String(jaccardThreshold);
-    }
-    if (jaccardLabel) jaccardLabel.textContent = jaccardThreshold.toFixed(2);
     if (narrativeMeta) {
       briefContext = {
         narrative: narrativeMeta,
@@ -507,7 +492,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         </section>
       </div>
 
-      ${fuzzyAmplificationPanelHtml(nearDup)}
+      ${fuzzyAmplificationPanelHtml(nearDup, jaccardThreshold, bounds)}
 
       ${crossPollinationPanelHtml(crossPollination)}
 
@@ -615,13 +600,15 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       renderNarrativeCrossPollination(
         crossNarrativeHost,
         pollinationHits,
-        narrativeMeta.name
+        narrativeMeta.name,
+        narrativeId
       );
     }
 
     bindInvestigationChrome();
     bindClusterButtons();
     bindPostToolbar();
+    bindFuzzyJaccardHud(applyJaccardThreshold);
     bindBriefPrint();
     bindPostListAuthorLinks(document.getElementById("post-list-host") ?? document);
     updatePostsPanel();

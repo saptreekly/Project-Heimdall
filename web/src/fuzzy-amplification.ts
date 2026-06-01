@@ -2,8 +2,18 @@ import { selectDuplicateCluster } from "./investigation";
 import { escapeHtml, truncate } from "./post-display";
 import type { CrossAuthorFuzzyCluster, NearDuplicatesReport } from "./types";
 
-export function fuzzyAmplificationPanelHtml(report: NearDuplicatesReport | null): string {
-  const th = report?.threshold ?? 0.82;
+export type JaccardHudBounds = {
+  min: number;
+  max: number;
+  step: number;
+};
+
+export function fuzzyAmplificationPanelHtml(
+  report: NearDuplicatesReport | null,
+  threshold: number,
+  bounds: JaccardHudBounds
+): string {
+  const th = threshold;
   const count = report?.cross_author_fuzzy_count ?? 0;
   const badge =
     count > 0
@@ -12,15 +22,71 @@ export function fuzzyAmplificationPanelHtml(report: NearDuplicatesReport | null)
 
   return `
     <section class="panel panel-fuzzy" id="fuzzy-amplification-panel">
-      <h2>Cross-author fuzzy amplification ${badge}</h2>
+      <div class="fuzzy-panel-header">
+        <h2>Cross-author fuzzy amplification ${badge}</h2>
+        <div class="fuzzy-panel-hud" id="fuzzy-panel-hud" role="group" aria-label="Jaccard threshold controls">
+          <label for="jaccard-threshold" class="fuzzy-hud-label">Jaccard threshold</label>
+          <input
+            type="range"
+            id="jaccard-threshold"
+            class="fuzzy-hud-range"
+            min="${bounds.min}"
+            max="${bounds.max}"
+            step="${bounds.step}"
+            value="${th}"
+            aria-valuemin="${bounds.min}"
+            aria-valuemax="${bounds.max}"
+            aria-valuenow="${th}"
+            aria-label="Jaccard similarity threshold for fuzzy clustering"
+          />
+          <output id="jaccard-threshold-value" class="fuzzy-hud-value" for="jaccard-threshold">${th.toFixed(2)}</output>
+          <span class="fuzzy-hud-hint">Lower = wider net · Higher = stricter</span>
+        </div>
+      </div>
       <p class="chart-caption">
         Token Jaccard similarity across <em>different</em> accounts (not exact-string match).
-        Use the toolbar <strong>Jaccard threshold</strong> slider to widen or tighten lexical distance (live, no re-export).
+        Adjust the threshold above while you review clusters below — no re-export required.
         Click a cluster to filter posts.
       </p>
       <div id="fuzzy-clusters-host"></div>
     </section>
   `;
+}
+
+export function syncJaccardThresholdHud(threshold: number, bounds: JaccardHudBounds): void {
+  const slider = document.getElementById("jaccard-threshold") as HTMLInputElement | null;
+  const label = document.getElementById("jaccard-threshold-value");
+  if (slider) {
+    slider.min = String(bounds.min);
+    slider.max = String(bounds.max);
+    slider.step = String(bounds.step);
+    slider.value = String(threshold);
+    slider.setAttribute("aria-valuenow", threshold.toFixed(2));
+  }
+  if (label) label.textContent = threshold.toFixed(2);
+}
+
+export function bindFuzzyJaccardHud(onInput: (value: number) => void): void {
+  const slider = document.getElementById("jaccard-threshold") as HTMLInputElement | null;
+  if (!slider) return;
+  slider.addEventListener("input", () => {
+    const value = parseFloat(slider.value);
+    const label = document.getElementById("jaccard-threshold-value");
+    if (label) label.textContent = value.toFixed(2);
+    slider.setAttribute("aria-valuenow", value.toFixed(2));
+    onInput(value);
+  });
+}
+
+export function pulseFuzzyClusterCards(): void {
+  const host = document.getElementById("fuzzy-clusters-host");
+  if (!host) return;
+  host.querySelectorAll<HTMLElement>(".fuzzy-cluster-btn").forEach((btn) => {
+    btn.classList.remove("recalculating");
+    void btn.offsetWidth;
+    btn.classList.add("recalculating");
+    window.setTimeout(() => btn.classList.remove("recalculating"), 400);
+  });
 }
 
 export function updateFuzzyThresholdBadge(threshold: number, clusterCount: number): void {
@@ -36,7 +102,8 @@ export function updateFuzzyThresholdBadge(threshold: number, clusterCount: numbe
 
 export function renderFuzzyClusters(
   host: HTMLElement,
-  report: NearDuplicatesReport | null
+  report: NearDuplicatesReport | null,
+  options?: { pulse?: boolean }
 ): void {
   const clusters = report?.cross_author_fuzzy ?? [];
   if (!clusters.length) {
@@ -62,6 +129,8 @@ export function renderFuzzyClusters(
       document.getElementById("posts-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
+
+  if (options?.pulse) pulseFuzzyClusterCards();
 }
 
 function renderFuzzyClusterButton(c: CrossAuthorFuzzyCluster): string {
