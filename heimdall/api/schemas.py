@@ -47,6 +47,7 @@ class PostOut(BaseModel):
     sentiment_label: str | None = None
     benchmark_label: str | None = None
     near_duplicate_group: int | None = None
+    cross_author_fuzzy_cluster: int | None = None
     copypasta_score: float | None = None
     status_url: str | None = None
 

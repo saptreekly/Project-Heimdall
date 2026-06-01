@@ -51,6 +51,12 @@ class Settings(BaseSettings):
     use_embedding_themes: bool = False
     embedding_model: str = "all-MiniLM-L6-v2"
 
+    # Near-duplicate / fuzzy Jaccard (export default; dashboard can tune live)
+    near_duplicate_jaccard_threshold: float = 0.82
+    near_duplicate_jaccard_min: float = 0.55
+    near_duplicate_jaccard_max: float = 0.98
+    near_duplicate_jaccard_step: float = 0.01
+
     # Rate limits (requests per window)
     ingest_requests_per_minute: int = 30
     ingest_burst: int = 5

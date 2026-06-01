@@ -4,7 +4,9 @@ import {
   fetchAmplification,
   fetchBenchmark,
   fetchCib,
+  fetchCrossPollination,
   fetchNearDuplicates,
+  fetchNarrativeCrossPollinationHits,
   fetchPosts,
   fetchPropagationGraph,
   fetchSentimentShift,
@@ -22,6 +24,23 @@ import {
   renderDataLinksExtra,
   renderRateFooter,
 } from "./dashboard-meta";
+import {
+  crossPollinationPanelHtml,
+  renderGlobalCrossPollination,
+  renderNarrativeCrossPollination,
+} from "./cross-pollination";
+import {
+  fuzzyAmplificationPanelHtml,
+  renderFuzzyClusters,
+  updateFuzzyThresholdBadge,
+} from "./fuzzy-amplification";
+import {
+  applyClusterTagsToPosts,
+  loadStoredThreshold,
+  recomputeNearDuplicatesReport,
+  resolveThresholdBounds,
+  storeThreshold,
+} from "./near-duplicate-clustering";
 import { renderMethodology } from "./methodology";
 import {
   bindTabNav,
@@ -84,12 +103,15 @@ let currentTab: AppTab = tabFromUrl();
 let blurSensitive = localStorage.getItem(BLUR_SENSITIVE_KEY) === "1";
 let groupAuthorPosts = true;
 let lastNearDup: NearDuplicatesReport | null = null;
+let clusterSourcePosts: Post[] = [];
+let jaccardThreshold = 0.82;
 let briefContext: {
   narrative: NarrativeSummary;
   posts: Post[];
   cib: CibReport;
   amp: AmplificationReport;
   themes: ThemesReport;
+  crossPollination: import("./types").CrossPollinationReport | null;
 } | null = null;
 
 const rootEl = document.getElementById("app");
@@ -147,6 +169,24 @@ function renderHistogram(posts: Post[]): string {
     })
     .join("");
   return `<div class="chart">${rows}</div>`;
+}
+
+function applyJaccardThreshold(threshold: number): void {
+  jaccardThreshold = threshold;
+  storeThreshold(threshold);
+  if (!clusterSourcePosts.length) return;
+  lastNearDup = recomputeNearDuplicatesReport(
+    clusterSourcePosts,
+    threshold,
+    lastNearDup
+  );
+  setInvestigationPosts(applyClusterTagsToPosts(clusterSourcePosts, lastNearDup));
+  const fuzzyHost = document.getElementById("fuzzy-clusters-host");
+  if (fuzzyHost) renderFuzzyClusters(fuzzyHost, lastNearDup);
+  updateFuzzyThresholdBadge(threshold, lastNearDup.cross_author_fuzzy_count ?? 0);
+  const label = document.getElementById("jaccard-threshold-value");
+  if (label) label.textContent = threshold.toFixed(2);
+  updatePostsPanel();
 }
 
 function updatePostsPanel(): void {
@@ -263,6 +303,10 @@ function bindPostToolbar(): void {
     groupAuthorPosts = (e.target as HTMLInputElement).checked;
     updatePostsPanel();
   });
+  const jaccardSlider = document.getElementById("jaccard-threshold") as HTMLInputElement | null;
+  jaccardSlider?.addEventListener("input", () => {
+    applyJaccardThreshold(parseFloat(jaccardSlider.value));
+  });
 }
 
 function refreshBriefPanel(): void {
@@ -274,7 +318,9 @@ function refreshBriefPanel(): void {
     briefContext.posts,
     briefContext.cib,
     briefContext.amp,
-    briefContext.themes
+    briefContext.themes,
+    lastNearDup,
+    briefContext.crossPollination ?? null
   );
 }
 
@@ -312,6 +358,9 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
             </select>
             <label class="toolbar-check"><input type="checkbox" id="group-authors-toggle" checked /> Group busy authors</label>
             <label class="toolbar-check"><input type="checkbox" id="blur-sensitive-toggle" ${blurSensitive ? "checked" : ""} /> Blur sensitive text</label>
+            <label for="jaccard-threshold" class="toolbar-label">Jaccard</label>
+            <input type="range" id="jaccard-threshold" class="toolbar-range" min="0.55" max="0.98" step="0.01" value="0.82" aria-label="Jaccard similarity threshold" />
+            <span id="jaccard-threshold-value" class="toolbar-range-value">0.82</span>
             <button type="button" id="refresh-btn" class="btn btn-secondary">Reload snapshot</button>
           </div>
         </div>
@@ -359,8 +408,9 @@ async function loadDashboard(narrativeId: number): Promise<void> {
   content.innerHTML = "<p class='loading'>Loading…</p>";
 
   try {
-    const narrativeMeta = (await listNarratives()).find((n) => n.id === narrativeId);
-    const [posts, cib, sentiment, amp, graph, themes, nearDup, benchmark] =
+    const narratives = await listNarratives();
+    const narrativeMeta = narratives.find((n) => n.id === narrativeId);
+    const [posts, cib, sentiment, amp, graph, themes, nearDup, benchmark, crossPollination, pollinationHits] =
       await Promise.all([
         fetchPosts(narrativeId),
         fetchCib(narrativeId),
@@ -370,10 +420,36 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         fetchThemes(narrativeId),
         fetchNearDuplicates(narrativeId),
         fetchBenchmark(narrativeId),
+        fetchCrossPollination(),
+        fetchNarrativeCrossPollinationHits(narrativeId),
       ]);
-    lastNearDup = nearDup;
+    clusterSourcePosts = posts;
+    const bounds = resolveThresholdBounds(nearDup);
+    jaccardThreshold = loadStoredThreshold(
+      bounds.defaultThreshold,
+      bounds.min,
+      bounds.max
+    );
+    lastNearDup = recomputeNearDuplicatesReport(posts, jaccardThreshold, nearDup);
+    setInvestigationPosts(applyClusterTagsToPosts(posts, lastNearDup));
+    const jaccardSlider = document.getElementById("jaccard-threshold") as HTMLInputElement | null;
+    const jaccardLabel = document.getElementById("jaccard-threshold-value");
+    if (jaccardSlider) {
+      jaccardSlider.min = String(bounds.min);
+      jaccardSlider.max = String(bounds.max);
+      jaccardSlider.step = String(bounds.step);
+      jaccardSlider.value = String(jaccardThreshold);
+    }
+    if (jaccardLabel) jaccardLabel.textContent = jaccardThreshold.toFixed(2);
     if (narrativeMeta) {
-      briefContext = { narrative: narrativeMeta, posts, cib, amp, themes };
+      briefContext = {
+        narrative: narrativeMeta,
+        posts,
+        cib,
+        amp,
+        themes,
+        crossPollination,
+      };
       refreshBriefPanel();
     }
 
@@ -431,6 +507,10 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         </section>
       </div>
 
+      ${fuzzyAmplificationPanelHtml(nearDup)}
+
+      ${crossPollinationPanelHtml(crossPollination)}
+
       ${
         benchmark
           ? `<p class="panel-callout benchmark-callout">Benchmark labels: ${benchmark.labeled_posts}/${benchmark.total_posts} posts (${escapeHtml(benchmark.labels.join(", "))}).</p>`
@@ -455,7 +535,6 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       </section>
     `;
 
-    setInvestigationPosts(posts);
     clearInvestigationFilter();
 
     const pickAuthor = (authorId: string, label: string) => {
@@ -524,6 +603,21 @@ async function loadDashboard(narrativeId: number): Promise<void> {
 
     const themesHost = document.getElementById("themes-timeline-host");
     if (themesHost) renderEmergingThemesTimeline(themesHost, themes);
+
+    const fuzzyHost = document.getElementById("fuzzy-clusters-host");
+    if (fuzzyHost) renderFuzzyClusters(fuzzyHost, lastNearDup);
+    updateFuzzyThresholdBadge(jaccardThreshold, lastNearDup?.cross_author_fuzzy_count ?? 0);
+
+    const crossGlobalHost = document.getElementById("cross-pollination-global-host");
+    if (crossGlobalHost) renderGlobalCrossPollination(crossGlobalHost, crossPollination);
+    const crossNarrativeHost = document.getElementById("cross-pollination-narrative-host");
+    if (crossNarrativeHost && narrativeMeta) {
+      renderNarrativeCrossPollination(
+        crossNarrativeHost,
+        pollinationHits,
+        narrativeMeta.name
+      );
+    }
 
     bindInvestigationChrome();
     bindClusterButtons();

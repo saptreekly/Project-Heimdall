@@ -8,6 +8,12 @@ from heimdall.analysis.duplicates import (
     apply_duplicate_temporal_cib_boost,
     find_duplicate_clusters_from_rows,
 )
+from heimdall.analysis.cross_pollination import cross_pollination_cib_signals
+from heimdall.analysis.near_duplicates import (
+    apply_cross_author_fuzzy_cib_boost,
+    find_cross_author_fuzzy_clusters,
+)
+from heimdall.export.cross_pollination_loader import load_cross_pollination, per_narrative_hits
 from heimdall.analysis.sentiment_shift import narrative_sentiment_shift
 from heimdall.api.schemas import (
     AstroturfImportResponse,
@@ -230,12 +236,28 @@ async def analyze_cib(narrative_id: int, db: AsyncSession = Depends(get_db)) -> 
             Post.narrative_id == narrative_id
         )
     )
-    duplicate_clusters = find_duplicate_clusters_from_rows(list(dup_result.all()))
+    dup_list = list(dup_result.all())
+    duplicate_clusters = find_duplicate_clusters_from_rows(dup_list)
+    near_rows = [
+        (pid, author_id, text, posted_at.isoformat())
+        for pid, author_id, text, posted_at in dup_list
+    ]
+    cross_fuzzy = find_cross_author_fuzzy_clusters(near_rows)
     suspicion, signals = apply_duplicate_temporal_cib_boost(
         assessment.suspicion_score,
         assessment.signals,
         duplicate_clusters,
     )
+    suspicion, signals = apply_cross_author_fuzzy_cib_boost(suspicion, signals, cross_fuzzy)
+    cross_report = await load_cross_pollination(db)
+    pollination_signals = cross_pollination_cib_signals(cross_report, narrative_id)
+    if pollination_signals:
+        signals = list(signals) + pollination_signals
+        hits = per_narrative_hits(cross_report, narrative_id)
+        if hits.get("hit_count", 0) >= 3:
+            suspicion = max(suspicion, 0.6)
+        elif hits.get("hit_count", 0) >= 1:
+            suspicion = max(suspicion, 0.45)
     bot_overlap = await narrative_bot_overlap(db, narrative_id)
     return CIBResponse(
         narrative_id=narrative_id,
@@ -249,6 +271,23 @@ async def analyze_cib(narrative_id: int, db: AsyncSession = Depends(get_db)) -> 
         coordinated_clusters=m.coordinated_clusters,
         iu_astroturf=bot_overlap,
     )
+
+
+@router.get("/cross-pollination")
+async def cross_pollination(db: AsyncSession = Depends(get_db)) -> dict:
+    """Authors and narrative pairs with overlap across keyword silos."""
+    return await load_cross_pollination(db)
+
+
+@router.get("/narratives/{narrative_id}/cross-pollination")
+async def narrative_cross_pollination(
+    narrative_id: int, db: AsyncSession = Depends(get_db)
+) -> dict:
+    exists = await db.execute(select(Narrative.id).where(Narrative.id == narrative_id))
+    if not exists.scalar_one_or_none():
+        raise HTTPException(status_code=404, detail="Narrative not found")
+    report = await load_cross_pollination(db)
+    return per_narrative_hits(report, narrative_id)
 
 
 @router.post("/datasets/astroturf/import", response_model=AstroturfImportResponse)

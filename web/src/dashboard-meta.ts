@@ -35,7 +35,9 @@ export function postsPanelCalloutHtml(): string {
   return `
     <p class="panel-callout">
       <strong>Reading posts:</strong> handle = account · tweet id = one status on X.
-      Orange blocks below are <em>exact</em> duplicate text; spacing variants are separate rows unless you filter by theme or near-duplicate tags.
+      <em>Exact</em> duplicate blocks need identical normalized text.
+      <em>Cross-author fuzzy</em> clusters link spacing/typo variants across different accounts (Jaccard ≥ 0.82).
+      Same-author loops are tagged separately.
     </p>
   `;
 }
@@ -50,7 +52,7 @@ export function duplicatePanelCaption(): string {
       Groups posts with <em>identical</em> normalized text (≥2). Click a cluster to filter the post list.
       <span class="dup-legend-warn">Orange</span> = copypasta ·
       <span class="dup-legend-threat">Red glow</span> = synchronized burst (≥5 authors / 90s).
-      Near-identical same-author spam is tagged in the post list (near-dup / copypasta %).
+      Post tags: same-author # · fuzzy × (cross-author) · copypasta %.
     </p>
   `;
 }

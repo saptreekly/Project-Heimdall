@@ -27,6 +27,7 @@ async def db_session() -> AsyncSession:
 async def test_build_dashboard_snapshot(db_session: AsyncSession) -> None:
     snap = await build_dashboard_snapshot(db_session)
     assert snap["version"] >= 1
+    assert "cross_pollination" in snap
     assert "meta" in snap
     assert len(snap["narratives"]) == 1
     nid = str(snap["narratives"][0]["id"])

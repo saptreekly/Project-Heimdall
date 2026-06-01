@@ -44,7 +44,11 @@ function renderPostItem(p: Post, activeAuthorId: string | null, blurSensitive: b
     : "";
   const nearTag =
     p.near_duplicate_group != null
-      ? `<span class="tag tag-near-dup">near-dup #${p.near_duplicate_group}</span>`
+      ? `<span class="tag tag-near-dup">same-author #${p.near_duplicate_group}</span>`
+      : "";
+  const fuzzyTag =
+    p.cross_author_fuzzy_cluster != null
+      ? `<span class="tag tag-fuzzy-cross">fuzzy ×${p.cross_author_fuzzy_cluster}</span>`
       : "";
   const pastaTag =
     p.copypasta_score != null && p.copypasta_score >= 0.75
@@ -58,6 +62,7 @@ function renderPostItem(p: Post, activeAuthorId: string | null, blurSensitive: b
       ${tweetMeta}
       <span>${escapeHtml(p.posted_at.slice(0, 16))}</span>
       ${nearTag}
+      ${fuzzyTag}
       ${pastaTag}
       <span class="outrage-tag">outrage ${p.outrage_index?.toFixed(3) ?? "n/a"}</span>
     </div>

@@ -13,12 +13,18 @@ from heimdall.analysis.duplicates import (
     find_duplicate_clusters_from_rows,
 )
 from heimdall.analysis.near_duplicates import (
-    NEAR_DUPLICATE_JACCARD_THRESHOLD,
+    apply_cross_author_fuzzy_cib_boost,
     author_spam_summaries,
     copypasta_scores,
+    find_cross_author_fuzzy_clusters,
     find_near_duplicate_groups,
+    jaccard_threshold_config,
+    post_id_to_cross_author_cluster,
     post_id_to_near_group,
+    resolve_jaccard_threshold,
 )
+from heimdall.analysis.cross_pollination import cross_pollination_cib_signals
+from heimdall.export.cross_pollination_loader import load_cross_pollination, per_narrative_hits
 from heimdall.export.post_meta import parse_x_screen_name, post_status_url
 from heimdall.analysis.sentiment_shift import narrative_sentiment_shift
 from heimdall.api.schemas import CIBResponse, DuplicateClusterOut, NarrativeSummary, PostOut
@@ -84,12 +90,15 @@ async def _narrative_post_rows(
 
 async def narrative_posts(db: AsyncSession, narrative_id: int) -> list[PostOut]:
     raw_rows = await _narrative_post_rows(db, narrative_id)
+    jaccard_th, _, _, _ = resolve_jaccard_threshold()
     near_input = [
         (pid, author_id, text, posted_at.isoformat())
         for pid, _plat, _ext, author_id, text, posted_at, _raw in raw_rows
     ]
-    near_groups = find_near_duplicate_groups(near_input)
+    near_groups = find_near_duplicate_groups(near_input, threshold=jaccard_th)
+    cross_fuzzy = find_cross_author_fuzzy_clusters(near_input, threshold=jaccard_th)
     near_map = post_id_to_near_group(near_groups)
+    cross_map = post_id_to_cross_author_cluster(cross_fuzzy)
     copy_rows = [(pid, author_id, text) for pid, _p, _e, author_id, text, _t, _r in raw_rows]
     pasta_scores = copypasta_scores(copy_rows)
 
@@ -117,6 +126,7 @@ async def narrative_posts(db: AsyncSession, narrative_id: int) -> list[PostOut]:
                 sentiment_label=score[1] if score else None,
                 benchmark_label=meta.get("label_name") if meta else None,
                 near_duplicate_group=near_map.get(pid),
+                cross_author_fuzzy_cluster=cross_map.get(pid),
                 copypasta_score=pasta_scores.get(pid),
                 status_url=post_status_url(platform, external_id),
             )
@@ -126,13 +136,21 @@ async def narrative_posts(db: AsyncSession, narrative_id: int) -> list[PostOut]:
 
 async def narrative_near_duplicates(db: AsyncSession, narrative_id: int) -> dict:
     raw_rows = await _narrative_post_rows(db, narrative_id)
+    jaccard_th, th_min, th_max, th_step = resolve_jaccard_threshold()
     near_input = [
         (pid, author_id, text, posted_at.isoformat())
         for pid, _plat, _ext, author_id, text, posted_at, _raw in raw_rows
     ]
-    groups = find_near_duplicate_groups(near_input)
+    groups = find_near_duplicate_groups(near_input, threshold=jaccard_th)
+    cross_fuzzy = find_cross_author_fuzzy_clusters(near_input, threshold=jaccard_th)
     return {
-        "threshold": NEAR_DUPLICATE_JACCARD_THRESHOLD,
+        **jaccard_threshold_config(
+            jaccard_th,
+            threshold_min=th_min,
+            threshold_max=th_max,
+            threshold_step=th_step,
+        ),
+        "same_author_group_count": len(groups),
         "group_count": len(groups),
         "groups": [
             {
@@ -144,6 +162,23 @@ async def narrative_near_duplicates(db: AsyncSession, narrative_id: int) -> dict
                 "max_similarity": round(g.max_similarity, 4),
             }
             for g in groups
+        ],
+        "cross_author_fuzzy_count": len(cross_fuzzy),
+        "cross_author_fuzzy": [
+            {
+                "cluster_id": c.cluster_id,
+                "post_ids": c.post_ids,
+                "author_ids": c.author_ids,
+                "author_count": c.author_count,
+                "count": c.count,
+                "sample_text": c.sample_text,
+                "max_similarity": c.max_similarity,
+                "burst_synchronized": c.burst_synchronized,
+                "burst_author_count": c.burst_author_count,
+                "cluster_span_seconds": c.cluster_span_seconds,
+                "min_inter_arrival_seconds": c.min_inter_arrival_seconds,
+            }
+            for c in cross_fuzzy
         ],
         "author_summaries": author_spam_summaries(near_input, near_groups=groups),
     }
@@ -170,7 +205,12 @@ def _load_x_rate_state() -> dict | None:
         return None
 
 
-async def narrative_cib(db: AsyncSession, narrative_id: int) -> CIBResponse:
+async def narrative_cib(
+    db: AsyncSession,
+    narrative_id: int,
+    *,
+    cross_pollination_report: dict | None = None,
+) -> CIBResponse:
     analyzer = NarrativeGraphAnalyzer()
     assessment = await analyzer.assess_narrative(db, narrative_id)
     m = assessment.metrics
@@ -179,12 +219,32 @@ async def narrative_cib(db: AsyncSession, narrative_id: int) -> CIBResponse:
             Post.narrative_id == narrative_id
         )
     )
-    duplicate_clusters = find_duplicate_clusters_from_rows(list(dup_rows.all()))
+    dup_list = list(dup_rows.all())
+    duplicate_clusters = find_duplicate_clusters_from_rows(dup_list)
+    near_rows = [
+        (pid, author_id, text, posted_at.isoformat())
+        for pid, author_id, text, posted_at in dup_list
+    ]
+    cross_fuzzy = find_cross_author_fuzzy_clusters(near_rows)
     suspicion, signals = apply_duplicate_temporal_cib_boost(
         assessment.suspicion_score,
         assessment.signals,
         duplicate_clusters,
     )
+    suspicion, signals = apply_cross_author_fuzzy_cib_boost(
+        suspicion, signals, cross_fuzzy
+    )
+    if cross_pollination_report:
+        pollination_signals = cross_pollination_cib_signals(
+            cross_pollination_report, narrative_id
+        )
+        if pollination_signals:
+            signals = list(signals) + pollination_signals
+            hits = per_narrative_hits(cross_pollination_report, narrative_id)
+            if hits.get("hit_count", 0) >= 3:
+                suspicion = max(suspicion, 0.6)
+            elif hits.get("hit_count", 0) >= 1:
+                suspicion = max(suspicion, 0.45)
     organic_score = round(1.0 - suspicion, 4)
     bot_overlap = await narrative_bot_overlap(db, narrative_id)
     return CIBResponse(
@@ -310,26 +370,31 @@ async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
 
 async def build_dashboard_snapshot(db: AsyncSession) -> dict:
     summaries = await list_narrative_summaries(db)
+    cross_pollination = await load_cross_pollination(db)
     by_id: dict[str, dict] = {}
     for summary in summaries:
         nid = summary.id
         posts = await narrative_posts(db, nid)
         by_id[str(nid)] = {
             "posts": [p.model_dump(mode="json") for p in posts],
-            "cib": (await narrative_cib(db, nid)).model_dump(mode="json"),
+            "cib": (
+                await narrative_cib(db, nid, cross_pollination_report=cross_pollination)
+            ).model_dump(mode="json"),
             "sentiment": await narrative_sentiment_shift(db, nid),
             "amplification": await narrative_amplification(db, nid),
             "near_duplicates": await narrative_near_duplicates(db, nid),
+            "cross_pollination_hits": per_narrative_hits(cross_pollination, nid),
             "graph": await narrative_graph(db, nid),
             "themes": await narrative_themes(db, nid),
             "benchmark": _benchmark_stats(posts),
         }
 
     return {
-        "version": 2,
+        "version": 3,
         "generated_at": datetime.now(UTC).isoformat(),
         "narratives": [s.model_dump(mode="json") for s in summaries],
         "by_narrative_id": by_id,
+        "cross_pollination": cross_pollination,
         "meta": {
             "ingest_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/ingest.yml",
             "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",

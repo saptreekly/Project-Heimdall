@@ -2,8 +2,11 @@ import { escapeHtml, truncate } from "./post-display";
 import type {
   AmplificationReport,
   CibReport,
+  CrossAuthorFuzzyCluster,
+  CrossPollinationReport,
   DuplicateCluster,
   NarrativeSummary,
+  NearDuplicatesReport,
   Post,
   ThemesReport,
 } from "./types";
@@ -25,13 +28,16 @@ export function renderBrief(
   posts: Post[],
   cib: CibReport,
   amp: AmplificationReport,
-  themes: ThemesReport
+  themes: ThemesReport,
+  nearDup?: NearDuplicatesReport | null,
+  crossPollination?: CrossPollinationReport | null
 ): void {
   const burst = amp.clusters.filter((c) => c.burst_synchronized).slice(0, 2);
   const exact = amp.clusters.filter((c) => !c.burst_synchronized).slice(0, 3);
   const emerging = (themes.timeline ?? themes.clusters)
     .filter((t) => t.emerging_theme)
     .slice(0, 3);
+  const fuzzy = (nearDup?.cross_author_fuzzy ?? []).slice(0, 3);
 
   host.innerHTML = `
     <article class="brief-article">
@@ -44,8 +50,19 @@ export function renderBrief(
       }
       <h4>Exact duplicate text</h4>
       ${exact.length ? exact.map(clusterLine).join("") : "<p>None in this snapshot.</p>"}
-      <h4>Synchronized bursts</h4>
+      <h4>Synchronized bursts (exact text)</h4>
       ${burst.length ? burst.map(clusterLine).join("") : "<p>None (need ≥5 authors in 90s).</p>"}
+      <h4>Cross-author fuzzy amplification</h4>
+      ${fuzzy.length ? fuzzy.map(fuzzyLine).join("") : "<p>None (Jaccard variants across ≥2 authors).</p>"}
+      <h4>Cross-narrative actors (global)</h4>
+      ${
+        (crossPollination?.actors ?? []).length
+          ? (crossPollination!.actors.slice(0, 5).map(
+              (a) =>
+                `<p class="brief-cluster"><strong>${escapeHtml(a.author_handle ?? a.author_id)}</strong> · ${a.narrative_count} narratives · score ${a.pollination_score.toFixed(2)}</p>`
+            ).join(""))
+          : "<p>None spanning multiple narratives.</p>"
+      }
       <h4>Emerging themes</h4>
       ${
         emerging.length
@@ -69,6 +86,11 @@ export function renderBrief(
 
 function clusterLine(c: DuplicateCluster): string {
   return `<p class="brief-cluster"><strong>${c.count} posts</strong> · ${c.author_count} author(s) — ${escapeHtml(truncate(c.sample_text, 120))}</p>`;
+}
+
+function fuzzyLine(c: CrossAuthorFuzzyCluster): string {
+  const pct = (c.max_similarity * 100).toFixed(0);
+  return `<p class="brief-cluster"><strong>${c.count} posts</strong> · ${c.author_count} authors · ~${pct}% Jaccard — ${escapeHtml(truncate(c.sample_text, 120))}</p>`;
 }
 
 export function bindBriefPrint(): void {

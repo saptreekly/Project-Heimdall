@@ -17,8 +17,23 @@ export interface Post {
   sentiment_label: string | null;
   benchmark_label: string | null;
   near_duplicate_group?: number | null;
+  cross_author_fuzzy_cluster?: number | null;
   copypasta_score?: number | null;
   status_url?: string | null;
+}
+
+export interface CrossAuthorFuzzyCluster {
+  cluster_id: number;
+  post_ids: number[];
+  author_ids: string[];
+  author_count: number;
+  count: number;
+  sample_text: string;
+  max_similarity: number;
+  burst_synchronized?: boolean;
+  burst_author_count?: number;
+  cluster_span_seconds?: number;
+  min_inter_arrival_seconds?: number | null;
 }
 
 export interface NearDuplicateGroup {
@@ -41,8 +56,17 @@ export interface AuthorSpamSummary {
 
 export interface NearDuplicatesReport {
   threshold: number;
+  default_threshold?: number;
+  threshold_min?: number;
+  threshold_max?: number;
+  threshold_step?: number;
+  /** Recomputed in-browser when the analyst moves the slider. */
+  threshold_live?: boolean;
+  same_author_group_count?: number;
   group_count: number;
   groups: NearDuplicateGroup[];
+  cross_author_fuzzy_count?: number;
+  cross_author_fuzzy?: CrossAuthorFuzzyCluster[];
   author_summaries: AuthorSpamSummary[];
 }
 
@@ -56,6 +80,52 @@ export interface SnapshotMeta {
   ingest_workflow_url?: string;
   pages_workflow_url?: string;
   x_rate?: { date?: string; count?: number } | null;
+}
+
+export interface CrossPollinationNarrativeRef {
+  narrative_id: number;
+  narrative_name: string;
+  post_count: number;
+  max_outrage: number | null;
+  first_seen: string | null;
+  last_seen: string | null;
+}
+
+export interface CrossPollinationActor {
+  actor_key: string;
+  platform: string;
+  author_id: string;
+  author_handle: string | null;
+  narrative_count: number;
+  total_posts: number;
+  pollination_score: number;
+  span_days: number;
+  narratives: CrossPollinationNarrativeRef[];
+  other_narratives?: CrossPollinationNarrativeRef[];
+  other_narrative_count?: number;
+}
+
+export interface NarrativePairOverlap {
+  narrative_a_id: number;
+  narrative_a_name: string;
+  narrative_b_id: number;
+  narrative_b_name: string;
+  shared_actor_count: number;
+}
+
+export interface CrossPollinationReport {
+  available: boolean;
+  min_narratives?: number;
+  actor_count: number;
+  narrative_count?: number;
+  actors: CrossPollinationActor[];
+  narrative_pairs?: NarrativePairOverlap[];
+}
+
+export interface NarrativePollinationHits {
+  narrative_id: number;
+  hit_count: number;
+  actors: CrossPollinationActor[];
 }
 
 export interface CibReport {
@@ -171,6 +241,7 @@ export interface NarrativeBundle {
   sentiment: SentimentShift;
   amplification: AmplificationReport;
   near_duplicates?: NearDuplicatesReport;
+  cross_pollination_hits?: NarrativePollinationHits;
   graph?: PropagationGraph;
   themes?: ThemesReport;
   benchmark?: BenchmarkStats | null;
@@ -181,5 +252,6 @@ export interface DashboardSnapshot {
   generated_at: string;
   narratives: NarrativeSummary[];
   by_narrative_id: Record<string, NarrativeBundle>;
+  cross_pollination?: CrossPollinationReport;
   meta?: SnapshotMeta;
 }

@@ -2,8 +2,10 @@ import type {
   AmplificationReport,
   BenchmarkStats,
   CibReport,
+  CrossPollinationReport,
   DashboardSnapshot,
   GraphAuthor,
+  NarrativePollinationHits,
   NarrativeSummary,
   NearDuplicatesReport,
   Post,
@@ -94,6 +96,18 @@ export async function fetchNearDuplicates(narrativeId: number): Promise<NearDupl
 export async function fetchBenchmark(narrativeId: number): Promise<BenchmarkStats | null> {
   await loadSnapshot();
   return bundleFor(narrativeId).benchmark ?? null;
+}
+
+export async function fetchCrossPollination(): Promise<CrossPollinationReport | null> {
+  await loadSnapshot();
+  return snapshotCache?.cross_pollination ?? null;
+}
+
+export async function fetchNarrativeCrossPollinationHits(
+  narrativeId: number
+): Promise<NarrativePollinationHits | null> {
+  await loadSnapshot();
+  return bundleFor(narrativeId).cross_pollination_hits ?? null;
 }
 
 function bundleFor(narrativeId: number) {
