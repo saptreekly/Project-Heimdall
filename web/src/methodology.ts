@@ -46,6 +46,10 @@ export function renderMethodology(): string {
           <li>Interactions (retweets, replies, etc.) become directed edges between authors when targets resolve.</li>
         </ul>
         <h3>X / Twitter guardrails (scheduled CI)</h3>
+        <p>
+          GitHub Actions runs ingest <strong>30 times per 24 hours</strong> (every 48 minutes UTC), rotating
+          one keyword per run so the daily GraphQL budget is spread evenly.
+        </p>
         <p>Automated ingest enforces conservative limits to reduce account risk:</p>
         <table class="method-table">
           <thead><tr><th>Limit</th><th>Default</th></tr></thead>

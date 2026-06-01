@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from scripts.scheduled_ingest import IngestJob, load_jobs
+from scripts.scheduled_ingest import IngestJob, load_jobs, rotate_x_keywords
 
 
 def test_load_scheduled_jobs() -> None:
@@ -14,6 +14,22 @@ def test_load_scheduled_jobs() -> None:
     assert midterms.platform == "x"
     assert len(midterms.keywords) <= 5
     assert midterms.limit <= 80
+
+
+def test_rotate_x_keywords_round_robin(tmp_path, monkeypatch) -> None:
+    state = tmp_path / "rotation.json"
+    monkeypatch.setenv("X_ROTATION_STATE_PATH", str(state))
+    kws = ["alpha", "beta", "gamma"]
+
+    a, _ = rotate_x_keywords(kws, 1)
+    b, _ = rotate_x_keywords(kws, 1)
+    c, _ = rotate_x_keywords(kws, 1)
+    d, _ = rotate_x_keywords(kws, 1)
+
+    assert a == ["alpha"]
+    assert b == ["beta"]
+    assert c == ["gamma"]
+    assert d == ["alpha"]
 
 
 def test_plan_respects_guardrails_for_scheduled_job() -> None:

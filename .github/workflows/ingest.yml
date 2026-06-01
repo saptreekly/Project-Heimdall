@@ -1,12 +1,17 @@
 # Scheduled ingest → commit data/dashboard/heimdall.db + snapshot → triggers Pages deploy.
 # Requires GitHub secrets: AUTH_TOKEN and CT0 (or X_AUTH_TOKEN / X_CT0).
 # Guardrails: defaults from heimdall/config.py (not overridden here).
+# X schedule: 30 runs / 24h → one GraphQL search every 48 minutes (24*60/30).
 
 name: ingest
 
 on:
   schedule:
-    - cron: "0 13 * * *"
+    - cron: "0 0,4,8,12,16,20 * * *"
+    - cron: "48 0,4,8,12,16,20 * * *"
+    - cron: "36 1,5,9,13,17,21 * * *"
+    - cron: "24 2,6,10,14,18,22 * * *"
+    - cron: "12 3,7,11,15,19,23 * * *"
   workflow_dispatch:
 
 permissions:
@@ -40,6 +45,8 @@ jobs:
         env:
           DATABASE_URL: sqlite+aiosqlite:///./data/dashboard/heimdall.db
           X_RATE_STATE_PATH: data/dashboard/x_rate_state.json
+          X_ROTATION_STATE_PATH: data/dashboard/x_keyword_rotation.json
+          X_SCHEDULED_KEYWORDS_PER_RUN: "1"
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           CT0: ${{ secrets.CT0 }}
           X_INGEST_ENABLED: "true"
@@ -49,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dashboard/heimdall.db data/dashboard/x_rate_state.json web/public/data/snapshot.json
+          git add data/dashboard/heimdall.db data/dashboard/x_rate_state.json data/dashboard/x_keyword_rotation.json web/public/data/snapshot.json
           if git diff --staged --quiet; then
             echo "No data changes to commit."
           else

@@ -62,7 +62,7 @@ git commit -m "chore: publish ingest data for dashboard"
 git push
 ```
 
-**Automated ingest** (`.github/workflows/ingest.yml`, daily 13:00 UTC) pulls new posts per `data/scheduled_ingest.json`, enforces X guardrails, and commits `data/dashboard/heimdall.db` plus `snapshot.json`. Add GitHub secrets **`AUTH_TOKEN`** and **`CT0`** (or `X_AUTH_TOKEN` / `X_CT0`).
+**Automated ingest** (`.github/workflows/ingest.yml`, **30× per day** every **48 minutes** UTC) pulls one rotated X keyword per run so the daily GraphQL budget (~30) is spread evenly across 24 hours. Config: `data/scheduled_ingest.json`. Add GitHub secrets **`AUTH_TOKEN`** and **`CT0`** (or `X_AUTH_TOKEN` / `X_CT0`).
 
 Pages deploy runs after data is pushed (and daily 14:00 UTC).
 
@@ -180,7 +180,7 @@ After ingest, `GET /api/v1/narratives/{id}/cib` can report IU astroturf overlap 
 
 Check today's usage: `GET /api/v1/platforms/x/usage`. Ingest responses include a `guardrails` object when limits were applied.
 
-Use a **research alt account** for cookies; ingest manually a few times per day, not on a tight cron.
+Use a **research alt account** for cookies. Scheduled CI rotates keywords (`X_SCHEDULED_KEYWORDS_PER_RUN=1`) to stay within the daily GraphQL cap.
 
 Neo4j authors get `known_bot` and `bot_label` when matched.
 

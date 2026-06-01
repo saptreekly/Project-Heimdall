@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import json
+import os
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -18,6 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "data" / "scheduled_ingest.json"
 DEFAULT_DB = ROOT / "data" / "dashboard" / "heimdall.db"
+DEFAULT_ROTATION = ROOT / "data" / "dashboard" / "x_keyword_rotation.json"
 
 
 @dataclass(frozen=True)
@@ -48,6 +50,56 @@ def _x_credentials_present() -> bool:
 
     s = get_settings()
     return bool(s.x_auth_token and s.x_ct0)
+
+
+def _scheduled_keywords_per_run() -> int | None:
+    raw = os.environ.get("X_SCHEDULED_KEYWORDS_PER_RUN", "").strip()
+    if not raw:
+        return None
+    try:
+        return max(1, int(raw))
+    except ValueError:
+        return None
+
+
+def _rotation_state_path() -> Path:
+    raw = os.environ.get("X_ROTATION_STATE_PATH", "").strip()
+    return Path(raw) if raw else DEFAULT_ROTATION
+
+
+def rotate_x_keywords(keywords: list[str], count: int) -> tuple[list[str], int]:
+    """
+    Pick the next `count` keyword(s) for this cron run (round-robin).
+
+    Used with X_SCHEDULED_KEYWORDS_PER_RUN=1 so 30 daily workflow runs map to
+    ~30 GraphQL requests when X_MAX_GRAPHQL_REQUESTS_PER_DAY=30.
+    """
+    cleaned = [k.strip() for k in keywords if k.strip()]
+    if not cleaned or count <= 0:
+        return [], 0
+
+    path = _rotation_state_path()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    state: dict = {"keyword_index": 0}
+    if path.is_file():
+        try:
+            state = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            state = {"keyword_index": 0}
+
+    idx = int(state.get("keyword_index", 0)) % len(cleaned)
+    selected = [cleaned[(idx + i) % len(cleaned)] for i in range(min(count, len(cleaned)))]
+    state["keyword_index"] = idx + len(selected)
+    path.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+    return selected, state["keyword_index"]
+
+
+def keywords_for_scheduled_job(job: IngestJob) -> list[str]:
+    per_run = _scheduled_keywords_per_run()
+    if per_run is None or job.platform != "x":
+        return job.keywords
+    rotated, _ = rotate_x_keywords(job.keywords, per_run)
+    return rotated or job.keywords
 
 
 async def run_job(job: IngestJob) -> dict:
@@ -82,7 +134,8 @@ async def run_job(job: IngestJob) -> dict:
                 "skipped": True,
                 "reason": "X_INGEST_ENABLED=false",
             }
-        x_plan = plan_x_ingest(job.keywords, job.limit)
+        keywords = keywords_for_scheduled_job(job)
+        x_plan = plan_x_ingest(keywords, job.limit)
         usage_before = await daily_usage_snapshot()
         if usage_before["requests_remaining"] < x_plan.graphql_requests:
             return {
@@ -121,6 +174,8 @@ async def run_job(job: IngestJob) -> dict:
         out["planned_limit"] = x_plan.limit
         out["planned_graphql_requests"] = x_plan.graphql_requests
         out["plan_notes"] = x_plan.notes
+        if _scheduled_keywords_per_run() is not None:
+            out["scheduled_keyword_rotation"] = True
     return out
 
 
