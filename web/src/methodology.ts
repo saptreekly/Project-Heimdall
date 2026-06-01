@@ -108,12 +108,81 @@ export function renderMethodology(): string {
       </section>
 
       <section>
+        <h2>Dynamic diagnostic layer (<code>outrage-diagnostics.ts</code>)</h2>
+        <p>
+          Low-outrage or edge-free snapshots used to break chart layout (median dividers on
+          <code>X = 0</code>, CRITICAL labels on the floor). A dedicated module now assesses each
+          narrative before charts render.
+        </p>
+        <ul>
+          <li>
+            <strong>Baseline:</strong> <code>OUTRAGE_COMPRESSION_THRESHOLD = 0.15</code> — if max
+            author outrage is at or below this, the lexicon read is treated as a Y-axis floor.
+          </li>
+          <li>
+            <strong>Pipeline:</strong> <code>computeOutrageDiagnostics(posts, buckets)</code> returns
+            compression flags, scored/unscored counts, and optional volume–outrage divergence
+            (high post count + mean outrage &lt; 0.1 on a spike day).
+          </li>
+          <li>
+            <strong>UX:</strong> <code>sentimentOutrageNoticeHtml</code> and
+            <code>scatterOutrageFloorNoticeHtml</code> inject context on the Sentiment and
+            Prioritization panels; the scatter chart skips degenerate median guides when spread is
+            zero and links to the propagation network when edges are missing.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Adaptive axis re-scaling (<code>prioritization-scatter.ts</code>, <code>sentiment-chart.ts</code>)</h2>
+        <p>
+          Charts adapt to the threat material in each snapshot instead of forcing a 0–1 scale when
+          data collapses on a wall or floor.
+        </p>
+        <h3>X-axis wall safety (scatter)</h3>
+        <ul>
+          <li>
+            When <code>edges.length === 0</code>, spread is treated as absent
+            (<code>hasPropagationSpread</code>).
+          </li>
+          <li>
+            Median layout math no longer draws a vertical divider at <code>xMid = 0</code> on the
+            Y-axis; <code>showVerticalQuadrant</code> requires real X variance and
+            <code>xMid &gt; 0</code>.
+          </li>
+          <li>
+            Fallbacks: pinned X scale headroom, on-canvas <strong>X = 0 wall</strong> overlay, and
+            notices linking to the propagation panel.
+          </li>
+        </ul>
+        <h3>Y-axis zoom (timeline + scatter)</h3>
+        <ul>
+          <li>
+            If <code>computeOutrageDiagnostics</code> reports compression, axis max is recalculated
+            (e.g. scatter <code>max(0.2, maxY + 0.04)</code>, timeline
+            <code>max(0.2, peak mean + 0.05)</code>) so floor-clustered points are visible.
+          </li>
+          <li>
+            Horizontal tier guides use <code>yPercentile75</code> instead of a median on the floor
+            when outrage is compressed; labels move to a fixed upper band (<strong>TOP TIER</strong>
+            / <strong>CRITICAL</strong>) so they are not dragged to the bottom-right.
+          </li>
+          <li>
+            A dashed reference at <code>OUTRAGE_COMPRESSION_THRESHOLD</code> marks the lexicon floor
+            on the scatter Y axis when zoomed.
+          </li>
+        </ul>
+      </section>
+
+      <section>
         <h2>Author prioritization scatter</h2>
         <p>
           Each author is plotted by out-degree (spread) vs max outrage. Points in the top-right
-          quadrant are flagged as critical operational targets; IU astroturf registry matches are
-          bright red. Click scatter points, timeline days, network nodes, or critical-target rows
-          to filter the post list and focus the propagation graph on that author.
+          quadrant are flagged as critical operational targets when both axes carry signal; on a
+          lexicon floor or with no edges, the chart switches to relative tiers and on-canvas notices.
+          IU astroturf registry matches are bright red. Click scatter points, timeline days, network
+          nodes, or critical-target rows to filter the post list and focus the propagation graph on
+          that author.
         </p>
       </section>
 
