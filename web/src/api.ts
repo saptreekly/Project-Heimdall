@@ -2,8 +2,10 @@ import type {
   AmplificationReport,
   CibReport,
   DashboardSnapshot,
+  GraphAuthor,
   NarrativeSummary,
   Post,
+  PropagationGraph,
   SentimentShift,
 } from "./types";
 
@@ -106,4 +108,33 @@ export async function fetchSentimentShift(narrativeId: number): Promise<Sentimen
 export async function fetchAmplification(narrativeId: number): Promise<AmplificationReport> {
   await loadSnapshot();
   return bundleFor(narrativeId).amplification;
+}
+
+function graphFromPosts(posts: Post[]): PropagationGraph {
+  const authors = new Map<string, GraphAuthor>();
+  for (const p of posts) {
+    const existing = authors.get(p.author_id);
+    const outrage = p.outrage_index ?? 0;
+    if (!existing) {
+      authors.set(p.author_id, {
+        author_id: p.author_id,
+        handle: null,
+        max_outrage: outrage,
+        post_count: 1,
+      });
+    } else {
+      existing.post_count += 1;
+      existing.max_outrage = Math.max(existing.max_outrage, outrage);
+    }
+  }
+  return { authors: [...authors.values()], edges: [] };
+}
+
+export async function fetchPropagationGraph(narrativeId: number): Promise<PropagationGraph> {
+  await loadSnapshot();
+  const bundle = bundleFor(narrativeId);
+  if (bundle.graph?.authors?.length) {
+    return bundle.graph;
+  }
+  return graphFromPosts(bundle.posts);
 }

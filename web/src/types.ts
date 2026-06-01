@@ -52,6 +52,10 @@ export interface DuplicateCluster {
   author_ids: string[];
   post_ids: number[];
   sample_text: string;
+  burst_synchronized?: boolean;
+  burst_author_count?: number;
+  cluster_span_seconds?: number;
+  min_inter_arrival_seconds?: number | null;
 }
 
 export interface AmplificationReport {
@@ -60,11 +64,34 @@ export interface AmplificationReport {
   clusters: DuplicateCluster[];
 }
 
+export interface GraphAuthor {
+  author_id: string;
+  handle: string | null;
+  max_outrage: number;
+  post_count: number;
+  known_bot?: boolean;
+  bot_label?: string | null;
+}
+
+export interface GraphEdge {
+  source: string;
+  target: string;
+  type: string;
+  source_post_id?: number;
+  target_post_id?: number | null;
+}
+
+export interface PropagationGraph {
+  authors: GraphAuthor[];
+  edges: GraphEdge[];
+}
+
 export interface NarrativeBundle {
   posts: Post[];
   cib: CibReport;
   sentiment: SentimentShift;
   amplification: AmplificationReport;
+  graph?: PropagationGraph;
 }
 
 export interface DashboardSnapshot {

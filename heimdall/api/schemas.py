@@ -72,6 +72,10 @@ class DuplicateClusterOut(BaseModel):
     author_ids: list[str]
     post_ids: list[int]
     sample_text: str
+    burst_synchronized: bool = False
+    burst_author_count: int = 0
+    cluster_span_seconds: float = 0.0
+    min_inter_arrival_seconds: float | None = None
 
 
 class AstroturfImportResponse(BaseModel):

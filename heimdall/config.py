@@ -47,6 +47,10 @@ class Settings(BaseSettings):
 
     tweet_eval_split: str = "test"  # train | validation | test
 
+    # Sentence embeddings + theme clustering (pip install -e ".[ml]")
+    use_embedding_themes: bool = False
+    embedding_model: str = "all-MiniLM-L6-v2"
+
     # Rate limits (requests per window)
     ingest_requests_per_minute: int = 30
     ingest_burst: int = 5

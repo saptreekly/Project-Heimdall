@@ -51,17 +51,32 @@ export function renderMethodology(): string {
       </section>
 
       <section>
+        <h2>Emerging themes (embeddings)</h2>
+        <p>
+          With <code>USE_EMBEDDING_THEMES=true</code> and <code>pip install -e ".[ml]"</code>, posts are
+          vectorized with <code>all-MiniLM-L6-v2</code> and clustered (DBSCAN, with KMeans fallback).
+          Cohesive clusters with low lexicon overlap are flagged as <strong>emerging themes</strong>
+          (slang, typos, localized dog whistles) and receive a small outrage-index boost on rescore/ingest.
+        </p>
+        <p class="sub">
+          API: <code>GET /api/v1/narratives/&#123;id&#125;/themes</code>
+        </p>
+      </section>
+
+      <section>
         <h2>Outrage index</h2>
         <p>
           Each post gets an <strong>outrage index</strong> in [0, 1] from a lexicon pipeline
-          (<code>heimdall-lexicon-v2.1</code>): dehumanizing language, anti-authority framing,
+          (<code>heimdall-lexicon-v2.2</code>, optional <code>+embed-cluster</code>): dehumanizing language,
+          anti-authority framing,
           ragebait markers, conflict terms, negative sentiment, and stance polarization. Affection
           and neutral phrasing pull the score down.
         </p>
         <p>
           <strong>Mean outrage</strong> and the histogram summarize scored posts in the snapshot.
-          <strong>Sentiment shift</strong> buckets mean outrage by calendar day; the trend label compares
-          first vs last bucket (escalating vs stable).
+          <strong>Sentiment shift</strong> uses a dual-axis chart (Chart.js): a line for daily mean outrage
+          (left axis) and bars for post volume per day (right axis), so a single angry post cannot look
+          like a mass radicalization event. The trend label uses rolling-mean linear regression (≥3 days).
         </p>
       </section>
 
@@ -69,8 +84,29 @@ export function renderMethodology(): string {
         <h2>Duplicate text (amplification)</h2>
         <p>
           Posts are grouped by normalized text (lowercased, whitespace collapsed). Clusters with
-          at least two posts are shown; often copypasta or coordinated messaging. Multiple authors
-          in one cluster is a stronger coordination signal than a single author repeating a message.
+          at least two posts are shown; often copypasta or coordinated messaging. Each cluster also
+          measures inter-arrival timing: if five or more distinct authors post the same normalized
+          text within a 90-second window, the cluster is flagged as a synchronized burst and CIB
+          suspicion is raised (organic copypasta usually spreads over a long decay tail).
+        </p>
+      </section>
+
+      <section>
+        <h2>Author prioritization scatter</h2>
+        <p>
+          Each author is plotted by out-degree (spread) vs max outrage. Points in the top-right
+          quadrant are flagged as critical operational targets; IU astroturf registry matches are
+          bright red.
+        </p>
+      </section>
+
+      <section>
+        <h2>Propagation network (dashboard)</h2>
+        <p>
+          The Analysis tab renders author nodes and share/reply edges with vis-network. Node size
+          reflects amplification out-degree; color reflects max outrage. A
+          <strong>star topology</strong> (one hub with most out-edges) reads as coordinated;
+          a <strong>distributed</strong> multi-hub shape reads more organic.
         </p>
       </section>
 
@@ -86,6 +122,7 @@ export function renderMethodology(): string {
           <li>Graph density &gt; 0.15 with ≥5 authors</li>
           <li>Dense connected components (≥3 authors, high internal density)</li>
           <li>High average outrage combined with other coordination signals</li>
+          <li>Synchronized duplicate-text burst (≥5 authors, same normalized text within 90 seconds)</li>
         </ul>
         <p>
           <strong>IU astroturf overlap</strong> (when present) counts narrative authors on platform

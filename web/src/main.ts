@@ -4,6 +4,7 @@ import {
   fetchAmplification,
   fetchCib,
   fetchPosts,
+  fetchPropagationGraph,
   fetchSentimentShift,
   getSnapshotGeneratedAt,
   listNarratives,
@@ -18,6 +19,14 @@ import {
   tabFromUrl,
   type AppTab,
 } from "./tabs";
+import { graphPanelHtml, renderPropagationGraph } from "./propagation-graph";
+import {
+  buildAuthorPriorityPoints,
+  mountPrioritizationScatter,
+  priorityScatterPanelHtml,
+  renderPriorityTargetList,
+} from "./prioritization-scatter";
+import { mountSentimentChart, sentimentChartPanelHtml } from "./sentiment-chart";
 import type { DuplicateCluster, NarrativeSummary, Post } from "./types";
 
 let currentTab: AppTab = tabFromUrl();
@@ -112,33 +121,23 @@ function renderClusters(clusters: DuplicateCluster[]): string {
   return clusters
     .slice(0, 8)
     .map(
-      (c) => `<div class="cluster">
-        <strong>${c.count} posts</strong> · ${c.author_count} authors
+      (c) => {
+        const burst =
+          c.burst_synchronized
+            ? `<span class="burst-tag">${c.burst_author_count ?? c.author_count} authors in 90s burst</span>`
+            : "";
+        const timing =
+          c.min_inter_arrival_seconds != null
+            ? ` · min gap ${c.min_inter_arrival_seconds}s · span ${c.cluster_span_seconds ?? "?"}s`
+            : "";
+        return `<div class="cluster${c.burst_synchronized ? " cluster-burst" : ""}">
+        <strong>${c.count} posts</strong> · ${c.author_count} authors${burst}
         <p class="post-text">${escapeHtml(truncate(c.sample_text, 200))}</p>
-        <p class="post-meta">authors: ${escapeHtml(c.author_ids.slice(0, 5).join(", "))}${c.author_ids.length > 5 ? "…" : ""}</p>
-      </div>`
+        <p class="post-meta">authors: ${escapeHtml(c.author_ids.slice(0, 5).join(", "))}${c.author_ids.length > 5 ? "…" : ""}${timing}</p>
+      </div>`;
+      }
     )
     .join("");
-}
-
-function renderSentimentChart(
-  buckets: Array<{ date: string; mean_outrage: number; count: number }>
-): string {
-  if (buckets.length === 0) {
-    return "<p class='loading'>Not enough dated posts for a timeline.</p>";
-  }
-  const max = Math.max(...buckets.map((b) => b.mean_outrage), 0.01);
-  const rows = buckets
-    .map((b) => {
-      const pct = (b.mean_outrage / max) * 100;
-      return `<div class="bar-row">
-        <span class="bar-label">${escapeHtml(b.date)}</span>
-        <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
-        <span>${b.mean_outrage.toFixed(2)} (${b.count})</span>
-      </div>`;
-    })
-    .join("");
-  return `<div class="chart">${rows}</div>`;
 }
 
 function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: string | null): string {
@@ -211,17 +210,20 @@ async function loadDashboard(narrativeId: number): Promise<void> {
   content.innerHTML = "<p class='loading'>Loading…</p>";
 
   try {
-    const [posts, cib, sentiment, amp] = await Promise.all([
+    const [posts, cib, sentiment, amp, graph] = await Promise.all([
       fetchPosts(narrativeId),
       fetchCib(narrativeId),
       fetchSentimentShift(narrativeId),
       fetchAmplification(narrativeId),
+      fetchPropagationGraph(narrativeId),
     ]);
 
     const scored = posts.filter((p) => p.outrage_index != null);
     const outrageVals = scored.map((p) => p.outrage_index as number);
     const authors = new Set(posts.map((p) => p.author_id));
     const avg = mean(outrageVals);
+    const priorityPoints = buildAuthorPriorityPoints(graph, cib, posts);
+    const criticalCount = priorityPoints.filter((p) => p.critical).length;
 
     content.innerHTML = `
       <div class="metrics-grid">
@@ -240,11 +242,13 @@ async function loadDashboard(narrativeId: number): Promise<void> {
           <h2>Outrage distribution</h2>
           ${renderHistogram(posts)}
         </section>
-        <section class="panel">
-          <h2>Sentiment shift <span class="trend-pill">${escapeHtml(sentiment.trend)}</span></h2>
-          ${renderSentimentChart(sentiment.buckets)}
-        </section>
       </div>
+
+      ${sentimentChartPanelHtml(escapeHtml(sentiment.trend))}
+
+      ${priorityScatterPanelHtml(criticalCount)}
+
+      ${graphPanelHtml(null)}
 
       <div class="split-grid">
         <section class="panel">
@@ -269,6 +273,41 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         ${renderPosts(posts)}
       </section>
     `;
+
+    const sentimentCanvas = document.getElementById(
+      "sentiment-timeline-chart"
+    ) as HTMLCanvasElement | null;
+    if (sentimentCanvas) {
+      mountSentimentChart(sentimentCanvas, sentiment.buckets);
+    }
+
+    const scatterCanvas = document.getElementById(
+      "priority-scatter-chart"
+    ) as HTMLCanvasElement | null;
+    const targetList = document.getElementById("priority-target-list");
+    if (scatterCanvas) {
+      mountPrioritizationScatter(scatterCanvas, priorityPoints);
+    }
+    if (targetList) {
+      renderPriorityTargetList(targetList, priorityPoints);
+    }
+
+    const graphEl = document.getElementById("propagation-graph");
+    if (graphEl) {
+      const meta = renderPropagationGraph(graphEl, graph, cib);
+      const badgeHost = graphEl.parentElement?.querySelector("h2");
+      if (badgeHost) {
+        const badge =
+          meta.topology === "star"
+            ? '<span class="topology-badge topology-star">star / coordinated</span>'
+            : meta.topology === "distributed"
+              ? '<span class="topology-badge topology-organic">distributed / organic-like</span>'
+              : meta.topology === "isolated"
+                ? '<span class="topology-badge topology-isolated">no edges</span>'
+                : '<span class="topology-badge topology-sparse">sparse</span>';
+        badgeHost.innerHTML = `Propagation network ${badge}`;
+      }
+    }
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     content.innerHTML = `<div class="error"><strong>Failed to load narrative ${narrativeId}</strong><p>${escapeHtml(msg)}</p></div>`;

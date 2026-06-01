@@ -77,7 +77,10 @@ class IngestionPipeline:
             settings.ingest_requests_per_minute,
             settings.ingest_burst,
         )
-        self._analyzer = analyzer or OutrageAnalyzer()
+        self._analyzer = analyzer or OutrageAnalyzer(
+            use_embeddings=settings.use_embedding_themes,
+            embedding_model=settings.embedding_model,
+        )
 
     async def ensure_narrative(self, name: str, keywords: list[str]) -> Narrative:
         result = await self._session.execute(select(Narrative).where(Narrative.name == name))
@@ -140,6 +143,11 @@ class IngestionPipeline:
                 edges += 1
 
         await self._session.commit()
+
+        if self._analyzer.use_embeddings and scored >= 3:
+            rescore_result = await self._analyzer.rescore_narrative(self._session, narrative.id)
+            scored = rescore_result.get("rescored", scored)
+
         result = {
             "narrative_id": narrative.id,
             "fetched": len(raw_posts),

@@ -234,6 +234,65 @@ button {
   margin-bottom: 1rem;
 }
 
+.panel-chart-wide {
+  grid-column: 1 / -1;
+  margin-bottom: 1rem;
+}
+
+.chart-caption {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0 0 0.65rem;
+}
+
+.chart-wrap {
+  position: relative;
+  height: 320px;
+  width: 100%;
+}
+
+.chart-wrap-scatter {
+  height: 360px;
+}
+
+.priority-target-list {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.priority-target-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.75rem;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.65rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+.priority-target-list li.priority-known-bot {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.priority-target-list .bot-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ff6b6b;
+  letter-spacing: 0.04em;
+}
+
+.priority-target-list li span:not(.bot-pill) {
+  color: var(--muted);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+
 .panel {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -321,8 +380,74 @@ button {
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
+.cluster-burst {
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.burst-tag {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .posts-panel {
   margin-top: 0.5rem;
+}
+
+.graph-panel {
+  margin-bottom: 1rem;
+}
+
+.graph-legend {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 0.65rem;
+  line-height: 1.45;
+}
+
+.graph-canvas {
+  height: 420px;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+}
+
+.graph-hint {
+  margin: 0.5rem 0 0;
+}
+
+.topology-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+}
+
+.topology-star {
+  color: var(--warn);
+  background: rgba(245, 166, 35, 0.15);
+}
+
+.topology-organic {
+  color: var(--ok);
+  background: rgba(61, 214, 140, 0.12);
+}
+
+.topology-sparse,
+.topology-isolated {
+  color: var(--muted);
+  background: rgba(138, 155, 179, 0.15);
 }
 
 .post-list {

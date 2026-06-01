@@ -32,4 +32,6 @@ async def test_build_dashboard_snapshot(db_session: AsyncSession) -> None:
     bundle = snap["by_narrative_id"][nid]
     assert len(bundle["posts"]) > 0
     assert "suspicion_score" in bundle["cib"]
+    assert "authors" in bundle["graph"]
+    assert "edges" in bundle["graph"]
     json.dumps(snap)

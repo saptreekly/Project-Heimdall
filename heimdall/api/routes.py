@@ -4,7 +4,11 @@ from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload
 
-from heimdall.analysis.duplicates import find_duplicate_clusters_from_rows
+from heimdall.analysis.duplicates import (
+    apply_duplicate_temporal_cib_boost,
+    find_duplicate_clusters_from_rows,
+)
+from heimdall.analysis.sentiment_shift import narrative_sentiment_shift
 from heimdall.api.schemas import (
     AstroturfImportResponse,
     CIBResponse,
@@ -20,6 +24,8 @@ from heimdall.config import get_settings
 from heimdall.datasets.astroturf import count_known_bots, import_astroturf, narrative_bot_overlap
 from heimdall.datasets.tweet_eval import ALL_SUBSETS, RAGEBAIT_SUBSETS, parse_tweet_eval_meta
 from heimdall.nlp.calibrate import tweet_eval_calibration
+from heimdall.nlp.embeddings import EmbeddingUnavailableError
+from heimdall.nlp.narrative_themes import narrative_theme_clusters
 from heimdall.nlp.outrage import OutrageAnalyzer
 from heimdall.db.models import Narrative, OutrageScore, Platform, Post
 from heimdall.db.session import get_db
@@ -185,10 +191,11 @@ async def narrative_amplification(
         raise HTTPException(status_code=404, detail="Narrative not found")
 
     result = await db.execute(
-        select(Post.id, Post.author_id, Post.text).where(Post.narrative_id == narrative_id)
+        select(Post.id, Post.author_id, Post.text, Post.posted_at).where(
+            Post.narrative_id == narrative_id
+        )
     )
-    rows = [(r[0], r[1], r[2]) for r in result.all()]
-    clusters = find_duplicate_clusters_from_rows(rows, min_posts=min_posts)
+    clusters = find_duplicate_clusters_from_rows(list(result.all()), min_posts=min_posts)
     return {
         "narrative_id": narrative_id,
         "cluster_count": len(clusters),
@@ -199,6 +206,10 @@ async def narrative_amplification(
                 author_ids=c.author_ids,
                 post_ids=c.post_ids,
                 sample_text=c.sample_text,
+                burst_synchronized=c.burst_synchronized,
+                burst_author_count=c.burst_author_count,
+                cluster_span_seconds=c.cluster_span_seconds,
+                min_inter_arrival_seconds=c.min_inter_arrival_seconds,
             )
             for c in clusters
         ],
@@ -214,12 +225,23 @@ async def analyze_cib(narrative_id: int, db: AsyncSession = Depends(get_db)) -> 
     analyzer = NarrativeGraphAnalyzer()
     assessment = await analyzer.assess_narrative(db, narrative_id)
     m = assessment.metrics
+    dup_result = await db.execute(
+        select(Post.id, Post.author_id, Post.text, Post.posted_at).where(
+            Post.narrative_id == narrative_id
+        )
+    )
+    duplicate_clusters = find_duplicate_clusters_from_rows(list(dup_result.all()))
+    suspicion, signals = apply_duplicate_temporal_cib_boost(
+        assessment.suspicion_score,
+        assessment.signals,
+        duplicate_clusters,
+    )
     bot_overlap = await narrative_bot_overlap(db, narrative_id)
     return CIBResponse(
         narrative_id=narrative_id,
-        suspicion_score=assessment.suspicion_score,
-        organic_score=m.organic_score,
-        signals=assessment.signals,
+        suspicion_score=round(suspicion, 4),
+        organic_score=round(1.0 - suspicion, 4),
+        signals=signals,
         node_count=m.node_count,
         edge_count=m.edge_count,
         density=m.density,
@@ -260,7 +282,27 @@ async def rescore_narrative(narrative_id: int, db: AsyncSession = Depends(get_db
     exists = await db.execute(select(Narrative.id).where(Narrative.id == narrative_id))
     if not exists.scalar_one_or_none():
         raise HTTPException(status_code=404, detail="Narrative not found")
-    return await OutrageAnalyzer().rescore_narrative(db, narrative_id)
+    settings = get_settings()
+    analyzer = OutrageAnalyzer(
+        use_embeddings=settings.use_embedding_themes,
+        embedding_model=settings.embedding_model,
+    )
+    try:
+        return await analyzer.rescore_narrative(db, narrative_id)
+    except (EmbeddingUnavailableError, RuntimeError) as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+
+
+@router.get("/narratives/{narrative_id}/themes")
+async def narrative_themes(narrative_id: int, db: AsyncSession = Depends(get_db)) -> dict:
+    """Embedding clusters for emerging narrative themes beyond static lexicons."""
+    exists = await db.execute(select(Narrative.id).where(Narrative.id == narrative_id))
+    if not exists.scalar_one_or_none():
+        raise HTTPException(status_code=404, detail="Narrative not found")
+    try:
+        return await narrative_theme_clusters(db, narrative_id)
+    except (EmbeddingUnavailableError, RuntimeError) as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
 
 
 @router.get("/narratives/{narrative_id}/calibration")
@@ -307,28 +349,4 @@ async def sync_neo4j(
 @router.get("/narratives/{narrative_id}/sentiment-shift")
 async def sentiment_shift(narrative_id: int, db: AsyncSession = Depends(get_db)) -> dict:
     """Track mean outrage over time buckets to detect escalation."""
-    result = await db.execute(
-        select(Post.posted_at, OutrageScore.outrage_index, OutrageScore.sentiment_label)
-        .join(OutrageScore, OutrageScore.post_id == Post.id)
-        .where(Post.narrative_id == narrative_id)
-        .order_by(Post.posted_at)
-    )
-    rows = result.all()
-    if not rows:
-        return {"narrative_id": narrative_id, "buckets": [], "trend": "insufficient_data"}
-
-    buckets: dict[str, list[float]] = {}
-    for posted_at, outrage, _ in rows:
-        key = posted_at.strftime("%Y-%m-%d")
-        buckets.setdefault(key, []).append(outrage)
-
-    series = [
-        {"date": k, "mean_outrage": round(sum(v) / len(v), 4), "count": len(v)}
-        for k, v in sorted(buckets.items())
-    ]
-    if len(series) >= 2:
-        trend = "escalating" if series[-1]["mean_outrage"] > series[0]["mean_outrage"] else "stable"
-    else:
-        trend = "insufficient_data"
-
-    return {"narrative_id": narrative_id, "buckets": series, "trend": trend}
+    return await narrative_sentiment_shift(db, narrative_id)

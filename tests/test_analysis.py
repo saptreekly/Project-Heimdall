@@ -1,3 +1,5 @@
+from datetime import UTC, datetime
+
 import pandas as pd
 
 from heimdall.analysis.duplicates import (
@@ -30,10 +32,11 @@ def test_duplicate_clusters_cross_author() -> None:
 
 
 def test_duplicate_clusters_from_rows() -> None:
+    base = datetime(2026, 1, 1, 12, 0, 0, tzinfo=UTC)
     rows = [
-        (10, "u1", "Same message"),
-        (11, "u2", "Same message"),
-        (12, "u3", "other"),
+        (10, "u1", "Same message", base),
+        (11, "u2", "Same message", base),
+        (12, "u3", "other", base),
     ]
     clusters = find_duplicate_clusters_from_rows(rows, min_posts=2)
     assert len(clusters) == 1

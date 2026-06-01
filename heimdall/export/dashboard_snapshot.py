@@ -6,11 +6,16 @@ from datetime import UTC, datetime
 
 from sqlalchemy import String, cast, func, select
 from sqlalchemy.ext.asyncio import AsyncSession
-from heimdall.analysis.duplicates import find_duplicate_clusters_from_rows
+from heimdall.analysis.duplicates import (
+    apply_duplicate_temporal_cib_boost,
+    find_duplicate_clusters_from_rows,
+)
+from heimdall.analysis.sentiment_shift import narrative_sentiment_shift
 from heimdall.api.schemas import CIBResponse, DuplicateClusterOut, NarrativeSummary, PostOut
 from heimdall.datasets.astroturf import narrative_bot_overlap
 from heimdall.datasets.tweet_eval import parse_tweet_eval_meta
 from heimdall.db.models import Narrative, OutrageScore, Platform, Post
+from heimdall.graph.export import build_graph_export
 from heimdall.graph.networkx_analysis import NarrativeGraphAnalyzer
 
 
@@ -88,12 +93,24 @@ async def narrative_cib(db: AsyncSession, narrative_id: int) -> CIBResponse:
     analyzer = NarrativeGraphAnalyzer()
     assessment = await analyzer.assess_narrative(db, narrative_id)
     m = assessment.metrics
+    dup_rows = await db.execute(
+        select(Post.id, Post.author_id, Post.text, Post.posted_at).where(
+            Post.narrative_id == narrative_id
+        )
+    )
+    duplicate_clusters = find_duplicate_clusters_from_rows(list(dup_rows.all()))
+    suspicion, signals = apply_duplicate_temporal_cib_boost(
+        assessment.suspicion_score,
+        assessment.signals,
+        duplicate_clusters,
+    )
+    organic_score = round(1.0 - suspicion, 4)
     bot_overlap = await narrative_bot_overlap(db, narrative_id)
     return CIBResponse(
         narrative_id=narrative_id,
-        suspicion_score=assessment.suspicion_score,
-        organic_score=m.organic_score,
-        signals=assessment.signals,
+        suspicion_score=round(suspicion, 4),
+        organic_score=organic_score,
+        signals=signals,
         node_count=m.node_count,
         edge_count=m.edge_count,
         density=m.density,
@@ -103,40 +120,13 @@ async def narrative_cib(db: AsyncSession, narrative_id: int) -> CIBResponse:
     )
 
 
-async def narrative_sentiment_shift(db: AsyncSession, narrative_id: int) -> dict:
-    result = await db.execute(
-        select(Post.posted_at, OutrageScore.outrage_index, OutrageScore.sentiment_label)
-        .join(OutrageScore, OutrageScore.post_id == Post.id)
-        .where(Post.narrative_id == narrative_id)
-        .order_by(Post.posted_at)
-    )
-    rows = result.all()
-    if not rows:
-        return {"narrative_id": narrative_id, "buckets": [], "trend": "insufficient_data"}
-
-    buckets: dict[str, list[float]] = {}
-    for posted_at, outrage, _ in rows:
-        key = posted_at.strftime("%Y-%m-%d")
-        buckets.setdefault(key, []).append(outrage)
-
-    series = [
-        {"date": k, "mean_outrage": round(sum(v) / len(v), 4), "count": len(v)}
-        for k, v in sorted(buckets.items())
-    ]
-    if len(series) >= 2:
-        trend = "escalating" if series[-1]["mean_outrage"] > series[0]["mean_outrage"] else "stable"
-    else:
-        trend = "insufficient_data"
-
-    return {"narrative_id": narrative_id, "buckets": series, "trend": trend}
-
-
 async def narrative_amplification(db: AsyncSession, narrative_id: int, *, min_posts: int = 2) -> dict:
     result = await db.execute(
-        select(Post.id, Post.author_id, Post.text).where(Post.narrative_id == narrative_id)
+        select(Post.id, Post.author_id, Post.text, Post.posted_at).where(
+            Post.narrative_id == narrative_id
+        )
     )
-    rows = [(r[0], r[1], r[2]) for r in result.all()]
-    clusters = find_duplicate_clusters_from_rows(rows, min_posts=min_posts)
+    clusters = find_duplicate_clusters_from_rows(list(result.all()), min_posts=min_posts)
     return {
         "narrative_id": narrative_id,
         "cluster_count": len(clusters),
@@ -147,9 +137,25 @@ async def narrative_amplification(db: AsyncSession, narrative_id: int, *, min_po
                 author_ids=c.author_ids,
                 post_ids=c.post_ids,
                 sample_text=c.sample_text,
+                burst_synchronized=c.burst_synchronized,
+                burst_author_count=c.burst_author_count,
+                cluster_span_seconds=c.cluster_span_seconds,
+                min_inter_arrival_seconds=c.min_inter_arrival_seconds,
             ).model_dump()
             for c in clusters
         ],
+    }
+
+
+async def narrative_graph(db: AsyncSession, narrative_id: int) -> dict:
+    """Author nodes and propagation edges for the static dashboard graph view."""
+    try:
+        payload = await build_graph_export(db, narrative_id, include_cib=False)
+    except ValueError:
+        return {"authors": [], "edges": []}
+    return {
+        "authors": payload.authors,
+        "edges": payload.amplifications,
     }
 
 
@@ -163,6 +169,7 @@ async def build_dashboard_snapshot(db: AsyncSession) -> dict:
             "cib": (await narrative_cib(db, nid)).model_dump(mode="json"),
             "sentiment": await narrative_sentiment_shift(db, nid),
             "amplification": await narrative_amplification(db, nid),
+            "graph": await narrative_graph(db, nid),
         }
 
     return {

@@ -196,7 +196,7 @@ Neo4j authors get `known_bot` and `bot_label` when matched.
 | `MASTODON_INSTANCE_URL` | Instance for hashtag timelines |
 | `DEFAULT_INGESTER` | `hackernews`, `mastodon`, `mock`, etc. |
 
-Install transformer-backed sentiment: `pip install -e ".[ml]"` and pass `OutrageAnalyzer(use_transformers=True)` in the pipeline.
+Install ML extras: `pip install -e ".[ml]"` for transformer sentiment (`OutrageAnalyzer(use_transformers=True)`), sentence embeddings, and theme clustering. Set `USE_EMBEDDING_THEMES=true` to cluster posts with DBSCAN/KMeans and surface emerging themes via `GET /api/v1/narratives/{id}/themes`.
 
 ## Legal & ethical use
 
