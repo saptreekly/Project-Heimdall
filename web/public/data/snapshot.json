@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-01T01:35:02.667548+00:00",
+  "generated_at": "2026-06-01T01:48:54.856957+00:00",
   "narratives": [
     {
       "id": 1,
@@ -18,7 +18,7 @@
       "id": 3,
       "name": "midterms_2026",
       "keywords": "2026 midterms,midterm elections 2026,2026 midterm fraud,2026 red wave,2026 blue wave,Senate race 2026,House race 2026",
-      "post_count": 78
+      "post_count": 97
     },
     {
       "id": 4,
@@ -179,9 +179,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "bot_gamma",
               "bot_alpha",
-              "bot_beta"
+              "bot_beta",
+              "bot_gamma"
             ]
           }
         ],
@@ -385,8 +385,8 @@
         "narrative_id": 1,
         "post_count": 10,
         "cluster_count": 4,
-        "method": "dbscan+tfidf",
-        "model": "tfidf-fallback",
+        "method": "dbscan",
+        "model": "all-MiniLM-L6-v2",
         "clusters": [
           {
             "cluster_id": 0,
@@ -404,8 +404,7 @@
               "border",
               "crisis",
               "share",
-              "before",
-              "they"
+              "delete"
             ],
             "sample_text": "Wake up!!! border crisis  -  share before they delete this!!!",
             "first_seen": "2026-05-31",
@@ -424,12 +423,12 @@
             "lexicon_hit_rate": 0.2857,
             "emerging_theme": false,
             "label_terms": [
-              "they",
               "destroying",
               "country",
               "border",
               "crisis",
-              "proof"
+              "proof",
+              "elites"
             ],
             "sample_text": "They are destroying our country. border crisis is proof the elites hate you.",
             "first_seen": "2026-05-31",
@@ -470,12 +469,12 @@
             "lexicon_hit_rate": 0.0,
             "emerging_theme": false,
             "label_terms": [
-              "about",
-              "just",
               "asking",
               "questions",
               "border",
-              "crisis"
+              "crisis",
+              "media",
+              "talking"
             ],
             "sample_text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
             "first_seen": "2026-05-31",
@@ -494,8 +493,7 @@
               "border",
               "crisis",
               "share",
-              "before",
-              "they"
+              "delete"
             ],
             "emerging_theme": true,
             "size": 3,
@@ -510,12 +508,12 @@
           {
             "cluster_id": 1,
             "label_terms": [
-              "they",
               "destroying",
               "country",
               "border",
               "crisis",
-              "proof"
+              "proof",
+              "elites"
             ],
             "emerging_theme": false,
             "size": 3,
@@ -549,12 +547,12 @@
           {
             "cluster_id": 3,
             "label_terms": [
-              "about",
-              "just",
               "asking",
               "questions",
               "border",
-              "crisis"
+              "crisis",
+              "media",
+              "talking"
             ],
             "emerging_theme": false,
             "size": 2,
@@ -1031,53 +1029,40 @@
         "narrative_id": 2,
         "post_count": 20,
         "cluster_count": 4,
-        "method": "kmeans+tfidf",
-        "model": "tfidf-fallback",
+        "method": "kmeans",
+        "model": "all-MiniLM-L6-v2",
         "clusters": [
           {
-            "cluster_id": 3,
+            "cluster_id": 1,
             "post_ids": [
+              30,
               29,
-              13,
+              28,
+              27,
+              26,
+              24,
+              23,
+              21,
+              20,
+              19,
+              17,
+              16,
+              15,
+              14,
               11,
               12
             ],
-            "size": 4,
-            "cohesion": 0.5548,
-            "lexicon_hit_rate": 0.0,
+            "size": 16,
+            "cohesion": 0.6285,
+            "lexicon_hit_rate": 0.0179,
             "emerging_theme": true,
             "label_terms": [
-              "border",
               "crisis",
-              "government",
-              "president",
-              "should",
-              "strengthen"
-            ],
-            "sample_text": "Can success actually heal a nation? Watch as the President explains his theory on prosperity, border security, and his stance on preventing a nuclear crisis. A fascinating look at his political philosophy. Politics USA Economy Trump WhiteHo\u2026",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 0,
-            "post_ids": [
-              24,
-              19,
-              16,
-              15
-            ],
-            "size": 4,
-            "cohesion": 0.5539,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
-            "label_terms": [
               "border",
-              "myanmar",
-              "crisis",
-              "with",
-              "security",
-              "cooperation"
+              "high",
+              "prices",
+              "biden",
+              "myanmar"
             ],
             "sample_text": "Ajit Doval met Myanmar\u2019s NSA Tin Aung San (Moscow, May 2026). Agenda: security cooperation, connectivity, regional stability. Standard diplomatic engagement  -  not a crisis-breaking moment. Ground realities may have been discussed in strat\u2026",
             "first_seen": "2026-05-31",
@@ -1085,32 +1070,24 @@
             "active_days": 1
           },
           {
-            "cluster_id": 1,
+            "cluster_id": 0,
             "post_ids": [
-              28,
-              27,
-              26,
-              25,
-              23,
-              22,
-              21,
-              20,
               18,
-              14
+              13
             ],
-            "size": 10,
-            "cohesion": 0.4277,
-            "lexicon_hit_rate": 0.0286,
+            "size": 2,
+            "cohesion": 0.8348,
+            "lexicon_hit_rate": 0.0714,
             "emerging_theme": false,
             "label_terms": [
-              "border",
+              "destroyed",
               "crisis",
-              "that",
-              "there",
-              "biden",
-              "open"
+              "border",
+              "retarded",
+              "carter",
+              "education"
             ],
-            "sample_text": "What he has done with the border has worked. How he went about immigration enforcement inside the country has been deplorable, and highly unconstitutional. We had legislation on the table that attempted to fix this, but Trump needs a manufa\u2026",
+            "sample_text": "You're Retarded. Carter destroyed Education. Clinton was responsible for the Global Financial Crisis. Bush Jr. invaded Iraq over non-existent WMDs costing 3-5 Trillion; Obama destroyed Healthcare and Race Relations; and Biden opened the bor\u2026",
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "active_days": 1
@@ -1118,48 +1095,81 @@
           {
             "cluster_id": 2,
             "post_ids": [
-              30,
-              17
+              25
             ],
-            "size": 2,
-            "cohesion": 0.7354,
-            "lexicon_hit_rate": 0.0714,
+            "size": 1,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
             "emerging_theme": false,
             "label_terms": [
-              "high",
-              "crisis",
-              "prices",
-              "border",
-              "asylum",
-              "fuel"
+              "did",
+              "yep",
+              "british",
+              "diplomats",
+              "escalate",
+              "war"
             ],
-            "sample_text": "2021-2024: 'The border is secure,' catch-and-release, 50%+ asylum grants, 'root causes' talk. 2026: Trump restores rule of law \u2192 asylum at 7%, judge purge, ICE crackdowns \u2192 'Fascist! Reimagine enforcement! Defund!' Same crisis. Different pr\u2026",
+            "sample_text": "Yep 1914 did British diplomats escalate the war after the Marcos crisis couldn\u2019t be escalated - and 39 was the result what Poland did between 1920 and 1939 to the German people still living in the stolen areas and the border lands - many ra\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 3,
+            "post_ids": [
+              22
+            ],
+            "size": 1,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "bouncer",
+              "absolute",
+              "unit",
+              "sorted",
+              "scrotes",
+              "quicker"
+            ],
+            "sample_text": "That bouncer is a absolute unit! Sorted those scrotes quicker than FF/FG sort out the border crisis. Proper Irish steel right there\ud83d\ude02\ud83c\uddee\ud83c\uddea",
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "active_days": 1
           }
         ],
-        "emerging_theme_count": 2,
+        "emerging_theme_count": 1,
         "available": true,
         "reason": null,
         "timeline": [
           {
-            "cluster_id": 3,
+            "cluster_id": 1,
             "label_terms": [
-              "border",
               "crisis",
-              "government",
-              "president",
-              "should",
-              "strengthen"
+              "border",
+              "high",
+              "prices",
+              "biden",
+              "myanmar"
             ],
             "emerging_theme": true,
-            "size": 4,
+            "size": 16,
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "post_ids": [
+              30,
               29,
-              13,
+              28,
+              27,
+              26,
+              24,
+              23,
+              21,
+              20,
+              19,
+              17,
+              16,
+              15,
+              14,
               11,
               12
             ]
@@ -1167,68 +1177,56 @@
           {
             "cluster_id": 0,
             "label_terms": [
-              "border",
-              "myanmar",
+              "destroyed",
               "crisis",
-              "with",
-              "security",
-              "cooperation"
-            ],
-            "emerging_theme": true,
-            "size": 4,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              24,
-              19,
-              16,
-              15
-            ]
-          },
-          {
-            "cluster_id": 1,
-            "label_terms": [
               "border",
-              "crisis",
-              "that",
-              "there",
-              "biden",
-              "open"
-            ],
-            "emerging_theme": false,
-            "size": 10,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              28,
-              27,
-              26,
-              25,
-              23,
-              22,
-              21,
-              20,
-              18,
-              14
-            ]
-          },
-          {
-            "cluster_id": 2,
-            "label_terms": [
-              "high",
-              "crisis",
-              "prices",
-              "border",
-              "asylum",
-              "fuel"
+              "retarded",
+              "carter",
+              "education"
             ],
             "emerging_theme": false,
             "size": 2,
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "post_ids": [
-              30,
-              17
+              18,
+              13
+            ]
+          },
+          {
+            "cluster_id": 2,
+            "label_terms": [
+              "did",
+              "yep",
+              "british",
+              "diplomats",
+              "escalate",
+              "war"
+            ],
+            "emerging_theme": false,
+            "size": 1,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              25
+            ]
+          },
+          {
+            "cluster_id": 3,
+            "label_terms": [
+              "bouncer",
+              "absolute",
+              "unit",
+              "sorted",
+              "scrotes",
+              "quicker"
+            ],
+            "emerging_theme": false,
+            "size": 1,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              22
             ]
           }
         ]
@@ -1236,6 +1234,196 @@
     },
     "3": {
       "posts": [
+        {
+          "id": 119,
+          "platform": "x",
+          "author_id": "1982651175263727616",
+          "text": "\ud83c\uddfa\ud83c\uddf8 Federal Judge Rejects Bid to Block Trump Mail-In Ballot Verification Order Ahead of 2026 Midterms",
+          "posted_at": "2026-06-01T01:30:55",
+          "outrage_index": 0.0104,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 120,
+          "platform": "x",
+          "author_id": "1846347672875421699",
+          "text": "With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations on President",
+          "posted_at": "2026-06-01T01:30:20",
+          "outrage_index": 0.1415,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 121,
+          "platform": "x",
+          "author_id": "367290245",
+          "text": "REALITY CHECK! Over the past year the national debt rate increased $7.39 BILLION per day! Stop Republican House/Senate SURRENDER of Congressional Checks &amp; Balances to Fund Trump\u2019s Wars, ICE Court Violations, Tariffs, Monuments in 2026 Midterms! SHARE!",
+          "posted_at": "2026-06-01T01:30:16",
+          "outrage_index": 0.0504,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 122,
+          "platform": "x",
+          "author_id": "1846347672875421699",
+          "text": "With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations on President",
+          "posted_at": "2026-06-01T01:29:27",
+          "outrage_index": 0.1415,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 123,
+          "platform": "x",
+          "author_id": "1846347672875421699",
+          "text": "With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations on President",
+          "posted_at": "2026-06-01T01:29:17",
+          "outrage_index": 0.1415,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 124,
+          "platform": "x",
+          "author_id": "1104645662455488512",
+          "text": "\ud83d\udea8Federal Judge Declines to Block Trump\u2019s Mail-In Ballot Verification Order Ahead of 2026 Midterms Washington, D.C., U.S. District Judge Carl Nichols on May 28 declined to immediately halt President Donald Trump\u2019s executive order directing federal agencies to create verified lists of U.S. citizens for mail-in voting, ruling that a challenge by Democratic groups was premature. Judge Nichols said that no concrete harm had yet occurred because the Department of Homeland Security (DHS) and Social Security Administration (SSA) have not finalized the citizenship lists or begun sharing these with states. Executive order 14399 titled, \"Ensuring Citizenship Verification and Integrity in Federal Elections,\" signed March 31, also directs USPS to deliver mail-in and absentee ballots only to voters on those approved lists and requires states to retain certain election records for five years. The executive order aims to strengthen election integrity by using federal databases to confirm citizenship and prevent ballots from reaching non-citizens or ineligible voters ahead of the 2026 midterm elections, the Trump administration says. It does not ban mail voting nor impose a new national voter ID requirement but relies on existing federal records for verification in federal elections. Democratic plaintiffs, including the Democratic Senatorial Campaign Committee and Senate Minority Leader Chuck Schumer, along with voting rights groups such as the NAACP and LULAC, sued the Trump administration arguing the unconstitutionally of the EO stating that it intrudes on states\u2019 authority to run elections under the Constitution\u2019s Elections Clause. They also warned that incomplete federal databases could wrongly exclude eligible citizens \u2014 especially seniors, low-income voters and naturalized citizens \u2014 potentially disenfranchising millions and sowing chaos before tight congressional races. Judge Nichols on Thursday did not rule on the order\u2019s legality and left open the possibility for the plaintiffs to refile once agencies take concrete steps causing actual harm. Washington Attorney General Nick Brown is co-leading a coalition of 23 attorneys general and one governor in a separate lawsuit filed in early April challenging this same March 31 executive order. Currently, states are preparing voter rolls. Ballot delivery systems are under the threat of federal funding cuts or enforcement actions for noncompliance. The executive order\u2019s citizenship-list requirement and USPS restrictions on ballot delivery would require changes to Washington state\u2019s vote-by-mail system, including how ballots are tracked and delivered. AG Brown's suit argues the president lacks authority to unilaterally overhaul state election procedures and that the changes would force rapid, costly alterations to voter rolls, registration and mail-ballot processes just months before primaries and the general election. Brown's coalition suit builds on an earlier successful challenge by Washington and Oregon against a related 2025 Trump executive order. In that April 2025 case, the states blocked provisions requiring documentary proof of citizenship for voter registration and stricter ballot receipt deadlines. Washington counts ballots postmarked by Election Day even if they arrive later; more than 250,000 such ballots were accepted in the 2024 general election.",
+          "posted_at": "2026-06-01T01:28:12",
+          "outrage_index": 0.0028,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 125,
+          "platform": "x",
+          "author_id": "1855095207450066944",
+          "text": "I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tole rate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 Wewill destroy them in 2026 midterms",
+          "posted_at": "2026-06-01T01:25:13",
+          "outrage_index": 0.2579,
+          "sentiment_label": "emerging_theme",
+          "benchmark_label": null
+        },
+        {
+          "id": 126,
+          "platform": "x",
+          "author_id": "1855095207450066944",
+          "text": "I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I kil led 10000'S of these fascist nazi pigs in WW2 Wewill destroy them in 2026 midterms",
+          "posted_at": "2026-06-01T01:22:30",
+          "outrage_index": 0.2579,
+          "sentiment_label": "emerging_theme",
+          "benchmark_label": null
+        },
+        {
+          "id": 127,
+          "platform": "x",
+          "author_id": "1855095207450066944",
+          "text": "I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETICLOSERS. I killed 10000'S of these fascist nazi pigs in WW2 We will destroy them in 2026 midterms",
+          "posted_at": "2026-06-01T01:18:55",
+          "outrage_index": 0.2183,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 128,
+          "platform": "x",
+          "author_id": "1855095207450066944",
+          "text": "I feel sorry for that SENILE COWARD FAC IST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 Wewill destroy them in 2026 midterms",
+          "posted_at": "2026-06-01T01:14:48",
+          "outrage_index": 0.2579,
+          "sentiment_label": "emerging_theme",
+          "benchmark_label": null
+        },
+        {
+          "id": 129,
+          "platform": "x",
+          "author_id": "1855095207450066944",
+          "text": "I feel sorry for that SENILE COW ARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 Wewill destroy them in 2026 midterms",
+          "posted_at": "2026-06-01T01:14:24",
+          "outrage_index": 0.2579,
+          "sentiment_label": "emerging_theme",
+          "benchmark_label": null
+        },
+        {
+          "id": 130,
+          "platform": "x",
+          "author_id": "1968900161955864576",
+          "text": "Republicans (conservatives) are not currently projected to gain any net Senate seats in the 2026 midterms \u2014 most forecasts show they are more likely to lose 1\u20133 seats net while still holding a narrow majority. Totally",
+          "posted_at": "2026-06-01T01:08:42",
+          "outrage_index": 0.0011,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 131,
+          "platform": "x",
+          "author_id": "1930955614009896960",
+          "text": "At a downtown Atlanta rally, Sen. Jon Ossoff and Keisha Lance Bottoms highlighted health care costs, voting rights, and economic frustration ahead of Georgia's 2026 midterms.",
+          "posted_at": "2026-06-01T01:05:19",
+          "outrage_index": 0.0041,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 132,
+          "platform": "x",
+          "author_id": "2021771670881439744",
+          "text": "\ud83d\udea8\ud83d\udc42This is Stopable \u2014 primarily through ongoing federal court challenges, with a realistic chance of being blocked or significantly delayed before the 2026 midterms. Current Status (as of June 1, 2026) \u2022 The USPS proposed rule (issued May 29/30, 2026) is in the public comment period and not final. A final rule could come later, but implementation timelines are tight for November midterms. \u2022 Multiple lawsuits (from Democratic states, voting rights groups like League of Women Voters, Brennan Center, ACLU, etc.) are active in D.C. and Massachusetts federal courts. They argue the EO and rule unconstitutionally usurp state election authority (Elections Clause), violate federalism/Tenth Amendment, overstep presidential power over USPS, and burden voting rights. Key Legal Developments \u2022 On May 28/29, 2026, U.S. District Judge Carl Nichols (Trump appointee) declined a preliminary injunction, ruling challenges were \u201cpremature\u201d because no final agency actions (like the USPS rule) had occurred yet and plaintiffs hadn\u2019t shown concrete harm. He explicitly left the door open: plaintiffs can refile once implementation steps happen. \u2022 The new USPS proposed rule strengthens plaintiffs\u2019 standing for renewed injunction requests. Hearings (e.g., in Boston on June 2) and updated motions are expected soon. Past precedent: Similar provisions in Trump\u2019s 2025 EO were blocked by multiple federal courts on separation-of-powers and federalism grounds. Appeals are ongoing, but lower courts have been skeptical of broad executive rewriting of election rules. Other Ways It Could Be Stopped or Limited \u2022 Congress: Legislation (e.g., Sen. Padilla\u2019s proposed bill) could nullify the EO or restrict USPS implementation, but this faces partisan hurdles and filibuster issues. \u2022 States: Non-cooperation (refusing data sharing or using workarounds) could create practical obstacles, though it risks legal/funding fights. \u2022 USPS itself: As an independent agency, full resistance or slow-walking is possible, but political appointees are pushing forward. \u2022 Practical delays: Rulemaking, data systems, and logistics make full rollout before 2026 unlikely even without courts, per some analysts. Bottom line: Courts are the main brake. With the rule now public, expect accelerated litigation. Many legal experts and opponents believe it will ultimately be enjoined (at least key parts) due to constitutional limits on presidential power over state-run elections. Supporters argue it\u2019s lawful use of federal mail authority and will survive. The outcome depends on appeals, potential Supreme Court involvement, and timing \u2014 but yes, it\u2019s very much \u201cstoppable\u201d in its current form.",
+          "posted_at": "2026-06-01T01:01:00",
+          "outrage_index": 0.0031,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 133,
+          "platform": "x",
+          "author_id": "1855095207450066944",
+          "text": "I feel sorry for that SENILE COW ARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 Wewill destroy them in 2026 midterms",
+          "posted_at": "2026-06-01T00:57:33",
+          "outrage_index": 0.2579,
+          "sentiment_label": "emerging_theme",
+          "benchmark_label": null
+        },
+        {
+          "id": 134,
+          "platform": "x",
+          "author_id": "308851637",
+          "text": "Absolutely crazy that some voters were fooled to believe that the election was rigged &amp; those who did it are still in government pushing the lie to succeed this time but the 2026 midterms can end this shitshow by ENFORCING 14thAmendmentSec3 which disqualifies &amp; removes them all!",
+          "posted_at": "2026-06-01T00:54:11",
+          "outrage_index": 0.0592,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 135,
+          "platform": "x",
+          "author_id": "1676309339743870977",
+          "text": "She\u2019s right. Trump\u2019s legacy will bring us wins in the 2026 midterms and 2028, 2030, 2032.....and, beyond. Marjorie Taylor Green is already forgotten.",
+          "posted_at": "2026-06-01T00:45:19",
+          "outrage_index": 0.0027,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 136,
+          "platform": "x",
+          "author_id": "1919068889058541568",
+          "text": "5/ But....Midterms: Now, changes in leadership of course change policy priorities. If the bill is unable to become law in 2026 and either chamber flips, the real test will be if the political momentum built around crypto will carryover to Dem leadership. If it doesn\u2019t, it will be a very long wait for Clarity.",
+          "posted_at": "2026-06-01T00:24:55",
+          "outrage_index": 0.0018,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 137,
+          "platform": "x",
+          "author_id": "2497137228",
+          "text": "Do you think the 2026 midterms will be free and fair?: 59.4% of 26,048 Total Votes say, \"NO!\"",
+          "posted_at": "2026-05-31T23:36:44",
+          "outrage_index": 0.0139,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
         {
           "id": 99,
           "platform": "x",
@@ -1362,8 +1550,8 @@
           "author_id": "1855095207450066944",
           "text": "I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 We will destroy them in 2026 midterms",
           "posted_at": "2026-05-31T20:59:14",
-          "outrage_index": 0.1192,
-          "sentiment_label": "negative",
+          "outrage_index": 0.2579,
+          "sentiment_label": "emerging_theme",
           "benchmark_label": null
         },
         {
@@ -1402,7 +1590,7 @@
           "author_id": "1827527511498006528",
           "text": "Axios: Texas population boom, Latino backlash scramble 2026 Senate race \"Texas has gained more than 2.5 million new residents since 2020  -  roughly the entire population of New Mexico  -  reshaping the electorate and injecting new uncertainty into this year's marquee Senate race.\"",
           "posted_at": "2026-05-31T19:58:29",
-          "outrage_index": 0.0023,
+          "outrage_index": 0.1337,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1452,7 +1640,7 @@
           "author_id": "46520074",
           "text": "Democrats are poised to finish several seats behind Republicans in 2026 in the nationwide race to redraw maps for the U.S. House. They can catch up in 2028, but only if they overcome a series of redistricting hurdles that the GOP does not face. That's...",
           "posted_at": "2026-05-31T18:41:15",
-          "outrage_index": 0.0031,
+          "outrage_index": 0.13,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1482,7 +1670,7 @@
           "author_id": "38250654",
           "text": "2026 Midterm voters beware! Dems = vote fraud.",
           "posted_at": "2026-05-31T17:52:47",
-          "outrage_index": 0.0131,
+          "outrage_index": 0.1399,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1492,7 +1680,7 @@
           "author_id": "1919792248817946624",
           "text": "Why would 2026 not be a blue wave year? Are you retarded?",
           "posted_at": "2026-05-31T17:22:16",
-          "outrage_index": 0.0028,
+          "outrage_index": 0.1337,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1502,7 +1690,7 @@
           "author_id": "830888476539232257",
           "text": "Let\u2019s not repeat the same mistakes from 2024. Here\u2019s to the 2026 blue wave! \ud83c\udf0a",
           "posted_at": "2026-05-31T17:14:12",
-          "outrage_index": 0.0117,
+          "outrage_index": 0.1425,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1522,7 +1710,7 @@
           "author_id": "793658020743876608",
           "text": "Analysis: The Texas Senate race will test whether economic or cultural populism is more powerful in 2026",
           "posted_at": "2026-05-31T16:47:46",
-          "outrage_index": 0.0031,
+          "outrage_index": 0.1345,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1602,7 +1790,7 @@
           "author_id": "1680566619695874048",
           "text": "JUST IN: Temu Obama Hakeem Jeffries has fallen into DESPAIR after realizing Republicans stand to gain A DOZEN US House seats on the 2026 map, throwing massive cold water on their \"blue wave\" hopes Texas, Missouri, Ohio, North Carolina, Florida, Alabama and Louisiana getting it done! South Carolina RINOs BLOCKED it, Georgia is set for 2028, and Mississippi needs to KEEP PUSHING",
           "posted_at": "2026-05-31T13:53:24",
-          "outrage_index": 0.0216,
+          "outrage_index": 0.1485,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1622,7 +1810,7 @@
           "author_id": "1981085696665227264",
           "text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
           "posted_at": "2026-05-31T13:41:13",
-          "outrage_index": 0.0216,
+          "outrage_index": 0.1616,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1632,7 +1820,7 @@
           "author_id": "1981085696665227264",
           "text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
           "posted_at": "2026-05-31T13:40:43",
-          "outrage_index": 0.0216,
+          "outrage_index": 0.1616,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1642,7 +1830,7 @@
           "author_id": "1981085696665227264",
           "text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
           "posted_at": "2026-05-31T13:34:32",
-          "outrage_index": 0.0216,
+          "outrage_index": 0.1616,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1662,7 +1850,7 @@
           "author_id": "7458942",
           "text": "Texas' migration boom, Latino backlash jolts 2026 Senate race",
           "posted_at": "2026-05-31T12:57:24",
-          "outrage_index": 0.0039,
+          "outrage_index": 0.1354,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1682,7 +1870,7 @@
           "author_id": "1712589743073148928",
           "text": "Yes there will be a blue wave in 2026, but he said he wants the Right to win in 2028, its just a temporary thing man....",
           "posted_at": "2026-05-31T10:23:29",
-          "outrage_index": 0.0013,
+          "outrage_index": 0.1322,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1712,7 +1900,7 @@
           "author_id": "1168002791865847808",
           "text": "2028 is a presidential year. It won\u2019t be as much of a blue wave as 2026.",
           "posted_at": "2026-05-31T05:43:21",
-          "outrage_index": 0.0011,
+          "outrage_index": 0.132,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1722,7 +1910,7 @@
           "author_id": "1386641209829957633",
           "text": "2026/05/25 \u0e1a\u0e38\u0e01\u0e2b\u0e25\u0e31\u0e07\u0e40\u0e27\u0e17\u0e35 LOVE OUT LOUD FAN FEST 2026 : HEART RACE | GMMTV LIVE HOUSE 2026/05/30 \ud83d\udd34LIVE \u0e2a\u0e31\u0e21\u0e20\u0e32\u0e29\u0e13\u0e4c \"\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c \u0e15\u0e31\u0e49\u0e07\u0e28\u0e31\u0e01\u0e14\u0e34\u0e4c\u0e22\u0e37\u0e19\" \u0e1e\u0e23\u0e35\u0e40\u0e0b\u0e19\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e04\u0e19\u0e43\u0e2b\u0e21\u0e48\u0e02\u0e2d\u0e07 Birdy Barista \u0e1b\u0e2d\u0e19\u0e14\u0e4c\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c ppnaravit phuwintang",
           "posted_at": "2026-05-31T05:18:04",
-          "outrage_index": 0.012,
+          "outrage_index": 0.1476,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1742,7 +1930,7 @@
           "author_id": "144810335",
           "text": "\u0e1a\u0e38\u0e01\u0e2b\u0e25\u0e31\u0e07\u0e40\u0e27\u0e17\u0e35 LOVE OUT LOUD FAN FEST 2026 : HEART RACE | GMMTV LIVE HOUSE via",
           "posted_at": "2026-05-31T04:44:19",
-          "outrage_index": 0.012,
+          "outrage_index": 0.1476,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1762,7 +1950,7 @@
           "author_id": "1287596172",
           "text": "Haha, Hakeem Jeffries is straight-up spiraling! Republicans about to grab a dozen more House seats? Blue wave my ass, it\u2019s a full red tsunami, baby!\ud83c\uddfa\ud83c\uddf8 Texas, Florida, Ohio... Democrats are cooked. 2026 is gonna be a bloodbath. Cry harder! \ud83d\udcaa\ud83c\udffc",
           "posted_at": "2026-05-31T04:08:00",
-          "outrage_index": 0.0325,
+          "outrage_index": 0.1593,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1802,7 +1990,7 @@
           "author_id": "34771939",
           "text": "This universally declared 2026 blue wave smells exactly like the 2022 red wave.",
           "posted_at": "2026-05-30T18:45:05",
-          "outrage_index": 0.001,
+          "outrage_index": 0.1319,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1812,7 +2000,7 @@
           "author_id": "554118761",
           "text": "Dems will finish several seats behind Republicans in 2026 in the nationwide redistricting race for the U.S. House. They can pull up in 2028 if they overcome a series of redistricting hurdles that the GOP doesn't face. \ud83d\udca1GenZ voters can overturn the Republicans in the Midterms.",
           "posted_at": "2026-05-30T11:19:35",
-          "outrage_index": 0.0038,
+          "outrage_index": 0.1306,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1882,7 +2070,7 @@
           "author_id": "2032006783162859521",
           "text": "LOVE OUT LOUD FAN FEST 2026 : HEART RACE | GMMTV LIVE HOUSE - JOONGDUNK PART \u2600\ufe0f\ud83c\udf3b\ud83e\uddf6\ud83e\uddf6 \ud83d\udd17",
           "posted_at": "2026-05-29T08:16:52",
-          "outrage_index": 0.012,
+          "outrage_index": 0.1476,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1912,7 +2100,7 @@
           "author_id": "1518777787213041665",
           "text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injustice - the J6 Setup - 2020 Election Fraud - 2024 Stolen House & Senate seats - et al",
           "posted_at": "2026-05-27T22:45:39",
-          "outrage_index": 0.0582,
+          "outrage_index": 0.1982,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1942,7 +2130,7 @@
           "author_id": "1518777787213041665",
           "text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injustice - the J6 Setup - 2020 Election Fraud - 2024 Stolen House & Senate seats - et al",
           "posted_at": "2026-05-27T16:17:26",
-          "outrage_index": 0.0582,
+          "outrage_index": 0.1982,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -1972,7 +2160,7 @@
           "author_id": "1518777787213041665",
           "text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injustice - the J6 Setup - 2020 Election Fraud - 2024 Stolen House & Senate seats - et al",
           "posted_at": "2026-05-25T22:38:34",
-          "outrage_index": 0.0582,
+          "outrage_index": 0.1982,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -2002,7 +2190,7 @@
           "author_id": "1518777787213041665",
           "text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injustice - the J6 Setup - 2020 Election Fraud - 2024 Stolen House & Senate seats - et al",
           "posted_at": "2026-05-24T17:12:32",
-          "outrage_index": 0.0582,
+          "outrage_index": 0.1982,
           "sentiment_label": "neutral",
           "benchmark_label": null
         },
@@ -2012,7 +2200,7 @@
           "author_id": "876574565228589059",
           "text": "With this and other realignments in the voting districts of Republican States, FBI and ICE on the lookout for voter cheating and fraud, the possibility of honest 2026 Midterm elections has improved significantly! That means Republicans will win both the House and Senate again !!!",
           "posted_at": "2026-05-23T22:41:44",
-          "outrage_index": 0.0424,
+          "outrage_index": 0.1693,
           "sentiment_label": "neutral",
           "benchmark_label": null
         }
@@ -2022,7 +2210,7 @@
         "suspicion_score": 0.0,
         "organic_score": 1.0,
         "signals": [],
-        "node_count": 70,
+        "node_count": 81,
         "edge_count": 0,
         "density": 0.0,
         "top_amplifiers": [
@@ -2030,13 +2218,13 @@
             "author_id": "876574565228589059",
             "out_degree": 0,
             "in_degree": 0,
-            "max_outrage": 0.0424
+            "max_outrage": 0.1693
           },
           {
             "author_id": "1518777787213041665",
             "out_degree": 0,
             "in_degree": 0,
-            "max_outrage": 0.0582
+            "max_outrage": 0.1982
           },
           {
             "author_id": "1663554933516541952",
@@ -2066,7 +2254,7 @@
             "author_id": "1981085696665227264",
             "out_degree": 0,
             "in_degree": 0,
-            "max_outrage": 0.148
+            "max_outrage": 0.1616
           },
           {
             "author_id": "1604152121267568642",
@@ -2089,11 +2277,11 @@
         ],
         "coordinated_clusters": [],
         "iu_astroturf": {
-          "authors_in_narrative": 70,
+          "authors_in_narrative": 81,
           "platforms": [
             "x"
           ],
-          "x_authors_checked": 70,
+          "x_authors_checked": 81,
           "known_political_bots": 0,
           "known_bot_ratio": 0.0,
           "labeled_accounts": [],
@@ -2105,17 +2293,17 @@
         "buckets": [
           {
             "date": "2026-05-23",
-            "mean_outrage": 0.0424,
+            "mean_outrage": 0.1693,
             "count": 1
           },
           {
             "date": "2026-05-24",
-            "mean_outrage": 0.0302,
+            "mean_outrage": 0.1002,
             "count": 2
           },
           {
             "date": "2026-05-25",
-            "mean_outrage": 0.0863,
+            "mean_outrage": 0.1563,
             "count": 2
           },
           {
@@ -2125,7 +2313,7 @@
           },
           {
             "date": "2026-05-27",
-            "mean_outrage": 0.0678,
+            "mean_outrage": 0.1377,
             "count": 4
           },
           {
@@ -2135,25 +2323,30 @@
           },
           {
             "date": "2026-05-29",
-            "mean_outrage": 0.0119,
+            "mean_outrage": 0.0459,
             "count": 4
           },
           {
             "date": "2026-05-30",
-            "mean_outrage": 0.0056,
+            "mean_outrage": 0.0425,
             "count": 7
           },
           {
             "date": "2026-05-31",
-            "mean_outrage": 0.0151,
-            "count": 55
+            "mean_outrage": 0.0553,
+            "count": 56
+          },
+          {
+            "date": "2026-06-01",
+            "mean_outrage": 0.1149,
+            "count": 18
           }
         ],
-        "trend": "stable"
+        "trend": "declining"
       },
       "amplification": {
         "narrative_id": 3,
-        "cluster_count": 4,
+        "cluster_count": 6,
         "clusters": [
           {
             "count": 2,
@@ -2208,6 +2401,23 @@
             "min_inter_arrival_seconds": 30.0
           },
           {
+            "count": 3,
+            "author_count": 1,
+            "author_ids": [
+              "1846347672875421699"
+            ],
+            "post_ids": [
+              123,
+              122,
+              120
+            ],
+            "sample_text": "With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations on President",
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 63.0,
+            "min_inter_arrival_seconds": 10.0
+          },
+          {
             "count": 2,
             "author_count": 2,
             "author_ids": [
@@ -2223,6 +2433,22 @@
             "burst_author_count": 1,
             "cluster_span_seconds": 78132.0,
             "min_inter_arrival_seconds": 78132.0
+          },
+          {
+            "count": 2,
+            "author_count": 1,
+            "author_ids": [
+              "1855095207450066944"
+            ],
+            "post_ids": [
+              133,
+              129
+            ],
+            "sample_text": "I feel sorry for that SENILE COW ARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 Wewill destro\u2026",
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 1011.0,
+            "min_inter_arrival_seconds": 1011.0
           }
         ]
       },
@@ -2231,7 +2457,7 @@
           {
             "author_id": "876574565228589059",
             "handle": "@GaleGalebay",
-            "max_outrage": 0.0424,
+            "max_outrage": 0.1693,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2239,7 +2465,7 @@
           {
             "author_id": "1518777787213041665",
             "handle": "@patriot_hammer",
-            "max_outrage": 0.0582,
+            "max_outrage": 0.1982,
             "post_count": 4,
             "known_bot": false,
             "bot_label": null
@@ -2279,7 +2505,7 @@
           {
             "author_id": "1981085696665227264",
             "handle": "@ruok_2day",
-            "max_outrage": 0.148,
+            "max_outrage": 0.1616,
             "post_count": 4,
             "known_bot": false,
             "bot_label": null
@@ -2311,7 +2537,7 @@
           {
             "author_id": "2032006783162859521",
             "handle": "@dear_lyingcat",
-            "max_outrage": 0.012,
+            "max_outrage": 0.1476,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2351,7 +2577,7 @@
           {
             "author_id": "1919792248817946624",
             "handle": "@GovLake",
-            "max_outrage": 0.0028,
+            "max_outrage": 0.1337,
             "post_count": 2,
             "known_bot": false,
             "bot_label": null
@@ -2367,7 +2593,7 @@
           {
             "author_id": "554118761",
             "handle": "@PAOTZEPG",
-            "max_outrage": 0.0038,
+            "max_outrage": 0.1306,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2375,7 +2601,7 @@
           {
             "author_id": "34771939",
             "handle": "@BrentScher",
-            "max_outrage": 0.001,
+            "max_outrage": 0.1319,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2407,7 +2633,7 @@
           {
             "author_id": "1287596172",
             "handle": "@Aurora_770z",
-            "max_outrage": 0.0325,
+            "max_outrage": 0.1593,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2423,7 +2649,7 @@
           {
             "author_id": "144810335",
             "handle": "@RYEOTEM",
-            "max_outrage": 0.012,
+            "max_outrage": 0.1476,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2439,7 +2665,7 @@
           {
             "author_id": "1386641209829957633",
             "handle": "@_ppspace",
-            "max_outrage": 0.012,
+            "max_outrage": 0.1476,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2447,7 +2673,7 @@
           {
             "author_id": "1168002791865847808",
             "handle": "@Socdem_Michael",
-            "max_outrage": 0.0011,
+            "max_outrage": 0.132,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2471,7 +2697,7 @@
           {
             "author_id": "1712589743073148928",
             "handle": "@slimefren132450",
-            "max_outrage": 0.0013,
+            "max_outrage": 0.1322,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2487,7 +2713,7 @@
           {
             "author_id": "7458942",
             "handle": "@Eduflack",
-            "max_outrage": 0.0039,
+            "max_outrage": 0.1354,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2511,7 +2737,7 @@
           {
             "author_id": "1680566619695874048",
             "handle": "@rogue185263",
-            "max_outrage": 0.0216,
+            "max_outrage": 0.1485,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2575,7 +2801,7 @@
           {
             "author_id": "793658020743876608",
             "handle": "@509ShawnG",
-            "max_outrage": 0.0031,
+            "max_outrage": 0.1345,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2591,7 +2817,7 @@
           {
             "author_id": "830888476539232257",
             "handle": "@WLuem",
-            "max_outrage": 0.0117,
+            "max_outrage": 0.1425,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2599,7 +2825,7 @@
           {
             "author_id": "38250654",
             "handle": "@thuy1975",
-            "max_outrage": 0.0131,
+            "max_outrage": 0.1399,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2615,7 +2841,7 @@
           {
             "author_id": "46520074",
             "handle": "@WesternJournalX",
-            "max_outrage": 0.0031,
+            "max_outrage": 0.13,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2655,7 +2881,7 @@
           {
             "author_id": "1827527511498006528",
             "handle": "@PollTracker2024",
-            "max_outrage": 0.0023,
+            "max_outrage": 0.1337,
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
@@ -2687,8 +2913,8 @@
           {
             "author_id": "1855095207450066944",
             "handle": "@IAMZORRO366723",
-            "max_outrage": 0.1192,
-            "post_count": 1,
+            "max_outrage": 0.2579,
+            "post_count": 7,
             "known_bot": false,
             "bot_label": null
           },
@@ -2787,19 +3013,188 @@
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
+          },
+          {
+            "author_id": "2497137228",
+            "handle": "@ChetRusinek",
+            "max_outrage": 0.0139,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1919068889058541568",
+            "handle": "@adam_minehardt",
+            "max_outrage": 0.0018,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1676309339743870977",
+            "handle": "@JudgeFred66",
+            "max_outrage": 0.0027,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "308851637",
+            "handle": "@Ingridebap",
+            "max_outrage": 0.0592,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "2021771670881439744",
+            "handle": "@JackFlash1776",
+            "max_outrage": 0.0031,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1930955614009896960",
+            "handle": "@CBSNewsATL",
+            "max_outrage": 0.0041,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1968900161955864576",
+            "handle": "@WaytoReel",
+            "max_outrage": 0.0011,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1104645662455488512",
+            "handle": "@LynnwoodTimes",
+            "max_outrage": 0.0028,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1846347672875421699",
+            "handle": "@murfdude2u",
+            "max_outrage": 0.1415,
+            "post_count": 3,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "367290245",
+            "handle": "@spindetective",
+            "max_outrage": 0.0504,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1982651175263727616",
+            "handle": "@researchUSAI",
+            "max_outrage": 0.0104,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
           }
         ],
         "edges": []
       },
       "themes": {
         "narrative_id": 3,
-        "post_count": 78,
-        "cluster_count": 8,
-        "method": "kmeans+tfidf",
-        "model": "tfidf-fallback",
+        "post_count": 97,
+        "cluster_count": 15,
+        "method": "dbscan",
+        "model": "all-MiniLM-L6-v2",
         "clusters": [
           {
-            "cluster_id": 2,
+            "cluster_id": 9,
+            "post_ids": [
+              100,
+              133,
+              129,
+              128,
+              127,
+              126,
+              125
+            ],
+            "size": 7,
+            "cohesion": 0.9832,
+            "lexicon_hit_rate": 0.1429,
+            "emerging_theme": true,
+            "label_terms": [
+              "nazi",
+              "losers",
+              "feel",
+              "sorry",
+              "senile",
+              "pig"
+            ],
+            "sample_text": "I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 We will destro\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-06-01",
+            "active_days": 2
+          },
+          {
+            "cluster_id": 0,
+            "post_ids": [
+              102,
+              94,
+              65,
+              74,
+              51,
+              91
+            ],
+            "size": 6,
+            "cohesion": 0.8359,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "republicans",
+              "house",
+              "seats",
+              "redistricting",
+              "fraud",
+              "midterm"
+            ],
+            "sample_text": "JUST IN: Temu Obama Hakeem Jeffries has fallen into DESPAIR after realizing Republicans stand to gain A DOZEN US House seats on the 2026 map, throwing massive cold water on their \"blue wave\" hopes Texas, Missouri, Ohio, North Carolina, Flor\u2026",
+            "first_seen": "2026-05-23",
+            "last_seen": "2026-05-31",
+            "active_days": 3
+          },
+          {
+            "cluster_id": 4,
+            "post_ids": [
+              69,
+              79,
+              76,
+              72,
+              71
+            ],
+            "size": 5,
+            "cohesion": 0.8857,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "wave",
+              "blue",
+              "year",
+              "universally",
+              "declared",
+              "smells"
+            ],
+            "sample_text": "Yes there will be a blue wave in 2026, but he said he wants the Right to win in 2028, its just a temporary thing man....",
+            "first_seen": "2026-05-30",
+            "last_seen": "2026-05-31",
+            "active_days": 2
+          },
+          {
+            "cluster_id": 1,
             "post_ids": [
               101,
               58,
@@ -2824,48 +3219,71 @@
             "active_days": 3
           },
           {
-            "cluster_id": 5,
+            "cluster_id": 6,
             "post_ids": [
-              54,
               50,
               49,
               48
             ],
-            "size": 4,
-            "cohesion": 0.8612,
-            "lexicon_hit_rate": 0.0357,
+            "size": 3,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
             "emerging_theme": true,
             "label_terms": [
+              "remember",
               "vote",
-              "down",
+              "nov",
               "midterm",
               "elections",
-              "stop",
-              "remember"
+              "dem"
             ],
-            "sample_text": "VOTE DEM's OUT VOTE RED Down ballot Nov 3rd, 2026 Midterm Elections STOP Illegal's from VOTING STOP DEM's Sanctuary Cities STOP DEM's Open Borders! SAVE American Taxpayers from paying for ALL the migrant FREE! Illegal Immigrant FRAUD!",
-            "first_seen": "2026-05-27",
+            "sample_text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
+            "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
-            "active_days": 2
+            "active_days": 1
           },
           {
-            "cluster_id": 0,
+            "cluster_id": 13,
+            "post_ids": [
+              123,
+              122,
+              120
+            ],
+            "size": 3,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "economic",
+              "affordability",
+              "set",
+              "dominate",
+              "midterms",
+              "migration"
+            ],
+            "sample_text": "With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations on President",
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-01",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 3,
             "post_ids": [
               98,
               93,
               92
             ],
             "size": 3,
-            "cohesion": 0.9591,
+            "cohesion": 0.9452,
             "lexicon_hit_rate": 0.0,
             "emerging_theme": true,
             "label_terms": [
               "live",
               "love",
               "loud",
+              "fan",
               "fest",
-              "heart",
-              "race"
+              "heart"
             ],
             "sample_text": "2026/05/25 \u0e1a\u0e38\u0e01\u0e2b\u0e25\u0e31\u0e07\u0e40\u0e27\u0e17\u0e35 LOVE OUT LOUD FAN FEST 2026 : HEART RACE | GMMTV LIVE HOUSE 2026/05/30 \ud83d\udd34LIVE \u0e2a\u0e31\u0e21\u0e20\u0e32\u0e29\u0e13\u0e4c \"\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c \u0e15\u0e31\u0e49\u0e07\u0e28\u0e31\u0e01\u0e14\u0e34\u0e4c\u0e22\u0e37\u0e19\" \u0e1e\u0e23\u0e35\u0e40\u0e0b\u0e19\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e04\u0e19\u0e43\u0e2b\u0e21\u0e48\u0e02\u0e2d\u0e07 Birdy Barista \u0e1b\u0e2d\u0e19\u0e14\u0e4c\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c ppnaravit phuwintang",
             "first_seen": "2026-05-29",
@@ -2873,162 +3291,178 @@
             "active_days": 2
           },
           {
-            "cluster_id": 1,
+            "cluster_id": 5,
             "post_ids": [
-              53,
-              107,
-              97,
-              96,
-              104,
-              70,
-              95,
-              94,
-              80,
               105,
               88,
-              91,
-              86,
-              85,
-              84,
-              83,
-              82,
-              81,
-              36,
-              32
+              83
             ],
-            "size": 20,
-            "cohesion": 0.4359,
-            "lexicon_hit_rate": 0.0071,
-            "emerging_theme": false,
-            "label_terms": [
-              "race",
-              "senate",
-              "will",
-              "house",
-              "texas",
-              "this"
-            ],
-            "sample_text": "No, they arent,.... With roughly one-third of the 2026 Republican primaries in the books, every candidate President Trump has backed in a House, Senate, or gubernatorial race has won, and I couldn't care less about \"trumps candidates\" and \"\u2026",
-            "first_seen": "2026-05-27",
-            "last_seen": "2026-05-31",
-            "active_days": 4
-          },
-          {
-            "cluster_id": 3,
-            "post_ids": [
-              102,
-              60,
-              59,
-              57,
-              56,
-              108,
-              106,
-              47,
-              46,
-              45,
-              44,
-              89,
-              51,
-              43,
-              42,
-              41,
-              31
-            ],
-            "size": 17,
-            "cohesion": 0.4739,
-            "lexicon_hit_rate": 0.042,
-            "emerging_theme": false,
-            "label_terms": [
-              "elections",
-              "midterm",
-              "that",
-              "fraud",
-              "sidney",
-              "powell"
-            ],
-            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
-            "first_seen": "2026-05-23",
-            "last_seen": "2026-05-31",
-            "active_days": 6
-          },
-          {
-            "cluster_id": 4,
-            "post_ids": [
-              103,
-              69,
-              68,
-              66,
-              65,
-              64,
-              79,
-              78,
-              77,
-              76,
-              75,
-              74,
-              63,
-              73,
-              62,
-              72,
-              71
-            ],
-            "size": 17,
-            "cohesion": 0.4525,
+            "size": 3,
+            "cohesion": 0.8927,
             "lexicon_hit_rate": 0.0,
-            "emerging_theme": false,
+            "emerging_theme": true,
             "label_terms": [
-              "wave",
-              "blue",
-              "this",
-              "must",
-              "just",
-              "campaign"
+              "texas",
+              "senate",
+              "race",
+              "new",
+              "boom",
+              "latino"
             ],
-            "sample_text": "I'll only say it once.This might be the fastest way to accumulate $3 million by the end of 2026: $LTBR (Lightbridge) \u2192 $8 Must buy $BMEA (Biomea Fusion) \u2192 $1 Must buy $CIFR (Cipher Mining) \u2192 $9 Must buy $QBTS (D-Wave Quantum) \u2192 $27 Must buy\u2026",
-            "first_seen": "2026-05-30",
-            "last_seen": "2026-05-31",
-            "active_days": 2
-          },
-          {
-            "cluster_id": 7,
-            "post_ids": [
-              67,
-              61,
-              100,
-              40,
-              39,
-              38,
-              37,
-              35,
-              34,
-              33,
-              99
-            ],
-            "size": 11,
-            "cohesion": 0.5082,
-            "lexicon_hit_rate": 0.039,
-            "emerging_theme": false,
-            "label_terms": [
-              "america",
-              "they",
-              "midterms",
-              "trump",
-              "republican",
-              "will"
-            ],
-            "sample_text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE Ame\u2026",
+            "sample_text": "Axios: Texas population boom, Latino backlash scramble 2026 Senate race \"Texas has gained more than 2.5 million new residents since 2020  -  roughly the entire population of New Mexico  -  reshaping the electorate and injecting new uncertai\u2026",
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "active_days": 1
           },
           {
-            "cluster_id": 6,
+            "cluster_id": -1,
+            "post_ids": [
+              60,
+              56,
+              54,
+              53,
+              108,
+              107,
+              97,
+              96,
+              104,
+              103,
+              70,
+              95,
+              68,
+              67,
+              66,
+              80,
+              64,
+              78,
+              77,
+              106,
+              75,
+              47,
+              46,
+              45,
+              44,
+              63,
+              89,
+              73,
+              62,
+              43,
+              86,
+              85,
+              61,
+              42,
+              81,
+              40,
+              41,
+              38,
+              37,
+              36,
+              35,
+              32,
+              31,
+              99,
+              136,
+              135,
+              134,
+              132,
+              131,
+              130,
+              121
+            ],
+            "size": 51,
+            "cohesion": 0.5091,
+            "lexicon_hit_rate": 0.014,
+            "emerging_theme": false,
+            "label_terms": [
+              "midterms",
+              "elections",
+              "trump",
+              "midterm",
+              "wave",
+              "senate"
+            ],
+            "sample_text": "\ud83d\udea8\ud83d\udc42This is Stopable \u2014 primarily through ongoing federal court challenges, with a realistic chance of being blocked or significantly delayed before the 2026 midterms. Current Status (as of June 1, 2026) \u2022 The USPS proposed rule (issued May 29\u2026",
+            "first_seen": "2026-05-24",
+            "last_seen": "2026-06-01",
+            "active_days": 8
+          },
+          {
+            "cluster_id": 2,
+            "post_ids": [
+              59,
+              57
+            ],
+            "size": 2,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.2857,
+            "emerging_theme": false,
+            "label_terms": [
+              "sidney",
+              "powell",
+              "elections",
+              "president",
+              "trump",
+              "breaking"
+            ],
+            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
+            "first_seen": "2026-05-25",
+            "last_seen": "2026-05-26",
+            "active_days": 2
+          },
+          {
+            "cluster_id": 11,
+            "post_ids": [
+              34,
+              33
+            ],
+            "size": 2,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "fascist",
+              "redneck",
+              "judges",
+              "cut",
+              "chase",
+              "block"
+            ],
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 8,
+            "post_ids": [
+              84,
+              82
+            ],
+            "size": 2,
+            "cohesion": 0.9625,
+            "lexicon_hit_rate": 0.0714,
+            "emerging_theme": false,
+            "label_terms": [
+              "texas",
+              "talarico",
+              "senate",
+              "internal",
+              "james",
+              "ken"
+            ],
+            "sample_text": "The X post from polling account highlights a May 27-28, 2026 internal poll by Slingshot Strategies for Democrat James Talarico showing him leading Republican Ken Paxton 47%-44% in the Texas 2026 US Senate race among 1,670 likely voters. Las\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 7,
             "post_ids": [
               90,
               87
             ],
             "size": 2,
-            "cohesion": 0.9451,
+            "cohesion": 0.9606,
             "lexicon_hit_rate": 0.0,
             "emerging_theme": false,
             "label_terms": [
@@ -3043,48 +3477,83 @@
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "active_days": 1
+          },
+          {
+            "cluster_id": 12,
+            "post_ids": [
+              124,
+              119
+            ],
+            "size": 2,
+            "cohesion": 0.953,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "federal",
+              "order",
+              "mail",
+              "trump",
+              "ballot",
+              "executive"
+            ],
+            "sample_text": "\ud83d\udea8Federal Judge Declines to Block Trump\u2019s Mail-In Ballot Verification Order Ahead of 2026 Midterms Washington, D.C., U.S. District Judge Carl Nichols on May 28 declined to immediately halt President Donald Trump\u2019s executive order directing f\u2026",
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-01",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 10,
+            "post_ids": [
+              39,
+              137
+            ],
+            "size": 2,
+            "cohesion": 0.9115,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "midterms",
+              "according",
+              "political",
+              "graphs",
+              "think",
+              "free"
+            ],
+            "sample_text": "Do you think the 2026 midterms will be free and fair?: 59.4% of 26,048 Total Votes say, \"NO!\"",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
           }
         ],
-        "emerging_theme_count": 3,
+        "emerging_theme_count": 8,
         "available": true,
         "reason": null,
         "timeline": [
           {
-            "cluster_id": 3,
+            "cluster_id": 0,
             "label_terms": [
-              "elections",
-              "midterm",
-              "that",
+              "republicans",
+              "house",
+              "seats",
+              "redistricting",
               "fraud",
-              "sidney",
-              "powell"
+              "midterm"
             ],
-            "emerging_theme": false,
-            "size": 17,
+            "emerging_theme": true,
+            "size": 6,
             "first_seen": "2026-05-23",
             "last_seen": "2026-05-31",
             "post_ids": [
               102,
-              60,
-              59,
-              57,
-              56,
-              108,
-              106,
-              47,
-              46,
-              45,
-              44,
-              89,
+              94,
+              65,
+              74,
               51,
-              43,
-              42,
-              41,
-              31
+              91
             ]
           },
           {
-            "cluster_id": 2,
+            "cluster_id": 1,
             "label_terms": [
               "fraud",
               "accountability",
@@ -3105,72 +3574,101 @@
             ]
           },
           {
-            "cluster_id": 5,
+            "cluster_id": -1,
             "label_terms": [
-              "vote",
-              "down",
-              "midterm",
+              "midterms",
               "elections",
-              "stop",
-              "remember"
-            ],
-            "emerging_theme": true,
-            "size": 4,
-            "first_seen": "2026-05-27",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              54,
-              50,
-              49,
-              48
-            ]
-          },
-          {
-            "cluster_id": 1,
-            "label_terms": [
-              "race",
-              "senate",
-              "will",
-              "house",
-              "texas",
-              "this"
+              "trump",
+              "midterm",
+              "wave",
+              "senate"
             ],
             "emerging_theme": false,
-            "size": 20,
-            "first_seen": "2026-05-27",
-            "last_seen": "2026-05-31",
+            "size": 51,
+            "first_seen": "2026-05-24",
+            "last_seen": "2026-06-01",
             "post_ids": [
+              60,
+              56,
+              54,
               53,
+              108,
               107,
               97,
               96,
               104,
+              103,
               70,
               95,
-              94,
+              68,
+              67,
+              66,
               80,
-              105,
-              88,
-              91,
+              64,
+              78,
+              77,
+              106,
+              75,
+              47,
+              46,
+              45,
+              44,
+              63,
+              89,
+              73,
+              62,
+              43,
               86,
               85,
-              84,
-              83,
-              82,
+              61,
+              42,
               81,
+              40,
+              41,
+              38,
+              37,
               36,
-              32
+              35,
+              32,
+              31,
+              99,
+              136,
+              135,
+              134,
+              132,
+              131,
+              130,
+              121
             ]
           },
           {
-            "cluster_id": 0,
+            "cluster_id": 2,
+            "label_terms": [
+              "sidney",
+              "powell",
+              "elections",
+              "president",
+              "trump",
+              "breaking"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-25",
+            "last_seen": "2026-05-26",
+            "post_ids": [
+              59,
+              57
+            ]
+          },
+          {
+            "cluster_id": 3,
             "label_terms": [
               "live",
               "love",
               "loud",
+              "fan",
               "fest",
-              "heart",
-              "race"
+              "heart"
             ],
             "emerging_theme": true,
             "size": 3,
@@ -3187,65 +3685,127 @@
             "label_terms": [
               "wave",
               "blue",
-              "this",
-              "must",
-              "just",
-              "campaign"
+              "year",
+              "universally",
+              "declared",
+              "smells"
             ],
-            "emerging_theme": false,
-            "size": 17,
+            "emerging_theme": true,
+            "size": 5,
             "first_seen": "2026-05-30",
             "last_seen": "2026-05-31",
             "post_ids": [
-              103,
               69,
-              68,
-              66,
-              65,
-              64,
               79,
-              78,
-              77,
               76,
-              75,
-              74,
-              63,
-              73,
-              62,
               72,
               71
             ]
           },
           {
-            "cluster_id": 7,
+            "cluster_id": 9,
             "label_terms": [
-              "america",
-              "they",
-              "midterms",
-              "trump",
-              "republican",
-              "will"
+              "nazi",
+              "losers",
+              "feel",
+              "sorry",
+              "senile",
+              "pig"
             ],
-            "emerging_theme": false,
-            "size": 11,
+            "emerging_theme": true,
+            "size": 7,
             "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
+            "last_seen": "2026-06-01",
             "post_ids": [
-              67,
-              61,
               100,
-              40,
-              39,
-              38,
-              37,
-              35,
-              34,
-              33,
-              99
+              133,
+              129,
+              128,
+              127,
+              126,
+              125
             ]
           },
           {
             "cluster_id": 6,
+            "label_terms": [
+              "remember",
+              "vote",
+              "nov",
+              "midterm",
+              "elections",
+              "dem"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              50,
+              49,
+              48
+            ]
+          },
+          {
+            "cluster_id": 5,
+            "label_terms": [
+              "texas",
+              "senate",
+              "race",
+              "new",
+              "boom",
+              "latino"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              105,
+              88,
+              83
+            ]
+          },
+          {
+            "cluster_id": 11,
+            "label_terms": [
+              "fascist",
+              "redneck",
+              "judges",
+              "cut",
+              "chase",
+              "block"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              34,
+              33
+            ]
+          },
+          {
+            "cluster_id": 8,
+            "label_terms": [
+              "texas",
+              "talarico",
+              "senate",
+              "internal",
+              "james",
+              "ken"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              84,
+              82
+            ]
+          },
+          {
+            "cluster_id": 7,
             "label_terms": [
               "odds",
               "maine",
@@ -3261,6 +3821,64 @@
             "post_ids": [
               90,
               87
+            ]
+          },
+          {
+            "cluster_id": 10,
+            "label_terms": [
+              "midterms",
+              "according",
+              "political",
+              "graphs",
+              "think",
+              "free"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              39,
+              137
+            ]
+          },
+          {
+            "cluster_id": 13,
+            "label_terms": [
+              "economic",
+              "affordability",
+              "set",
+              "dominate",
+              "midterms",
+              "migration"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-01",
+            "post_ids": [
+              123,
+              122,
+              120
+            ]
+          },
+          {
+            "cluster_id": 12,
+            "label_terms": [
+              "federal",
+              "order",
+              "mail",
+              "trump",
+              "ballot",
+              "executive"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-01",
+            "post_ids": [
+              124,
+              119
             ]
           }
         ]
@@ -3575,53 +4193,31 @@
         "narrative_id": 4,
         "post_count": 10,
         "cluster_count": 3,
-        "method": "kmeans+tfidf",
-        "model": "tfidf-fallback",
+        "method": "kmeans",
+        "model": "all-MiniLM-L6-v2",
         "clusters": [
           {
             "cluster_id": 1,
             "post_ids": [
-              114,
-              113,
-              111
-            ],
-            "size": 3,
-            "cohesion": 0.7615,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
-            "label_terms": [
-              "midterms",
-              "what",
-              "these",
-              "fascist",
-              "redneck",
-              "judges"
-            ],
-            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 2,
-            "post_ids": [
               118,
-              117,
+              115,
+              112,
+              111,
               109
             ],
-            "size": 3,
-            "cohesion": 0.6292,
+            "size": 5,
+            "cohesion": 0.7018,
             "lexicon_hit_rate": 0.0,
             "emerging_theme": true,
             "label_terms": [
-              "save",
-              "america",
-              "have",
-              "going",
               "midterms",
-              "trump"
+              "say",
+              "end",
+              "bernie",
+              "sanders",
+              "kingmaker"
             ],
-            "sample_text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE Ame\u2026",
+            "sample_text": "My goal for the 2026 Iowa midterms has been fulfilled. Anything beyond what has already been accomplished is simply cake and ice cream.",
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "active_days": 1
@@ -3629,24 +4225,46 @@
           {
             "cluster_id": 0,
             "post_ids": [
+              117,
               116,
-              115,
-              112,
               110
             ],
-            "size": 4,
-            "cohesion": 0.5478,
+            "size": 3,
+            "cohesion": 0.768,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "trump",
+              "save",
+              "america",
+              "act",
+              "going",
+              "senate"
+            ],
+            "sample_text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE Ame\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 2,
+            "post_ids": [
+              114,
+              113
+            ],
+            "size": 2,
+            "cohesion": 1.0,
             "lexicon_hit_rate": 0.0,
             "emerging_theme": false,
             "label_terms": [
-              "will",
-              "midterms",
-              "trump",
-              "have",
-              "corruptgop",
-              "cheat"
+              "fascist",
+              "redneck",
+              "judges",
+              "cut",
+              "chase",
+              "block"
             ],
-            "sample_text": "Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat like in 2024. RiseUp VoteBlue in numbers T\u2026",
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "active_days": 1
@@ -3660,61 +4278,61 @@
             "cluster_id": 1,
             "label_terms": [
               "midterms",
-              "what",
-              "these",
-              "fascist",
-              "redneck",
-              "judges"
+              "say",
+              "end",
+              "bernie",
+              "sanders",
+              "kingmaker"
             ],
             "emerging_theme": true,
-            "size": 3,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              114,
-              113,
-              111
-            ]
-          },
-          {
-            "cluster_id": 2,
-            "label_terms": [
-              "save",
-              "america",
-              "have",
-              "going",
-              "midterms",
-              "trump"
-            ],
-            "emerging_theme": true,
-            "size": 3,
+            "size": 5,
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "post_ids": [
               118,
-              117,
+              115,
+              112,
+              111,
               109
             ]
           },
           {
             "cluster_id": 0,
             "label_terms": [
-              "will",
-              "midterms",
               "trump",
-              "have",
-              "corruptgop",
-              "cheat"
+              "save",
+              "america",
+              "act",
+              "going",
+              "senate"
             ],
-            "emerging_theme": false,
-            "size": 4,
+            "emerging_theme": true,
+            "size": 3,
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "post_ids": [
+              117,
               116,
-              115,
-              112,
               110
+            ]
+          },
+          {
+            "cluster_id": 2,
+            "label_terms": [
+              "fascist",
+              "redneck",
+              "judges",
+              "cut",
+              "chase",
+              "block"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              114,
+              113
             ]
           }
         ]
