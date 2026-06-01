@@ -119,15 +119,17 @@ function renderPairRow(pair: NarrativePairOverlap): string {
   </li>`;
 }
 
-export function crossPollinationPanelHtml(report: CrossPollinationReport | null): string {
+export function crossPollinationPanelHtml(
+  report: CrossPollinationReport | null,
+  asInner = false
+): string {
   const count = report?.actor_count ?? 0;
   const badge =
     count > 0
       ? `<span class="topology-badge topology-star">${count} cross-narrative actors</span>`
       : `<span class="topology-badge topology-sparse">global scan</span>`;
 
-  return `
-    <section class="panel panel-cross-pollination" id="cross-pollination-panel">
+  const inner = `
       <h2>Narrative cross-pollination ${badge}</h2>
       <p class="chart-caption">
         Scans <strong>all narratives</strong> in heimdall.db for accounts posting in multiple keyword silos.
@@ -135,8 +137,11 @@ export function crossPollinationPanelHtml(report: CrossPollinationReport | null)
       </p>
       <div id="cross-pollination-global-host"></div>
       <div id="cross-pollination-narrative-host"></div>
-    </section>
   `;
+  if (asInner) {
+    return `<div class="panel panel-cross-pollination" id="cross-pollination-panel">${inner}</div>`;
+  }
+  return `<section class="panel panel-cross-pollination" id="cross-pollination-panel">${inner}</section>`;
 }
 
 export function renderGlobalCrossPollination(
@@ -240,7 +245,7 @@ function bindActorButtons(root: ParentNode): void {
       const id = btn.dataset.authorId;
       const label = btn.dataset.authorLabel ?? id;
       if (id) selectAuthor(id, `Cross-poll: ${label}`);
-      document.getElementById("posts-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.dispatchEvent(new CustomEvent("heimdall:goto-posts"));
     });
   });
 }

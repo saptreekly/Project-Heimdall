@@ -21,16 +21,17 @@ function cardLabel(terms: string[]): string {
   return terms.slice(0, 4).join(" · ");
 }
 
-export function emergingThemesPanelHtml(report: ThemesReport): string {
+export function emergingThemesBadge(report: ThemesReport): string {
   const emerging = report.emerging_theme_count ?? 0;
-  const badge =
-    emerging > 0
-      ? `<span class="topology-badge topology-star">${emerging} emerging</span>`
-      : `<span class="topology-badge topology-sparse">embedding clusters</span>`;
+  return emerging > 0
+    ? `<span class="topology-badge topology-star">${emerging} emerging</span>`
+    : `<span class="topology-badge topology-sparse">embedding clusters</span>`;
+}
 
-  return `
-    <section class="panel panel-chart-wide themes-panel" id="emerging-themes-panel">
-      <h2>Emerging themes timeline ${badge}</h2>
+export function emergingThemesPanelHtml(report: ThemesReport, asInner = false): string {
+  const badge = emergingThemesBadge(report);
+  const inner = `
+      <h2 class="themes-panel-title">Emerging themes timeline ${badge}</h2>
       <p class="chart-caption">
         DBSCAN/KMeans on sentence embeddings surfaces coordinated phrasing variants beyond exact-string duplicates.
         Click a cluster to filter posts below.
@@ -39,6 +40,11 @@ export function emergingThemesPanelHtml(report: ThemesReport): string {
         <p class="loading">Loading themes…</p>
       </div>
       <p class="metric-sub themes-meta" id="themes-meta"></p>
+  `;
+  if (asInner) return inner;
+  return `
+    <section class="panel panel-chart-wide themes-panel" id="emerging-themes-panel">
+      ${inner}
     </section>
   `;
 }
@@ -118,7 +124,7 @@ export function renderEmergingThemesTimeline(
       btn.classList.add("theme-card-active");
 
       selectThemeCluster(label, ids);
-      document.getElementById("posts-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.dispatchEvent(new CustomEvent("heimdall:goto-posts"));
     });
   });
 

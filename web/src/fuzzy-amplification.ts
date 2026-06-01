@@ -11,7 +11,8 @@ export type JaccardHudBounds = {
 export function fuzzyAmplificationPanelHtml(
   report: NearDuplicatesReport | null,
   threshold: number,
-  bounds: JaccardHudBounds
+  bounds: JaccardHudBounds,
+  asInner = false
 ): string {
   const th = threshold;
   const count = report?.cross_author_fuzzy_count ?? 0;
@@ -20,8 +21,7 @@ export function fuzzyAmplificationPanelHtml(
       ? `<span class="topology-badge topology-star">${count} fuzzy clusters</span>`
       : `<span class="topology-badge topology-sparse" id="fuzzy-threshold-badge">Jaccard ≥ ${th.toFixed(2)}</span>`;
 
-  return `
-    <section class="panel panel-fuzzy" id="fuzzy-amplification-panel">
+  const inner = `
       <div class="fuzzy-panel-header">
         <h2>Cross-author fuzzy amplification ${badge}</h2>
         <div class="fuzzy-panel-hud" id="fuzzy-panel-hud" role="group" aria-label="Jaccard threshold controls">
@@ -49,8 +49,11 @@ export function fuzzyAmplificationPanelHtml(
         Click a cluster to filter posts.
       </p>
       <div id="fuzzy-clusters-host"></div>
-    </section>
   `;
+  if (asInner) {
+    return `<div class="panel panel-fuzzy" id="fuzzy-amplification-panel">${inner}</div>`;
+  }
+  return `<section class="panel panel-fuzzy" id="fuzzy-amplification-panel">${inner}</section>`;
 }
 
 export function syncJaccardThresholdHud(threshold: number, bounds: JaccardHudBounds): void {
@@ -126,7 +129,7 @@ export function renderFuzzyClusters(
       const burst = btn.dataset.burst === "1";
       const sample = btn.querySelector(".post-text")?.textContent ?? "fuzzy cluster";
       selectDuplicateCluster(`Fuzzy: ${sample.slice(0, 36)}`, ids, burst);
-      document.getElementById("posts-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.dispatchEvent(new CustomEvent("heimdall:goto-posts"));
     });
   });
 

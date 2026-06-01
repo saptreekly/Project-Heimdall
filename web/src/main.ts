@@ -15,6 +15,15 @@ import {
   listNarratives,
   loadSnapshot,
 } from "./api";
+import {
+  analysisLayoutHtml,
+  analysisSectionFromUrl,
+  bindAnalysisSectionNav,
+  panelRollupHtml,
+  setAnalysisSectionInUrl,
+  showAnalysisSection,
+  type AnalysisSection,
+} from "./analysis-sections";
 import { bindBriefPrint, briefPanelHtml, renderBrief } from "./brief";
 import { renderContentNotice } from "./content-notice";
 import {
@@ -72,6 +81,7 @@ import {
 } from "./post-display";
 import {
   clearThemeCardSelection,
+  emergingThemesBadge,
   emergingThemesPanelHtml,
   renderEmergingThemesTimeline,
 } from "./emerging-themes";
@@ -100,10 +110,16 @@ import type {
 } from "./types";
 
 const BLUR_SENSITIVE_KEY = "heimdall-blur-sensitive";
+const COMPACT_CHARTS_KEY = "heimdall-compact-charts";
+const POST_LIST_INITIAL = 20;
+const POST_LIST_MAX = 50;
 
 let currentTab: AppTab = tabFromUrl();
+let currentAnalysisSection: AnalysisSection = analysisSectionFromUrl();
 let blurSensitive = localStorage.getItem(BLUR_SENSITIVE_KEY) === "1";
+let compactCharts = localStorage.getItem(COMPACT_CHARTS_KEY) !== "0";
 let groupAuthorPosts = true;
+let postListLimit = POST_LIST_INITIAL;
 let lastNearDup: NearDuplicatesReport | null = null;
 let clusterSourcePosts: Post[] = [];
 let jaccardThreshold = 0.82;
@@ -116,9 +132,25 @@ let briefContext: {
   crossPollination: import("./types").CrossPollinationReport | null;
 } | null = null;
 
+type ChartMountFns = {
+  mountOverview: () => void;
+  mountSignals: () => void;
+  mountGraphs: () => void;
+  mountAnomalies: () => void;
+};
+let chartMountFns: ChartMountFns | null = null;
+const chartsMounted = {
+  overview: false,
+  signals: false,
+  graphs: false,
+  anomalies: false,
+};
+
 const rootEl = document.getElementById("app");
 if (!rootEl) throw new Error("#app missing");
 const root: HTMLElement = rootEl;
+
+applyChartDensity();
 
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
@@ -126,6 +158,55 @@ if ("scrollRestoration" in history) {
 
 function scrollPageToTop(): void {
   window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+}
+
+function applyChartDensity(): void {
+  document.documentElement.classList.toggle("chart-density-compact", compactCharts);
+}
+
+function switchAnalysisSection(section: AnalysisSection, options?: { scroll?: boolean }): void {
+  currentAnalysisSection = section;
+  setAnalysisSectionInUrl(section);
+  showAnalysisSection(section);
+  ensureChartsMountedForSection(section);
+  if (options?.scroll !== false) {
+    document
+      .querySelector(`[data-analysis-section-panel="${section}"]`)
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function ensureChartsMountedForSection(section: AnalysisSection): void {
+  if (!chartMountFns) return;
+  if (section === "overview" && !chartsMounted.overview) {
+    chartsMounted.overview = true;
+    chartMountFns.mountOverview();
+  }
+  if (section === "signals" && !chartsMounted.signals) {
+    chartsMounted.signals = true;
+    chartMountFns.mountSignals();
+  }
+  if (section === "graphs" && !chartsMounted.graphs) {
+    chartsMounted.graphs = true;
+    chartMountFns.mountGraphs();
+  }
+  if (section === "anomalies" && !chartsMounted.anomalies) {
+    chartsMounted.anomalies = true;
+    chartMountFns.mountAnomalies();
+  }
+}
+
+function syncRailInvestigation(): void {
+  const rail = document.getElementById("analysis-rail-investigation");
+  const bar = document.getElementById("investigation-filter-bar");
+  if (!rail || !bar) return;
+  if (bar.hidden) {
+    rail.hidden = true;
+    rail.innerHTML = "";
+    return;
+  }
+  rail.hidden = false;
+  rail.innerHTML = `<span class="investigation-label">Active filter</span>${bar.innerHTML.replace(/<span class="investigation-label">Investigating:<\/span>\s*/i, "")}`;
 }
 
 function mean(nums: number[]): number | null {
@@ -199,18 +280,31 @@ function updatePostsPanel(): void {
   const filtered = filterPosts();
   const active = getInvestigationFilter();
   host.innerHTML = renderPostsList(filtered, {
-    limit: 50,
+    limit: postListLimit,
     activeAuthorId: active.authorId,
     blurSensitive,
     nearDup: lastNearDup,
     groupAuthors: groupAuthorPosts,
   });
   bindPostListAuthorLinks(host);
-  if (countEl) {
-    countEl.textContent = hasActiveFilter()
-      ? `${filtered.length} matching posts`
-      : `Top ${Math.min(50, filtered.length)} by outrage`;
+  const loadMore = document.getElementById("load-more-posts");
+  const canLoadMore =
+    filtered.length > postListLimit && postListLimit < POST_LIST_MAX;
+  if (loadMore) {
+    if (canLoadMore) {
+      loadMore.removeAttribute("hidden");
+      loadMore.textContent = `Show more posts (${Math.min(POST_LIST_MAX, filtered.length) - postListLimit} more)`;
+    } else {
+      loadMore.setAttribute("hidden", "");
+    }
   }
+  if (countEl) {
+    const shown = Math.min(postListLimit, filtered.length);
+    countEl.textContent = hasActiveFilter()
+      ? `${shown} of ${filtered.length} matching`
+      : `Top ${shown} of ${filtered.length} by outrage`;
+  }
+  syncRailInvestigation();
   if (bar) {
     const f = getInvestigationFilter();
     if (hasActiveFilter() && f.label) {
@@ -227,10 +321,7 @@ function applyInvestigation(authorId: string | null): void {
   focusPropagationAuthor(authorId);
   updatePostsPanel();
   if (hasActiveFilter()) {
-    document.getElementById("posts-panel")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    switchAnalysisSection("posts");
   }
 }
 
@@ -251,12 +342,12 @@ function bindInvestigationChrome(): void {
   });
 }
 
-function renderClusters(clusters: DuplicateCluster[]): string {
+function renderClustersBlock(clusters: DuplicateCluster[], max = 8): string {
   if (clusters.length === 0) {
     return "<p class='loading'>No exact duplicate-text clusters (need ≥2 posts with identical normalized text).</p>";
   }
   return clusters
-    .slice(0, 8)
+    .slice(0, max)
     .map((c) => {
       const burst = c.burst_synchronized
         ? `<span class="burst-tag">${c.burst_author_count ?? c.author_count} authors in 90s burst</span>`
@@ -275,6 +366,85 @@ function renderClusters(clusters: DuplicateCluster[]): string {
     .join("");
 }
 
+function renderDuplicatesInner(clusters: DuplicateCluster[]): string {
+  return `
+    <h2>${duplicatePanelTitle()}</h2>
+    ${duplicatePanelCaption()}
+    <div id="dup-clusters-host">${renderClustersBlock(clusters)}</div>
+  `;
+}
+
+function renderDuplicatesPanel(
+  clusters: DuplicateCluster[],
+  mode: "preview" | "full"
+): string {
+  if (mode === "preview") {
+    const top = clusters.slice(0, 3);
+    const rest = clusters.slice(3, 8);
+    return `
+      <section class="panel panel-duplicates">
+        <h2>${duplicatePanelTitle()}</h2>
+        <p class="chart-caption dup-legend">
+          Top clusters here — open <strong>Anomalies</strong> for the full list and fuzzy/cross-narrative panels.
+        </p>
+        <div id="dup-clusters-host-overview">${renderClustersBlock(top, 3)}</div>
+        ${
+          rest.length
+            ? panelRollupHtml(
+                `${rest.length} more exact-duplicate cluster${rest.length === 1 ? "" : "s"}`,
+                renderClustersBlock(rest, 8)
+              )
+            : ""
+        }
+      </section>
+    `;
+  }
+  return `<section class="panel panel-duplicates">${renderDuplicatesInner(clusters)}</section>`;
+}
+
+function metricsGridHtml(
+  posts: Post[],
+  authors: Set<string>,
+  avg: number | null,
+  cib: CibReport
+): string {
+  return `
+    <div class="metrics-grid">
+      <div class="metric-card"><span class="metric-label">Posts</span><div class="metric-value">${posts.length}</div></div>
+      <div class="metric-card"><span class="metric-label">Authors</span><div class="metric-value">${authors.size}</div></div>
+      <div class="metric-card"><span class="metric-label">Mean outrage</span><div class="metric-value">${avg != null ? avg.toFixed(3) : "n/a"}</div></div>
+      <div class="metric-card metric-card-wide">
+        <span class="metric-label">CIB suspicion</span>
+        <div class="metric-value">${cib.suspicion_score.toFixed(2)}</div>
+        <div class="metric-sub">organic ${cib.organic_score.toFixed(2)} · ${cib.edge_count} edges</div>
+      </div>
+    </div>
+  `;
+}
+
+function cibSnapshotHtml(cib: CibReport): string {
+  const signals = cib.signals.slice(0, 3);
+  return `
+    <section class="panel panel-cib-snapshot">
+      <h2>CIB at a glance</h2>
+      ${
+        signals.length
+          ? `<ul class="signal-list signal-list-compact">${signals.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>`
+          : "<p class='empty'>No elevated CIB signals.</p>"
+      }
+      ${
+        cib.iu_astroturf
+          ? `<p class="metric-sub">IU astroturf: ${cib.iu_astroturf.known_political_bots} known bots / ${cib.iu_astroturf.authors_in_narrative} authors</p>`
+          : ""
+      }
+    </section>
+  `;
+}
+
+function analysisSectionHiddenAttr(section: AnalysisSection): string {
+  return section === currentAnalysisSection ? "" : " hidden";
+}
+
 function bindClusterButtons(): void {
   document.querySelectorAll<HTMLButtonElement>(".cluster-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -285,7 +455,7 @@ function bindClusterButtons(): void {
       const burst = btn.dataset.burst === "1";
       const sample = btn.querySelector(".post-text")?.textContent ?? "cluster";
       selectDuplicateCluster(sample.slice(0, 40), ids, burst);
-      document.getElementById("posts-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      switchAnalysisSection("posts");
     });
   });
 }
@@ -302,6 +472,15 @@ function bindPostToolbar(): void {
   });
   document.getElementById("group-authors-toggle")?.addEventListener("change", (e) => {
     groupAuthorPosts = (e.target as HTMLInputElement).checked;
+    updatePostsPanel();
+  });
+  document.getElementById("compact-charts-toggle")?.addEventListener("change", (e) => {
+    compactCharts = (e.target as HTMLInputElement).checked;
+    localStorage.setItem(COMPACT_CHARTS_KEY, compactCharts ? "1" : "0");
+    applyChartDensity();
+  });
+  document.getElementById("load-more-posts")?.addEventListener("click", () => {
+    postListLimit = POST_LIST_MAX;
     updatePostsPanel();
   });
 }
@@ -337,8 +516,11 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
           <p class="data-badge">Repo snapshot${stamp}</p>
         </div>
         ${renderContentNotice()}
-        <p class="data-links">Source data: ${renderDataLinksExtra()}</p>
-        ${renderRateFooter()}
+        <details class="header-meta-collapse">
+          <summary class="header-meta-summary">Data sources &amp; ingest</summary>
+          <p class="data-links">Source data: ${renderDataLinksExtra()}</p>
+          ${renderRateFooter()}
+        </details>
       </header>
       ${renderTabNav(currentTab)}
       <div id="panel-analysis"${currentTab !== "analysis" ? " hidden" : ""}>
@@ -355,6 +537,7 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
             </select>
             <label class="toolbar-check"><input type="checkbox" id="group-authors-toggle" checked /> Group busy authors</label>
             <label class="toolbar-check"><input type="checkbox" id="blur-sensitive-toggle" ${blurSensitive ? "checked" : ""} /> Blur sensitive text</label>
+            <label class="toolbar-check"><input type="checkbox" id="compact-charts-toggle" ${compactCharts ? "checked" : ""} /> Compact charts</label>
             <button type="button" id="refresh-btn" class="btn btn-secondary">Reload snapshot</button>
           </div>
         </div>
@@ -445,40 +628,36 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     const outrageDiag = computeOutrageDiagnostics(posts, sentiment.buckets);
     const priorityPoints = buildAuthorPriorityPoints(graph, cib, posts);
     const criticalCount = priorityPoints.filter((p) => p.critical).length;
+    const fuzzyCount = lastNearDup?.cross_author_fuzzy_count ?? 0;
+    const crossActorCount = crossPollination?.actor_count ?? 0;
+    const dupCount = amp.clusters.length;
 
-    content.innerHTML = `
-      <div class="metrics-grid">
-        <div class="metric-card"><span class="metric-label">Posts</span><div class="metric-value">${posts.length}</div></div>
-        <div class="metric-card"><span class="metric-label">Authors</span><div class="metric-value">${authors.size}</div></div>
-        <div class="metric-card"><span class="metric-label">Mean outrage</span><div class="metric-value">${avg != null ? avg.toFixed(3) : "n/a"}</div></div>
-        <div class="metric-card metric-card-wide">
-          <span class="metric-label">CIB suspicion</span>
-          <div class="metric-value">${cib.suspicion_score.toFixed(2)}</div>
-          <div class="metric-sub">organic ${cib.organic_score.toFixed(2)} · ${cib.edge_count} edges</div>
+    postListLimit = POST_LIST_INITIAL;
+    chartsMounted.overview = false;
+    chartsMounted.signals = false;
+    chartsMounted.graphs = false;
+    chartsMounted.anomalies = false;
+
+    const sectionPanels = `
+      <section class="analysis-section" data-analysis-section-panel="overview"${analysisSectionHiddenAttr("overview")}>
+        <div class="metrics-histogram-row">
+          ${metricsGridHtml(posts, authors, avg, cib)}
+          <section class="panel panel-histogram-compact">
+            <h2>Outrage distribution</h2>
+            ${renderHistogram(posts)}
+          </section>
         </div>
-      </div>
+        ${sentimentChartPanelHtml(escapeHtml(sentiment.trend), outrageDiag)}
+        ${cibSnapshotHtml(cib)}
+        ${renderDuplicatesPanel(amp.clusters, "preview")}
+        ${panelRollupHtml(
+          `Emerging themes ${emergingThemesBadge(themes)}`,
+          `<div class="panel panel-chart-wide themes-panel">${emergingThemesPanelHtml(themes, true)}</div>`
+        )}
+      </section>
 
-      <div class="charts-grid">
-        <section class="panel">
-          <h2>Outrage distribution</h2>
-          ${renderHistogram(posts)}
-        </section>
-      </div>
-
-      ${sentimentChartPanelHtml(escapeHtml(sentiment.trend), outrageDiag)}
-
-      ${priorityScatterPanelHtml(criticalCount, graph.edges.length, outrageDiag)}
-
-      ${graphPanelHtml(null)}
-
-      ${emergingThemesPanelHtml(themes)}
-
-      <div class="split-grid">
-        <section class="panel panel-duplicates">
-          <h2>${duplicatePanelTitle()}</h2>
-          ${duplicatePanelCaption()}
-          <div id="dup-clusters-host">${renderClusters(amp.clusters)}</div>
-        </section>
+      <section class="analysis-section" data-analysis-section-panel="signals"${analysisSectionHiddenAttr("signals")}>
+        ${priorityScatterPanelHtml(criticalCount, graph.edges.length, outrageDiag)}
         <section class="panel">
           <h2>CIB signals</h2>
           <div class="signal-body">
@@ -490,35 +669,51 @@ async function loadDashboard(narrativeId: number): Promise<void> {
             }
           </div>
         </section>
-      </div>
+      </section>
 
-      ${fuzzyAmplificationPanelHtml(nearDup, jaccardThreshold, bounds)}
+      <section class="analysis-section" data-analysis-section-panel="graphs"${analysisSectionHiddenAttr("graphs")}>
+        ${graphPanelHtml(null)}
+      </section>
 
-      ${crossPollinationPanelHtml(crossPollination)}
+      <section class="analysis-section" data-analysis-section-panel="anomalies"${analysisSectionHiddenAttr("anomalies")}>
+        ${panelRollupHtml(
+          `Exact duplicate text (${dupCount} cluster${dupCount === 1 ? "" : "s"})`,
+          `<div class="panel panel-duplicates">${renderDuplicatesInner(amp.clusters)}</div>`
+        )}
+        ${panelRollupHtml(
+          `Cross-author fuzzy amplification (${fuzzyCount} cluster${fuzzyCount === 1 ? "" : "s"})`,
+          fuzzyAmplificationPanelHtml(nearDup, jaccardThreshold, bounds, true)
+        )}
+        ${panelRollupHtml(
+          `Narrative cross-pollination (${crossActorCount} cross-narrative actor${crossActorCount === 1 ? "" : "s"})`,
+          crossPollinationPanelHtml(crossPollination, true)
+        )}
+      </section>
 
-      ${
-        benchmark
-          ? `<p class="panel-callout benchmark-callout">Benchmark labels: ${benchmark.labeled_posts}/${benchmark.total_posts} posts (${escapeHtml(benchmark.labels.join(", "))}).</p>`
-          : ""
-      }
-
-      <section class="panel posts-panel" id="posts-panel">
-        <div class="posts-panel-header">
-          <h2>Posts <span class="post-list-count" id="post-list-count"></span></h2>
-          <div id="investigation-filter-bar" class="investigation-bar" hidden></div>
-          <button type="button" id="clear-investigation" class="btn btn-secondary btn-small" hidden>
-            Clear filter
+      <section class="analysis-section posts-section" data-analysis-section-panel="posts"${analysisSectionHiddenAttr("posts")}>
+        <section class="panel posts-panel" id="posts-panel">
+          <div class="posts-panel-header">
+            <h2>Posts <span class="post-list-count" id="post-list-count"></span></h2>
+            <div id="investigation-filter-bar" class="investigation-bar" hidden></div>
+            <button type="button" id="clear-investigation" class="btn btn-secondary btn-small" hidden>
+              Clear filter
+            </button>
+          </div>
+          ${postsPanelCalloutHtml()}
+          <div id="post-list-host"></div>
+          <button type="button" id="load-more-posts" class="btn btn-secondary btn-small load-more-posts" hidden>
+            Show more posts
           </button>
-        </div>
-        ${postsPanelCalloutHtml()}
-        <div id="post-list-host">${renderPostsList(posts, {
-          limit: 50,
-          blurSensitive,
-          nearDup,
-          groupAuthors: groupAuthorPosts,
-        })}</div>
+        </section>
+        ${
+          benchmark
+            ? `<p class="panel-callout benchmark-callout">Benchmark labels: ${benchmark.labeled_posts}/${benchmark.total_posts} posts (${escapeHtml(benchmark.labels.join(", "))}).</p>`
+            : ""
+        }
       </section>
     `;
+
+    content.innerHTML = analysisLayoutHtml(sectionPanels, currentAnalysisSection);
 
     clearInvestigationFilter();
 
@@ -526,73 +721,78 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       selectAuthor(authorId, label);
     };
 
-    const sentimentCanvas = document.getElementById(
-      "sentiment-timeline-chart"
-    ) as HTMLCanvasElement | null;
-    if (sentimentCanvas) {
-      mountSentimentChart(
-        sentimentCanvas,
-        sentiment.buckets,
-        (date) => {
-          selectDate(date);
-        },
-        outrageDiag
-      );
-    }
-
-    const scatterCanvas = document.getElementById(
-      "priority-scatter-chart"
-    ) as HTMLCanvasElement | null;
-    const targetList = document.getElementById("priority-target-list");
-    if (scatterCanvas) {
-      mountPrioritizationScatter(
-        scatterCanvas,
-        priorityPoints,
-        (point) => pickAuthor(point.author_id, point.label),
-        graph.edges.length,
-        outrageDiag
-      );
-    }
-    if (targetList) {
-      renderPriorityTargetList(
-        targetList,
-        priorityPoints,
-        (point) => pickAuthor(point.author_id, point.label),
-        graph.edges.length,
-        outrageDiag
-      );
-    }
-
-    setPropagationAuthorHandler((authorId) => {
-      const author = graph.authors.find((a) => a.author_id === authorId);
-      const label = author?.handle ? `@${author.handle}` : authorId.slice(0, 12);
-      pickAuthor(authorId, label);
-    });
-
-    const graphEl = document.getElementById("propagation-graph");
-    if (graphEl) {
-      const meta = renderPropagationGraph(graphEl, graph, cib);
-      const badgeHost = graphEl.parentElement?.querySelector("h2");
-      if (badgeHost) {
-        const badge =
-          meta.topology === "star"
-            ? '<span class="topology-badge topology-star">star / coordinated</span>'
-            : meta.topology === "distributed"
-              ? '<span class="topology-badge topology-organic">distributed / organic-like</span>'
-              : meta.topology === "isolated"
-                ? '<span class="topology-badge topology-isolated">no edges</span>'
-                : '<span class="topology-badge topology-sparse">sparse</span>';
-        badgeHost.innerHTML = `Propagation network ${badge}`;
-      }
-    }
-
-    const themesHost = document.getElementById("themes-timeline-host");
-    if (themesHost) renderEmergingThemesTimeline(themesHost, themes);
+    chartMountFns = {
+      mountOverview: () => {
+        const sentimentCanvas = document.getElementById(
+          "sentiment-timeline-chart"
+        ) as HTMLCanvasElement | null;
+        if (sentimentCanvas) {
+          mountSentimentChart(
+            sentimentCanvas,
+            sentiment.buckets,
+            (date) => selectDate(date),
+            outrageDiag
+          );
+        }
+        const themesHost = document.getElementById("themes-timeline-host");
+        if (themesHost && themesHost.dataset.mounted !== "1") {
+          themesHost.dataset.mounted = "1";
+          renderEmergingThemesTimeline(themesHost, themes);
+        }
+      },
+      mountSignals: () => {
+        const scatterCanvas = document.getElementById(
+          "priority-scatter-chart"
+        ) as HTMLCanvasElement | null;
+        const targetList = document.getElementById("priority-target-list");
+        if (scatterCanvas) {
+          mountPrioritizationScatter(
+            scatterCanvas,
+            priorityPoints,
+            (point) => pickAuthor(point.author_id, point.label),
+            graph.edges.length,
+            outrageDiag
+          );
+        }
+        if (targetList) {
+          renderPriorityTargetList(
+            targetList,
+            priorityPoints,
+            (point) => pickAuthor(point.author_id, point.label),
+            graph.edges.length,
+            outrageDiag
+          );
+        }
+      },
+      mountGraphs: () => {
+        setPropagationAuthorHandler((authorId) => {
+          const author = graph.authors.find((a) => a.author_id === authorId);
+          const label = author?.handle ? `@${author.handle}` : authorId.slice(0, 12);
+          pickAuthor(authorId, label);
+        });
+        const graphEl = document.getElementById("propagation-graph");
+        if (graphEl) {
+          const meta = renderPropagationGraph(graphEl, graph, cib);
+          const badgeHost = graphEl.parentElement?.querySelector("h2");
+          if (badgeHost) {
+            const badge =
+              meta.topology === "star"
+                ? '<span class="topology-badge topology-star">star / coordinated</span>'
+                : meta.topology === "distributed"
+                  ? '<span class="topology-badge topology-organic">distributed / organic-like</span>'
+                  : meta.topology === "isolated"
+                    ? '<span class="topology-badge topology-isolated">no edges</span>'
+                    : '<span class="topology-badge topology-sparse">sparse</span>';
+            badgeHost.innerHTML = `Propagation network ${badge}`;
+          }
+        }
+      },
+      mountAnomalies: () => {},
+    };
 
     const fuzzyHost = document.getElementById("fuzzy-clusters-host");
     if (fuzzyHost) renderFuzzyClusters(fuzzyHost, lastNearDup);
-    updateFuzzyThresholdBadge(jaccardThreshold, lastNearDup?.cross_author_fuzzy_count ?? 0);
-
+    updateFuzzyThresholdBadge(jaccardThreshold, fuzzyCount);
     const crossGlobalHost = document.getElementById("cross-pollination-global-host");
     if (crossGlobalHost) renderGlobalCrossPollination(crossGlobalHost, crossPollination);
     const crossNarrativeHost = document.getElementById("cross-pollination-narrative-host");
@@ -605,6 +805,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       );
     }
 
+    bindAnalysisSectionNav((section) => switchAnalysisSection(section));
     bindInvestigationChrome();
     bindClusterButtons();
     bindPostToolbar();
@@ -612,6 +813,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     bindBriefPrint();
     bindPostListAuthorLinks(document.getElementById("post-list-host") ?? document);
     updatePostsPanel();
+    ensureChartsMountedForSection(currentAnalysisSection);
     scrollPageToTop();
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
@@ -720,5 +922,9 @@ async function bootstrap(): Promise<void> {
     renderMissingSnapshot(msg);
   }
 }
+
+window.addEventListener("heimdall:goto-posts", () => {
+  if (currentTab === "analysis") switchAnalysisSection("posts");
+});
 
 void bootstrap();
