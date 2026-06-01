@@ -1,0 +1,58 @@
+# Scheduled ingest → commit data/dashboard/heimdall.db + snapshot → triggers Pages deploy.
+# Requires GitHub secrets: AUTH_TOKEN and CT0 (or X_AUTH_TOKEN / X_CT0).
+# Guardrails: defaults from heimdall/config.py (not overridden here).
+
+name: ingest
+
+on:
+  schedule:
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ingest-data
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Heimdall
+        run: pip install -e .
+
+      - name: Prepare dashboard database
+        run: |
+          mkdir -p data/dashboard
+          if [ ! -f data/dashboard/heimdall.db ]; then
+            echo "No committed DB yet; starting empty SQLite file"
+          fi
+
+      - name: Run scheduled ingest (X guardrails enforced)
+        env:
+          DATABASE_URL: sqlite+aiosqlite:///./data/dashboard/heimdall.db
+          X_RATE_STATE_PATH: data/dashboard/x_rate_state.json
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          CT0: ${{ secrets.CT0 }}
+          X_INGEST_ENABLED: "true"
+        run: python scripts/scheduled_ingest.py
+
+      - name: Commit ingest data to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dashboard/heimdall.db data/dashboard/x_rate_state.json web/public/data/snapshot.json
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore: scheduled ingest data and dashboard snapshot"
+            git push
+          fi

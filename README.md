@@ -60,39 +60,24 @@ git commit -m "chore: publish ingest data for dashboard"
 git push
 ```
 
-CI uses `data/dashboard/heimdall.db` and refreshes `web/public/data/snapshot.json` on each deploy.
+**Automated ingest** (`.github/workflows/ingest.yml`, daily 13:00 UTC) pulls new posts per `data/scheduled_ingest.json`, enforces X guardrails, and commits `data/dashboard/heimdall.db` plus `snapshot.json`. Add GitHub secrets **`AUTH_TOKEN`** and **`CT0`** (or `X_AUTH_TOKEN` / `X_CT0`).
 
-Or set GitHub secret **`DASHBOARD_DATABASE_URL`** to a remote database URL. If neither is present, CI seeds mock demo data.
+Pages deploy runs after data is pushed (and daily 14:00 UTC).
 
-Export snapshot locally:
+Or set GitHub secret **`DASHBOARD_DATABASE_URL`**. If neither is present, CI seeds mock demo data.
 
-```bash
-python scripts/export_dashboard_data.py
-```
+The dashboard reads **`snapshot.json` only** — header links point at repo data on GitHub.
 
-Optional: use **Live API** in the dashboard to query a running server (`CORS_ORIGINS` must include your origin).
-
-**Local dev:**
+**Local preview:**
 
 ```bash
-# Terminal 1 — API
-uvicorn heimdall.main:app --reload
-
-# Terminal 2 — Vite dev (proxies /api → :8000)
+python scripts/publish_dashboard_data.py
 cd web && npm install && npm run dev
 ```
 
-Open http://127.0.0.1:5173 — Connect, pick a narrative, refresh after ingest.
+Open http://127.0.0.1:5173 — deep link: `?narrative=3`
 
-**Single server:** build the SPA, then uvicorn serves `web/dist` at `/` when present:
-
-```bash
-cd web && npm run build
-uvicorn heimdall.main:app --reload
-# http://127.0.0.1:8000/  (API still at /api/v1, docs at /docs)
-```
-
-Deep link: `http://127.0.0.1:5173/?narrative=3`
+**Optional:** `uvicorn heimdall.main:app` still serves ingest/API; after `npm run build` it can also serve `web/dist` at `/`.
 
 ### With Docker (Postgres + Redis + Neo4j)
 
@@ -206,10 +191,10 @@ Neo4j authors get `known_bot` and `bot_label` when matched.
 | `X_AUTH_TOKEN` / `X_CT0` | Session cookies for `platform=x` ingest (aliases: `AUTH_TOKEN`, `CT0`) |
 | `X_BEARER_TOKEN` | Reserved for official API v2 (not required for cookie ingest) |
 | `X_MAX_*`, `X_MIN_*`, `X_INGEST_ENABLED` | X GraphQL guardrails (see table above) |
+| `X_RATE_STATE_PATH` | Daily GraphQL counter file (CI: `data/dashboard/x_rate_state.json`) |
 | `NEO4J_*` | Graph export via `POST /narratives/{id}/graph/neo4j` |
 | `MASTODON_INSTANCE_URL` | Instance for hashtag timelines |
 | `DEFAULT_INGESTER` | `hackernews`, `mastodon`, `mock`, etc. |
-| `CORS_ORIGINS` | Comma-separated browser origins for the analysis dashboard |
 
 Install transformer-backed sentiment: `pip install -e ".[ml]"` and pass `OutrageAnalyzer(use_transformers=True)` in the pipeline.
 
@@ -221,7 +206,7 @@ Only collect **public** data in compliance with platform Terms of Service and ap
 
 Ingest is **saved** to the app database (`heimdall.db` by default). Posts, outrage scores, edges, and narratives survive restarts.
 
-Use the TypeScript dashboard in `web/` (see [Narrative analysis dashboard](#narrative-analysis-dashboard-typescript)). It calls `GET /api/v1/narratives`, `/posts`, `/cib`, `/sentiment-shift`, and `/amplification`.
+Use the TypeScript dashboard in `web/` (see [Narrative analysis dashboard](#narrative-analysis-dashboard-typescript)). It loads committed `snapshot.json` only (no live API).
 
 Duplicate-text detection and pandas loaders live in `heimdall/analysis/`.
 
@@ -244,5 +229,5 @@ tests/
 
 - [x] X/Twitter ingester (GraphQL search + list timelines; retweet → SHARE edges)
 - [ ] Bot detection features (account age, posting velocity) as graph node attributes
-- [x] Narrative analysis dashboard (`web/`, TypeScript + `/api/v1`)
+- [x] Narrative analysis dashboard (`web/`, static snapshot from repo data)
 - [ ] Graph visualization (e.g. sigma.js) fed from Neo4j or propagation edges

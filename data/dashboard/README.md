@@ -18,7 +18,13 @@ cp heimdall.db data/dashboard/heimdall.db
 python scripts/export_dashboard_data.py
 ```
 
-The Pages workflow (`/.github/workflows/pages.yml`) runs daily and on push:
+**Automated ingest** (`.github/workflows/ingest.yml`, daily 13:00 UTC):
+
+1. Runs jobs in `data/scheduled_ingest.json` with X guardrails (keyword cap, post cap, daily GraphQL budget)
+2. Requires GitHub secrets `AUTH_TOKEN` and `CT0`
+3. Commits `heimdall.db`, `x_rate_state.json`, and `snapshot.json`
+
+The Pages workflow (`/.github/workflows/pages.yml`) runs on push after ingest and daily at 14:00 UTC:
 
 1. Opens `data/dashboard/heimdall.db` if present
 2. Else uses GitHub secret `DASHBOARD_DATABASE_URL` (optional remote DB)
