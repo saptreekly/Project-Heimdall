@@ -1,7 +1,9 @@
-# Scheduled ingest → commit data/dashboard/heimdall.db + snapshot → triggers Pages deploy.
+# Scheduled ingest → commit data/dashboard/heimdall.db + snapshot → Pages redeploys via workflow_run.
 # Requires GitHub secrets: AUTH_TOKEN and CT0 (or X_AUTH_TOKEN / X_CT0).
-# Guardrails: defaults from heimdall/config.py (not overridden here).
 # X schedule: 30 runs / 24h → one GraphQL search every 48 minutes (24*60/30).
+#
+# Note: The Actions UI text "workflow_dispatch event trigger" only describes the manual Run button.
+# Cron schedules still run automatically when this workflow is enabled (not disabled in Actions list).
 
 name: ingest
 
@@ -21,6 +23,11 @@ concurrency:
   group: ingest-data
   cancel-in-progress: false
 
+env:
+  HF_HOME: ${{ github.workspace }}/.cache/huggingface
+  TRANSFORMERS_CACHE: ${{ github.workspace }}/.cache/huggingface
+  SENTENCE_TRANSFORMERS_HOME: ${{ github.workspace }}/.cache/huggingface
+
 jobs:
   ingest:
     runs-on: ubuntu-latest
@@ -30,19 +37,30 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
 
-      - name: Cache sentence-transformers model
+      - name: Restore ML and pip caches
         uses: actions/cache@v4
+        id: ml-cache
         with:
           path: |
-            ~/.cache/huggingface
-            ~/.cache/torch
+            .cache/huggingface
+            .cache/torch
           key: ${{ runner.os }}-heimdall-ml-${{ hashFiles('pyproject.toml') }}
           restore-keys: |
             ${{ runner.os }}-heimdall-ml-
 
       - name: Install Heimdall (ML extras for theme clustering)
         run: pip install -e ".[ml]"
+
+      - name: Warm sentence-transformers model (populate cache)
+        run: |
+          python -c "
+          from sentence_transformers import SentenceTransformer
+          SentenceTransformer('all-MiniLM-L6-v2')
+          print('Embedding model ready in', __import__('os').environ.get('HF_HOME'))
+          "
 
       - name: Prepare dashboard database
         run: |
@@ -64,13 +82,23 @@ jobs:
         run: python scripts/scheduled_ingest.py
 
       - name: Commit ingest data to repo
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/dashboard/heimdall.db data/dashboard/x_rate_state.json data/dashboard/x_keyword_rotation.json web/public/data/snapshot.json
           if git diff --staged --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
             echo "No data changes to commit."
           else
             git commit -m "chore: scheduled ingest data and dashboard snapshot"
             git push
+            echo "committed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Ingest summary
+        run: |
+          echo "### Ingest run" >> "$GITHUB_STEP_SUMMARY"
+          echo "- ML cache hit: ${{ steps.ml-cache.outputs.cache-hit }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Committed data: ${{ steps.commit.outputs.committed }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Pages deploy will start via workflow_run when ingest completes." >> "$GITHUB_STEP_SUMMARY"

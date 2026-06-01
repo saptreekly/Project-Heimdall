@@ -44,17 +44,20 @@ export function clearSnapshotCache(): void {
   snapshotCache = null;
 }
 
-export async function loadSnapshot(): Promise<DashboardSnapshot> {
-  if (snapshotCache) return snapshotCache;
+export async function loadSnapshot(options?: { bustCache?: boolean }): Promise<DashboardSnapshot> {
+  if (snapshotCache && !options?.bustCache) return snapshotCache;
+  snapshotCache = null;
 
   const tried: string[] = [];
   let lastStatus = "";
+  const cacheBust = options?.bustCache ? `?v=${Date.now()}` : "";
 
   for (const url of snapshotCandidates()) {
-    tried.push(url);
+    const fetchUrl = `${url}${cacheBust}`;
+    tried.push(fetchUrl);
     try {
-      const res = await fetch(url);
-      lastStatus = `${res.status} ${url}`;
+      const res = await fetch(fetchUrl, { cache: "no-store" });
+      lastStatus = `${res.status} ${fetchUrl}`;
       if (!res.ok) continue;
       snapshotCache = (await res.json()) as DashboardSnapshot;
       if (!snapshotCache.narratives?.length) {

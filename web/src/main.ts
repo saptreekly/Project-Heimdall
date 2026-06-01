@@ -474,6 +474,47 @@ function setUrlNarrative(id: number): void {
   window.history.replaceState({}, "", url);
 }
 
+async function reloadSnapshotFromNetwork(narrativeId: number): Promise<void> {
+  const refresh = document.getElementById("refresh-btn") as HTMLButtonElement | null;
+  const stamp = document.querySelector(".data-badge");
+  if (refresh) {
+    refresh.disabled = true;
+    refresh.textContent = "Reloading…";
+  }
+  clearSnapshotCache();
+  try {
+    await loadSnapshot({ bustCache: true });
+    const narratives = await listNarratives();
+    const select = document.getElementById("narrative-select") as HTMLSelectElement | null;
+    if (select) {
+      select.innerHTML = narratives
+        .map(
+          (n) =>
+            `<option value="${n.id}" ${n.id === narrativeId ? "selected" : ""}>${escapeHtml(n.name)} (${n.post_count} posts)</option>`
+        )
+        .join("");
+    }
+    if (stamp) {
+      const at = getSnapshotGeneratedAt();
+      stamp.textContent = at
+        ? `Repo snapshot · ${escapeHtml(at.slice(0, 19))} UTC (reloaded)`
+        : "Repo snapshot (reloaded)";
+    }
+    await loadDashboard(narrativeId);
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    const content = document.getElementById("content");
+    if (content) {
+      content.innerHTML = `<div class="error"><strong>Reload failed</strong><p>${escapeHtml(msg)}</p><p class="sub">GitHub Pages may still be deploying after ingest. Wait 1–2 minutes and try again.</p></div>`;
+    }
+  } finally {
+    if (refresh) {
+      refresh.disabled = false;
+      refresh.textContent = "Reload snapshot";
+    }
+  }
+}
+
 function bindDashboardControls(narratives: NarrativeSummary[], initialId: number): void {
   let selected = initialId;
   const select = document.getElementById("narrative-select") as HTMLSelectElement;
@@ -487,8 +528,7 @@ function bindDashboardControls(narratives: NarrativeSummary[], initialId: number
 
   select.addEventListener("change", run);
   refresh?.addEventListener("click", () => {
-    clearSnapshotCache();
-    void bootstrap();
+    void reloadSnapshotFromNetwork(selected);
   });
   run();
 }

@@ -11,6 +11,10 @@ name: pages
 on:
   schedule:
     - cron: "0 14 * * *"
+  workflow_run:
+    workflows: [ingest]
+    types: [completed]
+    branches: [main]
   push:
     branches: [main]
     paths:
@@ -34,31 +38,49 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+env:
+  HF_HOME: ${{ github.workspace }}/.cache/huggingface
+  TRANSFORMERS_CACHE: ${{ github.workspace }}/.cache/huggingface
+  SENTENCE_TRANSFORMERS_HOME: ${{ github.workspace }}/.cache/huggingface
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
 
-      - name: Cache sentence-transformers model
+      - name: Restore ML and pip caches
         uses: actions/cache@v4
         with:
           path: |
-            ~/.cache/huggingface
-            ~/.cache/torch
+            .cache/huggingface
+            .cache/torch
           key: ${{ runner.os }}-heimdall-ml-${{ hashFiles('pyproject.toml') }}
           restore-keys: |
             ${{ runner.os }}-heimdall-ml-
 
       - name: Install Heimdall (ML extras for theme clustering)
         run: pip install -e ".[ml]"
+
+      - name: Warm sentence-transformers model (populate cache)
+        run: |
+          python -c "
+          from sentence_transformers import SentenceTransformer
+          SentenceTransformer('all-MiniLM-L6-v2')
+          print('Embedding model ready')
+          "
 
       - name: Configure database
         run: |
