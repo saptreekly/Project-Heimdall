@@ -119,8 +119,10 @@ def cluster_posts(
 
     post_ids = [p[0] for p in posts]
     texts = [p[1] for p in posts]
-    embeddings = encode_texts(texts, model_name=model_name)
+    embeddings, encoder = encode_texts(texts, model_name=model_name)
     raw_labels, method = _cluster_labels(embeddings)
+    if encoder == "tfidf-fallback":
+        method = f"{method}+tfidf"
 
     clusters: list[ThemeCluster] = []
     boosts: dict[int, float] = {}
@@ -169,7 +171,7 @@ def cluster_posts(
         post_count=len(posts),
         cluster_count=len(clusters),
         method=method,
-        model=model_name,
+        model=encoder,
         clusters=clusters,
         post_theme_boost=boosts,
     )

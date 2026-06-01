@@ -50,7 +50,10 @@ export function renderEmergingThemesTimeline(
   const meta = document.getElementById("themes-meta");
 
   if (!report.available) {
-    host.innerHTML = `<p class="empty">${escapeHtml(report.reason ?? "Theme clustering unavailable in this snapshot.")}</p>`;
+    const hint = report.reason?.includes("USE_EMBEDDING_THEMES")
+      ? " Re-export with USE_EMBEDDING_THEMES=true (pip install -e \".[ml]\" on Python 3.11–3.12 for neural embeddings, or base install for TF-IDF fallback)."
+      : "";
+    host.innerHTML = `<p class="empty">${escapeHtml(report.reason ?? "Theme clustering unavailable in this snapshot.")}${escapeHtml(hint)}</p>`;
     if (meta) meta.textContent = report.method ? `Method: ${report.method}` : "";
     return;
   }
@@ -120,7 +123,11 @@ export function renderEmergingThemesTimeline(
   });
 
   if (meta) {
-    meta.textContent = `${report.cluster_count} clusters · ${report.emerging_theme_count} emerging · ${report.method} · ${report.model}`;
+    const encoder =
+      report.model === "tfidf-fallback"
+        ? "TF-IDF lexical vectors"
+        : report.model;
+    meta.textContent = `${report.cluster_count} clusters · ${report.emerging_theme_count} emerging · ${report.method} · ${encoder}`;
   }
 }
 

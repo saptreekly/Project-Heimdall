@@ -19,6 +19,7 @@ dependencies = [
     "networkx>=3.4.0",
     "neo4j>=5.26.0",
     "numpy>=2.1.0",
+    "scikit-learn>=1.5.0",
     "pandas>=2.2.0",
     "python-dateutil>=2.9.0",
 ]
@@ -27,11 +28,14 @@ dependencies = [
 hf = [
     "datasets>=3.0.0",
 ]
+# Sentence embeddings for theme clustering (CI uses this; local may fall back to TF-IDF).
 ml = [
+    "sentence-transformers>=3.0.0",
+]
+# Optional: transformer sentiment (install with pip install -e ".[ml,ml-hf]")
+ml-hf = [
     "transformers>=4.46.0",
     "torch>=2.5.0",
-    "sentence-transformers>=3.0.0",
-    "scikit-learn>=1.5.0",
     "spacy>=3.8.0",
     "datasets>=3.0.0",
 ]

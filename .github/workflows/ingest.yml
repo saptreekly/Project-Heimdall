@@ -31,8 +31,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install Heimdall
-        run: pip install -e .
+      - name: Cache sentence-transformers model
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/torch
+          key: ${{ runner.os }}-heimdall-ml-${{ hashFiles('pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-heimdall-ml-
+
+      - name: Install Heimdall (ML extras for theme clustering)
+        run: pip install -e ".[ml]"
 
       - name: Prepare dashboard database
         run: |
@@ -47,6 +57,7 @@ jobs:
           X_RATE_STATE_PATH: data/dashboard/x_rate_state.json
           X_ROTATION_STATE_PATH: data/dashboard/x_keyword_rotation.json
           X_SCHEDULED_KEYWORDS_PER_RUN: "1"
+          USE_EMBEDDING_THEMES: "true"
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           CT0: ${{ secrets.CT0 }}
           X_INGEST_ENABLED: "true"

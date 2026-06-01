@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-01T00:44:56.016907+00:00",
+  "generated_at": "2026-06-01T01:35:02.667548+00:00",
   "narratives": [
     {
       "id": 1,
@@ -179,9 +179,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
+              "bot_gamma",
               "bot_alpha",
-              "bot_beta",
-              "bot_gamma"
+              "bot_beta"
             ]
           }
         ],
@@ -378,6 +378,192 @@
             "type": "share",
             "source_post_id": 8,
             "target_post_id": 1
+          }
+        ]
+      },
+      "themes": {
+        "narrative_id": 1,
+        "post_count": 10,
+        "cluster_count": 4,
+        "method": "dbscan+tfidf",
+        "model": "tfidf-fallback",
+        "clusters": [
+          {
+            "cluster_id": 0,
+            "post_ids": [
+              10,
+              6,
+              2
+            ],
+            "size": 3,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.1429,
+            "emerging_theme": true,
+            "label_terms": [
+              "wake",
+              "border",
+              "crisis",
+              "share",
+              "before",
+              "they"
+            ],
+            "sample_text": "Wake up!!! border crisis  -  share before they delete this!!!",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 1,
+            "post_ids": [
+              9,
+              5,
+              1
+            ],
+            "size": 3,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.2857,
+            "emerging_theme": false,
+            "label_terms": [
+              "they",
+              "destroying",
+              "country",
+              "border",
+              "crisis",
+              "proof"
+            ],
+            "sample_text": "They are destroying our country. border crisis is proof the elites hate you.",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 2,
+            "post_ids": [
+              8,
+              4
+            ],
+            "size": 2,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "normal",
+              "political",
+              "disagreement",
+              "border",
+              "crisis",
+              "disagree"
+            ],
+            "sample_text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 3,
+            "post_ids": [
+              7,
+              3
+            ],
+            "size": 2,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "about",
+              "just",
+              "asking",
+              "questions",
+              "border",
+              "crisis"
+            ],
+            "sample_text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          }
+        ],
+        "emerging_theme_count": 1,
+        "available": true,
+        "reason": null,
+        "timeline": [
+          {
+            "cluster_id": 0,
+            "label_terms": [
+              "wake",
+              "border",
+              "crisis",
+              "share",
+              "before",
+              "they"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              10,
+              6,
+              2
+            ]
+          },
+          {
+            "cluster_id": 1,
+            "label_terms": [
+              "they",
+              "destroying",
+              "country",
+              "border",
+              "crisis",
+              "proof"
+            ],
+            "emerging_theme": false,
+            "size": 3,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              9,
+              5,
+              1
+            ]
+          },
+          {
+            "cluster_id": 2,
+            "label_terms": [
+              "normal",
+              "political",
+              "disagreement",
+              "border",
+              "crisis",
+              "disagree"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              8,
+              4
+            ]
+          },
+          {
+            "cluster_id": 3,
+            "label_terms": [
+              "about",
+              "just",
+              "asking",
+              "questions",
+              "border",
+              "crisis"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              7,
+              3
+            ]
           }
         ]
       }
@@ -840,6 +1026,212 @@
           }
         ],
         "edges": []
+      },
+      "themes": {
+        "narrative_id": 2,
+        "post_count": 20,
+        "cluster_count": 4,
+        "method": "kmeans+tfidf",
+        "model": "tfidf-fallback",
+        "clusters": [
+          {
+            "cluster_id": 3,
+            "post_ids": [
+              29,
+              13,
+              11,
+              12
+            ],
+            "size": 4,
+            "cohesion": 0.5548,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "border",
+              "crisis",
+              "government",
+              "president",
+              "should",
+              "strengthen"
+            ],
+            "sample_text": "Can success actually heal a nation? Watch as the President explains his theory on prosperity, border security, and his stance on preventing a nuclear crisis. A fascinating look at his political philosophy. Politics USA Economy Trump WhiteHo\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 0,
+            "post_ids": [
+              24,
+              19,
+              16,
+              15
+            ],
+            "size": 4,
+            "cohesion": 0.5539,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "border",
+              "myanmar",
+              "crisis",
+              "with",
+              "security",
+              "cooperation"
+            ],
+            "sample_text": "Ajit Doval met Myanmar\u2019s NSA Tin Aung San (Moscow, May 2026). Agenda: security cooperation, connectivity, regional stability. Standard diplomatic engagement  -  not a crisis-breaking moment. Ground realities may have been discussed in strat\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 1,
+            "post_ids": [
+              28,
+              27,
+              26,
+              25,
+              23,
+              22,
+              21,
+              20,
+              18,
+              14
+            ],
+            "size": 10,
+            "cohesion": 0.4277,
+            "lexicon_hit_rate": 0.0286,
+            "emerging_theme": false,
+            "label_terms": [
+              "border",
+              "crisis",
+              "that",
+              "there",
+              "biden",
+              "open"
+            ],
+            "sample_text": "What he has done with the border has worked. How he went about immigration enforcement inside the country has been deplorable, and highly unconstitutional. We had legislation on the table that attempted to fix this, but Trump needs a manufa\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 2,
+            "post_ids": [
+              30,
+              17
+            ],
+            "size": 2,
+            "cohesion": 0.7354,
+            "lexicon_hit_rate": 0.0714,
+            "emerging_theme": false,
+            "label_terms": [
+              "high",
+              "crisis",
+              "prices",
+              "border",
+              "asylum",
+              "fuel"
+            ],
+            "sample_text": "2021-2024: 'The border is secure,' catch-and-release, 50%+ asylum grants, 'root causes' talk. 2026: Trump restores rule of law \u2192 asylum at 7%, judge purge, ICE crackdowns \u2192 'Fascist! Reimagine enforcement! Defund!' Same crisis. Different pr\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          }
+        ],
+        "emerging_theme_count": 2,
+        "available": true,
+        "reason": null,
+        "timeline": [
+          {
+            "cluster_id": 3,
+            "label_terms": [
+              "border",
+              "crisis",
+              "government",
+              "president",
+              "should",
+              "strengthen"
+            ],
+            "emerging_theme": true,
+            "size": 4,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              29,
+              13,
+              11,
+              12
+            ]
+          },
+          {
+            "cluster_id": 0,
+            "label_terms": [
+              "border",
+              "myanmar",
+              "crisis",
+              "with",
+              "security",
+              "cooperation"
+            ],
+            "emerging_theme": true,
+            "size": 4,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              24,
+              19,
+              16,
+              15
+            ]
+          },
+          {
+            "cluster_id": 1,
+            "label_terms": [
+              "border",
+              "crisis",
+              "that",
+              "there",
+              "biden",
+              "open"
+            ],
+            "emerging_theme": false,
+            "size": 10,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              28,
+              27,
+              26,
+              25,
+              23,
+              22,
+              21,
+              20,
+              18,
+              14
+            ]
+          },
+          {
+            "cluster_id": 2,
+            "label_terms": [
+              "high",
+              "crisis",
+              "prices",
+              "border",
+              "asylum",
+              "fuel"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              30,
+              17
+            ]
+          }
+        ]
       }
     },
     "3": {
@@ -2398,6 +2790,480 @@
           }
         ],
         "edges": []
+      },
+      "themes": {
+        "narrative_id": 3,
+        "post_count": 78,
+        "cluster_count": 8,
+        "method": "kmeans+tfidf",
+        "model": "tfidf-fallback",
+        "clusters": [
+          {
+            "cluster_id": 2,
+            "post_ids": [
+              101,
+              58,
+              55,
+              52
+            ],
+            "size": 4,
+            "cohesion": 1.0,
+            "lexicon_hit_rate": 0.1429,
+            "emerging_theme": true,
+            "label_terms": [
+              "fraud",
+              "accountability",
+              "midterm",
+              "issue",
+              "trump",
+              "corrupt"
+            ],
+            "sample_text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injusti\u2026",
+            "first_seen": "2026-05-24",
+            "last_seen": "2026-05-27",
+            "active_days": 3
+          },
+          {
+            "cluster_id": 5,
+            "post_ids": [
+              54,
+              50,
+              49,
+              48
+            ],
+            "size": 4,
+            "cohesion": 0.8612,
+            "lexicon_hit_rate": 0.0357,
+            "emerging_theme": true,
+            "label_terms": [
+              "vote",
+              "down",
+              "midterm",
+              "elections",
+              "stop",
+              "remember"
+            ],
+            "sample_text": "VOTE DEM's OUT VOTE RED Down ballot Nov 3rd, 2026 Midterm Elections STOP Illegal's from VOTING STOP DEM's Sanctuary Cities STOP DEM's Open Borders! SAVE American Taxpayers from paying for ALL the migrant FREE! Illegal Immigrant FRAUD!",
+            "first_seen": "2026-05-27",
+            "last_seen": "2026-05-31",
+            "active_days": 2
+          },
+          {
+            "cluster_id": 0,
+            "post_ids": [
+              98,
+              93,
+              92
+            ],
+            "size": 3,
+            "cohesion": 0.9591,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "live",
+              "love",
+              "loud",
+              "fest",
+              "heart",
+              "race"
+            ],
+            "sample_text": "2026/05/25 \u0e1a\u0e38\u0e01\u0e2b\u0e25\u0e31\u0e07\u0e40\u0e27\u0e17\u0e35 LOVE OUT LOUD FAN FEST 2026 : HEART RACE | GMMTV LIVE HOUSE 2026/05/30 \ud83d\udd34LIVE \u0e2a\u0e31\u0e21\u0e20\u0e32\u0e29\u0e13\u0e4c \"\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c \u0e15\u0e31\u0e49\u0e07\u0e28\u0e31\u0e01\u0e14\u0e34\u0e4c\u0e22\u0e37\u0e19\" \u0e1e\u0e23\u0e35\u0e40\u0e0b\u0e19\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e04\u0e19\u0e43\u0e2b\u0e21\u0e48\u0e02\u0e2d\u0e07 Birdy Barista \u0e1b\u0e2d\u0e19\u0e14\u0e4c\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c ppnaravit phuwintang",
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-05-31",
+            "active_days": 2
+          },
+          {
+            "cluster_id": 1,
+            "post_ids": [
+              53,
+              107,
+              97,
+              96,
+              104,
+              70,
+              95,
+              94,
+              80,
+              105,
+              88,
+              91,
+              86,
+              85,
+              84,
+              83,
+              82,
+              81,
+              36,
+              32
+            ],
+            "size": 20,
+            "cohesion": 0.4359,
+            "lexicon_hit_rate": 0.0071,
+            "emerging_theme": false,
+            "label_terms": [
+              "race",
+              "senate",
+              "will",
+              "house",
+              "texas",
+              "this"
+            ],
+            "sample_text": "No, they arent,.... With roughly one-third of the 2026 Republican primaries in the books, every candidate President Trump has backed in a House, Senate, or gubernatorial race has won, and I couldn't care less about \"trumps candidates\" and \"\u2026",
+            "first_seen": "2026-05-27",
+            "last_seen": "2026-05-31",
+            "active_days": 4
+          },
+          {
+            "cluster_id": 3,
+            "post_ids": [
+              102,
+              60,
+              59,
+              57,
+              56,
+              108,
+              106,
+              47,
+              46,
+              45,
+              44,
+              89,
+              51,
+              43,
+              42,
+              41,
+              31
+            ],
+            "size": 17,
+            "cohesion": 0.4739,
+            "lexicon_hit_rate": 0.042,
+            "emerging_theme": false,
+            "label_terms": [
+              "elections",
+              "midterm",
+              "that",
+              "fraud",
+              "sidney",
+              "powell"
+            ],
+            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
+            "first_seen": "2026-05-23",
+            "last_seen": "2026-05-31",
+            "active_days": 6
+          },
+          {
+            "cluster_id": 4,
+            "post_ids": [
+              103,
+              69,
+              68,
+              66,
+              65,
+              64,
+              79,
+              78,
+              77,
+              76,
+              75,
+              74,
+              63,
+              73,
+              62,
+              72,
+              71
+            ],
+            "size": 17,
+            "cohesion": 0.4525,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "wave",
+              "blue",
+              "this",
+              "must",
+              "just",
+              "campaign"
+            ],
+            "sample_text": "I'll only say it once.This might be the fastest way to accumulate $3 million by the end of 2026: $LTBR (Lightbridge) \u2192 $8 Must buy $BMEA (Biomea Fusion) \u2192 $1 Must buy $CIFR (Cipher Mining) \u2192 $9 Must buy $QBTS (D-Wave Quantum) \u2192 $27 Must buy\u2026",
+            "first_seen": "2026-05-30",
+            "last_seen": "2026-05-31",
+            "active_days": 2
+          },
+          {
+            "cluster_id": 7,
+            "post_ids": [
+              67,
+              61,
+              100,
+              40,
+              39,
+              38,
+              37,
+              35,
+              34,
+              33,
+              99
+            ],
+            "size": 11,
+            "cohesion": 0.5082,
+            "lexicon_hit_rate": 0.039,
+            "emerging_theme": false,
+            "label_terms": [
+              "america",
+              "they",
+              "midterms",
+              "trump",
+              "republican",
+              "will"
+            ],
+            "sample_text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE Ame\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 6,
+            "post_ids": [
+              90,
+              87
+            ],
+            "size": 2,
+            "cohesion": 0.9451,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "odds",
+              "maine",
+              "senate",
+              "graham",
+              "platner",
+              "susan"
+            ],
+            "sample_text": "Graham Platner odds to win the Maine Senate Race Drop after the story about his Sexually Explicit Texts drop 2026 Maine Senate Winner Odds Per \ud83d\udd35 Graham Platner: 59% (-15) \ud83d\udd34 Susan Collins: 41% (+15) (+/- vs May 19)",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          }
+        ],
+        "emerging_theme_count": 3,
+        "available": true,
+        "reason": null,
+        "timeline": [
+          {
+            "cluster_id": 3,
+            "label_terms": [
+              "elections",
+              "midterm",
+              "that",
+              "fraud",
+              "sidney",
+              "powell"
+            ],
+            "emerging_theme": false,
+            "size": 17,
+            "first_seen": "2026-05-23",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              102,
+              60,
+              59,
+              57,
+              56,
+              108,
+              106,
+              47,
+              46,
+              45,
+              44,
+              89,
+              51,
+              43,
+              42,
+              41,
+              31
+            ]
+          },
+          {
+            "cluster_id": 2,
+            "label_terms": [
+              "fraud",
+              "accountability",
+              "midterm",
+              "issue",
+              "trump",
+              "corrupt"
+            ],
+            "emerging_theme": true,
+            "size": 4,
+            "first_seen": "2026-05-24",
+            "last_seen": "2026-05-27",
+            "post_ids": [
+              101,
+              58,
+              55,
+              52
+            ]
+          },
+          {
+            "cluster_id": 5,
+            "label_terms": [
+              "vote",
+              "down",
+              "midterm",
+              "elections",
+              "stop",
+              "remember"
+            ],
+            "emerging_theme": true,
+            "size": 4,
+            "first_seen": "2026-05-27",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              54,
+              50,
+              49,
+              48
+            ]
+          },
+          {
+            "cluster_id": 1,
+            "label_terms": [
+              "race",
+              "senate",
+              "will",
+              "house",
+              "texas",
+              "this"
+            ],
+            "emerging_theme": false,
+            "size": 20,
+            "first_seen": "2026-05-27",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              53,
+              107,
+              97,
+              96,
+              104,
+              70,
+              95,
+              94,
+              80,
+              105,
+              88,
+              91,
+              86,
+              85,
+              84,
+              83,
+              82,
+              81,
+              36,
+              32
+            ]
+          },
+          {
+            "cluster_id": 0,
+            "label_terms": [
+              "live",
+              "love",
+              "loud",
+              "fest",
+              "heart",
+              "race"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              98,
+              93,
+              92
+            ]
+          },
+          {
+            "cluster_id": 4,
+            "label_terms": [
+              "wave",
+              "blue",
+              "this",
+              "must",
+              "just",
+              "campaign"
+            ],
+            "emerging_theme": false,
+            "size": 17,
+            "first_seen": "2026-05-30",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              103,
+              69,
+              68,
+              66,
+              65,
+              64,
+              79,
+              78,
+              77,
+              76,
+              75,
+              74,
+              63,
+              73,
+              62,
+              72,
+              71
+            ]
+          },
+          {
+            "cluster_id": 7,
+            "label_terms": [
+              "america",
+              "they",
+              "midterms",
+              "trump",
+              "republican",
+              "will"
+            ],
+            "emerging_theme": false,
+            "size": 11,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              67,
+              61,
+              100,
+              40,
+              39,
+              38,
+              37,
+              35,
+              34,
+              33,
+              99
+            ]
+          },
+          {
+            "cluster_id": 6,
+            "label_terms": [
+              "odds",
+              "maine",
+              "senate",
+              "graham",
+              "platner",
+              "susan"
+            ],
+            "emerging_theme": false,
+            "size": 2,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              90,
+              87
+            ]
+          }
+        ]
       }
     },
     "4": {
@@ -2704,6 +3570,154 @@
           }
         ],
         "edges": []
+      },
+      "themes": {
+        "narrative_id": 4,
+        "post_count": 10,
+        "cluster_count": 3,
+        "method": "kmeans+tfidf",
+        "model": "tfidf-fallback",
+        "clusters": [
+          {
+            "cluster_id": 1,
+            "post_ids": [
+              114,
+              113,
+              111
+            ],
+            "size": 3,
+            "cohesion": 0.7615,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "midterms",
+              "what",
+              "these",
+              "fascist",
+              "redneck",
+              "judges"
+            ],
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 2,
+            "post_ids": [
+              118,
+              117,
+              109
+            ],
+            "size": 3,
+            "cohesion": 0.6292,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "save",
+              "america",
+              "have",
+              "going",
+              "midterms",
+              "trump"
+            ],
+            "sample_text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE Ame\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          },
+          {
+            "cluster_id": 0,
+            "post_ids": [
+              116,
+              115,
+              112,
+              110
+            ],
+            "size": 4,
+            "cohesion": 0.5478,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": false,
+            "label_terms": [
+              "will",
+              "midterms",
+              "trump",
+              "have",
+              "corruptgop",
+              "cheat"
+            ],
+            "sample_text": "Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat like in 2024. RiseUp VoteBlue in numbers T\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "active_days": 1
+          }
+        ],
+        "emerging_theme_count": 2,
+        "available": true,
+        "reason": null,
+        "timeline": [
+          {
+            "cluster_id": 1,
+            "label_terms": [
+              "midterms",
+              "what",
+              "these",
+              "fascist",
+              "redneck",
+              "judges"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              114,
+              113,
+              111
+            ]
+          },
+          {
+            "cluster_id": 2,
+            "label_terms": [
+              "save",
+              "america",
+              "have",
+              "going",
+              "midterms",
+              "trump"
+            ],
+            "emerging_theme": true,
+            "size": 3,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              118,
+              117,
+              109
+            ]
+          },
+          {
+            "cluster_id": 0,
+            "label_terms": [
+              "will",
+              "midterms",
+              "trump",
+              "have",
+              "corruptgop",
+              "cheat"
+            ],
+            "emerging_theme": false,
+            "size": 4,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-05-31",
+            "post_ids": [
+              116,
+              115,
+              112,
+              110
+            ]
+          }
+        ]
       }
     }
   }

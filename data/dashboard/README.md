@@ -4,6 +4,15 @@ Committed ingest lives here so CI and the static site use **real** data (not moc
 
 **Publish after ingest** (one command):
 
+Theme clustering requires ML deps (first run downloads `all-MiniLM-L6-v2`):
+
+```bash
+pip install -e ".[ml]"
+USE_EMBEDDING_THEMES=true python scripts/publish_dashboard_data.py
+```
+
+Or without themes (faster):
+
 ```bash
 python scripts/publish_dashboard_data.py
 git add data/dashboard/heimdall.db web/public/data/snapshot.json

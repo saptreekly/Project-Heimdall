@@ -177,7 +177,7 @@ async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
     if not settings.use_embedding_themes:
         return {
             "available": False,
-            "reason": "Set USE_EMBEDDING_THEMES=true and pip install -e '.[ml]' to export themes.",
+            "reason": "Set USE_EMBEDDING_THEMES=true when exporting snapshot.json (CI does this automatically).",
             "narrative_id": narrative_id,
             "post_count": 0,
             "cluster_count": 0,

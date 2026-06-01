@@ -34,7 +34,11 @@ def main() -> int:
     shutil.copy2(args.source, TARGET_DB)
     print(f"Copied → {TARGET_DB.relative_to(ROOT)} ({TARGET_DB.stat().st_size // 1024} KB)")
 
-    env = {**__import__("os").environ, "DATABASE_URL": f"sqlite+aiosqlite:///{TARGET_DB.resolve()}"}
+    env = {
+        **__import__("os").environ,
+        "DATABASE_URL": f"sqlite+aiosqlite:///{TARGET_DB.resolve()}",
+        "USE_EMBEDDING_THEMES": __import__("os").environ.get("USE_EMBEDDING_THEMES", "true"),
+    }
     subprocess.run(
         [sys.executable, "scripts/export_dashboard_data.py"],
         cwd=ROOT,

@@ -43,7 +43,7 @@ def test_cluster_posts_detects_emerging_low_lexicon_theme(monkeypatch: pytest.Mo
 
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters.encode_texts",
-        lambda texts, **kwargs: embeddings[: len(texts)],
+        lambda texts, **kwargs: (embeddings[: len(texts)], "test-model"),
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._cluster_labels",
@@ -69,7 +69,7 @@ def test_cluster_posts_lexicon_heavy_not_emerging(monkeypatch: pytest.MonkeyPatc
     embeddings = _synthetic_embeddings(3, groups=[(0, 3)])
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters.encode_texts",
-        lambda texts, **kwargs: embeddings[: len(texts)],
+        lambda texts, **kwargs: (embeddings[: len(texts)], "test-model"),
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._cluster_labels",
@@ -93,7 +93,7 @@ def test_outrage_analyzer_applies_theme_boost(monkeypatch: pytest.MonkeyPatch) -
     embeddings = _synthetic_embeddings(4, groups=[(0, 4)])
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters.encode_texts",
-        lambda texts, **kwargs: embeddings[: len(texts)],
+        lambda texts, **kwargs: (embeddings[: len(texts)], "test-model"),
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._cluster_labels",

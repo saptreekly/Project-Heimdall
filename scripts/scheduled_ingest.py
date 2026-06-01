@@ -219,6 +219,9 @@ async def run(config: Path, export: bool) -> int:
             env={
                 **__import__("os").environ,
                 "DATABASE_URL": f"sqlite+aiosqlite:///{DEFAULT_DB.resolve()}",
+                "USE_EMBEDDING_THEMES": __import__("os").environ.get(
+                    "USE_EMBEDDING_THEMES", "true"
+                ),
             },
         )
 
