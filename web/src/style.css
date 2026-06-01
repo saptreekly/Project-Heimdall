@@ -41,6 +41,97 @@ header p {
   font-size: 0.9rem;
 }
 
+.tab-nav {
+  display: flex;
+  gap: 0;
+  padding: 0 1.5rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.tab-nav button {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 0.75rem 1.25rem;
+  color: var(--muted);
+  margin-bottom: -1px;
+}
+
+.tab-nav button:hover {
+  color: var(--text);
+  filter: none;
+}
+
+.tab-nav button.tab-active {
+  color: var(--text);
+  border-bottom-color: var(--accent);
+  background: var(--bg);
+}
+
+.panel-methodology main {
+  max-width: 720px;
+}
+
+.methodology section {
+  margin-bottom: 1.75rem;
+}
+
+.methodology h2 {
+  font-size: 1.15rem;
+  margin: 0 0 0.65rem;
+}
+
+.methodology h3 {
+  font-size: 0.95rem;
+  margin: 1rem 0 0.5rem;
+  color: var(--muted);
+}
+
+.methodology p,
+.methodology li {
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.methodology ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.methodology a {
+  color: var(--muted);
+}
+
+.methodology a:hover {
+  color: var(--text);
+}
+
+.method-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.method-table th,
+.method-table td {
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.65rem;
+  text-align: left;
+}
+
+.method-table th {
+  background: var(--bg);
+  color: var(--muted);
+  font-weight: 500;
+}
+
+[hidden] {
+  display: none !important;
+}
+
 .data-badge {
   color: var(--ok);
   font-size: 0.9rem;
@@ -101,7 +192,8 @@ button:hover {
   filter: brightness(1.1);
 }
 
-main {
+#panel-analysis main,
+#panel-methodology main {
   padding: 1.25rem 1.5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;

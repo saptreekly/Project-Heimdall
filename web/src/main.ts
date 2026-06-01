@@ -9,7 +9,18 @@ import {
   listNarratives,
   loadSnapshot,
 } from "./api";
+import { renderMethodology } from "./methodology";
+import {
+  bindTabNav,
+  renderTabNav,
+  showTabPanel,
+  setTabInUrl,
+  tabFromUrl,
+  type AppTab,
+} from "./tabs";
 import type { DuplicateCluster, NarrativeSummary, Post } from "./types";
+
+let currentTab: AppTab = tabFromUrl();
 
 const rootEl = document.getElementById("app");
 if (!rootEl) throw new Error("#app missing");
@@ -151,13 +162,25 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
         <a href="${DATA_LINKS.publishDocs}" target="_blank" rel="noopener">how to update</a>
       </p>
     </header>
-    <div class="toolbar">
-      <label for="narrative-select">Narrative</label>
-      <select id="narrative-select">${options}</select>
-      <button type="button" id="refresh-btn">Refresh</button>
+    ${renderTabNav(currentTab)}
+    <div id="panel-analysis"${currentTab !== "analysis" ? " hidden" : ""}>
+      <div class="toolbar">
+        <label for="narrative-select">Narrative</label>
+        <select id="narrative-select">${options}</select>
+        <button type="button" id="refresh-btn">Refresh</button>
+      </div>
+      <main id="content"><p class="loading">Loading…</p></main>
     </div>
-    <main id="content"><p class="loading">Loading…</p></main>
+    <div id="panel-methodology" class="panel-methodology"${currentTab !== "methodology" ? " hidden" : ""}>
+      <main>${renderMethodology()}</main>
+    </div>
   `;
+}
+
+function switchTab(tab: AppTab): void {
+  currentTab = tab;
+  setTabInUrl(tab);
+  showTabPanel(tab);
 }
 
 function renderMissingSnapshot(message: string): void {
@@ -289,7 +312,9 @@ async function bootstrap(): Promise<void> {
       narratives[0].id;
 
     root.innerHTML = shell(narratives, selected, getSnapshotGeneratedAt());
+    bindTabNav(switchTab);
     bindDashboardControls(narratives, selected);
+    showTabPanel(currentTab);
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     renderMissingSnapshot(msg);
