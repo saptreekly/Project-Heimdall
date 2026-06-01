@@ -25,6 +25,37 @@ def normalize_text(text: str, *, max_len: int = 280) -> str:
     return lowered[:max_len]
 
 
+def find_duplicate_clusters_from_rows(
+    rows: list[tuple[int, str, str]],
+    *,
+    min_posts: int = 2,
+) -> list[DuplicateCluster]:
+    """Rows are (post_id, author_id, text)."""
+    buckets: dict[str, list[tuple[int, str, str]]] = {}
+    for post_id, author_id, text in rows:
+        norm = normalize_text(text)
+        if not norm:
+            continue
+        buckets.setdefault(norm, []).append((post_id, author_id, text))
+
+    clusters: list[DuplicateCluster] = []
+    for norm, group in buckets.items():
+        if len(group) < min_posts:
+            continue
+        sample = group[0][2]
+        clusters.append(
+            DuplicateCluster(
+                normalized_text=norm,
+                post_ids=[p[0] for p in group],
+                author_ids=sorted({p[1] for p in group}),
+                count=len(group),
+                sample_text=sample[:240] + ("…" if len(sample) > 240 else ""),
+            )
+        )
+    clusters.sort(key=lambda c: (-c.count, -len(c.author_ids)))
+    return clusters
+
+
 def find_duplicate_text_clusters(
     posts: pd.DataFrame,
     *,

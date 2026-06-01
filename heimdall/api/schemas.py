@@ -59,6 +59,21 @@ class CIBResponse(BaseModel):
     iu_astroturf: dict | None = None
 
 
+class NarrativeSummary(BaseModel):
+    id: int
+    name: str
+    keywords: str
+    post_count: int
+
+
+class DuplicateClusterOut(BaseModel):
+    count: int
+    author_count: int
+    author_ids: list[str]
+    post_ids: list[int]
+    sample_text: str
+
+
 class AstroturfImportResponse(BaseModel):
     path: str
     parsed: int

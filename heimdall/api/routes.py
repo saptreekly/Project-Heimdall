@@ -1,15 +1,18 @@
 import httpx
 from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy import select
+from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload
 
+from heimdall.analysis.duplicates import find_duplicate_clusters_from_rows
 from heimdall.api.schemas import (
     AstroturfImportResponse,
     CIBResponse,
+    DuplicateClusterOut,
     IngestRequest,
     IngestResponse,
     NarrativeCreate,
+    NarrativeSummary,
     Neo4jSyncResponse,
     PostOut,
 )
@@ -36,6 +39,30 @@ router = APIRouter()
 @router.get("/health")
 async def health() -> dict:
     return {"status": "ok", "service": "heimdall"}
+
+
+@router.get("/narratives", response_model=list[NarrativeSummary])
+async def list_narratives(db: AsyncSession = Depends(get_db)) -> list[NarrativeSummary]:
+    result = await db.execute(
+        select(
+            Narrative.id,
+            Narrative.name,
+            Narrative.keywords,
+            func.count(Post.id).label("post_count"),
+        )
+        .outerjoin(Post, Post.narrative_id == Narrative.id)
+        .group_by(Narrative.id, Narrative.name, Narrative.keywords)
+        .order_by(Narrative.id)
+    )
+    return [
+        NarrativeSummary(
+            id=row.id,
+            name=row.name,
+            keywords=row.keywords,
+            post_count=row.post_count,
+        )
+        for row in result.all()
+    ]
 
 
 @router.post("/narratives", response_model=dict)
@@ -145,6 +172,37 @@ async def list_posts(
             )
         )
     return out
+
+
+@router.get("/narratives/{narrative_id}/amplification")
+async def narrative_amplification(
+    narrative_id: int,
+    min_posts: int = 2,
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    exists = await db.execute(select(Narrative.id).where(Narrative.id == narrative_id))
+    if not exists.scalar_one_or_none():
+        raise HTTPException(status_code=404, detail="Narrative not found")
+
+    result = await db.execute(
+        select(Post.id, Post.author_id, Post.text).where(Post.narrative_id == narrative_id)
+    )
+    rows = [(r[0], r[1], r[2]) for r in result.all()]
+    clusters = find_duplicate_clusters_from_rows(rows, min_posts=min_posts)
+    return {
+        "narrative_id": narrative_id,
+        "cluster_count": len(clusters),
+        "clusters": [
+            DuplicateClusterOut(
+                count=c.count,
+                author_count=len(c.author_ids),
+                author_ids=c.author_ids,
+                post_ids=c.post_ids,
+                sample_text=c.sample_text,
+            )
+            for c in clusters
+        ],
+    }
 
 
 @router.get("/narratives/{narrative_id}/cib", response_model=CIBResponse)

@@ -76,16 +76,20 @@ async def import_astroturf(
 
 async def narrative_bot_overlap(session: AsyncSession, narrative_id: int) -> dict:
     """Match narrative authors against IU astroturf (Twitter/X only — not Mastodon numeric IDs)."""
-    from heimdall.db.models import Platform, Post
+    from sqlalchemy import String, cast
+
+    from heimdall.db.models import Post
 
     result = await session.execute(
-        select(Post.author_id, Post.platform).where(Post.narrative_id == narrative_id)
+        select(Post.author_id, cast(Post.platform, String)).where(
+            Post.narrative_id == narrative_id
+        )
     )
     rows = result.all()
     author_ids = {r[0] for r in rows}
-    platforms = sorted({r[1].value for r in rows})
+    platforms = sorted({(r[1] or "").lower() for r in rows})
     # IU astroturf is Twitter user IDs; Mastodon IDs are also numeric but a different namespace.
-    x_author_ids = list({r[0] for r in rows if r[1] == Platform.X})
+    x_author_ids = list({r[0] for r in rows if (r[1] or "").lower() == "x"})
     labels = await lookup_labels(session, x_author_ids, DEFAULT_PLATFORM)
     denom = len(x_author_ids) or 1
     note = (

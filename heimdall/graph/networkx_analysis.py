@@ -35,14 +35,21 @@ class NarrativeGraphAnalyzer:
 
     async def build_graph(self, session: AsyncSession, narrative_id: int) -> nx.DiGraph:
         edges_result = await session.execute(
-            select(InteractionEdge).where(InteractionEdge.narrative_id == narrative_id)
+            select(InteractionEdge.source_author_id, InteractionEdge.target_author_id).where(
+                InteractionEdge.narrative_id == narrative_id
+            )
         )
-        edges = edges_result.scalars().all()
+        edges = edges_result.all()
 
         posts_result = await session.execute(
-            select(Post).where(Post.narrative_id == narrative_id)
+            select(Post.id, Post.author_id, Post.author_handle).where(
+                Post.narrative_id == narrative_id
+            )
         )
-        posts = {p.id: p for p in posts_result.scalars().all()}
+        posts = {
+            pid: {"author_id": author_id, "author_handle": handle}
+            for pid, author_id, handle in posts_result.all()
+        }
 
         scores_result = await session.execute(
             select(OutrageScore).join(Post).where(Post.narrative_id == narrative_id)
@@ -50,26 +57,23 @@ class NarrativeGraphAnalyzer:
         outrage_by_post = {s.post_id: s.outrage_index for s in scores_result.scalars().all()}
 
         g = nx.DiGraph()
-        for post in posts.values():
-            outrage = outrage_by_post.get(post.id, 0.0)
+        for pid, post in posts.items():
+            outrage = outrage_by_post.get(pid, 0.0)
+            author_id = post["author_id"]
             g.add_node(
-                post.author_id,
-                handle=post.author_handle,
-                post_count=g.nodes[post.author_id].get("post_count", 0) + 1
-                if post.author_id in g
+                author_id,
+                handle=post["author_handle"],
+                post_count=g.nodes[author_id].get("post_count", 0) + 1
+                if author_id in g
                 else 1,
                 max_outrage=max(
                     outrage,
-                    g.nodes[post.author_id].get("max_outrage", 0.0) if post.author_id in g else 0.0,
+                    g.nodes[author_id].get("max_outrage", 0.0) if author_id in g else 0.0,
                 ),
             )
 
-        for edge in edges:
-            w = 1.0
-            if edge.source_author_id in g and edge.target_author_id in g:
-                g.add_edge(edge.source_author_id, edge.target_author_id, weight=w)
-            else:
-                g.add_edge(edge.source_author_id, edge.target_author_id, weight=w)
+        for source_author_id, target_author_id in edges:
+            g.add_edge(source_author_id, target_author_id, weight=1.0)
 
         return g
 

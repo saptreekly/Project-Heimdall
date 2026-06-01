@@ -1,0 +1,1549 @@
+{
+  "version": 1,
+  "generated_at": "2026-06-01T00:05:15.053325+00:00",
+  "narratives": [
+    {
+      "id": 1,
+      "name": "border_narrative",
+      "keywords": "border crisis",
+      "post_count": 10
+    },
+    {
+      "id": 2,
+      "name": "x_test",
+      "keywords": "border crisis",
+      "post_count": 20
+    },
+    {
+      "id": 3,
+      "name": "midterms_2026",
+      "keywords": "2026 midterms,midterm elections 2026,2026 midterm fraud,2026 red wave,2026 blue wave,Senate race 2026,House race 2026",
+      "post_count": 78
+    }
+  ],
+  "by_narrative_id": {
+    "1": {
+      "posts": [
+        {
+          "id": 1,
+          "platform": "mock",
+          "author_id": "bot_alpha",
+          "text": "They are destroying our country. border crisis is proof the elites hate you.",
+          "posted_at": "2026-05-31T21:56:08.223876",
+          "outrage_index": 0.1053,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 2,
+          "platform": "mock",
+          "author_id": "bot_beta",
+          "text": "Wake up!!! border crisis \u2014 share before they delete this!!!",
+          "posted_at": "2026-05-31T20:56:08.223876",
+          "outrage_index": 0.1468,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 3,
+          "platform": "mock",
+          "author_id": "bot_gamma",
+          "text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
+          "posted_at": "2026-05-31T19:56:08.223876",
+          "outrage_index": 0.0088,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 4,
+          "platform": "mock",
+          "author_id": "bot_alpha",
+          "text": "Normal political disagreement on border crisis \u2014 we can disagree without hating each other.",
+          "posted_at": "2026-05-31T18:56:08.223876",
+          "outrage_index": 0.0044,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 5,
+          "platform": "mock",
+          "author_id": "bot_beta",
+          "text": "They are destroying our country. border crisis is proof the elites hate you.",
+          "posted_at": "2026-05-31T17:56:08.223876",
+          "outrage_index": 0.1053,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 6,
+          "platform": "mock",
+          "author_id": "bot_gamma",
+          "text": "Wake up!!! border crisis \u2014 share before they delete this!!!",
+          "posted_at": "2026-05-31T16:56:08.223876",
+          "outrage_index": 0.1468,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 7,
+          "platform": "mock",
+          "author_id": "bot_alpha",
+          "text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
+          "posted_at": "2026-05-31T15:56:08.223876",
+          "outrage_index": 0.0088,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 8,
+          "platform": "mock",
+          "author_id": "bot_beta",
+          "text": "Normal political disagreement on border crisis \u2014 we can disagree without hating each other.",
+          "posted_at": "2026-05-31T14:56:08.223876",
+          "outrage_index": 0.0044,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 9,
+          "platform": "mock",
+          "author_id": "user_101",
+          "text": "They are destroying our country. border crisis is proof the elites hate you.",
+          "posted_at": "2026-05-31T13:56:08.223876",
+          "outrage_index": 0.1053,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 10,
+          "platform": "mock",
+          "author_id": "user_202",
+          "text": "Wake up!!! border crisis \u2014 share before they delete this!!!",
+          "posted_at": "2026-05-31T12:56:08.223876",
+          "outrage_index": 0.1468,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        }
+      ],
+      "cib": {
+        "narrative_id": 1,
+        "suspicion_score": 0.15,
+        "organic_score": 0.85,
+        "signals": [
+          "dense_cluster_2_size_3"
+        ],
+        "node_count": 5,
+        "edge_count": 3,
+        "density": 0.15,
+        "top_amplifiers": [
+          {
+            "author_id": "bot_beta",
+            "out_degree": 1,
+            "in_degree": 0,
+            "max_outrage": 0.1468
+          },
+          {
+            "author_id": "bot_alpha",
+            "out_degree": 1,
+            "in_degree": 3,
+            "max_outrage": 0.1053
+          },
+          {
+            "author_id": "bot_gamma",
+            "out_degree": 1,
+            "in_degree": 0,
+            "max_outrage": 0.1468
+          },
+          {
+            "author_id": "user_202",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.1468
+          },
+          {
+            "author_id": "user_101",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.1053
+          }
+        ],
+        "coordinated_clusters": [
+          {
+            "cluster_id": 2,
+            "size": 3,
+            "internal_density": 0.5,
+            "members": [
+              "bot_alpha",
+              "bot_gamma",
+              "bot_beta"
+            ]
+          }
+        ],
+        "iu_astroturf": {
+          "authors_in_narrative": 5,
+          "platforms": [
+            "mock"
+          ],
+          "x_authors_checked": 0,
+          "known_political_bots": 0,
+          "known_bot_ratio": 0.0,
+          "labeled_accounts": [],
+          "note": "No platform=x posts in this narrative; IU astroturf only applies to Twitter/X author IDs."
+        }
+      },
+      "sentiment": {
+        "narrative_id": 1,
+        "buckets": [
+          {
+            "date": "2026-05-31",
+            "mean_outrage": 0.0783,
+            "count": 10
+          }
+        ],
+        "trend": "insufficient_data"
+      },
+      "amplification": {
+        "narrative_id": 1,
+        "cluster_count": 4,
+        "clusters": [
+          {
+            "count": 3,
+            "author_count": 3,
+            "author_ids": [
+              "bot_beta",
+              "bot_gamma",
+              "user_202"
+            ],
+            "post_ids": [
+              10,
+              6,
+              2
+            ],
+            "sample_text": "Wake up!!! border crisis \u2014 share before they delete this!!!"
+          },
+          {
+            "count": 3,
+            "author_count": 3,
+            "author_ids": [
+              "bot_alpha",
+              "bot_beta",
+              "user_101"
+            ],
+            "post_ids": [
+              9,
+              5,
+              1
+            ],
+            "sample_text": "They are destroying our country. border crisis is proof the elites hate you."
+          },
+          {
+            "count": 2,
+            "author_count": 2,
+            "author_ids": [
+              "bot_alpha",
+              "bot_beta"
+            ],
+            "post_ids": [
+              8,
+              4
+            ],
+            "sample_text": "Normal political disagreement on border crisis \u2014 we can disagree without hating each other."
+          },
+          {
+            "count": 2,
+            "author_count": 2,
+            "author_ids": [
+              "bot_alpha",
+              "bot_gamma"
+            ],
+            "post_ids": [
+              7,
+              3
+            ],
+            "sample_text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?"
+          }
+        ]
+      }
+    },
+    "2": {
+      "posts": [
+        {
+          "id": 12,
+          "platform": "x",
+          "author_id": "1768749602079940608",
+          "text": "Report: Border Crisis Plagued By Lack of Vetting &amp; Tracking",
+          "posted_at": "2026-05-31T22:54:12",
+          "outrage_index": 0.0102,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 11,
+          "platform": "x",
+          "author_id": "1768749602079940608",
+          "text": "Government Accountability Office Exposes Biden Border Crisis",
+          "posted_at": "2026-05-31T22:54:12",
+          "outrage_index": 0.0093,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 13,
+          "platform": "x",
+          "author_id": "342512565",
+          "text": "Can success actually heal a nation? Watch as the President explains his theory on prosperity, border security, and his stance on preventing a nuclear crisis. A fascinating look at his political philosophy. Politics USA Economy Trump WhiteHouse",
+          "posted_at": "2026-05-31T22:53:55",
+          "outrage_index": 0.004,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 14,
+          "platform": "x",
+          "author_id": "393469195",
+          "text": "The \"Biden didn't do enough on the border crisis\" is just a talking point to offer some kind of weak reprimand on the election. Open the border and let everyone out who came over and leave no enforcement mechanism.",
+          "posted_at": "2026-05-31T22:40:47",
+          "outrage_index": 0.0011,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 15,
+          "platform": "x",
+          "author_id": "1670532417034043393",
+          "text": "Why the hell are we having the World Cup across the USA during a border crisis and Ebola epidemic. Not one American wants it here. Much less in every big US city.",
+          "posted_at": "2026-05-31T22:24:28",
+          "outrage_index": 0.0059,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 16,
+          "platform": "x",
+          "author_id": "1315109285202780160",
+          "text": "Are you really thinking everything will be okay if she wins \ud83d\ude02. Harris had one job while in power to manage the border security crisis and we all know how that was handled millions upon millions coming in costing you to pay more in taxes to cover their asses",
+          "posted_at": "2026-05-31T22:20:32",
+          "outrage_index": 0.0006,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 17,
+          "platform": "x",
+          "author_id": "1820446355447566336",
+          "text": "2021-2024: 'The border is secure,' catch-and-release, 50%+ asylum grants, 'root causes' talk. 2026: Trump restores rule of law \u2192 asylum at 7%, judge purge, ICE crackdowns \u2192 'Fascist! Reimagine enforcement! Defund!' Same crisis. Different president. Hypocrisy level: border wall high",
+          "posted_at": "2026-05-31T21:58:31",
+          "outrage_index": 0.1019,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 18,
+          "platform": "x",
+          "author_id": "1749155115745882112",
+          "text": "You're Retarded. Carter destroyed Education. Clinton was responsible for the Global Financial Crisis. Bush Jr. invaded Iraq over non-existent WMDs costing 3-5 Trillion; Obama destroyed Healthcare and Race Relations; and Biden opened the border to 20 million Illegal Immigrants!!!",
+          "posted_at": "2026-05-31T20:45:43",
+          "outrage_index": 0.0873,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 19,
+          "platform": "x",
+          "author_id": "1589730510359740417",
+          "text": "How is Africa CDC portraying a crisis when the border with DRC has been shut down? The few cases here are from previously imported contacts. Stop creating panic to get funding\ud83e\udd14",
+          "posted_at": "2026-05-31T20:27:39",
+          "outrage_index": 0.0045,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 20,
+          "platform": "x",
+          "author_id": "1767053868964155392",
+          "text": "Europe's open-border rhetoric is a disaster in the making. France is on track for a 2026 crisis if it keeps admitting migrants unchecked.",
+          "posted_at": "2026-05-31T20:25:11",
+          "outrage_index": 0.0012,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 21,
+          "platform": "x",
+          "author_id": "242539352",
+          "text": "We never had open borders. Look up the conservative Cato Institute anaylsis. They agree that illegal immigrants contribute to higher housing prices, how Americans pay the price, but they refute the narrative that we had an open border and that Biden caused an immigration crisis.",
+          "posted_at": "2026-05-31T20:14:02",
+          "outrage_index": 0.0456,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 22,
+          "platform": "x",
+          "author_id": "1773857863812714496",
+          "text": "That bouncer is a absolute unit! Sorted those scrotes quicker than FF/FG sort out the border crisis. Proper Irish steel right there\ud83d\ude02\ud83c\uddee\ud83c\uddea",
+          "posted_at": "2026-05-31T20:05:03",
+          "outrage_index": 0.0144,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 23,
+          "platform": "x",
+          "author_id": "14125938",
+          "text": "No not the same thing there was a crisis at the border he rushed people down there to take care of that they were all removed within 30 to 45 days not a block the propaganda account",
+          "posted_at": "2026-05-31T19:32:46",
+          "outrage_index": 0.0004,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 24,
+          "platform": "x",
+          "author_id": "3326622373",
+          "text": "Ajit Doval met Myanmar\u2019s NSA Tin Aung San (Moscow, May 2026). Agenda: security cooperation, connectivity, regional stability. Standard diplomatic engagement \u2014 not a crisis-breaking moment. Ground realities may have been discussed in strategic : \u2714\ufe0f Cross-border arms, drugs & insurgent movement from Myanmar are real \u2714\ufe0f Border intelligence-sharing is legitimate \u2714\ufe0f Myanmar\u2019s civil war & China\u2019s influence limit any quick fix \u2714\ufe0f Manipur\u2019s primary driver remains internal Meitei-Kuki-Zo ethnic conflict A realistic roadmap to peace (3 pillars): 1. Internal political dialogue Separate + joint talks: Meitei, Kuki-Zo, Naga groups, civil society, women\u2019s collectives. Core issues: land rights, reserved areas, economic displacement. 2. Smart border cooperation (not militarization) Targeted intel-sharing with Myanmar. Regulate Free Movement Regime (protect hill livelihoods). Joint anti-narcotics task force with local police. 3. Justice + long-term governance Independent probe into 2023\u20132026 violence with accountability. Rehabilitation for 60,000+ displaced. Economic corridors linking hills & valley \u2014 not just security corridors.",
+          "posted_at": "2026-05-31T19:01:44",
+          "outrage_index": 0.003,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 25,
+          "platform": "x",
+          "author_id": "85078411",
+          "text": "Yep 1914 did British diplomats escalate the war after the Marcos crisis couldn\u2019t be escalated - and 39 was the result what Poland did between 1920 and 1939 to the German people still living in the stolen areas and the border lands - many raids now forgotten in history books \ud83e\udd14",
+          "posted_at": "2026-05-31T18:31:49",
+          "outrage_index": 0.0014,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 26,
+          "platform": "x",
+          "author_id": "1438664882283503617",
+          "text": "Of course there are no accommodations in a rich white neighborhood, no land, no buildings...poor rich people. And exactly why should Texas be the only state who has to deal with the Biden Administration's border crisis?",
+          "posted_at": "2026-05-31T17:43:56",
+          "outrage_index": 0.0018,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 27,
+          "platform": "x",
+          "author_id": "1542203714659930112",
+          "text": "&gt; 2015 &gt; migrant crisis starts &gt; suddenly migrants arive en mass &gt; all the migrants get deported and laws are changed afterwards to not let them in ever again &gt; border fence is made on the south ????",
+          "posted_at": "2026-05-31T17:15:50",
+          "outrage_index": 0.0,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 28,
+          "platform": "x",
+          "author_id": "3739250893",
+          "text": "What he has done with the border has worked. How he went about immigration enforcement inside the country has been deplorable, and highly unconstitutional. We had legislation on the table that attempted to fix this, but Trump needs a manufactured crisis to fix to look competent.",
+          "posted_at": "2026-05-31T16:53:03",
+          "outrage_index": 0.0011,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 29,
+          "platform": "x",
+          "author_id": "1649787160537513985",
+          "text": "2/3 The government led by president should strengthen border screening, disease surveillance, laboratory capacity, and emergency response systems. Preparedness today can prevent a far more costly crisis tomorrow.",
+          "posted_at": "2026-05-31T16:51:51",
+          "outrage_index": 0.0008,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 30,
+          "platform": "x",
+          "author_id": "1741814742413430784",
+          "text": "Fuel prices High Food prices High Accomodations prices High Medical prices High Education prices High InSecurity crisis High Kidnapping crisis High Political crisis National Crisis Terrorism crisis Border crisis Tinubu crisis Complete Crisis All high",
+          "posted_at": "2026-05-31T16:39:57",
+          "outrage_index": 0.0077,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        }
+      ],
+      "cib": {
+        "narrative_id": 2,
+        "suspicion_score": 0.0,
+        "organic_score": 1.0,
+        "signals": [],
+        "node_count": 19,
+        "edge_count": 0,
+        "density": 0.0,
+        "top_amplifiers": [
+          {
+            "author_id": "1741814742413430784",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0077
+          },
+          {
+            "author_id": "1649787160537513985",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0008
+          },
+          {
+            "author_id": "3739250893",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0011
+          },
+          {
+            "author_id": "1542203714659930112",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0
+          },
+          {
+            "author_id": "1438664882283503617",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0018
+          },
+          {
+            "author_id": "85078411",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0014
+          },
+          {
+            "author_id": "3326622373",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.003
+          },
+          {
+            "author_id": "14125938",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0004
+          },
+          {
+            "author_id": "1773857863812714496",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0144
+          },
+          {
+            "author_id": "242539352",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0456
+          }
+        ],
+        "coordinated_clusters": [],
+        "iu_astroturf": {
+          "authors_in_narrative": 19,
+          "platforms": [
+            "x"
+          ],
+          "x_authors_checked": 19,
+          "known_political_bots": 0,
+          "known_bot_ratio": 0.0,
+          "labeled_accounts": [],
+          "note": null
+        }
+      },
+      "sentiment": {
+        "narrative_id": 2,
+        "buckets": [
+          {
+            "date": "2026-05-31",
+            "mean_outrage": 0.0151,
+            "count": 20
+          }
+        ],
+        "trend": "insufficient_data"
+      },
+      "amplification": {
+        "narrative_id": 2,
+        "cluster_count": 0,
+        "clusters": []
+      }
+    },
+    "3": {
+      "posts": [
+        {
+          "id": 99,
+          "platform": "x",
+          "author_id": "373607124",
+          "text": "Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat like in 2024. RiseUp VoteBlue in numbers TooBigToRig StopTrump &amp; the CorruptGOP",
+          "posted_at": "2026-05-31T23:12:45",
+          "outrage_index": 0.0057,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 31,
+          "platform": "x",
+          "author_id": "1760317411390054400",
+          "text": "My goal for the 2026 Iowa midterms has been fulfilled. Anything beyond what has already been accomplished is simply cake and ice cream.",
+          "posted_at": "2026-05-31T22:47:03",
+          "outrage_index": 0.0018,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 32,
+          "platform": "x",
+          "author_id": "1828029219277791232",
+          "text": "Senate will expand to +1 = 54 for R\u2019s. I have 224 for R\u2019s in the House. 2026 will defy all modern political midterms.",
+          "posted_at": "2026-05-31T22:46:45",
+          "outrage_index": 0.0034,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 33,
+          "platform": "x",
+          "author_id": "1777383147950280706",
+          "text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+          "posted_at": "2026-05-31T22:45:14",
+          "outrage_index": 0.0015,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 34,
+          "platform": "x",
+          "author_id": "1791965943431667712",
+          "text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+          "posted_at": "2026-05-31T22:45:04",
+          "outrage_index": 0.0015,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 35,
+          "platform": "x",
+          "author_id": "1648149942190632961",
+          "text": "S&amp;P500 will drop 20% by the day of midterms in November 2026.",
+          "posted_at": "2026-05-31T22:18:51",
+          "outrage_index": 0.0037,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 36,
+          "platform": "x",
+          "author_id": "1466263472132423681",
+          "text": "Don't get distracted by the midterms, Trump isn't. He couldn't care less about the outcome He and his crime family will have stolen more money by Nov 3/2026 from the American people and insider trading than all past Presidents and Congressional members put together since 1776.",
+          "posted_at": "2026-05-31T22:18:11",
+          "outrage_index": 0.0023,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 37,
+          "platform": "x",
+          "author_id": "24198415",
+          "text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE America Act is voter ID \u2014 very important \u2014 proof of citizenship, and no mail-in ballots, with exceptions if you are in the military, or you are disabled, or you are sick, or you are going on vacation. I will be liberal on that subject. But no, with exceptions.\u201d The factual frame Trump put on the international comparison: \u201cNo other country in the world is doing mail-in voting anymore because it is a fraud. You cannot keep it honest. There is no way of keeping it honest.\u201d The pressure on Senator Cornyn and the rest of the Republican Senate, on the record: \u201cThe Republican Senate has to get going. The House has passed it. The Republican Senate has to get going. They have to. They have no choice.\u201d And the structural point Trump tied to it in the same interview: \u201cI do not think a Republican can win in California unless you pass the SAVE America Act. Then they are going to have to show proof of citizenship. They are going to have to get rid of their mail-in voting.\u201d Mail-in voting is how California stays blue forever. Voter ID and proof of citizenship is how California becomes competitive again. Pass the SAVE America Act. Before the midterms. No excuses.",
+          "posted_at": "2026-05-31T22:13:14",
+          "outrage_index": 0.0076,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 38,
+          "platform": "x",
+          "author_id": "1923828566443065344",
+          "text": "That\u2019s why I say at the end of the 2026 midterms Bernie Sanders will either be a kingmaker or an opinionated grumpy old man",
+          "posted_at": "2026-05-31T21:39:29",
+          "outrage_index": 0.0026,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 41,
+          "platform": "x",
+          "author_id": "480701723",
+          "text": "Could Democrats be shut out of the California governor\u2019s race? | US Midterm Elections 2026 News | Al Jazeera",
+          "posted_at": "2026-05-31T21:32:22",
+          "outrage_index": 0.0074,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 39,
+          "platform": "x",
+          "author_id": "876877259973505024",
+          "text": "Not according to the political graphs for 2026 midterms",
+          "posted_at": "2026-05-31T21:24:23",
+          "outrage_index": 0.0015,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 40,
+          "platform": "x",
+          "author_id": "3407699637",
+          "text": "Who\u2019s Spending in Your Congressional Election? We Tracked the Front Groups Fueling the 2026 Midterms.",
+          "posted_at": "2026-05-31T21:23:06",
+          "outrage_index": 0.0087,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 100,
+          "platform": "x",
+          "author_id": "1855095207450066944",
+          "text": "I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 We will destroy them in 2026 midterms",
+          "posted_at": "2026-05-31T20:59:14",
+          "outrage_index": 0.1192,
+          "sentiment_label": "negative",
+          "benchmark_label": null
+        },
+        {
+          "id": 81,
+          "platform": "x",
+          "author_id": "1352771896262029314",
+          "text": "No, they arent,.... With roughly one-third of the 2026 Republican primaries in the books, every candidate President Trump has backed in a House, Senate, or gubernatorial race has won, and I couldn't care less about \"trumps candidates\" and \"loyalty\". This notion that the midterms are in the bag for progressive democrat candidates is largely a fallacy based on unrelated precedence and in insulated environments like NYC and Seattle. Just Look at how well Spencer Pratt is closing, people are more fed up with the progressive failures then those with TDS and if the GoP just outworks in the general and tackles the questions on affordability and continues to hammer immigration moratorium, their is a real historical chance to upset the apple cart,...",
+          "posted_at": "2026-05-31T20:33:22",
+          "outrage_index": 0.0023,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 82,
+          "platform": "x",
+          "author_id": "1567634104224456705",
+          "text": "The X post from polling account highlights a May 27-28, 2026 internal poll by Slingshot Strategies for Democrat James Talarico showing him leading Republican Ken Paxton 47%-44% in the Texas 2026 US Senate race among 1,670 likely voters. Last time I looked there were more than 1,670 voters in the state of Texas you might want to get a broader audience before you post some dumb shit like this",
+          "posted_at": "2026-05-31T20:24:54",
+          "outrage_index": 0.081,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 42,
+          "platform": "x",
+          "author_id": "1825024513840713728",
+          "text": "EVEN MORE incentive than ever, to crush the Nazi Party (formerly known as 'Republicans') in the forthcoming 2026 Midterm Elections.",
+          "posted_at": "2026-05-31T20:21:12",
+          "outrage_index": 0.0079,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 83,
+          "platform": "x",
+          "author_id": "1827527511498006528",
+          "text": "Axios: Texas population boom, Latino backlash scramble 2026 Senate race \"Texas has gained more than 2.5 million new residents since 2020 \u2014 roughly the entire population of New Mexico \u2014 reshaping the electorate and injecting new uncertainty into this year's marquee Senate race.\"",
+          "posted_at": "2026-05-31T19:58:29",
+          "outrage_index": 0.0023,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 84,
+          "platform": "x",
+          "author_id": "1344196888552075265",
+          "text": "\ud83d\udea8SHOCKING: According to a Democratic internal poll, James Talarico leads Ken Paxton by 3% in Texas' US Senate election. Texas - 2026 US Senate \ud83d\udfe6James Talarico 47% (+3) \ud83d\udfe5Ken Paxton 44% Democrats have not won a US Senate race in Texas since 1993. Slingshot Strategies (Talarico Internal) | May 27-28, 2026 | 1,670 LV",
+          "posted_at": "2026-05-31T19:45:31",
+          "outrage_index": 0.0097,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 61,
+          "platform": "x",
+          "author_id": "41475976",
+          "text": "The hearts of those little boys in 2026, now BEAT in the bodies of maga cowards who proudly wave the Confederate flag and DEFEND rapists &amp; pedophiles, NOT America! Their red hat of HATred just replaced the sheets they love to claim only the Dem KKK wore! Ha...",
+          "posted_at": "2026-05-31T19:25:27",
+          "outrage_index": 0.0268,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 85,
+          "platform": "x",
+          "author_id": "28265648",
+          "text": "\ud83d\udc99\ud83d\udd35Democrats in Vermont\ud83d\udd35\ud83d\udc99 Primary August 11 Vermont has one US House seat. Incumbent Democrat is running for reelection. No Senate Race in VT in 2026 Two Democrats in the Governor primary - neither have accounts here. Amanda Janoo Aly Richards",
+          "posted_at": "2026-05-31T19:03:59",
+          "outrage_index": 0.0073,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 86,
+          "platform": "x",
+          "author_id": "27511251",
+          "text": "And what\u2019s fun is that Talarico, like Beto, will lose his Senate race in 2026 and believe his media hype, and run for President in 2028. And then, like Beto, the democrats will brand him a privileged white boy.",
+          "posted_at": "2026-05-31T18:51:46",
+          "outrage_index": 0.0027,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 91,
+          "platform": "x",
+          "author_id": "46520074",
+          "text": "Democrats are poised to finish several seats behind Republicans in 2026 in the nationwide race to redraw maps for the U.S. House. They can catch up in 2028, but only if they overcome a series of redistricting hurdles that the GOP does not face. That's...",
+          "posted_at": "2026-05-31T18:41:15",
+          "outrage_index": 0.0031,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 87,
+          "platform": "x",
+          "author_id": "1430216392343687174",
+          "text": "Susan Collins odds to win the Maine Senate Race Surge 2026 Maine Senate Winner Odds Per \ud83d\udd35 Graham Platner: 57% (-17) \ud83d\udd34 Susan Collins: 43% (+17) (+/- vs May 19)",
+          "posted_at": "2026-05-31T18:21:36",
+          "outrage_index": 0.0081,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 43,
+          "platform": "x",
+          "author_id": "720664083767435264",
+          "text": "OpenAI on Wednesday hailed its plans to safeguard information and aid cybersecurity defenders in the 2026 midterm elections, including work to combat deepfakes and other forms of artificial intelligence misuse.",
+          "posted_at": "2026-05-31T18:00:01",
+          "outrage_index": 0.0015,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 51,
+          "platform": "x",
+          "author_id": "38250654",
+          "text": "2026 Midterm voters beware! Dems = vote fraud.",
+          "posted_at": "2026-05-31T17:52:47",
+          "outrage_index": 0.0131,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 71,
+          "platform": "x",
+          "author_id": "1919792248817946624",
+          "text": "Why would 2026 not be a blue wave year? Are you retarded?",
+          "posted_at": "2026-05-31T17:22:16",
+          "outrage_index": 0.0028,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 72,
+          "platform": "x",
+          "author_id": "830888476539232257",
+          "text": "Let\u2019s not repeat the same mistakes from 2024. Here\u2019s to the 2026 blue wave! \ud83c\udf0a",
+          "posted_at": "2026-05-31T17:14:12",
+          "outrage_index": 0.0117,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 62,
+          "platform": "x",
+          "author_id": "1858795685845299200",
+          "text": "I'll only say it once.This might be the fastest way to accumulate $3 million by the end of 2026: $LTBR (Lightbridge) \u2192 $8 Must buy $BMEA (Biomea Fusion) \u2192 $1 Must buy $CIFR (Cipher Mining) \u2192 $9 Must buy $QBTS (D-Wave Quantum) \u2192 $27 Must buy $RCAT (Red Cat Holdings) \u2192 $11 Must buy I often get asked why I don't turn this into paid content, but for me, sharing stock information is just a hobby. I'm not financially struggling, so I choose to share it for free. NFA",
+          "posted_at": "2026-05-31T17:09:07",
+          "outrage_index": 0.0078,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 88,
+          "platform": "x",
+          "author_id": "793658020743876608",
+          "text": "Analysis: The Texas Senate race will test whether economic or cultural populism is more powerful in 2026",
+          "posted_at": "2026-05-31T16:47:46",
+          "outrage_index": 0.0031,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 73,
+          "platform": "x",
+          "author_id": "2045140211751899136",
+          "text": "\ud83e\uddf5Trump sees the polls &amp; realizes a blue wave in the 2026 midterms will drown the GOP. So now he's begging for help from anyone who can help end his disastrous war. And,in classic Trump fashion,he starts by blaming the very country whose help he desperately needs. It's all...1/\u2b07\ufe0f",
+          "posted_at": "2026-05-31T16:47:22",
+          "outrage_index": 0.0023,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 89,
+          "platform": "x",
+          "author_id": "1765473979559804928",
+          "text": "New Jersey wtf yall doing ?? New Jersey US Senate Democratic Primary Last Updated: May 31, 2026, 12:07 PM Uncontested Race Candidates Party Cory Booker * DEM * Incumbent Election Date: 6/2/2026 We just gonna write yalls state off !!?? is a absolute pos and has a far lower IQ than his mistress",
+          "posted_at": "2026-05-31T16:09:36",
+          "outrage_index": 0.0271,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 63,
+          "platform": "x",
+          "author_id": "21361969",
+          "text": "\ud83d\udea8BIG RED WAVE WIN! Missouri Supreme Court just upheld the new 7R-1D Congressional map for 2026. Democrats officially lose another seat. Redistricting is paying off big time. Keep the pressure on, we\u2019re winning!",
+          "posted_at": "2026-05-31T16:06:35",
+          "outrage_index": 0.0276,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 44,
+          "platform": "x",
+          "author_id": "1828163680497737728",
+          "text": "Presidential elections in the U.S. are always bullish for Bitcoin, while midterm elections are always bearish for Bitcoin! The next midterm elections are in November 2026 \ud83e\uddd0\ud83e\uddd0\ud83e\uddd0!!!",
+          "posted_at": "2026-05-31T16:01:49",
+          "outrage_index": 0.0416,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 45,
+          "platform": "x",
+          "author_id": "2008989490929651712",
+          "text": "patriots, Republicans, and Christians who love this country, the American flag, and the values America was built on. Get out and vote in the 2026 midterm elections every single vote counts. We must keep strong Republican majorities in the House and Senate to protect our freedoms and preserve the America we love.",
+          "posted_at": "2026-05-31T15:52:03",
+          "outrage_index": 0.0026,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 46,
+          "platform": "x",
+          "author_id": "2039329118244761600",
+          "text": "If history repeats itself, the market could see a strong rally after the midterm elections. By 2027, you may be glad you didn't miss the opportunity that June 2026 presented. Stocks I'm watching: NOK TSLA TE AMZN MP NBIS UUUU ONDS SOFI HOOD New opportunities",
+          "posted_at": "2026-05-31T14:33:08",
+          "outrage_index": 0.012,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 90,
+          "platform": "x",
+          "author_id": "1430216392343687174",
+          "text": "Graham Platner odds to win the Maine Senate Race Drop after the story about his Sexually Explicit Texts drop 2026 Maine Senate Winner Odds Per \ud83d\udd35 Graham Platner: 59% (-15) \ud83d\udd34 Susan Collins: 41% (+15) (+/- vs May 19)",
+          "posted_at": "2026-05-31T14:18:13",
+          "outrage_index": 0.0071,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 74,
+          "platform": "x",
+          "author_id": "1680566619695874048",
+          "text": "JUST IN: Temu Obama Hakeem Jeffries has fallen into DESPAIR after realizing Republicans stand to gain A DOZEN US House seats on the 2026 map, throwing massive cold water on their \"blue wave\" hopes Texas, Missouri, Ohio, North Carolina, Florida, Alabama and Louisiana getting it done! South Carolina RINOs BLOCKED it, Georgia is set for 2028, and Mississippi needs to KEEP PUSHING",
+          "posted_at": "2026-05-31T13:53:24",
+          "outrage_index": 0.0216,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 47,
+          "platform": "x",
+          "author_id": "1181799415",
+          "text": "\ud83d\udea8\ud83d\udea8The President of the United States signs an executive order ELIMINATING mail-in ballots and voting machines before the 2026 midterm elections. \u201cBy signing an EXECUTIVE ORDER to help bring HONESTY to the 2026 Midterm Elections.\u201d",
+          "posted_at": "2026-05-31T13:50:56",
+          "outrage_index": 0.012,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 48,
+          "platform": "x",
+          "author_id": "1981085696665227264",
+          "text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
+          "posted_at": "2026-05-31T13:41:13",
+          "outrage_index": 0.0216,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 49,
+          "platform": "x",
+          "author_id": "1981085696665227264",
+          "text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
+          "posted_at": "2026-05-31T13:40:43",
+          "outrage_index": 0.0216,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 50,
+          "platform": "x",
+          "author_id": "1981085696665227264",
+          "text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
+          "posted_at": "2026-05-31T13:34:32",
+          "outrage_index": 0.0216,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 75,
+          "platform": "x",
+          "author_id": "1823004756568346624",
+          "text": "2,000 Mules LIVE!!! South Korea 5/30/2026 Taiwan has Chinese operators like this one already reporting the win of a blue tidal wave. Wow. How does he know? China CCP pulling strings through A-Web",
+          "posted_at": "2026-05-31T13:22:54",
+          "outrage_index": 0.0358,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 105,
+          "platform": "x",
+          "author_id": "7458942",
+          "text": "Texas' migration boom, Latino backlash jolts 2026 Senate race",
+          "posted_at": "2026-05-31T12:57:24",
+          "outrage_index": 0.0039,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 106,
+          "platform": "x",
+          "author_id": "1585733443194802176",
+          "text": "May 31, 2026 | 08:29 Trump Sets NEW TERMS for Iran Deal on Nukes, Hormuz Radio host joins ' Weekend.' Discusses potential impact of revised Iran peace framework &amp; ongoing TX Senate race on the upcoming midterm elections. FoxNews",
+          "posted_at": "2026-05-31T12:39:31",
+          "outrage_index": 0.0083,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 76,
+          "platform": "x",
+          "author_id": "1712589743073148928",
+          "text": "Yes there will be a blue wave in 2026, but he said he wants the Right to win in 2028, its just a temporary thing man....",
+          "posted_at": "2026-05-31T10:23:29",
+          "outrage_index": 0.0013,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 77,
+          "platform": "x",
+          "author_id": "1470033028756152320",
+          "text": "5/31 \u756a\u7d44\u5185\u30e9\u30f3\u30ad\u30f3\u30b07\u4f4d\u306b\u3088\u308a \u666f\u8272/ JI BLUE \u304cOA\u26bd\ufe0f \u30e9\u30f3\u30ad\u30f3\u30b07\u4f4d\u3067\u306eOA\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3057\u305f\u2728 \ud83d\udc47\u3088\u308a\u8074\u53d6\u3044\u305f\u3060\u3051\u307e\u3059! SAISON CARD TOKIO HOT 100(PART4) J-WAVE 2026/5/31(\u65e5) 16:00-17:00 \u30c8\u30ad\u30db INI\u30e9\u30b8\u30aa\u30aa\u30f3\u30a8\u30a2\u60c5\u5831 INI",
+          "posted_at": "2026-05-31T10:03:32",
+          "outrage_index": 0.0216,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 78,
+          "platform": "x",
+          "author_id": "1332618297099993090",
+          "text": "\u2b06\ufe0f\u3010No.7\u20e3\u3011(OA: 10) JI BLUE\u300c\u666f\u8272\u300d JO1\u30fbINI\u30e1\u30f3\u30d0\u30fc\u304b\u3089\u6210\u308b\u30b0\u30eb\u30fc\u30d7\u30fbJI BLUE \u30b5\u30c3\u30ab\u30fc\u65e5\u672c\u4ee3\u8868\u300c\u6700\u9ad8\u306e\u666f\u8272\u30922026\u300d\u516c\u5f0f\u30c6\u30fc\u30de\u30bd\u30f3\u30b0\u304cJ-WAVE\u3067\u3082OA\u30dd\u30a4\u30f3\u30c8\u597d\u8abf\u3067\u3042\u308a\u3001\u5148\u903135\u4f4d\u521d\u767b\u5834\u304b\u308928\u30e9\u30f3\u30af\u30a2\u30c3\u30d7\u30677\u4f4d \u30a8\u30f3\u30c8\u30ea\u30fc2\u9031\u76ee\u3067\u30c8\u30c3\u30d710\u5165\u308a\ud83d\udc4f \u30c8\u30ad\u30db tokiohot100",
+          "posted_at": "2026-05-31T07:22:24",
+          "outrage_index": 0.012,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 79,
+          "platform": "x",
+          "author_id": "1168002791865847808",
+          "text": "2028 is a presidential year. It won\u2019t be as much of a blue wave as 2026.",
+          "posted_at": "2026-05-31T05:43:21",
+          "outrage_index": 0.0011,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 92,
+          "platform": "x",
+          "author_id": "1386641209829957633",
+          "text": "2026/05/25 \u0e1a\u0e38\u0e01\u0e2b\u0e25\u0e31\u0e07\u0e40\u0e27\u0e17\u0e35 LOVE OUT LOUD FAN FEST 2026 : HEART RACE | GMMTV LIVE HOUSE 2026/05/30 \ud83d\udd34LIVE \u0e2a\u0e31\u0e21\u0e20\u0e32\u0e29\u0e13\u0e4c \"\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c \u0e15\u0e31\u0e49\u0e07\u0e28\u0e31\u0e01\u0e14\u0e34\u0e4c\u0e22\u0e37\u0e19\" \u0e1e\u0e23\u0e35\u0e40\u0e0b\u0e19\u0e40\u0e15\u0e2d\u0e23\u0e4c\u0e04\u0e19\u0e43\u0e2b\u0e21\u0e48\u0e02\u0e2d\u0e07 Birdy Barista \u0e1b\u0e2d\u0e19\u0e14\u0e4c\u0e20\u0e39\u0e27\u0e34\u0e19\u0e17\u0e23\u0e4c ppnaravit phuwintang",
+          "posted_at": "2026-05-31T05:18:04",
+          "outrage_index": 0.012,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 64,
+          "platform": "x",
+          "author_id": "1663978801850662927",
+          "text": "B-but weren't republicans supposed to get two candidates in? Red wave 2026 right?",
+          "posted_at": "2026-05-31T04:48:41",
+          "outrage_index": 0.002,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 93,
+          "platform": "x",
+          "author_id": "144810335",
+          "text": "\u0e1a\u0e38\u0e01\u0e2b\u0e25\u0e31\u0e07\u0e40\u0e27\u0e17\u0e35 LOVE OUT LOUD FAN FEST 2026 : HEART RACE | GMMTV LIVE HOUSE via",
+          "posted_at": "2026-05-31T04:44:19",
+          "outrage_index": 0.012,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 80,
+          "platform": "x",
+          "author_id": "2907776307",
+          "text": "Really? Cause I remember 2022 when 99% of his preferred nominations lost their elections, and here we are in 2026, and his preferred candidates are all DOWN in their polls, and his party is projected to lose in a Blue Wave.",
+          "posted_at": "2026-05-31T04:43:02",
+          "outrage_index": 0.0032,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 65,
+          "platform": "x",
+          "author_id": "1287596172",
+          "text": "Haha, Hakeem Jeffries is straight-up spiraling! Republicans about to grab a dozen more House seats? Blue wave my ass, it\u2019s a full red tsunami, baby!\ud83c\uddfa\ud83c\uddf8 Texas, Florida, Ohio... Democrats are cooked. 2026 is gonna be a bloodbath. Cry harder! \ud83d\udcaa\ud83c\udffc",
+          "posted_at": "2026-05-31T04:08:00",
+          "outrage_index": 0.0325,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 66,
+          "platform": "x",
+          "author_id": "1029489969885261832",
+          "text": "TRUTH. Where are Dem blue policies working? No place. The RNC should have the resources to make a policy based communication campaign deliver a red wave in 2026. Have firms compete for this campaign and pick the campaign that tests the best. Yesterday.",
+          "posted_at": "2026-05-31T02:48:47",
+          "outrage_index": 0.0044,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 67,
+          "platform": "x",
+          "author_id": "1971266198588227584",
+          "text": "Join 35th District State Representative Trump MAGA Red Republican of Illinois at for my \u201cAmerica First Campaign\u201d at Demma\u2019s in Oak Lawn on Sunday, June 14, 2026 from 2 to 4PM &amp; afterwards our Annual Flag Day wave while celebrating President Trump\u2019s 80th \ud83c\udf82",
+          "posted_at": "2026-05-31T01:52:45",
+          "outrage_index": 0.1034,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 68,
+          "platform": "x",
+          "author_id": "1989122130785849344",
+          "text": "Spencer Pratt LA Mayor 2026, Red Wave \ud83c\udf0a 2026 &amp; 2028.",
+          "posted_at": "2026-05-30T19:11:50",
+          "outrage_index": 0.01,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 69,
+          "platform": "x",
+          "author_id": "34771939",
+          "text": "This universally declared 2026 blue wave smells exactly like the 2022 red wave.",
+          "posted_at": "2026-05-30T18:45:05",
+          "outrage_index": 0.001,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 94,
+          "platform": "x",
+          "author_id": "554118761",
+          "text": "Dems will finish several seats behind Republicans in 2026 in the nationwide redistricting race for the U.S. House. They can pull up in 2028 if they overcome a series of redistricting hurdles that the GOP doesn't face. \ud83d\udca1GenZ voters can overturn the Republicans in the Midterms.",
+          "posted_at": "2026-05-30T11:19:35",
+          "outrage_index": 0.0038,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 95,
+          "platform": "x",
+          "author_id": "1349664211257839617",
+          "text": "what happens when nancy mace looses her race in sc gubernatorial race? would she be able to run for house in 2026?",
+          "posted_at": "2026-05-30T11:03:40",
+          "outrage_index": 0.0,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 70,
+          "platform": "x",
+          "author_id": "1919792248817946624",
+          "text": "O\u2019Rourke was, at that point, a 2 time loser and perennial candidate who had lost his appeal. And it was a red wave year. Abbott will win in 2026, but this will be his weakest performance yet.",
+          "posted_at": "2026-05-30T06:46:09",
+          "outrage_index": 0.0017,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 103,
+          "platform": "x",
+          "author_id": "1271439514460753920",
+          "text": "TEUME! Pasarkemis dan sekitarnya (Tangerang), yuk nongkrong sambil rayain Comeback TREASURE bareng\u2728 RED WAVE \u2014 \ud83c\udf0aNEW WAV COMEBACK PARTY with \ud83d\udcc601 June 2026 \ud83d\udccdGoodang Coffee, Kab. Tangerang \ud83d\udcb0FREE ENTRY \ud83d\udd17 WaveRidingWithTREASURE",
+          "posted_at": "2026-05-30T06:35:09",
+          "outrage_index": 0.0216,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 104,
+          "platform": "x",
+          "author_id": "602615359",
+          "text": "This will backfire. Packing Black voters into fewer districts can make adjacent white-majority seats more competitive - the math doesn\u2019t always work the way mapmakers expect. Louisiana is deep red but in a 2026 wave environment Democrats competing for 3 of those 6 seats is not far-fetched.",
+          "posted_at": "2026-05-30T01:31:43",
+          "outrage_index": 0.0014,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 96,
+          "platform": "x",
+          "author_id": "1472102387158503424",
+          "text": "This says a lot I think about the state of cultural significance of stage plays in 2026. They are race swapping the head of the most prominent house of the Northern realm... and nobody cares.",
+          "posted_at": "2026-05-29T23:31:07",
+          "outrage_index": 0.0017,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 97,
+          "platform": "x",
+          "author_id": "258061182",
+          "text": "\u26a0\ufe0fGENERAL STRIKE USA KICKOFF JULY 5 2026! \u26a0\ufe0f NOT ONE DAY, BUT AS LONG AS IT TAKES TO MEET DEMANDS. BRING DOWN THIS MURDEROUS REGIME. NO TO TRUMP. NO TO WAR. NO TO MASS DEPORTATIONS. NO TO MASS DETENTIONS. NO TO RACE WARS. NO TO CORRUPTION. NO TO CRIMINALS IN THE WHITE HOUSE. YES TO RESTORING THE CONSTITUTION. YES TO FREE ELECTIONS WITHOUT FEDERAL INTERFERENCE. SPREAD THE WORD!",
+          "posted_at": "2026-05-29T17:19:16",
+          "outrage_index": 0.0312,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 98,
+          "platform": "x",
+          "author_id": "2032006783162859521",
+          "text": "LOVE OUT LOUD FAN FEST 2026 : HEART RACE | GMMTV LIVE HOUSE - JOONGDUNK PART \u2600\ufe0f\ud83c\udf3b\ud83e\uddf6\ud83e\uddf6 \ud83d\udd17",
+          "posted_at": "2026-05-29T08:16:52",
+          "outrage_index": 0.012,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 107,
+          "platform": "x",
+          "author_id": "940578242",
+          "text": "Vote for them to win the house in 2026 and the governors race in Ohio only. Thats it",
+          "posted_at": "2026-05-29T02:53:07",
+          "outrage_index": 0.0029,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 108,
+          "platform": "x",
+          "author_id": "242120323",
+          "text": "Microsoft is doubling down on its own AI stack at Build 2026, with in-house models and a coding assistant. With Anthropic, Opus 4.8, and Copilot competition heating up, the AI race is getting intense. AI Microsoft",
+          "posted_at": "2026-05-28T18:39:30",
+          "outrage_index": 0.0049,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 52,
+          "platform": "x",
+          "author_id": "1518777787213041665",
+          "text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injustice - the J6 Setup - 2020 Election Fraud - 2024 Stolen House & Senate seats - et al",
+          "posted_at": "2026-05-27T22:45:39",
+          "outrage_index": 0.0582,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 53,
+          "platform": "x",
+          "author_id": "1604152121267568642",
+          "text": "This \u201cFRAUD Vote Control\u201d is why Sen. Thune will not pass The Save America Act until it can Not apply to 2026 MidTerm Elections . Here\u2019s a solution = Tribunal Thune for his many Treasonous acts ; like the alleged bribes attachment ; replace him and get business done",
+          "posted_at": "2026-05-27T22:26:11",
+          "outrage_index": 0.0066,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 54,
+          "platform": "x",
+          "author_id": "1981085696665227264",
+          "text": "VOTE DEM's OUT VOTE RED Down ballot Nov 3rd, 2026 Midterm Elections STOP Illegal's from VOTING STOP DEM's Sanctuary Cities STOP DEM's Open Borders! SAVE American Taxpayers from paying for ALL the migrant FREE! Illegal Immigrant FRAUD!",
+          "posted_at": "2026-05-27T20:37:06",
+          "outrage_index": 0.148,
+          "sentiment_label": "negative",
+          "benchmark_label": null
+        },
+        {
+          "id": 55,
+          "platform": "x",
+          "author_id": "1518777787213041665",
+          "text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injustice - the J6 Setup - 2020 Election Fraud - 2024 Stolen House & Senate seats - et al",
+          "posted_at": "2026-05-27T16:17:26",
+          "outrage_index": 0.0582,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 56,
+          "platform": "x",
+          "author_id": "1916101126832750592",
+          "text": "\ud83e\udd14 TIMELINES PATTERNS 2026 MIDTERMS & FRAUD VITIATES EVERYTHING This feels like one of those things people are going to look back on and ask why nobody noticed. Democrats floated a 2026 midterm convention. Republicans are now considering one too something they\u2019ve never done before for a midterm. Two different parties. Same strange move. \ud83d\udc49National conventions are supposed to be for presidential elections not midterms. So why now? Maybe we just leave it up to them to explain it. Because from where I\u2019m sitting, 2026 is starting to feel like it won\u2019t be like any election we\u2019ve ever seen. Timelines don\u2019t lie.",
+          "posted_at": "2026-05-26T19:27:43",
+          "outrage_index": 0.0628,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 57,
+          "platform": "x",
+          "author_id": "2335639944",
+          "text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge of ensuring that those who attempt to subvert the will of the American people and rig our elections are held accountable than the woman who EXPOSED the stolen election of 2020. Sidney Powell put her career on the line and now she has been TOTALLY VINDICATED... The radical left THUGS are shaking in their boots after hearing that Sidney Powell is about to RELEASE THE KRAKEN of justice upon them. Great move, President Trump! \ud83d\udcf7\ud83d\udcf7 \ud83d\udd25\ud83c\uddfa\ud83c\uddf8",
+          "posted_at": "2026-05-26T16:31:41",
+          "outrage_index": 0.1144,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 58,
+          "platform": "x",
+          "author_id": "1518777787213041665",
+          "text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injustice - the J6 Setup - 2020 Election Fraud - 2024 Stolen House & Senate seats - et al",
+          "posted_at": "2026-05-25T22:38:34",
+          "outrage_index": 0.0582,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 59,
+          "platform": "x",
+          "author_id": "168979883",
+          "text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge of ensuring that those who attempt to subvert the will of the American people and rig our elections are held accountable than the woman who EXPOSED the stolen election of 2020. Sidney Powell put her career on the line and now she has been TOTALLY VINDICATED... The radical left THUGS are shaking in their boots after hearing that Sidney Powell is about to RELEASE THE KRAKEN of justice upon them. Great move, President Trump! \ud83d\udcf7\ud83d\udcf7 \ud83d\udd25\ud83c\uddfa\ud83c\uddf8",
+          "posted_at": "2026-05-25T18:49:29",
+          "outrage_index": 0.1144,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 60,
+          "platform": "x",
+          "author_id": "1663554933516541952",
+          "text": "\"It\u2019s only May, and Google is already hard at work interfering in the 2026 midterm elections and doing clean-up for Democrats embroiled in fraud accusations\": \"Google News completely ignored multiple fraud scandals plaguing Democratic Party politics in its top 20 morning stories\"",
+          "posted_at": "2026-05-24T19:25:32",
+          "outrage_index": 0.0023,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 101,
+          "platform": "x",
+          "author_id": "1518777787213041665",
+          "text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injustice - the J6 Setup - 2020 Election Fraud - 2024 Stolen House & Senate seats - et al",
+          "posted_at": "2026-05-24T17:12:32",
+          "outrage_index": 0.0582,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 102,
+          "platform": "x",
+          "author_id": "876574565228589059",
+          "text": "With this and other realignments in the voting districts of Republican States, FBI and ICE on the lookout for voter cheating and fraud, the possibility of honest 2026 Midterm elections has improved significantly! That means Republicans will win both the House and Senate again !!!",
+          "posted_at": "2026-05-23T22:41:44",
+          "outrage_index": 0.0424,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        }
+      ],
+      "cib": {
+        "narrative_id": 3,
+        "suspicion_score": 0.0,
+        "organic_score": 1.0,
+        "signals": [],
+        "node_count": 70,
+        "edge_count": 0,
+        "density": 0.0,
+        "top_amplifiers": [
+          {
+            "author_id": "876574565228589059",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0424
+          },
+          {
+            "author_id": "1518777787213041665",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0582
+          },
+          {
+            "author_id": "1663554933516541952",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0023
+          },
+          {
+            "author_id": "168979883",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.1144
+          },
+          {
+            "author_id": "2335639944",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.1144
+          },
+          {
+            "author_id": "1916101126832750592",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0628
+          },
+          {
+            "author_id": "1981085696665227264",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.148
+          },
+          {
+            "author_id": "1604152121267568642",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0066
+          },
+          {
+            "author_id": "242120323",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0049
+          },
+          {
+            "author_id": "940578242",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0029
+          }
+        ],
+        "coordinated_clusters": [],
+        "iu_astroturf": {
+          "authors_in_narrative": 70,
+          "platforms": [
+            "x"
+          ],
+          "x_authors_checked": 70,
+          "known_political_bots": 0,
+          "known_bot_ratio": 0.0,
+          "labeled_accounts": [],
+          "note": null
+        }
+      },
+      "sentiment": {
+        "narrative_id": 3,
+        "buckets": [
+          {
+            "date": "2026-05-23",
+            "mean_outrage": 0.0424,
+            "count": 1
+          },
+          {
+            "date": "2026-05-24",
+            "mean_outrage": 0.0302,
+            "count": 2
+          },
+          {
+            "date": "2026-05-25",
+            "mean_outrage": 0.0863,
+            "count": 2
+          },
+          {
+            "date": "2026-05-26",
+            "mean_outrage": 0.0886,
+            "count": 2
+          },
+          {
+            "date": "2026-05-27",
+            "mean_outrage": 0.0678,
+            "count": 4
+          },
+          {
+            "date": "2026-05-28",
+            "mean_outrage": 0.0049,
+            "count": 1
+          },
+          {
+            "date": "2026-05-29",
+            "mean_outrage": 0.0119,
+            "count": 4
+          },
+          {
+            "date": "2026-05-30",
+            "mean_outrage": 0.0056,
+            "count": 7
+          },
+          {
+            "date": "2026-05-31",
+            "mean_outrage": 0.0151,
+            "count": 55
+          }
+        ],
+        "trend": "stable"
+      },
+      "amplification": {
+        "narrative_id": 3,
+        "cluster_count": 4,
+        "clusters": [
+          {
+            "count": 4,
+            "author_count": 1,
+            "author_ids": [
+              "1518777787213041665"
+            ],
+            "post_ids": [
+              101,
+              58,
+              55,
+              52
+            ],
+            "sample_text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injusti\u2026"
+          },
+          {
+            "count": 3,
+            "author_count": 1,
+            "author_ids": [
+              "1981085696665227264"
+            ],
+            "post_ids": [
+              50,
+              49,
+              48
+            ],
+            "sample_text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE"
+          },
+          {
+            "count": 2,
+            "author_count": 2,
+            "author_ids": [
+              "168979883",
+              "2335639944"
+            ],
+            "post_ids": [
+              59,
+              57
+            ],
+            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026"
+          },
+          {
+            "count": 2,
+            "author_count": 2,
+            "author_ids": [
+              "1777383147950280706",
+              "1791965943431667712"
+            ],
+            "post_ids": [
+              34,
+              33
+            ],
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for."
+          }
+        ]
+      }
+    }
+  }
+}

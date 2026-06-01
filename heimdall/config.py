@@ -57,6 +57,11 @@ class Settings(BaseSettings):
         "deep state",
     ]
 
+    # Comma-separated origins for the analysis dashboard (GitHub Pages + local Vite).
+    cors_origins: str = (
+        "http://127.0.0.1:5173,http://localhost:5173,https://saptreekly.github.io"
+    )
+
 
 @lru_cache
 def get_settings() -> Settings:

@@ -1,4 +1,4 @@
-"""Load persisted Heimdall rows into pandas for notebooks and scripts."""
+"""Load persisted Heimdall rows into pandas for scripts and offline analysis."""
 
 from __future__ import annotations
 

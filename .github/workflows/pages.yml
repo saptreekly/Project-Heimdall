@@ -1,0 +1,91 @@
+# Build analysis data + dashboard, deploy to GitHub Pages.
+# Enable: Settings → Pages → Source: GitHub Actions.
+#
+# Data sources (first match wins):
+#   1. Committed data/dashboard/heimdall.db (copy local DB here and push)
+#   2. Secret DASHBOARD_DATABASE_URL (remote Postgres/SQLite URL)
+#   3. Mock seed (demo only)
+
+name: pages
+
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+      - "heimdall/**"
+      - "scripts/**"
+      - "data/dashboard/**"
+      - "data/astroturf.tsv"
+      - ".github/workflows/pages.yml"
+      - "pyproject.toml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Heimdall
+        run: pip install -e .
+
+      - name: Configure database
+        run: |
+          if [ -f data/dashboard/heimdall.db ]; then
+            echo "DATABASE_URL=sqlite+aiosqlite:///./data/dashboard/heimdall.db" >> "$GITHUB_ENV"
+            echo "Using committed data/dashboard/heimdall.db"
+          elif [ -n "${{ secrets.DASHBOARD_DATABASE_URL }}" ]; then
+            echo "DATABASE_URL=${{ secrets.DASHBOARD_DATABASE_URL }}" >> "$GITHUB_ENV"
+            echo "Using DASHBOARD_DATABASE_URL secret"
+          else
+            echo "DATABASE_URL=sqlite+aiosqlite:///./data/dashboard/ci-build.db" >> "$GITHUB_ENV"
+            echo "No committed DB; will seed mock data if empty"
+          fi
+
+      - name: Seed database if empty
+        run: python scripts/seed_dashboard_if_empty.py
+
+      - name: Export dashboard snapshot
+        run: python scripts/export_dashboard_data.py
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build dashboard
+        working-directory: web
+        env:
+          VITE_BASE: /Project-Heimdall/
+        run: |
+          npm ci
+          npm run build
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+      - uses: actions/deploy-pages@v4
+        id: deployment

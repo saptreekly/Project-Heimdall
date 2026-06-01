@@ -1,6 +1,10 @@
 import pandas as pd
 
-from heimdall.analysis.duplicates import find_duplicate_text_clusters, normalize_text
+from heimdall.analysis.duplicates import (
+    find_duplicate_clusters_from_rows,
+    find_duplicate_text_clusters,
+    normalize_text,
+)
 
 
 def test_normalize_text_collapses_whitespace() -> None:
@@ -23,3 +27,15 @@ def test_duplicate_clusters_cross_author() -> None:
     assert len(clusters) == 1
     assert clusters[0].count == 2
     assert set(clusters[0].author_ids) == {"a", "b"}
+
+
+def test_duplicate_clusters_from_rows() -> None:
+    rows = [
+        (10, "u1", "Same message"),
+        (11, "u2", "Same message"),
+        (12, "u3", "other"),
+    ]
+    clusters = find_duplicate_clusters_from_rows(rows, min_posts=2)
+    assert len(clusters) == 1
+    assert clusters[0].count == 2
+    assert clusters[0].post_ids == [10, 11]

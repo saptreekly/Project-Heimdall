@@ -45,6 +45,52 @@ uvicorn heimdall.main:app --reload
 
 Open http://127.0.0.1:8000/docs for the interactive API.
 
+### Narrative analysis dashboard (TypeScript)
+
+**Published:** [https://saptreekly.github.io/Project-Heimdall/](https://saptreekly.github.io/Project-Heimdall/) (GitHub Pages via `.github/workflows/pages.yml`).
+
+The site ships a **bundled JSON snapshot** (`data/snapshot.json`) rebuilt on every deploy. CI runs daily (`cron: 0 14 * * *`) and on pushes to `main`.
+
+**Ship your latest ingest to Pages:**
+
+```bash
+cp heimdall.db data/dashboard/heimdall.db
+git add data/dashboard/heimdall.db
+git push
+```
+
+Or set GitHub secret **`DASHBOARD_DATABASE_URL`** to a remote database URL. If neither is present, CI seeds mock demo data.
+
+Export snapshot locally:
+
+```bash
+python scripts/export_dashboard_data.py
+```
+
+Optional: use **Live API** in the dashboard to query a running server (`CORS_ORIGINS` must include your origin).
+
+**Local dev:**
+
+```bash
+# Terminal 1 — API
+uvicorn heimdall.main:app --reload
+
+# Terminal 2 — Vite dev (proxies /api → :8000)
+cd web && npm install && npm run dev
+```
+
+Open http://127.0.0.1:5173 — Connect, pick a narrative, refresh after ingest.
+
+**Single server:** build the SPA, then uvicorn serves `web/dist` at `/` when present:
+
+```bash
+cd web && npm run build
+uvicorn heimdall.main:app --reload
+# http://127.0.0.1:8000/  (API still at /api/v1, docs at /docs)
+```
+
+Deep link: `http://127.0.0.1:5173/?narrative=3`
+
 ### With Docker (Postgres + Redis + Neo4j)
 
 Start **Docker Desktop** first (the error `docker.sock: no such file` means the daemon is not running). Then:
@@ -160,6 +206,7 @@ Neo4j authors get `known_bot` and `bot_label` when matched.
 | `NEO4J_*` | Graph export via `POST /narratives/{id}/graph/neo4j` |
 | `MASTODON_INSTANCE_URL` | Instance for hashtag timelines |
 | `DEFAULT_INGESTER` | `hackernews`, `mastodon`, `mock`, etc. |
+| `CORS_ORIGINS` | Comma-separated browser origins for the analysis dashboard |
 
 Install transformer-backed sentiment: `pip install -e ".[ml]"` and pass `OutrageAnalyzer(use_transformers=True)` in the pipeline.
 
@@ -167,31 +214,18 @@ Install transformer-backed sentiment: `pip install -e ".[ml]"` and pass `Outrage
 
 Only collect **public** data in compliance with platform Terms of Service and applicable law. This scaffold is for research and defensive analysis—not for harassment, doxxing, or targeting individuals. Tune lexicons and thresholds with human review; automated CIB scores are **heuristic**, not ground truth.
 
-## Analysis (Jupyter)
+## Analysis
 
 Ingest is **saved** to the app database (`heimdall.db` by default). Posts, outrage scores, edges, and narratives survive restarts.
 
-```bash
-pip install -e ".[notebook]"
-jupyter notebook notebooks/analyze_narrative.ipynb
-```
+Use the TypeScript dashboard in `web/` (see [Narrative analysis dashboard](#narrative-analysis-dashboard-typescript)). It calls `GET /api/v1/narratives`, `/posts`, `/cib`, `/sentiment-shift`, and `/amplification`.
 
-The notebook loads narratives from SQLite, plots outrage distributions, finds duplicate-text (copypasta) clusters, and lists repeat authors. Helpers live in `heimdall/analysis/`.
-
-**Commit notebooks like Julia:** pre-render with PNG outputs and nbformat 4.4 (no HTML tables, no widget metadata):
-
-```bash
-python scripts/export_notebook_github.py   # requires local heimdall.db for fresh charts
-git add notebooks/analyze_narrative.ipynb
-```
-
-See [notebooks/README.md](notebooks/README.md). CI re-sanitizes on push if Jupyter re-adds broken metadata.
+Duplicate-text detection and pandas loaders live in `heimdall/analysis/`.
 
 ## Project layout
 
 ```
-notebooks/
-  analyze_narrative.ipynb
+web/                   # Vite + TypeScript analysis UI (GitHub Pages)
 heimdall/
   analysis/            # pandas loaders, duplicate-text detection
   main.py              # FastAPI app
@@ -207,4 +241,5 @@ tests/
 
 - [x] X/Twitter ingester (GraphQL search + list timelines; retweet → SHARE edges)
 - [ ] Bot detection features (account age, posting velocity) as graph node attributes
-- [ ] Dashboard (e.g. React + sigma.js) fed from Neo4j or `/cib`
+- [x] Narrative analysis dashboard (`web/`, TypeScript + `/api/v1`)
+- [ ] Graph visualization (e.g. sigma.js) fed from Neo4j or propagation edges
