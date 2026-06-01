@@ -376,6 +376,51 @@ button {
   height: 360px;
 }
 
+.scatter-diagnosis {
+  margin: 0 0 0.75rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(192, 57, 43, 0.4);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.scatter-diagnosis p {
+  margin: 0 0 0.45rem;
+}
+
+.scatter-diagnosis p:last-child {
+  margin-bottom: 0;
+}
+
+.scatter-diagnosis-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #e8a39c;
+}
+
+.scatter-diagnosis-sub {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.scatter-diagnosis a {
+  color: var(--warn);
+}
+
+.chart-diagnosis-outrage {
+  border-left-color: var(--warn);
+  background: rgba(245, 166, 35, 0.08);
+}
+
+.chart-diagnosis-outrage .scatter-diagnosis-title {
+  color: var(--warn);
+}
+
 .priority-target-list {
   list-style: none;
   margin: 0.85rem 0 0;

@@ -8,6 +8,12 @@ import {
   type ChartConfiguration,
 } from "chart.js";
 
+import {
+  OUTRAGE_COMPRESSION_THRESHOLD,
+  scatterOutrageFloorNoticeHtml,
+  yPercentile75,
+  type OutrageDiagnostics,
+} from "./outrage-diagnostics";
 import type { CibReport, GraphAuthor, Post, PropagationGraph } from "./types";
 
 Chart.register(ScatterController, PointElement, LinearScale, Tooltip, Legend);
@@ -46,6 +52,11 @@ function median(values: number[]): number {
   const sorted = [...values].sort((a, b) => a - b);
   const mid = Math.floor(sorted.length / 2);
   return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+
+function hasSpread(values: number[], epsilon = 1e-9): boolean {
+  if (values.length < 2) return false;
+  return Math.max(...values) - Math.min(...values) > epsilon;
 }
 
 function outDegreeByAuthor(graph: PropagationGraph): Map<string, number> {
@@ -99,11 +110,16 @@ function mergeAuthors(
   return [...byId.values()];
 }
 
+export function hasPropagationSpread(graph: PropagationGraph): boolean {
+  return graph.edges.length > 0;
+}
+
 export function buildAuthorPriorityPoints(
   graph: PropagationGraph,
   cib: CibReport,
   posts: Post[]
 ): AuthorPriorityPoint[] {
+  const noSpread = !hasPropagationSpread(graph);
   const outDeg = outDegreeByAuthor(graph);
   const bots = knownBotIds(graph, cib);
   const ampById = new Map(cib.top_amplifiers.map((a) => [a.author_id, a]));
@@ -132,22 +148,67 @@ export function buildAuthorPriorityPoints(
 
   const xMid = median(raw.map((p) => p.x));
   const yMid = median(raw.map((p) => p.y));
+  const maxY = Math.max(...raw.map((p) => p.y), 0);
+  const yCompressed = maxY <= OUTRAGE_COMPRESSION_THRESHOLD;
+  const yP75 = yPercentile75(raw);
 
   return raw.map((p) => ({
     ...p,
-    critical: p.x >= xMid && p.y >= yMid && (p.x > 0 || p.y >= 0.25),
+    critical: noSpread
+      ? yCompressed
+        ? p.y >= yP75 && p.y > 0 && (maxY <= 0 ? true : p.y >= maxY * 0.85)
+        : p.y >= yMid && p.y >= 0.25
+      : yCompressed
+        ? p.y >= yP75 && p.x >= xMid
+        : p.x >= xMid && p.y >= yMid && (p.x > 0 || p.y >= 0.25),
   }));
 }
 
-export function priorityScatterPanelHtml(criticalCount: number): string {
+function noSpreadNoticeHtml(edgeCount: number): string {
+  if (edgeCount > 0) return "";
   return `
-    <section class="panel panel-chart-wide priority-panel">
+    <div class="scatter-diagnosis" role="status" id="scatter-diagnosis">
+      <p class="scatter-diagnosis-title">X-axis wall (out-degree = 0)</p>
+      <p>
+        Every author stacks on the vertical line at <strong>X = 0</strong> because this snapshot has
+        <strong>no propagation edges</strong> (${edgeCount} SHARE/REPLY links in ingest).
+        Search-only X pulls often capture standalone posts without retweet or reply targets in the batch,
+        so spread cannot be measured on this chart until interactions are ingested.
+      </p>
+      <p class="scatter-diagnosis-sub">
+        Confirm in
+        <a href="#propagation-graph-panel">Propagation network</a> (badge: <em>no edges</em>).
+        Use duplicate-text / theme panels for coordination signals until edges exist.
+      </p>
+    </div>
+  `;
+}
+
+export function priorityScatterPanelHtml(
+  criticalCount: number,
+  edgeCount: number,
+  outrageDiag: OutrageDiagnostics
+): string {
+  const noSpread = edgeCount === 0;
+  const yCompressed = outrageDiag.compressed;
+  const badgeLabel =
+    noSpread && yCompressed
+      ? "relative targets"
+      : noSpread || yCompressed
+        ? "high outrage only"
+        : "critical targets";
+  return `
+    <section class="panel panel-chart-wide priority-panel" id="priority-scatter-panel">
       <h2>Author prioritization
-        <span class="topology-badge topology-star">${criticalCount} critical targets</span>
+        <span class="topology-badge ${noSpread || yCompressed ? "topology-isolated" : "topology-star"}">${criticalCount} ${badgeLabel}</span>
       </h2>
+      ${noSpreadNoticeHtml(edgeCount)}
+      ${scatterOutrageFloorNoticeHtml(outrageDiag)}
       <p class="chart-caption">
         X: out-degree (spread). Y: max outrage. Bright red = IU astroturf known bot.
-        Top-right quadrant = operational mitigation priority. Click a point to investigate.
+        ${noSpread ? "With no edges, all authors sit at X = 0." : "Top-right quadrant = operational mitigation priority."}
+        ${yCompressed ? ` Outrage scores are capped near ${outrageDiag.maxAuthorOutrage.toFixed(2)} (lexicon floor).` : ""}
+        Click a point to investigate.
       </p>
       <div class="chart-wrap chart-wrap-scatter">
         <canvas id="priority-scatter-chart" aria-label="Author prioritization scatter plot"></canvas>
@@ -160,14 +221,27 @@ export function priorityScatterPanelHtml(criticalCount: number): string {
 export function renderPriorityTargetList(
   listEl: HTMLElement,
   points: AuthorPriorityPoint[],
-  onAuthorSelect?: (point: AuthorPriorityPoint) => void
+  onAuthorSelect?: (point: AuthorPriorityPoint) => void,
+  edgeCount = 0,
+  outrageDiag?: OutrageDiagnostics
 ): void {
   const critical = points
     .filter((p) => p.critical)
     .sort((a, b) => b.x * b.y - a.x * a.y);
 
   if (critical.length === 0) {
-    listEl.innerHTML = "<li class='empty'>No authors in the critical quadrant for this narrative.</li>";
+    let msg = "No authors in the critical quadrant for this narrative.";
+    if (outrageDiag?.compressed && edgeCount === 0) {
+      msg =
+        "No relative targets in this compressed snapshot (X=0, outrage ≤ 0.15). Volume may be high while lexicon scores stay neutral—see Sentiment shift and theme/duplicate panels.";
+    } else if (outrageDiag?.compressed) {
+      msg =
+        "No authors above the relative outrage tier—lexicon scores are floored near zero for this narrative.";
+    } else if (edgeCount === 0) {
+      msg =
+        "No high-outrage targets flagged. Propagation graph has no edges, so spread (X) is zero for everyone—see diagnosis above.";
+    }
+    listEl.innerHTML = `<li class='empty'>${msg}</li>`;
     return;
   }
 
@@ -203,8 +277,12 @@ export function renderPriorityTargetList(
 export function mountPrioritizationScatter(
   canvas: HTMLCanvasElement,
   points: AuthorPriorityPoint[],
-  onAuthorSelect?: (point: AuthorPriorityPoint) => void
+  onAuthorSelect?: (point: AuthorPriorityPoint) => void,
+  edgeCount = 0,
+  outrageDiag?: OutrageDiagnostics
 ): { xMid: number; yMid: number } {
+  const noSpread = edgeCount === 0;
+  const yCompressed = outrageDiag?.compressed ?? false;
   if (activeChart) {
     activeChart.destroy();
     activeChart = null;
@@ -218,9 +296,21 @@ export function mountPrioritizationScatter(
     return { xMid: 0, yMid: 0 };
   }
 
-  const xMid = median(points.map((p) => p.x));
-  const yMid = median(points.map((p) => p.y));
-  const maxX = Math.max(1, ...points.map((p) => p.x));
+  const xValues = points.map((p) => p.x);
+  const yValues = points.map((p) => p.y);
+  const xMid = median(xValues);
+  const yMid = median(yValues);
+  const yGuide = yCompressed ? yPercentile75(points) : yMid;
+  const xHasSpread = hasSpread(xValues);
+  const yHasSpread = hasSpread(yValues);
+  const showVerticalQuadrant = !noSpread && xHasSpread && xMid > 0;
+  const showHorizontalQuadrant =
+    yHasSpread && yGuide > 0 && (yCompressed || yMid > 0);
+  const maxX = noSpread ? 1 : Math.max(1, ...xValues);
+  const maxY = Math.max(...yValues, 0);
+  const yAxisMax = yCompressed
+    ? Math.max(0.2, maxY + 0.04)
+    : 1;
 
   const bots = points.filter((p) => p.known_bot);
   const criticalOther = points.filter((p) => p.critical && !p.known_bot);
@@ -239,7 +329,11 @@ export function mountPrioritizationScatter(
           pointHoverRadius: 7,
         },
         {
-          label: "Critical (high spread + outrage)",
+          label: yCompressed
+            ? "Top tier (lexicon floor)"
+            : noSpread
+              ? "High outrage (no spread data)"
+              : "Critical (high spread + outrage)",
           data: criticalOther.map((p) => ({ x: p.x, y: p.y })),
           pointBackgroundColor: COLORS.critical,
           pointBorderColor: COLORS.criticalBorder,
@@ -302,11 +396,17 @@ export function mountPrioritizationScatter(
               const p = pool[item.dataIndex];
               if (!p) return "";
               return [
-                `Out-degree: ${p.x}`,
+                `Out-degree: ${p.x}${noSpread ? " (no propagation edges in ingest)" : ""}`,
                 `Max outrage: ${p.y.toFixed(3)}`,
                 `Posts: ${p.post_count}`,
                 p.known_bot ? "IU astroturf registry" : "",
-                p.critical ? "Critical quadrant" : "",
+                p.critical
+                  ? yCompressed
+                    ? "Top tier on lexicon floor"
+                    : noSpread
+                      ? "High outrage (X=0 wall)"
+                      : "Critical quadrant"
+                  : "",
               ].filter(Boolean);
             },
           },
@@ -318,7 +418,9 @@ export function mountPrioritizationScatter(
           max: maxX + 0.5,
           title: {
             display: true,
-            text: "Out-degree (spread)",
+            text: noSpread
+              ? "Out-degree (spread) — all zero: no edges"
+              : "Out-degree (spread)",
             color: COLORS.text,
           },
           ticks: { color: COLORS.text, stepSize: 1 },
@@ -326,10 +428,12 @@ export function mountPrioritizationScatter(
         },
         y: {
           min: 0,
-          max: 1,
+          max: yAxisMax,
           title: {
             display: true,
-            text: "Max outrage index",
+            text: yCompressed
+              ? `Max outrage (zoomed: ≤ ${OUTRAGE_COMPRESSION_THRESHOLD})`
+              : "Max outrage index",
             color: COLORS.text,
           },
           ticks: {
@@ -347,24 +451,80 @@ export function mountPrioritizationScatter(
           const { ctx, chartArea, scales } = chart;
           if (!chartArea) return;
 
-          const xPx = scales.x.getPixelForValue(xMid);
-          const yPx = scales.y.getPixelForValue(yMid);
+          const xPx = showVerticalQuadrant
+            ? scales.x.getPixelForValue(xMid)
+            : chartArea.left;
+          const yPx = showHorizontalQuadrant
+            ? scales.y.getPixelForValue(yGuide)
+            : chartArea.bottom;
 
           ctx.save();
           ctx.strokeStyle = COLORS.quadrant;
           ctx.lineWidth = 1;
           ctx.setLineDash([6, 4]);
           ctx.beginPath();
-          ctx.moveTo(xPx, chartArea.top);
-          ctx.lineTo(xPx, chartArea.bottom);
-          ctx.moveTo(chartArea.left, yPx);
-          ctx.lineTo(chartArea.right, yPx);
+          if (showVerticalQuadrant) {
+            ctx.moveTo(xPx, chartArea.top);
+            ctx.lineTo(xPx, chartArea.bottom);
+          }
+          if (showHorizontalQuadrant) {
+            ctx.moveTo(chartArea.left, yPx);
+            ctx.lineTo(chartArea.right, yPx);
+          }
           ctx.stroke();
           ctx.setLineDash([]);
 
           ctx.fillStyle = "rgba(245, 166, 35, 0.85)";
           ctx.font = "600 10px IBM Plex Sans, sans-serif";
-          ctx.fillText("CRITICAL", chartArea.right - 52, yPx - 6);
+          if (showVerticalQuadrant && showHorizontalQuadrant) {
+            const labelX = xPx + (chartArea.right - xPx) / 2 - 30;
+            const labelY = chartArea.top + 14;
+            ctx.fillText(yCompressed ? "TOP TIER" : "CRITICAL", labelX, labelY);
+          } else if (noSpread && yCompressed && showHorizontalQuadrant) {
+            ctx.fillText("TOP TIER", chartArea.right - 58, chartArea.top + 14);
+          }
+
+          if (noSpread) {
+            const x0 = scales.x.getPixelForValue(0);
+            ctx.strokeStyle = "rgba(192, 57, 43, 0.55)";
+            ctx.lineWidth = 2;
+            ctx.setLineDash([4, 3]);
+            ctx.beginPath();
+            ctx.moveTo(x0, chartArea.top);
+            ctx.lineTo(x0, chartArea.bottom);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.fillStyle = "rgba(192, 57, 43, 0.9)";
+            ctx.font = "600 10px IBM Plex Sans, sans-serif";
+            ctx.save();
+            ctx.translate(x0 + 6, chartArea.top + 48);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText("X = 0 wall", 0, 0);
+            ctx.restore();
+          }
+
+          if (yCompressed) {
+            const yFloor = scales.y.getPixelForValue(
+              OUTRAGE_COMPRESSION_THRESHOLD
+            );
+            if (yFloor <= chartArea.bottom && yFloor >= chartArea.top) {
+              ctx.strokeStyle = "rgba(245, 166, 35, 0.45)";
+              ctx.lineWidth = 1;
+              ctx.setLineDash([5, 4]);
+              ctx.beginPath();
+              ctx.moveTo(chartArea.left, yFloor);
+              ctx.lineTo(chartArea.right, yFloor);
+              ctx.stroke();
+              ctx.setLineDash([]);
+            }
+            ctx.fillStyle = "rgba(245, 166, 35, 0.9)";
+            ctx.font = "600 10px IBM Plex Sans, sans-serif";
+            ctx.fillText(
+              `Y ≤ ${OUTRAGE_COMPRESSION_THRESHOLD} floor`,
+              chartArea.left + 4,
+              chartArea.bottom - 6
+            );
+          }
           ctx.restore();
         },
       },

@@ -1,4 +1,8 @@
 import {
+  sentimentOutrageNoticeHtml,
+  type OutrageDiagnostics,
+} from "./outrage-diagnostics";
+import {
   BarController,
   BarElement,
   CategoryScale,
@@ -42,12 +46,17 @@ const COLORS = {
   volumeBorder: "rgba(138, 155, 179, 0.85)",
 };
 
-export function sentimentChartPanelHtml(trend: string): string {
+export function sentimentChartPanelHtml(
+  trend: string,
+  outrageDiag: OutrageDiagnostics
+): string {
   return `
-    <section class="panel panel-chart-wide">
+    <section class="panel panel-chart-wide" id="sentiment-chart-panel">
       <h2>Sentiment shift <span class="trend-pill">${trend}</span></h2>
+      ${sentimentOutrageNoticeHtml(outrageDiag)}
       <p class="chart-caption">
         Line: daily mean outrage (left axis). Bars: post volume that day (right axis).
+        ${outrageDiag.compressed ? "High bar + flat red line = volume without lexicon outrage signal." : ""}
         Click a day to filter posts below.
       </p>
       <div class="chart-wrap">
@@ -60,8 +69,14 @@ export function sentimentChartPanelHtml(trend: string): string {
 export function mountSentimentChart(
   canvas: HTMLCanvasElement,
   buckets: SentimentBucket[],
-  onDateSelect?: (date: string) => void
+  onDateSelect?: (date: string) => void,
+  outrageDiag?: OutrageDiagnostics
 ): void {
+  const yCompressed = outrageDiag?.compressed ?? false;
+  const maxMean = Math.max(...buckets.map((b) => b.mean_outrage), 0);
+  const outrageAxisMax = yCompressed
+    ? Math.max(0.2, maxMean + 0.05)
+    : 1;
   if (activeChart) {
     activeChart.destroy();
     activeChart = null;
@@ -154,10 +169,12 @@ export function mountSentimentChart(
           type: "linear",
           position: "left",
           min: 0,
-          max: 1,
+          max: outrageAxisMax,
           title: {
             display: true,
-            text: "Mean outrage",
+            text: yCompressed
+              ? "Mean outrage (zoomed: lexicon floor)"
+              : "Mean outrage",
             color: COLORS.text,
             font: { size: 11 },
           },

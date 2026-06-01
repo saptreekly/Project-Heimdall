@@ -48,6 +48,7 @@ import {
   priorityScatterPanelHtml,
   renderPriorityTargetList,
 } from "./prioritization-scatter";
+import { computeOutrageDiagnostics } from "./outrage-diagnostics";
 import { mountSentimentChart, sentimentChartPanelHtml } from "./sentiment-chart";
 import type { DuplicateCluster, NarrativeSummary, Post } from "./types";
 
@@ -56,6 +57,14 @@ let currentTab: AppTab = tabFromUrl();
 const rootEl = document.getElementById("app");
 if (!rootEl) throw new Error("#app missing");
 const root: HTMLElement = rootEl;
+
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+function scrollPageToTop(): void {
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+}
 
 function escapeHtml(s: string): string {
   return s
@@ -163,8 +172,6 @@ function updatePostsPanel(): void {
     }
   }
 
-  const first = host.querySelector<HTMLElement>(".post-item");
-  first?.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
 function applyInvestigation(authorId: string | null): void {
@@ -308,6 +315,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     const outrageVals = scored.map((p) => p.outrage_index as number);
     const authors = new Set(posts.map((p) => p.author_id));
     const avg = mean(outrageVals);
+    const outrageDiag = computeOutrageDiagnostics(posts, sentiment.buckets);
     const priorityPoints = buildAuthorPriorityPoints(graph, cib, posts);
     const criticalCount = priorityPoints.filter((p) => p.critical).length;
 
@@ -330,9 +338,9 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         </section>
       </div>
 
-      ${sentimentChartPanelHtml(escapeHtml(sentiment.trend))}
+      ${sentimentChartPanelHtml(escapeHtml(sentiment.trend), outrageDiag)}
 
-      ${priorityScatterPanelHtml(criticalCount)}
+      ${priorityScatterPanelHtml(criticalCount, graph.edges.length, outrageDiag)}
 
       ${graphPanelHtml(null)}
 
@@ -383,9 +391,14 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       "sentiment-timeline-chart"
     ) as HTMLCanvasElement | null;
     if (sentimentCanvas) {
-      mountSentimentChart(sentimentCanvas, sentiment.buckets, (date) => {
-        selectDate(date);
-      });
+      mountSentimentChart(
+        sentimentCanvas,
+        sentiment.buckets,
+        (date) => {
+          selectDate(date);
+        },
+        outrageDiag
+      );
     }
 
     const scatterCanvas = document.getElementById(
@@ -393,13 +406,21 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     ) as HTMLCanvasElement | null;
     const targetList = document.getElementById("priority-target-list");
     if (scatterCanvas) {
-      mountPrioritizationScatter(scatterCanvas, priorityPoints, (point) =>
-        pickAuthor(point.author_id, point.label)
+      mountPrioritizationScatter(
+        scatterCanvas,
+        priorityPoints,
+        (point) => pickAuthor(point.author_id, point.label),
+        graph.edges.length,
+        outrageDiag
       );
     }
     if (targetList) {
-      renderPriorityTargetList(targetList, priorityPoints, (point) =>
-        pickAuthor(point.author_id, point.label)
+      renderPriorityTargetList(
+        targetList,
+        priorityPoints,
+        (point) => pickAuthor(point.author_id, point.label),
+        graph.edges.length,
+        outrageDiag
       );
     }
 
@@ -431,9 +452,11 @@ async function loadDashboard(narrativeId: number): Promise<void> {
 
     bindInvestigationChrome();
     updatePostsPanel();
+    scrollPageToTop();
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     content.innerHTML = `<div class="error"><strong>Failed to load narrative ${narrativeId}</strong><p>${escapeHtml(msg)}</p></div>`;
+    scrollPageToTop();
   }
 }
 
@@ -485,6 +508,7 @@ async function bootstrap(): Promise<void> {
       narratives[0].id;
 
     root.innerHTML = shell(narratives, selected, getSnapshotGeneratedAt());
+    scrollPageToTop();
     bindTabNav(switchTab);
     bindDashboardControls(narratives, selected);
     showTabPanel(currentTab);

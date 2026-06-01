@@ -325,7 +325,7 @@ export function graphPanelHtml(meta: GraphLayoutMeta | null): string {
           : '<span class="topology-badge topology-sparse">sparse</span>';
 
   return `
-    <section class="panel graph-panel">
+    <section class="panel graph-panel" id="propagation-graph-panel">
       <h2>Propagation network ${badge}</h2>
       <p class="graph-legend">Loading graph…</p>
       <div class="graph-controls">
