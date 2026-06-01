@@ -1,12 +1,19 @@
 from dataclasses import dataclass, field
 
-from sqlalchemy import select
+from sqlalchemy import String, cast, select
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.orm import joinedload
 
 from heimdall.datasets.astroturf import lookup_labels
-from heimdall.db.models import InteractionEdge, Narrative, OutrageScore, Post
+from heimdall.db.models import InteractionEdge, Narrative, OutrageScore, Platform, Post
 from heimdall.graph.networkx_analysis import NarrativeGraphAnalyzer
+
+
+def _normalize_platform(raw: str) -> str:
+    key = (raw or "").strip().lower()
+    try:
+        return Platform(key).value
+    except ValueError:
+        return key or "unknown"
 
 
 @dataclass
@@ -30,42 +37,67 @@ async def build_graph_export(
     if not narrative:
         raise ValueError(f"Narrative {narrative_id} not found")
 
+    # Cast platform to string so legacy rows (e.g. MOCK) do not break Enum coercion.
     posts_result = await session.execute(
-        select(Post)
+        select(
+            Post.id,
+            Post.external_id,
+            cast(Post.platform, String),
+            Post.author_id,
+            Post.author_handle,
+            Post.text,
+            Post.posted_at,
+            OutrageScore.outrage_index,
+            OutrageScore.sentiment_label,
+        )
+        .outerjoin(OutrageScore, OutrageScore.post_id == Post.id)
         .where(Post.narrative_id == narrative_id)
-        .options(joinedload(Post.scores))
     )
-    posts = posts_result.unique().scalars().all()
+    rows = posts_result.all()
 
-    from heimdall.db.models import Platform
-
-    x_author_ids = list({post.author_id for post in posts if post.platform == Platform.X})
+    x_author_ids = list(
+        {
+            author_id
+            for _pid, _eid, platform_raw, author_id, *_rest in rows
+            if _normalize_platform(platform_raw) == Platform.X.value
+        }
+    )
     bot_labels = await lookup_labels(session, x_author_ids)
 
     author_map: dict[str, dict] = {}
     post_rows: list[dict] = []
-    for post in posts:
-        score = post.scores[0] if post.scores else None
+    for (
+        post_id,
+        external_id,
+        platform_raw,
+        author_id,
+        author_handle,
+        text,
+        posted_at,
+        outrage_index,
+        sentiment_label,
+    ) in rows:
+        outrage = outrage_index if outrage_index is not None else 0.0
+        platform = _normalize_platform(platform_raw)
         post_rows.append(
             {
-                "post_id": post.id,
-                "external_id": post.external_id,
-                "platform": post.platform.value,
-                "author_id": post.author_id,
-                "handle": post.author_handle,
-                "text": post.text[:500],
-                "posted_at": post.posted_at.isoformat(),
-                "outrage_index": score.outrage_index if score else 0.0,
-                "sentiment_label": score.sentiment_label if score else None,
+                "post_id": post_id,
+                "external_id": external_id,
+                "platform": platform,
+                "author_id": author_id,
+                "handle": author_handle,
+                "text": text[:500],
+                "posted_at": posted_at.isoformat(),
+                "outrage_index": outrage,
+                "sentiment_label": sentiment_label,
             }
         )
-        existing = author_map.get(post.author_id)
-        outrage = score.outrage_index if score else 0.0
-        bot_label = bot_labels.get(post.author_id)
+        existing = author_map.get(author_id)
+        bot_label = bot_labels.get(author_id)
         if not existing:
-            author_map[post.author_id] = {
-                "author_id": post.author_id,
-                "handle": post.author_handle,
+            author_map[author_id] = {
+                "author_id": author_id,
+                "handle": author_handle,
                 "max_outrage": outrage,
                 "post_count": 1,
                 "known_bot": bot_label is not None,
@@ -74,24 +106,30 @@ async def build_graph_export(
         else:
             existing["post_count"] += 1
             existing["max_outrage"] = max(existing["max_outrage"], outrage)
-            if post.author_handle:
-                existing["handle"] = post.author_handle
+            if author_handle:
+                existing["handle"] = author_handle
             if bot_label:
                 existing["known_bot"] = True
                 existing["bot_label"] = bot_label
 
     edges_result = await session.execute(
-        select(InteractionEdge).where(InteractionEdge.narrative_id == narrative_id)
+        select(
+            InteractionEdge.source_author_id,
+            InteractionEdge.target_author_id,
+            cast(InteractionEdge.interaction_type, String),
+            InteractionEdge.source_post_id,
+            InteractionEdge.target_post_id,
+        ).where(InteractionEdge.narrative_id == narrative_id)
     )
     amplifications = [
         {
-            "source": edge.source_author_id,
-            "target": edge.target_author_id,
-            "type": edge.interaction_type.value,
-            "source_post_id": edge.source_post_id,
-            "target_post_id": edge.target_post_id,
+            "source": source,
+            "target": target,
+            "type": (itype or "").strip().lower(),
+            "source_post_id": source_post_id,
+            "target_post_id": target_post_id,
         }
-        for edge in edges_result.scalars().all()
+        for source, target, itype, source_post_id, target_post_id in edges_result.all()
     ]
 
     cib_data = None

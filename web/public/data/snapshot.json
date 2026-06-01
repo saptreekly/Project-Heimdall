@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-01T00:25:30.553307+00:00",
+  "generated_at": "2026-06-01T00:44:56.016907+00:00",
   "narratives": [
     {
       "id": 1,
@@ -179,9 +179,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "bot_gamma",
+              "bot_alpha",
               "bot_beta",
-              "bot_alpha"
+              "bot_gamma"
             ]
           }
         ],
@@ -225,7 +225,11 @@
               6,
               2
             ],
-            "sample_text": "Wake up!!! border crisis  -  share before they delete this!!!"
+            "sample_text": "Wake up!!! border crisis  -  share before they delete this!!!",
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 28800.0,
+            "min_inter_arrival_seconds": 14400.0
           },
           {
             "count": 3,
@@ -240,7 +244,11 @@
               5,
               1
             ],
-            "sample_text": "They are destroying our country. border crisis is proof the elites hate you."
+            "sample_text": "They are destroying our country. border crisis is proof the elites hate you.",
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 28800.0,
+            "min_inter_arrival_seconds": 14400.0
           },
           {
             "count": 2,
@@ -253,7 +261,11 @@
               8,
               4
             ],
-            "sample_text": "Normal political disagreement on border crisis  -  we can disagree without hating each other."
+            "sample_text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 14400.0,
+            "min_inter_arrival_seconds": 14400.0
           },
           {
             "count": 2,
@@ -266,7 +278,106 @@
               7,
               3
             ],
-            "sample_text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?"
+            "sample_text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 14400.0,
+            "min_inter_arrival_seconds": 14400.0
+          }
+        ]
+      },
+      "graph": {
+        "authors": [
+          {
+            "author_id": "user_202",
+            "handle": "@user_202",
+            "max_outrage": 0.1468,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "user_101",
+            "handle": "@user_101",
+            "max_outrage": 0.1053,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "bot_beta",
+            "handle": "@bot_beta",
+            "max_outrage": 0.1468,
+            "post_count": 3,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "bot_alpha",
+            "handle": "@bot_alpha",
+            "max_outrage": 0.1053,
+            "post_count": 3,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "bot_gamma",
+            "handle": "@bot_gamma",
+            "max_outrage": 0.1468,
+            "post_count": 2,
+            "known_bot": false,
+            "bot_label": null
+          }
+        ],
+        "edges": [
+          {
+            "source": "bot_beta",
+            "target": "bot_alpha",
+            "type": "share",
+            "source_post_id": 2,
+            "target_post_id": 1
+          },
+          {
+            "source": "bot_gamma",
+            "target": "bot_alpha",
+            "type": "share",
+            "source_post_id": 3,
+            "target_post_id": 1
+          },
+          {
+            "source": "bot_alpha",
+            "target": "bot_alpha",
+            "type": "share",
+            "source_post_id": 4,
+            "target_post_id": 1
+          },
+          {
+            "source": "bot_beta",
+            "target": "bot_alpha",
+            "type": "share",
+            "source_post_id": 5,
+            "target_post_id": 1
+          },
+          {
+            "source": "bot_gamma",
+            "target": "bot_alpha",
+            "type": "share",
+            "source_post_id": 6,
+            "target_post_id": 1
+          },
+          {
+            "source": "bot_alpha",
+            "target": "bot_alpha",
+            "type": "share",
+            "source_post_id": 7,
+            "target_post_id": 1
+          },
+          {
+            "source": "bot_beta",
+            "target": "bot_alpha",
+            "type": "share",
+            "source_post_id": 8,
+            "target_post_id": 1
           }
         ]
       }
@@ -572,6 +683,163 @@
         "narrative_id": 2,
         "cluster_count": 0,
         "clusters": []
+      },
+      "graph": {
+        "authors": [
+          {
+            "author_id": "1741814742413430784",
+            "handle": "@Noal865671",
+            "max_outrage": 0.0077,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1649787160537513985",
+            "handle": "@Shaakir2032",
+            "max_outrage": 0.0008,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "3739250893",
+            "handle": "@KingPT23",
+            "max_outrage": 0.0011,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1542203714659930112",
+            "handle": "@Kenyergrof",
+            "max_outrage": 0.0,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1438664882283503617",
+            "handle": "@cakukman",
+            "max_outrage": 0.0018,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "85078411",
+            "handle": "@OliHeck",
+            "max_outrage": 0.0014,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "3326622373",
+            "handle": "@Anshumang003",
+            "max_outrage": 0.003,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "14125938",
+            "handle": "@schachin",
+            "max_outrage": 0.0004,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1773857863812714496",
+            "handle": "@BruceRoger57623",
+            "max_outrage": 0.0144,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "242539352",
+            "handle": "@marykirst",
+            "max_outrage": 0.0456,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1767053868964155392",
+            "handle": "@CutTheNarrative",
+            "max_outrage": 0.0012,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1589730510359740417",
+            "handle": "@LillianAberrr",
+            "max_outrage": 0.0045,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1749155115745882112",
+            "handle": "@C_Farthammer",
+            "max_outrage": 0.0873,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1820446355447566336",
+            "handle": "@gracefulkazoo",
+            "max_outrage": 0.1019,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1315109285202780160",
+            "handle": "@FlippinLid",
+            "max_outrage": 0.0006,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1670532417034043393",
+            "handle": "@CyberDivergent",
+            "max_outrage": 0.0059,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "393469195",
+            "handle": "@redsteeze",
+            "max_outrage": 0.0011,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "342512565",
+            "handle": "@THETOPICisCOOL",
+            "max_outrage": 0.004,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1768749602079940608",
+            "handle": "@Sm1th1972",
+            "max_outrage": 0.0102,
+            "post_count": 2,
+            "known_bot": false,
+            "bot_label": null
+          }
+        ],
+        "edges": []
       }
     },
     "3": {
@@ -1496,6 +1764,23 @@
         "cluster_count": 4,
         "clusters": [
           {
+            "count": 2,
+            "author_count": 2,
+            "author_ids": [
+              "1777383147950280706",
+              "1791965943431667712"
+            ],
+            "post_ids": [
+              34,
+              33
+            ],
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+            "burst_synchronized": false,
+            "burst_author_count": 2,
+            "cluster_span_seconds": 10.0,
+            "min_inter_arrival_seconds": 10.0
+          },
+          {
             "count": 4,
             "author_count": 1,
             "author_ids": [
@@ -1507,7 +1792,11 @@
               55,
               52
             ],
-            "sample_text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injusti\u2026"
+            "sample_text": "Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injusti\u2026",
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 279187.0,
+            "min_inter_arrival_seconds": 23293.0
           },
           {
             "count": 3,
@@ -1520,7 +1809,11 @@
               49,
               48
             ],
-            "sample_text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE"
+            "sample_text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 401.0,
+            "min_inter_arrival_seconds": 30.0
           },
           {
             "count": 2,
@@ -1533,22 +1826,578 @@
               59,
               57
             ],
-            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026"
-          },
-          {
-            "count": 2,
-            "author_count": 2,
-            "author_ids": [
-              "1777383147950280706",
-              "1791965943431667712"
-            ],
-            "post_ids": [
-              34,
-              33
-            ],
-            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for."
+            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 78132.0,
+            "min_inter_arrival_seconds": 78132.0
           }
         ]
+      },
+      "graph": {
+        "authors": [
+          {
+            "author_id": "876574565228589059",
+            "handle": "@GaleGalebay",
+            "max_outrage": 0.0424,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1518777787213041665",
+            "handle": "@patriot_hammer",
+            "max_outrage": 0.0582,
+            "post_count": 4,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1663554933516541952",
+            "handle": "@StefanPadfield",
+            "max_outrage": 0.0023,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "168979883",
+            "handle": "@1ReesieMula",
+            "max_outrage": 0.1144,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "2335639944",
+            "handle": "@ACupOf_Ki",
+            "max_outrage": 0.1144,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1916101126832750592",
+            "handle": "@TheDebriefing17",
+            "max_outrage": 0.0628,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1981085696665227264",
+            "handle": "@ruok_2day",
+            "max_outrage": 0.148,
+            "post_count": 4,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1604152121267568642",
+            "handle": "@Analou494",
+            "max_outrage": 0.0066,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "242120323",
+            "handle": "@eprocentteam",
+            "max_outrage": 0.0049,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "940578242",
+            "handle": "@Shamoo5618",
+            "max_outrage": 0.0029,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "2032006783162859521",
+            "handle": "@dear_lyingcat",
+            "max_outrage": 0.012,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "258061182",
+            "handle": "@franyafranya",
+            "max_outrage": 0.0312,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1472102387158503424",
+            "handle": "@LordBotha",
+            "max_outrage": 0.0017,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "602615359",
+            "handle": "@micyoung75",
+            "max_outrage": 0.0014,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1271439514460753920",
+            "handle": "@treasuremenfess",
+            "max_outrage": 0.0216,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1919792248817946624",
+            "handle": "@GovLake",
+            "max_outrage": 0.0028,
+            "post_count": 2,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1349664211257839617",
+            "handle": "@Hevrjrdkkskenr1",
+            "max_outrage": 0.0,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "554118761",
+            "handle": "@PAOTZEPG",
+            "max_outrage": 0.0038,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "34771939",
+            "handle": "@BrentScher",
+            "max_outrage": 0.001,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1989122130785849344",
+            "handle": "@PhillipMcD28501",
+            "max_outrage": 0.01,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1971266198588227584",
+            "handle": "@DavidDewar61",
+            "max_outrage": 0.1034,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1029489969885261832",
+            "handle": "@jim_dorsch",
+            "max_outrage": 0.0044,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1287596172",
+            "handle": "@Aurora_770z",
+            "max_outrage": 0.0325,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "2907776307",
+            "handle": "@ThePhoenixXM",
+            "max_outrage": 0.0032,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "144810335",
+            "handle": "@RYEOTEM",
+            "max_outrage": 0.012,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1663978801850662927",
+            "handle": "@Firestar0797",
+            "max_outrage": 0.002,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1386641209829957633",
+            "handle": "@_ppspace",
+            "max_outrage": 0.012,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1168002791865847808",
+            "handle": "@Socdem_Michael",
+            "max_outrage": 0.0011,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1332618297099993090",
+            "handle": "@AD__MINARAI",
+            "max_outrage": 0.012,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1470033028756152320",
+            "handle": "@MINI__Radio",
+            "max_outrage": 0.0216,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1712589743073148928",
+            "handle": "@slimefren132450",
+            "max_outrage": 0.0013,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1585733443194802176",
+            "handle": "@EssYouEssWhy",
+            "max_outrage": 0.0083,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "7458942",
+            "handle": "@Eduflack",
+            "max_outrage": 0.0039,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1823004756568346624",
+            "handle": "@Christinkook",
+            "max_outrage": 0.0358,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1181799415",
+            "handle": "@Q17_Anon_",
+            "max_outrage": 0.012,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1680566619695874048",
+            "handle": "@rogue185263",
+            "max_outrage": 0.0216,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1430216392343687174",
+            "handle": "@OpenSourceZone",
+            "max_outrage": 0.0081,
+            "post_count": 2,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "2039329118244761600",
+            "handle": "@HaddadEmil62766",
+            "max_outrage": 0.012,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "2008989490929651712",
+            "handle": "@Saeed1094601",
+            "max_outrage": 0.0026,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1828163680497737728",
+            "handle": "@michael_je98504",
+            "max_outrage": 0.0416,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "21361969",
+            "handle": "@jcmeadows",
+            "max_outrage": 0.0276,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1765473979559804928",
+            "handle": "@MAGAXDoggX",
+            "max_outrage": 0.0271,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "2045140211751899136",
+            "handle": "@wiseronenow2",
+            "max_outrage": 0.0023,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "793658020743876608",
+            "handle": "@509ShawnG",
+            "max_outrage": 0.0031,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1858795685845299200",
+            "handle": "@elizabe56470431",
+            "max_outrage": 0.0078,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "830888476539232257",
+            "handle": "@WLuem",
+            "max_outrage": 0.0117,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "38250654",
+            "handle": "@thuy1975",
+            "max_outrage": 0.0131,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "720664083767435264",
+            "handle": "@CyberScoopNews",
+            "max_outrage": 0.0015,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "46520074",
+            "handle": "@WesternJournalX",
+            "max_outrage": 0.0031,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "27511251",
+            "handle": "@KrisssCrosss",
+            "max_outrage": 0.0027,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "28265648",
+            "handle": "@stevesgirl56",
+            "max_outrage": 0.0073,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "41475976",
+            "handle": "@simplyemc",
+            "max_outrage": 0.0268,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1344196888552075265",
+            "handle": "@ElectionTime_",
+            "max_outrage": 0.0097,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1827527511498006528",
+            "handle": "@PollTracker2024",
+            "max_outrage": 0.0023,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1825024513840713728",
+            "handle": "@MichaelT1250",
+            "max_outrage": 0.0079,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1567634104224456705",
+            "handle": "@Retired_Infidel",
+            "max_outrage": 0.081,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1352771896262029314",
+            "handle": "@jarbot15",
+            "max_outrage": 0.0023,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1855095207450066944",
+            "handle": "@IAMZORRO366723",
+            "max_outrage": 0.1192,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "3407699637",
+            "handle": "@3beesbuzz",
+            "max_outrage": 0.0087,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "876877259973505024",
+            "handle": "@kenny_siciliano",
+            "max_outrage": 0.0015,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "480701723",
+            "handle": "@TigerSharkLover",
+            "max_outrage": 0.0074,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1923828566443065344",
+            "handle": "@AjayJarret31000",
+            "max_outrage": 0.0026,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "24198415",
+            "handle": "@MichaelARothman",
+            "max_outrage": 0.0076,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1466263472132423681",
+            "handle": "@Raebo56",
+            "max_outrage": 0.0023,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1648149942190632961",
+            "handle": "@curiouscammie",
+            "max_outrage": 0.0037,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1791965943431667712",
+            "handle": "@yazi_the",
+            "max_outrage": 0.0015,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1777383147950280706",
+            "handle": "@permit75592",
+            "max_outrage": 0.0015,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1828029219277791232",
+            "handle": "@TheBenTurner83",
+            "max_outrage": 0.0034,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1760317411390054400",
+            "handle": "@Willowthorns777",
+            "max_outrage": 0.0018,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "373607124",
+            "handle": "@pamalamalamala2",
+            "max_outrage": 0.0057,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          }
+        ],
+        "edges": []
       }
     },
     "4": {
@@ -1763,9 +2612,98 @@
               114,
               113
             ],
-            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for."
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+            "burst_synchronized": false,
+            "burst_author_count": 2,
+            "cluster_span_seconds": 10.0,
+            "min_inter_arrival_seconds": 10.0
           }
         ]
+      },
+      "graph": {
+        "authors": [
+          {
+            "author_id": "1923828566443065344",
+            "handle": "@AjayJarret31000",
+            "max_outrage": 0.0026,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "24198415",
+            "handle": "@MichaelARothman",
+            "max_outrage": 0.0076,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1466263472132423681",
+            "handle": "@Raebo56",
+            "max_outrage": 0.0023,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1648149942190632961",
+            "handle": "@curiouscammie",
+            "max_outrage": 0.0037,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1791965943431667712",
+            "handle": "@yazi_the",
+            "max_outrage": 0.0015,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1777383147950280706",
+            "handle": "@permit75592",
+            "max_outrage": 0.0015,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1828029219277791232",
+            "handle": "@TheBenTurner83",
+            "max_outrage": 0.0034,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1760317411390054400",
+            "handle": "@Willowthorns777",
+            "max_outrage": 0.0018,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "373607124",
+            "handle": "@pamalamalamala2",
+            "max_outrage": 0.0057,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "2497137228",
+            "handle": "@ChetRusinek",
+            "max_outrage": 0.0139,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          }
+        ],
+        "edges": []
       }
     }
   }
