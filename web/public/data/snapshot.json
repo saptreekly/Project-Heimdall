@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-01T00:09:41.325538+00:00",
+  "generated_at": "2026-06-01T00:10:17.566544+00:00",
   "narratives": [
     {
       "id": 1,
@@ -173,8 +173,8 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "bot_alpha",
               "bot_beta",
+              "bot_alpha",
               "bot_gamma"
             ]
           }
