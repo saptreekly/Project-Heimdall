@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "generated_at": "2026-06-01T22:53:34.544101+00:00",
+  "version": 3,
+  "generated_at": "2026-06-01T23:16:02.885211+00:00",
   "narratives": [
     {
       "id": 1,
@@ -42,6 +42,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 0,
           "copypasta_score": 0.0833,
           "status_url": null
         },
@@ -57,6 +58,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 1,
           "copypasta_score": 0.1,
           "status_url": null
         },
@@ -72,6 +74,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 2,
           "copypasta_score": 0.0741,
           "status_url": null
         },
@@ -87,6 +90,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 3,
           "copypasta_score": 1.0,
           "status_url": null
         },
@@ -102,6 +106,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 0,
           "copypasta_score": 0.0833,
           "status_url": null
         },
@@ -117,6 +122,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 1,
           "copypasta_score": 0.1,
           "status_url": null
         },
@@ -132,6 +138,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 2,
           "copypasta_score": 0.0741,
           "status_url": null
         },
@@ -147,6 +154,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 3,
           "copypasta_score": 1.0,
           "status_url": null
         },
@@ -162,6 +170,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 0,
           "copypasta_score": 0.0833,
           "status_url": null
         },
@@ -177,16 +186,21 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 1,
           "copypasta_score": 0.1,
           "status_url": null
         }
       ],
       "cib": {
         "narrative_id": 1,
-        "suspicion_score": 0.15,
-        "organic_score": 0.85,
+        "suspicion_score": 0.55,
+        "organic_score": 0.45,
         "signals": [
-          "dense_cluster_2_size_3"
+          "dense_cluster_2_size_3",
+          "cross_author_fuzzy_3authors_3posts_j1.00",
+          "cross_author_fuzzy_3authors_3posts_j1.00",
+          "cross_author_fuzzy_2authors_2posts_j1.00",
+          "cross_author_fuzzy_2authors_2posts_j1.00"
         ],
         "node_count": 5,
         "edge_count": 3,
@@ -229,9 +243,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "bot_alpha",
               "bot_gamma",
-              "bot_beta"
+              "bot_beta",
+              "bot_alpha"
             ]
           }
         ],
@@ -338,8 +352,97 @@
       },
       "near_duplicates": {
         "threshold": 0.82,
+        "default_threshold": 0.82,
+        "threshold_min": 0.55,
+        "threshold_max": 0.98,
+        "threshold_step": 0.01,
+        "threshold_live": true,
+        "same_author_group_count": 0,
         "group_count": 0,
         "groups": [],
+        "cross_author_fuzzy_count": 4,
+        "cross_author_fuzzy": [
+          {
+            "cluster_id": 0,
+            "post_ids": [
+              1,
+              5,
+              9
+            ],
+            "author_ids": [
+              "bot_alpha",
+              "bot_beta",
+              "user_101"
+            ],
+            "author_count": 3,
+            "count": 3,
+            "sample_text": "They are destroying our country. border crisis is proof the elites hate you.",
+            "max_similarity": 1.0,
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 28800.0,
+            "min_inter_arrival_seconds": 14400.0
+          },
+          {
+            "cluster_id": 1,
+            "post_ids": [
+              2,
+              6,
+              10
+            ],
+            "author_ids": [
+              "bot_beta",
+              "bot_gamma",
+              "user_202"
+            ],
+            "author_count": 3,
+            "count": 3,
+            "sample_text": "Wake up!!! border crisis  -  share before they delete this!!!",
+            "max_similarity": 1.0,
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 28800.0,
+            "min_inter_arrival_seconds": 14400.0
+          },
+          {
+            "cluster_id": 2,
+            "post_ids": [
+              3,
+              7
+            ],
+            "author_ids": [
+              "bot_alpha",
+              "bot_gamma"
+            ],
+            "author_count": 2,
+            "count": 2,
+            "sample_text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
+            "max_similarity": 1.0,
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 14400.0,
+            "min_inter_arrival_seconds": 14400.0
+          },
+          {
+            "cluster_id": 3,
+            "post_ids": [
+              4,
+              8
+            ],
+            "author_ids": [
+              "bot_alpha",
+              "bot_beta"
+            ],
+            "author_count": 2,
+            "count": 2,
+            "sample_text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
+            "max_similarity": 1.0,
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 14400.0,
+            "min_inter_arrival_seconds": 14400.0
+          }
+        ],
         "author_summaries": [
           {
             "author_id": "bot_alpha",
@@ -366,6 +469,11 @@
             "near_duplicate_count": 0
           }
         ]
+      },
+      "cross_pollination_hits": {
+        "narrative_id": 1,
+        "hit_count": 0,
+        "actors": []
       },
       "graph": {
         "authors": [
@@ -662,6 +770,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0435,
           "status_url": "https://x.com/i/web/status/2061219722939515258"
         },
@@ -677,6 +786,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0465,
           "status_url": "https://x.com/i/web/status/2061219723119866277"
         },
@@ -692,6 +802,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0606,
           "status_url": "https://x.com/i/web/status/2061219651598835782"
         },
@@ -707,6 +818,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0441,
           "status_url": "https://x.com/i/web/status/2061216348957802517"
         },
@@ -722,6 +834,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0794,
           "status_url": "https://x.com/i/web/status/2061212239609446826"
         },
@@ -737,6 +850,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0526,
           "status_url": "https://x.com/i/web/status/2061211251259437498"
         },
@@ -752,6 +866,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.04,
           "status_url": "https://x.com/i/web/status/2061205709635952746"
         },
@@ -767,6 +882,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.027,
           "status_url": "https://x.com/i/web/status/2061187389838512403"
         },
@@ -782,6 +898,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0625,
           "status_url": "https://x.com/i/web/status/2061182844622246176"
         },
@@ -797,6 +914,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0909,
           "status_url": "https://x.com/i/web/status/2061182221541622078"
         },
@@ -812,6 +930,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0278,
           "status_url": "https://x.com/i/web/status/2061179418538856685"
         },
@@ -827,6 +946,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0517,
           "status_url": "https://x.com/i/web/status/2061177156512731552"
         },
@@ -842,6 +962,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0615,
           "status_url": "https://x.com/i/web/status/2061169029751193984"
         },
@@ -857,6 +978,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 1.0,
           "status_url": "https://x.com/i/web/status/2061161223853330885"
         },
@@ -872,6 +994,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.04,
           "status_url": "https://x.com/i/web/status/2061153694448497138"
         },
@@ -887,6 +1010,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0597,
           "status_url": "https://x.com/i/web/status/2061141644775190634"
         },
@@ -902,6 +1026,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0606,
           "status_url": "https://x.com/i/web/status/2061134572041990355"
         },
@@ -917,6 +1042,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0556,
           "status_url": "https://x.com/i/web/status/2061128839443689584"
         },
@@ -932,6 +1058,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0469,
           "status_url": "https://x.com/i/web/status/2061128536769827300"
         },
@@ -947,6 +1074,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0377,
           "status_url": "https://x.com/i/web/status/2061125541894230170"
         }
@@ -1052,9 +1180,22 @@
       },
       "near_duplicates": {
         "threshold": 0.82,
+        "default_threshold": 0.82,
+        "threshold_min": 0.55,
+        "threshold_max": 0.98,
+        "threshold_step": 0.01,
+        "threshold_live": true,
+        "same_author_group_count": 0,
         "group_count": 0,
         "groups": [],
+        "cross_author_fuzzy_count": 0,
+        "cross_author_fuzzy": [],
         "author_summaries": []
+      },
+      "cross_pollination_hits": {
+        "narrative_id": 2,
+        "hit_count": 0,
+        "actors": []
       },
       "graph": {
         "authors": [
@@ -1435,6 +1576,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.05,
           "status_url": "https://x.com/i/web/status/2061579795696386550"
         },
@@ -1450,6 +1592,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061577713891106923"
         },
@@ -1465,6 +1608,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0294,
           "status_url": "https://x.com/i/web/status/2061574762501968149"
         },
@@ -1480,6 +1624,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0441,
           "status_url": "https://x.com/i/web/status/2061570232649744620"
         },
@@ -1495,6 +1640,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0312,
           "status_url": "https://x.com/i/web/status/2061570145148125280"
         },
@@ -1510,6 +1656,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0426,
           "status_url": "https://x.com/i/web/status/2061568914266448213"
         },
@@ -1525,6 +1672,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.025,
           "status_url": "https://x.com/i/web/status/2061567999908475151"
         },
@@ -1540,6 +1688,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0282,
           "status_url": "https://x.com/i/web/status/2061566998279057605"
         },
@@ -1555,6 +1704,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0548,
           "status_url": "https://x.com/i/web/status/2061560985295434114"
         },
@@ -1570,6 +1720,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0441,
           "status_url": "https://x.com/i/web/status/2061559227760734610"
         },
@@ -1585,6 +1736,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0519,
           "status_url": "https://x.com/i/web/status/2061557237886177424"
         },
@@ -1600,6 +1752,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.037,
           "status_url": "https://x.com/i/web/status/2061557049847132344"
         },
@@ -1615,6 +1768,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0303,
           "status_url": "https://x.com/i/web/status/2061556694589608128"
         },
@@ -1630,6 +1784,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0278,
           "status_url": "https://x.com/i/web/status/2061555984066101443"
         },
@@ -1645,6 +1800,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0411,
           "status_url": "https://x.com/i/web/status/2061555636371062955"
         },
@@ -1660,6 +1816,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0286,
           "status_url": "https://x.com/i/web/status/2061555491034005997"
         },
@@ -1675,6 +1832,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0323,
           "status_url": "https://x.com/i/web/status/2061552924405248438"
         },
@@ -1690,6 +1848,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0267,
           "status_url": "https://x.com/i/web/status/2061549650226958395"
         },
@@ -1705,6 +1864,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0441,
           "status_url": "https://x.com/i/web/status/2061547709891215507"
         },
@@ -1720,6 +1880,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 0,
           "copypasta_score": 0.0286,
           "status_url": "https://x.com/i/web/status/2061547195472703818"
         },
@@ -1735,6 +1896,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0417,
           "status_url": "https://x.com/i/web/status/2061538811503579152"
         },
@@ -1750,6 +1912,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.025,
           "status_url": "https://x.com/i/web/status/2061538622357098581"
         },
@@ -1765,6 +1928,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 0,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0429,
           "status_url": "https://x.com/i/web/status/2061531487670038756"
         },
@@ -1780,6 +1944,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0339,
           "status_url": "https://x.com/i/web/status/2061529103518351607"
         },
@@ -1795,6 +1960,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 1,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0299,
           "status_url": "https://x.com/i/web/status/2061526545160675539"
         },
@@ -1810,6 +1976,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 1,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0299,
           "status_url": "https://x.com/i/web/status/2061526394543235442"
         },
@@ -1825,6 +1992,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0444,
           "status_url": "https://x.com/i/web/status/2061523424736874701"
         },
@@ -1840,6 +2008,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0571,
           "status_url": "https://x.com/i/web/status/2061521707006124488"
         },
@@ -1855,6 +2024,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0323,
           "status_url": "https://x.com/i/web/status/2061516706573402172"
         },
@@ -1870,6 +2040,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0392,
           "status_url": "https://x.com/i/web/status/2061515840277647608"
         },
@@ -1885,6 +2056,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.058,
           "status_url": "https://x.com/i/web/status/2061506682514284970"
         },
@@ -1900,6 +2072,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.027,
           "status_url": "https://x.com/i/web/status/2061504616353714500"
         },
@@ -1915,6 +2088,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0317,
           "status_url": "https://x.com/i/web/status/2061504593071387131"
         },
@@ -1930,6 +2104,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 0,
           "copypasta_score": 0.0294,
           "status_url": "https://x.com/i/web/status/2061503073932243350"
         },
@@ -1945,6 +2120,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0317,
           "status_url": "https://x.com/i/web/status/2061500189198983515"
         },
@@ -1960,6 +2136,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0278,
           "status_url": "https://x.com/i/web/status/2061491443424989224"
         },
@@ -1975,6 +2152,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.04,
           "status_url": "https://x.com/i/web/status/2061491325967446207"
         },
@@ -1990,6 +2168,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 2,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0282,
           "status_url": "https://x.com/i/web/status/2061491231025512631"
         },
@@ -2005,6 +2184,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0377,
           "status_url": "https://x.com/i/web/status/2061490369058238577"
         },
@@ -2020,6 +2200,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 2,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0282,
           "status_url": "https://x.com/i/web/status/2061486963417608250"
         },
@@ -2035,6 +2216,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0147,
           "status_url": "https://x.com/i/web/status/2061486859457286410"
         },
@@ -2050,6 +2232,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0408,
           "status_url": "https://x.com/i/web/status/2061484999447073212"
         },
@@ -2065,6 +2248,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.025,
           "status_url": "https://x.com/i/web/status/2061484296779575646"
         },
@@ -2080,6 +2264,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0278,
           "status_url": "https://x.com/i/web/status/2061483749519347847"
         },
@@ -2095,6 +2280,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0172,
           "status_url": "https://x.com/i/web/status/2061483654707073523"
         },
@@ -2110,6 +2296,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0263,
           "status_url": "https://x.com/i/web/status/2061480231077044352"
         },
@@ -2125,6 +2312,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.037,
           "status_url": "https://x.com/i/web/status/2061478222357835877"
         },
@@ -2140,6 +2328,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0417,
           "status_url": "https://x.com/i/web/status/2061477119302246767"
         },
@@ -2155,6 +2344,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0357,
           "status_url": "https://x.com/i/web/status/2061474232710664480"
         },
@@ -2170,6 +2360,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0375,
           "status_url": "https://x.com/i/web/status/2061473617905643878"
         },
@@ -2185,6 +2376,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0455,
           "status_url": "https://x.com/i/web/status/2061472323115381129"
         },
@@ -2200,6 +2392,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0377,
           "status_url": "https://x.com/i/web/status/2061471831476056464"
         },
@@ -2215,6 +2408,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0357,
           "status_url": "https://x.com/i/web/status/2061471120579076228"
         },
@@ -2230,6 +2424,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.029,
           "status_url": "https://x.com/i/web/status/2061469633954103754"
         },
@@ -2245,6 +2440,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0395,
           "status_url": "https://x.com/i/web/status/2061469217833058589"
         },
@@ -2260,6 +2456,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0339,
           "status_url": "https://x.com/i/web/status/2061463525495611562"
         },
@@ -2275,6 +2472,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0417,
           "status_url": "https://x.com/i/web/status/2061457746638123207"
         },
@@ -2290,6 +2488,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0263,
           "status_url": "https://x.com/i/web/status/2061457081501098221"
         },
@@ -2305,6 +2504,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.027,
           "status_url": "https://x.com/i/web/status/2061452463203344864"
         },
@@ -2320,6 +2520,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0241,
           "status_url": "https://x.com/i/web/status/2061449457879691380"
         },
@@ -2335,6 +2536,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0317,
           "status_url": "https://x.com/i/web/status/2061444289427657082"
         },
@@ -2350,6 +2552,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0519,
           "status_url": "https://x.com/i/web/status/2061443662370763005"
         },
@@ -2365,6 +2568,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0256,
           "status_url": "https://x.com/i/web/status/2061442196763562049"
         },
@@ -2380,6 +2584,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0267,
           "status_url": "https://x.com/i/web/status/2061442028034990387"
         },
@@ -2395,6 +2600,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061441575092183265"
         },
@@ -2410,6 +2616,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0333,
           "status_url": "https://x.com/i/web/status/2061437609143095498"
         },
@@ -2425,6 +2632,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.037,
           "status_url": "https://x.com/i/web/status/2061428828442914875"
         },
@@ -2440,6 +2648,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0526,
           "status_url": "https://x.com/i/web/status/2061424751558406314"
         },
@@ -2455,6 +2664,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0417,
           "status_url": "https://x.com/i/web/status/2061423503224561957"
         },
@@ -2470,6 +2680,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0364,
           "status_url": "https://x.com/i/web/status/2061420634610024525"
         },
@@ -2485,6 +2696,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0256,
           "status_url": "https://x.com/i/web/status/2061370632059642272"
         },
@@ -2500,6 +2712,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0395,
           "status_url": "https://x.com/i/web/status/2061366468613222453"
         },
@@ -2515,6 +2728,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0227,
           "status_url": "https://x.com/i/web/status/2061342058145792313"
         },
@@ -2530,6 +2744,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.04,
           "status_url": "https://x.com/i/web/status/2061340283988500790"
         },
@@ -2545,6 +2760,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0484,
           "status_url": "https://x.com/i/web/status/2061335926576456123"
         },
@@ -2560,6 +2776,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0263,
           "status_url": "https://x.com/i/web/status/2061319130448560348"
         },
@@ -2575,6 +2792,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0256,
           "status_url": "https://x.com/i/web/status/2061317505864651196"
         },
@@ -2590,6 +2808,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 1.0,
           "status_url": "https://x.com/i/web/status/2061304315348693001"
         },
@@ -2605,6 +2824,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": 3,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061304103347601572"
         },
@@ -2620,6 +2840,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0429,
           "status_url": "https://x.com/i/web/status/2061301055711744018"
         },
@@ -2635,6 +2856,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.013,
           "status_url": "https://x.com/i/web/status/2061291456996999361"
         },
@@ -2650,6 +2872,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0323,
           "status_url": "https://x.com/i/web/status/2061275985878667421"
         },
@@ -2665,6 +2888,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0375,
           "status_url": "https://x.com/i/web/status/2061273692785758661"
         },
@@ -2680,6 +2904,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0417,
           "status_url": "https://x.com/i/web/status/2061273183626703200"
         },
@@ -2695,6 +2920,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0408,
           "status_url": "https://x.com/i/web/status/2061269970495922233"
         },
@@ -2710,6 +2936,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0411,
           "status_url": "https://x.com/i/web/status/2061269518102491570"
         },
@@ -2725,6 +2952,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0282,
           "status_url": "https://x.com/i/web/status/2061266028961927213"
         },
@@ -2740,6 +2968,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.037,
           "status_url": "https://x.com/i/web/status/2061259164643672109"
         },
@@ -2755,6 +2984,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 4,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0317,
           "status_url": "https://x.com/i/web/status/2061259017297723597"
         },
@@ -2770,6 +3000,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0533,
           "status_url": "https://x.com/i/web/status/2061258999186461133"
         },
@@ -2785,6 +3016,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 4,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0317,
           "status_url": "https://x.com/i/web/status/2061258795100361079"
         },
@@ -2800,6 +3032,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 4,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0317,
           "status_url": "https://x.com/i/web/status/2061258752129630489"
         },
@@ -2815,6 +3048,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0267,
           "status_url": "https://x.com/i/web/status/2061258480649199833"
         },
@@ -2830,6 +3064,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": 3,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061257730552193534"
         },
@@ -2845,6 +3080,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": 3,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061257045072892271"
         },
@@ -2860,6 +3096,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 3,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061256144773865483"
         },
@@ -2875,6 +3112,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": 3,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061255106050326625"
         },
@@ -2890,6 +3128,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": 3,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061255007530332344"
         },
@@ -2905,6 +3144,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0435,
           "status_url": "https://x.com/i/web/status/2061253570092015976"
         },
@@ -2920,6 +3160,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0317,
           "status_url": "https://x.com/i/web/status/2061252721320030278"
         },
@@ -2935,6 +3176,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0533,
           "status_url": "https://x.com/i/web/status/2061251633808380351"
         },
@@ -2950,6 +3192,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": 3,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061250767915270603"
         },
@@ -2965,6 +3208,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0256,
           "status_url": "https://x.com/i/web/status/2061249919373988165"
         },
@@ -2980,6 +3224,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0323,
           "status_url": "https://x.com/i/web/status/2061247686611988966"
         },
@@ -2995,6 +3240,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0533,
           "status_url": "https://x.com/i/web/status/2061242555740909767"
         },
@@ -3010,6 +3256,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0526,
           "status_url": "https://x.com/i/web/status/2061230427134636228"
         },
@@ -3025,6 +3272,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 2,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0282,
           "status_url": "https://x.com/i/web/status/2061224392471007671"
         },
@@ -3040,6 +3288,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0339,
           "status_url": "https://x.com/i/web/status/2061217925415981202"
         },
@@ -3055,6 +3304,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0517,
           "status_url": "https://x.com/i/web/status/2061217850296090717"
         },
@@ -3070,6 +3320,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 1,
           "copypasta_score": 0.0274,
           "status_url": "https://x.com/i/web/status/2061217468358512725"
         },
@@ -3085,6 +3336,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 1,
           "copypasta_score": 0.0274,
           "status_url": "https://x.com/i/web/status/2061217426826576263"
         },
@@ -3100,6 +3352,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0588,
           "status_url": "https://x.com/i/web/status/2061210826439348280"
         },
@@ -3115,6 +3368,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0253,
           "status_url": "https://x.com/i/web/status/2061210659107590258"
         },
@@ -3130,6 +3384,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 0,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0429,
           "status_url": "https://x.com/i/web/status/2061209413877457099"
         },
@@ -3145,6 +3400,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0323,
           "status_url": "https://x.com/i/web/status/2061200921510433213"
         },
@@ -3160,6 +3416,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0175,
           "status_url": "https://x.com/i/web/status/2061199132065202623"
         },
@@ -3175,6 +3432,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0426,
           "status_url": "https://x.com/i/web/status/2061197121882099962"
         },
@@ -3190,6 +3448,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0377,
           "status_url": "https://x.com/i/web/status/2061196797725524322"
         },
@@ -3205,6 +3464,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": 3,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2061190793902145970"
         },
@@ -3220,6 +3480,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0256,
           "status_url": "https://x.com/i/web/status/2061184283025572035"
         },
@@ -3235,6 +3496,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0476,
           "status_url": "https://x.com/i/web/status/2061182153203835015"
         },
@@ -3250,6 +3512,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0172,
           "status_url": "https://x.com/i/web/status/2061181219275198761"
         },
@@ -3265,6 +3528,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0274,
           "status_url": "https://x.com/i/web/status/2061175503776866503"
         },
@@ -3280,6 +3544,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0139,
           "status_url": "https://x.com/i/web/status/2061172239832396058"
         },
@@ -3295,6 +3560,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0125,
           "status_url": "https://x.com/i/web/status/2061167190758281528"
         },
@@ -3310,6 +3576,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0139,
           "status_url": "https://x.com/i/web/status/2061161788108865732"
         },
@@ -3325,6 +3592,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0141,
           "status_url": "https://x.com/i/web/status/2061158715223363744"
         },
@@ -3340,6 +3608,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0256,
           "status_url": "https://x.com/i/web/status/2061156067250499704"
         },
@@ -3355,6 +3624,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0167,
           "status_url": "https://x.com/i/web/status/2061151123986096261"
         },
@@ -3370,6 +3640,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0149,
           "status_url": "https://x.com/i/web/status/2061145688415584483"
         },
@@ -3385,6 +3656,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0217,
           "status_url": "https://x.com/i/web/status/2061143869362700444"
         },
@@ -3400,6 +3672,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0196,
           "status_url": "https://x.com/i/web/status/2061136189055291485"
         },
@@ -3415,6 +3688,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0189,
           "status_url": "https://x.com/i/web/status/2061134158559134047"
         },
@@ -3430,6 +3704,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0513,
           "status_url": "https://x.com/i/web/status/2061132879158194338"
         },
@@ -3445,6 +3720,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0179,
           "status_url": "https://x.com/i/web/status/2061127507655401946"
         },
@@ -3460,6 +3736,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.05,
           "status_url": "https://x.com/i/web/status/2061127407088673172"
         },
@@ -3475,6 +3752,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0238,
           "status_url": "https://x.com/i/web/status/2061117902699495898"
         },
@@ -3490,6 +3768,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0139,
           "status_url": "https://x.com/i/web/status/2061117144213913799"
         },
@@ -3505,6 +3784,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0179,
           "status_url": "https://x.com/i/web/status/2061115943917441384"
         },
@@ -3520,6 +3800,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.013,
           "status_url": "https://x.com/i/web/status/2061113485358940621"
         },
@@ -3535,6 +3816,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0123,
           "status_url": "https://x.com/i/web/status/2061093624751014188"
         },
@@ -3550,6 +3832,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0149,
           "status_url": "https://x.com/i/web/status/2061089872677343575"
         },
@@ -3565,6 +3848,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0119,
           "status_url": "https://x.com/i/web/status/2061083626528522335"
         },
@@ -3580,6 +3864,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0154,
           "status_url": "https://x.com/i/web/status/2061083007394500910"
         },
@@ -3595,6 +3880,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 5,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0172,
           "status_url": "https://x.com/i/web/status/2061080559825162454"
         },
@@ -3610,6 +3896,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 5,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0172,
           "status_url": "https://x.com/i/web/status/2061080437577973901"
         },
@@ -3625,6 +3912,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 5,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0172,
           "status_url": "https://x.com/i/web/status/2061078877699543428"
         },
@@ -3640,6 +3928,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.027,
           "status_url": "https://x.com/i/web/status/2061075953632104890"
         },
@@ -3655,6 +3944,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0208,
           "status_url": "https://x.com/i/web/status/2061069534287614203"
         },
@@ -3670,6 +3960,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0405,
           "status_url": "https://x.com/i/web/status/2061065035745837384"
         },
@@ -3685,6 +3976,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0161,
           "status_url": "https://x.com/i/web/status/2061030800192414003"
         },
@@ -3700,6 +3992,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0536,
           "status_url": "https://x.com/i/web/status/2061025778406760798"
         },
@@ -3715,6 +4008,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0377,
           "status_url": "https://x.com/i/web/status/2060985227414249661"
         },
@@ -3730,6 +4024,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0377,
           "status_url": "https://x.com/i/web/status/2060960302251057204"
         },
@@ -3745,6 +4040,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0357,
           "status_url": "https://x.com/i/web/status/2060953939483435284"
         },
@@ -3760,6 +4056,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0189,
           "status_url": "https://x.com/i/web/status/2060946545961312694"
         },
@@ -3775,6 +4072,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0196,
           "status_url": "https://x.com/i/web/status/2060945445476843991"
         },
@@ -3790,6 +4088,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0141,
           "status_url": "https://x.com/i/web/status/2060945122041167991"
         },
@@ -3805,6 +4104,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.013,
           "status_url": "https://x.com/i/web/status/2060936304838553878"
         },
@@ -3820,6 +4120,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0133,
           "status_url": "https://x.com/i/web/status/2060916371542708307"
         },
@@ -3835,6 +4136,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.025,
           "status_url": "https://x.com/i/web/status/2060902271760683271"
         },
@@ -3850,6 +4152,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0208,
           "status_url": "https://x.com/i/web/status/2060801376628678968"
         },
@@ -3865,6 +4168,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0196,
           "status_url": "https://x.com/i/web/status/2060794645748064323"
         },
@@ -3880,6 +4184,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0411,
           "status_url": "https://x.com/i/web/status/2060682530869928362"
         },
@@ -3895,6 +4200,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0169,
           "status_url": "https://x.com/i/web/status/2060678525670056048"
         },
@@ -3910,6 +4216,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0139,
           "status_url": "https://x.com/i/web/status/2060613717780209688"
         },
@@ -3925,6 +4232,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0152,
           "status_url": "https://x.com/i/web/status/2060610951670292779"
         },
@@ -3940,6 +4248,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0366,
           "status_url": "https://x.com/i/web/status/2060534590846964052"
         },
@@ -3955,6 +4264,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.037,
           "status_url": "https://x.com/i/web/status/2060511512184119384"
         },
@@ -3970,6 +4280,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0147,
           "status_url": "https://x.com/i/web/status/2060504239495950484"
         },
@@ -3985,6 +4296,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.026,
           "status_url": "https://x.com/i/web/status/2060428461228044300"
         },
@@ -4000,6 +4312,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0541,
           "status_url": "https://x.com/i/web/status/2060410658835812466"
         },
@@ -4015,6 +4328,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0185,
           "status_url": "https://x.com/i/web/status/2060406487411995033"
         },
@@ -4030,6 +4344,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0159,
           "status_url": "https://x.com/i/web/status/2060290768703459755"
         },
@@ -4045,6 +4360,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0182,
           "status_url": "https://x.com/i/web/status/2060277167821398065"
         },
@@ -4060,6 +4376,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0192,
           "status_url": "https://x.com/i/web/status/2060274159910064180"
         },
@@ -4075,6 +4392,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0141,
           "status_url": "https://x.com/i/web/status/2060215682651034067"
         },
@@ -4090,6 +4408,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0182,
           "status_url": "https://x.com/i/web/status/2060192686661927157"
         },
@@ -4105,6 +4424,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0435,
           "status_url": "https://x.com/i/web/status/2060068464945947048"
         },
@@ -4120,6 +4440,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 6,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0132,
           "status_url": "https://x.com/i/web/status/2059768019761688891"
         },
@@ -4135,6 +4456,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0122,
           "status_url": "https://x.com/i/web/status/2059763122798289265"
         },
@@ -4150,6 +4472,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0143,
           "status_url": "https://x.com/i/web/status/2059735668566147435"
         },
@@ -4165,6 +4488,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 6,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0132,
           "status_url": "https://x.com/i/web/status/2059670323688358384"
         },
@@ -4180,6 +4504,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0253,
           "status_url": "https://x.com/i/web/status/2059355821872406892"
         },
@@ -4195,6 +4520,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 2,
           "copypasta_score": 0.0127,
           "status_url": "https://x.com/i/web/status/2059311519910006854"
         },
@@ -4210,6 +4536,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 6,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0132,
           "status_url": "https://x.com/i/web/status/2059041461229015272"
         },
@@ -4225,6 +4552,7 @@
           "sentiment_label": "emerging_theme",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 2,
           "copypasta_score": 0.0127,
           "status_url": "https://x.com/i/web/status/2058983811900440997"
         },
@@ -4240,6 +4568,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0128,
           "status_url": "https://x.com/i/web/status/2058630496045662464"
         },
@@ -4255,6 +4584,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 6,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0132,
           "status_url": "https://x.com/i/web/status/2058597026619867155"
         },
@@ -4270,6 +4600,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0132,
           "status_url": "https://x.com/i/web/status/2058317482767561104"
         },
@@ -4285,6 +4616,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0123,
           "status_url": "https://x.com/i/web/status/2058260074171166794"
         },
@@ -4300,6 +4632,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 6,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0132,
           "status_url": "https://x.com/i/web/status/2057945628463010036"
         },
@@ -4315,6 +4648,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": 6,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0132,
           "status_url": "https://x.com/i/web/status/2057931737007804799"
         },
@@ -4330,6 +4664,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0294,
           "status_url": "https://x.com/i/web/status/2057675612739789255"
         },
@@ -4345,6 +4680,7 @@
           "sentiment_label": "escalating",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0127,
           "status_url": "https://x.com/i/web/status/2057611158941802598"
         },
@@ -4360,6 +4696,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.013,
           "status_url": "https://x.com/i/web/status/2057570378080456711"
         },
@@ -4375,6 +4712,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0128,
           "status_url": "https://x.com/i/web/status/2057559339926515790"
         },
@@ -4390,15 +4728,24 @@
           "sentiment_label": "escalating",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0122,
           "status_url": "https://x.com/i/web/status/2057513993540116732"
         }
       ],
       "cib": {
         "narrative_id": 3,
-        "suspicion_score": 0.0,
-        "organic_score": 1.0,
-        "signals": [],
+        "suspicion_score": 0.6,
+        "organic_score": 0.4,
+        "signals": [
+          "cross_author_fuzzy_2authors_2posts_j1.00",
+          "cross_author_fuzzy_2authors_2posts_j1.00",
+          "cross_author_fuzzy_2authors_2posts_j0.94",
+          "cross_pollination_10_multi_narrative_actors",
+          "cross_pollination_actor_@pamalamalamala2_also_in_test_x",
+          "cross_pollination_actor_@MichaelARothman_also_in_test_x",
+          "cross_pollination_actor_@Raebo56_also_in_test_x"
+        ],
         "node_count": 165,
         "edge_count": 0,
         "density": 0.0,
@@ -4704,6 +5051,12 @@
       },
       "near_duplicates": {
         "threshold": 0.82,
+        "default_threshold": 0.82,
+        "threshold_min": 0.55,
+        "threshold_max": 0.98,
+        "threshold_step": 0.01,
+        "threshold_live": true,
+        "same_author_group_count": 7,
         "group_count": 7,
         "groups": [
           {
@@ -4797,6 +5150,66 @@
             "max_similarity": 1.0
           }
         ],
+        "cross_author_fuzzy_count": 3,
+        "cross_author_fuzzy": [
+          {
+            "cluster_id": 1,
+            "post_ids": [
+              33,
+              34
+            ],
+            "author_ids": [
+              "1777383147950280706",
+              "1791965943431667712"
+            ],
+            "author_count": 2,
+            "count": 2,
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+            "max_similarity": 1.0,
+            "burst_synchronized": false,
+            "burst_author_count": 2,
+            "cluster_span_seconds": 10.0,
+            "min_inter_arrival_seconds": 10.0
+          },
+          {
+            "cluster_id": 2,
+            "post_ids": [
+              57,
+              59
+            ],
+            "author_ids": [
+              "168979883",
+              "2335639944"
+            ],
+            "author_count": 2,
+            "count": 2,
+            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
+            "max_similarity": 1.0,
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 78132.0,
+            "min_inter_arrival_seconds": 78132.0
+          },
+          {
+            "cluster_id": 0,
+            "post_ids": [
+              195,
+              238
+            ],
+            "author_ids": [
+              "1230011019390382080",
+              "1835882567649935360"
+            ],
+            "author_count": 2,
+            "count": 2,
+            "sample_text": "\"Tina Peters, a former elections clerk convicted of multiple charges related to security breaches of Colorado\u2019s 2020 presidential election results, on Monday accused Democrats of trying to \u201ccheat\u201d in the 2026 midterms.\" Says a convicted che\u2026",
+            "max_similarity": 0.9375,
+            "burst_synchronized": false,
+            "burst_author_count": 1,
+            "cluster_span_seconds": 10519.0,
+            "min_inter_arrival_seconds": 10519.0
+          }
+        ],
         "author_summaries": [
           {
             "author_id": "1855095207450066944",
@@ -4881,6 +5294,402 @@
             "span_hours": 1.27,
             "near_duplicate_group_id": null,
             "near_duplicate_count": 0
+          }
+        ]
+      },
+      "cross_pollination_hits": {
+        "narrative_id": 3,
+        "hit_count": 10,
+        "actors": [
+          {
+            "actor_key": "x:373607124",
+            "platform": "x",
+            "author_id": "373607124",
+            "author_handle": "@pamalamalamala2",
+            "narrative_count": 2,
+            "total_posts": 5,
+            "pollination_score": 5.2974,
+            "span_days": 0.74,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 4,
+                "max_outrage": 0.12,
+                "first_seen": "2026-05-31T23:12:45",
+                "last_seen": "2026-06-01T16:53:55"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0057,
+                "first_seen": "2026-05-31T23:12:45",
+                "last_seen": "2026-05-31T23:12:45"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0057,
+                "first_seen": "2026-05-31T23:12:45",
+                "last_seen": "2026-05-31T23:12:45"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:24198415",
+            "platform": "x",
+            "author_id": "24198415",
+            "author_handle": "@MichaelARothman",
+            "narrative_count": 2,
+            "total_posts": 3,
+            "pollination_score": 4.1187,
+            "span_days": 0.89,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 2,
+                "max_outrage": 0.1174,
+                "first_seen": "2026-05-31T22:13:14",
+                "last_seen": "2026-06-01T19:33:02"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0076,
+                "first_seen": "2026-05-31T22:13:14",
+                "last_seen": "2026-05-31T22:13:14"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0076,
+                "first_seen": "2026-05-31T22:13:14",
+                "last_seen": "2026-05-31T22:13:14"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1466263472132423681",
+            "platform": "x",
+            "author_id": "1466263472132423681",
+            "author_handle": "@Raebo56",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1129,
+                "first_seen": "2026-05-31T22:18:11",
+                "last_seen": "2026-05-31T22:18:11"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0023,
+                "first_seen": "2026-05-31T22:18:11",
+                "last_seen": "2026-05-31T22:18:11"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0023,
+                "first_seen": "2026-05-31T22:18:11",
+                "last_seen": "2026-05-31T22:18:11"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1648149942190632961",
+            "platform": "x",
+            "author_id": "1648149942190632961",
+            "author_handle": "@curiouscammie",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1143,
+                "first_seen": "2026-05-31T22:18:51",
+                "last_seen": "2026-05-31T22:18:51"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0037,
+                "first_seen": "2026-05-31T22:18:51",
+                "last_seen": "2026-05-31T22:18:51"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0037,
+                "first_seen": "2026-05-31T22:18:51",
+                "last_seen": "2026-05-31T22:18:51"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1760317411390054400",
+            "platform": "x",
+            "author_id": "1760317411390054400",
+            "author_handle": "@Willowthorns777",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1117,
+                "first_seen": "2026-05-31T22:47:03",
+                "last_seen": "2026-05-31T22:47:03"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0018,
+                "first_seen": "2026-05-31T22:47:03",
+                "last_seen": "2026-05-31T22:47:03"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0018,
+                "first_seen": "2026-05-31T22:47:03",
+                "last_seen": "2026-05-31T22:47:03"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1777383147950280706",
+            "platform": "x",
+            "author_id": "1777383147950280706",
+            "author_handle": "@permit75592",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1143,
+                "first_seen": "2026-05-31T22:45:14",
+                "last_seen": "2026-05-31T22:45:14"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0015,
+                "first_seen": "2026-05-31T22:45:14",
+                "last_seen": "2026-05-31T22:45:14"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0015,
+                "first_seen": "2026-05-31T22:45:14",
+                "last_seen": "2026-05-31T22:45:14"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1791965943431667712",
+            "platform": "x",
+            "author_id": "1791965943431667712",
+            "author_handle": "@yazi_the",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1143,
+                "first_seen": "2026-05-31T22:45:04",
+                "last_seen": "2026-05-31T22:45:04"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0015,
+                "first_seen": "2026-05-31T22:45:04",
+                "last_seen": "2026-05-31T22:45:04"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0015,
+                "first_seen": "2026-05-31T22:45:04",
+                "last_seen": "2026-05-31T22:45:04"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1828029219277791232",
+            "platform": "x",
+            "author_id": "1828029219277791232",
+            "author_handle": "@TheBenTurner83",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.114,
+                "first_seen": "2026-05-31T22:46:45",
+                "last_seen": "2026-05-31T22:46:45"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0034,
+                "first_seen": "2026-05-31T22:46:45",
+                "last_seen": "2026-05-31T22:46:45"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0034,
+                "first_seen": "2026-05-31T22:46:45",
+                "last_seen": "2026-05-31T22:46:45"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1923828566443065344",
+            "platform": "x",
+            "author_id": "1923828566443065344",
+            "author_handle": "@AjayJarret31000",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1132,
+                "first_seen": "2026-05-31T21:39:29",
+                "last_seen": "2026-05-31T21:39:29"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0026,
+                "first_seen": "2026-05-31T21:39:29",
+                "last_seen": "2026-05-31T21:39:29"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0026,
+                "first_seen": "2026-05-31T21:39:29",
+                "last_seen": "2026-05-31T21:39:29"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:2497137228",
+            "platform": "x",
+            "author_id": "2497137228",
+            "author_handle": "@ChetRusinek",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1245,
+                "first_seen": "2026-05-31T23:36:44",
+                "last_seen": "2026-05-31T23:36:44"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0139,
+                "first_seen": "2026-05-31T23:36:44",
+                "last_seen": "2026-05-31T23:36:44"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0139,
+                "first_seen": "2026-05-31T23:36:44",
+                "last_seen": "2026-05-31T23:36:44"
+              }
+            ],
+            "other_narrative_count": 1
           }
         ]
       },
@@ -6939,6 +7748,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.06,
           "status_url": "https://x.com/i/web/status/2061230427134636228"
         },
@@ -6954,6 +7764,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.1,
           "status_url": "https://x.com/i/web/status/2061224392471007671"
         },
@@ -6969,6 +7780,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.102,
           "status_url": "https://x.com/i/web/status/2061217925415981202"
         },
@@ -6984,6 +7796,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.1489,
           "status_url": "https://x.com/i/web/status/2061217850296090717"
         },
@@ -6999,6 +7812,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 0,
           "copypasta_score": 0.0968,
           "status_url": "https://x.com/i/web/status/2061217468358512725"
         },
@@ -7014,6 +7828,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": 0,
           "copypasta_score": 0.0968,
           "status_url": "https://x.com/i/web/status/2061217426826576263"
         },
@@ -7029,6 +7844,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0682,
           "status_url": "https://x.com/i/web/status/2061210826439348280"
         },
@@ -7044,6 +7860,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0725,
           "status_url": "https://x.com/i/web/status/2061210659107590258"
         },
@@ -7059,6 +7876,7 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 1.0,
           "status_url": "https://x.com/i/web/status/2061209413877457099"
         },
@@ -7074,15 +7892,22 @@
           "sentiment_label": "neutral",
           "benchmark_label": null,
           "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0556,
           "status_url": "https://x.com/i/web/status/2061200921510433213"
         }
       ],
       "cib": {
         "narrative_id": 4,
-        "suspicion_score": 0.0,
-        "organic_score": 1.0,
-        "signals": [],
+        "suspicion_score": 0.6,
+        "organic_score": 0.4,
+        "signals": [
+          "cross_author_fuzzy_2authors_2posts_j1.00",
+          "cross_pollination_10_multi_narrative_actors",
+          "cross_pollination_actor_@pamalamalamala2_also_in_midterms_2026",
+          "cross_pollination_actor_@MichaelARothman_also_in_midterms_2026",
+          "cross_pollination_actor_@Raebo56_also_in_midterms_2026"
+        ],
         "node_count": 10,
         "edge_count": 0,
         "density": 0.0,
@@ -7197,9 +8022,433 @@
       },
       "near_duplicates": {
         "threshold": 0.82,
+        "default_threshold": 0.82,
+        "threshold_min": 0.55,
+        "threshold_max": 0.98,
+        "threshold_step": 0.01,
+        "threshold_live": true,
+        "same_author_group_count": 0,
         "group_count": 0,
         "groups": [],
+        "cross_author_fuzzy_count": 1,
+        "cross_author_fuzzy": [
+          {
+            "cluster_id": 0,
+            "post_ids": [
+              113,
+              114
+            ],
+            "author_ids": [
+              "1777383147950280706",
+              "1791965943431667712"
+            ],
+            "author_count": 2,
+            "count": 2,
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+            "max_similarity": 1.0,
+            "burst_synchronized": false,
+            "burst_author_count": 2,
+            "cluster_span_seconds": 10.0,
+            "min_inter_arrival_seconds": 10.0
+          }
+        ],
         "author_summaries": []
+      },
+      "cross_pollination_hits": {
+        "narrative_id": 4,
+        "hit_count": 10,
+        "actors": [
+          {
+            "actor_key": "x:373607124",
+            "platform": "x",
+            "author_id": "373607124",
+            "author_handle": "@pamalamalamala2",
+            "narrative_count": 2,
+            "total_posts": 5,
+            "pollination_score": 5.2974,
+            "span_days": 0.74,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 4,
+                "max_outrage": 0.12,
+                "first_seen": "2026-05-31T23:12:45",
+                "last_seen": "2026-06-01T16:53:55"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0057,
+                "first_seen": "2026-05-31T23:12:45",
+                "last_seen": "2026-05-31T23:12:45"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 4,
+                "max_outrage": 0.12,
+                "first_seen": "2026-05-31T23:12:45",
+                "last_seen": "2026-06-01T16:53:55"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:24198415",
+            "platform": "x",
+            "author_id": "24198415",
+            "author_handle": "@MichaelARothman",
+            "narrative_count": 2,
+            "total_posts": 3,
+            "pollination_score": 4.1187,
+            "span_days": 0.89,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 2,
+                "max_outrage": 0.1174,
+                "first_seen": "2026-05-31T22:13:14",
+                "last_seen": "2026-06-01T19:33:02"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0076,
+                "first_seen": "2026-05-31T22:13:14",
+                "last_seen": "2026-05-31T22:13:14"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 2,
+                "max_outrage": 0.1174,
+                "first_seen": "2026-05-31T22:13:14",
+                "last_seen": "2026-06-01T19:33:02"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1466263472132423681",
+            "platform": "x",
+            "author_id": "1466263472132423681",
+            "author_handle": "@Raebo56",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1129,
+                "first_seen": "2026-05-31T22:18:11",
+                "last_seen": "2026-05-31T22:18:11"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0023,
+                "first_seen": "2026-05-31T22:18:11",
+                "last_seen": "2026-05-31T22:18:11"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1129,
+                "first_seen": "2026-05-31T22:18:11",
+                "last_seen": "2026-05-31T22:18:11"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1648149942190632961",
+            "platform": "x",
+            "author_id": "1648149942190632961",
+            "author_handle": "@curiouscammie",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1143,
+                "first_seen": "2026-05-31T22:18:51",
+                "last_seen": "2026-05-31T22:18:51"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0037,
+                "first_seen": "2026-05-31T22:18:51",
+                "last_seen": "2026-05-31T22:18:51"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1143,
+                "first_seen": "2026-05-31T22:18:51",
+                "last_seen": "2026-05-31T22:18:51"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1760317411390054400",
+            "platform": "x",
+            "author_id": "1760317411390054400",
+            "author_handle": "@Willowthorns777",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1117,
+                "first_seen": "2026-05-31T22:47:03",
+                "last_seen": "2026-05-31T22:47:03"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0018,
+                "first_seen": "2026-05-31T22:47:03",
+                "last_seen": "2026-05-31T22:47:03"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1117,
+                "first_seen": "2026-05-31T22:47:03",
+                "last_seen": "2026-05-31T22:47:03"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1777383147950280706",
+            "platform": "x",
+            "author_id": "1777383147950280706",
+            "author_handle": "@permit75592",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1143,
+                "first_seen": "2026-05-31T22:45:14",
+                "last_seen": "2026-05-31T22:45:14"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0015,
+                "first_seen": "2026-05-31T22:45:14",
+                "last_seen": "2026-05-31T22:45:14"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1143,
+                "first_seen": "2026-05-31T22:45:14",
+                "last_seen": "2026-05-31T22:45:14"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1791965943431667712",
+            "platform": "x",
+            "author_id": "1791965943431667712",
+            "author_handle": "@yazi_the",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1143,
+                "first_seen": "2026-05-31T22:45:04",
+                "last_seen": "2026-05-31T22:45:04"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0015,
+                "first_seen": "2026-05-31T22:45:04",
+                "last_seen": "2026-05-31T22:45:04"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1143,
+                "first_seen": "2026-05-31T22:45:04",
+                "last_seen": "2026-05-31T22:45:04"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1828029219277791232",
+            "platform": "x",
+            "author_id": "1828029219277791232",
+            "author_handle": "@TheBenTurner83",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.114,
+                "first_seen": "2026-05-31T22:46:45",
+                "last_seen": "2026-05-31T22:46:45"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0034,
+                "first_seen": "2026-05-31T22:46:45",
+                "last_seen": "2026-05-31T22:46:45"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.114,
+                "first_seen": "2026-05-31T22:46:45",
+                "last_seen": "2026-05-31T22:46:45"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:1923828566443065344",
+            "platform": "x",
+            "author_id": "1923828566443065344",
+            "author_handle": "@AjayJarret31000",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1132,
+                "first_seen": "2026-05-31T21:39:29",
+                "last_seen": "2026-05-31T21:39:29"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0026,
+                "first_seen": "2026-05-31T21:39:29",
+                "last_seen": "2026-05-31T21:39:29"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1132,
+                "first_seen": "2026-05-31T21:39:29",
+                "last_seen": "2026-05-31T21:39:29"
+              }
+            ],
+            "other_narrative_count": 1
+          },
+          {
+            "actor_key": "x:2497137228",
+            "platform": "x",
+            "author_id": "2497137228",
+            "author_handle": "@ChetRusinek",
+            "narrative_count": 2,
+            "total_posts": 2,
+            "pollination_score": 3.1699,
+            "span_days": 0.0,
+            "narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1245,
+                "first_seen": "2026-05-31T23:36:44",
+                "last_seen": "2026-05-31T23:36:44"
+              },
+              {
+                "narrative_id": 4,
+                "narrative_name": "test_x",
+                "post_count": 1,
+                "max_outrage": 0.0139,
+                "first_seen": "2026-05-31T23:36:44",
+                "last_seen": "2026-05-31T23:36:44"
+              }
+            ],
+            "other_narratives": [
+              {
+                "narrative_id": 3,
+                "narrative_name": "midterms_2026",
+                "post_count": 1,
+                "max_outrage": 0.1245,
+                "first_seen": "2026-05-31T23:36:44",
+                "last_seen": "2026-05-31T23:36:44"
+              }
+            ],
+            "other_narrative_count": 1
+          }
+        ]
       },
       "graph": {
         "authors": [
@@ -7437,12 +8686,309 @@
       "benchmark": null
     }
   },
+  "cross_pollination": {
+    "min_narratives": 2,
+    "actor_count": 10,
+    "narrative_count": 2,
+    "actors": [
+      {
+        "actor_key": "x:373607124",
+        "platform": "x",
+        "author_id": "373607124",
+        "author_handle": "@pamalamalamala2",
+        "narrative_count": 2,
+        "total_posts": 5,
+        "pollination_score": 5.2974,
+        "span_days": 0.74,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 4,
+            "max_outrage": 0.12,
+            "first_seen": "2026-05-31T23:12:45",
+            "last_seen": "2026-06-01T16:53:55"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0057,
+            "first_seen": "2026-05-31T23:12:45",
+            "last_seen": "2026-05-31T23:12:45"
+          }
+        ]
+      },
+      {
+        "actor_key": "x:24198415",
+        "platform": "x",
+        "author_id": "24198415",
+        "author_handle": "@MichaelARothman",
+        "narrative_count": 2,
+        "total_posts": 3,
+        "pollination_score": 4.1187,
+        "span_days": 0.89,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 2,
+            "max_outrage": 0.1174,
+            "first_seen": "2026-05-31T22:13:14",
+            "last_seen": "2026-06-01T19:33:02"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0076,
+            "first_seen": "2026-05-31T22:13:14",
+            "last_seen": "2026-05-31T22:13:14"
+          }
+        ]
+      },
+      {
+        "actor_key": "x:1466263472132423681",
+        "platform": "x",
+        "author_id": "1466263472132423681",
+        "author_handle": "@Raebo56",
+        "narrative_count": 2,
+        "total_posts": 2,
+        "pollination_score": 3.1699,
+        "span_days": 0.0,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 1,
+            "max_outrage": 0.1129,
+            "first_seen": "2026-05-31T22:18:11",
+            "last_seen": "2026-05-31T22:18:11"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0023,
+            "first_seen": "2026-05-31T22:18:11",
+            "last_seen": "2026-05-31T22:18:11"
+          }
+        ]
+      },
+      {
+        "actor_key": "x:1648149942190632961",
+        "platform": "x",
+        "author_id": "1648149942190632961",
+        "author_handle": "@curiouscammie",
+        "narrative_count": 2,
+        "total_posts": 2,
+        "pollination_score": 3.1699,
+        "span_days": 0.0,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 1,
+            "max_outrage": 0.1143,
+            "first_seen": "2026-05-31T22:18:51",
+            "last_seen": "2026-05-31T22:18:51"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0037,
+            "first_seen": "2026-05-31T22:18:51",
+            "last_seen": "2026-05-31T22:18:51"
+          }
+        ]
+      },
+      {
+        "actor_key": "x:1760317411390054400",
+        "platform": "x",
+        "author_id": "1760317411390054400",
+        "author_handle": "@Willowthorns777",
+        "narrative_count": 2,
+        "total_posts": 2,
+        "pollination_score": 3.1699,
+        "span_days": 0.0,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 1,
+            "max_outrage": 0.1117,
+            "first_seen": "2026-05-31T22:47:03",
+            "last_seen": "2026-05-31T22:47:03"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0018,
+            "first_seen": "2026-05-31T22:47:03",
+            "last_seen": "2026-05-31T22:47:03"
+          }
+        ]
+      },
+      {
+        "actor_key": "x:1777383147950280706",
+        "platform": "x",
+        "author_id": "1777383147950280706",
+        "author_handle": "@permit75592",
+        "narrative_count": 2,
+        "total_posts": 2,
+        "pollination_score": 3.1699,
+        "span_days": 0.0,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 1,
+            "max_outrage": 0.1143,
+            "first_seen": "2026-05-31T22:45:14",
+            "last_seen": "2026-05-31T22:45:14"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0015,
+            "first_seen": "2026-05-31T22:45:14",
+            "last_seen": "2026-05-31T22:45:14"
+          }
+        ]
+      },
+      {
+        "actor_key": "x:1791965943431667712",
+        "platform": "x",
+        "author_id": "1791965943431667712",
+        "author_handle": "@yazi_the",
+        "narrative_count": 2,
+        "total_posts": 2,
+        "pollination_score": 3.1699,
+        "span_days": 0.0,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 1,
+            "max_outrage": 0.1143,
+            "first_seen": "2026-05-31T22:45:04",
+            "last_seen": "2026-05-31T22:45:04"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0015,
+            "first_seen": "2026-05-31T22:45:04",
+            "last_seen": "2026-05-31T22:45:04"
+          }
+        ]
+      },
+      {
+        "actor_key": "x:1828029219277791232",
+        "platform": "x",
+        "author_id": "1828029219277791232",
+        "author_handle": "@TheBenTurner83",
+        "narrative_count": 2,
+        "total_posts": 2,
+        "pollination_score": 3.1699,
+        "span_days": 0.0,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 1,
+            "max_outrage": 0.114,
+            "first_seen": "2026-05-31T22:46:45",
+            "last_seen": "2026-05-31T22:46:45"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0034,
+            "first_seen": "2026-05-31T22:46:45",
+            "last_seen": "2026-05-31T22:46:45"
+          }
+        ]
+      },
+      {
+        "actor_key": "x:1923828566443065344",
+        "platform": "x",
+        "author_id": "1923828566443065344",
+        "author_handle": "@AjayJarret31000",
+        "narrative_count": 2,
+        "total_posts": 2,
+        "pollination_score": 3.1699,
+        "span_days": 0.0,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 1,
+            "max_outrage": 0.1132,
+            "first_seen": "2026-05-31T21:39:29",
+            "last_seen": "2026-05-31T21:39:29"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0026,
+            "first_seen": "2026-05-31T21:39:29",
+            "last_seen": "2026-05-31T21:39:29"
+          }
+        ]
+      },
+      {
+        "actor_key": "x:2497137228",
+        "platform": "x",
+        "author_id": "2497137228",
+        "author_handle": "@ChetRusinek",
+        "narrative_count": 2,
+        "total_posts": 2,
+        "pollination_score": 3.1699,
+        "span_days": 0.0,
+        "narratives": [
+          {
+            "narrative_id": 3,
+            "narrative_name": "midterms_2026",
+            "post_count": 1,
+            "max_outrage": 0.1245,
+            "first_seen": "2026-05-31T23:36:44",
+            "last_seen": "2026-05-31T23:36:44"
+          },
+          {
+            "narrative_id": 4,
+            "narrative_name": "test_x",
+            "post_count": 1,
+            "max_outrage": 0.0139,
+            "first_seen": "2026-05-31T23:36:44",
+            "last_seen": "2026-05-31T23:36:44"
+          }
+        ]
+      }
+    ],
+    "narrative_pairs": [
+      {
+        "narrative_a_id": 3,
+        "narrative_a_name": "midterms_2026",
+        "narrative_b_id": 4,
+        "narrative_b_name": "test_x",
+        "shared_actor_count": 10
+      }
+    ],
+    "available": true
+  },
   "meta": {
     "ingest_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/ingest.yml",
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-01",
-      "count": 19
+      "count": 20
     }
   }
 }
