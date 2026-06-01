@@ -1,12 +1,21 @@
-# Dashboard database for GitHub Pages
+# Dashboard data for GitHub Pages
 
-Copy your local SQLite export here so scheduled CI can publish **real** ingest data:
+Committed ingest lives here so CI and the static site use **real** data (not mock seed).
+
+**Publish after ingest** (one command):
+
+```bash
+python scripts/publish_dashboard_data.py
+git add data/dashboard/heimdall.db web/public/data/snapshot.json
+git commit -m "chore: publish ingest data for dashboard"
+git push
+```
+
+Manual copy:
 
 ```bash
 cp heimdall.db data/dashboard/heimdall.db
-git add data/dashboard/heimdall.db
-git commit -m "chore: refresh dashboard database"
-git push
+python scripts/export_dashboard_data.py
 ```
 
 The Pages workflow (`/.github/workflows/pages.yml`) runs daily and on push:

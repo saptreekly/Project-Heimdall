@@ -51,13 +51,16 @@ Open http://127.0.0.1:8000/docs for the interactive API.
 
 The site ships a **bundled JSON snapshot** (`data/snapshot.json`) rebuilt on every deploy. CI runs daily (`cron: 0 14 * * *`) and on pushes to `main`.
 
-**Ship your latest ingest to Pages:**
+**Ship your latest ingest to the repo and Pages:**
 
 ```bash
-cp heimdall.db data/dashboard/heimdall.db
-git add data/dashboard/heimdall.db
+python scripts/publish_dashboard_data.py
+git add data/dashboard/heimdall.db web/public/data/snapshot.json
+git commit -m "chore: publish ingest data for dashboard"
 git push
 ```
+
+CI uses `data/dashboard/heimdall.db` and refreshes `web/public/data/snapshot.json` on each deploy.
 
 Or set GitHub secret **`DASHBOARD_DATABASE_URL`** to a remote database URL. If neither is present, CI seeds mock demo data.
 
