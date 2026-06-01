@@ -26,10 +26,12 @@ async def db_session() -> AsyncSession:
 @pytest.mark.asyncio
 async def test_build_dashboard_snapshot(db_session: AsyncSession) -> None:
     snap = await build_dashboard_snapshot(db_session)
-    assert snap["version"] == 1
+    assert snap["version"] >= 1
+    assert "meta" in snap
     assert len(snap["narratives"]) == 1
     nid = str(snap["narratives"][0]["id"])
     bundle = snap["by_narrative_id"][nid]
+    assert "near_duplicates" in bundle
     assert len(bundle["posts"]) > 0
     assert "suspicion_score" in bundle["cib"]
     assert "authors" in bundle["graph"]

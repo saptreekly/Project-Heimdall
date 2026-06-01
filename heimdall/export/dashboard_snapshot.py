@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import json
 from datetime import UTC, datetime
+from pathlib import Path
 
 from sqlalchemy import String, cast, func, select
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -10,6 +12,14 @@ from heimdall.analysis.duplicates import (
     apply_duplicate_temporal_cib_boost,
     find_duplicate_clusters_from_rows,
 )
+from heimdall.analysis.near_duplicates import (
+    NEAR_DUPLICATE_JACCARD_THRESHOLD,
+    author_spam_summaries,
+    copypasta_scores,
+    find_near_duplicate_groups,
+    post_id_to_near_group,
+)
+from heimdall.export.post_meta import parse_x_screen_name, post_status_url
 from heimdall.analysis.sentiment_shift import narrative_sentiment_shift
 from heimdall.api.schemas import CIBResponse, DuplicateClusterOut, NarrativeSummary, PostOut
 from heimdall.datasets.astroturf import narrative_bot_overlap
@@ -52,12 +62,14 @@ def _normalize_platform(raw: str) -> str:
         return key or "unknown"
 
 
-async def narrative_posts(db: AsyncSession, narrative_id: int) -> list[PostOut]:
-    # Cast platform to string so legacy rows (e.g. MOCK) do not break Enum coercion.
+async def _narrative_post_rows(
+    db: AsyncSession, narrative_id: int, *, limit: int = 250
+) -> list[tuple]:
     rows = await db.execute(
         select(
             Post.id,
             cast(Post.platform, String),
+            Post.external_id,
             Post.author_id,
             Post.text,
             Post.posted_at,
@@ -65,10 +77,24 @@ async def narrative_posts(db: AsyncSession, narrative_id: int) -> list[PostOut]:
         )
         .where(Post.narrative_id == narrative_id)
         .order_by(Post.posted_at.desc())
-        .limit(100)
+        .limit(limit)
     )
+    return list(rows.all())
+
+
+async def narrative_posts(db: AsyncSession, narrative_id: int) -> list[PostOut]:
+    raw_rows = await _narrative_post_rows(db, narrative_id)
+    near_input = [
+        (pid, author_id, text, posted_at.isoformat())
+        for pid, _plat, _ext, author_id, text, posted_at, _raw in raw_rows
+    ]
+    near_groups = find_near_duplicate_groups(near_input)
+    near_map = post_id_to_near_group(near_groups)
+    copy_rows = [(pid, author_id, text) for pid, _p, _e, author_id, text, _t, _r in raw_rows]
+    pasta_scores = copypasta_scores(copy_rows)
+
     out: list[PostOut] = []
-    for pid, platform_raw, author_id, text, posted_at, raw_json in rows.all():
+    for pid, platform_raw, external_id, author_id, text, posted_at, raw_json in raw_rows:
         score_row = await db.execute(
             select(OutrageScore.outrage_index, OutrageScore.sentiment_label).where(
                 OutrageScore.post_id == pid
@@ -76,19 +102,72 @@ async def narrative_posts(db: AsyncSession, narrative_id: int) -> list[PostOut]:
         )
         score = score_row.first()
         meta = parse_tweet_eval_meta(raw_json)
+        platform = _normalize_platform(platform_raw)
+        handle = parse_x_screen_name(raw_json)
         out.append(
             PostOut(
                 id=pid,
-                platform=_normalize_platform(platform_raw),
+                platform=platform,
+                external_id=external_id,
                 author_id=author_id,
+                author_handle=handle,
                 text=text,
                 posted_at=posted_at,
                 outrage_index=score[0] if score else None,
                 sentiment_label=score[1] if score else None,
                 benchmark_label=meta.get("label_name") if meta else None,
+                near_duplicate_group=near_map.get(pid),
+                copypasta_score=pasta_scores.get(pid),
+                status_url=post_status_url(platform, external_id),
             )
         )
     return out
+
+
+async def narrative_near_duplicates(db: AsyncSession, narrative_id: int) -> dict:
+    raw_rows = await _narrative_post_rows(db, narrative_id)
+    near_input = [
+        (pid, author_id, text, posted_at.isoformat())
+        for pid, _plat, _ext, author_id, text, posted_at, _raw in raw_rows
+    ]
+    groups = find_near_duplicate_groups(near_input)
+    return {
+        "threshold": NEAR_DUPLICATE_JACCARD_THRESHOLD,
+        "group_count": len(groups),
+        "groups": [
+            {
+                "group_id": g.group_id,
+                "author_id": g.author_id,
+                "post_ids": g.post_ids,
+                "count": g.count,
+                "sample_text": g.sample_text,
+                "max_similarity": round(g.max_similarity, 4),
+            }
+            for g in groups
+        ],
+        "author_summaries": author_spam_summaries(near_input, near_groups=groups),
+    }
+
+
+def _benchmark_stats(posts: list[PostOut]) -> dict | None:
+    labeled = [p for p in posts if p.benchmark_label]
+    if not labeled:
+        return None
+    return {
+        "labeled_posts": len(labeled),
+        "total_posts": len(posts),
+        "labels": sorted({p.benchmark_label for p in labeled if p.benchmark_label}),
+    }
+
+
+def _load_x_rate_state() -> dict | None:
+    path = Path(__file__).resolve().parents[2] / "data" / "dashboard" / "x_rate_state.json"
+    if not path.is_file():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
 
 
 async def narrative_cib(db: AsyncSession, narrative_id: int) -> CIBResponse:
@@ -234,18 +313,26 @@ async def build_dashboard_snapshot(db: AsyncSession) -> dict:
     by_id: dict[str, dict] = {}
     for summary in summaries:
         nid = summary.id
+        posts = await narrative_posts(db, nid)
         by_id[str(nid)] = {
-            "posts": [p.model_dump(mode="json") for p in await narrative_posts(db, nid)],
+            "posts": [p.model_dump(mode="json") for p in posts],
             "cib": (await narrative_cib(db, nid)).model_dump(mode="json"),
             "sentiment": await narrative_sentiment_shift(db, nid),
             "amplification": await narrative_amplification(db, nid),
+            "near_duplicates": await narrative_near_duplicates(db, nid),
             "graph": await narrative_graph(db, nid),
             "themes": await narrative_themes(db, nid),
+            "benchmark": _benchmark_stats(posts),
         }
 
     return {
-        "version": 1,
+        "version": 2,
         "generated_at": datetime.now(UTC).isoformat(),
         "narratives": [s.model_dump(mode="json") for s in summaries],
         "by_narrative_id": by_id,
+        "meta": {
+            "ingest_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/ingest.yml",
+            "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
+            "x_rate": _load_x_rate_state(),
+        },
     }

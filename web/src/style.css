@@ -800,6 +800,145 @@ button {
   word-break: break-word;
 }
 
+.post-text-blurred {
+  filter: blur(5px);
+  user-select: none;
+}
+
+.post-text-blurred:hover {
+  filter: none;
+  user-select: text;
+}
+
+.post-actions {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+}
+
+.post-actions a {
+  color: var(--accent);
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  font-family: inherit;
+}
+
+.tag {
+  font-size: 0.68rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  background: rgba(138, 155, 179, 0.2);
+}
+
+.tag-near-dup {
+  color: #e67e22;
+}
+
+.tag-copypasta {
+  color: #9b59b6;
+}
+
+.author-rollup {
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.75rem;
+}
+
+.author-rollup summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.rollup-meta {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.post-list-nested {
+  margin-top: 0.5rem;
+}
+
+.panel-callout {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+  line-height: 1.45;
+}
+
+.rate-footer {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0.25rem 0 0;
+}
+
+.toolbar-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.toolbar-select {
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+.toolbar-check {
+  font-size: 0.8rem;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.cluster-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.cluster-btn:hover {
+  border-color: var(--accent);
+}
+
+.brief-content {
+  max-width: 720px;
+}
+
+.brief-article h3 {
+  margin-top: 0;
+}
+
+.brief-cluster {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+@media print {
+  .site-header,
+  .tab-nav,
+  .toolbar,
+  #brief-print {
+    display: none !important;
+  }
+  .panel-brief {
+    border: none;
+  }
+}
+
 .panel-methodology .prose-wrap {
   max-width: 720px;
 }

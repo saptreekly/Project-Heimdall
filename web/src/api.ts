@@ -1,12 +1,15 @@
 import type {
   AmplificationReport,
+  BenchmarkStats,
   CibReport,
   DashboardSnapshot,
   GraphAuthor,
   NarrativeSummary,
+  NearDuplicatesReport,
   Post,
   PropagationGraph,
   SentimentShift,
+  SnapshotMeta,
   ThemesReport,
 } from "./types";
 
@@ -79,6 +82,20 @@ export function getSnapshotGeneratedAt(): string | null {
   return snapshotCache?.generated_at ?? null;
 }
 
+export function getSnapshotMeta(): SnapshotMeta | null {
+  return snapshotCache?.meta ?? null;
+}
+
+export async function fetchNearDuplicates(narrativeId: number): Promise<NearDuplicatesReport | null> {
+  await loadSnapshot();
+  return bundleFor(narrativeId).near_duplicates ?? null;
+}
+
+export async function fetchBenchmark(narrativeId: number): Promise<BenchmarkStats | null> {
+  await loadSnapshot();
+  return bundleFor(narrativeId).benchmark ?? null;
+}
+
 function bundleFor(narrativeId: number) {
   const bundle = snapshotCache?.by_narrative_id[String(narrativeId)];
   if (!bundle) {
@@ -122,7 +139,7 @@ function graphFromPosts(posts: Post[]): PropagationGraph {
     if (!existing) {
       authors.set(p.author_id, {
         author_id: p.author_id,
-        handle: null,
+        handle: p.author_handle ?? null,
         max_outrage: outrage,
         post_count: 1,
       });

@@ -8,12 +8,54 @@ export interface NarrativeSummary {
 export interface Post {
   id: number;
   platform: string;
+  external_id?: string | null;
   author_id: string;
+  author_handle?: string | null;
   text: string;
   posted_at: string;
   outrage_index: number | null;
   sentiment_label: string | null;
   benchmark_label: string | null;
+  near_duplicate_group?: number | null;
+  copypasta_score?: number | null;
+  status_url?: string | null;
+}
+
+export interface NearDuplicateGroup {
+  group_id: number;
+  author_id: string;
+  post_ids: number[];
+  count: number;
+  sample_text: string;
+  max_similarity: number;
+}
+
+export interface AuthorSpamSummary {
+  author_id: string;
+  post_count: number;
+  post_ids: number[];
+  span_hours: number;
+  near_duplicate_group_id: number | null;
+  near_duplicate_count: number;
+}
+
+export interface NearDuplicatesReport {
+  threshold: number;
+  group_count: number;
+  groups: NearDuplicateGroup[];
+  author_summaries: AuthorSpamSummary[];
+}
+
+export interface BenchmarkStats {
+  labeled_posts: number;
+  total_posts: number;
+  labels: string[];
+}
+
+export interface SnapshotMeta {
+  ingest_workflow_url?: string;
+  pages_workflow_url?: string;
+  x_rate?: { date?: string; count?: number } | null;
 }
 
 export interface CibReport {
@@ -128,8 +170,10 @@ export interface NarrativeBundle {
   cib: CibReport;
   sentiment: SentimentShift;
   amplification: AmplificationReport;
+  near_duplicates?: NearDuplicatesReport;
   graph?: PropagationGraph;
   themes?: ThemesReport;
+  benchmark?: BenchmarkStats | null;
 }
 
 export interface DashboardSnapshot {
@@ -137,4 +181,5 @@ export interface DashboardSnapshot {
   generated_at: string;
   narratives: NarrativeSummary[];
   by_narrative_id: Record<string, NarrativeBundle>;
+  meta?: SnapshotMeta;
 }

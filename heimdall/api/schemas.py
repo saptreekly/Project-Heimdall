@@ -38,12 +38,17 @@ class IngestResponse(BaseModel):
 class PostOut(BaseModel):
     id: int
     platform: str
+    external_id: str | None = None
     author_id: str
+    author_handle: str | None = None
     text: str
     posted_at: datetime
     outrage_index: float | None = None
     sentiment_label: str | None = None
     benchmark_label: str | None = None
+    near_duplicate_group: int | None = None
+    copypasta_score: float | None = None
+    status_url: str | None = None
 
 
 class CIBResponse(BaseModel):

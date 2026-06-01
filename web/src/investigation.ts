@@ -5,6 +5,8 @@ export interface InvestigationFilter {
   date: string | null;
   postIds: number[] | null;
   label: string | null;
+  hoursBack: number | null;
+  burstOnly: boolean;
 }
 
 type FilterListener = (filter: InvestigationFilter) => void;
@@ -15,11 +17,19 @@ let filter: InvestigationFilter = {
   date: null,
   postIds: null,
   label: null,
+  hoursBack: null,
+  burstOnly: false,
 };
 const listeners = new Set<FilterListener>();
 
 function postDateKey(postedAt: string): string {
   return postedAt.slice(0, 10);
+}
+
+function postAgeHours(postedAt: string): number {
+  const t = Date.parse(postedAt);
+  if (!Number.isFinite(t)) return Number.POSITIVE_INFINITY;
+  return (Date.now() - t) / (1000 * 60 * 60);
 }
 
 export function setInvestigationPosts(posts: Post[]): void {
@@ -44,37 +54,75 @@ function notify(): void {
 
 export function selectAuthor(authorId: string, label?: string): void {
   filter = {
+    ...filter,
     authorId,
     date: null,
     postIds: null,
     label: label ?? `Author ${authorId.slice(0, 12)}`,
+    burstOnly: false,
   };
   notify();
 }
 
 export function selectDate(date: string): void {
   filter = {
+    ...filter,
     authorId: null,
     date,
     postIds: null,
     label: `Date ${date}`,
+    burstOnly: false,
   };
   notify();
 }
 
 export function selectThemeCluster(label: string, postIds: number[]): void {
   filter = {
+    ...filter,
     authorId: null,
     date: null,
     postIds,
     label: `Theme: ${label}`,
+    burstOnly: false,
   };
   notify();
 }
 
+export function selectDuplicateCluster(label: string, postIds: number[], burst: boolean): void {
+  filter = {
+    ...filter,
+    authorId: null,
+    date: null,
+    postIds,
+    label: burst ? `Burst: ${label}` : `Duplicate: ${label}`,
+    burstOnly: burst,
+  };
+  notify();
+}
+
+export function setHoursBack(hours: number | null): void {
+  filter = { ...filter, hoursBack: hours };
+  notify();
+}
+
 export function clearInvestigationFilter(): void {
-  if (!filter.authorId && !filter.date && !filter.postIds?.length) return;
-  filter = { authorId: null, date: null, postIds: null, label: null };
+  if (
+    !filter.authorId &&
+    !filter.date &&
+    !filter.postIds?.length &&
+    !filter.hoursBack &&
+    !filter.burstOnly
+  ) {
+    return;
+  }
+  filter = {
+    authorId: null,
+    date: null,
+    postIds: null,
+    label: null,
+    hoursBack: null,
+    burstOnly: false,
+  };
   notify();
 }
 
@@ -90,9 +138,18 @@ export function filterPosts(posts: Post[] = allPosts): Post[] {
     const ids = new Set(filter.postIds);
     out = out.filter((p) => ids.has(p.id));
   }
+  if (filter.hoursBack != null && filter.hoursBack > 0) {
+    out = out.filter((p) => postAgeHours(p.posted_at) <= filter.hoursBack!);
+  }
   return out;
 }
 
 export function hasActiveFilter(): boolean {
-  return Boolean(filter.authorId || filter.date || filter.postIds?.length);
+  return Boolean(
+    filter.authorId ||
+      filter.date ||
+      filter.postIds?.length ||
+      filter.hoursBack ||
+      filter.burstOnly
+  );
 }
