@@ -6,10 +6,12 @@ import {
   fetchPosts,
   fetchPropagationGraph,
   fetchSentimentShift,
+  fetchThemes,
   getSnapshotGeneratedAt,
   listNarratives,
   loadSnapshot,
 } from "./api";
+import { renderContentNotice } from "./content-notice";
 import { renderMethodology } from "./methodology";
 import {
   bindTabNav,
@@ -19,7 +21,27 @@ import {
   tabFromUrl,
   type AppTab,
 } from "./tabs";
-import { graphPanelHtml, renderPropagationGraph } from "./propagation-graph";
+import {
+  clearInvestigationFilter,
+  filterPosts,
+  getInvestigationFilter,
+  hasActiveFilter,
+  onInvestigationChange,
+  selectAuthor,
+  selectDate,
+  setInvestigationPosts,
+} from "./investigation";
+import {
+  clearThemeCardSelection,
+  emergingThemesPanelHtml,
+  renderEmergingThemesTimeline,
+} from "./emerging-themes";
+import {
+  focusPropagationAuthor,
+  graphPanelHtml,
+  renderPropagationGraph,
+  setPropagationAuthorHandler,
+} from "./propagation-graph";
 import {
   buildAuthorPriorityPoints,
   mountPrioritizationScatter,
@@ -93,15 +115,18 @@ function renderHistogram(posts: Post[]): string {
   return `<div class="chart">${rows}</div>`;
 }
 
-function renderPosts(posts: Post[], limit = 12): string {
+function renderPosts(posts: Post[], limit = 50): string {
   const sorted = [...posts].sort(
     (a, b) => (b.outrage_index ?? -1) - (a.outrage_index ?? -1)
   );
   const top = sorted.slice(0, limit);
-  if (top.length === 0) return "<p class='loading'>No posts in this narrative.</p>";
+  const active = getInvestigationFilter();
+  if (top.length === 0) {
+    return `<p class='loading'>${hasActiveFilter() ? "No posts match the current investigation filter." : "No posts in this narrative."}</p>`;
+  }
   return `<ul class="post-list">${top
     .map(
-      (p) => `<li class="post-item">
+      (p) => `<li class="post-item${active.authorId === p.author_id ? " post-item-active" : ""}" data-author-id="${escapeHtml(p.author_id)}">
         <div class="post-meta">
           <span>${escapeHtml(p.platform)}</span>
           <span>${escapeHtml(p.author_id)}</span>
@@ -112,6 +137,62 @@ function renderPosts(posts: Post[], limit = 12): string {
       </li>`
     )
     .join("")}</ul>`;
+}
+
+function updatePostsPanel(): void {
+  const host = document.getElementById("post-list-host");
+  const bar = document.getElementById("investigation-filter-bar");
+  const countEl = document.getElementById("post-list-count");
+  if (!host) return;
+
+  const filtered = filterPosts();
+  host.innerHTML = renderPosts(filtered);
+  if (countEl) {
+    countEl.textContent = hasActiveFilter()
+      ? `${filtered.length} matching posts`
+      : `Top ${Math.min(50, filtered.length)} by outrage`;
+  }
+  if (bar) {
+    const f = getInvestigationFilter();
+    if (hasActiveFilter() && f.label) {
+      bar.hidden = false;
+      bar.innerHTML = `<span class="investigation-label">Investigating:</span> <strong>${escapeHtml(f.label)}</strong>`;
+    } else {
+      bar.hidden = true;
+      bar.innerHTML = "";
+    }
+  }
+
+  const first = host.querySelector<HTMLElement>(".post-item");
+  first?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function applyInvestigation(authorId: string | null): void {
+  focusPropagationAuthor(authorId);
+  updatePostsPanel();
+  if (hasActiveFilter()) {
+    document.getElementById("posts-panel")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+}
+
+function bindInvestigationChrome(): void {
+  const clearBtn = document.getElementById("clear-investigation");
+  clearBtn?.addEventListener("click", () => {
+    clearThemeCardSelection();
+    clearInvestigationFilter();
+  });
+  onInvestigationChange((f) => {
+    applyInvestigation(f.authorId);
+    if (!f.postIds?.length) clearThemeCardSelection();
+    if (hasActiveFilter()) clearBtn?.removeAttribute("hidden");
+    else {
+      clearBtn?.setAttribute("hidden", "");
+      clearThemeCardSelection();
+    }
+  });
 }
 
 function renderClusters(clusters: DuplicateCluster[]): string {
@@ -155,6 +236,7 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
           <h1><span class="brand">Heimdall</span> Narrative Analysis</h1>
           <p class="data-badge">Repo snapshot${stamp}</p>
         </div>
+        ${renderContentNotice()}
         <p class="data-links">
           Source data:
           <a href="${DATA_LINKS.snapshot}" target="_blank" rel="noopener">snapshot.json</a>
@@ -190,7 +272,10 @@ function switchTab(tab: AppTab): void {
 
 function renderMissingSnapshot(message: string): void {
   root.innerHTML = `
-    <header class="site-header"><h1><span class="brand">Heimdall</span> Narrative Analysis</h1></header>
+    <header class="site-header">
+      <h1><span class="brand">Heimdall</span> Narrative Analysis</h1>
+      ${renderContentNotice()}
+    </header>
     <main>
       <div class="error">
         <strong>No snapshot data</strong>
@@ -210,12 +295,13 @@ async function loadDashboard(narrativeId: number): Promise<void> {
   content.innerHTML = "<p class='loading'>Loading…</p>";
 
   try {
-    const [posts, cib, sentiment, amp, graph] = await Promise.all([
+    const [posts, cib, sentiment, amp, graph, themes] = await Promise.all([
       fetchPosts(narrativeId),
       fetchCib(narrativeId),
       fetchSentimentShift(narrativeId),
       fetchAmplification(narrativeId),
       fetchPropagationGraph(narrativeId),
+      fetchThemes(narrativeId),
     ]);
 
     const scored = posts.filter((p) => p.outrage_index != null);
@@ -250,9 +336,15 @@ async function loadDashboard(narrativeId: number): Promise<void> {
 
       ${graphPanelHtml(null)}
 
+      ${emergingThemesPanelHtml(themes)}
+
       <div class="split-grid">
-        <section class="panel">
+        <section class="panel panel-duplicates">
           <h2>Duplicate text (amplification)</h2>
+          <p class="chart-caption dup-legend">
+            <span class="dup-legend-warn">Orange</span> = repeated copypasta ·
+            <span class="dup-legend-threat">Red glow</span> = synchronized burst (≥5 authors / 90s)
+          </p>
           ${renderClusters(amp.clusters)}
         </section>
         <section class="panel">
@@ -268,17 +360,32 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         </section>
       </div>
 
-      <section class="panel posts-panel">
-        <h2>Top posts by outrage</h2>
-        ${renderPosts(posts)}
+      <section class="panel posts-panel" id="posts-panel">
+        <div class="posts-panel-header">
+          <h2>Posts <span class="post-list-count" id="post-list-count"></span></h2>
+          <div id="investigation-filter-bar" class="investigation-bar" hidden></div>
+          <button type="button" id="clear-investigation" class="btn btn-secondary btn-small" hidden>
+            Clear filter
+          </button>
+        </div>
+        <div id="post-list-host">${renderPosts(posts)}</div>
       </section>
     `;
+
+    setInvestigationPosts(posts);
+    clearInvestigationFilter();
+
+    const pickAuthor = (authorId: string, label: string) => {
+      selectAuthor(authorId, label);
+    };
 
     const sentimentCanvas = document.getElementById(
       "sentiment-timeline-chart"
     ) as HTMLCanvasElement | null;
     if (sentimentCanvas) {
-      mountSentimentChart(sentimentCanvas, sentiment.buckets);
+      mountSentimentChart(sentimentCanvas, sentiment.buckets, (date) => {
+        selectDate(date);
+      });
     }
 
     const scatterCanvas = document.getElementById(
@@ -286,11 +393,21 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     ) as HTMLCanvasElement | null;
     const targetList = document.getElementById("priority-target-list");
     if (scatterCanvas) {
-      mountPrioritizationScatter(scatterCanvas, priorityPoints);
+      mountPrioritizationScatter(scatterCanvas, priorityPoints, (point) =>
+        pickAuthor(point.author_id, point.label)
+      );
     }
     if (targetList) {
-      renderPriorityTargetList(targetList, priorityPoints);
+      renderPriorityTargetList(targetList, priorityPoints, (point) =>
+        pickAuthor(point.author_id, point.label)
+      );
     }
+
+    setPropagationAuthorHandler((authorId) => {
+      const author = graph.authors.find((a) => a.author_id === authorId);
+      const label = author?.handle ? `@${author.handle}` : authorId.slice(0, 12);
+      pickAuthor(authorId, label);
+    });
 
     const graphEl = document.getElementById("propagation-graph");
     if (graphEl) {
@@ -308,6 +425,12 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         badgeHost.innerHTML = `Propagation network ${badge}`;
       }
     }
+
+    const themesHost = document.getElementById("themes-timeline-host");
+    if (themesHost) renderEmergingThemesTimeline(themesHost, themes);
+
+    bindInvestigationChrome();
+    updatePostsPanel();
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     content.innerHTML = `<div class="error"><strong>Failed to load narrative ${narrativeId}</strong><p>${escapeHtml(msg)}</p></div>`;

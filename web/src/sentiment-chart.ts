@@ -48,6 +48,7 @@ export function sentimentChartPanelHtml(trend: string): string {
       <h2>Sentiment shift <span class="trend-pill">${trend}</span></h2>
       <p class="chart-caption">
         Line: daily mean outrage (left axis). Bars: post volume that day (right axis).
+        Click a day to filter posts below.
       </p>
       <div class="chart-wrap">
         <canvas id="sentiment-timeline-chart" aria-label="Daily mean outrage and post volume"></canvas>
@@ -58,7 +59,8 @@ export function sentimentChartPanelHtml(trend: string): string {
 
 export function mountSentimentChart(
   canvas: HTMLCanvasElement,
-  buckets: SentimentBucket[]
+  buckets: SentimentBucket[],
+  onDateSelect?: (date: string) => void
 ): void {
   if (activeChart) {
     activeChart.destroy();
@@ -112,6 +114,12 @@ export function mountSentimentChart(
       responsive: true,
       maintainAspectRatio: false,
       interaction: { mode: "index", intersect: false },
+      onClick: (_event, elements) => {
+        if (!elements.length || !onDateSelect) return;
+        const idx = elements[0].index;
+        const date = buckets[idx]?.date;
+        if (date) onDateSelect(date);
+      },
       plugins: {
         legend: {
           position: "top",

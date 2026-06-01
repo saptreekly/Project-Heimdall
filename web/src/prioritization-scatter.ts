@@ -23,6 +23,7 @@ export interface AuthorPriorityPoint {
 }
 
 let activeChart: Chart | null = null;
+let scatterPools: AuthorPriorityPoint[][] = [];
 
 const COLORS = {
   text: "#8b9cb3",
@@ -146,7 +147,7 @@ export function priorityScatterPanelHtml(criticalCount: number): string {
       </h2>
       <p class="chart-caption">
         X: out-degree (spread). Y: max outrage. Bright red = IU astroturf known bot.
-        Top-right quadrant = operational mitigation priority.
+        Top-right quadrant = operational mitigation priority. Click a point to investigate.
       </p>
       <div class="chart-wrap chart-wrap-scatter">
         <canvas id="priority-scatter-chart" aria-label="Author prioritization scatter plot"></canvas>
@@ -158,7 +159,8 @@ export function priorityScatterPanelHtml(criticalCount: number): string {
 
 export function renderPriorityTargetList(
   listEl: HTMLElement,
-  points: AuthorPriorityPoint[]
+  points: AuthorPriorityPoint[],
+  onAuthorSelect?: (point: AuthorPriorityPoint) => void
 ): void {
   const critical = points
     .filter((p) => p.critical)
@@ -173,18 +175,35 @@ export function renderPriorityTargetList(
     .slice(0, 12)
     .map(
       (p) =>
-        `<li class="${p.known_bot ? "priority-known-bot" : ""}">
+        `<li class="priority-target-item${p.known_bot ? " priority-known-bot" : ""}" data-author-id="${p.author_id}" role="button" tabindex="0">
           <strong>${p.label}</strong>
           <span>out ${p.x} · outrage ${p.y.toFixed(3)} · ${p.post_count} posts</span>
           ${p.known_bot ? '<span class="bot-pill">IU known bot</span>' : ""}
         </li>`
     )
     .join("");
+
+  if (!onAuthorSelect) return;
+
+  listEl.querySelectorAll<HTMLElement>(".priority-target-item").forEach((el) => {
+    const authorId = el.dataset.authorId;
+    const point = critical.find((p) => p.author_id === authorId);
+    if (!point) return;
+    const run = () => onAuthorSelect(point);
+    el.addEventListener("click", run);
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        run();
+      }
+    });
+  });
 }
 
 export function mountPrioritizationScatter(
   canvas: HTMLCanvasElement,
-  points: AuthorPriorityPoint[]
+  points: AuthorPriorityPoint[],
+  onAuthorSelect?: (point: AuthorPriorityPoint) => void
 ): { xMid: number; yMid: number } {
   if (activeChart) {
     activeChart.destroy();
@@ -206,6 +225,7 @@ export function mountPrioritizationScatter(
   const bots = points.filter((p) => p.known_bot);
   const criticalOther = points.filter((p) => p.critical && !p.known_bot);
   const rest = points.filter((p) => !p.known_bot && !p.critical);
+  scatterPools = [rest, criticalOther, bots];
 
   const config: ChartConfiguration<"scatter"> = {
     type: "scatter",
@@ -242,6 +262,13 @@ export function mountPrioritizationScatter(
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      onClick: (_event, elements) => {
+        if (!elements.length || !onAuthorSelect) return;
+        const el = elements[0];
+        const pool = scatterPools[el.datasetIndex];
+        const point = pool?.[el.index];
+        if (point) onAuthorSelect(point);
+      },
       plugins: {
         legend: {
           position: "top",

@@ -34,4 +34,7 @@ async def test_build_dashboard_snapshot(db_session: AsyncSession) -> None:
     assert "suspicion_score" in bundle["cib"]
     assert "authors" in bundle["graph"]
     assert "edges" in bundle["graph"]
+    assert "themes" in bundle
+    assert "clusters" in bundle["themes"]
+    assert bundle["themes"]["available"] is False
     json.dumps(snap)

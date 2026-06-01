@@ -14,6 +14,15 @@ export function renderMethodology(): string {
       </section>
 
       <section>
+        <h2>Harmful content</h2>
+        <p>
+          Ingested posts may include hate speech or other upsetting language. The header notice
+          states that material is shown to expose patterns and support counter-narrative work, not
+          to amplify hateful views, and that it does not reflect the maintainer’s personal beliefs.
+        </p>
+      </section>
+
+      <section>
         <h2>Data on this site</h2>
         <p>
           This dashboard reads a frozen export committed to the repo, not a live API.
@@ -59,7 +68,10 @@ export function renderMethodology(): string {
           (slang, typos, localized dog whistles) and receive a small outrage-index boost on rescore/ingest.
         </p>
         <p class="sub">
-          API: <code>GET /api/v1/narratives/&#123;id&#125;/themes</code>
+          API: <code>GET /api/v1/narratives/&#123;id&#125;/themes</code>.
+          The analysis dashboard shows an <strong>Emerging themes timeline</strong> (horizontal token cards
+          sorted by first activity date) so operators can spot shifting phrasing without exact-string matches.
+          Click a cluster to filter posts in the investigation panel.
         </p>
       </section>
 
@@ -96,7 +108,8 @@ export function renderMethodology(): string {
         <p>
           Each author is plotted by out-degree (spread) vs max outrage. Points in the top-right
           quadrant are flagged as critical operational targets; IU astroturf registry matches are
-          bright red.
+          bright red. Click scatter points, timeline days, network nodes, or critical-target rows
+          to filter the post list and focus the propagation graph on that author.
         </p>
       </section>
 
@@ -106,7 +119,9 @@ export function renderMethodology(): string {
           The Analysis tab renders author nodes and share/reply edges with vis-network. Node size
           reflects amplification out-degree; color reflects max outrage. A
           <strong>star topology</strong> (one hub with most out-edges) reads as coordinated;
-          a <strong>distributed</strong> multi-hub shape reads more organic.
+          a <strong>distributed</strong> multi-hub shape reads more organic. Use the
+          <strong>min edge weight</strong> slider to collapse single-share links and reduce hairballs;
+          <strong>freeze layout</strong> stops physics after the graph settles.
         </p>
       </section>
 

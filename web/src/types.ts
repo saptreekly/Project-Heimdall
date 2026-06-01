@@ -86,12 +86,50 @@ export interface PropagationGraph {
   edges: GraphEdge[];
 }
 
+export interface ThemeCluster {
+  cluster_id: number;
+  post_ids: number[];
+  size: number;
+  cohesion: number;
+  lexicon_hit_rate: number;
+  emerging_theme: boolean;
+  label_terms: string[];
+  sample_text: string;
+  first_seen?: string | null;
+  last_seen?: string | null;
+  active_days?: number;
+}
+
+export interface ThemeTimelineEntry {
+  cluster_id: number;
+  label_terms: string[];
+  emerging_theme: boolean;
+  size: number;
+  first_seen: string | null;
+  last_seen: string | null;
+  post_ids: number[];
+}
+
+export interface ThemesReport {
+  available: boolean;
+  reason: string | null;
+  narrative_id: number;
+  post_count: number;
+  cluster_count: number;
+  method: string;
+  model: string;
+  clusters: ThemeCluster[];
+  timeline?: ThemeTimelineEntry[];
+  emerging_theme_count: number;
+}
+
 export interface NarrativeBundle {
   posts: Post[];
   cib: CibReport;
   sentiment: SentimentShift;
   amplification: AmplificationReport;
   graph?: PropagationGraph;
+  themes?: ThemesReport;
 }
 
 export interface DashboardSnapshot {

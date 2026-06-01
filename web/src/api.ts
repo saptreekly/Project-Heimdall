@@ -7,6 +7,7 @@ import type {
   Post,
   PropagationGraph,
   SentimentShift,
+  ThemesReport,
 } from "./types";
 
 const REPO_DATA_BASE =
@@ -128,6 +129,28 @@ function graphFromPosts(posts: Post[]): PropagationGraph {
     }
   }
   return { authors: [...authors.values()], edges: [] };
+}
+
+const EMPTY_THEMES: ThemesReport = {
+  available: false,
+  reason: "Themes not included in this snapshot export.",
+  narrative_id: 0,
+  post_count: 0,
+  cluster_count: 0,
+  method: "none",
+  model: "",
+  clusters: [],
+  timeline: [],
+  emerging_theme_count: 0,
+};
+
+export async function fetchThemes(narrativeId: number): Promise<ThemesReport> {
+  await loadSnapshot();
+  const themes = bundleFor(narrativeId).themes;
+  if (!themes) {
+    return { ...EMPTY_THEMES, narrative_id: narrativeId };
+  }
+  return { ...EMPTY_THEMES, ...themes, narrative_id: narrativeId };
 }
 
 export async function fetchPropagationGraph(narrativeId: number): Promise<PropagationGraph> {

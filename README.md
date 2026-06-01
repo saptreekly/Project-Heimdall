@@ -1,5 +1,7 @@
 # Heimdall
 
+> **Content notice:** This project may store and display real posts that include hate speech or other upsetting language, for research and accountability—not endorsement. Quoted material does not reflect the maintainer’s views. See the [dashboard](https://saptreekly.github.io/Project-Heimdall/) header for the full notice.
+
 Heimdall ingests public, unstructured social data around polarizing domestic narratives, scores **outrage escalation** with NLP, and builds **propagation graphs** to distinguish organic spread from coordinated inauthentic amplification (CIB).
 
 ## Architecture

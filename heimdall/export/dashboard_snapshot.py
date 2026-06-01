@@ -14,8 +14,10 @@ from heimdall.analysis.sentiment_shift import narrative_sentiment_shift
 from heimdall.api.schemas import CIBResponse, DuplicateClusterOut, NarrativeSummary, PostOut
 from heimdall.datasets.astroturf import narrative_bot_overlap
 from heimdall.datasets.tweet_eval import parse_tweet_eval_meta
+from heimdall.config import get_settings
 from heimdall.db.models import Narrative, OutrageScore, Platform, Post
 from heimdall.graph.export import build_graph_export
+from heimdall.nlp.narrative_themes import narrative_theme_clusters
 from heimdall.graph.networkx_analysis import NarrativeGraphAnalyzer
 
 
@@ -159,6 +161,74 @@ async def narrative_graph(db: AsyncSession, narrative_id: int) -> dict:
     }
 
 
+def _enrich_theme_timelines(clusters: list[dict], post_dates: dict[int, str]) -> None:
+    for cluster in clusters:
+        dates = sorted(
+            {post_dates[pid][:10] for pid in cluster.get("post_ids", []) if pid in post_dates}
+        )
+        cluster["first_seen"] = dates[0] if dates else None
+        cluster["last_seen"] = dates[-1] if dates else None
+        cluster["active_days"] = len(dates)
+
+
+async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
+    """Embedding theme clusters for static dashboard (mirrors GET /themes)."""
+    settings = get_settings()
+    if not settings.use_embedding_themes:
+        return {
+            "available": False,
+            "reason": "Set USE_EMBEDDING_THEMES=true and pip install -e '.[ml]' to export themes.",
+            "narrative_id": narrative_id,
+            "post_count": 0,
+            "cluster_count": 0,
+            "method": "disabled",
+            "model": settings.embedding_model,
+            "clusters": [],
+            "emerging_theme_count": 0,
+        }
+    try:
+        rows = await db.execute(
+            select(Post.id, Post.posted_at).where(Post.narrative_id == narrative_id)
+        )
+        post_dates = {int(r[0]): r[1].isoformat() for r in rows.all()}
+        data = await narrative_theme_clusters(db, narrative_id)
+        clusters = data.get("clusters", [])
+        _enrich_theme_timelines(clusters, post_dates)
+        emerging = [c for c in clusters if c.get("emerging_theme")]
+        data["available"] = True
+        data["reason"] = None
+        data["timeline"] = [
+            {
+                "cluster_id": c["cluster_id"],
+                "label_terms": c.get("label_terms", []),
+                "emerging_theme": c.get("emerging_theme", False),
+                "size": c.get("size", 0),
+                "first_seen": c.get("first_seen"),
+                "last_seen": c.get("last_seen"),
+                "post_ids": c.get("post_ids", []),
+            }
+            for c in sorted(
+                clusters,
+                key=lambda c: (c.get("first_seen") or "9999", -int(c.get("emerging_theme", False))),
+            )
+        ]
+        data["emerging_theme_count"] = len(emerging)
+        return data
+    except Exception as exc:
+        return {
+            "available": False,
+            "reason": str(exc),
+            "narrative_id": narrative_id,
+            "post_count": 0,
+            "cluster_count": 0,
+            "method": "error",
+            "model": settings.embedding_model,
+            "clusters": [],
+            "timeline": [],
+            "emerging_theme_count": 0,
+        }
+
+
 async def build_dashboard_snapshot(db: AsyncSession) -> dict:
     summaries = await list_narrative_summaries(db)
     by_id: dict[str, dict] = {}
@@ -170,6 +240,7 @@ async def build_dashboard_snapshot(db: AsyncSession) -> dict:
             "sentiment": await narrative_sentiment_shift(db, nid),
             "amplification": await narrative_amplification(db, nid),
             "graph": await narrative_graph(db, nid),
+            "themes": await narrative_themes(db, nid),
         }
 
     return {
