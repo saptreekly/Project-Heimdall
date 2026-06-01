@@ -11,8 +11,11 @@ from pathlib import Path
 from heimdall.config import get_settings
 
 _LIST_PREFIX = "list:"
-_STATE_PATH = Path("data/x_rate_state.json")
 _file_lock = asyncio.Lock()
+
+
+def _state_path() -> Path:
+    return Path(get_settings().x_rate_state_path)
 
 
 class XIngestDisabled(Exception):
@@ -115,17 +118,19 @@ async def wait_between_searches() -> None:
 
 
 def _load_state() -> dict:
-    if not _STATE_PATH.exists():
+    path = _state_path()
+    if not path.exists():
         return {"date": date.today().isoformat(), "count": 0}
     try:
-        return json.loads(_STATE_PATH.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         return {"date": date.today().isoformat(), "count": 0}
 
 
 def _save_state(state: dict) -> None:
-    _STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    _STATE_PATH.write_text(json.dumps(state, indent=2), encoding="utf-8")
+    path = _state_path()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state, indent=2), encoding="utf-8")
 
 
 async def daily_usage_snapshot() -> dict:

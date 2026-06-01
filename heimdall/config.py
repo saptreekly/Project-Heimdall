@@ -36,6 +36,7 @@ class Settings(BaseSettings):
     x_max_tweets_per_search: int = 20
     x_min_seconds_between_searches: float = 3.0
     x_max_graphql_requests_per_day: int = 30
+    x_rate_state_path: str = "data/x_rate_state.json"
 
     # Default ingester when /ingest omits platform: hackernews needs no credentials
     default_ingester: str = "hackernews"
@@ -56,11 +57,6 @@ class Settings(BaseSettings):
         "election fraud",
         "deep state",
     ]
-
-    # Comma-separated origins for the analysis dashboard (GitHub Pages + local Vite).
-    cors_origins: str = (
-        "http://127.0.0.1:5173,http://localhost:5173,https://saptreekly.github.io"
-    )
 
 
 @lru_cache

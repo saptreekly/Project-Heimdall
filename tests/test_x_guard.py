@@ -27,7 +27,7 @@ def test_plan_trims_keywords_and_limit(monkeypatch) -> None:
 def test_daily_budget_enforced(tmp_path, monkeypatch) -> None:
     state_file = tmp_path / "x_rate_state.json"
     monkeypatch.setenv("X_MAX_GRAPHQL_REQUESTS_PER_DAY", "2")
-    monkeypatch.setattr("heimdall.ingestion.x_guard._STATE_PATH", state_file)
+    monkeypatch.setenv("X_RATE_STATE_PATH", str(state_file))
     from heimdall.config import get_settings
 
     get_settings.cache_clear()
