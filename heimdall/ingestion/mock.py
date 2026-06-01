@@ -18,9 +18,9 @@ class MockIngester(PlatformIngester):
 
         templates = [
             "They are destroying our country. {kw} is proof the elites hate you.",
-            "Wake up!!! {kw} — share before they delete this!!!",
+            "Wake up!!! {kw} - share before they delete this!!!",
             "I'm just asking questions about {kw}. Why is no one in the media talking about it?",
-            "Normal political disagreement on {kw} — we can disagree without hating each other.",
+            "Normal political disagreement on {kw} - we can disagree without hating each other.",
         ]
 
         for i in range(min(limit, 20)):

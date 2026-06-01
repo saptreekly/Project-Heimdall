@@ -46,11 +46,11 @@ function mean(nums: number[]): number | null {
 
 function outrageHistogram(posts: Post[]): Map<string, number> {
   const bins = new Map<string, number>([
-    ["0–0.2", 0],
-    ["0.2–0.4", 0],
-    ["0.4–0.6", 0],
-    ["0.6–0.8", 0],
-    ["0.8–1.0", 0],
+    ["0-0.2", 0],
+    ["0.2-0.4", 0],
+    ["0.4-0.6", 0],
+    ["0.6-0.8", 0],
+    ["0.8-1.0", 0],
     ["(none)", 0],
   ]);
   for (const p of posts) {
@@ -59,11 +59,11 @@ function outrageHistogram(posts: Post[]): Map<string, number> {
       bins.set("(none)", (bins.get("(none)") ?? 0) + 1);
       continue;
     }
-    if (o < 0.2) bins.set("0–0.2", (bins.get("0–0.2") ?? 0) + 1);
-    else if (o < 0.4) bins.set("0.2–0.4", (bins.get("0.2–0.4") ?? 0) + 1);
-    else if (o < 0.6) bins.set("0.4–0.6", (bins.get("0.4–0.6") ?? 0) + 1);
-    else if (o < 0.8) bins.set("0.6–0.8", (bins.get("0.6–0.8") ?? 0) + 1);
-    else bins.set("0.8–1.0", (bins.get("0.8–1.0") ?? 0) + 1);
+    if (o < 0.2) bins.set("0-0.2", (bins.get("0-0.2") ?? 0) + 1);
+    else if (o < 0.4) bins.set("0.2-0.4", (bins.get("0.2-0.4") ?? 0) + 1);
+    else if (o < 0.6) bins.set("0.4-0.6", (bins.get("0.4-0.6") ?? 0) + 1);
+    else if (o < 0.8) bins.set("0.6-0.8", (bins.get("0.6-0.8") ?? 0) + 1);
+    else bins.set("0.8-1.0", (bins.get("0.8-1.0") ?? 0) + 1);
   }
   return bins;
 }
@@ -97,7 +97,7 @@ function renderPosts(posts: Post[], limit = 12): string {
           <span>${escapeHtml(p.platform)}</span>
           <span>${escapeHtml(p.author_id)}</span>
           <span>${escapeHtml(p.posted_at.slice(0, 16))}</span>
-          <span class="outrage-tag">outrage ${p.outrage_index?.toFixed(3) ?? "—"}</span>
+          <span class="outrage-tag">outrage ${p.outrage_index?.toFixed(3) ?? "n/a"}</span>
         </div>
         <p class="post-text">${escapeHtml(truncate(p.text, 280))}</p>
       </li>`
@@ -150,29 +150,35 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
     .join("");
   const stamp = generatedAt ? ` · ${escapeHtml(generatedAt.slice(0, 19))} UTC` : "";
   return `
-    <header>
-      <h1>Heimdall — Narrative Analysis</h1>
-      <p class="data-badge">Repo snapshot${stamp}</p>
-      <p class="data-links">
-        Source data:
-        <a href="${DATA_LINKS.snapshot}" target="_blank" rel="noopener">snapshot.json</a>
-        ·
-        <a href="${DATA_LINKS.database}" target="_blank" rel="noopener">heimdall.db</a>
-        ·
-        <a href="${DATA_LINKS.publishDocs}" target="_blank" rel="noopener">how to update</a>
-      </p>
-    </header>
-    ${renderTabNav(currentTab)}
-    <div id="panel-analysis"${currentTab !== "analysis" ? " hidden" : ""}>
-      <div class="toolbar">
-        <label for="narrative-select">Narrative</label>
-        <select id="narrative-select">${options}</select>
-        <button type="button" id="refresh-btn">Refresh</button>
+    <div class="app">
+      <header class="site-header">
+        <div class="header-top">
+          <h1><span class="brand">Heimdall</span> Narrative Analysis</h1>
+          <p class="data-badge">Repo snapshot${stamp}</p>
+        </div>
+        <p class="data-links">
+          Source data:
+          <a href="${DATA_LINKS.snapshot}" target="_blank" rel="noopener">snapshot.json</a>
+          ·
+          <a href="${DATA_LINKS.database}" target="_blank" rel="noopener">heimdall.db</a>
+          ·
+          <a href="${DATA_LINKS.publishDocs}" target="_blank" rel="noopener">how to update</a>
+        </p>
+      </header>
+      ${renderTabNav(currentTab)}
+      <div id="panel-analysis"${currentTab !== "analysis" ? " hidden" : ""}>
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <label for="narrative-select">Narrative</label>
+            <select id="narrative-select" class="narrative-select">${options}</select>
+            <button type="button" id="refresh-btn" class="btn btn-secondary">Reload snapshot</button>
+          </div>
+        </div>
+        <main id="content" class="dashboard"><p class="loading">Loading…</p></main>
       </div>
-      <main id="content"><p class="loading">Loading…</p></main>
-    </div>
-    <div id="panel-methodology" class="panel-methodology"${currentTab !== "methodology" ? " hidden" : ""}>
-      <main>${renderMethodology()}</main>
+      <div id="panel-methodology" class="panel-methodology"${currentTab !== "methodology" ? " hidden" : ""}>
+        <main class="dashboard prose-wrap">${renderMethodology()}</main>
+      </div>
     </div>
   `;
 }
@@ -185,7 +191,7 @@ function switchTab(tab: AppTab): void {
 
 function renderMissingSnapshot(message: string): void {
   root.innerHTML = `
-    <header><h1>Heimdall — Narrative Analysis</h1></header>
+    <header class="site-header"><h1><span class="brand">Heimdall</span> Narrative Analysis</h1></header>
     <main>
       <div class="error">
         <strong>No snapshot data</strong>
@@ -218,42 +224,47 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     const avg = mean(outrageVals);
 
     content.innerHTML = `
-      <div class="grid">
-        <div class="card"><h2>Posts</h2><div class="value">${posts.length}</div></div>
-        <div class="card"><h2>Authors</h2><div class="value">${authors.size}</div></div>
-        <div class="card"><h2>Mean outrage</h2><div class="value">${avg != null ? avg.toFixed(3) : "—"}</div></div>
-        <div class="card"><h2>CIB suspicion</h2><div class="value">${cib.suspicion_score.toFixed(2)}</div>
-          <div class="sub">organic ${cib.organic_score.toFixed(2)} · ${cib.edge_count} edges</div></div>
+      <div class="metrics-grid">
+        <div class="metric-card"><span class="metric-label">Posts</span><div class="metric-value">${posts.length}</div></div>
+        <div class="metric-card"><span class="metric-label">Authors</span><div class="metric-value">${authors.size}</div></div>
+        <div class="metric-card"><span class="metric-label">Mean outrage</span><div class="metric-value">${avg != null ? avg.toFixed(3) : "n/a"}</div></div>
+        <div class="metric-card metric-card-wide">
+          <span class="metric-label">CIB suspicion</span>
+          <div class="metric-value">${cib.suspicion_score.toFixed(2)}</div>
+          <div class="metric-sub">organic ${cib.organic_score.toFixed(2)} · ${cib.edge_count} edges</div>
+        </div>
       </div>
 
-      <section>
-        <h2>Outrage distribution</h2>
-        ${renderHistogram(posts)}
-      </section>
+      <div class="charts-grid">
+        <section class="panel">
+          <h2>Outrage distribution</h2>
+          ${renderHistogram(posts)}
+        </section>
+        <section class="panel">
+          <h2>Sentiment shift <span class="trend-pill">${escapeHtml(sentiment.trend)}</span></h2>
+          ${renderSentimentChart(sentiment.buckets)}
+        </section>
+      </div>
 
-      <section>
-        <h2>Sentiment shift (${escapeHtml(sentiment.trend)})</h2>
-        ${renderSentimentChart(sentiment.buckets)}
-      </section>
+      <div class="split-grid">
+        <section class="panel">
+          <h2>Duplicate text (amplification)</h2>
+          ${renderClusters(amp.clusters)}
+        </section>
+        <section class="panel">
+          <h2>CIB signals</h2>
+          <div class="signal-body">
+            ${cib.signals.length ? `<ul class="signal-list">${cib.signals.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>` : "<p class='empty'>No elevated CIB signals.</p>"}
+            ${
+              cib.iu_astroturf
+                ? `<p class="metric-sub">IU astroturf: ${cib.iu_astroturf.known_political_bots} known bots / ${cib.iu_astroturf.authors_in_narrative} authors</p>`
+                : ""
+            }
+          </div>
+        </section>
+      </div>
 
-      <section>
-        <h2>Duplicate text (amplification)</h2>
-        ${renderClusters(amp.clusters)}
-      </section>
-
-      <section>
-        <h2>CIB signals</h2>
-        <div class="card">
-          ${cib.signals.length ? `<ul>${cib.signals.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>` : "<p class='loading'>No elevated CIB signals.</p>"}
-          ${
-            cib.iu_astroturf
-              ? `<p class="sub">IU astroturf: ${cib.iu_astroturf.known_political_bots} known bots / ${cib.iu_astroturf.authors_in_narrative} authors</p>`
-              : ""
-          }
-        </div>
-      </section>
-
-      <section>
+      <section class="panel posts-panel">
         <h2>Top posts by outrage</h2>
         ${renderPosts(posts)}
       </section>

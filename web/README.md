@@ -1,11 +1,11 @@
 # Heimdall analysis dashboard
 
-Static TypeScript UI — reads **`public/data/snapshot.json`** only (exported from repo data). No live API.
+Static TypeScript UI: reads **`public/data/snapshot.json`** only (exported from repo data). No live API.
 
 ## Local preview
 
 ```bash
-# From repo root — refresh snapshot from ingested DB
+# From repo root: refresh snapshot from ingested DB
 python scripts/publish_dashboard_data.py
 
 cd web && npm install && npm run dev

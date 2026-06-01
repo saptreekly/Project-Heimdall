@@ -66,7 +66,7 @@ Pages deploy runs after data is pushed (and daily 14:00 UTC).
 
 Or set GitHub secret **`DASHBOARD_DATABASE_URL`**. If neither is present, CI seeds mock demo data.
 
-The dashboard reads **`snapshot.json` only** — header links point at repo data on GitHub.
+The dashboard reads **`snapshot.json` only**; header links point at repo data on GitHub.
 
 **Local preview:**
 
@@ -75,7 +75,7 @@ python scripts/publish_dashboard_data.py
 cd web && npm install && npm run dev
 ```
 
-Open http://127.0.0.1:5173 — deep link: `?narrative=3`
+Open http://127.0.0.1:5173 (deep link: `?narrative=3`)
 
 **Optional:** `uvicorn heimdall.main:app` still serves ingest/API; after `npm run build` it can also serve `web/dist` at `/`.
 
@@ -132,7 +132,7 @@ curl http://127.0.0.1:8000/api/v1/narratives/11/calibration
 curl "http://127.0.0.1:8000/api/v1/narratives/11/posts?min_outrage=0.3"
 ```
 
-`keywords` are subset names (`hate`, `offensive`, `stance_hillary`, …). No Twitter user IDs — IU astroturf overlap stays N/A.
+`keywords` are subset names (`hate`, `offensive`, `stance_hillary`, …). No Twitter user IDs; IU astroturf overlap stays N/A.
 
 ## IU astroturf bot list
 
@@ -143,7 +143,7 @@ curl -X POST http://127.0.0.1:8000/api/v1/datasets/astroturf/import
 curl http://127.0.0.1:8000/api/v1/datasets/astroturf/stats
 ```
 
-`/cib` responses include `iu_astroturf` overlap for **`platform=x` posts only**. Mastodon numeric account IDs are not Twitter IDs — overlap stays 0 until you ingest X/Twitter data.
+`/cib` responses include `iu_astroturf` overlap for **`platform=x` posts only**. Mastodon numeric account IDs are not Twitter IDs; overlap stays 0 until you ingest X/Twitter data.
 
 ### X / Twitter (session cookies)
 
@@ -178,7 +178,7 @@ After ingest, `GET /api/v1/narratives/{id}/cib` can report IU astroturf overlap 
 
 Check today's usage: `GET /api/v1/platforms/x/usage`. Ingest responses include a `guardrails` object when limits were applied.
 
-Use a **research alt account** for cookies; ingest manually a few times per day—not on a tight cron.
+Use a **research alt account** for cookies; ingest manually a few times per day, not on a tight cron.
 
 Neo4j authors get `known_bot` and `bot_label` when matched.
 
@@ -200,7 +200,7 @@ Install transformer-backed sentiment: `pip install -e ".[ml]"` and pass `Outrage
 
 ## Legal & ethical use
 
-Only collect **public** data in compliance with platform Terms of Service and applicable law. This scaffold is for research and defensive analysis—not for harassment, doxxing, or targeting individuals. Tune lexicons and thresholds with human review; automated CIB scores are **heuristic**, not ground truth.
+Only collect **public** data in compliance with platform Terms of Service and applicable law. This scaffold is for research and defensive analysis, not for harassment, doxxing, or targeting individuals. Tune lexicons and thresholds with human review; automated CIB scores are **heuristic**, not ground truth.
 
 ## Analysis
 

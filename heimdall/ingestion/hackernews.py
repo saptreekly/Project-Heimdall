@@ -12,7 +12,7 @@ HN_SEARCH_URL = "https://hn.algolia.com/api/v1/search"
 
 
 class HackerNewsIngester(PlatformIngester):
-    """Public Algolia HN Search API — no API key or account required."""
+    """Public Algolia HN Search API; no API key or account required."""
 
     def __init__(self) -> None:
         self._client = httpx.AsyncClient(timeout=30.0)

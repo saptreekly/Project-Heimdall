@@ -75,7 +75,7 @@ async def import_astroturf(
 
 
 async def narrative_bot_overlap(session: AsyncSession, narrative_id: int) -> dict:
-    """Match narrative authors against IU astroturf (Twitter/X only — not Mastodon numeric IDs)."""
+    """Match narrative authors against IU astroturf (Twitter/X only, not Mastodon numeric IDs)."""
     from sqlalchemy import String, cast
 
     from heimdall.db.models import Post

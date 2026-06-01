@@ -1,4 +1,4 @@
-"""Hugging Face cardiffnlp/tweet_eval — tweet text + benchmark labels."""
+"""Hugging Face cardiffnlp/tweet_eval: tweet text + benchmark labels."""
 
 import hashlib
 import json

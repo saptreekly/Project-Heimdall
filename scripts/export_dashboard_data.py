@@ -23,7 +23,7 @@ async def run(out: Path) -> int:
         snapshot = await build_dashboard_snapshot(db)
 
     if not snapshot["narratives"]:
-        print("No narratives in database — run ingest or scripts/seed_dashboard_if_empty.py", file=sys.stderr)
+        print("No narratives in database; run ingest or scripts/seed_dashboard_if_empty.py", file=sys.stderr)
         return 1
 
     out.parent.mkdir(parents=True, exist_ok=True)

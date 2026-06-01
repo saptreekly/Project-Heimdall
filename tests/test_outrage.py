@@ -4,7 +4,7 @@ from heimdall.nlp.outrage import OutrageAnalyzer
 def test_high_outrage_ragebait():
     analyzer = OutrageAnalyzer()
     result = analyzer.analyze(
-        "They are destroying our country!!! WAKE UP — share before they delete this!!! "
+        "They are destroying our country!!! WAKE UP - share before they delete this!!! "
         "The deep state vermin hate you."
     )
     assert result.outrage_index >= 0.33

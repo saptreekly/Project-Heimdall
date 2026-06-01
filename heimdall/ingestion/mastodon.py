@@ -15,7 +15,7 @@ _TAG_RE = re.compile(r"[^a-z0-9_]+", re.I)
 
 class MastodonIngester(PlatformIngester):
     """
-    Public hashtag timelines on a Mastodon instance — no token for read-only tag feeds.
+    Public hashtag timelines on a Mastodon instance; no token for read-only tag feeds.
     Reblogs in the timeline become SHARE edges to the original author.
     """
 

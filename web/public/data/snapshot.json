@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-06-01T00:09:41.325538+00:00",
+  "generated_at": "2026-06-01T00:25:30.553307+00:00",
   "narratives": [
     {
       "id": 1,
@@ -19,6 +19,12 @@
       "name": "midterms_2026",
       "keywords": "2026 midterms,midterm elections 2026,2026 midterm fraud,2026 red wave,2026 blue wave,Senate race 2026,House race 2026",
       "post_count": 78
+    },
+    {
+      "id": 4,
+      "name": "test_x",
+      "keywords": "2026 midterms",
+      "post_count": 10
     }
   ],
   "by_narrative_id": {
@@ -38,7 +44,7 @@
           "id": 2,
           "platform": "mock",
           "author_id": "bot_beta",
-          "text": "Wake up!!! border crisis \u2014 share before they delete this!!!",
+          "text": "Wake up!!! border crisis  -  share before they delete this!!!",
           "posted_at": "2026-05-31T20:56:08.223876",
           "outrage_index": 0.1468,
           "sentiment_label": "neutral",
@@ -58,7 +64,7 @@
           "id": 4,
           "platform": "mock",
           "author_id": "bot_alpha",
-          "text": "Normal political disagreement on border crisis \u2014 we can disagree without hating each other.",
+          "text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
           "posted_at": "2026-05-31T18:56:08.223876",
           "outrage_index": 0.0044,
           "sentiment_label": "neutral",
@@ -78,7 +84,7 @@
           "id": 6,
           "platform": "mock",
           "author_id": "bot_gamma",
-          "text": "Wake up!!! border crisis \u2014 share before they delete this!!!",
+          "text": "Wake up!!! border crisis  -  share before they delete this!!!",
           "posted_at": "2026-05-31T16:56:08.223876",
           "outrage_index": 0.1468,
           "sentiment_label": "neutral",
@@ -98,7 +104,7 @@
           "id": 8,
           "platform": "mock",
           "author_id": "bot_beta",
-          "text": "Normal political disagreement on border crisis \u2014 we can disagree without hating each other.",
+          "text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
           "posted_at": "2026-05-31T14:56:08.223876",
           "outrage_index": 0.0044,
           "sentiment_label": "neutral",
@@ -118,7 +124,7 @@
           "id": 10,
           "platform": "mock",
           "author_id": "user_202",
-          "text": "Wake up!!! border crisis \u2014 share before they delete this!!!",
+          "text": "Wake up!!! border crisis  -  share before they delete this!!!",
           "posted_at": "2026-05-31T12:56:08.223876",
           "outrage_index": 0.1468,
           "sentiment_label": "neutral",
@@ -173,9 +179,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "bot_alpha",
+              "bot_gamma",
               "bot_beta",
-              "bot_gamma"
+              "bot_alpha"
             ]
           }
         ],
@@ -219,7 +225,7 @@
               6,
               2
             ],
-            "sample_text": "Wake up!!! border crisis \u2014 share before they delete this!!!"
+            "sample_text": "Wake up!!! border crisis  -  share before they delete this!!!"
           },
           {
             "count": 3,
@@ -247,7 +253,7 @@
               8,
               4
             ],
-            "sample_text": "Normal political disagreement on border crisis \u2014 we can disagree without hating each other."
+            "sample_text": "Normal political disagreement on border crisis  -  we can disagree without hating each other."
           },
           {
             "count": 2,
@@ -401,7 +407,7 @@
           "id": 24,
           "platform": "x",
           "author_id": "3326622373",
-          "text": "Ajit Doval met Myanmar\u2019s NSA Tin Aung San (Moscow, May 2026). Agenda: security cooperation, connectivity, regional stability. Standard diplomatic engagement \u2014 not a crisis-breaking moment. Ground realities may have been discussed in strategic : \u2714\ufe0f Cross-border arms, drugs & insurgent movement from Myanmar are real \u2714\ufe0f Border intelligence-sharing is legitimate \u2714\ufe0f Myanmar\u2019s civil war & China\u2019s influence limit any quick fix \u2714\ufe0f Manipur\u2019s primary driver remains internal Meitei-Kuki-Zo ethnic conflict A realistic roadmap to peace (3 pillars): 1. Internal political dialogue Separate + joint talks: Meitei, Kuki-Zo, Naga groups, civil society, women\u2019s collectives. Core issues: land rights, reserved areas, economic displacement. 2. Smart border cooperation (not militarization) Targeted intel-sharing with Myanmar. Regulate Free Movement Regime (protect hill livelihoods). Joint anti-narcotics task force with local police. 3. Justice + long-term governance Independent probe into 2023\u20132026 violence with accountability. Rehabilitation for 60,000+ displaced. Economic corridors linking hills & valley \u2014 not just security corridors.",
+          "text": "Ajit Doval met Myanmar\u2019s NSA Tin Aung San (Moscow, May 2026). Agenda: security cooperation, connectivity, regional stability. Standard diplomatic engagement  -  not a crisis-breaking moment. Ground realities may have been discussed in strategic : \u2714\ufe0f Cross-border arms, drugs & insurgent movement from Myanmar are real \u2714\ufe0f Border intelligence-sharing is legitimate \u2714\ufe0f Myanmar\u2019s civil war & China\u2019s influence limit any quick fix \u2714\ufe0f Manipur\u2019s primary driver remains internal Meitei-Kuki-Zo ethnic conflict A realistic roadmap to peace (3 pillars): 1. Internal political dialogue Separate + joint talks: Meitei, Kuki-Zo, Naga groups, civil society, women\u2019s collectives. Core issues: land rights, reserved areas, economic displacement. 2. Smart border cooperation (not militarization) Targeted intel-sharing with Myanmar. Regulate Free Movement Regime (protect hill livelihoods). Joint anti-narcotics task force with local police. 3. Justice + long-term governance Independent probe into 2023\u20132026 violence with accountability. Rehabilitation for 60,000+ displaced. Economic corridors linking hills & valley  -  not just security corridors.",
           "posted_at": "2026-05-31T19:01:44",
           "outrage_index": 0.003,
           "sentiment_label": "neutral",
@@ -644,7 +650,7 @@
           "id": 37,
           "platform": "x",
           "author_id": "24198415",
-          "text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE America Act is voter ID \u2014 very important \u2014 proof of citizenship, and no mail-in ballots, with exceptions if you are in the military, or you are disabled, or you are sick, or you are going on vacation. I will be liberal on that subject. But no, with exceptions.\u201d The factual frame Trump put on the international comparison: \u201cNo other country in the world is doing mail-in voting anymore because it is a fraud. You cannot keep it honest. There is no way of keeping it honest.\u201d The pressure on Senator Cornyn and the rest of the Republican Senate, on the record: \u201cThe Republican Senate has to get going. The House has passed it. The Republican Senate has to get going. They have to. They have no choice.\u201d And the structural point Trump tied to it in the same interview: \u201cI do not think a Republican can win in California unless you pass the SAVE America Act. Then they are going to have to show proof of citizenship. They are going to have to get rid of their mail-in voting.\u201d Mail-in voting is how California stays blue forever. Voter ID and proof of citizenship is how California becomes competitive again. Pass the SAVE America Act. Before the midterms. No excuses.",
+          "text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE America Act is voter ID  -  very important  -  proof of citizenship, and no mail-in ballots, with exceptions if you are in the military, or you are disabled, or you are sick, or you are going on vacation. I will be liberal on that subject. But no, with exceptions.\u201d The factual frame Trump put on the international comparison: \u201cNo other country in the world is doing mail-in voting anymore because it is a fraud. You cannot keep it honest. There is no way of keeping it honest.\u201d The pressure on Senator Cornyn and the rest of the Republican Senate, on the record: \u201cThe Republican Senate has to get going. The House has passed it. The Republican Senate has to get going. They have to. They have no choice.\u201d And the structural point Trump tied to it in the same interview: \u201cI do not think a Republican can win in California unless you pass the SAVE America Act. Then they are going to have to show proof of citizenship. They are going to have to get rid of their mail-in voting.\u201d Mail-in voting is how California stays blue forever. Voter ID and proof of citizenship is how California becomes competitive again. Pass the SAVE America Act. Before the midterms. No excuses.",
           "posted_at": "2026-05-31T22:13:14",
           "outrage_index": 0.0076,
           "sentiment_label": "neutral",
@@ -734,7 +740,7 @@
           "id": 83,
           "platform": "x",
           "author_id": "1827527511498006528",
-          "text": "Axios: Texas population boom, Latino backlash scramble 2026 Senate race \"Texas has gained more than 2.5 million new residents since 2020 \u2014 roughly the entire population of New Mexico \u2014 reshaping the electorate and injecting new uncertainty into this year's marquee Senate race.\"",
+          "text": "Axios: Texas population boom, Latino backlash scramble 2026 Senate race \"Texas has gained more than 2.5 million new residents since 2020  -  roughly the entire population of New Mexico  -  reshaping the electorate and injecting new uncertainty into this year's marquee Senate race.\"",
           "posted_at": "2026-05-31T19:58:29",
           "outrage_index": 0.0023,
           "sentiment_label": "neutral",
@@ -1174,7 +1180,7 @@
           "id": 103,
           "platform": "x",
           "author_id": "1271439514460753920",
-          "text": "TEUME! Pasarkemis dan sekitarnya (Tangerang), yuk nongkrong sambil rayain Comeback TREASURE bareng\u2728 RED WAVE \u2014 \ud83c\udf0aNEW WAV COMEBACK PARTY with \ud83d\udcc601 June 2026 \ud83d\udccdGoodang Coffee, Kab. Tangerang \ud83d\udcb0FREE ENTRY \ud83d\udd17 WaveRidingWithTREASURE",
+          "text": "TEUME! Pasarkemis dan sekitarnya (Tangerang), yuk nongkrong sambil rayain Comeback TREASURE bareng\u2728 RED WAVE  -  \ud83c\udf0aNEW WAV COMEBACK PARTY with \ud83d\udcc601 June 2026 \ud83d\udccdGoodang Coffee, Kab. Tangerang \ud83d\udcb0FREE ENTRY \ud83d\udd17 WaveRidingWithTREASURE",
           "posted_at": "2026-05-30T06:35:09",
           "outrage_index": 0.0216,
           "sentiment_label": "neutral",
@@ -1539,6 +1545,223 @@
             "post_ids": [
               34,
               33
+            ],
+            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for."
+          }
+        ]
+      }
+    },
+    "4": {
+      "posts": [
+        {
+          "id": 109,
+          "platform": "x",
+          "author_id": "2497137228",
+          "text": "Do you think the 2026 midterms will be free and fair?: 59.4% of 26,048 Total Votes say, \"NO!\"",
+          "posted_at": "2026-05-31T23:36:44",
+          "outrage_index": 0.0139,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 110,
+          "platform": "x",
+          "author_id": "373607124",
+          "text": "Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat like in 2024. RiseUp VoteBlue in numbers TooBigToRig StopTrump &amp; the CorruptGOP",
+          "posted_at": "2026-05-31T23:12:45",
+          "outrage_index": 0.0057,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 111,
+          "platform": "x",
+          "author_id": "1760317411390054400",
+          "text": "My goal for the 2026 Iowa midterms has been fulfilled. Anything beyond what has already been accomplished is simply cake and ice cream.",
+          "posted_at": "2026-05-31T22:47:03",
+          "outrage_index": 0.0018,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 112,
+          "platform": "x",
+          "author_id": "1828029219277791232",
+          "text": "Senate will expand to +1 = 54 for R\u2019s. I have 224 for R\u2019s in the House. 2026 will defy all modern political midterms.",
+          "posted_at": "2026-05-31T22:46:45",
+          "outrage_index": 0.0034,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 113,
+          "platform": "x",
+          "author_id": "1777383147950280706",
+          "text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+          "posted_at": "2026-05-31T22:45:14",
+          "outrage_index": 0.0015,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 114,
+          "platform": "x",
+          "author_id": "1791965943431667712",
+          "text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+          "posted_at": "2026-05-31T22:45:04",
+          "outrage_index": 0.0015,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 115,
+          "platform": "x",
+          "author_id": "1648149942190632961",
+          "text": "S&amp;P500 will drop 20% by the day of midterms in November 2026.",
+          "posted_at": "2026-05-31T22:18:51",
+          "outrage_index": 0.0037,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 116,
+          "platform": "x",
+          "author_id": "1466263472132423681",
+          "text": "Don't get distracted by the midterms, Trump isn't. He couldn't care less about the outcome He and his crime family will have stolen more money by Nov 3/2026 from the American people and insider trading than all past Presidents and Congressional members put together since 1776.",
+          "posted_at": "2026-05-31T22:18:11",
+          "outrage_index": 0.0023,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 117,
+          "platform": "x",
+          "author_id": "24198415",
+          "text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE America Act is voter ID  -  very important  -  proof of citizenship, and no mail-in ballots, with exceptions if you are in the military, or you are disabled, or you are sick, or you are going on vacation. I will be liberal on that subject. But no, with exceptions.\u201d The factual frame Trump put on the international comparison: \u201cNo other country in the world is doing mail-in voting anymore because it is a fraud. You cannot keep it honest. There is no way of keeping it honest.\u201d The pressure on Senator Cornyn and the rest of the Republican Senate, on the record: \u201cThe Republican Senate has to get going. The House has passed it. The Republican Senate has to get going. They have to. They have no choice.\u201d And the structural point Trump tied to it in the same interview: \u201cI do not think a Republican can win in California unless you pass the SAVE America Act. Then they are going to have to show proof of citizenship. They are going to have to get rid of their mail-in voting.\u201d Mail-in voting is how California stays blue forever. Voter ID and proof of citizenship is how California becomes competitive again. Pass the SAVE America Act. Before the midterms. No excuses.",
+          "posted_at": "2026-05-31T22:13:14",
+          "outrage_index": 0.0076,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        },
+        {
+          "id": 118,
+          "platform": "x",
+          "author_id": "1923828566443065344",
+          "text": "That\u2019s why I say at the end of the 2026 midterms Bernie Sanders will either be a kingmaker or an opinionated grumpy old man",
+          "posted_at": "2026-05-31T21:39:29",
+          "outrage_index": 0.0026,
+          "sentiment_label": "neutral",
+          "benchmark_label": null
+        }
+      ],
+      "cib": {
+        "narrative_id": 4,
+        "suspicion_score": 0.0,
+        "organic_score": 1.0,
+        "signals": [],
+        "node_count": 10,
+        "edge_count": 0,
+        "density": 0.0,
+        "top_amplifiers": [
+          {
+            "author_id": "1923828566443065344",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0026
+          },
+          {
+            "author_id": "24198415",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0076
+          },
+          {
+            "author_id": "1466263472132423681",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0023
+          },
+          {
+            "author_id": "1648149942190632961",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0037
+          },
+          {
+            "author_id": "1791965943431667712",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0015
+          },
+          {
+            "author_id": "1777383147950280706",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0015
+          },
+          {
+            "author_id": "1828029219277791232",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0034
+          },
+          {
+            "author_id": "1760317411390054400",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0018
+          },
+          {
+            "author_id": "373607124",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0057
+          },
+          {
+            "author_id": "2497137228",
+            "out_degree": 0,
+            "in_degree": 0,
+            "max_outrage": 0.0139
+          }
+        ],
+        "coordinated_clusters": [],
+        "iu_astroturf": {
+          "authors_in_narrative": 10,
+          "platforms": [
+            "x"
+          ],
+          "x_authors_checked": 10,
+          "known_political_bots": 0,
+          "known_bot_ratio": 0.0,
+          "labeled_accounts": [],
+          "note": null
+        }
+      },
+      "sentiment": {
+        "narrative_id": 4,
+        "buckets": [
+          {
+            "date": "2026-05-31",
+            "mean_outrage": 0.0044,
+            "count": 10
+          }
+        ],
+        "trend": "insufficient_data"
+      },
+      "amplification": {
+        "narrative_id": 4,
+        "cluster_count": 1,
+        "clusters": [
+          {
+            "count": 2,
+            "author_count": 2,
+            "author_ids": [
+              "1777383147950280706",
+              "1791965943431667712"
+            ],
+            "post_ids": [
+              114,
+              113
             ],
             "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for."
           }

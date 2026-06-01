@@ -2,7 +2,7 @@
 
 ## astroturf.tsv (Indiana University Bot Repository)
 
-- **Source:** [Bot Repository](https://botometer.osome.iu.edu/bot-repository/datasets.html) — astroturf campaign list
+- **Source:** [Bot Repository](https://botometer.osome.iu.edu/bot-repository/datasets.html): astroturf campaign list
 - **Format:** tab-separated `twitter_user_id` + `political_Bot` (no header)
 - **Rows:** ~584 known political bot accounts (Twitter/X numeric IDs)
 - **Use in Heimdall:** ground-truth bot labels for author lookup, CIB validation, Neo4j styling

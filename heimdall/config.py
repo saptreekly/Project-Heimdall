@@ -29,7 +29,7 @@ class Settings(BaseSettings):
         validation_alias=AliasChoices("X_CT0", "CT0"),
     )
 
-    # X ingest guardrails (unofficial GraphQL — keep conservative)
+    # X ingest guardrails (unofficial GraphQL; keep conservative)
     x_ingest_enabled: bool = True
     x_max_keywords_per_ingest: int = 5
     x_max_posts_per_ingest: int = 80

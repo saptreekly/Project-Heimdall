@@ -9,7 +9,7 @@ export function renderMethodology(): string {
           Heimdall tracks public social text around polarizing narratives, scores
           <strong>outrage escalation</strong>, and maps author-level propagation to flag
           possible <strong>coordinated inauthentic amplification (CIB)</strong>. Scores are
-          heuristic research signals—not ground truth about intent or bot status.
+          heuristic research signals, not ground truth about intent or bot status.
         </p>
       </section>
 
@@ -69,7 +69,7 @@ export function renderMethodology(): string {
         <h2>Duplicate text (amplification)</h2>
         <p>
           Posts are grouped by normalized text (lowercased, whitespace collapsed). Clusters with
-          at least two posts are shown—often copypasta or coordinated messaging. Multiple authors
+          at least two posts are shown; often copypasta or coordinated messaging. Multiple authors
           in one cluster is a stronger coordination signal than a single author repeating a message.
         </p>
       </section>
@@ -89,8 +89,8 @@ export function renderMethodology(): string {
         </ul>
         <p>
           <strong>IU astroturf overlap</strong> (when present) counts narrative authors on platform
-          <code>x</code> that appear in the Indiana University political-bot list—only comparable
-          for Twitter/X author IDs, not Mastodon numeric IDs.
+          <code>x</code> that appear in the Indiana University political-bot list (only comparable
+          for Twitter/X author IDs, not Mastodon numeric IDs).
         </p>
       </section>
 
