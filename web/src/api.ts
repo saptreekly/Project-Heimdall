@@ -19,12 +19,21 @@ export const DATA_LINKS = {
 let snapshotCache: DashboardSnapshot | null = null;
 
 function snapshotCandidates(): string[] {
-  const base = import.meta.env.BASE_URL || "/";
-  const urls = [new URL("data/snapshot.json", base).href];
-  // Fallback when the bundle was built with base "/" but served under /Project-Heimdall/
-  if (!base.includes("Project-Heimdall")) {
-    urls.push("/Project-Heimdall/data/snapshot.json");
+  const urls: string[] = [];
+  const origin = window.location.origin;
+
+  // Resolve relative to the deployed page (valid base; "/" alone throws in browsers)
+  try {
+    urls.push(new URL("data/snapshot.json", window.location.href).href);
+  } catch {
+    /* continue to fallbacks */
   }
+
+  const viteBase = import.meta.env.BASE_URL || "/Project-Heimdall/";
+  const pathBase = viteBase.startsWith("/") ? viteBase : `/${viteBase}`;
+  urls.push(`${origin}${pathBase.replace(/\/?$/, "/")}data/snapshot.json`);
+  urls.push(`${origin}/Project-Heimdall/data/snapshot.json`);
+
   return [...new Set(urls)];
 }
 
