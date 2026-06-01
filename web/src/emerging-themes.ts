@@ -1,5 +1,6 @@
 import { selectThemeCluster } from "./investigation";
 import type { ThemesReport } from "./types";
+import { stateLoadingHtml } from "./ui-states";
 
 function escapeHtml(s: string): string {
   return s
@@ -37,7 +38,7 @@ export function emergingThemesPanelHtml(report: ThemesReport, asInner = false): 
         Click a cluster to filter posts below.
       </p>
       <div id="themes-timeline-host" class="themes-timeline-host">
-        <p class="loading">Loading themes…</p>
+        ${stateLoadingHtml("Loading themes…")}
       </div>
       <p class="metric-sub themes-meta" id="themes-meta"></p>
   `;
@@ -105,6 +106,7 @@ export function renderEmergingThemesTimeline(
         <span class="theme-card-meta">${entry.size} posts · cohesion cluster #${entry.cluster_id}${
           entry.emerging_theme ? " · emerging" : ""
         }</span>
+        <span class="cluster-cta">View ${entry.size} posts →</span>
       </button>`;
     })
     .join("")}</div>`;

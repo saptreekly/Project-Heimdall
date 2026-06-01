@@ -238,30 +238,36 @@ export function renderGraphDiagnostics(
   const empty = stats.edge_count === 0;
   host.innerHTML = empty
     ? `
-    <div class="graph-diagnostics graph-diagnostics-empty" role="status">
-      <p class="graph-diagnostics-title"><strong>No propagation edges in this snapshot</strong></p>
-      <p class="graph-diagnostics-body">
-        ${stats.author_count} author(s) ingested · ${stats.isolated_author_count} with no SHARE, REPLY, or QUOTE target in the batch.
-        Search-only X pulls often miss retweet/reply/quote metadata until those interaction types appear in results.
-      </p>
-      <ul class="graph-diagnostics-list">
-        <li>Re-run ingest after deploying reply/quote edge parsing (Phase 1).</li>
-        <li>Check <strong>Anomalies</strong> and duplicate panels for text-level coordination meanwhile.</li>
-        <li>List timelines (<code>list:&lt;id&gt;</code>) can surface more retweets than keyword search alone.</li>
-      </ul>
-    </div>
+    <details class="graph-text-summary" open>
+      <summary>Text summary of graph</summary>
+      <div class="graph-diagnostics graph-diagnostics-empty" role="status">
+        <p class="graph-diagnostics-title"><strong>No propagation edges in this snapshot</strong></p>
+        <p class="graph-diagnostics-body">
+          ${stats.author_count} author(s) ingested · ${stats.isolated_author_count} with no SHARE, REPLY, or QUOTE target in the batch.
+          Search-only X pulls often miss retweet/reply/quote metadata until those interaction types appear in results.
+        </p>
+        <ul class="graph-diagnostics-list">
+          <li>Re-run ingest after deploying reply/quote edge parsing (Phase 1).</li>
+          <li>Check <strong>Anomalies</strong> and duplicate panels for text-level coordination meanwhile.</li>
+          <li>List timelines (<code>list:&lt;id&gt;</code>) can surface more retweets than keyword search alone.</li>
+        </ul>
+      </div>
+    </details>
   `
     : `
-    <div class="graph-diagnostics" role="status">
-      <p class="graph-diagnostics-metrics">
-        <strong>${stats.edge_count}</strong> edge(s) ·
-        <strong>${stats.author_count}</strong> authors ·
-        <strong>${stats.connected_author_count}</strong> in network ·
-        <strong>${stats.isolated_author_count}</strong> isolated
-      </p>
-      <p class="graph-diagnostics-types">${formatTypeBreakdown(stats.by_type)}</p>
-      <p class="graph-diagnostics-topology">${topologyCaption(meta)}</p>
-    </div>
+    <details class="graph-text-summary" open>
+      <summary>Text summary of graph</summary>
+      <div class="graph-diagnostics" role="status">
+        <p class="graph-diagnostics-metrics">
+          <strong>${stats.edge_count}</strong> edge(s) ·
+          <strong>${stats.author_count}</strong> authors ·
+          <strong>${stats.connected_author_count}</strong> in network ·
+          <strong>${stats.isolated_author_count}</strong> isolated
+        </p>
+        <p class="graph-diagnostics-types">${formatTypeBreakdown(stats.by_type)}</p>
+        <p class="graph-diagnostics-topology">${topologyCaption(meta)}</p>
+      </div>
+    </details>
   `;
 }
 
@@ -433,7 +439,10 @@ export function renderPropagationGraph(
 export function graphPanelHtml(): string {
   return `
     <section class="panel graph-panel" id="propagation-graph-panel">
-      <h2 id="propagation-graph-heading">Propagation network</h2>
+      <div class="graph-panel-header">
+        <h2 id="propagation-graph-heading">Propagation network</h2>
+        <button type="button" id="graph-fullscreen-btn" class="btn btn-secondary btn-small graph-fullscreen-btn" aria-pressed="false">Fullscreen</button>
+      </div>
       <div id="graph-diagnostics-host" class="graph-diagnostics-host"></div>
       <p class="graph-legend">Loading graph…</p>
       <div class="graph-edge-legend" aria-hidden="false">
@@ -470,6 +479,20 @@ export function graphPanelHtml(): string {
       <p class="metric-sub graph-hint">Edge colors: orange = share/RT · blue dashed = reply · purple dotted = quote · click nodes to filter posts</p>
     </section>
   `;
+}
+
+export function bindGraphFullscreen(): void {
+  const btn = document.getElementById("graph-fullscreen-btn");
+  const panel = document.getElementById("propagation-graph-panel");
+  if (!btn || !panel) return;
+
+  btn.addEventListener("click", () => {
+    const on = panel.classList.toggle("graph-fullscreen");
+    btn.setAttribute("aria-pressed", String(on));
+    btn.textContent = on ? "Exit fullscreen" : "Fullscreen";
+    document.body.classList.toggle("graph-fullscreen-active", on);
+    activeNetwork?.fit({ animation: { duration: 300, easingFunction: "easeInOutQuad" } });
+  });
 }
 
 export function updatePropagationGraphBadge(meta: GraphLayoutMeta): void {

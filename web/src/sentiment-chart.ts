@@ -2,6 +2,7 @@ import {
   sentimentOutrageNoticeHtml,
   type OutrageDiagnostics,
 } from "./outrage-diagnostics";
+import { stateEmptyHtml } from "./ui-states";
 import {
   BarController,
   BarElement,
@@ -85,8 +86,10 @@ export function mountSentimentChart(
   if (buckets.length === 0) {
     const parent = canvas.parentElement;
     if (parent) {
-      parent.innerHTML =
-        "<p class='loading'>Not enough dated posts for a timeline.</p>";
+      parent.innerHTML = stateEmptyHtml(
+        "Not enough dated posts for a timeline",
+        "Posts need valid posted_at timestamps."
+      );
     }
     return;
   }

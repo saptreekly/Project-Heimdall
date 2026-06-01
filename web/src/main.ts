@@ -23,13 +23,16 @@ import {
   setAnalysisSectionInUrl,
   showAnalysisSection,
   type AnalysisSection,
+  type SectionBadges,
 } from "./analysis-sections";
+import { buildAlertRows, renderAlertInboxHtml } from "./alert-inbox";
 import { bindBriefPrint, briefPanelHtml, renderBrief } from "./brief";
 import { renderContentNotice } from "./content-notice";
 import {
   duplicatePanelCaption,
   duplicatePanelTitle,
   postsPanelCalloutHtml,
+  renderDataAsOfHtml,
   renderDataLinksExtra,
   renderRateFooter,
 } from "./dashboard-meta";
@@ -63,6 +66,7 @@ import {
 } from "./tabs";
 import {
   clearInvestigationFilter,
+  countMatchingPosts,
   filterPosts,
   getInvestigationFilter,
   hasActiveFilter,
@@ -70,9 +74,11 @@ import {
   selectAuthor,
   selectDate,
   selectDuplicateCluster,
+  selectThemeCluster,
   setHoursBack,
   setInvestigationPosts,
 } from "./investigation";
+import { bindOnboardingHint, renderOnboardingHintHtml } from "./onboarding-hint";
 import {
   bindPostListAuthorLinks,
   escapeHtml,
@@ -87,6 +93,7 @@ import {
 } from "./emerging-themes";
 import {
   focusPropagationAuthor,
+  bindGraphFullscreen,
   graphPanelHtml,
   renderPropagationGraph,
   setPropagationAuthorHandler,
@@ -100,6 +107,17 @@ import {
 } from "./prioritization-scatter";
 import { computeOutrageDiagnostics } from "./outrage-diagnostics";
 import { mountSentimentChart, sentimentChartPanelHtml } from "./sentiment-chart";
+import {
+  bindGlobalInvestigationClear,
+  globalInvestigationBarHtml,
+  metricCardHtml,
+  metricsGridHtml as metricsGridShell,
+  scrollGlobalInvestigationIntoView,
+  stateEmptyHtml,
+  stateErrorHtml,
+  stateLoadingHtml,
+  updateGlobalInvestigationBar,
+} from "./ui";
 import type {
   AmplificationReport,
   CibReport,
@@ -124,6 +142,9 @@ let postListLimit = POST_LIST_INITIAL;
 let lastNearDup: NearDuplicatesReport | null = null;
 let clusterSourcePosts: Post[] = [];
 let jaccardThreshold = 0.82;
+let totalNarrativePosts = 0;
+let lastCriticalCount = 0;
+let lastAnomalyCount = 0;
 let briefContext: {
   narrative: NarrativeSummary;
   posts: Post[];
@@ -197,17 +218,20 @@ function ensureChartsMountedForSection(section: AnalysisSection): void {
   }
 }
 
-function syncRailInvestigation(): void {
-  const rail = document.getElementById("analysis-rail-investigation");
-  const bar = document.getElementById("investigation-filter-bar");
-  if (!rail || !bar) return;
-  if (bar.hidden) {
-    rail.hidden = true;
-    rail.innerHTML = "";
-    return;
+function computeSectionBadges(): SectionBadges {
+  const badges: SectionBadges = {};
+  if (lastCriticalCount > 0) badges.signals = lastCriticalCount;
+  if (lastAnomalyCount > 0) badges.anomalies = lastAnomalyCount;
+  if (hasActiveFilter()) {
+    badges.posts = countMatchingPosts();
+  } else if (totalNarrativePosts > 0) {
+    badges.posts = totalNarrativePosts;
   }
-  rail.hidden = false;
-  rail.innerHTML = `<span class="investigation-label">Active filter</span>${bar.innerHTML.replace(/<span class="investigation-label">Investigating:<\/span>\s*/i, "")}`;
+  return badges;
+}
+
+function refreshGlobalInvestigationBar(): void {
+  updateGlobalInvestigationBar(computeSectionBadges);
 }
 
 function mean(nums: number[]): number | null {
@@ -274,7 +298,6 @@ function applyJaccardThreshold(threshold: number): void {
 
 function updatePostsPanel(): void {
   const host = document.getElementById("post-list-host");
-  const bar = document.getElementById("investigation-filter-bar");
   const countEl = document.getElementById("post-list-count");
   if (!host) return;
 
@@ -299,31 +322,33 @@ function updatePostsPanel(): void {
       loadMore.setAttribute("hidden", "");
     }
   }
+  const shown = Math.min(postListLimit, filtered.length);
   if (countEl) {
-    const shown = Math.min(postListLimit, filtered.length);
-    countEl.textContent = hasActiveFilter()
-      ? `${shown} of ${filtered.length} matching`
-      : `Top ${shown} of ${filtered.length} by outrage`;
-  }
-  syncRailInvestigation();
-  if (bar) {
-    const f = getInvestigationFilter();
-    if (hasActiveFilter() && f.label) {
-      bar.hidden = false;
-      bar.innerHTML = `<span class="investigation-label">Investigating:</span> <strong>${escapeHtml(f.label)}</strong>`;
+    if (hasActiveFilter()) {
+      countEl.textContent = `Showing ${shown} of ${filtered.length} matching (${totalNarrativePosts} in narrative)`;
+    } else if (filtered.length > POST_LIST_MAX && shown >= POST_LIST_MAX) {
+      countEl.textContent = `Showing ${shown} of ${totalNarrativePosts} (capped — export Briefing for full summary)`;
     } else {
-      bar.hidden = true;
-      bar.innerHTML = "";
+      countEl.textContent = `Showing ${shown} of ${totalNarrativePosts} by outrage`;
     }
   }
+  refreshGlobalInvestigationBar();
 }
 
 function applyInvestigation(authorId: string | null): void {
   focusPropagationAuthor(authorId);
   updatePostsPanel();
   if (hasActiveFilter()) {
-    switchAnalysisSection("posts");
+    switchAnalysisSection("posts", { scroll: false });
+    scrollGlobalInvestigationIntoView();
   }
+}
+
+function bindGlobalInvestigationChrome(): void {
+  bindGlobalInvestigationClear(() => {
+    clearThemeCardSelection();
+    clearInvestigationFilter();
+  });
 }
 
 function bindInvestigationChrome(): void {
@@ -332,6 +357,7 @@ function bindInvestigationChrome(): void {
     clearThemeCardSelection();
     clearInvestigationFilter();
   });
+  bindGlobalInvestigationChrome();
   onInvestigationChange((f) => {
     applyInvestigation(f.authorId);
     if (!f.postIds?.length) clearThemeCardSelection();
@@ -345,23 +371,27 @@ function bindInvestigationChrome(): void {
 
 function renderClustersBlock(clusters: DuplicateCluster[], max = 8): string {
   if (clusters.length === 0) {
-    return "<p class='loading'>No exact duplicate-text clusters (need ≥2 posts with identical normalized text).</p>";
+    return stateEmptyHtml(
+      "No exact duplicate-text clusters",
+      "Need ≥2 posts with identical normalized text."
+    );
   }
   return clusters
     .slice(0, max)
     .map((c) => {
       const burst = c.burst_synchronized
-        ? `<span class="burst-tag">${c.burst_author_count ?? c.author_count} authors in 90s burst</span>`
+        ? `<span class="burst-tag" title="Synchronized burst">Burst · ${c.burst_author_count ?? c.author_count} authors in 90s</span>`
         : "";
       const timing =
         c.min_inter_arrival_seconds != null
           ? ` · min gap ${c.min_inter_arrival_seconds}s · span ${c.cluster_span_seconds ?? "?"}s`
           : "";
       const ids = c.post_ids.join(",");
-      return `<button type="button" class="cluster cluster-btn${c.burst_synchronized ? " cluster-burst" : ""}" data-post-ids="${ids}" data-burst="${c.burst_synchronized ? "1" : "0"}">
+      return `<button type="button" class="cluster cluster-btn${c.burst_synchronized ? " cluster-burst" : ""}" data-post-ids="${ids}" data-burst="${c.burst_synchronized ? "1" : "0"}" aria-label="Duplicate cluster, ${c.count} posts, ${c.author_count} authors">
         <strong>${c.count} posts</strong> · ${c.author_count} authors${burst}
         <p class="post-text">${escapeHtml(truncate(c.sample_text, 200))}</p>
         <p class="post-meta">authors: ${escapeHtml(c.author_ids.slice(0, 5).join(", "))}${c.author_ids.length > 5 ? "…" : ""}${timing}</p>
+        <span class="cluster-cta">View ${c.count} posts →</span>
       </button>`;
     })
     .join("");
@@ -403,24 +433,25 @@ function renderDuplicatesPanel(
   return `<section class="panel panel-duplicates">${renderDuplicatesInner(clusters)}</section>`;
 }
 
-function metricsGridHtml(
+function buildMetricsGrid(
   posts: Post[],
   authors: Set<string>,
   avg: number | null,
   cib: CibReport
 ): string {
-  return `
-    <div class="metrics-grid">
-      <div class="metric-card"><span class="metric-label">Posts</span><div class="metric-value">${posts.length}</div></div>
-      <div class="metric-card"><span class="metric-label">Authors</span><div class="metric-value">${authors.size}</div></div>
-      <div class="metric-card"><span class="metric-label">Mean outrage</span><div class="metric-value">${avg != null ? avg.toFixed(3) : "n/a"}</div></div>
-      <div class="metric-card metric-card-wide">
-        <span class="metric-label">CIB suspicion</span>
-        <div class="metric-value">${cib.suspicion_score.toFixed(2)}</div>
-        <div class="metric-sub">organic ${cib.organic_score.toFixed(2)} · ${cib.edge_count} edges</div>
-      </div>
-    </div>
-  `;
+  return metricsGridShell(
+    [
+      metricCardHtml("Posts", posts.length),
+      metricCardHtml("Authors", authors.size),
+      metricCardHtml("Mean outrage", avg != null ? avg.toFixed(3) : "n/a"),
+      metricCardHtml(
+        "CIB suspicion",
+        cib.suspicion_score.toFixed(2),
+        `organic ${cib.organic_score.toFixed(2)} · ${cib.edge_count} edges`,
+        true
+      ),
+    ].join("")
+  );
 }
 
 function cibSnapshotHtml(cib: CibReport): string {
@@ -456,7 +487,43 @@ function bindClusterButtons(): void {
       const burst = btn.dataset.burst === "1";
       const sample = btn.querySelector(".post-text")?.textContent ?? "cluster";
       selectDuplicateCluster(sample.slice(0, 40), ids, burst);
-      switchAnalysisSection("posts");
+      switchAnalysisSection("posts", { scroll: false });
+      scrollGlobalInvestigationIntoView();
+    });
+  });
+}
+
+function bindAlertInbox(): void {
+  document.querySelectorAll<HTMLButtonElement>(".alert-inbox-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const action = btn.dataset.alertAction;
+      if (action === "signals") {
+        switchAnalysisSection("signals");
+        return;
+      }
+      if (action === "anomalies") {
+        switchAnalysisSection("anomalies");
+        return;
+      }
+      const kind = btn.dataset.alertKind;
+      if (kind === "theme") {
+        const ids = (btn.dataset.postIds ?? "")
+          .split(",")
+          .map((s) => parseInt(s, 10))
+          .filter((n) => Number.isFinite(n));
+        const label = btn.dataset.themeLabel ?? "theme cluster";
+        selectThemeCluster(label, ids);
+      } else if (kind === "cluster") {
+        const ids = (btn.dataset.postIds ?? "")
+          .split(",")
+          .map((s) => parseInt(s, 10))
+          .filter((n) => Number.isFinite(n));
+        const burst = btn.dataset.burst === "1";
+        const label = btn.dataset.clusterLabel ?? "cluster";
+        selectDuplicateCluster(label, ids, burst);
+      }
+      switchAnalysisSection("posts", { scroll: false });
+      scrollGlobalInvestigationIntoView();
     });
   });
 }
@@ -517,6 +584,7 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
           <p class="data-badge">Repo snapshot${stamp}</p>
         </div>
         ${renderContentNotice()}
+        ${renderOnboardingHintHtml()}
         <details class="header-meta-collapse">
           <summary class="header-meta-summary">Data sources &amp; ingest</summary>
           <p class="data-links">Source data: ${renderDataLinksExtra()}</p>
@@ -524,30 +592,42 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
         </details>
       </header>
       ${renderTabNav(currentTab)}
-      <div id="panel-analysis"${currentTab !== "analysis" ? " hidden" : ""}>
+      <div id="panel-analysis" role="tabpanel" aria-labelledby="tab-analysis"${currentTab !== "analysis" ? " hidden" : ""}>
         <div class="toolbar">
           <div class="toolbar-inner">
-            <label for="narrative-select">Narrative</label>
-            <select id="narrative-select" class="narrative-select">${options}</select>
-            <label for="time-range-select" class="toolbar-label">Window</label>
-            <select id="time-range-select" class="toolbar-select" aria-label="Time window">
-              <option value="">All time</option>
-              <option value="24">Last 24h</option>
-              <option value="72">Last 72h</option>
-              <option value="168">Last 7d</option>
-            </select>
-            <label class="toolbar-check"><input type="checkbox" id="group-authors-toggle" checked /> Group busy authors</label>
-            <label class="toolbar-check"><input type="checkbox" id="blur-sensitive-toggle" ${blurSensitive ? "checked" : ""} /> Blur sensitive text</label>
-            <label class="toolbar-check"><input type="checkbox" id="compact-charts-toggle" ${compactCharts ? "checked" : ""} /> Compact charts</label>
-            <button type="button" id="refresh-btn" class="btn btn-secondary">Reload snapshot</button>
+            <fieldset class="toolbar-group">
+              <legend>Data</legend>
+              <label for="narrative-select">Narrative</label>
+              <select id="narrative-select" class="narrative-select">${options}</select>
+              ${renderDataAsOfHtml(generatedAt)}
+            </fieldset>
+            <fieldset class="toolbar-group">
+              <legend>Display</legend>
+              <label for="time-range-select" class="toolbar-label">Window</label>
+              <select id="time-range-select" class="toolbar-select" aria-label="Time window">
+                <option value="">All time</option>
+                <option value="24">Last 24h</option>
+                <option value="72">Last 72h</option>
+                <option value="168">Last 7d</option>
+              </select>
+              <label class="toolbar-check"><input type="checkbox" id="group-authors-toggle" checked /> Group busy authors</label>
+              <label class="toolbar-check"><input type="checkbox" id="blur-sensitive-toggle" ${blurSensitive ? "checked" : ""} /> Blur sensitive text</label>
+              <label class="toolbar-check"><input type="checkbox" id="compact-charts-toggle" ${compactCharts ? "checked" : ""} /> Compact charts</label>
+            </fieldset>
+            <fieldset class="toolbar-group toolbar-group-actions">
+              <legend>Actions</legend>
+              <button type="button" id="refresh-btn" class="btn btn-secondary" title="Re-fetch snapshot.json from this site — does not pull new social data until CI publishes a new export">Refresh snapshot file</button>
+              <button type="button" id="goto-brief-btn" class="btn btn-secondary">Export briefing</button>
+            </fieldset>
           </div>
         </div>
-        <main id="content" class="dashboard"><p class="loading">Loading…</p></main>
+        ${globalInvestigationBarHtml()}
+        <main id="content" class="dashboard">${stateLoadingHtml()}</main>
       </div>
-      <div id="panel-brief" class="panel-brief"${currentTab !== "brief" ? " hidden" : ""}>
-        <main class="dashboard">${briefPanelHtml()}</main>
+      <div id="panel-brief" class="panel-brief" role="tabpanel" aria-labelledby="tab-brief"${currentTab !== "brief" ? " hidden" : ""}>
+        <main class="dashboard">${briefPanelHtml(generatedAt)}</main>
       </div>
-      <div id="panel-methodology" class="panel-methodology"${currentTab !== "methodology" ? " hidden" : ""}>
+      <div id="panel-methodology" class="panel-methodology" role="tabpanel" aria-labelledby="tab-methodology"${currentTab !== "methodology" ? " hidden" : ""}>
         <main class="dashboard prose-wrap">${renderMethodology()}</main>
       </div>
     </div>
@@ -568,13 +648,17 @@ function renderMissingSnapshot(message: string): void {
       ${renderContentNotice()}
     </header>
     <main>
-      <div class="error">
-        <strong>No snapshot data</strong>
+      <div class="state-error">
+        <strong>Dashboard data not yet published</strong>
         <p>${escapeHtml(message)}</p>
-        <p class="sub">Publish ingest to the repo with <code>python scripts/publish_dashboard_data.py</code>, then redeploy Pages.</p>
-        <p class="data-links">
-          <a href="${DATA_LINKS.publishDocs}" target="_blank" rel="noopener">data/dashboard/README.md</a>
-        </p>
+        <p class="state-hint">This site reads a frozen snapshot file updated by automated ingest. Check back after the next deploy, or ask a maintainer for status.</p>
+        <details class="maintainer-details">
+          <summary>For maintainers</summary>
+          <p class="sub">Publish ingest to the repo with <code>python scripts/publish_dashboard_data.py</code>, then redeploy Pages.</p>
+          <p class="data-links">
+            <a href="${DATA_LINKS.publishDocs}" target="_blank" rel="noopener">data/dashboard/README.md</a>
+          </p>
+        </details>
       </div>
     </main>
   `;
@@ -583,7 +667,7 @@ function renderMissingSnapshot(message: string): void {
 async function loadDashboard(narrativeId: number): Promise<void> {
   const content = document.getElementById("content");
   if (!content) return;
-  content.innerHTML = "<p class='loading'>Loading…</p>";
+  content.innerHTML = `<div class="dashboard-skeleton">${stateLoadingHtml("Loading narrative data…")}</div>`;
 
   try {
     const narratives = await listNarratives();
@@ -632,6 +716,16 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     const fuzzyCount = lastNearDup?.cross_author_fuzzy_count ?? 0;
     const crossActorCount = crossPollination?.actor_count ?? 0;
     const dupCount = amp.clusters.length;
+    totalNarrativePosts = posts.length;
+    lastCriticalCount = criticalCount;
+    lastAnomalyCount = dupCount + fuzzyCount + crossActorCount;
+
+    const alertRows = buildAlertRows(amp, cib, lastNearDup, crossPollination, themes);
+    const sectionBadges: SectionBadges = {
+      signals: criticalCount || undefined,
+      anomalies: lastAnomalyCount || undefined,
+      posts: totalNarrativePosts,
+    };
 
     postListLimit = POST_LIST_INITIAL;
     chartsMounted.overview = false;
@@ -642,15 +736,15 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     const sectionPanels = `
       <section class="analysis-section" data-analysis-section-panel="overview"${analysisSectionHiddenAttr("overview")}>
         <div class="metrics-histogram-row">
-          ${metricsGridHtml(posts, authors, avg, cib)}
+          ${buildMetricsGrid(posts, authors, avg, cib)}
           <section class="panel panel-histogram-compact">
             <h2>Outrage distribution</h2>
             ${renderHistogram(posts)}
           </section>
         </div>
         ${sentimentChartPanelHtml(escapeHtml(sentiment.trend), outrageDiag)}
+        ${renderAlertInboxHtml(alertRows)}
         ${cibSnapshotHtml(cib)}
-        ${renderDuplicatesPanel(amp.clusters, "preview")}
         ${panelRollupHtml(
           `Emerging themes ${emergingThemesBadge(themes)}`,
           `<div class="panel panel-chart-wide themes-panel">${emergingThemesPanelHtml(themes, true)}</div>`
@@ -695,7 +789,6 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         <section class="panel posts-panel" id="posts-panel">
           <div class="posts-panel-header">
             <h2>Posts <span class="post-list-count" id="post-list-count"></span></h2>
-            <div id="investigation-filter-bar" class="investigation-bar" hidden></div>
             <button type="button" id="clear-investigation" class="btn btn-secondary btn-small" hidden>
               Clear filter
             </button>
@@ -714,7 +807,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       </section>
     `;
 
-    content.innerHTML = analysisLayoutHtml(sectionPanels, currentAnalysisSection);
+    content.innerHTML = analysisLayoutHtml(sectionPanels, currentAnalysisSection, sectionBadges);
 
     clearInvestigationFilter();
 
@@ -798,16 +891,22 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     bindAnalysisSectionNav((section) => switchAnalysisSection(section));
     bindInvestigationChrome();
     bindClusterButtons();
+    bindAlertInbox();
     bindPostToolbar();
     bindFuzzyJaccardHud(applyJaccardThreshold);
     bindBriefPrint();
+    bindGraphFullscreen();
     bindPostListAuthorLinks(document.getElementById("post-list-host") ?? document);
     updatePostsPanel();
     ensureChartsMountedForSection(currentAnalysisSection);
     scrollPageToTop();
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
-    content.innerHTML = `<div class="error"><strong>Failed to load narrative ${narrativeId}</strong><p>${escapeHtml(msg)}</p></div>`;
+    content.innerHTML = stateErrorHtml(
+      `Failed to load narrative ${narrativeId}`,
+      msg,
+      "Try refreshing the snapshot file or picking a different narrative."
+    );
     scrollPageToTop();
   }
 }
@@ -831,7 +930,7 @@ async function reloadSnapshotFromNetwork(narrativeId: number): Promise<void> {
   const stamp = document.querySelector(".data-badge");
   if (refresh) {
     refresh.disabled = true;
-    refresh.textContent = "Reloading…";
+    refresh.textContent = "Refreshing…";
   }
   clearSnapshotCache();
   try {
@@ -852,17 +951,28 @@ async function reloadSnapshotFromNetwork(narrativeId: number): Promise<void> {
         ? `Repo snapshot · ${escapeHtml(at.slice(0, 19))} UTC (reloaded)`
         : "Repo snapshot (reloaded)";
     }
+    const asOf = document.getElementById("data-as-of");
+    if (asOf) {
+      const at = getSnapshotGeneratedAt();
+      asOf.innerHTML = at
+        ? `Data as of <strong>${escapeHtml(at.slice(0, 19))} UTC</strong> · snapshot file only`
+        : "Data as of: unknown";
+    }
     await loadDashboard(narrativeId);
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     const content = document.getElementById("content");
     if (content) {
-      content.innerHTML = `<div class="error"><strong>Reload failed</strong><p>${escapeHtml(msg)}</p><p class="sub">GitHub Pages may still be deploying after ingest. Wait 1–2 minutes and try again.</p></div>`;
+      content.innerHTML = stateErrorHtml(
+        "Refresh failed",
+        msg,
+        "GitHub Pages may still be deploying after ingest. Wait 1–2 minutes and try again."
+      );
     }
   } finally {
     if (refresh) {
       refresh.disabled = false;
-      refresh.textContent = "Reload snapshot";
+      refresh.textContent = "Refresh snapshot file";
     }
   }
 }
@@ -871,6 +981,7 @@ function bindDashboardControls(narratives: NarrativeSummary[], initialId: number
   let selected = initialId;
   const select = document.getElementById("narrative-select") as HTMLSelectElement;
   const refresh = document.getElementById("refresh-btn");
+  const gotoBrief = document.getElementById("goto-brief-btn");
 
   const run = () => {
     selected = parseInt(select.value, 10);
@@ -881,6 +992,9 @@ function bindDashboardControls(narratives: NarrativeSummary[], initialId: number
   select.addEventListener("change", run);
   refresh?.addEventListener("click", () => {
     void reloadSnapshotFromNetwork(selected);
+  });
+  gotoBrief?.addEventListener("click", () => {
+    switchTab("brief");
   });
   run();
 }
@@ -905,6 +1019,7 @@ async function bootstrap(): Promise<void> {
     bindDashboardControls(narratives, selected);
     bindPostToolbar();
     bindBriefPrint();
+    bindOnboardingHint();
     showTabPanel(currentTab);
     if (currentTab === "brief") refreshBriefPanel();
   } catch (e) {
@@ -914,7 +1029,10 @@ async function bootstrap(): Promise<void> {
 }
 
 window.addEventListener("heimdall:goto-posts", () => {
-  if (currentTab === "analysis") switchAnalysisSection("posts");
+  if (currentTab === "analysis") {
+    switchAnalysisSection("posts", { scroll: false });
+    scrollGlobalInvestigationIntoView();
+  }
 });
 
 void bootstrap();

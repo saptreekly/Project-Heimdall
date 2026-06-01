@@ -15,10 +15,14 @@ import type {
 const BRIEF_COPY_LABEL = "Copy as Markdown Briefing";
 const BRIEF_COPIED_LABEL = "Copied!";
 
-export function briefPanelHtml(): string {
+export function briefPanelHtml(generatedAt: string | null = null): string {
+  const asOf = generatedAt
+    ? `<p class="brief-data-as-of">Snapshot data as of <strong>${escapeHtml(generatedAt.slice(0, 19))} UTC</strong></p>`
+    : "";
   return `
     <section class="panel panel-brief" id="brief-panel">
       <h2>Briefing</h2>
+      ${asOf}
       <p class="chart-caption">One-page summary for sharing — print, or copy Markdown for secure wires and wikis.</p>
       <div id="brief-content" class="brief-content"></div>
       <div class="brief-actions">

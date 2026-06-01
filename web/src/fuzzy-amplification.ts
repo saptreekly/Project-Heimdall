@@ -1,5 +1,6 @@
 import { selectDuplicateCluster } from "./investigation";
 import { escapeHtml, truncate } from "./post-display";
+import { stateEmptyHtml } from "./ui-states";
 import type { CrossAuthorFuzzyCluster, NearDuplicatesReport } from "./types";
 
 export type JaccardHudBounds = {
@@ -110,8 +111,10 @@ export function renderFuzzyClusters(
 ): void {
   const clusters = report?.cross_author_fuzzy ?? [];
   if (!clusters.length) {
-    host.innerHTML =
-      "<p class='loading'>No cross-author fuzzy clusters (need ≥2 posts from ≥2 authors with Jaccard ≥ threshold).</p>";
+    host.innerHTML = stateEmptyHtml(
+      "No cross-author fuzzy clusters",
+      "Need ≥2 posts from ≥2 authors with Jaccard ≥ threshold."
+    );
     return;
   }
 
@@ -146,9 +149,10 @@ function renderFuzzyClusterButton(c: CrossAuthorFuzzyCluster): string {
       : "";
   const sim = (c.max_similarity * 100).toFixed(0);
   const ids = c.post_ids.join(",");
-  return `<button type="button" class="cluster cluster-btn fuzzy-cluster-btn${c.burst_synchronized ? " cluster-burst" : ""}" data-post-ids="${ids}" data-burst="${c.burst_synchronized ? "1" : "0"}">
+  return `<button type="button" class="cluster cluster-btn fuzzy-cluster-btn${c.burst_synchronized ? " cluster-burst" : ""}" data-post-ids="${ids}" data-burst="${c.burst_synchronized ? "1" : "0"}" aria-label="Fuzzy cluster, ${c.count} posts">
     <strong>${c.count} posts</strong> · ${c.author_count} authors · Jaccard ~${sim}%${burst}
     <p class="post-text">${escapeHtml(truncate(c.sample_text, 200))}</p>
     <p class="post-meta">authors: ${escapeHtml(c.author_ids.slice(0, 6).join(", "))}${c.author_ids.length > 6 ? "…" : ""}${timing}</p>
+    <span class="cluster-cta">View ${c.count} posts →</span>
   </button>`;
 }

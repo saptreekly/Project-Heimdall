@@ -1,5 +1,6 @@
 import type { AuthorSpamSummary, NearDuplicatesReport, Post } from "./types";
 import { selectAuthor } from "./investigation";
+import { stateEmptyHtml } from "./ui-states";
 
 export function escapeHtml(s: string): string {
   return s
@@ -129,7 +130,10 @@ export function renderPostsList(
   );
   const top = sorted.slice(0, limit);
   if (top.length === 0) {
-    return `<p class='loading'>No posts match the current filters.</p>`;
+    return stateEmptyHtml(
+      "No posts match the current filters",
+      "Clear the investigation filter or widen the time window."
+    );
   }
 
   const summaryByAuthor = new Map(

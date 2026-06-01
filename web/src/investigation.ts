@@ -153,3 +153,13 @@ export function hasActiveFilter(): boolean {
       filter.burstOnly
   );
 }
+
+export function countMatchingPosts(posts: Post[] = allPosts): number {
+  return filterPosts(posts).length;
+}
+
+export function countPostsForIds(postIds: number[], posts: Post[] = allPosts): number {
+  if (!postIds.length) return 0;
+  const ids = new Set(postIds);
+  return posts.filter((p) => ids.has(p.id)).length;
+}

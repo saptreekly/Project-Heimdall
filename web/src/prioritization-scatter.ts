@@ -15,6 +15,7 @@ import {
   type OutrageDiagnostics,
 } from "./outrage-diagnostics";
 import type { CibReport, GraphAuthor, Post, PropagationGraph } from "./types";
+import { stateEmptyHtml } from "./ui-states";
 
 Chart.register(ScatterController, PointElement, LinearScale, Tooltip, Legend);
 
@@ -249,10 +250,11 @@ export function renderPriorityTargetList(
     .slice(0, 12)
     .map(
       (p) =>
-        `<li class="priority-target-item${p.known_bot ? " priority-known-bot" : ""}" data-author-id="${p.author_id}" role="button" tabindex="0">
+        `<li class="priority-target-item${p.known_bot ? " priority-known-bot" : ""}" data-author-id="${p.author_id}" role="button" tabindex="0" aria-label="Investigate ${p.label}, ${p.post_count} posts">
           <strong>${p.label}</strong>
           <span>out ${p.x} · outrage ${p.y.toFixed(3)} · ${p.post_count} posts</span>
           ${p.known_bot ? '<span class="bot-pill">IU known bot</span>' : ""}
+          <span class="cluster-cta">View ${p.post_count} posts →</span>
         </li>`
     )
     .join("");
@@ -291,7 +293,7 @@ export function mountPrioritizationScatter(
   const parent = canvas.parentElement;
   if (points.length === 0) {
     if (parent) {
-      parent.innerHTML = "<p class='loading'>No authors to plot.</p>";
+      parent.innerHTML = stateEmptyHtml("No authors to plot");
     }
     return { xMid: 0, yMid: 0 };
   }

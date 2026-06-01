@@ -10,6 +10,8 @@ const SECTION_LABELS: Record<AnalysisSection, string> = {
   posts: "Posts",
 };
 
+export type SectionBadges = Partial<Record<AnalysisSection, number | string>>;
+
 export function analysisSectionFromUrl(): AnalysisSection {
   const s = new URLSearchParams(window.location.search).get("section");
   if (s && SECTIONS.includes(s as AnalysisSection)) return s as AnalysisSection;
@@ -23,12 +25,44 @@ export function setAnalysisSectionInUrl(section: AnalysisSection): void {
   window.history.replaceState({}, "", url);
 }
 
-export function renderAnalysisSectionNav(active: AnalysisSection): string {
-  const buttons = SECTIONS.map(
-    (id) =>
-      `<button type="button" class="analysis-section-btn${id === active ? " analysis-section-active" : ""}" data-analysis-section="${id}" aria-current="${id === active ? "page" : "false"}">${SECTION_LABELS[id]}</button>`
-  ).join("");
+export function renderAnalysisSectionNav(
+  active: AnalysisSection,
+  badges?: SectionBadges
+): string {
+  const buttons = SECTIONS.map((id) => {
+    const badgeVal = badges?.[id];
+    const showBadge =
+      badgeVal !== undefined &&
+      badgeVal !== "" &&
+      badgeVal !== 0 &&
+      badgeVal !== "0";
+    const badge = showBadge
+      ? `<span class="section-badge" aria-label="${badgeVal} items">${badgeVal}</span>`
+      : "";
+    return `<button type="button" class="analysis-section-btn${id === active ? " analysis-section-active" : ""}" data-analysis-section="${id}" aria-current="${id === active ? "page" : "false"}">${SECTION_LABELS[id]}${badge}</button>`;
+  }).join("");
   return `<nav class="analysis-section-nav" role="navigation" aria-label="Analysis sections">${buttons}</nav>`;
+}
+
+export function updateSectionBadges(badges: SectionBadges): void {
+  for (const id of SECTIONS) {
+    const btn = document.querySelector<HTMLButtonElement>(`[data-analysis-section="${id}"]`);
+    if (!btn) continue;
+    const existing = btn.querySelector(".section-badge");
+    existing?.remove();
+    const badgeVal = badges[id];
+    const showBadge =
+      badgeVal !== undefined &&
+      badgeVal !== "" &&
+      badgeVal !== 0 &&
+      badgeVal !== "0";
+    if (showBadge) {
+      btn.insertAdjacentHTML(
+        "beforeend",
+        `<span class="section-badge" aria-label="${badgeVal} items">${badgeVal}</span>`
+      );
+    }
+  }
 }
 
 export function bindAnalysisSectionNav(onChange: (section: AnalysisSection) => void): void {
@@ -62,13 +96,13 @@ export function panelRollupHtml(summary: string, bodyHtml: string, open = false)
 
 export function analysisLayoutHtml(
   sectionPanelsHtml: string,
-  activeSection: AnalysisSection
+  activeSection: AnalysisSection,
+  badges?: SectionBadges
 ): string {
   return `
     <div class="analysis-layout">
       <aside class="analysis-rail" id="analysis-rail" aria-label="Analysis navigation">
-        ${renderAnalysisSectionNav(activeSection)}
-        <div id="analysis-rail-investigation" class="analysis-rail-investigation" hidden></div>
+        ${renderAnalysisSectionNav(activeSection, badges)}
       </aside>
       <div class="analysis-main">
         ${sectionPanelsHtml}

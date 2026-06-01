@@ -1,6 +1,13 @@
 import { DATA_LINKS, getSnapshotMeta } from "./api";
 import { escapeHtml } from "./post-display";
 
+export function renderDataAsOfHtml(generatedAt: string | null): string {
+  if (!generatedAt) {
+    return `<p class="data-as-of" id="data-as-of">Data as of: unknown</p>`;
+  }
+  return `<p class="data-as-of" id="data-as-of">Data as of <strong>${escapeHtml(generatedAt.slice(0, 19))} UTC</strong> · snapshot file only</p>`;
+}
+
 export function renderDataLinksExtra(): string {
   const meta = getSnapshotMeta();
   const ingest = meta?.ingest_workflow_url;
