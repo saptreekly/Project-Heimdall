@@ -1,16 +1,13 @@
 import {
-  DEFAULT_API_BASE,
+  clearSnapshotCache,
+  DATA_LINKS,
   fetchAmplification,
   fetchCib,
   fetchPosts,
   fetchSentimentShift,
-  getApiBase,
   getSnapshotGeneratedAt,
-  isStaticMode,
   listNarratives,
-  clearSnapshotCache,
   loadSnapshot,
-  setApiBase,
 } from "./api";
 import type { DuplicateCluster, NarrativeSummary, Post } from "./types";
 
@@ -133,46 +130,49 @@ function renderSentimentChart(
   return `<div class="chart">${rows}</div>`;
 }
 
-function shell(
-  narratives: NarrativeSummary[],
-  selectedId: number,
-  opts: { staticData: boolean; generatedAt: string | null }
-): string {
+function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: string | null): string {
   const options = narratives
     .map(
       (n) =>
         `<option value="${n.id}" ${n.id === selectedId ? "selected" : ""}>${escapeHtml(n.name)} (${n.post_count} posts)</option>`
     )
     .join("");
-  const dataNote = opts.staticData
-    ? `<p class="data-badge">Bundled snapshot${opts.generatedAt ? ` · ${escapeHtml(opts.generatedAt.slice(0, 19))} UTC` : ""}</p>`
-    : `<p>Live data from your Heimdall API (or export a snapshot for GitHub Pages).</p>`;
-  const apiRow = opts.staticData
-    ? `<details class="api-fallback"><summary>Live API (optional)</summary>
-      <div class="toolbar-inner">
-        <label for="api-base">API base</label>
-        <input id="api-base" type="url" class="api-input" value="${escapeHtml(getApiBase())}" placeholder="${escapeHtml(DEFAULT_API_BASE)}" />
-        <button type="button" id="api-connect-btn">Use live API</button>
-      </div></details>`
-    : `<div class="toolbar-row">
-      <label for="api-base">API base</label>
-      <input id="api-base" type="url" class="api-input" value="${escapeHtml(getApiBase())}" placeholder="${escapeHtml(DEFAULT_API_BASE)}" />
-      <button type="button" id="api-connect-btn">Connect</button>
-    </div>`;
+  const stamp = generatedAt ? ` · ${escapeHtml(generatedAt.slice(0, 19))} UTC` : "";
   return `
     <header>
       <h1>Heimdall — Narrative Analysis</h1>
-      ${dataNote}
+      <p class="data-badge">Repo snapshot${stamp}</p>
+      <p class="data-links">
+        Source data:
+        <a href="${DATA_LINKS.snapshot}" target="_blank" rel="noopener">snapshot.json</a>
+        ·
+        <a href="${DATA_LINKS.database}" target="_blank" rel="noopener">heimdall.db</a>
+        ·
+        <a href="${DATA_LINKS.publishDocs}" target="_blank" rel="noopener">how to update</a>
+      </p>
     </header>
     <div class="toolbar">
-      ${apiRow}
-      <div class="toolbar-row">
-        <label for="narrative-select">Narrative</label>
-        <select id="narrative-select">${options}</select>
-        <button type="button" id="refresh-btn">Refresh</button>
-      </div>
+      <label for="narrative-select">Narrative</label>
+      <select id="narrative-select">${options}</select>
+      <button type="button" id="refresh-btn">Refresh</button>
     </div>
     <main id="content"><p class="loading">Loading…</p></main>
+  `;
+}
+
+function renderMissingSnapshot(message: string): void {
+  root.innerHTML = `
+    <header><h1>Heimdall — Narrative Analysis</h1></header>
+    <main>
+      <div class="error">
+        <strong>No snapshot data</strong>
+        <p>${escapeHtml(message)}</p>
+        <p class="sub">Publish ingest to the repo with <code>python scripts/publish_dashboard_data.py</code>, then redeploy Pages.</p>
+        <p class="data-links">
+          <a href="${DATA_LINKS.publishDocs}" target="_blank" rel="noopener">data/dashboard/README.md</a>
+        </p>
+      </div>
+    </main>
   `;
 }
 
@@ -237,7 +237,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     `;
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
-    content.innerHTML = `<div class="error"><strong>Failed to load narrative ${narrativeId}</strong><p>${escapeHtml(msg)}</p><p class="sub">Run <code>uvicorn heimdall.main:app --reload</code>, set API base above (CORS must allow this origin), then Connect.</p></div>`;
+    content.innerHTML = `<div class="error"><strong>Failed to load narrative ${narrativeId}</strong><p>${escapeHtml(msg)}</p></div>`;
   }
 }
 
@@ -255,19 +255,10 @@ function setUrlNarrative(id: number): void {
   window.history.replaceState({}, "", url);
 }
 
-function readApiBaseFromToolbar(): void {
-  const input = document.getElementById("api-base") as HTMLInputElement | null;
-  if (input?.value.trim()) setApiBase(input.value);
-}
-
-function bindDashboardControls(
-  narratives: NarrativeSummary[],
-  initialId: number
-): void {
+function bindDashboardControls(narratives: NarrativeSummary[], initialId: number): void {
   let selected = initialId;
   const select = document.getElementById("narrative-select") as HTMLSelectElement;
   const refresh = document.getElementById("refresh-btn");
-  const connect = document.getElementById("api-connect-btn");
 
   const run = () => {
     selected = parseInt(select.value, 10);
@@ -276,9 +267,7 @@ function bindDashboardControls(
   };
 
   select.addEventListener("change", run);
-  refresh?.addEventListener("click", run);
-  connect?.addEventListener("click", () => {
-    readApiBaseFromToolbar();
+  refresh?.addEventListener("click", () => {
     clearSnapshotCache();
     void bootstrap();
   });
@@ -286,17 +275,11 @@ function bindDashboardControls(
 }
 
 async function bootstrap(): Promise<void> {
-  const content = document.getElementById("content");
-  if (content) content.innerHTML = "<p class='loading'>Loading…</p>";
-
   try {
-    readApiBaseFromToolbar();
+    await loadSnapshot();
     const narratives = await listNarratives();
     if (narratives.length === 0) {
-      if (content) {
-        content.innerHTML =
-          "<p class='error'>No narratives in database. Run an ingest against this API first.</p>";
-      }
+      renderMissingSnapshot("Snapshot has no narratives.");
       return;
     }
 
@@ -305,34 +288,12 @@ async function bootstrap(): Promise<void> {
       narratives.find((n) => n.name === "midterms_2026")?.id ??
       narratives[0].id;
 
-    root.innerHTML = shell(narratives, selected, {
-      staticData: isStaticMode(),
-      generatedAt: getSnapshotGeneratedAt(),
-    });
+    root.innerHTML = shell(narratives, selected, getSnapshotGeneratedAt());
     bindDashboardControls(narratives, selected);
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
-    if (content) {
-      content.innerHTML = `<div class="error"><strong>Cannot reach API</strong><p>${escapeHtml(msg)}</p><p class="sub">API: <code>${escapeHtml(getApiBase())}</code></p></div>`;
-    } else {
-      root.innerHTML = `<div class="error"><strong>Cannot reach API</strong><p>${escapeHtml(msg)}</p></div>`;
-    }
+    renderMissingSnapshot(msg);
   }
 }
 
-async function init(): Promise<void> {
-  const snap = await loadSnapshot();
-  if (snap?.narratives.length) {
-    await bootstrap();
-    return;
-  }
-
-  root.innerHTML = shell([], 0, { staticData: false, generatedAt: null });
-  const select = document.getElementById("narrative-select") as HTMLSelectElement;
-  select.innerHTML = "<option value=''>Connect to load narratives</option>";
-  select.disabled = true;
-  document.getElementById("refresh-btn")?.setAttribute("disabled", "true");
-  document.getElementById("api-connect-btn")?.addEventListener("click", () => void bootstrap());
-}
-
-void init();
+void bootstrap();

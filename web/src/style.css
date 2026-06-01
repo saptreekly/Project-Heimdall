@@ -47,6 +47,19 @@ header p {
   margin: 0.35rem 0 0;
 }
 
+.data-links {
+  font-size: 0.85rem;
+  margin: 0.35rem 0 0;
+}
+
+.data-links a {
+  color: var(--muted);
+}
+
+.data-links a:hover {
+  color: var(--text);
+}
+
 .toolbar {
   display: flex;
   flex-direction: column;
@@ -63,19 +76,12 @@ header p {
   align-items: center;
 }
 
-.api-fallback summary {
-  cursor: pointer;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
 label {
   font-size: 0.85rem;
   color: var(--muted);
 }
 
 select,
-input.api-input,
 button {
   font: inherit;
   padding: 0.45rem 0.75rem;
@@ -83,11 +89,6 @@ button {
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-}
-
-input.api-input {
-  min-width: min(320px, 100%);
-  flex: 1;
 }
 
 button {
