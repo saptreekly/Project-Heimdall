@@ -24,17 +24,26 @@ function cardLabel(terms: string[]): string {
 
 export function emergingThemesBadge(report: ThemesReport): string {
   const emerging = report.emerging_theme_count ?? 0;
-  return emerging > 0
-    ? `<span class="topology-badge topology-star">${emerging} emerging</span>`
+  const distinct = report.distinct_theme_count ?? report.cluster_count ?? 0;
+  if (emerging > 0) {
+    return `<span class="topology-badge topology-star">${emerging} emerging</span> <span class="topology-badge topology-sparse">${distinct} distinct</span>`;
+  }
+  return distinct > 0
+    ? `<span class="topology-badge topology-sparse">${distinct} distinct themes</span>`
     : `<span class="topology-badge topology-sparse">embedding clusters</span>`;
 }
 
 export function emergingThemesPanelHtml(report: ThemesReport, asInner = false): string {
   const badge = emergingThemesBadge(report);
+  const tfidfFallback = (report.model ?? "").toLowerCase().includes("tfidf");
+  const fallbackNote = tfidfFallback
+    ? `<p class="chart-caption provenance-warn">Lexical TF-IDF fallback — treat emerging labels as low confidence until neural embeddings are enabled on export.</p>`
+    : "";
   const inner = `
       <h2 class="themes-panel-title">Emerging themes timeline ${badge}</h2>
+      ${fallbackNote}
       <p class="chart-caption">
-        DBSCAN/KMeans on sentence embeddings surfaces coordinated phrasing variants beyond exact-string duplicates.
+        Labels use c-TF-IDF — terms distinctive to each cluster vs the full narrative, with shared vocabulary deduplicated across themes.
         Click a cluster to filter posts below.
       </p>
       <div id="themes-timeline-host" class="themes-timeline-host">
@@ -67,13 +76,20 @@ export function renderEmergingThemesTimeline(
 
   const timeline = report.timeline?.length
     ? report.timeline
-    : report.clusters.map((c) => ({
+    : report.clusters
+        .filter(
+          (c) =>
+            (c.label_distinctiveness ?? 0) >= 0.12 ||
+            c.emerging_theme
+        )
+        .map((c) => ({
         cluster_id: c.cluster_id,
         label_terms: c.label_terms,
+        label_distinctiveness: c.label_distinctiveness,
         emerging_theme: c.emerging_theme,
         size: c.size,
-        first_seen: null,
-        last_seen: null,
+        first_seen: c.first_seen ?? null,
+        last_seen: c.last_seen ?? null,
         post_ids: c.post_ids,
       }));
 
@@ -94,6 +110,10 @@ export function renderEmergingThemesTimeline(
             ? entry.first_seen
             : `${entry.first_seen} → ${entry.last_seen}`
           : "date unknown";
+      const distinctPct =
+        entry.label_distinctiveness != null
+          ? Math.round(entry.label_distinctiveness * 100)
+          : null;
       return `<button
         type="button"
         class="theme-card${entry.emerging_theme ? " theme-card-emerging" : ""}"
@@ -103,9 +123,9 @@ export function renderEmergingThemesTimeline(
       >
         <span class="theme-card-date">${escapeHtml(span)}</span>
         <span class="theme-card-tokens">${formatTermTokens(terms)}</span>
-        <span class="theme-card-meta">${entry.size} posts · cohesion cluster #${entry.cluster_id}${
-          entry.emerging_theme ? " · emerging" : ""
-        }</span>
+        <span class="theme-card-meta">${entry.size} posts${
+          distinctPct != null ? ` · ${distinctPct}% distinct` : ""
+        }${entry.emerging_theme ? " · emerging" : ""}</span>
         <span class="cluster-cta">View ${entry.size} posts →</span>
       </button>`;
     })
@@ -135,7 +155,7 @@ export function renderEmergingThemesTimeline(
       report.model === "tfidf-fallback"
         ? "TF-IDF lexical vectors"
         : report.model;
-    meta.textContent = `${report.cluster_count} clusters · ${report.emerging_theme_count} emerging · ${report.method} · ${encoder}`;
+    meta.textContent = `${report.distinct_theme_count ?? report.cluster_count} distinct · ${report.emerging_theme_count} emerging · ${report.method} · ${encoder}`;
   }
 }
 

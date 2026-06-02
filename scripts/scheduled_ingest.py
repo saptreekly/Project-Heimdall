@@ -14,12 +14,14 @@ import json
 import os
 import sys
 from dataclasses import dataclass
+from datetime import UTC, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "data" / "scheduled_ingest.json"
 DEFAULT_DB = ROOT / "data" / "dashboard" / "heimdall.db"
 DEFAULT_ROTATION = ROOT / "data" / "dashboard" / "x_keyword_rotation.json"
+DEFAULT_INGEST_LOG = ROOT / "data" / "dashboard" / "ingest_runs.jsonl"
 
 
 @dataclass(frozen=True)
@@ -100,6 +102,20 @@ def keywords_for_scheduled_job(job: IngestJob) -> list[str]:
         return job.keywords
     rotated, _ = rotate_x_keywords(job.keywords, per_run)
     return rotated or job.keywords
+
+
+def _ingest_log_path() -> Path:
+    raw = os.environ.get("INGEST_RUNS_PATH", "").strip()
+    return Path(raw) if raw else DEFAULT_INGEST_LOG
+
+
+def append_ingest_run(row: dict) -> None:
+    """Append one JSON line for keyword audit / rotation reporting."""
+    path = _ingest_log_path()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {"at": datetime.now(UTC).isoformat(), **row}
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(payload) + "\n")
 
 
 async def run_job(job: IngestJob) -> dict:
@@ -201,6 +217,18 @@ async def run(config: Path, export: bool) -> int:
         row = await run_job(job)
         results.append(row)
         print(json.dumps(row, indent=2))
+        log_row = {
+            "narrative_name": job.narrative_name,
+            "platform": job.platform,
+            "keywords": row.get("planned_keywords") or keywords_for_scheduled_job(job),
+            "skipped": bool(row.get("skipped")),
+            "reason": row.get("reason"),
+            "fetched": row.get("fetched"),
+            "inserted": row.get("inserted"),
+            "scored": row.get("scored"),
+            "edges": row.get("edges"),
+        }
+        append_ingest_run(log_row)
         if not row.get("skipped"):
             any_ran = True
 

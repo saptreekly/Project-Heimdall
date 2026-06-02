@@ -8,12 +8,9 @@ from pathlib import Path
 
 from sqlalchemy import String, cast, func, select
 from sqlalchemy.ext.asyncio import AsyncSession
-from heimdall.analysis.duplicates import (
-    apply_duplicate_temporal_cib_boost,
-    find_duplicate_clusters_from_rows,
-)
+from heimdall.analysis.cib_report import build_cib_report
+from heimdall.analysis.duplicates import find_duplicate_clusters_from_rows
 from heimdall.analysis.near_duplicates import (
-    apply_cross_author_fuzzy_cib_boost,
     author_spam_summaries,
     copypasta_scores,
     find_cross_author_fuzzy_clusters,
@@ -23,19 +20,17 @@ from heimdall.analysis.near_duplicates import (
     post_id_to_near_group,
     resolve_jaccard_threshold,
 )
-from heimdall.analysis.cross_pollination import cross_pollination_cib_signals
 from heimdall.export.cross_pollination_loader import load_cross_pollination, per_narrative_hits
+from heimdall.export.provenance import SNAPSHOT_POST_LIMIT, build_narrative_provenance
 from heimdall.export.post_meta import parse_x_screen_name, post_status_url
 from heimdall.analysis.sentiment_shift import narrative_sentiment_shift
 from heimdall.api.schemas import CIBResponse, DuplicateClusterOut, NarrativeSummary, PostOut
-from heimdall.datasets.astroturf import narrative_bot_overlap
 from heimdall.datasets.tweet_eval import parse_tweet_eval_meta
 from heimdall.config import get_settings
 from heimdall.db.models import Narrative, OutrageScore, Platform, Post
 from heimdall.graph.export import build_graph_export
 from heimdall.graph.stats import build_graph_stats
 from heimdall.nlp.narrative_themes import narrative_theme_clusters
-from heimdall.graph.networkx_analysis import NarrativeGraphAnalyzer
 
 
 async def list_narrative_summaries(db: AsyncSession) -> list[NarrativeSummary]:
@@ -70,7 +65,7 @@ def _normalize_platform(raw: str) -> str:
 
 
 async def _narrative_post_rows(
-    db: AsyncSession, narrative_id: int, *, limit: int = 250
+    db: AsyncSession, narrative_id: int, *, limit: int = SNAPSHOT_POST_LIMIT
 ) -> list[tuple]:
     rows = await db.execute(
         select(
@@ -211,54 +206,13 @@ async def narrative_cib(
     narrative_id: int,
     *,
     cross_pollination_report: dict | None = None,
+    graph_stats: dict | None = None,
 ) -> CIBResponse:
-    analyzer = NarrativeGraphAnalyzer()
-    assessment = await analyzer.assess_narrative(db, narrative_id)
-    m = assessment.metrics
-    dup_rows = await db.execute(
-        select(Post.id, Post.author_id, Post.text, Post.posted_at).where(
-            Post.narrative_id == narrative_id
-        )
-    )
-    dup_list = list(dup_rows.all())
-    duplicate_clusters = find_duplicate_clusters_from_rows(dup_list)
-    near_rows = [
-        (pid, author_id, text, posted_at.isoformat())
-        for pid, author_id, text, posted_at in dup_list
-    ]
-    cross_fuzzy = find_cross_author_fuzzy_clusters(near_rows)
-    suspicion, signals = apply_duplicate_temporal_cib_boost(
-        assessment.suspicion_score,
-        assessment.signals,
-        duplicate_clusters,
-    )
-    suspicion, signals = apply_cross_author_fuzzy_cib_boost(
-        suspicion, signals, cross_fuzzy
-    )
-    if cross_pollination_report:
-        pollination_signals = cross_pollination_cib_signals(
-            cross_pollination_report, narrative_id
-        )
-        if pollination_signals:
-            signals = list(signals) + pollination_signals
-            hits = per_narrative_hits(cross_pollination_report, narrative_id)
-            if hits.get("hit_count", 0) >= 3:
-                suspicion = max(suspicion, 0.6)
-            elif hits.get("hit_count", 0) >= 1:
-                suspicion = max(suspicion, 0.45)
-    organic_score = round(1.0 - suspicion, 4)
-    bot_overlap = await narrative_bot_overlap(db, narrative_id)
-    return CIBResponse(
-        narrative_id=narrative_id,
-        suspicion_score=round(suspicion, 4),
-        organic_score=organic_score,
-        signals=signals,
-        node_count=m.node_count,
-        edge_count=m.edge_count,
-        density=m.density,
-        top_amplifiers=m.top_amplifiers,
-        coordinated_clusters=m.coordinated_clusters,
-        iu_astroturf=bot_overlap,
+    return await build_cib_report(
+        db,
+        narrative_id,
+        cross_pollination_report=cross_pollination_report,
+        graph_stats=graph_stats,
     )
 
 
@@ -349,6 +303,7 @@ async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
             {
                 "cluster_id": c["cluster_id"],
                 "label_terms": c.get("label_terms", []),
+                "label_distinctiveness": c.get("label_distinctiveness", 0.0),
                 "emerging_theme": c.get("emerging_theme", False),
                 "size": c.get("size", 0),
                 "first_seen": c.get("first_seen"),
@@ -356,10 +311,23 @@ async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
                 "post_ids": c.get("post_ids", []),
             }
             for c in sorted(
-                clusters,
-                key=lambda c: (c.get("first_seen") or "9999", -int(c.get("emerging_theme", False))),
+                (
+                    c
+                    for c in clusters
+                    if float(c.get("label_distinctiveness", 0.0)) >= 0.12
+                    or c.get("emerging_theme")
+                ),
+                key=lambda c: (
+                    c.get("first_seen") or "9999",
+                    -float(c.get("label_distinctiveness", 0.0)),
+                    -int(c.get("emerging_theme", False)),
+                ),
             )
         ]
+        data["distinct_theme_count"] = data.get(
+            "distinct_theme_count",
+            sum(1 for c in clusters if float(c.get("label_distinctiveness", 0.0)) >= 0.12),
+        )
         data["emerging_theme_count"] = len(emerging)
         return data
     except Exception as exc:
@@ -383,23 +351,41 @@ async def build_dashboard_snapshot(db: AsyncSession) -> dict:
     by_id: dict[str, dict] = {}
     for summary in summaries:
         nid = summary.id
+        raw_rows = await _narrative_post_rows(db, nid)
+        snapshot_post_ids = [row[0] for row in raw_rows]
         posts = await narrative_posts(db, nid)
+        graph = await narrative_graph(db, nid)
+        amp = await narrative_amplification(db, nid)
+        near_dup = await narrative_near_duplicates(db, nid)
+        themes = await narrative_themes(db, nid)
+        cib = await narrative_cib(
+            db,
+            nid,
+            cross_pollination_report=cross_pollination,
+            graph_stats=graph.get("stats"),
+        )
         by_id[str(nid)] = {
             "posts": [p.model_dump(mode="json") for p in posts],
-            "cib": (
-                await narrative_cib(db, nid, cross_pollination_report=cross_pollination)
-            ).model_dump(mode="json"),
-            "sentiment": await narrative_sentiment_shift(db, nid),
-            "amplification": await narrative_amplification(db, nid),
-            "near_duplicates": await narrative_near_duplicates(db, nid),
+            "cib": cib.model_dump(mode="json"),
+            "sentiment": await narrative_sentiment_shift(db, nid, post_ids=snapshot_post_ids),
+            "amplification": amp,
+            "near_duplicates": near_dup,
             "cross_pollination_hits": per_narrative_hits(cross_pollination, nid),
-            "graph": await narrative_graph(db, nid),
-            "themes": await narrative_themes(db, nid),
+            "graph": graph,
+            "themes": themes,
             "benchmark": _benchmark_stats(posts),
+            "provenance": build_narrative_provenance(
+                posts_total_db=summary.post_count,
+                posts_in_snapshot=[p.model_dump(mode="json") for p in posts],
+                graph_stats=graph.get("stats", {}),
+                themes=themes,
+                duplicate_cluster_count=amp.get("cluster_count", 0),
+                fuzzy_cluster_count=near_dup.get("cross_author_fuzzy_count", 0),
+            ),
         }
 
     return {
-        "version": 4,
+        "version": 5,
         "generated_at": datetime.now(UTC).isoformat(),
         "narratives": [s.model_dump(mode="json") for s in summaries],
         "by_narrative_id": by_id,

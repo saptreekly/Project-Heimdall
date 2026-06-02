@@ -132,7 +132,13 @@ export interface CibReport {
   narrative_id: number;
   suspicion_score: number;
   organic_score: number;
+  graph_suspicion_score: number;
+  text_coordination_score: number;
+  graph_sufficient: boolean;
+  graph_coverage_pct: number;
   signals: string[];
+  graph_signals?: string[];
+  text_signals?: string[];
   node_count: number;
   edge_count: number;
   density: number;
@@ -150,6 +156,35 @@ export interface CibReport {
     labeled_accounts: unknown[];
     note: string | null;
   } | null;
+}
+
+export interface NarrativeProvenance {
+  posts_total_db: number;
+  posts_in_snapshot: number;
+  snapshot_post_limit: number;
+  posts_truncated: boolean;
+  analysis_scope: string;
+  sentiment_scope: string;
+  text_coordination_scope: string;
+  outrage_model_version: string;
+  duplicate_cluster_count: number;
+  fuzzy_cluster_count: number;
+  coordination_signal_count?: number;
+  posts_per_author?: number | null;
+  distinct_theme_count?: number;
+  theme_cluster_count?: number;
+  graph_edge_count: number;
+  graph_author_count: number;
+  graph_connected_author_count: number;
+  graph_coverage_pct: number;
+  graph_sufficient: boolean;
+  theme_model: string;
+  theme_method: string;
+  theme_model_reliable: boolean;
+  outrage_scored_count: number;
+  outrage_max: number | null;
+  outrage_mean: number | null;
+  outrage_compressed: boolean;
 }
 
 export interface SentimentShift {
@@ -216,6 +251,7 @@ export interface ThemeCluster {
   lexicon_hit_rate: number;
   emerging_theme: boolean;
   label_terms: string[];
+  label_distinctiveness?: number;
   sample_text: string;
   first_seen?: string | null;
   last_seen?: string | null;
@@ -225,6 +261,7 @@ export interface ThemeCluster {
 export interface ThemeTimelineEntry {
   cluster_id: number;
   label_terms: string[];
+  label_distinctiveness?: number;
   emerging_theme: boolean;
   size: number;
   first_seen: string | null;
@@ -243,6 +280,7 @@ export interface ThemesReport {
   clusters: ThemeCluster[];
   timeline?: ThemeTimelineEntry[];
   emerging_theme_count: number;
+  distinct_theme_count?: number;
 }
 
 export interface NarrativeBundle {
@@ -255,6 +293,7 @@ export interface NarrativeBundle {
   graph?: PropagationGraph;
   themes?: ThemesReport;
   benchmark?: BenchmarkStats | null;
+  provenance?: NarrativeProvenance;
 }
 
 export interface DashboardSnapshot {

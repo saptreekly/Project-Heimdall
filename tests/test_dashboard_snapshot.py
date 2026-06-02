@@ -35,6 +35,12 @@ async def test_build_dashboard_snapshot(db_session: AsyncSession) -> None:
     assert "near_duplicates" in bundle
     assert len(bundle["posts"]) > 0
     assert "suspicion_score" in bundle["cib"]
+    assert "text_coordination_score" in bundle["cib"]
+    assert "graph_suspicion_score" in bundle["cib"]
+    assert "graph_sufficient" in bundle["cib"]
+    assert "provenance" in bundle
+    assert bundle["provenance"]["posts_total_db"] >= len(bundle["posts"])
+    assert snap["version"] == 5
     assert "authors" in bundle["graph"]
     assert "edges" in bundle["graph"]
     assert "stats" in bundle["graph"]

@@ -68,7 +68,19 @@ git push
 
 Pages deploy runs after data is pushed (and daily 14:00 UTC).
 
-Or set GitHub secret **`DASHBOARD_DATABASE_URL`**. If neither is present, CI seeds mock demo data.
+**CI & automation** (`.github/workflows/`):
+
+| Workflow | When | What |
+| --- | --- | --- |
+| **ci** | Every push / PR to `main` | Ruff lint, pytest, TypeScript build, snapshot verify, export regression |
+| **ingest** | Every 48 min + manual | X ingest → commit DB + snapshot |
+| **pages** | After ingest, push, daily | Export (if needed) → build → GitHub Pages |
+| **export-dashboard** | Manual | Re-export snapshot from committed DB |
+| **health** | Weekly Monday | Snapshot age, schema version, metrics table |
+| **maintenance** | Weekly Sunday | DB VACUUM, theme drift, keyword audit, **auto keyword swap** |
+| **daily-analytics** | Daily | Coordination watchlist + tier-crossing issues |
+
+Or set GitHub secret **`DASHBOARD_DATABASE_URL`**. If neither committed DB nor secret is present, Pages export fails until ingest data is committed.
 
 The dashboard reads **`snapshot.json` only**; header links point at repo data on GitHub.
 

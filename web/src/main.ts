@@ -9,6 +9,7 @@ import {
   fetchNarrativeCrossPollinationHits,
   fetchPosts,
   fetchPropagationGraph,
+  fetchProvenance,
   fetchSentimentShift,
   fetchThemes,
   getSnapshotGeneratedAt,
@@ -55,6 +56,7 @@ import {
   resolveThresholdBounds,
   storeThreshold,
 } from "./near-duplicate-clustering";
+import { renderProvenancePanelHtml } from "./provenance-panel";
 import { renderMethodology } from "./methodology";
 import {
   bindTabNav,
@@ -122,6 +124,7 @@ import type {
   AmplificationReport,
   CibReport,
   DuplicateCluster,
+  NarrativeProvenance,
   NarrativeSummary,
   NearDuplicatesReport,
   Post,
@@ -437,17 +440,41 @@ function buildMetricsGrid(
   posts: Post[],
   authors: Set<string>,
   avg: number | null,
-  cib: CibReport
+  cib: CibReport,
+  provenance?: NarrativeProvenance | null
 ): string {
+  const postsPerAuthor =
+    provenance?.posts_per_author ??
+    (authors.size > 0 ? Math.round((posts.length / authors.size) * 10) / 10 : null);
+  const scoredCount = provenance?.outrage_scored_count ?? posts.filter((p) => p.outrage_index != null).length;
+  const scoredPct =
+    posts.length > 0 ? `${Math.round((scoredCount / posts.length) * 100)}% scored` : "";
+  const outrageLabel = provenance?.outrage_compressed
+    ? `max ${provenance.outrage_max?.toFixed(3) ?? "n/a"}`
+    : avg != null
+      ? `mean ${avg.toFixed(3)}`
+      : "n/a";
+  const outrageSub = provenance?.outrage_compressed
+    ? `${scoredPct} · lexicon floor`
+    : scoredPct;
+  const postsLabel = provenance?.posts_truncated
+    ? `${posts.length} / ${provenance.posts_total_db}`
+    : `${posts.length}`;
+  const fuzzyCount = provenance?.fuzzy_cluster_count ?? 0;
+  const dupCount = provenance?.duplicate_cluster_count ?? 0;
+  const graphNote = cib.graph_sufficient
+    ? `graph ${cib.graph_suspicion_score.toFixed(2)} · ${cib.edge_count} edges`
+    : `${fuzzyCount} fuzzy · ${dupCount} dup clusters`;
+
   return metricsGridShell(
     [
-      metricCardHtml("Posts", posts.length),
-      metricCardHtml("Authors", authors.size),
-      metricCardHtml("Mean outrage", avg != null ? avg.toFixed(3) : "n/a"),
+      metricCardHtml("Posts in view", postsLabel, postsPerAuthor != null ? `${postsPerAuthor} per author` : undefined),
+      metricCardHtml("Unique authors", authors.size, `${posts.length} posts total`),
+      metricCardHtml("Outrage", outrageLabel, outrageSub),
       metricCardHtml(
-        "CIB suspicion",
-        cib.suspicion_score.toFixed(2),
-        `organic ${cib.organic_score.toFixed(2)} · ${cib.edge_count} edges`,
+        "Text coordination",
+        cib.text_coordination_score.toFixed(2),
+        graphNote,
         true
       ),
     ].join("")
@@ -455,15 +482,47 @@ function buildMetricsGrid(
 }
 
 function cibSnapshotHtml(cib: CibReport): string {
-  const signals = cib.signals.slice(0, 3);
+  const textSignals = cib.text_signals ?? [];
+  const graphSignals = cib.graph_signals ?? [];
+  const fallbackSignals = cib.signals.slice(0, 3);
+
+  const sparseGraphNote = cib.graph_sufficient
+    ? ""
+    : `<p class="chart-caption provenance-warn">Propagation graph is sparse (${cib.graph_coverage_pct}% author coverage, ${cib.edge_count} edges). Graph coordination reads near zero — rely on text coordination and duplicate clusters.</p>`;
+
+  const textBlock =
+    textSignals.length > 0
+      ? `<h3 class="signal-subhead">Text coordination</h3><ul class="signal-list signal-list-compact">${textSignals
+          .slice(0, 4)
+          .map((s) => `<li>${escapeHtml(s)}</li>`)
+          .join("")}</ul>`
+      : "";
+
+  const graphBlock =
+    graphSignals.length > 0
+      ? `<h3 class="signal-subhead">Graph coordination</h3><ul class="signal-list signal-list-compact">${graphSignals
+          .slice(0, 4)
+          .map((s) => `<li>${escapeHtml(s)}</li>`)
+          .join("")}</ul>`
+      : "";
+
+  const legacyBlock =
+    !textBlock && !graphBlock && fallbackSignals.length
+      ? `<ul class="signal-list signal-list-compact">${fallbackSignals
+          .map((s) => `<li>${escapeHtml(s)}</li>`)
+          .join("")}</ul>`
+      : "";
+
+  const body =
+    sparseGraphNote || textBlock || graphBlock || legacyBlock
+      ? `${sparseGraphNote}${textBlock}${graphBlock}${legacyBlock}`
+      : "<p class='empty'>No elevated coordination signals.</p>";
+
   return `
     <section class="panel panel-cib-snapshot">
-      <h2>CIB at a glance</h2>
-      ${
-        signals.length
-          ? `<ul class="signal-list signal-list-compact">${signals.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>`
-          : "<p class='empty'>No elevated CIB signals.</p>"
-      }
+      <h2>Coordination at a glance</h2>
+      <p class="chart-caption">Text index ${cib.text_coordination_score.toFixed(2)} · graph ${cib.graph_suspicion_score.toFixed(2)} · combined ${cib.suspicion_score.toFixed(2)} (organic ${cib.organic_score.toFixed(2)})</p>
+      ${body}
       ${
         cib.iu_astroturf
           ? `<p class="metric-sub">IU astroturf: ${cib.iu_astroturf.known_political_bots} known bots / ${cib.iu_astroturf.authors_in_narrative} authors</p>`
@@ -672,7 +731,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
   try {
     const narratives = await listNarratives();
     const narrativeMeta = narratives.find((n) => n.id === narrativeId);
-    const [posts, cib, sentiment, amp, graph, themes, nearDup, benchmark, crossPollination, pollinationHits] =
+    const [posts, cib, sentiment, amp, graph, themes, nearDup, benchmark, crossPollination, pollinationHits, provenance] =
       await Promise.all([
         fetchPosts(narrativeId),
         fetchCib(narrativeId),
@@ -684,6 +743,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         fetchBenchmark(narrativeId),
         fetchCrossPollination(),
         fetchNarrativeCrossPollinationHits(narrativeId),
+        fetchProvenance(narrativeId),
       ]);
     clusterSourcePosts = posts;
     const bounds = resolveThresholdBounds(nearDup);
@@ -736,12 +796,13 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     const sectionPanels = `
       <section class="analysis-section" data-analysis-section-panel="overview"${analysisSectionHiddenAttr("overview")}>
         <div class="metrics-histogram-row">
-          ${buildMetricsGrid(posts, authors, avg, cib)}
+          ${buildMetricsGrid(posts, authors, avg, cib, provenance)}
           <section class="panel panel-histogram-compact">
             <h2>Outrage distribution</h2>
             ${renderHistogram(posts)}
           </section>
         </div>
+        ${renderProvenancePanelHtml(provenance, cib)}
         ${sentimentChartPanelHtml(escapeHtml(sentiment.trend), outrageDiag)}
         ${renderAlertInboxHtml(alertRows)}
         ${cibSnapshotHtml(cib)}

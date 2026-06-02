@@ -40,6 +40,32 @@ The Pages workflow (`/.github/workflows/pages.yml`) runs on push after ingest an
 3. Else export fails (no mock seed) — commit `data/dashboard/heimdall.db` from ingest first
 4. Exports `web/public/data/snapshot.json` and deploys the site
 
+**Other GitHub Actions**
+
+| Workflow | Trigger | Purpose |
+| --- | --- | --- |
+| [`ci.yml`](../../.github/workflows/ci.yml) | Push / PR to `main` | Ruff, pytest, web build, snapshot smoke, export regression |
+| [`export.yml`](../../.github/workflows/export.yml) | Manual | Re-export `snapshot.json` from committed DB (optional auto-commit) |
+| [`health.yml`](../../.github/workflows/health.yml) | Weekly + manual | Snapshot freshness, schema version, narrative metrics |
+| [`maintenance.yml`](../../.github/workflows/maintenance.yml) | Weekly (Sun 05:00 UTC) | DB VACUUM/orphans, theme drift report, keyword audit + gap suggestions |
+| [`daily-analytics.yml`](../../.github/workflows/daily-analytics.yml) | Daily 15:30 UTC | Coordination watchlist, tier-crossing GitHub issues |
+
+**Tracked analytics files** (under `data/dashboard/`):
+
+| File | Updated by |
+| --- | --- |
+| `ingest_runs.jsonl` | Every ingest run (keyword yield audit input) |
+| `metrics_history.jsonl` | Daily after Pages export (one JSON line per UTC day) |
+| `WATCHLIST.md` / `watchlist_state.json` | Daily coordination watchlist |
+| `theme_baseline.json` | Weekly theme drift (comparison baseline) |
+| `keyword_suggestions.json` | Weekly keyword gap discovery |
+| `keyword_rotation_log.jsonl` | Weekly auto keyword swap audit trail |
+| `data/scheduled_ingest.json` | Updated weekly when stale keywords are swapped |
+
+**Keyword auto-rotation** (weekly `maintenance.yml`): removes keywords with 0 yield after 3+ runs (never unpins `2026 midterms`), adds top gap suggestions from theme/corpus analysis. Requires ≥5 ingest runs in the 7-day window before swapping.
+
+Dependabot (`.github/dependabot.yml`) opens weekly PRs for GitHub Actions and npm updates.
+
 **Remove test/mock narratives** (keep only production narratives):
 
 ```bash

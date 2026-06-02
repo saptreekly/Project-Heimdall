@@ -4,15 +4,8 @@ from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload
 
-from heimdall.analysis.duplicates import (
-    apply_duplicate_temporal_cib_boost,
-    find_duplicate_clusters_from_rows,
-)
-from heimdall.analysis.cross_pollination import cross_pollination_cib_signals
-from heimdall.analysis.near_duplicates import (
-    apply_cross_author_fuzzy_cib_boost,
-    find_cross_author_fuzzy_clusters,
-)
+from heimdall.analysis.cib_report import build_cib_report
+from heimdall.analysis.duplicates import find_duplicate_clusters_from_rows
 from heimdall.export.cross_pollination_loader import load_cross_pollination, per_narrative_hits
 from heimdall.analysis.sentiment_shift import narrative_sentiment_shift
 from heimdall.api.schemas import (
@@ -27,17 +20,17 @@ from heimdall.api.schemas import (
     PostOut,
 )
 from heimdall.config import get_settings
-from heimdall.datasets.astroturf import count_known_bots, import_astroturf, narrative_bot_overlap
+from heimdall.datasets.astroturf import count_known_bots, import_astroturf
 from heimdall.datasets.tweet_eval import ALL_SUBSETS, RAGEBAIT_SUBSETS, parse_tweet_eval_meta
 from heimdall.nlp.calibrate import tweet_eval_calibration
 from heimdall.nlp.embeddings import EmbeddingUnavailableError
 from heimdall.nlp.narrative_themes import narrative_theme_clusters
 from heimdall.nlp.outrage import OutrageAnalyzer
-from heimdall.db.models import Narrative, OutrageScore, Platform, Post
+from heimdall.db.models import Narrative, Platform, Post
 from heimdall.db.session import get_db
 from heimdall.graph.export import build_graph_export
 from heimdall.graph.neo4j_sync import Neo4jGraphSync
-from heimdall.graph.networkx_analysis import NarrativeGraphAnalyzer
+from heimdall.graph.stats import build_graph_stats
 from heimdall.ingestion.pipeline import IngestionPipeline
 from heimdall.ingestion.x_guard import (
     XDailyBudgetExceeded,
@@ -228,48 +221,18 @@ async def analyze_cib(narrative_id: int, db: AsyncSession = Depends(get_db)) -> 
     if not exists.scalar_one_or_none():
         raise HTTPException(status_code=404, detail="Narrative not found")
 
-    analyzer = NarrativeGraphAnalyzer()
-    assessment = await analyzer.assess_narrative(db, narrative_id)
-    m = assessment.metrics
-    dup_result = await db.execute(
-        select(Post.id, Post.author_id, Post.text, Post.posted_at).where(
-            Post.narrative_id == narrative_id
-        )
-    )
-    dup_list = list(dup_result.all())
-    duplicate_clusters = find_duplicate_clusters_from_rows(dup_list)
-    near_rows = [
-        (pid, author_id, text, posted_at.isoformat())
-        for pid, author_id, text, posted_at in dup_list
-    ]
-    cross_fuzzy = find_cross_author_fuzzy_clusters(near_rows)
-    suspicion, signals = apply_duplicate_temporal_cib_boost(
-        assessment.suspicion_score,
-        assessment.signals,
-        duplicate_clusters,
-    )
-    suspicion, signals = apply_cross_author_fuzzy_cib_boost(suspicion, signals, cross_fuzzy)
     cross_report = await load_cross_pollination(db)
-    pollination_signals = cross_pollination_cib_signals(cross_report, narrative_id)
-    if pollination_signals:
-        signals = list(signals) + pollination_signals
-        hits = per_narrative_hits(cross_report, narrative_id)
-        if hits.get("hit_count", 0) >= 3:
-            suspicion = max(suspicion, 0.6)
-        elif hits.get("hit_count", 0) >= 1:
-            suspicion = max(suspicion, 0.45)
-    bot_overlap = await narrative_bot_overlap(db, narrative_id)
-    return CIBResponse(
-        narrative_id=narrative_id,
-        suspicion_score=round(suspicion, 4),
-        organic_score=round(1.0 - suspicion, 4),
-        signals=signals,
-        node_count=m.node_count,
-        edge_count=m.edge_count,
-        density=m.density,
-        top_amplifiers=m.top_amplifiers,
-        coordinated_clusters=m.coordinated_clusters,
-        iu_astroturf=bot_overlap,
+    try:
+        payload = await build_graph_export(db, narrative_id, include_cib=False)
+        graph_stats = build_graph_stats(payload.authors, payload.amplifications)
+    except ValueError:
+        graph_stats = build_graph_stats([], [])
+
+    return await build_cib_report(
+        db,
+        narrative_id,
+        cross_pollination_report=cross_report,
+        graph_stats=graph_stats,
     )
 
 

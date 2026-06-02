@@ -6,6 +6,7 @@ import type {
   DashboardSnapshot,
   GraphAuthor,
   NarrativePollinationHits,
+  NarrativeProvenance,
   NarrativeSummary,
   NearDuplicatesReport,
   Post,
@@ -133,6 +134,13 @@ export async function fetchPosts(narrativeId: number, minOutrage = 0): Promise<P
 export async function fetchCib(narrativeId: number): Promise<CibReport> {
   await loadSnapshot();
   return bundleFor(narrativeId).cib;
+}
+
+export async function fetchProvenance(
+  narrativeId: number
+): Promise<NarrativeProvenance | null> {
+  await loadSnapshot();
+  return bundleFor(narrativeId).provenance ?? null;
 }
 
 export async function fetchSentimentShift(narrativeId: number): Promise<SentimentShift> {

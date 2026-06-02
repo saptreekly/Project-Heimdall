@@ -458,6 +458,47 @@ html:not(.chart-density-compact) .graph-canvas {
   margin-top: 0.35rem;
 }
 
+.panel-provenance {
+  margin-bottom: 1.25rem;
+}
+
+.provenance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem 1.25rem;
+  margin: 0.75rem 0 0;
+}
+
+.provenance-grid dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+}
+
+.provenance-grid dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.provenance-grid .provenance-wide {
+  grid-column: 1 / -1;
+}
+
+.provenance-warn {
+  color: var(--warn, #b45309);
+  font-weight: 500;
+}
+
+.signal-subhead {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.35rem;
+  color: var(--muted);
+}
+
 .charts-grid,
 .split-grid {
   display: grid;

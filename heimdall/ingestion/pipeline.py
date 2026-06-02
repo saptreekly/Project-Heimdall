@@ -13,7 +13,7 @@ from heimdall.ingestion.rate_limit import TokenBucketRateLimiter
 from heimdall.ingestion.reddit import RedditIngester
 from heimdall.ingestion.tweet_eval import build_tweet_eval_ingester
 from heimdall.ingestion.x import XIngester
-from heimdall.ingestion.x_guard import XIngestPlan, plan_x_ingest
+from heimdall.ingestion.x_guard import XIngestPlan
 from heimdall.ingestion.schemas import RawPost
 from heimdall.ingestion.text_clean import clean_post_text
 from heimdall.nlp.outrage import OutrageAnalyzer

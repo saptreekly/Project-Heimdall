@@ -94,6 +94,45 @@ def test_label_terms_excludes_stopwords() -> None:
     assert "election" in terms or "fraud" in terms
 
 
+def test_assign_distinct_cluster_labels() -> None:
+    from heimdall.nlp.theme_clusters import _assign_distinct_cluster_labels
+
+    all_texts = [
+        "election fraud midterm trump vote need accountability",
+        "election midterm fraud trump vote accountability issue",
+        "election fraud vote midterm trump federal order",
+        "nazi senile pig losers feel sorry insult",
+        "nazi senile pig rant losers senile",
+        "senile pig nazi rhetoric feel",
+        "red wave heat preparedness cross seminar",
+        "red wave heat seminar cross training",
+        "preparedness cross seminar wave heat",
+    ]
+    cluster_texts = {
+        0: all_texts[0:3],
+        1: all_texts[3:6],
+        2: all_texts[6:9],
+    }
+    labels = _assign_distinct_cluster_labels(cluster_texts, all_texts)
+    assert len(labels) == 3
+    tops = [labels[cid][0][0] for cid in sorted(labels)]
+    assert len(set(tops)) >= 2, f"expected unique lead terms, got {tops}"
+    nazi_terms = labels[1][0]
+    assert any(t in nazi_terms for t in ("nazi", "senile", "pig", "losers", "insult", "rant"))
+    wave_terms = labels[2][0]
+    assert any(t in wave_terms for t in ("wave", "heat", "seminar", "preparedness", "cross", "training"))
+    assert labels[1][1] > 0
+    assert labels[2][1] > 0
+
+
+def test_kmeans_cluster_count_caps_slices() -> None:
+    from heimdall.nlp.theme_clusters import _kmeans_cluster_count
+
+    assert _kmeans_cluster_count(198) == 6
+    assert _kmeans_cluster_count(40) == 2
+    assert _kmeans_cluster_count(2) == 1
+
+
 def test_report_to_dict_shape() -> None:
     report = cluster_posts([], narrative_id=0)
     data = report_to_dict(report)

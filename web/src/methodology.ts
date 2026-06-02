@@ -33,8 +33,8 @@ export function renderMethodology(): string {
           for Pages. The timestamp in the header is <code>generated_at</code> from that export.
         </p>
         <p class="sub">
-          Post counts in the narrative dropdown reflect all posts in the database; charts use up to
-          100 most recent posts per narrative in the snapshot.
+          Post counts in the narrative dropdown reflect all posts in the database; charts and sentiment use up to
+          250 most recent posts per narrative in the snapshot. Text coordination scans the full narrative in the DB.
         </p>
       </section>
 
@@ -73,9 +73,9 @@ export function renderMethodology(): string {
         </p>
         <p class="sub">
           API: <code>GET /api/v1/narratives/&#123;id&#125;/themes</code>.
-          The analysis dashboard shows an <strong>Emerging themes timeline</strong> (horizontal token cards
-          sorted by first activity date) so operators can spot shifting phrasing without exact-string matches.
-          Click a cluster to filter posts in the investigation panel.
+          Cluster labels use <strong>c-TF-IDF</strong>: terms are ranked by lift vs other clusters in the
+          same narrative, and top terms are deduplicated across themes so shared vocabulary (e.g. “election”,
+          “midterm”) does not repeat on every card. The timeline hides clusters below a distinctiveness floor.
         </p>
       </section>
 
@@ -199,18 +199,25 @@ export function renderMethodology(): string {
       </section>
 
       <section>
-        <h2>CIB suspicion</h2>
+        <h2>CIB suspicion &amp; coordination</h2>
         <p>
-          Authors are nodes; share/reply edges link amplifiers to targets. NetworkX heuristics
-          produce a <strong>suspicion score</strong> in [0, 1] and an <strong>organic score</strong>
-          (1 − suspicion). Signals include:
+          Heimdall separates <strong>text coordination</strong> (duplicate and fuzzy cross-author clusters,
+          synchronized bursts) from <strong>graph coordination</strong> (propagation network topology). When the
+          graph is sparse (&lt;10 edges or &lt;5% author coverage), graph scores are down-weighted and the UI
+          warns analysts to rely on text signals instead of a misleading organic score of 1.0.
+        </p>
+        <p>
+          Authors are nodes; share/reply edges link amplifiers to targets. NetworkX heuristics produce a
+          <strong>graph suspicion score</strong>; text heuristics produce a <strong>text coordination score</strong>.
+          The <strong>combined suspicion score</strong> merges both when the graph is sufficient; otherwise text
+          dominates. <strong>Organic score</strong> is 1 − combined suspicion.
         </p>
         <ul>
-          <li>One hub author accounting for &gt;50% of out-edges</li>
-          <li>Graph density &gt; 0.15 with ≥5 authors</li>
-          <li>Dense connected components (≥3 authors, high internal density)</li>
-          <li>High average outrage combined with other coordination signals</li>
-          <li>Synchronized duplicate-text burst (≥5 authors, same normalized text within 90 seconds)</li>
+          <li>One hub author accounting for &gt;50% of out-edges (graph)</li>
+          <li>Graph density &gt; 0.15 with ≥5 authors (graph)</li>
+          <li>Dense connected components (≥3 authors, high internal density) (graph)</li>
+          <li>Cross-author fuzzy clusters (≥2 authors, Jaccard ≥ threshold) (text)</li>
+          <li>Synchronized duplicate-text burst (≥5 authors, same normalized text within 90 seconds) (text)</li>
         </ul>
         <p>
           <strong>IU astroturf overlap</strong> (when present) counts narrative authors on platform

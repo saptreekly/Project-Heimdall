@@ -1,0 +1,46 @@
+# Weekly snapshot health check — freshness, schema, and narrative metrics.
+name: health
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot-health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install Heimdall
+        run: pip install -e ".[ml]"
+
+      - name: Verify snapshot structure
+        run: python scripts/verify_snapshot.py
+
+      - name: Snapshot report
+        run: python scripts/snapshot_report.py --format github-summary
+
+      - name: Check snapshot version
+        run: |
+          python -c "
+          import json
+          from pathlib import Path
+          data = json.loads(Path('web/public/data/snapshot.json').read_text())
+          version = int(data.get('version') or 0)
+          assert version >= 5, f'snapshot version {version} < 5 — re-export required'
+          print(f'snapshot version OK: {version}')
+          "
+
+      - name: Warn if snapshot is stale (>72h)
+        run: python scripts/snapshot_report.py --max-age-hours 72
+        continue-on-error: true

@@ -1,4 +1,3 @@
-import pytest
 
 from heimdall.analysis.sentiment_shift import build_daily_series, classify_trend
 

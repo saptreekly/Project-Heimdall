@@ -50,6 +50,20 @@ export function buildAlertRows(
     });
   }
 
+  if (cib.text_coordination_score >= 0.38) {
+    rows.push({
+      severity: "watch",
+      title: "Text coordination",
+      detail:
+        cib.text_signals?.[0] ??
+        `Text index ${cib.text_coordination_score.toFixed(2)} · ${cib.signals.length} signal(s)`,
+      count: nearDup?.cross_author_fuzzy_count ?? amp.clusters.length,
+      postIds: [],
+      burst: false,
+      kind: "cib",
+    });
+  }
+
   if (cib.suspicion_score >= 0.65) {
     rows.push({
       severity: "critical",
@@ -100,11 +114,12 @@ export function buildAlertRows(
   }
 
   const emerging = (themes.timeline ?? themes.clusters).filter((t) => t.emerging_theme).slice(0, 3);
+  const themeLowConfidence = (themes.model ?? "").toLowerCase().includes("tfidf");
   for (const t of emerging) {
     const terms = (t.label_terms ?? []).slice(0, 4).join(" · ") || `cluster ${t.cluster_id}`;
     rows.push({
-      severity: "context",
-      title: "Emerging theme",
+      severity: themeLowConfidence ? "context" : "context",
+      title: themeLowConfidence ? "Theme cluster (lexical fallback)" : "Emerging theme",
       detail: terms,
       count: t.size ?? t.post_ids?.length ?? 0,
       postIds: t.post_ids ?? [],

@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from scripts.scheduled_ingest import IngestJob, load_jobs, rotate_x_keywords
+from scripts.scheduled_ingest import load_jobs, rotate_x_keywords
 
 
 def test_load_scheduled_jobs() -> None:

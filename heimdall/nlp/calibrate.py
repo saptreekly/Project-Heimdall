@@ -1,6 +1,5 @@
 """Compare lexicon outrage scores to TweetEval benchmark labels."""
 
-import json
 
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession

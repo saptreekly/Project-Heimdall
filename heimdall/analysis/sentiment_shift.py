@@ -113,13 +113,23 @@ def classify_trend(series: list[dict]) -> str:
     return "stable"
 
 
-async def narrative_sentiment_shift(db: AsyncSession, narrative_id: int) -> dict:
-    result = await db.execute(
+async def narrative_sentiment_shift(
+    db: AsyncSession,
+    narrative_id: int,
+    *,
+    post_ids: list[int] | None = None,
+) -> dict:
+    q = (
         select(Post.posted_at, OutrageScore.outrage_index)
         .join(OutrageScore, OutrageScore.post_id == Post.id)
         .where(Post.narrative_id == narrative_id)
         .order_by(Post.posted_at)
     )
+    if post_ids is not None:
+        if not post_ids:
+            return {"narrative_id": narrative_id, "buckets": [], "trend": "insufficient_data"}
+        q = q.where(Post.id.in_(post_ids))
+    result = await db.execute(q)
     rows = result.all()
     if not rows:
         return {"narrative_id": narrative_id, "buckets": [], "trend": "insufficient_data"}

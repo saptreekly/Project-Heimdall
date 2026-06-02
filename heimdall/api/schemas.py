@@ -56,7 +56,13 @@ class CIBResponse(BaseModel):
     narrative_id: int
     suspicion_score: float
     organic_score: float
+    graph_suspicion_score: float = 0.0
+    text_coordination_score: float = 0.0
+    graph_sufficient: bool = False
+    graph_coverage_pct: float = 0.0
     signals: list[str]
+    graph_signals: list[str] = Field(default_factory=list)
+    text_signals: list[str] = Field(default_factory=list)
     node_count: int
     edge_count: int
     density: float

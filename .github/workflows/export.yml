@@ -1,0 +1,86 @@
+# Manual re-export of snapshot.json from the committed dashboard DB (no ingest).
+name: export-dashboard
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: Commit updated snapshot.json to main
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: export-dashboard
+  cancel-in-progress: true
+
+env:
+  HF_HOME: ${{ github.workspace }}/.cache/huggingface
+  TRANSFORMERS_CACHE: ${{ github.workspace }}/.cache/huggingface
+  SENTENCE_TRANSFORMERS_HOME: ${{ github.workspace }}/.cache/huggingface
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Restore ML caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            .cache/huggingface
+            .cache/torch
+          key: ${{ runner.os }}-heimdall-ml-${{ hashFiles('pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-heimdall-ml-
+
+      - name: Install Heimdall (ML)
+        run: pip install -e ".[ml]"
+
+      - name: Warm embedding model
+        run: |
+          python -c "
+          from sentence_transformers import SentenceTransformer
+          SentenceTransformer('all-MiniLM-L6-v2')
+          "
+
+      - name: Require committed database
+        run: |
+          if [ ! -f data/dashboard/heimdall.db ]; then
+            echo "::error::Missing data/dashboard/heimdall.db — run ingest or publish locally first."
+            exit 1
+          fi
+
+      - name: Export dashboard snapshot
+        env:
+          DATABASE_URL: sqlite+aiosqlite:///./data/dashboard/heimdall.db
+          USE_EMBEDDING_THEMES: "true"
+        run: python scripts/export_dashboard_data.py
+
+      - name: Verify snapshot
+        run: python scripts/verify_snapshot.py
+
+      - name: Snapshot report
+        run: python scripts/snapshot_report.py --format github-summary
+
+      - name: Commit snapshot
+        if: inputs.commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/public/data/snapshot.json
+          if git diff --staged --quiet; then
+            echo "No snapshot changes to commit."
+          else
+            git commit -m "chore: re-export dashboard snapshot [export workflow]"
+            git push
+          fi
