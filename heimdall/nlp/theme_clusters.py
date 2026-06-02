@@ -2,48 +2,27 @@
 
 from __future__ import annotations
 
-import re
+import math
 from collections import Counter
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 
 import numpy as np
 
 from heimdall.nlp.embeddings import DEFAULT_EMBEDDING_MODEL, encode_texts
 from heimdall.nlp.lexicon import lexicon_hit_strength
+from heimdall.nlp.theme_phrases import assign_distinct_phrase_labels, label_terms as _phrase_label_terms
 
-_TOKEN_RE = re.compile(r"[a-z]{3,}")
-
-# Extra fillers common on social posts (sklearn ENGLISH_STOP_WORDS covers most English glue words).
-_EXTRA_THEME_STOPWORDS = frozenset(
-    {
-        "amp",
-        "com",
-        "http",
-        "https",
-        "just",
-        "like",
-        "link",
-        "nbsp",
-        "rt",
-        "via",
-        "www",
-    }
-)
-
-_THEME_STOPWORDS: frozenset[str] | None = None
-
-# DBSCAN cosine distance on MiniLM unit vectors; tune for short social posts.
-DBSCAN_EPS = 0.35
 DBSCAN_MIN_SAMPLES = 2
 EMERGING_LEXICON_MAX = 0.25
 EMERGING_MIN_CLUSTER_SIZE = 3
 EMERGING_MIN_COHESION = 0.55
 THEME_OUTRAGE_BOOST_MAX = 0.14
-MIN_LABEL_LIFT = 1.75
 MIN_TIMELINE_DISTINCTIVENESS = 0.12
 MIN_CLUSTER_SIZE_EXPORT = 2
 KMEANS_MAX_CLUSTERS = 6
 KMEANS_POSTS_PER_CLUSTER = 25
+MERGE_CENTROID_SIM = 0.87
+NOISE_CLUSTER_ID = -1
 
 
 @dataclass(frozen=True)
@@ -55,8 +34,14 @@ class ThemeCluster:
     lexicon_hit_rate: float
     emerging_theme: bool
     label_terms: list[str]
+    label_phrases: list[str]
     label_distinctiveness: float
     sample_text: str
+    author_entropy: float = 0.0
+    quality_score: float = 0.0
+    is_noise: bool = False
+    map_x: float | None = None
+    map_y: float | None = None
 
 
 @dataclass
@@ -68,94 +53,12 @@ class ThemeClusterReport:
     model: str
     clusters: list[ThemeCluster] = field(default_factory=list)
     post_theme_boost: dict[int, float] = field(default_factory=dict)
-
-
-def _theme_stopwords() -> frozenset[str]:
-    global _THEME_STOPWORDS
-    if _THEME_STOPWORDS is None:
-        try:
-            from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
-
-            base = set(ENGLISH_STOP_WORDS)
-        except ImportError:
-            base = set()
-        base.update(_EXTRA_THEME_STOPWORDS)
-        _THEME_STOPWORDS = frozenset(base)
-    return _THEME_STOPWORDS
-
-
-def _is_meaningful_label_term(word: str) -> bool:
-    w = (word or "").lower().strip()
-    if len(w) < 3 or w.isdigit():
-        return False
-    return w not in _theme_stopwords()
-
-
-def _tokenize(text: str) -> list[str]:
-    return _TOKEN_RE.findall((text or "").lower())
+    cluster_similarity: list[dict] = field(default_factory=list)
+    merge_tree: list[dict] = field(default_factory=list)
 
 
 def _label_terms(texts: list[str], *, top_n: int = 6) -> list[str]:
-    counts: Counter[str] = Counter()
-    for text in texts:
-        for word in _tokenize(text):
-            if _is_meaningful_label_term(word):
-                counts[word] += 1
-    return [word for word, _ in counts.most_common(top_n)]
-
-
-def _corpus_term_rates(all_texts: list[str]) -> dict[str, float]:
-    counts: Counter[str] = Counter()
-    total = 0
-    for text in all_texts:
-        for word in _tokenize(text):
-            if _is_meaningful_label_term(word):
-                counts[word] += 1
-                total += 1
-    if total <= 0:
-        return {}
-    return {word: count / total for word, count in counts.items()}
-
-
-def _score_distinct_terms(
-    member_texts: list[str],
-    corpus_rates: dict[str, float],
-) -> list[tuple[str, float]]:
-    """Rank terms by lift vs the full narrative corpus (c-TF-IDF style)."""
-    cluster_counts: Counter[str] = Counter()
-    cluster_total = 0
-    for text in member_texts:
-        for word in _tokenize(text):
-            if _is_meaningful_label_term(word):
-                cluster_counts[word] += 1
-                cluster_total += 1
-    if cluster_total <= 0:
-        return []
-
-    scored: list[tuple[str, float]] = []
-    for word, count in cluster_counts.items():
-        cluster_rate = count / cluster_total
-        corpus_rate = corpus_rates.get(word, 1.0 / max(cluster_total * 10, 1))
-        lift = cluster_rate / max(corpus_rate, 1e-9)
-        if lift < MIN_LABEL_LIFT:
-            continue
-        scored.append((word, lift * cluster_rate))
-    scored.sort(key=lambda item: item[1], reverse=True)
-    return scored
-
-
-def _distinctiveness_from_scores(
-    terms: list[str],
-    scored: list[tuple[str, float]],
-) -> float:
-    if not terms:
-        return 0.0
-    score_map = dict(scored)
-    vals = [score_map.get(term, 0.0) for term in terms[:3]]
-    if not vals:
-        return 0.0
-    avg = sum(vals) / len(vals)
-    return round(min(1.0, avg / 8.0), 4)
+    return _phrase_label_terms(texts, top_n=top_n)
 
 
 def _assign_distinct_cluster_labels(
@@ -163,58 +66,191 @@ def _assign_distinct_cluster_labels(
     all_texts: list[str],
     *,
     top_n: int = 6,
-) -> dict[int, tuple[list[str], float]]:
-    """Pick distinctive labels per cluster; reserve top terms for strongest clusters."""
-    cluster_scores: dict[int, list[tuple[str, float]]] = {}
-    for cluster_id, texts in cluster_texts.items():
-        contrast = [
-            line
-            for other_id, other_texts in cluster_texts.items()
-            if other_id != cluster_id
-            for line in other_texts
-        ]
-        if not contrast:
-            contrast = [t for t in all_texts if t not in texts] or all_texts
-        cluster_scores[cluster_id] = _score_distinct_terms(texts, _corpus_term_rates(contrast))
-    order = sorted(
-        cluster_scores.keys(),
-        key=lambda cid: cluster_scores[cid][0][1] if cluster_scores[cid] else 0.0,
-        reverse=True,
-    )
-
-    claimed: set[str] = set()
-    labels: dict[int, tuple[list[str], float]] = {}
-    for cluster_id in order:
-        scored = cluster_scores[cluster_id]
-        terms: list[str] = []
-        for word, _ in scored:
-            if word in claimed:
-                continue
-            terms.append(word)
-            claimed.add(word)
-            if len(terms) >= top_n:
-                break
-        if len(terms) < min(3, top_n):
-            for word, _ in scored:
-                if word not in terms:
-                    terms.append(word)
-                if len(terms) >= top_n:
-                    break
-        if len(terms) < min(2, top_n):
-            terms = _label_terms(cluster_texts[cluster_id], top_n=top_n)
-        distinctiveness = _distinctiveness_from_scores(terms, scored)
-        labels[cluster_id] = (terms[:top_n], distinctiveness)
+) -> dict[int, tuple[list[str], list[str], float]]:
+    """Return per cluster: (display labels, fallback unigrams, distinctiveness)."""
+    raw = assign_distinct_phrase_labels(cluster_texts, all_texts, top_n=top_n)
+    labels: dict[int, tuple[list[str], list[str], float]] = {}
+    for cluster_id, (phrases, fallback, distinctiveness) in raw.items():
+        display = phrases if phrases else fallback
+        labels[cluster_id] = (display, fallback, distinctiveness)
     return labels
 
 
+def _author_entropy(author_ids: list[str]) -> float:
+    if not author_ids:
+        return 0.0
+    counts = Counter(author_ids)
+    n = len(author_ids)
+    entropy = -sum((c / n) * math.log2(c / n) for c in counts.values() if c > 0)
+    max_entropy = math.log2(len(counts)) if len(counts) > 1 else 1.0
+    return round(entropy / max(max_entropy, 1e-9), 4)
+
+
+def _quality_score(*, cohesion: float, distinctiveness: float, lexicon_rate: float) -> float:
+    return round(0.45 * cohesion + 0.35 * distinctiveness + 0.2 * (1.0 - lexicon_rate), 4)
+
+
+def _cluster_primary_label(cluster: ThemeCluster) -> str:
+    if cluster.label_phrases:
+        return cluster.label_phrases[0]
+    if cluster.label_terms:
+        return cluster.label_terms[0]
+    return f"cluster {cluster.cluster_id}"
+
+
+def _cluster_similarity_edges(
+    centroids: dict[int, np.ndarray],
+    *,
+    min_sim: float = 0.35,
+) -> list[dict]:
+    ids = sorted(centroids.keys())
+    edges: list[dict] = []
+    for i, left in enumerate(ids):
+        vec_left = centroids[left]
+        for right in ids[i + 1 :]:
+            sim = float(vec_left @ centroids[right])
+            if sim >= min_sim:
+                edges.append({"a": left, "b": right, "similarity": round(sim, 4)})
+    edges.sort(key=lambda edge: -edge["similarity"])
+    return edges
+
+
+def _build_merge_tree(
+    clusters: list[ThemeCluster],
+    centroids: dict[int, np.ndarray],
+) -> list[dict]:
+    """Greedy agglomerative merge history for dendrogram visualization."""
+    cluster_by_id = {c.cluster_id: c for c in clusters}
+    active: dict[int, dict] = {}
+    for cluster_id, centroid in centroids.items():
+        cluster = cluster_by_id.get(cluster_id)
+        if cluster is None or cluster.is_noise:
+            continue
+        active[cluster_id] = {
+            "node_id": f"c{cluster_id}",
+            "centroid": centroid,
+            "label": _cluster_primary_label(cluster),
+            "size": cluster.size,
+        }
+
+    nodes: dict[str, dict] = {
+        meta["node_id"]: {
+            "id": meta["node_id"],
+            "cluster_id": cluster_id,
+            "label": meta["label"],
+            "children": [],
+            "similarity": 1.0,
+            "size": meta["size"],
+            "leaf": True,
+        }
+        for cluster_id, meta in active.items()
+    }
+
+    merge_step = 0
+    while len(active) >= 2:
+        best_pair: tuple[int, int] | None = None
+        best_sim = -1.0
+        ids = list(active.keys())
+        for i, left in enumerate(ids):
+            vec_left = active[left]["centroid"]
+            for right in ids[i + 1 :]:
+                sim = float(vec_left @ active[right]["centroid"])
+                if sim > best_sim:
+                    best_sim = sim
+                    best_pair = (left, right)
+        if best_pair is None or best_sim < 0.5:
+            break
+
+        left_id, right_id = best_pair
+        left_meta = active[left_id]
+        right_meta = active[right_id]
+        merged = left_meta["centroid"] + right_meta["centroid"]
+        norm = float(np.linalg.norm(merged))
+        merged_centroid = merged / norm if norm > 1e-9 else merged
+
+        merge_id = f"m{merge_step}"
+        nodes[merge_id] = {
+            "id": merge_id,
+            "cluster_id": None,
+            "label": f"{left_meta['label']} + {right_meta['label']}",
+            "children": [left_meta["node_id"], right_meta["node_id"]],
+            "similarity": round(best_sim, 4),
+            "size": left_meta["size"] + right_meta["size"],
+            "leaf": False,
+        }
+
+        del active[left_id], active[right_id]
+        active[merge_step + 100_000] = {
+            "node_id": merge_id,
+            "centroid": merged_centroid,
+            "label": nodes[merge_id]["label"],
+            "size": nodes[merge_id]["size"],
+        }
+        merge_step += 1
+
+    return list(nodes.values())
+
+
 def _kmeans_cluster_count(n: int) -> int:
-    """Fewer, broader clusters — avoids 14 near-duplicate KMeans slices on ~200 posts."""
     if n < 3:
         return 1
     return min(KMEANS_MAX_CLUSTERS, max(2, n // KMEANS_POSTS_PER_CLUSTER))
 
 
-def _cluster_labels(embeddings: np.ndarray) -> tuple[np.ndarray, str]:
+def _adaptive_dbscan_eps(embeddings: np.ndarray, *, neural: bool) -> float:
+    n = len(embeddings)
+    if n < 4:
+        return 0.35 if neural else 0.55
+    try:
+        from sklearn.neighbors import NearestNeighbors
+    except ImportError:
+        return 0.35 if neural else 0.55
+
+    k = min(3, n - 1)
+    nn = NearestNeighbors(n_neighbors=k + 1, metric="cosine")
+    nn.fit(embeddings)
+    dists, _ = nn.kneighbors(embeddings)
+    k_dist = np.sort(dists[:, k])
+    eps = float(np.percentile(k_dist, 75))
+    lo, hi = (0.22, 0.42) if neural else (0.35, 0.68)
+    return float(np.clip(eps, lo, hi))
+
+
+def _merge_similar_clusters(embeddings: np.ndarray, labels: np.ndarray) -> np.ndarray:
+    unique = sorted({int(x) for x in labels if int(x) >= 0})
+    if len(unique) < 2:
+        return labels
+
+    centroids: dict[int, np.ndarray] = {}
+    for cluster_id in unique:
+        idx = np.where(labels == cluster_id)[0]
+        centroid = embeddings[idx].mean(axis=0)
+        norm = float(np.linalg.norm(centroid))
+        centroids[cluster_id] = centroid / norm if norm > 1e-9 else centroid
+
+    parent = {cid: cid for cid in unique}
+
+    def find(cluster_id: int) -> int:
+        while parent[cluster_id] != cluster_id:
+            parent[cluster_id] = parent[parent[cluster_id]]
+            cluster_id = parent[cluster_id]
+        return cluster_id
+
+    for i, left in enumerate(unique):
+        for right in unique[i + 1 :]:
+            sim = float(centroids[left] @ centroids[right])
+            if sim >= MERGE_CENTROID_SIM:
+                root_left, root_right = find(left), find(right)
+                if root_left != root_right:
+                    parent[root_right] = root_left
+
+    merged = labels.copy()
+    for cluster_id in unique:
+        merged[labels == cluster_id] = find(cluster_id)
+    return merged
+
+
+def _cluster_labels(embeddings: np.ndarray, *, neural: bool) -> tuple[np.ndarray, str]:
     n = len(embeddings)
     if n == 0:
         return np.array([], dtype=int), "none"
@@ -228,8 +264,10 @@ def _cluster_labels(embeddings: np.ndarray) -> tuple[np.ndarray, str]:
             "Theme clustering requires scikit-learn: pip install -e '.[ml]'"
         ) from exc
 
-    db = DBSCAN(eps=DBSCAN_EPS, min_samples=DBSCAN_MIN_SAMPLES, metric="cosine")
+    eps = _adaptive_dbscan_eps(embeddings, neural=neural)
+    db = DBSCAN(eps=eps, min_samples=DBSCAN_MIN_SAMPLES, metric="cosine")
     labels = db.fit_predict(embeddings)
+    labels = _merge_similar_clusters(embeddings, labels)
     valid = labels[labels >= 0]
     n_clusters = len(set(valid.tolist())) if len(valid) else 0
     noise_ratio = float((labels == -1).sum()) / n
@@ -239,6 +277,7 @@ def _cluster_labels(embeddings: np.ndarray) -> tuple[np.ndarray, str]:
 
     k = _kmeans_cluster_count(n)
     labels = KMeans(n_clusters=k, random_state=42, n_init=10).fit_predict(embeddings)
+    labels = _merge_similar_clusters(embeddings, labels)
     return labels, "kmeans"
 
 
@@ -255,8 +294,45 @@ def _cluster_cohesion(embeddings: np.ndarray, member_idx: np.ndarray) -> float:
     return float(np.clip(sims.mean(), 0.0, 1.0))
 
 
+def _cluster_map_coords(
+    cluster_ids: list[int],
+    centroids: list[np.ndarray],
+) -> dict[int, tuple[float, float]]:
+    if len(centroids) < 2:
+        return {}
+    try:
+        from sklearn.decomposition import PCA
+    except ImportError:
+        return {}
+
+    matrix = np.vstack(centroids)
+    coords = PCA(n_components=2, random_state=42).fit_transform(matrix)
+    return {
+        cluster_ids[i]: (round(float(coords[i, 0]), 4), round(float(coords[i, 1]), 4))
+        for i in range(len(cluster_ids))
+    }
+
+
+def _parse_posts(
+    posts: list[tuple[int, str]] | list[tuple[int, str, str | None]],
+) -> tuple[list[int], list[str], list[str | None]]:
+    post_ids: list[int] = []
+    texts: list[str] = []
+    authors: list[str | None] = []
+    for row in posts:
+        if len(row) == 2:
+            post_ids.append(int(row[0]))
+            texts.append(str(row[1]))
+            authors.append(None)
+        else:
+            post_ids.append(int(row[0]))
+            texts.append(str(row[1]))
+            authors.append(str(row[2]) if row[2] is not None else None)
+    return post_ids, texts, authors
+
+
 def cluster_posts(
-    posts: list[tuple[int, str]],
+    posts: list[tuple[int, str]] | list[tuple[int, str, str | None]],
     *,
     narrative_id: int = 0,
     model_name: str = DEFAULT_EMBEDDING_MODEL,
@@ -264,7 +340,7 @@ def cluster_posts(
     """
     Cluster post texts in embedding space.
 
-    posts: list of (post_id, text)
+    posts: list of (post_id, text) or (post_id, text, author_id)
     """
     if not posts:
         return ThemeClusterReport(
@@ -275,47 +351,73 @@ def cluster_posts(
             model=model_name,
         )
 
-    post_ids = [p[0] for p in posts]
-    texts = [p[1] for p in posts]
+    post_ids, texts, author_ids = _parse_posts(posts)
     embeddings, encoder = encode_texts(texts, model_name=model_name)
-    raw_labels, method = _cluster_labels(embeddings)
+    neural = encoder != "tfidf-fallback"
+    raw_labels, method = _cluster_labels(embeddings, neural=neural)
     if encoder == "tfidf-fallback":
         method = f"{method}+tfidf"
 
-    clusters: list[ThemeCluster] = []
-    boosts: dict[int, float] = {}
     cluster_texts: dict[int, list[str]] = {}
+    unique_labels = sorted({int(x) for x in raw_labels})
 
-    unique_labels = sorted({int(x) for x in raw_labels if int(x) >= 0})
     for cluster_id in unique_labels:
         member_idx = np.where(raw_labels == cluster_id)[0]
         if len(member_idx) < MIN_CLUSTER_SIZE_EXPORT:
             continue
-
-        member_post_ids = [post_ids[i] for i in member_idx]
-        member_texts = [texts[i] for i in member_idx]
-        cluster_texts[cluster_id] = member_texts
+        cluster_texts[cluster_id] = [texts[i] for i in member_idx]
 
     label_map = _assign_distinct_cluster_labels(cluster_texts, texts)
 
+    centroids_for_map: list[np.ndarray] = []
+    map_cluster_ids: list[int] = []
+    centroids_by_id: dict[int, np.ndarray] = {}
+    clusters: list[ThemeCluster] = []
+    boosts: dict[int, float] = {}
+
     for cluster_id in unique_labels:
         member_idx = np.where(raw_labels == cluster_id)[0]
         if len(member_idx) < MIN_CLUSTER_SIZE_EXPORT:
             continue
 
+        is_noise = cluster_id == NOISE_CLUSTER_ID
         member_post_ids = [post_ids[i] for i in member_idx]
         member_texts = cluster_texts[cluster_id]
-        label_terms, label_distinctiveness = label_map.get(cluster_id, ([], 0.0))
+        display_labels, fallback_terms, label_distinctiveness = label_map.get(
+            cluster_id, ([], [], 0.0)
+        )
+        label_phrases = [p for p in display_labels if " " in p] or display_labels[:3]
+        label_terms = display_labels if display_labels else fallback_terms
+
         cohesion = _cluster_cohesion(embeddings, member_idx)
         lex_rates = [lexicon_hit_strength(t) for t in member_texts]
         lexicon_rate = float(np.mean(lex_rates)) if lex_rates else 0.0
 
+        member_authors = [author_ids[i] for i in member_idx if author_ids[i]]
+        author_entropy = _author_entropy(member_authors)
+        quality = _quality_score(
+            cohesion=cohesion,
+            distinctiveness=label_distinctiveness,
+            lexicon_rate=lexicon_rate,
+        )
+
         emerging = (
-            len(member_idx) >= EMERGING_MIN_CLUSTER_SIZE
+            not is_noise
+            and len(member_idx) >= EMERGING_MIN_CLUSTER_SIZE
             and cohesion >= EMERGING_MIN_COHESION
             and lexicon_rate <= EMERGING_LEXICON_MAX
             and label_distinctiveness >= MIN_TIMELINE_DISTINCTIVENESS
         )
+
+        subset = embeddings[member_idx]
+        centroid = subset.mean(axis=0)
+        norm = float(np.linalg.norm(centroid))
+        if norm > 1e-9:
+            unit = centroid / norm
+            if not is_noise:
+                centroids_for_map.append(unit)
+                map_cluster_ids.append(cluster_id)
+                centroids_by_id[cluster_id] = unit
 
         sample = max(member_texts, key=len)
         clusters.append(
@@ -327,8 +429,12 @@ def cluster_posts(
                 lexicon_hit_rate=round(lexicon_rate, 4),
                 emerging_theme=emerging,
                 label_terms=label_terms,
+                label_phrases=label_phrases,
                 label_distinctiveness=label_distinctiveness,
                 sample_text=sample[:240] + ("…" if len(sample) > 240 else ""),
+                author_entropy=author_entropy,
+                quality_score=quality,
+                is_noise=is_noise,
             )
         )
 
@@ -337,18 +443,35 @@ def cluster_posts(
             for pid in member_post_ids:
                 boosts[pid] = max(boosts.get(pid, 0.0), boost)
 
-    clusters.sort(
-        key=lambda c: (-c.label_distinctiveness, -int(c.emerging_theme), -c.size, -c.cohesion)
+    map_coords = _cluster_map_coords(map_cluster_ids, centroids_for_map)
+    enriched: list[ThemeCluster] = []
+    for cluster in clusters:
+        x, y = map_coords.get(cluster.cluster_id, (None, None))
+        enriched.append(replace(cluster, map_x=x, map_y=y))
+
+    enriched.sort(
+        key=lambda c: (
+            c.is_noise,
+            -c.label_distinctiveness,
+            -int(c.emerging_theme),
+            -c.size,
+            -c.cohesion,
+        )
     )
+
+    similarity = _cluster_similarity_edges(centroids_by_id)
+    merge_tree = _build_merge_tree(enriched, centroids_by_id)
 
     return ThemeClusterReport(
         narrative_id=narrative_id,
         post_count=len(posts),
-        cluster_count=len(clusters),
+        cluster_count=len(enriched),
         method=method,
         model=encoder,
-        clusters=clusters,
+        clusters=enriched,
         post_theme_boost=boosts,
+        cluster_similarity=similarity,
+        merge_tree=merge_tree,
     )
 
 
@@ -368,13 +491,39 @@ def report_to_dict(report: ThemeClusterReport) -> dict:
                 "lexicon_hit_rate": c.lexicon_hit_rate,
                 "emerging_theme": c.emerging_theme,
                 "label_terms": c.label_terms,
+                "label_phrases": c.label_phrases,
                 "label_distinctiveness": c.label_distinctiveness,
                 "sample_text": c.sample_text,
+                "author_entropy": c.author_entropy,
+                "quality_score": c.quality_score,
+                "is_noise": c.is_noise,
+                "map_x": c.map_x,
+                "map_y": c.map_y,
             }
             for c in report.clusters
+        ],
+        "cluster_map": [
+            {
+                "cluster_id": c.cluster_id,
+                "x": c.map_x,
+                "y": c.map_y,
+                "size": c.size,
+                "label": (c.label_phrases or c.label_terms or ["?"])[0],
+                "emerging_theme": c.emerging_theme,
+                "is_noise": c.is_noise,
+            }
+            for c in report.clusters
+            if c.map_x is not None and c.map_y is not None and not c.is_noise
         ],
         "emerging_theme_count": sum(1 for c in report.clusters if c.emerging_theme),
         "distinct_theme_count": sum(
             1 for c in report.clusters if c.label_distinctiveness >= MIN_TIMELINE_DISTINCTIVENESS
         ),
+        "cluster_similarity": report.cluster_similarity,
+        "merge_candidates": [
+            edge
+            for edge in report.cluster_similarity
+            if 0.72 <= edge["similarity"] < MERGE_CENTROID_SIM
+        ],
+        "merge_tree": report.merge_tree,
     }

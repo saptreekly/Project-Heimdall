@@ -16,9 +16,9 @@ async def narrative_theme_clusters(
     narrative_id: int,
 ) -> dict:
     result = await session.execute(
-        select(Post.id, Post.text).where(Post.narrative_id == narrative_id).order_by(Post.posted_at)
+        select(Post.id, Post.text, Post.author_id).where(Post.narrative_id == narrative_id).order_by(Post.posted_at)
     )
-    rows = [(int(r[0]), str(r[1])) for r in result.all()]
+    rows = [(int(r[0]), str(r[1]), str(r[2])) for r in result.all()]
     settings = get_settings()
     report = cluster_posts(
         rows,
@@ -33,9 +33,9 @@ async def narrative_theme_report(
     narrative_id: int,
 ) -> ThemeClusterReport:
     result = await session.execute(
-        select(Post.id, Post.text).where(Post.narrative_id == narrative_id).order_by(Post.posted_at)
+        select(Post.id, Post.text, Post.author_id).where(Post.narrative_id == narrative_id).order_by(Post.posted_at)
     )
-    rows = [(int(r[0]), str(r[1])) for r in result.all()]
+    rows = [(int(r[0]), str(r[1]), str(r[2])) for r in result.all()]
     settings = get_settings()
     return cluster_posts(
         rows,

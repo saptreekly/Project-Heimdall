@@ -133,14 +133,14 @@ def aggregate_keyword_stats(runs: list[dict], configured: list[str]) -> list[Key
 
 
 def _distinct_terms(texts: list[str], *, top_n: int = 40) -> list[tuple[str, float]]:
-    from heimdall.nlp.theme_clusters import _corpus_term_rates, _score_distinct_terms
+    from heimdall.nlp.theme_phrases import _pmi_phrase_scores
 
     if not texts:
         return []
     scored: Counter[str] = Counter()
     for idx, text in enumerate(texts):
         contrast = [t for j, t in enumerate(texts) if j != idx]
-        for term, weight in _score_distinct_terms([text], _corpus_term_rates(contrast)):
+        for term, weight in _pmi_phrase_scores([text], contrast, min_count=1):
             scored[term] += weight
     return scored.most_common(top_n)
 
@@ -156,9 +156,10 @@ def _theme_gap_terms(snapshot: dict, narrative_name: str) -> list[tuple[str, flo
             distinct = float(cluster.get("label_distinctiveness") or 0)
             if distinct < 0.12:
                 continue
-            label = " · ".join((cluster.get("label_terms") or [])[:4])
+            label_parts = cluster.get("label_phrases") or cluster.get("label_terms") or []
+            label = " · ".join(label_parts[:4])
             size = int(cluster.get("size") or 0)
-            for term in cluster.get("label_terms") or []:
+            for term in label_parts:
                 out.append((term, distinct * size, f"theme cluster ({label}, {size} posts)"))
     out.sort(key=lambda x: x[1], reverse=True)
     return out

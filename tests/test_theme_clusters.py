@@ -3,10 +3,12 @@ import pytest
 
 from heimdall.nlp.theme_clusters import (
     EMERGING_LEXICON_MAX,
+    _assign_distinct_cluster_labels,
     _label_terms,
     cluster_posts,
     report_to_dict,
 )
+from heimdall.nlp.theme_phrases import score_distinct_phrases
 
 
 def _synthetic_embeddings(n: int, *, groups: list[tuple[int, int]]) -> np.ndarray:
@@ -25,7 +27,7 @@ def _synthetic_embeddings(n: int, *, groups: list[tuple[int, int]]) -> np.ndarra
     return vectors
 
 
-def _mock_two_group_labels(embeddings: np.ndarray) -> tuple[np.ndarray, str]:
+def _mock_two_group_labels(embeddings: np.ndarray, **_kwargs) -> tuple[np.ndarray, str]:
     labels = np.zeros(len(embeddings), dtype=int)
     if len(labels) >= 4:
         labels[3:] = 1
@@ -74,7 +76,7 @@ def test_cluster_posts_lexicon_heavy_not_emerging(monkeypatch: pytest.MonkeyPatc
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._cluster_labels",
-        lambda emb: (np.zeros(len(emb), dtype=int), "test"),
+        lambda emb, **_kw: (np.zeros(len(emb), dtype=int), "test"),
     )
     report = cluster_posts(posts, narrative_id=1)
     assert all(not c.emerging_theme for c in report.clusters)
@@ -94,9 +96,21 @@ def test_label_terms_excludes_stopwords() -> None:
     assert "election" in terms or "fraud" in terms
 
 
-def test_assign_distinct_cluster_labels() -> None:
-    from heimdall.nlp.theme_clusters import _assign_distinct_cluster_labels
+def test_red_wave_phrase_not_split() -> None:
+    member = [
+        "red wave heat preparedness cross seminar",
+        "red wave heat seminar cross training",
+        "preparedness cross seminar wave heat red wave",
+    ]
+    contrast = [
+        "nazi senile pig losers feel sorry insult",
+        "election fraud midterm trump vote need accountability",
+    ]
+    phrases, _, _ = score_distinct_phrases(member, contrast, top_n=6)
+    assert "red wave" in phrases, f"expected multi-word phrase, got {phrases}"
 
+
+def test_assign_distinct_cluster_labels() -> None:
     all_texts = [
         "election fraud midterm trump vote need accountability",
         "election midterm fraud trump vote accountability issue",
@@ -117,12 +131,15 @@ def test_assign_distinct_cluster_labels() -> None:
     assert len(labels) == 3
     tops = [labels[cid][0][0] for cid in sorted(labels)]
     assert len(set(tops)) >= 2, f"expected unique lead terms, got {tops}"
-    nazi_terms = labels[1][0]
-    assert any(t in nazi_terms for t in ("nazi", "senile", "pig", "losers", "insult", "rant"))
-    wave_terms = labels[2][0]
-    assert any(t in wave_terms for t in ("wave", "heat", "seminar", "preparedness", "cross", "training"))
-    assert labels[1][1] > 0
-    assert labels[2][1] > 0
+    nazi_labels = labels[1][0]
+    assert any(
+        t in nazi_labels or " ".join(nazi_labels).find(t) >= 0
+        for t in ("nazi", "senile", "pig", "losers", "insult", "rant")
+    )
+    wave_labels = labels[2][0]
+    assert "red wave" in wave_labels or "red wave" in labels[2][0] + (labels[2][1] or [])
+    assert labels[1][2] > 0
+    assert labels[2][2] > 0
 
 
 def test_kmeans_cluster_count_caps_slices() -> None:
@@ -138,6 +155,43 @@ def test_report_to_dict_shape() -> None:
     data = report_to_dict(report)
     assert data["cluster_count"] == 0
     assert data["emerging_theme_count"] == 0
+    assert "cluster_map" in data
+    assert "merge_tree" in data
+    assert "cluster_similarity" in data
+
+
+def test_merge_tree_and_similarity_export(monkeypatch: pytest.MonkeyPatch) -> None:
+    posts = [
+        (1, "red wave heat preparedness seminar", "a1"),
+        (2, "red wave heat cross training seminar", "a2"),
+        (3, "red wave preparedness heat wave", "a3"),
+        (4, "nazi senile pig insult rant", "b1"),
+        (5, "senile pig nazi losers rhetoric", "b2"),
+        (6, "nazi pig senile insult feel", "b3"),
+    ]
+    embeddings = _synthetic_embeddings(6, groups=[(0, 3), (3, 3)])
+    monkeypatch.setattr(
+        "heimdall.nlp.theme_clusters.encode_texts",
+        lambda texts, **kwargs: (embeddings[: len(texts)], "test-model"),
+    )
+    monkeypatch.setattr(
+        "heimdall.nlp.theme_clusters._cluster_labels",
+        lambda emb, **_kw: (
+            np.array([0, 0, 0, 1, 1, 1], dtype=int),
+            "test",
+        ),
+    )
+    monkeypatch.setattr(
+        "heimdall.nlp.theme_clusters._merge_similar_clusters",
+        lambda _emb, labels: labels,
+    )
+    report = cluster_posts(posts, narrative_id=7)
+    data = report_to_dict(report)
+    leaves = [n for n in data["merge_tree"] if n.get("leaf")]
+    assert len(leaves) >= 2, "expected leaf nodes for each cluster"
+    assert data["merge_tree"], "expected merge tree export"
+    if data["cluster_similarity"]:
+        assert data["cluster_similarity"][0]["similarity"] >= 0.35
 
 
 def test_outrage_analyzer_applies_theme_boost(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -151,7 +205,7 @@ def test_outrage_analyzer_applies_theme_boost(monkeypatch: pytest.MonkeyPatch) -
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._cluster_labels",
-        lambda emb: (np.zeros(len(emb), dtype=int), "test"),
+        lambda emb, **_kw: (np.zeros(len(emb), dtype=int), "test"),
     )
 
     analyzer = OutrageAnalyzer(use_embeddings=True)

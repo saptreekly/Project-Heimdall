@@ -922,7 +922,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         const themesHost = document.getElementById("themes-timeline-host");
         if (themesHost && themesHost.dataset.mounted !== "1") {
           themesHost.dataset.mounted = "1";
-          renderEmergingThemesTimeline(themesHost, themes);
+          renderEmergingThemesTimeline(themesHost, themes, posts);
         }
       },
       mountSignals: () => {

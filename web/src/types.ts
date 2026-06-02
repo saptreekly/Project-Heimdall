@@ -283,21 +283,59 @@ export interface ThemeCluster {
   lexicon_hit_rate: number;
   emerging_theme: boolean;
   label_terms: string[];
+  label_phrases?: string[];
   label_distinctiveness?: number;
   sample_text: string;
   first_seen?: string | null;
   last_seen?: string | null;
   active_days?: number;
+  daily_counts?: Record<string, number>;
+  author_entropy?: number;
+  quality_score?: number;
+  is_noise?: boolean;
+  map_x?: number | null;
+  map_y?: number | null;
+}
+
+export interface ThemeClusterMapPoint {
+  cluster_id: number;
+  x: number;
+  y: number;
+  size: number;
+  label: string;
+  emerging_theme: boolean;
+  is_noise?: boolean;
+}
+
+export interface ClusterSimilarityEdge {
+  a: number;
+  b: number;
+  similarity: number;
+}
+
+export interface ThemeMergeNode {
+  id: string;
+  cluster_id: number | null;
+  label: string;
+  children: string[];
+  similarity: number;
+  size: number;
+  leaf: boolean;
 }
 
 export interface ThemeTimelineEntry {
   cluster_id: number;
   label_terms: string[];
+  label_phrases?: string[];
   label_distinctiveness?: number;
   emerging_theme: boolean;
+  quality_score?: number;
+  author_entropy?: number;
+  is_noise?: boolean;
   size: number;
   first_seen: string | null;
   last_seen: string | null;
+  daily_counts?: Record<string, number>;
   post_ids: number[];
 }
 
@@ -311,6 +349,10 @@ export interface ThemesReport {
   model: string;
   clusters: ThemeCluster[];
   timeline?: ThemeTimelineEntry[];
+  cluster_map?: ThemeClusterMapPoint[];
+  cluster_similarity?: ClusterSimilarityEdge[];
+  merge_candidates?: ClusterSimilarityEdge[];
+  merge_tree?: ThemeMergeNode[];
   emerging_theme_count: number;
   distinct_theme_count?: number;
 }

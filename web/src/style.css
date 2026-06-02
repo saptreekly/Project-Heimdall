@@ -595,6 +595,276 @@ html:not(.chart-density-compact) .graph-canvas {
   margin: 0.35rem 0 0;
 }
 
+.themes-gantt-host {
+  margin: 0.5rem 0 0.75rem;
+}
+
+.theme-gantt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.theme-gantt-row {
+  display: grid;
+  grid-template-columns: minmax(5rem, 7rem) 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.theme-gantt-label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.theme-gantt-track {
+  position: relative;
+  height: 0.55rem;
+  background: var(--surface);
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+}
+
+.theme-gantt-bar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 999px;
+  min-width: 4px;
+}
+
+.theme-gantt-bar-emerging {
+  box-shadow: 0 0 0 1px rgba(245, 166, 35, 0.45);
+}
+
+.theme-gantt-bar-noise {
+  opacity: 0.45;
+}
+
+.themes-layout-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 960px) {
+  .themes-layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.themes-layout-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.theme-merge-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.theme-merge-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.theme-merge-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.theme-merge-value {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: var(--text);
+}
+
+.theme-merge-slider {
+  width: 100%;
+}
+
+.theme-merge-hint {
+  margin: 0;
+}
+
+.theme-merge-candidates {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.theme-merge-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.theme-merge-group {
+  text-align: left;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.theme-merge-group:hover,
+.theme-merge-group-active {
+  border-color: var(--accent);
+}
+
+.theme-merge-group-emerging {
+  border-color: rgba(245, 166, 35, 0.45);
+}
+
+.theme-merge-group-merged {
+  border-style: dashed;
+}
+
+.theme-merge-group-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.theme-merge-group-meta {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.theme-dendrogram-host {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.theme-dendrogram-leaves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.theme-dendrogram-leaf {
+  font-size: 0.68rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.theme-dendrogram-merge {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.35rem;
+}
+
+.theme-dendrogram-merge-bar {
+  flex: 0 0 calc(var(--merge-sim, 50) * 0.6px + 24px);
+  max-width: 80px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.theme-dendrogram-merge-label {
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.theme-gantt-row-btn {
+  display: grid;
+  grid-template-columns: minmax(5rem, 7rem) 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.themes-charts-row-wide {
+  grid-template-columns: 1.4fr repeat(3, minmax(180px, 1fr));
+}
+
+.theme-sankey-host {
+  min-height: 180px;
+  overflow-x: auto;
+}
+
+.theme-sankey {
+  width: 100%;
+  min-width: 420px;
+  height: auto;
+}
+
+.theme-sankey-label {
+  fill: #8b9cb3;
+  font-size: 10px;
+}
+
+.theme-sankey-link {
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.theme-sankey-node {
+  cursor: pointer;
+}
+
+.themes-charts-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.themes-chart-cell {
+  min-height: 180px;
+}
+
+.themes-chart-cell canvas {
+  width: 100% !important;
+  height: 160px !important;
+}
+
+.themes-subheading {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.theme-token-phrase {
+  background: rgba(52, 152, 219, 0.12);
+  border-color: rgba(52, 152, 219, 0.35);
+}
+
+.theme-card-noise {
+  opacity: 0.82;
+  border-style: dashed;
+}
+
 .chart-caption {
   font-size: 0.82rem;
   color: var(--muted);

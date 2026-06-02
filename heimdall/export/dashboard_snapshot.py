@@ -282,12 +282,19 @@ async def narrative_graph(db: AsyncSession, narrative_id: int) -> dict:
 
 def _enrich_theme_timelines(clusters: list[dict], post_dates: dict[int, str]) -> None:
     for cluster in clusters:
-        dates = sorted(
-            {post_dates[pid][:10] for pid in cluster.get("post_ids", []) if pid in post_dates}
-        )
+        daily_counts: dict[str, int] = {}
+        dates: list[str] = []
+        for pid in cluster.get("post_ids", []):
+            if pid not in post_dates:
+                continue
+            day = post_dates[pid][:10]
+            daily_counts[day] = daily_counts.get(day, 0) + 1
+            dates.append(day)
+        dates = sorted(set(dates))
         cluster["first_seen"] = dates[0] if dates else None
         cluster["last_seen"] = dates[-1] if dates else None
         cluster["active_days"] = len(dates)
+        cluster["daily_counts"] = daily_counts
 
 
 async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
@@ -320,11 +327,16 @@ async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
             {
                 "cluster_id": c["cluster_id"],
                 "label_terms": c.get("label_terms", []),
+                "label_phrases": c.get("label_phrases", []),
                 "label_distinctiveness": c.get("label_distinctiveness", 0.0),
                 "emerging_theme": c.get("emerging_theme", False),
+                "quality_score": c.get("quality_score", 0.0),
+                "author_entropy": c.get("author_entropy", 0.0),
+                "is_noise": c.get("is_noise", False),
                 "size": c.get("size", 0),
                 "first_seen": c.get("first_seen"),
                 "last_seen": c.get("last_seen"),
+                "daily_counts": c.get("daily_counts", {}),
                 "post_ids": c.get("post_ids", []),
             }
             for c in sorted(
