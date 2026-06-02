@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "generated_at": "2026-06-02T01:37:28.644043+00:00",
+  "generated_at": "2026-06-02T04:56:46.948665+00:00",
   "narratives": [
     {
       "id": 3,
@@ -3428,7 +3428,7 @@
         "graph_suspicion_score": 0.0,
         "text_coordination_score": 0.38,
         "graph_sufficient": true,
-        "graph_coverage_pct": 7.4,
+        "graph_coverage_pct": 9.7,
         "signals": [
           "cross_author_fuzzy_2authors_2posts_j1.00",
           "cross_author_fuzzy_2authors_2posts_j1.00",
@@ -3440,15 +3440,39 @@
           "cross_author_fuzzy_2authors_2posts_j1.00",
           "cross_author_fuzzy_2authors_2posts_j0.94"
         ],
-        "node_count": 189,
-        "edge_count": 16,
-        "density": 0.0005,
+        "node_count": 200,
+        "edge_count": 27,
+        "density": 0.0007,
         "top_amplifiers": [
+          {
+            "author_id": "1518777787213041665",
+            "out_degree": 8,
+            "in_degree": 0,
+            "max_outrage": 0.0582
+          },
           {
             "author_id": "990497161325395968",
             "out_degree": 4,
             "in_degree": 0,
             "max_outrage": 0.1181
+          },
+          {
+            "author_id": "1667019116505333761",
+            "out_degree": 1,
+            "in_degree": 0,
+            "max_outrage": 0.3025
+          },
+          {
+            "author_id": "876574565228589059",
+            "out_degree": 1,
+            "in_degree": 0,
+            "max_outrage": 0.0424
+          },
+          {
+            "author_id": "1981085696665227264",
+            "out_degree": 1,
+            "in_degree": 0,
+            "max_outrage": 0.148
           },
           {
             "author_id": "602615359",
@@ -3479,30 +3503,6 @@
             "out_degree": 1,
             "in_degree": 1,
             "max_outrage": 0.1618
-          },
-          {
-            "author_id": "1418992647524454404",
-            "out_degree": 1,
-            "in_degree": 1,
-            "max_outrage": 0.1114
-          },
-          {
-            "author_id": "1810342177446539264",
-            "out_degree": 1,
-            "in_degree": 0,
-            "max_outrage": 0.0118
-          },
-          {
-            "author_id": "1900587875097272320",
-            "out_degree": 1,
-            "in_degree": 0,
-            "max_outrage": 0.0774
-          },
-          {
-            "author_id": "338460257",
-            "out_degree": 1,
-            "in_degree": 0,
-            "max_outrage": 0.0036
           }
         ],
         "coordinated_clusters": [],
@@ -5587,15 +5587,103 @@
             "source_post_id": 230,
             "target_post_id": null,
             "occurred_at": "2026-06-01T22:36:43"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1298624375692894210",
+            "type": "reply",
+            "source_post_id": 52,
+            "target_post_id": null,
+            "occurred_at": "2026-05-27T22:45:39"
+          },
+          {
+            "source": "1981085696665227264",
+            "target": "92186819",
+            "type": "reply",
+            "source_post_id": 54,
+            "target_post_id": null,
+            "occurred_at": "2026-05-27T20:37:06"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "880488806528561153",
+            "type": "reply",
+            "source_post_id": 55,
+            "target_post_id": null,
+            "occurred_at": "2026-05-27T16:17:26"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1553528614242717700",
+            "type": "reply",
+            "source_post_id": 58,
+            "target_post_id": null,
+            "occurred_at": "2026-05-25T22:38:34"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1098091506886471680",
+            "type": "reply",
+            "source_post_id": 101,
+            "target_post_id": null,
+            "occurred_at": "2026-05-24T17:12:32"
+          },
+          {
+            "source": "876574565228589059",
+            "target": "2162812627",
+            "type": "reply",
+            "source_post_id": 102,
+            "target_post_id": null,
+            "occurred_at": "2026-05-23T22:41:44"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1186465203858231297",
+            "type": "reply",
+            "source_post_id": 139,
+            "target_post_id": null,
+            "occurred_at": "2026-05-22T22:04:07"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1428911804781056004",
+            "type": "reply",
+            "source_post_id": 140,
+            "target_post_id": null,
+            "occurred_at": "2026-05-22T21:08:55"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "64438719",
+            "type": "reply",
+            "source_post_id": 143,
+            "target_post_id": null,
+            "occurred_at": "2026-05-21T21:13:00"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1256697863150669827",
+            "type": "reply",
+            "source_post_id": 144,
+            "target_post_id": null,
+            "occurred_at": "2026-05-21T20:29:08"
+          },
+          {
+            "source": "1667019116505333761",
+            "target": "1807783879996006400",
+            "type": "reply",
+            "source_post_id": 145,
+            "target_post_id": null,
+            "occurred_at": "2026-05-21T17:28:57"
           }
         ],
         "stats": {
-          "edge_count": 16,
+          "edge_count": 27,
           "author_count": 175,
-          "connected_author_count": 13,
-          "isolated_author_count": 162,
+          "connected_author_count": 17,
+          "isolated_author_count": 158,
           "by_type": {
-            "reply": 16
+            "reply": 27
           }
         }
       },
@@ -6084,10 +6172,10 @@
         "coordination_signal_count": 13,
         "distinct_theme_count": 3,
         "theme_cluster_count": 6,
-        "graph_edge_count": 16,
+        "graph_edge_count": 27,
         "graph_author_count": 175,
-        "graph_connected_author_count": 13,
-        "graph_coverage_pct": 7.4,
+        "graph_connected_author_count": 17,
+        "graph_coverage_pct": 9.7,
         "graph_sufficient": true,
         "theme_model": "all-MiniLM-L6-v2",
         "theme_method": "kmeans",
@@ -6112,7 +6200,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-02",
-      "count": 1
+      "count": 2
     }
   }
 }
