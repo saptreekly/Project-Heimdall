@@ -1,17 +1,33 @@
 {
   "version": 5,
-  "generated_at": "2026-06-02T12:30:43.320228+00:00",
+  "generated_at": "2026-06-02T13:00:42.736202+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
       "keywords": "2026 midterms,midterm elections 2026,2026 midterm fraud,2026 red wave,2026 blue wave,Senate race 2026,House race 2026",
-      "post_count": 251
+      "post_count": 252
     }
   ],
   "by_narrative_id": {
     "3": {
       "posts": [
+        {
+          "id": 292,
+          "platform": "x",
+          "external_id": "2061790055539392882",
+          "author_id": "1740421772875546624",
+          "author_handle": "@KortFudurich",
+          "text": "It won\u2019t matter, even if he is endorsed by the secretly Gay Obama and his husband Big Mike or his corrupt sidekick Biden it will be a Red Wave in November 2026, and 2028. On your mark get set go. Kort",
+          "posted_at": "2026-06-02T12:40:30",
+          "outrage_index": 0.0528,
+          "sentiment_label": "neutral",
+          "benchmark_label": null,
+          "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
+          "copypasta_score": 0.026,
+          "status_url": "https://x.com/i/web/status/2061790055539392882"
+        },
         {
           "id": 276,
           "platform": "x",
@@ -3995,22 +4011,6 @@
           "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.013,
           "status_url": "https://x.com/i/web/status/2057570378080456711"
-        },
-        {
-          "id": 144,
-          "platform": "x",
-          "external_id": "2057559339926515790",
-          "author_id": "1518777787213041665",
-          "author_handle": "@patriot_hammer",
-          "text": "Elections are still not secure. DemoKKKrats still cheat. Republicans still don't seem to care. Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and abuse - mass deportations - Covid Injustice - the J6 Setup - 2020 Election Fraud - 2024 Stolen House & Senate seats - et al",
-          "posted_at": "2026-05-21T20:29:08",
-          "outrage_index": 0.1939,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0128,
-          "status_url": "https://x.com/i/web/status/2057559339926515790"
         }
       ],
       "cib": {
@@ -4020,7 +4020,7 @@
         "graph_suspicion_score": 0.0,
         "text_coordination_score": 0.55,
         "graph_sufficient": true,
-        "graph_coverage_pct": 13.9,
+        "graph_coverage_pct": 14.3,
         "signals": [
           "cross_author_fuzzy_2authors_2posts_j1.00",
           "cross_author_fuzzy_3authors_3posts_j1.00",
@@ -4034,8 +4034,8 @@
           "cross_author_fuzzy_2authors_2posts_j1.00",
           "cross_author_fuzzy_2authors_2posts_j0.94"
         ],
-        "node_count": 244,
-        "edge_count": 39,
+        "node_count": 246,
+        "edge_count": 40,
         "density": 0.0007,
         "top_amplifiers": [
           {
@@ -4101,11 +4101,11 @@
         ],
         "coordinated_clusters": [],
         "iu_astroturf": {
-          "authors_in_narrative": 209,
+          "authors_in_narrative": 210,
           "platforms": [
             "x"
           ],
-          "x_authors_checked": 209,
+          "x_authors_checked": 210,
           "known_political_bots": 0,
           "known_bot_ratio": 0.0,
           "labeled_accounts": [],
@@ -4117,8 +4117,8 @@
         "buckets": [
           {
             "date": "2026-05-21",
-            "mean_outrage": 0.2248,
-            "count": 3
+            "mean_outrage": 0.2402,
+            "count": 2
           },
           {
             "date": "2026-05-22",
@@ -4177,11 +4177,11 @@
           },
           {
             "date": "2026-06-02",
-            "mean_outrage": 0.0365,
-            "count": 48
+            "mean_outrage": 0.0369,
+            "count": 49
           }
         ],
-        "trend": "stable"
+        "trend": "declining"
       },
       "amplification": {
         "narrative_id": 3,
@@ -4602,7 +4602,7 @@
           },
           {
             "author_id": "1518777787213041665",
-            "post_count": 8,
+            "post_count": 7,
             "post_ids": [
               52,
               55,
@@ -4610,10 +4610,9 @@
               101,
               139,
               140,
-              143,
-              144
+              143
             ],
-            "span_hours": 146.28,
+            "span_hours": 145.54,
             "near_duplicate_group_id": 8,
             "near_duplicate_count": 6
           },
@@ -6372,6 +6371,14 @@
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
+          },
+          {
+            "author_id": "1740421772875546624",
+            "handle": "@KortFudurich",
+            "max_outrage": 0.0528,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
           }
         ],
         "edges": [
@@ -6990,21 +6997,85 @@
             "source_post_id": 145,
             "target_post_id": null,
             "occurred_at": "2026-05-21T17:28:57"
+          },
+          {
+            "source": "1740421772875546624",
+            "target": "2004203029894193152",
+            "type": "reply",
+            "source_post_id": 292,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T12:40:30"
+          },
+          {
+            "source": "1806980276796735488",
+            "target": "507419482",
+            "type": "reply",
+            "source_post_id": 255,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T04:32:10"
+          },
+          {
+            "source": "2017359896786739200",
+            "target": "1477337764353957891",
+            "type": "reply",
+            "source_post_id": 256,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T01:06:26"
+          },
+          {
+            "source": "1686731947501076481",
+            "target": "1313591858476482560",
+            "type": "reply",
+            "source_post_id": 257,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T00:34:10"
+          },
+          {
+            "source": "1418992647524454404",
+            "target": "1418992647524454404",
+            "type": "reply",
+            "source_post_id": 147,
+            "target_post_id": null,
+            "occurred_at": "2026-06-01T03:39:14"
+          },
+          {
+            "source": "41475976",
+            "target": "41475976",
+            "type": "reply",
+            "source_post_id": 61,
+            "target_post_id": null,
+            "occurred_at": "2026-05-31T19:25:27"
+          },
+          {
+            "source": "1663978801850662927",
+            "target": "4432916014",
+            "type": "reply",
+            "source_post_id": 64,
+            "target_post_id": null,
+            "occurred_at": "2026-05-31T04:48:41"
+          },
+          {
+            "source": "1287596172",
+            "target": "763094579491008512",
+            "type": "reply",
+            "source_post_id": 65,
+            "target_post_id": null,
+            "occurred_at": "2026-05-31T04:08:00"
           }
         ],
         "stats": {
-          "edge_count": 77,
-          "author_count": 209,
-          "connected_author_count": 29,
+          "edge_count": 85,
+          "author_count": 210,
+          "connected_author_count": 30,
           "isolated_author_count": 180,
           "by_type": {
-            "reply": 77
+            "reply": 85
           }
         }
       },
       "themes": {
         "narrative_id": 3,
-        "post_count": 251,
+        "post_count": 252,
         "cluster_count": 32,
         "method": "dbscan",
         "model": "all-MiniLM-L6-v2",
@@ -8451,11 +8522,11 @@
       },
       "benchmark": null,
       "provenance": {
-        "posts_total_db": 251,
+        "posts_total_db": 252,
         "posts_in_snapshot": 250,
         "snapshot_post_limit": 250,
         "posts_truncated": true,
-        "posts_per_author": 1.2,
+        "posts_per_author": 1.19,
         "analysis_scope": "snapshot_cohort",
         "sentiment_scope": "snapshot_cohort",
         "text_coordination_scope": "all_db_posts",
@@ -8465,17 +8536,17 @@
         "coordination_signal_count": 15,
         "distinct_theme_count": 29,
         "theme_cluster_count": 32,
-        "graph_edge_count": 77,
-        "graph_author_count": 209,
-        "graph_connected_author_count": 29,
-        "graph_coverage_pct": 13.9,
+        "graph_edge_count": 85,
+        "graph_author_count": 210,
+        "graph_connected_author_count": 30,
+        "graph_coverage_pct": 14.3,
         "graph_sufficient": true,
         "theme_model": "all-MiniLM-L6-v2",
         "theme_method": "dbscan",
         "theme_model_reliable": true,
         "outrage_scored_count": 250,
         "outrage_max": 0.2879,
-        "outrage_mean": 0.052,
+        "outrage_mean": 0.0514,
         "outrage_compressed": false
       }
     }
@@ -8493,7 +8564,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-02",
-      "count": 8
+      "count": 9
     }
   }
 }
