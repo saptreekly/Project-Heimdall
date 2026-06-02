@@ -1,13 +1,10 @@
 import type { AuthorSpamSummary, NearDuplicatesReport, Post } from "./types";
 import { selectAuthor } from "./investigation";
+import { escapeHtml as escapeHtmlSafe } from "./safe-text";
 import { stateEmptyHtml } from "./ui-states";
 
-export function escapeHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+export function escapeHtml(value: unknown): string {
+  return escapeHtmlSafe(value);
 }
 
 export function truncate(s: string, n: number): string {

@@ -1,73 +1,232 @@
 import { selectThemeCluster } from "./investigation";
-import { escapeHtml, labelList } from "./safe-text";
-import type { Post, ThemesReport } from "./types";
-import {
-  clearThemeBrush,
-  setThemeBrushHover,
-  setThemeBrushSelection,
-} from "./theme-brush";
-import {
-  AUTO_MERGE_SIM,
-  MERGE_DEFAULT_MAX,
-  renderMergeDendrogram,
-  updateMergeExplorer,
-} from "./theme-merge";
-import {
-  destroyThemeViz,
-  mountThemeEscalationChart,
-  mountThemeScatter,
-  mountThemeStreamgraph,
-  renderThemeGantt,
-  renderThemeSankey,
-  setThemeVizClusterHandler,
-} from "./theme-viz";
+import { escapeHtml, labelList, safeText } from "./safe-text";
+import type { Post, ThemeCluster, ThemeTimelineEntry, ThemesReport } from "./types";
+import { truncate } from "./post-display";
 import { stateLoadingHtml } from "./ui-states";
+
+const MAX_VISIBLE_CLUSTERS = 16;
+
+interface ThemeRow {
+  cluster_id: number;
+  labels: string[];
+  title: string;
+  post_ids: number[];
+  size: number;
+  emerging_theme: boolean;
+  is_noise: boolean;
+  first_seen: string | null;
+  last_seen: string | null;
+  label_distinctiveness: number;
+  quality_score: number;
+  sample_text: string;
+}
+
+let clusterIndex = new Map<number, ThemeRow>();
+
+function primaryLabel(labels: string[], clusterId: number): string {
+  if (labels.length > 0) return labels[0];
+  return `cluster ${clusterId}`;
+}
 
 function displayLabels(entry: {
   label_phrases?: string[];
   label_terms?: string[];
 }): string[] {
   const phrases = labelList(entry.label_phrases);
-  if (phrases.length > 0) return phrases;
-  return labelList(entry.label_terms);
+  if (phrases.length > 0) return phrases.slice(0, 6);
+  return labelList(entry.label_terms).slice(0, 6);
 }
 
-function formatTermTokens(terms: string[]): string {
-  if (terms.length === 0) return '<span class="theme-token theme-token-empty">(no terms)</span>';
-  return terms
-    .map((t) => {
-      const cls = t.includes(" ") ? "theme-token theme-token-phrase" : "theme-token";
-      return `<span class="${cls}">${escapeHtml(t)}</span>`;
+function normalizeRow(
+  entry: ThemeTimelineEntry | ThemeCluster,
+  clusters: ThemeCluster[]
+): ThemeRow {
+  const labels = displayLabels(entry);
+  const cluster = clusters.find((c) => c.cluster_id === entry.cluster_id);
+  return {
+    cluster_id: entry.cluster_id,
+    labels,
+    title: primaryLabel(labels, entry.cluster_id),
+    post_ids: entry.post_ids ?? cluster?.post_ids ?? [],
+    size: entry.size ?? cluster?.size ?? entry.post_ids?.length ?? 0,
+    emerging_theme: Boolean(entry.emerging_theme),
+    is_noise: Boolean(entry.is_noise),
+    first_seen: entry.first_seen ?? cluster?.first_seen ?? null,
+    last_seen: entry.last_seen ?? cluster?.last_seen ?? null,
+    label_distinctiveness: entry.label_distinctiveness ?? cluster?.label_distinctiveness ?? 0,
+    quality_score: entry.quality_score ?? cluster?.quality_score ?? 0,
+    sample_text: cluster?.sample_text ?? "",
+  };
+}
+
+function normalizeThemes(report: ThemesReport): ThemeRow[] {
+  const clusters = report.clusters ?? [];
+  const source = report.timeline?.length
+    ? report.timeline
+    : clusters.filter(
+        (c) =>
+          (c.label_distinctiveness ?? 0) >= 0.12 || c.emerging_theme || c.is_noise
+      );
+
+  const rows = source.map((entry) => normalizeRow(entry, clusters));
+  rows.sort((a, b) => {
+    if (a.emerging_theme !== b.emerging_theme) return a.emerging_theme ? -1 : 1;
+    if (a.is_noise !== b.is_noise) return a.is_noise ? 1 : -1;
+    return b.size - a.size;
+  });
+  return rows;
+}
+
+function dateSpan(row: ThemeRow): string {
+  if (row.first_seen && row.last_seen) {
+    return row.first_seen === row.last_seen
+      ? row.first_seen
+      : `${row.first_seen} → ${row.last_seen}`;
+  }
+  return "—";
+}
+
+function tierBreakdown(postIds: number[], posts: Post[]): Array<{ tier: string; count: number }> {
+  const postMap = new Map(posts.map((p) => [p.id, p]));
+  const counts = new Map<string, number>();
+  for (const pid of postIds) {
+    const tier = postMap.get(pid)?.escalation_tier ?? "unknown";
+    counts.set(tier, (counts.get(tier) ?? 0) + 1);
+  }
+  const order = ["inflammatory", "escalating", "neutral", "unknown"];
+  return order
+    .map((tier) => ({ tier, count: counts.get(tier) ?? 0 }))
+    .filter((row) => row.count > 0);
+}
+
+function renderDetail(row: ThemeRow, posts: Post[]): string {
+  const tiers = tierBreakdown(row.post_ids, posts);
+  const maxTier = Math.max(...tiers.map((t) => t.count), 1);
+  const tags = row.labels
+    .map((label) => {
+      const cls = label.includes(" ") ? "theme-token theme-token-phrase" : "theme-token";
+      return `<span class="${cls}">${escapeHtml(label)}</span>`;
     })
     .join("");
+
+  return `
+    <div class="theme-detail">
+      <div class="theme-detail-header">
+        <h3>${escapeHtml(row.title)}</h3>
+        <p class="theme-detail-meta">${row.size} posts · ${escapeHtml(dateSpan(row))}${
+          row.emerging_theme ? " · <span class='topology-badge topology-star'>emerging</span>" : ""
+        }</p>
+      </div>
+      <div class="theme-detail-tags">${tags || "<span class='theme-token theme-token-empty'>(no labels)</span>"}</div>
+      ${
+        row.sample_text
+          ? `<blockquote class="theme-detail-sample">${escapeHtml(truncate(row.sample_text, 320))}</blockquote>`
+          : ""
+      }
+      ${
+        tiers.length
+          ? `<div class="theme-tier-breakdown">${tiers
+              .map(
+                (tier) => `<div class="theme-tier-row">
+                  <span class="theme-tier-name">${escapeHtml(tier.tier)}</span>
+                  <span class="theme-tier-bar-track"><span class="theme-tier-bar theme-tier-bar-${escapeHtml(tier.tier)}" style="width:${((tier.count / maxTier) * 100).toFixed(1)}%"></span></span>
+                  <span class="theme-tier-count">${tier.count}</span>
+                </div>`
+              )
+              .join("")}</div>`
+          : ""
+      }
+      <button type="button" class="btn btn-secondary btn-small theme-detail-cta" data-cluster-id="${row.cluster_id}">
+        View ${row.size} posts →
+      </button>
+    </div>
+  `;
 }
 
-function cardLabel(terms: string[]): string {
-  if (terms.length === 0) return "unnamed cluster";
-  return terms.slice(0, 3).join(" · ");
+function renderTable(rows: ThemeRow[]): string {
+  const visible = rows.slice(0, MAX_VISIBLE_CLUSTERS);
+  const hiddenCount = Math.max(rows.length - visible.length, 0);
+
+  return `
+    <table class="theme-table">
+      <thead>
+        <tr>
+          <th scope="col">Cluster</th>
+          <th scope="col">Posts</th>
+          <th scope="col">Active</th>
+          <th scope="col">Signals</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${visible
+          .map((row) => {
+            const distinctPct = Math.round(row.label_distinctiveness * 100);
+            const qualityPct = Math.round(row.quality_score * 100);
+            return `<tr
+              class="theme-row${row.emerging_theme ? " theme-row-emerging" : ""}${row.is_noise ? " theme-row-noise" : ""}"
+              data-cluster-id="${row.cluster_id}"
+              tabindex="0"
+              role="button"
+              aria-label="Theme cluster ${escapeHtml(row.title)}"
+            >
+              <td class="theme-row-label">
+                <span class="theme-row-title">${escapeHtml(row.title)}</span>
+                ${
+                  row.labels.length > 1
+                    ? `<span class="theme-row-sub">${escapeHtml(row.labels.slice(1, 3).join(" · "))}</span>`
+                    : ""
+                }
+              </td>
+              <td>${row.size}</td>
+              <td class="theme-row-dates">${escapeHtml(dateSpan(row))}</td>
+              <td class="theme-row-signals">
+                ${row.emerging_theme ? `<span class="topology-badge topology-star">emerging</span> ` : ""}
+                ${distinctPct > 0 ? `<span class="theme-signal-pill">${distinctPct}% distinct</span>` : ""}
+                ${qualityPct > 0 ? `<span class="theme-signal-pill">${qualityPct}% quality</span>` : ""}
+              </td>
+            </tr>`;
+          })
+          .join("")}
+      </tbody>
+    </table>
+    ${
+      hiddenCount > 0
+        ? `<p class="chart-caption">${hiddenCount} smaller cluster${hiddenCount === 1 ? "" : "s"} hidden (showing top ${MAX_VISIBLE_CLUSTERS}).</p>`
+        : ""
+    }
+  `;
 }
 
-let mergeThreshold = MERGE_DEFAULT_MAX;
+function selectRow(host: HTMLElement, detailHost: HTMLElement | null, row: ThemeRow, posts: Post[]): void {
+  host.querySelectorAll(".theme-row").forEach((el) => el.classList.remove("theme-row-active"));
+  host
+    .querySelector(`.theme-row[data-cluster-id="${row.cluster_id}"]`)
+    ?.classList.add("theme-row-active");
 
-function postIdsForCluster(
-  timeline: Array<{ cluster_id: number; post_ids?: number[] }>,
-  clusterId: number
-): number[] {
-  return timeline.find((t) => t.cluster_id === clusterId)?.post_ids ?? [];
+  if (detailHost) {
+    detailHost.innerHTML = renderDetail(row, posts);
+    detailHost.querySelector<HTMLButtonElement>(".theme-detail-cta")?.addEventListener("click", () => {
+      const label = `[${row.labels.join(", ") || row.title}]`;
+      selectThemeCluster(label, row.post_ids);
+      window.dispatchEvent(new CustomEvent("heimdall:goto-posts"));
+    });
+  }
 }
 
-function activateClusterSelection(
-  clusterId: number,
-  label: string,
-  postIds: number[],
-  mergedClusterIds: number[] | null = null
-): void {
-  setThemeBrushSelection(clusterId, postIds, label, mergedClusterIds);
-  selectThemeCluster(label, postIds);
+function bindTable(host: HTMLElement, detailHost: HTMLElement | null, rows: ThemeRow[], posts: Post[]): void {
+  host.querySelectorAll<HTMLElement>(".theme-row").forEach((el) => {
+    const clusterId = parseInt(el.dataset.clusterId ?? "", 10);
+    const row = clusterIndex.get(clusterId);
+    if (!row) return;
 
-  document.querySelectorAll(".theme-card").forEach((card) => {
-    const id = parseInt((card as HTMLElement).dataset.clusterId ?? "", 10);
-    card.classList.toggle("theme-card-active", id === clusterId);
+    const activate = () => selectRow(host, detailHost, row, posts);
+    el.addEventListener("click", activate);
+    el.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        activate();
+      }
+    });
   });
 }
 
@@ -86,46 +245,20 @@ export function emergingThemesPanelHtml(report: ThemesReport, asInner = false): 
   const badge = emergingThemesBadge(report);
   const tfidfFallback = (report.model ?? "").toLowerCase().includes("tfidf");
   const fallbackNote = tfidfFallback
-    ? `<p class="chart-caption provenance-warn">Lexical TF-IDF fallback — treat emerging labels as low confidence until neural embeddings are enabled on export.</p>`
+    ? `<p class="chart-caption provenance-warn">Lexical TF-IDF fallback — treat cluster labels as low confidence until neural embeddings are enabled on export.</p>`
     : "";
   const inner = `
-      <h2 class="themes-panel-title">Emerging themes timeline ${badge}</h2>
+      <h2 class="themes-panel-title">Theme clusters ${badge}</h2>
       ${fallbackNote}
       <p class="chart-caption">
-        PMI-ranked phrase labels with filler filtering. Click any panel — cards, Gantt, map, stream, Sankey, or merge groups —
-        to brush-linked highlight across all views and filter posts below.
+        Embedding clusters with PMI phrase labels (multi-word frames like “red wave” stay together).
+        Select a cluster to inspect sample framing and filter posts.
       </p>
-      <div class="themes-layout-grid">
-        <div class="themes-layout-main">
-          <div id="themes-gantt-host" class="themes-gantt-host"></div>
-          <div id="themes-timeline-host" class="themes-timeline-host">
-            ${stateLoadingHtml("Loading themes…")}
-          </div>
+      <div class="theme-workbench">
+        <div id="themes-list-host" class="themes-list-host">
+          ${stateLoadingHtml("Loading theme clusters…")}
         </div>
-        <aside class="themes-layout-side">
-          <h3 class="themes-subheading">Merge explorer</h3>
-          <div id="theme-merge-host"></div>
-          <h3 class="themes-subheading">Merge tree</h3>
-          <div id="theme-dendrogram-host" class="theme-dendrogram-host"></div>
-        </aside>
-      </div>
-      <div class="themes-charts-row themes-charts-row-wide">
-        <div class="themes-chart-cell themes-chart-cell-wide">
-          <h3 class="themes-subheading">Theme → escalation (Sankey)</h3>
-          <div id="theme-sankey-host" class="theme-sankey-host"></div>
-        </div>
-        <div class="themes-chart-cell">
-          <h3 class="themes-subheading">Volume stream</h3>
-          <canvas id="theme-stream-chart" height="160" aria-label="Theme volume over time"></canvas>
-        </div>
-        <div class="themes-chart-cell">
-          <h3 class="themes-subheading">Theme map</h3>
-          <canvas id="theme-scatter-chart" height="160" aria-label="Theme cluster map"></canvas>
-        </div>
-        <div class="themes-chart-cell">
-          <h3 class="themes-subheading">Escalation stack</h3>
-          <canvas id="theme-tier-chart" height="160" aria-label="Theme escalation breakdown"></canvas>
-        </div>
+        <div id="themes-detail-host" class="themes-detail-host"></div>
       </div>
       <p class="metric-sub themes-meta" id="themes-meta"></p>
   `;
@@ -142,206 +275,49 @@ export function renderEmergingThemesTimeline(
   report: ThemesReport,
   posts: Post[] = []
 ): void {
-  destroyThemeViz();
-  clearThemeBrush();
-
   const meta = document.getElementById("themes-meta");
-  const ganttHost = document.getElementById("themes-gantt-host");
-  const mergeHost = document.getElementById("theme-merge-host");
-  const dendrogramHost = document.getElementById("theme-dendrogram-host");
-  const sankeyHost = document.getElementById("theme-sankey-host");
-
-  if (mergeHost) delete mergeHost.dataset.mounted;
-
-  setThemeVizClusterHandler((clusterId, label, postIds) => {
-    activateClusterSelection(clusterId, label, postIds);
-    document.querySelectorAll(".theme-card").forEach((card) => {
-      const id = parseInt((card as HTMLElement).dataset.clusterId ?? "", 10);
-      card.classList.toggle("theme-card-active", id === clusterId);
-    });
-  });
+  const detailHost = document.getElementById("themes-detail-host");
+  clusterIndex = new Map();
 
   if (!report.available) {
     const hint = report.reason?.includes("USE_EMBEDDING_THEMES")
-      ? " Re-export with USE_EMBEDDING_THEMES=true (pip install -e \".[ml]\" on Python 3.11–3.12 for neural embeddings, or base install for TF-IDF fallback)."
+      ? " Re-export with USE_EMBEDDING_THEMES=true when exporting snapshot.json."
       : "";
     host.innerHTML = `<p class="empty">${escapeHtml(report.reason ?? "Theme clustering unavailable in this snapshot.")}${escapeHtml(hint)}</p>`;
-    if (ganttHost) ganttHost.innerHTML = "";
-    if (mergeHost) mergeHost.innerHTML = "";
-    if (dendrogramHost) dendrogramHost.innerHTML = "";
-    if (sankeyHost) sankeyHost.innerHTML = "";
+    if (detailHost) detailHost.innerHTML = "";
     if (meta) meta.textContent = report.method ? `Method: ${report.method}` : "";
     return;
   }
 
-  const timeline = report.timeline?.length
-    ? report.timeline
-    : report.clusters
-        .filter(
-          (c) =>
-            (c.label_distinctiveness ?? 0) >= 0.12 ||
-            c.emerging_theme ||
-            c.is_noise
-        )
-        .map((c) => ({
-          cluster_id: c.cluster_id,
-          label_terms: c.label_terms,
-          label_phrases: c.label_phrases,
-          label_distinctiveness: c.label_distinctiveness,
-          emerging_theme: c.emerging_theme,
-          quality_score: c.quality_score,
-          author_entropy: c.author_entropy,
-          is_noise: c.is_noise,
-          size: c.size,
-          first_seen: c.first_seen ?? null,
-          last_seen: c.last_seen ?? null,
-          daily_counts: c.daily_counts,
-          post_ids: c.post_ids,
-        }));
-
-  if (timeline.length === 0) {
+  const rows = normalizeThemes(report);
+  if (rows.length === 0) {
     host.innerHTML =
       "<p class='empty'>No embedding clusters for this narrative (need ≥3 posts and USE_EMBEDDING_THEMES on export).</p>";
-    if (ganttHost) ganttHost.innerHTML = "";
-    if (mergeHost) mergeHost.innerHTML = "";
-    if (dendrogramHost) dendrogramHost.innerHTML = "";
-    if (sankeyHost) sankeyHost.innerHTML = "";
+    if (detailHost) detailHost.innerHTML = "";
     if (meta) meta.textContent = `Model: ${report.model} · ${report.post_count} posts`;
     return;
   }
 
-  const similarity = report.cluster_similarity ?? [];
-  const mergeCandidates = report.merge_candidates ?? [];
-
-  if (mergeHost) {
-    updateMergeExplorer(
-      mergeHost,
-      similarity,
-      mergeCandidates,
-      timeline,
-      mergeThreshold,
-      (value) => {
-        mergeThreshold = value;
-      },
-      (group) => {
-        const leadId = group.clusterIds[0];
-        activateClusterSelection(
-          leadId,
-          group.label,
-          group.postIds,
-          group.clusterIds.length > 1 ? group.clusterIds : null
-        );
-      }
-    );
+  for (const row of rows) {
+    clusterIndex.set(row.cluster_id, row);
   }
 
-  if (ganttHost) {
-    renderThemeGantt(ganttHost, timeline, (clusterId, label, postIds) => {
-      activateClusterSelection(clusterId, label, postIds);
-    });
-  }
+  host.innerHTML = renderTable(rows);
+  bindTable(host, detailHost, rows, posts);
 
-  if (dendrogramHost && report.merge_tree?.length) {
-    renderMergeDendrogram(dendrogramHost, report.merge_tree);
-    dendrogramHost.querySelectorAll<HTMLElement>(".theme-dendrogram-leaf").forEach((leaf) => {
-      const clusterId = parseInt(leaf.dataset.clusterId ?? "", 10);
-      if (!Number.isFinite(clusterId)) return;
-      const entry = timeline.find((t) => t.cluster_id === clusterId);
-      if (!entry) return;
-      leaf.style.cursor = "pointer";
-      leaf.addEventListener("click", () => {
-        const label = cardLabel(displayLabels(entry));
-        activateClusterSelection(clusterId, label, entry.post_ids ?? []);
-      });
-    });
-  } else if (dendrogramHost) {
-    dendrogramHost.innerHTML = `<p class="chart-caption">Merge tree appears when ≥2 clusters export with similarity data.</p>`;
-  }
-
-  host.innerHTML = `<div class="themes-timeline">${timeline
-    .map((entry) => {
-      const terms = displayLabels(entry);
-      const label = cardLabel(terms);
-      const span =
-        entry.first_seen && entry.last_seen
-          ? entry.first_seen === entry.last_seen
-            ? entry.first_seen
-            : `${entry.first_seen} → ${entry.last_seen}`
-          : "date unknown";
-      const distinctPct =
-        entry.label_distinctiveness != null
-          ? Math.round(entry.label_distinctiveness * 100)
-          : null;
-      const qualityPct =
-        entry.quality_score != null ? Math.round(entry.quality_score * 100) : null;
-      return `<button
-        type="button"
-        class="theme-card${entry.emerging_theme ? " theme-card-emerging" : ""}${entry.is_noise ? " theme-card-noise" : ""}"
-        data-cluster-id="${entry.cluster_id}"
-        data-theme-cluster-id="${entry.cluster_id}"
-        aria-label="Theme cluster ${escapeHtml(label)}"
-      >
-        <span class="theme-card-date">${escapeHtml(span)}</span>
-        <span class="theme-card-tokens">${formatTermTokens(terms)}</span>
-        <span class="theme-card-meta">${entry.size} posts${
-          distinctPct != null ? ` · ${distinctPct}% distinct` : ""
-        }${qualityPct != null ? ` · ${qualityPct}% quality` : ""}${
-          entry.emerging_theme ? " · emerging" : ""
-        }${entry.is_noise ? " · unclustered" : ""}</span>
-        <span class="cluster-cta">View ${entry.size} posts →</span>
-      </button>`;
-    })
-    .join("")}</div>`;
-
-  host.querySelectorAll<HTMLButtonElement>(".theme-card").forEach((btn) => {
-    btn.addEventListener("mouseenter", () => {
-      const clusterId = parseInt(btn.dataset.clusterId ?? "", 10);
-      if (Number.isFinite(clusterId)) setThemeBrushHover(clusterId);
-    });
-    btn.addEventListener("mouseleave", () => setThemeBrushHover(null));
-    btn.addEventListener("click", () => {
-      const clusterId = parseInt(btn.dataset.clusterId ?? "", 10);
-      const ids = postIdsForCluster(timeline, clusterId);
-      const card = timeline.find((t) => t.cluster_id === clusterId);
-      const terms = card ? displayLabels(card) : [];
-      const label = terms.length ? `[${terms.join(", ")}]` : `cluster ${clusterId}`;
-
-      host.querySelectorAll(".theme-card").forEach((c) => c.classList.remove("theme-card-active"));
-      btn.classList.add("theme-card-active");
-
-      activateClusterSelection(clusterId, label, ids);
-      window.dispatchEvent(new CustomEvent("heimdall:goto-posts"));
-    });
-  });
-
-  const streamCanvas = document.getElementById("theme-stream-chart") as HTMLCanvasElement | null;
-  if (streamCanvas) mountThemeStreamgraph(streamCanvas, timeline);
-
-  const scatterCanvas = document.getElementById("theme-scatter-chart") as HTMLCanvasElement | null;
-  if (scatterCanvas) mountThemeScatter(scatterCanvas, report);
-
-  const tierCanvas = document.getElementById("theme-tier-chart") as HTMLCanvasElement | null;
-  if (tierCanvas) mountThemeEscalationChart(tierCanvas, report.clusters, posts);
-
-  if (sankeyHost) {
-    renderThemeSankey(sankeyHost, report.clusters, posts);
+  const firstEmerging = rows.find((row) => row.emerging_theme && !row.is_noise) ?? rows[0];
+  if (firstEmerging) {
+    selectRow(host, detailHost, firstEmerging, posts);
   }
 
   if (meta) {
-    const encoder =
-      report.model === "tfidf-fallback"
-        ? "TF-IDF lexical vectors"
-        : report.model;
-    const mergeNote = similarity.length
-      ? ` · merge slider (auto at ${(AUTO_MERGE_SIM * 100).toFixed(0)}%)`
-      : "";
-    meta.textContent = `${report.distinct_theme_count ?? report.cluster_count} distinct · ${report.emerging_theme_count} emerging · ${report.method} · ${encoder}${mergeNote}`;
+    const encoder = report.model === "tfidf-fallback" ? "TF-IDF lexical vectors" : safeText(report.model);
+    meta.textContent = `${report.distinct_theme_count ?? report.cluster_count} distinct · ${report.emerging_theme_count} emerging · ${report.method} · ${encoder}`;
   }
 }
 
 export function clearThemeCardSelection(): void {
-  document.querySelectorAll(".theme-card-active").forEach((el) => {
-    el.classList.remove("theme-card-active");
+  document.querySelectorAll(".theme-row-active").forEach((el) => {
+    el.classList.remove("theme-row-active");
   });
-  clearThemeBrush();
 }

@@ -1,4 +1,5 @@
 import { escapeHtml, truncate } from "./post-display";
+import { labelList } from "./safe-text";
 import type {
   AmplificationReport,
   CibReport,
@@ -80,7 +81,11 @@ export function renderBrief(
           ? `<ul>${emerging
               .map(
                 (t) =>
-                  `<li>${escapeHtml((t.label_terms ?? []).slice(0, 5).join(", "))} (${"size" in t ? t.size : "?"} posts)</li>`
+                  `<li>${escapeHtml(
+                    [...labelList(t.label_phrases), ...labelList(t.label_terms)]
+                      .slice(0, 5)
+                      .join(", ") || `cluster ${t.cluster_id}`
+                  )} (${"size" in t ? t.size : "?"} posts)</li>`
               )
               .join("")}</ul>`
           : "<p>No emerging themes flagged.</p>"
@@ -116,7 +121,7 @@ function buildBriefMarkdown(
   burst: DuplicateCluster[],
   fuzzy: CrossAuthorFuzzyCluster[],
   crossPollination: CrossPollinationReport | null,
-  emerging: Array<{ label_terms?: string[]; emerging_theme?: boolean; size?: number }>
+  emerging: Array<{ label_terms?: string[]; label_phrases?: string[]; emerging_theme?: boolean; size?: number; cluster_id?: number }>
 ): string {
   const lines: string[] = [];
   const stamp = new Date().toISOString().slice(0, 19).replace("T", " ") + " UTC";
@@ -198,7 +203,9 @@ function buildBriefMarkdown(
   lines.push("");
   if (emerging.length) {
     for (const t of emerging) {
-      const terms = (t.label_terms ?? []).slice(0, 5).join(", ");
+      const terms =
+        [...labelList(t.label_phrases), ...labelList(t.label_terms)].slice(0, 5).join(", ") ||
+        `cluster ${"cluster_id" in t ? t.cluster_id : "?"}`;
       const size = "size" in t && t.size != null ? t.size : "?";
       lines.push(`- ${mdPlain(terms)} (${size} posts)`);
     }

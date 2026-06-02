@@ -1,4 +1,5 @@
 import { escapeHtml, truncate } from "./post-display";
+import { labelList } from "./safe-text";
 import type {
   AmplificationReport,
   CibReport,
@@ -116,16 +117,18 @@ export function buildAlertRows(
   const emerging = (themes.timeline ?? themes.clusters).filter((t) => t.emerging_theme).slice(0, 3);
   const themeLowConfidence = (themes.model ?? "").toLowerCase().includes("tfidf");
   for (const t of emerging) {
-    const terms = (t.label_terms ?? []).slice(0, 4).join(" · ") || `cluster ${t.cluster_id}`;
+    const phrases = labelList(t.label_phrases);
+    const terms = phrases.length ? phrases : labelList(t.label_terms);
+    const label = terms.slice(0, 4).join(" · ") || `cluster ${t.cluster_id}`;
     rows.push({
       severity: themeLowConfidence ? "context" : "context",
       title: themeLowConfidence ? "Theme cluster (lexical fallback)" : "Emerging theme",
-      detail: terms,
+      detail: label,
       count: t.size ?? t.post_ids?.length ?? 0,
       postIds: t.post_ids ?? [],
       burst: false,
       kind: "theme",
-      themeLabel: terms,
+      themeLabel: label,
     });
   }
 

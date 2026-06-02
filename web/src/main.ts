@@ -919,7 +919,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         if (tierCanvas) {
           mountSentimentTierChart(tierCanvas, sentiment.buckets);
         }
-        const themesHost = document.getElementById("themes-timeline-host");
+        const themesHost = document.getElementById("themes-list-host");
         if (themesHost && themesHost.dataset.mounted !== "1") {
           themesHost.dataset.mounted = "1";
           renderEmergingThemesTimeline(themesHost, themes, posts);
