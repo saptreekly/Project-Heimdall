@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "generated_at": "2026-06-02T19:55:38.581736+00:00",
+  "generated_at": "2026-06-02T21:29:05.699445+00:00",
   "narratives": [
     {
       "id": 3,
@@ -7659,15 +7659,95 @@
             "source_post_id": 144,
             "target_post_id": null,
             "occurred_at": "2026-05-21T20:29:08"
+          },
+          {
+            "source": "2582938576",
+            "target": "1860885548123951104",
+            "type": "reply",
+            "source_post_id": 306,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T17:18:54"
+          },
+          {
+            "source": "1219849674099740672",
+            "target": "2942316616",
+            "type": "reply",
+            "source_post_id": 309,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T13:11:47"
+          },
+          {
+            "source": "1740421772875546624",
+            "target": "2004203029894193152",
+            "type": "reply",
+            "source_post_id": 292,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T12:40:30"
+          },
+          {
+            "source": "1806980276796735488",
+            "target": "507419482",
+            "type": "reply",
+            "source_post_id": 255,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T04:32:10"
+          },
+          {
+            "source": "2017359896786739200",
+            "target": "1477337764353957891",
+            "type": "reply",
+            "source_post_id": 256,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T01:06:26"
+          },
+          {
+            "source": "1686731947501076481",
+            "target": "1313591858476482560",
+            "type": "reply",
+            "source_post_id": 257,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T00:34:10"
+          },
+          {
+            "source": "1418992647524454404",
+            "target": "1418992647524454404",
+            "type": "reply",
+            "source_post_id": 147,
+            "target_post_id": null,
+            "occurred_at": "2026-06-01T03:39:14"
+          },
+          {
+            "source": "41475976",
+            "target": "41475976",
+            "type": "reply",
+            "source_post_id": 61,
+            "target_post_id": null,
+            "occurred_at": "2026-05-31T19:25:27"
+          },
+          {
+            "source": "1663978801850662927",
+            "target": "4432916014",
+            "type": "reply",
+            "source_post_id": 64,
+            "target_post_id": null,
+            "occurred_at": "2026-05-31T04:48:41"
+          },
+          {
+            "source": "1287596172",
+            "target": "763094579491008512",
+            "type": "reply",
+            "source_post_id": 65,
+            "target_post_id": null,
+            "occurred_at": "2026-05-31T04:08:00"
           }
         ],
         "stats": {
-          "edge_count": 135,
+          "edge_count": 145,
           "author_count": 242,
           "connected_author_count": 49,
           "isolated_author_count": 193,
           "by_type": {
-            "reply": 135
+            "reply": 145
           }
         }
       },
@@ -9229,7 +9309,7 @@
         "coordination_signal_count": 16,
         "distinct_theme_count": 31,
         "theme_cluster_count": 33,
-        "graph_edge_count": 135,
+        "graph_edge_count": 145,
         "graph_author_count": 242,
         "graph_connected_author_count": 49,
         "graph_coverage_pct": 20.2,
@@ -9257,7 +9337,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-02",
-      "count": 14
+      "count": 15
     }
   }
 }
