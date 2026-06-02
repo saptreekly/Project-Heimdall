@@ -4,7 +4,7 @@
 # Data sources (first match wins):
 #   1. Committed data/dashboard/heimdall.db (copy local DB here and push)
 #   2. Secret DASHBOARD_DATABASE_URL (remote Postgres/SQLite URL)
-#   3. Mock seed (demo only)
+#   3. Fail export if DB empty (no mock seed)
 
 name: pages
 
@@ -92,11 +92,12 @@ jobs:
             echo "Using DASHBOARD_DATABASE_URL secret"
           else
             echo "DATABASE_URL=sqlite+aiosqlite:///./data/dashboard/ci-build.db" >> "$GITHUB_ENV"
-            echo "No committed DB; will seed mock data if empty"
+            echo "No committed DB; export will fail unless DASHBOARD_DATABASE_URL is set"
           fi
 
       - name: Seed database if empty
         run: python scripts/seed_dashboard_if_empty.py
+        continue-on-error: true
 
       - name: Export dashboard snapshot
         env:

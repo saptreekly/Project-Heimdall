@@ -37,8 +37,15 @@ The Pages workflow (`/.github/workflows/pages.yml`) runs on push after ingest an
 
 1. Opens `data/dashboard/heimdall.db` if present
 2. Else uses GitHub secret `DASHBOARD_DATABASE_URL` (optional remote DB)
-3. Else seeds mock demo data
+3. Else export fails (no mock seed) — commit `data/dashboard/heimdall.db` from ingest first
 4. Exports `web/public/data/snapshot.json` and deploys the site
+
+**Remove test/mock narratives** (keep only production narratives):
+
+```bash
+python scripts/prune_narratives.py --keep midterms_2026
+USE_EMBEDDING_THEMES=true python scripts/export_dashboard_data.py
+```
 
 You can also export JSON locally without committing the DB:
 

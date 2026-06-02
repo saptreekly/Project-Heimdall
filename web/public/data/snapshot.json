@@ -1,1590 +1,15 @@
 {
   "version": 4,
-  "generated_at": "2026-06-01T23:49:17.535840+00:00",
+  "generated_at": "2026-06-01T23:59:33.214683+00:00",
   "narratives": [
-    {
-      "id": 1,
-      "name": "border_narrative",
-      "keywords": "border crisis",
-      "post_count": 10
-    },
-    {
-      "id": 2,
-      "name": "x_test",
-      "keywords": "border crisis",
-      "post_count": 20
-    },
     {
       "id": 3,
       "name": "midterms_2026",
       "keywords": "2026 midterms,midterm elections 2026,2026 midterm fraud,2026 red wave,2026 blue wave,Senate race 2026,House race 2026",
       "post_count": 198
-    },
-    {
-      "id": 4,
-      "name": "test_x",
-      "keywords": "2026 midterms",
-      "post_count": 10
     }
   ],
   "by_narrative_id": {
-    "1": {
-      "posts": [
-        {
-          "id": 1,
-          "platform": "mock",
-          "external_id": "2dd69b97-b739-43c5-a160-16ec233c7b96",
-          "author_id": "bot_alpha",
-          "author_handle": null,
-          "text": "They are destroying our country. border crisis is proof the elites hate you.",
-          "posted_at": "2026-05-31T21:56:08.223876",
-          "outrage_index": 0.1053,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 0,
-          "copypasta_score": 0.0833,
-          "status_url": null
-        },
-        {
-          "id": 2,
-          "platform": "mock",
-          "external_id": "8cc7ab08-dc43-47a9-9f85-26dd340e2362",
-          "author_id": "bot_beta",
-          "author_handle": null,
-          "text": "Wake up!!! border crisis  -  share before they delete this!!!",
-          "posted_at": "2026-05-31T20:56:08.223876",
-          "outrage_index": 0.1468,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 1,
-          "copypasta_score": 0.1,
-          "status_url": null
-        },
-        {
-          "id": 3,
-          "platform": "mock",
-          "external_id": "bc605b74-29e4-40d7-8698-858f4f176249",
-          "author_id": "bot_gamma",
-          "author_handle": null,
-          "text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
-          "posted_at": "2026-05-31T19:56:08.223876",
-          "outrage_index": 0.0088,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 2,
-          "copypasta_score": 0.0741,
-          "status_url": null
-        },
-        {
-          "id": 4,
-          "platform": "mock",
-          "external_id": "20abcae4-22ec-491f-94bf-53f59c2adc2e",
-          "author_id": "bot_alpha",
-          "author_handle": null,
-          "text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
-          "posted_at": "2026-05-31T18:56:08.223876",
-          "outrage_index": 0.0044,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 3,
-          "copypasta_score": 1.0,
-          "status_url": null
-        },
-        {
-          "id": 5,
-          "platform": "mock",
-          "external_id": "6a42b182-386f-4d2b-a81e-d05790cd17f1",
-          "author_id": "bot_beta",
-          "author_handle": null,
-          "text": "They are destroying our country. border crisis is proof the elites hate you.",
-          "posted_at": "2026-05-31T17:56:08.223876",
-          "outrage_index": 0.1053,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 0,
-          "copypasta_score": 0.0833,
-          "status_url": null
-        },
-        {
-          "id": 6,
-          "platform": "mock",
-          "external_id": "a0723d59-3a06-4e0d-aa4e-9b97799b5f0b",
-          "author_id": "bot_gamma",
-          "author_handle": null,
-          "text": "Wake up!!! border crisis  -  share before they delete this!!!",
-          "posted_at": "2026-05-31T16:56:08.223876",
-          "outrage_index": 0.1468,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 1,
-          "copypasta_score": 0.1,
-          "status_url": null
-        },
-        {
-          "id": 7,
-          "platform": "mock",
-          "external_id": "70de6b94-f8da-4377-8005-e2c9d79626f2",
-          "author_id": "bot_alpha",
-          "author_handle": null,
-          "text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
-          "posted_at": "2026-05-31T15:56:08.223876",
-          "outrage_index": 0.0088,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 2,
-          "copypasta_score": 0.0741,
-          "status_url": null
-        },
-        {
-          "id": 8,
-          "platform": "mock",
-          "external_id": "a6ccb14c-b61b-466c-88c3-67ff88810a4a",
-          "author_id": "bot_beta",
-          "author_handle": null,
-          "text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
-          "posted_at": "2026-05-31T14:56:08.223876",
-          "outrage_index": 0.0044,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 3,
-          "copypasta_score": 1.0,
-          "status_url": null
-        },
-        {
-          "id": 9,
-          "platform": "mock",
-          "external_id": "76e33ceb-6c87-4420-8506-a3e2a39a16f6",
-          "author_id": "user_101",
-          "author_handle": null,
-          "text": "They are destroying our country. border crisis is proof the elites hate you.",
-          "posted_at": "2026-05-31T13:56:08.223876",
-          "outrage_index": 0.1053,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 0,
-          "copypasta_score": 0.0833,
-          "status_url": null
-        },
-        {
-          "id": 10,
-          "platform": "mock",
-          "external_id": "9485a574-45e1-4c34-a0de-d3c54aaf3460",
-          "author_id": "user_202",
-          "author_handle": null,
-          "text": "Wake up!!! border crisis  -  share before they delete this!!!",
-          "posted_at": "2026-05-31T12:56:08.223876",
-          "outrage_index": 0.1468,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 1,
-          "copypasta_score": 0.1,
-          "status_url": null
-        }
-      ],
-      "cib": {
-        "narrative_id": 1,
-        "suspicion_score": 0.55,
-        "organic_score": 0.45,
-        "signals": [
-          "dense_cluster_2_size_3",
-          "cross_author_fuzzy_3authors_3posts_j1.00",
-          "cross_author_fuzzy_3authors_3posts_j1.00",
-          "cross_author_fuzzy_2authors_2posts_j1.00",
-          "cross_author_fuzzy_2authors_2posts_j1.00"
-        ],
-        "node_count": 5,
-        "edge_count": 3,
-        "density": 0.15,
-        "top_amplifiers": [
-          {
-            "author_id": "bot_beta",
-            "out_degree": 1,
-            "in_degree": 0,
-            "max_outrage": 0.1468
-          },
-          {
-            "author_id": "bot_alpha",
-            "out_degree": 1,
-            "in_degree": 3,
-            "max_outrage": 0.1053
-          },
-          {
-            "author_id": "bot_gamma",
-            "out_degree": 1,
-            "in_degree": 0,
-            "max_outrage": 0.1468
-          },
-          {
-            "author_id": "user_202",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.1468
-          },
-          {
-            "author_id": "user_101",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.1053
-          }
-        ],
-        "coordinated_clusters": [
-          {
-            "cluster_id": 2,
-            "size": 3,
-            "internal_density": 0.5,
-            "members": [
-              "bot_alpha",
-              "bot_gamma",
-              "bot_beta"
-            ]
-          }
-        ],
-        "iu_astroturf": {
-          "authors_in_narrative": 5,
-          "platforms": [
-            "mock"
-          ],
-          "x_authors_checked": 0,
-          "known_political_bots": 0,
-          "known_bot_ratio": 0.0,
-          "labeled_accounts": [],
-          "note": "No platform=x posts in this narrative; IU astroturf only applies to Twitter/X author IDs."
-        }
-      },
-      "sentiment": {
-        "narrative_id": 1,
-        "buckets": [
-          {
-            "date": "2026-05-31",
-            "mean_outrage": 0.0783,
-            "count": 10
-          }
-        ],
-        "trend": "insufficient_data"
-      },
-      "amplification": {
-        "narrative_id": 1,
-        "cluster_count": 4,
-        "clusters": [
-          {
-            "count": 3,
-            "author_count": 3,
-            "author_ids": [
-              "bot_beta",
-              "bot_gamma",
-              "user_202"
-            ],
-            "post_ids": [
-              10,
-              6,
-              2
-            ],
-            "sample_text": "Wake up!!! border crisis  -  share before they delete this!!!",
-            "burst_synchronized": false,
-            "burst_author_count": 1,
-            "cluster_span_seconds": 28800.0,
-            "min_inter_arrival_seconds": 14400.0
-          },
-          {
-            "count": 3,
-            "author_count": 3,
-            "author_ids": [
-              "bot_alpha",
-              "bot_beta",
-              "user_101"
-            ],
-            "post_ids": [
-              9,
-              5,
-              1
-            ],
-            "sample_text": "They are destroying our country. border crisis is proof the elites hate you.",
-            "burst_synchronized": false,
-            "burst_author_count": 1,
-            "cluster_span_seconds": 28800.0,
-            "min_inter_arrival_seconds": 14400.0
-          },
-          {
-            "count": 2,
-            "author_count": 2,
-            "author_ids": [
-              "bot_alpha",
-              "bot_beta"
-            ],
-            "post_ids": [
-              8,
-              4
-            ],
-            "sample_text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
-            "burst_synchronized": false,
-            "burst_author_count": 1,
-            "cluster_span_seconds": 14400.0,
-            "min_inter_arrival_seconds": 14400.0
-          },
-          {
-            "count": 2,
-            "author_count": 2,
-            "author_ids": [
-              "bot_alpha",
-              "bot_gamma"
-            ],
-            "post_ids": [
-              7,
-              3
-            ],
-            "sample_text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
-            "burst_synchronized": false,
-            "burst_author_count": 1,
-            "cluster_span_seconds": 14400.0,
-            "min_inter_arrival_seconds": 14400.0
-          }
-        ]
-      },
-      "near_duplicates": {
-        "threshold": 0.82,
-        "default_threshold": 0.82,
-        "threshold_min": 0.55,
-        "threshold_max": 0.98,
-        "threshold_step": 0.01,
-        "threshold_live": true,
-        "same_author_group_count": 0,
-        "group_count": 0,
-        "groups": [],
-        "cross_author_fuzzy_count": 4,
-        "cross_author_fuzzy": [
-          {
-            "cluster_id": 0,
-            "post_ids": [
-              1,
-              5,
-              9
-            ],
-            "author_ids": [
-              "bot_alpha",
-              "bot_beta",
-              "user_101"
-            ],
-            "author_count": 3,
-            "count": 3,
-            "sample_text": "They are destroying our country. border crisis is proof the elites hate you.",
-            "max_similarity": 1.0,
-            "burst_synchronized": false,
-            "burst_author_count": 1,
-            "cluster_span_seconds": 28800.0,
-            "min_inter_arrival_seconds": 14400.0
-          },
-          {
-            "cluster_id": 1,
-            "post_ids": [
-              2,
-              6,
-              10
-            ],
-            "author_ids": [
-              "bot_beta",
-              "bot_gamma",
-              "user_202"
-            ],
-            "author_count": 3,
-            "count": 3,
-            "sample_text": "Wake up!!! border crisis  -  share before they delete this!!!",
-            "max_similarity": 1.0,
-            "burst_synchronized": false,
-            "burst_author_count": 1,
-            "cluster_span_seconds": 28800.0,
-            "min_inter_arrival_seconds": 14400.0
-          },
-          {
-            "cluster_id": 2,
-            "post_ids": [
-              3,
-              7
-            ],
-            "author_ids": [
-              "bot_alpha",
-              "bot_gamma"
-            ],
-            "author_count": 2,
-            "count": 2,
-            "sample_text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
-            "max_similarity": 1.0,
-            "burst_synchronized": false,
-            "burst_author_count": 1,
-            "cluster_span_seconds": 14400.0,
-            "min_inter_arrival_seconds": 14400.0
-          },
-          {
-            "cluster_id": 3,
-            "post_ids": [
-              4,
-              8
-            ],
-            "author_ids": [
-              "bot_alpha",
-              "bot_beta"
-            ],
-            "author_count": 2,
-            "count": 2,
-            "sample_text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
-            "max_similarity": 1.0,
-            "burst_synchronized": false,
-            "burst_author_count": 1,
-            "cluster_span_seconds": 14400.0,
-            "min_inter_arrival_seconds": 14400.0
-          }
-        ],
-        "author_summaries": [
-          {
-            "author_id": "bot_alpha",
-            "post_count": 3,
-            "post_ids": [
-              1,
-              4,
-              7
-            ],
-            "span_hours": 6.0,
-            "near_duplicate_group_id": null,
-            "near_duplicate_count": 0
-          },
-          {
-            "author_id": "bot_beta",
-            "post_count": 3,
-            "post_ids": [
-              2,
-              5,
-              8
-            ],
-            "span_hours": 6.0,
-            "near_duplicate_group_id": null,
-            "near_duplicate_count": 0
-          }
-        ]
-      },
-      "cross_pollination_hits": {
-        "narrative_id": 1,
-        "hit_count": 0,
-        "actors": []
-      },
-      "graph": {
-        "authors": [
-          {
-            "author_id": "user_202",
-            "handle": "@user_202",
-            "max_outrage": 0.1468,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "user_101",
-            "handle": "@user_101",
-            "max_outrage": 0.1053,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "bot_beta",
-            "handle": "@bot_beta",
-            "max_outrage": 0.1468,
-            "post_count": 3,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "bot_alpha",
-            "handle": "@bot_alpha",
-            "max_outrage": 0.1053,
-            "post_count": 3,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "bot_gamma",
-            "handle": "@bot_gamma",
-            "max_outrage": 0.1468,
-            "post_count": 2,
-            "known_bot": false,
-            "bot_label": null
-          }
-        ],
-        "edges": [
-          {
-            "source": "bot_beta",
-            "target": "bot_alpha",
-            "type": "share",
-            "source_post_id": 2,
-            "target_post_id": 1,
-            "occurred_at": "2026-05-31T21:55:08.223876"
-          },
-          {
-            "source": "bot_gamma",
-            "target": "bot_alpha",
-            "type": "share",
-            "source_post_id": 3,
-            "target_post_id": 1,
-            "occurred_at": "2026-05-31T21:54:08.223876"
-          },
-          {
-            "source": "bot_alpha",
-            "target": "bot_alpha",
-            "type": "share",
-            "source_post_id": 4,
-            "target_post_id": 1,
-            "occurred_at": "2026-05-31T21:53:08.223876"
-          },
-          {
-            "source": "bot_beta",
-            "target": "bot_alpha",
-            "type": "share",
-            "source_post_id": 5,
-            "target_post_id": 1,
-            "occurred_at": "2026-05-31T21:52:08.223876"
-          },
-          {
-            "source": "bot_gamma",
-            "target": "bot_alpha",
-            "type": "share",
-            "source_post_id": 6,
-            "target_post_id": 1,
-            "occurred_at": "2026-05-31T21:51:08.223876"
-          },
-          {
-            "source": "bot_alpha",
-            "target": "bot_alpha",
-            "type": "share",
-            "source_post_id": 7,
-            "target_post_id": 1,
-            "occurred_at": "2026-05-31T21:50:08.223876"
-          },
-          {
-            "source": "bot_beta",
-            "target": "bot_alpha",
-            "type": "share",
-            "source_post_id": 8,
-            "target_post_id": 1,
-            "occurred_at": "2026-05-31T21:49:08.223876"
-          }
-        ],
-        "stats": {
-          "edge_count": 7,
-          "author_count": 5,
-          "connected_author_count": 3,
-          "isolated_author_count": 2,
-          "by_type": {
-            "share": 7
-          }
-        }
-      },
-      "themes": {
-        "narrative_id": 1,
-        "post_count": 10,
-        "cluster_count": 4,
-        "method": "dbscan",
-        "model": "all-MiniLM-L6-v2",
-        "clusters": [
-          {
-            "cluster_id": 0,
-            "post_ids": [
-              10,
-              6,
-              2
-            ],
-            "size": 3,
-            "cohesion": 1.0,
-            "lexicon_hit_rate": 0.1429,
-            "emerging_theme": true,
-            "label_terms": [
-              "wake",
-              "border",
-              "crisis",
-              "share",
-              "delete"
-            ],
-            "sample_text": "Wake up!!! border crisis  -  share before they delete this!!!",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 1,
-            "post_ids": [
-              9,
-              5,
-              1
-            ],
-            "size": 3,
-            "cohesion": 1.0,
-            "lexicon_hit_rate": 0.2857,
-            "emerging_theme": false,
-            "label_terms": [
-              "destroying",
-              "country",
-              "border",
-              "crisis",
-              "proof",
-              "elites"
-            ],
-            "sample_text": "They are destroying our country. border crisis is proof the elites hate you.",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 2,
-            "post_ids": [
-              8,
-              4
-            ],
-            "size": 2,
-            "cohesion": 1.0,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": false,
-            "label_terms": [
-              "normal",
-              "political",
-              "disagreement",
-              "border",
-              "crisis",
-              "disagree"
-            ],
-            "sample_text": "Normal political disagreement on border crisis  -  we can disagree without hating each other.",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 3,
-            "post_ids": [
-              7,
-              3
-            ],
-            "size": 2,
-            "cohesion": 1.0,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": false,
-            "label_terms": [
-              "asking",
-              "questions",
-              "border",
-              "crisis",
-              "media",
-              "talking"
-            ],
-            "sample_text": "I'm just asking questions about border crisis. Why is no one in the media talking about it?",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          }
-        ],
-        "emerging_theme_count": 1,
-        "available": true,
-        "reason": null,
-        "timeline": [
-          {
-            "cluster_id": 0,
-            "label_terms": [
-              "wake",
-              "border",
-              "crisis",
-              "share",
-              "delete"
-            ],
-            "emerging_theme": true,
-            "size": 3,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              10,
-              6,
-              2
-            ]
-          },
-          {
-            "cluster_id": 1,
-            "label_terms": [
-              "destroying",
-              "country",
-              "border",
-              "crisis",
-              "proof",
-              "elites"
-            ],
-            "emerging_theme": false,
-            "size": 3,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              9,
-              5,
-              1
-            ]
-          },
-          {
-            "cluster_id": 2,
-            "label_terms": [
-              "normal",
-              "political",
-              "disagreement",
-              "border",
-              "crisis",
-              "disagree"
-            ],
-            "emerging_theme": false,
-            "size": 2,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              8,
-              4
-            ]
-          },
-          {
-            "cluster_id": 3,
-            "label_terms": [
-              "asking",
-              "questions",
-              "border",
-              "crisis",
-              "media",
-              "talking"
-            ],
-            "emerging_theme": false,
-            "size": 2,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              7,
-              3
-            ]
-          }
-        ]
-      },
-      "benchmark": null
-    },
-    "2": {
-      "posts": [
-        {
-          "id": 12,
-          "platform": "x",
-          "external_id": "2061219722939515258",
-          "author_id": "1768749602079940608",
-          "author_handle": "@Sm1th1972",
-          "text": "Report: Border Crisis Plagued By Lack of Vetting &amp; Tracking",
-          "posted_at": "2026-05-31T22:54:12",
-          "outrage_index": 0.0102,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0435,
-          "status_url": "https://x.com/i/web/status/2061219722939515258"
-        },
-        {
-          "id": 11,
-          "platform": "x",
-          "external_id": "2061219723119866277",
-          "author_id": "1768749602079940608",
-          "author_handle": "@Sm1th1972",
-          "text": "Government Accountability Office Exposes Biden Border Crisis",
-          "posted_at": "2026-05-31T22:54:12",
-          "outrage_index": 0.0093,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0465,
-          "status_url": "https://x.com/i/web/status/2061219723119866277"
-        },
-        {
-          "id": 13,
-          "platform": "x",
-          "external_id": "2061219651598835782",
-          "author_id": "342512565",
-          "author_handle": "@THETOPICisCOOL",
-          "text": "Can success actually heal a nation? Watch as the President explains his theory on prosperity, border security, and his stance on preventing a nuclear crisis. A fascinating look at his political philosophy. Politics USA Economy Trump WhiteHouse",
-          "posted_at": "2026-05-31T22:53:55",
-          "outrage_index": 0.004,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0606,
-          "status_url": "https://x.com/i/web/status/2061219651598835782"
-        },
-        {
-          "id": 14,
-          "platform": "x",
-          "external_id": "2061216348957802517",
-          "author_id": "393469195",
-          "author_handle": "@redsteeze",
-          "text": "The \"Biden didn't do enough on the border crisis\" is just a talking point to offer some kind of weak reprimand on the election. Open the border and let everyone out who came over and leave no enforcement mechanism.",
-          "posted_at": "2026-05-31T22:40:47",
-          "outrage_index": 0.0011,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0441,
-          "status_url": "https://x.com/i/web/status/2061216348957802517"
-        },
-        {
-          "id": 15,
-          "platform": "x",
-          "external_id": "2061212239609446826",
-          "author_id": "1670532417034043393",
-          "author_handle": "@CyberDivergent",
-          "text": "Why the hell are we having the World Cup across the USA during a border crisis and Ebola epidemic. Not one American wants it here. Much less in every big US city.",
-          "posted_at": "2026-05-31T22:24:28",
-          "outrage_index": 0.0059,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0794,
-          "status_url": "https://x.com/i/web/status/2061212239609446826"
-        },
-        {
-          "id": 16,
-          "platform": "x",
-          "external_id": "2061211251259437498",
-          "author_id": "1315109285202780160",
-          "author_handle": "@FlippinLid",
-          "text": "Are you really thinking everything will be okay if she wins \ud83d\ude02. Harris had one job while in power to manage the border security crisis and we all know how that was handled millions upon millions coming in costing you to pay more in taxes to cover their asses",
-          "posted_at": "2026-05-31T22:20:32",
-          "outrage_index": 0.0006,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0526,
-          "status_url": "https://x.com/i/web/status/2061211251259437498"
-        },
-        {
-          "id": 17,
-          "platform": "x",
-          "external_id": "2061205709635952746",
-          "author_id": "1820446355447566336",
-          "author_handle": "@gracefulkazoo",
-          "text": "2021-2024: 'The border is secure,' catch-and-release, 50%+ asylum grants, 'root causes' talk. 2026: Trump restores rule of law \u2192 asylum at 7%, judge purge, ICE crackdowns \u2192 'Fascist! Reimagine enforcement! Defund!' Same crisis. Different president. Hypocrisy level: border wall high",
-          "posted_at": "2026-05-31T21:58:31",
-          "outrage_index": 0.1019,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.04,
-          "status_url": "https://x.com/i/web/status/2061205709635952746"
-        },
-        {
-          "id": 18,
-          "platform": "x",
-          "external_id": "2061187389838512403",
-          "author_id": "1749155115745882112",
-          "author_handle": "@C_Farthammer",
-          "text": "You're Retarded. Carter destroyed Education. Clinton was responsible for the Global Financial Crisis. Bush Jr. invaded Iraq over non-existent WMDs costing 3-5 Trillion; Obama destroyed Healthcare and Race Relations; and Biden opened the border to 20 million Illegal Immigrants!!!",
-          "posted_at": "2026-05-31T20:45:43",
-          "outrage_index": 0.0873,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.027,
-          "status_url": "https://x.com/i/web/status/2061187389838512403"
-        },
-        {
-          "id": 19,
-          "platform": "x",
-          "external_id": "2061182844622246176",
-          "author_id": "1589730510359740417",
-          "author_handle": "@LillianAberrr",
-          "text": "How is Africa CDC portraying a crisis when the border with DRC has been shut down? The few cases here are from previously imported contacts. Stop creating panic to get funding\ud83e\udd14",
-          "posted_at": "2026-05-31T20:27:39",
-          "outrage_index": 0.0045,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0625,
-          "status_url": "https://x.com/i/web/status/2061182844622246176"
-        },
-        {
-          "id": 20,
-          "platform": "x",
-          "external_id": "2061182221541622078",
-          "author_id": "1767053868964155392",
-          "author_handle": "@CutTheNarrative",
-          "text": "Europe's open-border rhetoric is a disaster in the making. France is on track for a 2026 crisis if it keeps admitting migrants unchecked.",
-          "posted_at": "2026-05-31T20:25:11",
-          "outrage_index": 0.0012,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0909,
-          "status_url": "https://x.com/i/web/status/2061182221541622078"
-        },
-        {
-          "id": 21,
-          "platform": "x",
-          "external_id": "2061179418538856685",
-          "author_id": "242539352",
-          "author_handle": "@marykirst",
-          "text": "We never had open borders. Look up the conservative Cato Institute anaylsis. They agree that illegal immigrants contribute to higher housing prices, how Americans pay the price, but they refute the narrative that we had an open border and that Biden caused an immigration crisis.",
-          "posted_at": "2026-05-31T20:14:02",
-          "outrage_index": 0.0456,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0278,
-          "status_url": "https://x.com/i/web/status/2061179418538856685"
-        },
-        {
-          "id": 22,
-          "platform": "x",
-          "external_id": "2061177156512731552",
-          "author_id": "1773857863812714496",
-          "author_handle": "@BruceRoger57623",
-          "text": "That bouncer is a absolute unit! Sorted those scrotes quicker than FF/FG sort out the border crisis. Proper Irish steel right there\ud83d\ude02\ud83c\uddee\ud83c\uddea",
-          "posted_at": "2026-05-31T20:05:03",
-          "outrage_index": 0.0144,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0517,
-          "status_url": "https://x.com/i/web/status/2061177156512731552"
-        },
-        {
-          "id": 23,
-          "platform": "x",
-          "external_id": "2061169029751193984",
-          "author_id": "14125938",
-          "author_handle": "@schachin",
-          "text": "No not the same thing there was a crisis at the border he rushed people down there to take care of that they were all removed within 30 to 45 days not a block the propaganda account",
-          "posted_at": "2026-05-31T19:32:46",
-          "outrage_index": 0.0004,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0615,
-          "status_url": "https://x.com/i/web/status/2061169029751193984"
-        },
-        {
-          "id": 24,
-          "platform": "x",
-          "external_id": "2061161223853330885",
-          "author_id": "3326622373",
-          "author_handle": "@Anshumang003",
-          "text": "Ajit Doval met Myanmar\u2019s NSA Tin Aung San (Moscow, May 2026). Agenda: security cooperation, connectivity, regional stability. Standard diplomatic engagement  -  not a crisis-breaking moment. Ground realities may have been discussed in strategic : \u2714\ufe0f Cross-border arms, drugs & insurgent movement from Myanmar are real \u2714\ufe0f Border intelligence-sharing is legitimate \u2714\ufe0f Myanmar\u2019s civil war & China\u2019s influence limit any quick fix \u2714\ufe0f Manipur\u2019s primary driver remains internal Meitei-Kuki-Zo ethnic conflict A realistic roadmap to peace (3 pillars): 1. Internal political dialogue Separate + joint talks: Meitei, Kuki-Zo, Naga groups, civil society, women\u2019s collectives. Core issues: land rights, reserved areas, economic displacement. 2. Smart border cooperation (not militarization) Targeted intel-sharing with Myanmar. Regulate Free Movement Regime (protect hill livelihoods). Joint anti-narcotics task force with local police. 3. Justice + long-term governance Independent probe into 2023\u20132026 violence with accountability. Rehabilitation for 60,000+ displaced. Economic corridors linking hills & valley  -  not just security corridors.",
-          "posted_at": "2026-05-31T19:01:44",
-          "outrage_index": 0.003,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 1.0,
-          "status_url": "https://x.com/i/web/status/2061161223853330885"
-        },
-        {
-          "id": 25,
-          "platform": "x",
-          "external_id": "2061153694448497138",
-          "author_id": "85078411",
-          "author_handle": "@OliHeck",
-          "text": "Yep 1914 did British diplomats escalate the war after the Marcos crisis couldn\u2019t be escalated - and 39 was the result what Poland did between 1920 and 1939 to the German people still living in the stolen areas and the border lands - many raids now forgotten in history books \ud83e\udd14",
-          "posted_at": "2026-05-31T18:31:49",
-          "outrage_index": 0.0014,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.04,
-          "status_url": "https://x.com/i/web/status/2061153694448497138"
-        },
-        {
-          "id": 26,
-          "platform": "x",
-          "external_id": "2061141644775190634",
-          "author_id": "1438664882283503617",
-          "author_handle": "@cakukman",
-          "text": "Of course there are no accommodations in a rich white neighborhood, no land, no buildings...poor rich people. And exactly why should Texas be the only state who has to deal with the Biden Administration's border crisis?",
-          "posted_at": "2026-05-31T17:43:56",
-          "outrage_index": 0.0018,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0597,
-          "status_url": "https://x.com/i/web/status/2061141644775190634"
-        },
-        {
-          "id": 27,
-          "platform": "x",
-          "external_id": "2061134572041990355",
-          "author_id": "1542203714659930112",
-          "author_handle": "@Kenyergrof",
-          "text": "&gt; 2015 &gt; migrant crisis starts &gt; suddenly migrants arive en mass &gt; all the migrants get deported and laws are changed afterwards to not let them in ever again &gt; border fence is made on the south ????",
-          "posted_at": "2026-05-31T17:15:50",
-          "outrage_index": 0.0,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0606,
-          "status_url": "https://x.com/i/web/status/2061134572041990355"
-        },
-        {
-          "id": 28,
-          "platform": "x",
-          "external_id": "2061128839443689584",
-          "author_id": "3739250893",
-          "author_handle": "@KingPT23",
-          "text": "What he has done with the border has worked. How he went about immigration enforcement inside the country has been deplorable, and highly unconstitutional. We had legislation on the table that attempted to fix this, but Trump needs a manufactured crisis to fix to look competent.",
-          "posted_at": "2026-05-31T16:53:03",
-          "outrage_index": 0.0011,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0556,
-          "status_url": "https://x.com/i/web/status/2061128839443689584"
-        },
-        {
-          "id": 29,
-          "platform": "x",
-          "external_id": "2061128536769827300",
-          "author_id": "1649787160537513985",
-          "author_handle": "@Shaakir2032",
-          "text": "2/3 The government led by president should strengthen border screening, disease surveillance, laboratory capacity, and emergency response systems. Preparedness today can prevent a far more costly crisis tomorrow.",
-          "posted_at": "2026-05-31T16:51:51",
-          "outrage_index": 0.0008,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0469,
-          "status_url": "https://x.com/i/web/status/2061128536769827300"
-        },
-        {
-          "id": 30,
-          "platform": "x",
-          "external_id": "2061125541894230170",
-          "author_id": "1741814742413430784",
-          "author_handle": "@Noal865671",
-          "text": "Fuel prices High Food prices High Accomodations prices High Medical prices High Education prices High InSecurity crisis High Kidnapping crisis High Political crisis National Crisis Terrorism crisis Border crisis Tinubu crisis Complete Crisis All high",
-          "posted_at": "2026-05-31T16:39:57",
-          "outrage_index": 0.0077,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0377,
-          "status_url": "https://x.com/i/web/status/2061125541894230170"
-        }
-      ],
-      "cib": {
-        "narrative_id": 2,
-        "suspicion_score": 0.0,
-        "organic_score": 1.0,
-        "signals": [],
-        "node_count": 19,
-        "edge_count": 0,
-        "density": 0.0,
-        "top_amplifiers": [
-          {
-            "author_id": "1741814742413430784",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0077
-          },
-          {
-            "author_id": "1649787160537513985",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0008
-          },
-          {
-            "author_id": "3739250893",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0011
-          },
-          {
-            "author_id": "1542203714659930112",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0
-          },
-          {
-            "author_id": "1438664882283503617",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0018
-          },
-          {
-            "author_id": "85078411",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0014
-          },
-          {
-            "author_id": "3326622373",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.003
-          },
-          {
-            "author_id": "14125938",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0004
-          },
-          {
-            "author_id": "1773857863812714496",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0144
-          },
-          {
-            "author_id": "242539352",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0456
-          }
-        ],
-        "coordinated_clusters": [],
-        "iu_astroturf": {
-          "authors_in_narrative": 19,
-          "platforms": [
-            "x"
-          ],
-          "x_authors_checked": 19,
-          "known_political_bots": 0,
-          "known_bot_ratio": 0.0,
-          "labeled_accounts": [],
-          "note": null
-        }
-      },
-      "sentiment": {
-        "narrative_id": 2,
-        "buckets": [
-          {
-            "date": "2026-05-31",
-            "mean_outrage": 0.0151,
-            "count": 20
-          }
-        ],
-        "trend": "insufficient_data"
-      },
-      "amplification": {
-        "narrative_id": 2,
-        "cluster_count": 0,
-        "clusters": []
-      },
-      "near_duplicates": {
-        "threshold": 0.82,
-        "default_threshold": 0.82,
-        "threshold_min": 0.55,
-        "threshold_max": 0.98,
-        "threshold_step": 0.01,
-        "threshold_live": true,
-        "same_author_group_count": 0,
-        "group_count": 0,
-        "groups": [],
-        "cross_author_fuzzy_count": 0,
-        "cross_author_fuzzy": [],
-        "author_summaries": []
-      },
-      "cross_pollination_hits": {
-        "narrative_id": 2,
-        "hit_count": 0,
-        "actors": []
-      },
-      "graph": {
-        "authors": [
-          {
-            "author_id": "1741814742413430784",
-            "handle": "@Noal865671",
-            "max_outrage": 0.0077,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1649787160537513985",
-            "handle": "@Shaakir2032",
-            "max_outrage": 0.0008,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "3739250893",
-            "handle": "@KingPT23",
-            "max_outrage": 0.0011,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1542203714659930112",
-            "handle": "@Kenyergrof",
-            "max_outrage": 0.0,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1438664882283503617",
-            "handle": "@cakukman",
-            "max_outrage": 0.0018,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "85078411",
-            "handle": "@OliHeck",
-            "max_outrage": 0.0014,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "3326622373",
-            "handle": "@Anshumang003",
-            "max_outrage": 0.003,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "14125938",
-            "handle": "@schachin",
-            "max_outrage": 0.0004,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1773857863812714496",
-            "handle": "@BruceRoger57623",
-            "max_outrage": 0.0144,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "242539352",
-            "handle": "@marykirst",
-            "max_outrage": 0.0456,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1767053868964155392",
-            "handle": "@CutTheNarrative",
-            "max_outrage": 0.0012,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1589730510359740417",
-            "handle": "@LillianAberrr",
-            "max_outrage": 0.0045,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1749155115745882112",
-            "handle": "@C_Farthammer",
-            "max_outrage": 0.0873,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1820446355447566336",
-            "handle": "@gracefulkazoo",
-            "max_outrage": 0.1019,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1315109285202780160",
-            "handle": "@FlippinLid",
-            "max_outrage": 0.0006,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1670532417034043393",
-            "handle": "@CyberDivergent",
-            "max_outrage": 0.0059,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "393469195",
-            "handle": "@redsteeze",
-            "max_outrage": 0.0011,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "342512565",
-            "handle": "@THETOPICisCOOL",
-            "max_outrage": 0.004,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1768749602079940608",
-            "handle": "@Sm1th1972",
-            "max_outrage": 0.0102,
-            "post_count": 2,
-            "known_bot": false,
-            "bot_label": null
-          }
-        ],
-        "edges": [],
-        "stats": {
-          "edge_count": 0,
-          "author_count": 19,
-          "connected_author_count": 0,
-          "isolated_author_count": 19,
-          "by_type": {}
-        }
-      },
-      "themes": {
-        "narrative_id": 2,
-        "post_count": 20,
-        "cluster_count": 4,
-        "method": "kmeans",
-        "model": "all-MiniLM-L6-v2",
-        "clusters": [
-          {
-            "cluster_id": 1,
-            "post_ids": [
-              30,
-              29,
-              28,
-              27,
-              26,
-              24,
-              23,
-              21,
-              20,
-              19,
-              17,
-              16,
-              15,
-              14,
-              11,
-              12
-            ],
-            "size": 16,
-            "cohesion": 0.6285,
-            "lexicon_hit_rate": 0.0179,
-            "emerging_theme": true,
-            "label_terms": [
-              "crisis",
-              "border",
-              "high",
-              "prices",
-              "biden",
-              "myanmar"
-            ],
-            "sample_text": "Ajit Doval met Myanmar\u2019s NSA Tin Aung San (Moscow, May 2026). Agenda: security cooperation, connectivity, regional stability. Standard diplomatic engagement  -  not a crisis-breaking moment. Ground realities may have been discussed in strat\u2026",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 0,
-            "post_ids": [
-              18,
-              13
-            ],
-            "size": 2,
-            "cohesion": 0.8348,
-            "lexicon_hit_rate": 0.0714,
-            "emerging_theme": false,
-            "label_terms": [
-              "destroyed",
-              "crisis",
-              "border",
-              "retarded",
-              "carter",
-              "education"
-            ],
-            "sample_text": "You're Retarded. Carter destroyed Education. Clinton was responsible for the Global Financial Crisis. Bush Jr. invaded Iraq over non-existent WMDs costing 3-5 Trillion; Obama destroyed Healthcare and Race Relations; and Biden opened the bor\u2026",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 2,
-            "post_ids": [
-              25
-            ],
-            "size": 1,
-            "cohesion": 1.0,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": false,
-            "label_terms": [
-              "did",
-              "yep",
-              "british",
-              "diplomats",
-              "escalate",
-              "war"
-            ],
-            "sample_text": "Yep 1914 did British diplomats escalate the war after the Marcos crisis couldn\u2019t be escalated - and 39 was the result what Poland did between 1920 and 1939 to the German people still living in the stolen areas and the border lands - many ra\u2026",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 3,
-            "post_ids": [
-              22
-            ],
-            "size": 1,
-            "cohesion": 1.0,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": false,
-            "label_terms": [
-              "bouncer",
-              "absolute",
-              "unit",
-              "sorted",
-              "scrotes",
-              "quicker"
-            ],
-            "sample_text": "That bouncer is a absolute unit! Sorted those scrotes quicker than FF/FG sort out the border crisis. Proper Irish steel right there\ud83d\ude02\ud83c\uddee\ud83c\uddea",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          }
-        ],
-        "emerging_theme_count": 1,
-        "available": true,
-        "reason": null,
-        "timeline": [
-          {
-            "cluster_id": 1,
-            "label_terms": [
-              "crisis",
-              "border",
-              "high",
-              "prices",
-              "biden",
-              "myanmar"
-            ],
-            "emerging_theme": true,
-            "size": 16,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              30,
-              29,
-              28,
-              27,
-              26,
-              24,
-              23,
-              21,
-              20,
-              19,
-              17,
-              16,
-              15,
-              14,
-              11,
-              12
-            ]
-          },
-          {
-            "cluster_id": 0,
-            "label_terms": [
-              "destroyed",
-              "crisis",
-              "border",
-              "retarded",
-              "carter",
-              "education"
-            ],
-            "emerging_theme": false,
-            "size": 2,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              18,
-              13
-            ]
-          },
-          {
-            "cluster_id": 2,
-            "label_terms": [
-              "did",
-              "yep",
-              "british",
-              "diplomats",
-              "escalate",
-              "war"
-            ],
-            "emerging_theme": false,
-            "size": 1,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              25
-            ]
-          },
-          {
-            "cluster_id": 3,
-            "label_terms": [
-              "bouncer",
-              "absolute",
-              "unit",
-              "sorted",
-              "scrotes",
-              "quicker"
-            ],
-            "emerging_theme": false,
-            "size": 1,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              22
-            ]
-          }
-        ]
-      },
-      "benchmark": null
-    },
     "3": {
       "posts": [
         {
@@ -4758,16 +3183,12 @@
       ],
       "cib": {
         "narrative_id": 3,
-        "suspicion_score": 0.6,
-        "organic_score": 0.4,
+        "suspicion_score": 0.0,
+        "organic_score": 1.0,
         "signals": [
           "cross_author_fuzzy_2authors_2posts_j1.00",
           "cross_author_fuzzy_2authors_2posts_j1.00",
-          "cross_author_fuzzy_2authors_2posts_j0.94",
-          "cross_pollination_10_multi_narrative_actors",
-          "cross_pollination_actor_@pamalamalamala2_also_in_test_x",
-          "cross_pollination_actor_@MichaelARothman_also_in_test_x",
-          "cross_pollination_actor_@Raebo56_also_in_test_x"
+          "cross_author_fuzzy_2authors_2posts_j0.94"
         ],
         "node_count": 169,
         "edge_count": 6,
@@ -5322,399 +3743,8 @@
       },
       "cross_pollination_hits": {
         "narrative_id": 3,
-        "hit_count": 10,
-        "actors": [
-          {
-            "actor_key": "x:373607124",
-            "platform": "x",
-            "author_id": "373607124",
-            "author_handle": "@pamalamalamala2",
-            "narrative_count": 2,
-            "total_posts": 5,
-            "pollination_score": 5.2974,
-            "span_days": 0.74,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 4,
-                "max_outrage": 0.12,
-                "first_seen": "2026-05-31T23:12:45",
-                "last_seen": "2026-06-01T16:53:55"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0057,
-                "first_seen": "2026-05-31T23:12:45",
-                "last_seen": "2026-05-31T23:12:45"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0057,
-                "first_seen": "2026-05-31T23:12:45",
-                "last_seen": "2026-05-31T23:12:45"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:24198415",
-            "platform": "x",
-            "author_id": "24198415",
-            "author_handle": "@MichaelARothman",
-            "narrative_count": 2,
-            "total_posts": 3,
-            "pollination_score": 4.1187,
-            "span_days": 0.89,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 2,
-                "max_outrage": 0.1174,
-                "first_seen": "2026-05-31T22:13:14",
-                "last_seen": "2026-06-01T19:33:02"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0076,
-                "first_seen": "2026-05-31T22:13:14",
-                "last_seen": "2026-05-31T22:13:14"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0076,
-                "first_seen": "2026-05-31T22:13:14",
-                "last_seen": "2026-05-31T22:13:14"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1466263472132423681",
-            "platform": "x",
-            "author_id": "1466263472132423681",
-            "author_handle": "@Raebo56",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1129,
-                "first_seen": "2026-05-31T22:18:11",
-                "last_seen": "2026-05-31T22:18:11"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0023,
-                "first_seen": "2026-05-31T22:18:11",
-                "last_seen": "2026-05-31T22:18:11"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0023,
-                "first_seen": "2026-05-31T22:18:11",
-                "last_seen": "2026-05-31T22:18:11"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1648149942190632961",
-            "platform": "x",
-            "author_id": "1648149942190632961",
-            "author_handle": "@curiouscammie",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1143,
-                "first_seen": "2026-05-31T22:18:51",
-                "last_seen": "2026-05-31T22:18:51"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0037,
-                "first_seen": "2026-05-31T22:18:51",
-                "last_seen": "2026-05-31T22:18:51"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0037,
-                "first_seen": "2026-05-31T22:18:51",
-                "last_seen": "2026-05-31T22:18:51"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1760317411390054400",
-            "platform": "x",
-            "author_id": "1760317411390054400",
-            "author_handle": "@Willowthorns777",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1117,
-                "first_seen": "2026-05-31T22:47:03",
-                "last_seen": "2026-05-31T22:47:03"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0018,
-                "first_seen": "2026-05-31T22:47:03",
-                "last_seen": "2026-05-31T22:47:03"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0018,
-                "first_seen": "2026-05-31T22:47:03",
-                "last_seen": "2026-05-31T22:47:03"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1777383147950280706",
-            "platform": "x",
-            "author_id": "1777383147950280706",
-            "author_handle": "@permit75592",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1143,
-                "first_seen": "2026-05-31T22:45:14",
-                "last_seen": "2026-05-31T22:45:14"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0015,
-                "first_seen": "2026-05-31T22:45:14",
-                "last_seen": "2026-05-31T22:45:14"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0015,
-                "first_seen": "2026-05-31T22:45:14",
-                "last_seen": "2026-05-31T22:45:14"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1791965943431667712",
-            "platform": "x",
-            "author_id": "1791965943431667712",
-            "author_handle": "@yazi_the",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1143,
-                "first_seen": "2026-05-31T22:45:04",
-                "last_seen": "2026-05-31T22:45:04"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0015,
-                "first_seen": "2026-05-31T22:45:04",
-                "last_seen": "2026-05-31T22:45:04"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0015,
-                "first_seen": "2026-05-31T22:45:04",
-                "last_seen": "2026-05-31T22:45:04"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1828029219277791232",
-            "platform": "x",
-            "author_id": "1828029219277791232",
-            "author_handle": "@TheBenTurner83",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.114,
-                "first_seen": "2026-05-31T22:46:45",
-                "last_seen": "2026-05-31T22:46:45"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0034,
-                "first_seen": "2026-05-31T22:46:45",
-                "last_seen": "2026-05-31T22:46:45"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0034,
-                "first_seen": "2026-05-31T22:46:45",
-                "last_seen": "2026-05-31T22:46:45"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1923828566443065344",
-            "platform": "x",
-            "author_id": "1923828566443065344",
-            "author_handle": "@AjayJarret31000",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1132,
-                "first_seen": "2026-05-31T21:39:29",
-                "last_seen": "2026-05-31T21:39:29"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0026,
-                "first_seen": "2026-05-31T21:39:29",
-                "last_seen": "2026-05-31T21:39:29"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0026,
-                "first_seen": "2026-05-31T21:39:29",
-                "last_seen": "2026-05-31T21:39:29"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:2497137228",
-            "platform": "x",
-            "author_id": "2497137228",
-            "author_handle": "@ChetRusinek",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1245,
-                "first_seen": "2026-05-31T23:36:44",
-                "last_seen": "2026-05-31T23:36:44"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0139,
-                "first_seen": "2026-05-31T23:36:44",
-                "last_seen": "2026-05-31T23:36:44"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0139,
-                "first_seen": "2026-05-31T23:36:44",
-                "last_seen": "2026-05-31T23:36:44"
-              }
-            ],
-            "other_narrative_count": 1
-          }
-        ]
+        "hit_count": 0,
+        "actors": []
       },
       "graph": {
         "authors": [
@@ -7103,167 +5133,217 @@
         "narrative_id": 3,
         "post_count": 198,
         "cluster_count": 8,
-        "method": "kmeans",
-        "model": "all-MiniLM-L6-v2",
+        "method": "kmeans+tfidf",
+        "model": "tfidf-fallback",
         "clusters": [
+          {
+            "cluster_id": 4,
+            "post_ids": [
+              153,
+              152,
+              151,
+              150,
+              149,
+              148,
+              104,
+              103,
+              70,
+              69,
+              68,
+              64,
+              77,
+              63,
+              147,
+              146,
+              191,
+              190,
+              189,
+              211
+            ],
+            "size": 20,
+            "cohesion": 0.5642,
+            "lexicon_hit_rate": 0.0214,
+            "emerging_theme": true,
+            "label_terms": [
+              "red",
+              "wave",
+              "heat",
+              "preparedness",
+              "cross",
+              "seminar"
+            ],
+            "sample_text": "\ud83c\udf1e\ud83d\udea8 Red Cross Punjab Holds Seminar on Heat Wave Preparedness \ud83d\udea8\ud83c\udf1e The Indian Red Cross Society, Punjab State Branch, Chandigarh organized a seminar on \u201cHeat Wave Preparedness \u2013 From Awareness to Action\u201d on 22nd May 2026 at Swami Vivekananda Ha\u2026",
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-06-01",
+            "active_days": 4
+          },
+          {
+            "cluster_id": 1,
+            "post_ids": [
+              144,
+              143,
+              140,
+              139,
+              101,
+              58,
+              55,
+              52
+            ],
+            "size": 8,
+            "cohesion": 0.992,
+            "lexicon_hit_rate": 0.1429,
+            "emerging_theme": true,
+            "label_terms": [
+              "fraud",
+              "election",
+              "accountability",
+              "midterm",
+              "issue",
+              "trump"
+            ],
+            "sample_text": "Elections are still not secure. DemoKKKrats still cheat. Republicans still don't seem to care. Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accou\u2026",
+            "first_seen": "2026-05-21",
+            "last_seen": "2026-05-27",
+            "active_days": 5
+          },
+          {
+            "cluster_id": 7,
+            "post_ids": [
+              100,
+              133,
+              129,
+              128,
+              127,
+              126,
+              125,
+              160
+            ],
+            "size": 8,
+            "cohesion": 0.9802,
+            "lexicon_hit_rate": 0.1429,
+            "emerging_theme": true,
+            "label_terms": [
+              "nazi",
+              "losers",
+              "feel",
+              "sorry",
+              "senile",
+              "pig"
+            ],
+            "sample_text": "I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of these fascist nazi pigs in WW2 We will destro\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-06-01",
+            "active_days": 2
+          },
           {
             "cluster_id": 3,
             "post_ids": [
-              102,
-              56,
-              80,
-              106,
-              46,
-              44,
-              88,
-              51,
-              81,
               40,
               39,
               38,
+              37,
               36,
               35,
-              32,
               137,
-              130,
+              136,
+              132,
+              131,
               123,
               122,
+              121,
               120,
+              119,
               167,
               165,
               164,
               163,
               161,
+              159,
               158,
               157,
+              156,
+              155,
               154,
+              188,
               187,
-              186,
-              185,
               184,
-              182,
-              177,
+              179,
+              178,
+              176,
               175,
               174,
+              173,
               172,
-              169,
+              171,
+              170,
+              208,
               207,
               206,
               205,
-              204,
               203,
+              202,
               200,
-              197,
+              198,
               196,
               194,
               192,
               228,
-              225,
-              218,
+              224,
+              223,
+              222,
+              221,
               237,
               217,
+              216,
               215,
+              213,
+              212,
               210,
-              209,
               236,
-              232,
+              234,
               231
             ],
-            "size": 59,
-            "cohesion": 0.6322,
-            "lexicon_hit_rate": 0.0073,
-            "emerging_theme": true,
+            "size": 64,
+            "cohesion": 0.3873,
+            "lexicon_hit_rate": 0.0134,
+            "emerging_theme": false,
             "label_terms": [
+              "oil",
+              "mkt",
+              "gld",
               "midterms",
-              "trump",
-              "midterm",
-              "elections",
-              "republicans",
-              "democrats"
+              "djt",
+              "btc"
             ],
-            "sample_text": "Hot Crypto Headlines Today \ud83d\udd25\ud83d\udea8 \u2022 Cathie Wood says the Trump administration could introduce a crypto de minimis tax exemption before the 2026 midterms. \u2022 Citibank forecasts Bitcoin could reach $189,000 in 2026. \u2022 Senator Cynthia Lummis says \"\u2026",
-            "first_seen": "2026-05-23",
+            "sample_text": "5/25-29 MKT/\ud83c\uddfa\ud83c\uddf8\u23f8\ufe0f!?\ufe0f\ud83d\udd25\ud83c\uddee\ud83c\uddf7; \ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7\u23f8\ufe0f\ud83d\udd25.OpenHormuz\\10yR; '26e/Mkt W,5/27-, Jensen GTC/COMPUTEX 2026\ud83c\uddf9\ud83c\uddfc M,6/1, Jensen Keynote\ud83d\udde3\ufe0f/AI/Quantum SS \ud83c\uddfa\ud83c\uddf8\u23f8\ufe0f\ud83d\udd25\ud83c\uddee\ud83c\uddf7:GOP\ud83d\udc41\ufe0fMidterms^GCC+EU+Asia:\ud83d\udeab\ud83c\udf86\ud83d\udd25Strike; +Oil\\6.5%~90, BTC~/ GLD ~/ MKT/NDX+1.4%/SPX+1%/DJI+1% *M* Memor\u2026",
+            "first_seen": "2026-05-31",
             "last_seen": "2026-06-01",
-            "active_days": 4
+            "active_days": 2
           },
           {
-            "cluster_id": 0,
+            "cluster_id": 6,
             "post_ids": [
-              145,
-              144,
-              143,
-              141,
-              140,
-              139,
-              138,
-              101,
-              60,
-              59,
-              58,
-              57,
-              55,
-              53,
-              52,
-              47,
-              43,
-              37,
-              99,
-              134,
-              121,
-              188,
-              181,
-              176,
-              171,
-              170,
-              208,
-              201,
-              199,
-              198,
-              195,
-              193,
-              221,
-              219,
-              238,
-              214,
-              212,
-              233,
-              229
-            ],
-            "size": 39,
-            "cohesion": 0.6217,
-            "lexicon_hit_rate": 0.0733,
-            "emerging_theme": true,
-            "label_terms": [
-              "fraud",
-              "trump",
-              "midterms",
-              "election",
-              "elections",
-              "midterm"
-            ],
-            "sample_text": "Mamdani, Virginia, etc, exactly! I called for an audit the day of NY election. If we DEMAND redress and demand what the save America act stands for even locally: protest the FRAUD SYSTEM at every scheduled election, it\u2019s NOT hard to force r\u2026",
-            "first_seen": "2026-05-21",
-            "last_seen": "2026-06-01",
-            "active_days": 9
-          },
-          {
-            "cluster_id": 2,
-            "post_ids": [
-              152,
-              150,
-              149,
-              104,
-              70,
+              108,
+              107,
+              98,
               95,
               94,
-              67,
               65,
-              64,
+              80,
+              93,
+              92,
+              79,
+              76,
               105,
+              75,
               74,
               90,
-              63,
               89,
+              73,
+              88,
+              62,
+              72,
+              71,
               87,
               91,
               86,
@@ -7271,136 +5351,118 @@
               84,
               83,
               82,
-              41,
-              190,
-              189,
-              220
-            ],
-            "size": 26,
-            "cohesion": 0.6462,
-            "lexicon_hit_rate": 0.0275,
-            "emerging_theme": true,
-            "label_terms": [
-              "senate",
-              "race",
-              "red",
-              "wave",
-              "democrats",
-              "texas"
-            ],
-            "sample_text": "The X post from polling account highlights a May 27-28, 2026 internal poll by Slingshot Strategies for Democrat James Talarico showing him leading Republican Ken Paxton 47%-44% in the Texas 2026 US Senate race among 1,670 likely voters. Las\u2026",
-            "first_seen": "2026-05-29",
-            "last_seen": "2026-06-01",
-            "active_days": 4
-          },
-          {
-            "cluster_id": 4,
-            "post_ids": [
-              142,
-              54,
-              107,
-              66,
-              50,
-              49,
-              48,
-              45,
-              42,
+              81,
               31,
-              131,
+              135,
+              130,
               166,
-              162,
-              156,
-              183,
-              173,
-              227,
-              213,
+              168,
+              182,
+              180,
+              204,
+              226,
+              225,
+              218,
+              209,
               235
             ],
-            "size": 19,
-            "cohesion": 0.6237,
-            "lexicon_hit_rate": 0.0301,
-            "emerging_theme": true,
+            "size": 42,
+            "cohesion": 0.3847,
+            "lexicon_hit_rate": 0.0102,
+            "emerging_theme": false,
             "label_terms": [
-              "vote",
-              "elections",
-              "armstrong",
-              "california",
-              "election",
-              "midterms"
+              "race",
+              "senate",
+              "midterms",
+              "house",
+              "wave",
+              "texas"
             ],
-            "sample_text": "YOU ARE BUSTED! Democrats paid homeless to vote May 21, 2026 By: Frank Holmes, reporter That thing that Democrats claim never happens just happened again. A key player in largest Democratic state in the union just got busted coaching and pa\u2026",
-            "first_seen": "2026-05-21",
+            "sample_text": "No, they arent,.... With roughly one-third of the 2026 Republican primaries in the books, every candidate President Trump has backed in a House, Senate, or gubernatorial race has won, and I couldn't care less about \"trumps candidates\" and \"\u2026",
+            "first_seen": "2026-05-28",
             "last_seen": "2026-06-01",
             "active_days": 5
           },
           {
             "cluster_id": 5,
             "post_ids": [
-              108,
+              145,
+              142,
+              141,
+              138,
+              102,
+              60,
+              59,
+              57,
+              56,
+              54,
+              53,
               97,
-              69,
-              68,
-              79,
-              76,
-              75,
-              73,
-              72,
-              71,
-              135,
-              147,
-              146,
-              168,
-              224,
-              223,
-              211
+              106,
+              50,
+              49,
+              48,
+              47,
+              46,
+              45,
+              44,
+              51,
+              43,
+              42,
+              41,
+              185
             ],
-            "size": 17,
-            "cohesion": 0.6669,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
+            "size": 25,
+            "cohesion": 0.4921,
+            "lexicon_hit_rate": 0.0686,
+            "emerging_theme": false,
             "label_terms": [
-              "wave",
-              "blue",
-              "red",
-              "trump",
-              "midterms",
-              "year"
+              "elections",
+              "fraud",
+              "midterm",
+              "vote",
+              "election",
+              "need"
             ],
-            "sample_text": "\u26a0\ufe0fGENERAL STRIKE USA KICKOFF JULY 5 2026! \u26a0\ufe0f NOT ONE DAY, BUT AS LONG AS IT TAKES TO MEET DEMANDS. BRING DOWN THIS MURDEROUS REGIME. NO TO TRUMP. NO TO WAR. NO TO MASS DEPORTATIONS. NO TO MASS DETENTIONS. NO TO RACE WARS. NO TO CORRUPTION. \u2026",
-            "first_seen": "2026-05-28",
+            "sample_text": "YOU ARE BUSTED! Democrats paid homeless to vote May 21, 2026 By: Frank Holmes, reporter That thing that Democrats claim never happens just happened again. A key player in largest Democratic state in the union just got busted coaching and pa\u2026",
+            "first_seen": "2026-05-21",
             "last_seen": "2026-06-01",
-            "active_days": 5
+            "active_days": 10
           },
           {
-            "cluster_id": 6,
+            "cluster_id": 0,
             "post_ids": [
               34,
               33,
-              136,
-              132,
+              99,
+              134,
               124,
-              119,
-              155,
-              180,
-              179,
-              178,
-              226,
-              222,
-              216,
-              234,
-              230
+              186,
+              177,
+              201,
+              199,
+              197,
+              195,
+              193,
+              227,
+              220,
+              219,
+              238,
+              214,
+              232,
+              229
             ],
-            "size": 15,
-            "cohesion": 0.6597,
-            "lexicon_hit_rate": 0.0095,
-            "emerging_theme": true,
+            "size": 19,
+            "cohesion": 0.4813,
+            "lexicon_hit_rate": 0.0075,
+            "emerging_theme": false,
             "label_terms": [
               "midterms",
-              "federal",
+              "cheat",
               "trump",
-              "order",
-              "usps",
-              "election"
+              "election",
+              "federal",
+              "order"
             ],
             "sample_text": "\ud83d\udea8Federal Judge Declines to Block Trump\u2019s Mail-In Ballot Verification Order Ahead of 2026 Midterms Washington, D.C., U.S. District Judge Carl Nichols on May 28 declined to immediately halt President Donald Trump\u2019s executive order directing f\u2026",
             "first_seen": "2026-05-31",
@@ -7408,307 +5470,146 @@
             "active_days": 2
           },
           {
-            "cluster_id": 1,
+            "cluster_id": 2,
             "post_ids": [
-              61,
-              100,
-              133,
-              129,
-              128,
-              127,
-              126,
-              125,
-              160
-            ],
-            "size": 9,
-            "cohesion": 0.9374,
-            "lexicon_hit_rate": 0.127,
-            "emerging_theme": true,
-            "label_terms": [
-              "nazi",
-              "losers",
-              "america",
-              "feel",
-              "sorry",
-              "senile"
-            ],
-            "sample_text": "The hearts of those little boys in 2026, now BEAT in the bodies of maga cowards who proudly wave the Confederate flag and DEFEND rapists &amp; pedophiles, NOT America! Their red hat of HATred just replaced the sheets they love to claim only\u2026",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-06-01",
-            "active_days": 2
-          },
-          {
-            "cluster_id": 7,
-            "post_ids": [
-              153,
-              98,
-              151,
               96,
-              148,
-              103,
-              93,
-              92,
+              67,
+              66,
               78,
-              77,
-              62,
-              159,
-              191,
-              202
+              61,
+              32,
+              162,
+              183,
+              181,
+              169,
+              233,
+              230
             ],
-            "size": 14,
-            "cohesion": 0.5422,
-            "lexicon_hit_rate": 0.0204,
+            "size": 12,
+            "cohesion": 0.4716,
+            "lexicon_hit_rate": 0.0238,
             "emerging_theme": false,
             "label_terms": [
-              "oil",
-              "mkt",
-              "gld",
-              "djt",
-              "btc",
-              "vix"
+              "campaign",
+              "midterms",
+              "red",
+              "wave",
+              "blue",
+              "think"
             ],
-            "sample_text": "5/25-29 MKT/\ud83c\uddfa\ud83c\uddf8\u23f8\ufe0f!?\ufe0f\ud83d\udd25\ud83c\uddee\ud83c\uddf7; \ud83c\uddfa\ud83c\uddf8\ud83c\uddee\ud83c\uddf7\u23f8\ufe0f\ud83d\udd25.OpenHormuz\\10yR; '26e/Mkt W,5/27-, Jensen GTC/COMPUTEX 2026\ud83c\uddf9\ud83c\uddfc M,6/1, Jensen Keynote\ud83d\udde3\ufe0f/AI/Quantum SS \ud83c\uddfa\ud83c\uddf8\u23f8\ufe0f\ud83d\udd25\ud83c\uddee\ud83c\uddf7:GOP\ud83d\udc41\ufe0fMidterms^GCC+EU+Asia:\ud83d\udeab\ud83c\udf86\ud83d\udd25Strike; +Oil\\6.5%~90, BTC~/ GLD ~/ MKT/NDX+1.4%/SPX+1%/DJI+1% *M* Memor\u2026",
+            "sample_text": "If conditions are truly abusive, document, litigate, and push Congress. If policy is the real target, organize at the polls\u20142026 midterms and beyond are the mechanism. But, of course, this is not the case. ICE is simply following laws put i\u2026",
             "first_seen": "2026-05-29",
             "last_seen": "2026-06-01",
-            "active_days": 4
+            "active_days": 3
           }
         ],
-        "emerging_theme_count": 7,
+        "emerging_theme_count": 3,
         "available": true,
         "reason": null,
         "timeline": [
           {
-            "cluster_id": 0,
+            "cluster_id": 1,
             "label_terms": [
               "fraud",
-              "trump",
-              "midterms",
               "election",
-              "elections",
-              "midterm"
+              "accountability",
+              "midterm",
+              "issue",
+              "trump"
             ],
             "emerging_theme": true,
-            "size": 39,
+            "size": 8,
             "first_seen": "2026-05-21",
-            "last_seen": "2026-06-01",
+            "last_seen": "2026-05-27",
             "post_ids": [
-              145,
               144,
               143,
-              141,
               140,
               139,
-              138,
               101,
-              60,
-              59,
               58,
-              57,
               55,
-              53,
-              52,
-              47,
-              43,
-              37,
-              99,
-              134,
-              121,
-              188,
-              181,
-              176,
-              171,
-              170,
-              208,
-              201,
-              199,
-              198,
-              195,
-              193,
-              221,
-              219,
-              238,
-              214,
-              212,
-              233,
-              229
-            ]
-          },
-          {
-            "cluster_id": 4,
-            "label_terms": [
-              "vote",
-              "elections",
-              "armstrong",
-              "california",
-              "election",
-              "midterms"
-            ],
-            "emerging_theme": true,
-            "size": 19,
-            "first_seen": "2026-05-21",
-            "last_seen": "2026-06-01",
-            "post_ids": [
-              142,
-              54,
-              107,
-              66,
-              50,
-              49,
-              48,
-              45,
-              42,
-              31,
-              131,
-              166,
-              162,
-              156,
-              183,
-              173,
-              227,
-              213,
-              235
-            ]
-          },
-          {
-            "cluster_id": 3,
-            "label_terms": [
-              "midterms",
-              "trump",
-              "midterm",
-              "elections",
-              "republicans",
-              "democrats"
-            ],
-            "emerging_theme": true,
-            "size": 59,
-            "first_seen": "2026-05-23",
-            "last_seen": "2026-06-01",
-            "post_ids": [
-              102,
-              56,
-              80,
-              106,
-              46,
-              44,
-              88,
-              51,
-              81,
-              40,
-              39,
-              38,
-              36,
-              35,
-              32,
-              137,
-              130,
-              123,
-              122,
-              120,
-              167,
-              165,
-              164,
-              163,
-              161,
-              158,
-              157,
-              154,
-              187,
-              186,
-              185,
-              184,
-              182,
-              177,
-              175,
-              174,
-              172,
-              169,
-              207,
-              206,
-              205,
-              204,
-              203,
-              200,
-              197,
-              196,
-              194,
-              192,
-              228,
-              225,
-              218,
-              237,
-              217,
-              215,
-              210,
-              209,
-              236,
-              232,
-              231
+              52
             ]
           },
           {
             "cluster_id": 5,
             "label_terms": [
-              "wave",
-              "blue",
-              "red",
-              "trump",
-              "midterms",
-              "year"
+              "elections",
+              "fraud",
+              "midterm",
+              "vote",
+              "election",
+              "need"
             ],
-            "emerging_theme": true,
-            "size": 17,
+            "emerging_theme": false,
+            "size": 25,
+            "first_seen": "2026-05-21",
+            "last_seen": "2026-06-01",
+            "post_ids": [
+              145,
+              142,
+              141,
+              138,
+              102,
+              60,
+              59,
+              57,
+              56,
+              54,
+              53,
+              97,
+              106,
+              50,
+              49,
+              48,
+              47,
+              46,
+              45,
+              44,
+              51,
+              43,
+              42,
+              41,
+              185
+            ]
+          },
+          {
+            "cluster_id": 6,
+            "label_terms": [
+              "race",
+              "senate",
+              "midterms",
+              "house",
+              "wave",
+              "texas"
+            ],
+            "emerging_theme": false,
+            "size": 42,
             "first_seen": "2026-05-28",
             "last_seen": "2026-06-01",
             "post_ids": [
               108,
-              97,
-              69,
-              68,
-              79,
-              76,
-              75,
-              73,
-              72,
-              71,
-              135,
-              147,
-              146,
-              168,
-              224,
-              223,
-              211
-            ]
-          },
-          {
-            "cluster_id": 2,
-            "label_terms": [
-              "senate",
-              "race",
-              "red",
-              "wave",
-              "democrats",
-              "texas"
-            ],
-            "emerging_theme": true,
-            "size": 26,
-            "first_seen": "2026-05-29",
-            "last_seen": "2026-06-01",
-            "post_ids": [
-              152,
-              150,
-              149,
-              104,
-              70,
+              107,
+              98,
               95,
               94,
-              67,
               65,
-              64,
+              80,
+              93,
+              92,
+              79,
+              76,
               105,
+              75,
               74,
               90,
-              63,
               89,
+              73,
+              88,
+              62,
+              72,
+              71,
               87,
               91,
               86,
@@ -7716,91 +5617,103 @@
               84,
               83,
               82,
-              41,
+              81,
+              31,
+              135,
+              130,
+              166,
+              168,
+              182,
+              180,
+              204,
+              226,
+              225,
+              218,
+              209,
+              235
+            ]
+          },
+          {
+            "cluster_id": 4,
+            "label_terms": [
+              "red",
+              "wave",
+              "heat",
+              "preparedness",
+              "cross",
+              "seminar"
+            ],
+            "emerging_theme": true,
+            "size": 20,
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-06-01",
+            "post_ids": [
+              153,
+              152,
+              151,
+              150,
+              149,
+              148,
+              104,
+              103,
+              70,
+              69,
+              68,
+              64,
+              77,
+              63,
+              147,
+              146,
+              191,
               190,
               189,
-              220
+              211
+            ]
+          },
+          {
+            "cluster_id": 2,
+            "label_terms": [
+              "campaign",
+              "midterms",
+              "red",
+              "wave",
+              "blue",
+              "think"
+            ],
+            "emerging_theme": false,
+            "size": 12,
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-06-01",
+            "post_ids": [
+              96,
+              67,
+              66,
+              78,
+              61,
+              32,
+              162,
+              183,
+              181,
+              169,
+              233,
+              230
             ]
           },
           {
             "cluster_id": 7,
             "label_terms": [
-              "oil",
-              "mkt",
-              "gld",
-              "djt",
-              "btc",
-              "vix"
-            ],
-            "emerging_theme": false,
-            "size": 14,
-            "first_seen": "2026-05-29",
-            "last_seen": "2026-06-01",
-            "post_ids": [
-              153,
-              98,
-              151,
-              96,
-              148,
-              103,
-              93,
-              92,
-              78,
-              77,
-              62,
-              159,
-              191,
-              202
-            ]
-          },
-          {
-            "cluster_id": 6,
-            "label_terms": [
-              "midterms",
-              "federal",
-              "trump",
-              "order",
-              "usps",
-              "election"
-            ],
-            "emerging_theme": true,
-            "size": 15,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-06-01",
-            "post_ids": [
-              34,
-              33,
-              136,
-              132,
-              124,
-              119,
-              155,
-              180,
-              179,
-              178,
-              226,
-              222,
-              216,
-              234,
-              230
-            ]
-          },
-          {
-            "cluster_id": 1,
-            "label_terms": [
               "nazi",
               "losers",
-              "america",
               "feel",
               "sorry",
-              "senile"
+              "senile",
+              "pig"
             ],
             "emerging_theme": true,
-            "size": 9,
+            "size": 8,
             "first_seen": "2026-05-31",
             "last_seen": "2026-06-01",
             "post_ids": [
-              61,
               100,
               133,
               129,
@@ -7810,963 +5723,122 @@
               125,
               160
             ]
-          }
-        ]
-      },
-      "benchmark": null
-    },
-    "4": {
-      "posts": [
-        {
-          "id": 109,
-          "platform": "x",
-          "external_id": "2061230427134636228",
-          "author_id": "2497137228",
-          "author_handle": "@ChetRusinek",
-          "text": "Do you think the 2026 midterms will be free and fair?: 59.4% of 26,048 Total Votes say, \"NO!\"",
-          "posted_at": "2026-05-31T23:36:44",
-          "outrage_index": 0.0139,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.06,
-          "status_url": "https://x.com/i/web/status/2061230427134636228"
-        },
-        {
-          "id": 110,
-          "platform": "x",
-          "external_id": "2061224392471007671",
-          "author_id": "373607124",
-          "author_handle": "@pamalamalamala2",
-          "text": "Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat like in 2024. RiseUp VoteBlue in numbers TooBigToRig StopTrump &amp; the CorruptGOP",
-          "posted_at": "2026-05-31T23:12:45",
-          "outrage_index": 0.0057,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.1,
-          "status_url": "https://x.com/i/web/status/2061224392471007671"
-        },
-        {
-          "id": 111,
-          "platform": "x",
-          "external_id": "2061217925415981202",
-          "author_id": "1760317411390054400",
-          "author_handle": "@Willowthorns777",
-          "text": "My goal for the 2026 Iowa midterms has been fulfilled. Anything beyond what has already been accomplished is simply cake and ice cream.",
-          "posted_at": "2026-05-31T22:47:03",
-          "outrage_index": 0.0018,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.102,
-          "status_url": "https://x.com/i/web/status/2061217925415981202"
-        },
-        {
-          "id": 112,
-          "platform": "x",
-          "external_id": "2061217850296090717",
-          "author_id": "1828029219277791232",
-          "author_handle": "@TheBenTurner83",
-          "text": "Senate will expand to +1 = 54 for R\u2019s. I have 224 for R\u2019s in the House. 2026 will defy all modern political midterms.",
-          "posted_at": "2026-05-31T22:46:45",
-          "outrage_index": 0.0034,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.1489,
-          "status_url": "https://x.com/i/web/status/2061217850296090717"
-        },
-        {
-          "id": 113,
-          "platform": "x",
-          "external_id": "2061217468358512725",
-          "author_id": "1777383147950280706",
-          "author_handle": "@permit75592",
-          "text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
-          "posted_at": "2026-05-31T22:45:14",
-          "outrage_index": 0.0015,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 0,
-          "copypasta_score": 0.0968,
-          "status_url": "https://x.com/i/web/status/2061217468358512725"
-        },
-        {
-          "id": 114,
-          "platform": "x",
-          "external_id": "2061217426826576263",
-          "author_id": "1791965943431667712",
-          "author_handle": "@yazi_the",
-          "text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
-          "posted_at": "2026-05-31T22:45:04",
-          "outrage_index": 0.0015,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": 0,
-          "copypasta_score": 0.0968,
-          "status_url": "https://x.com/i/web/status/2061217426826576263"
-        },
-        {
-          "id": 115,
-          "platform": "x",
-          "external_id": "2061210826439348280",
-          "author_id": "1648149942190632961",
-          "author_handle": "@curiouscammie",
-          "text": "S&amp;P500 will drop 20% by the day of midterms in November 2026.",
-          "posted_at": "2026-05-31T22:18:51",
-          "outrage_index": 0.0037,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0682,
-          "status_url": "https://x.com/i/web/status/2061210826439348280"
-        },
-        {
-          "id": 116,
-          "platform": "x",
-          "external_id": "2061210659107590258",
-          "author_id": "1466263472132423681",
-          "author_handle": "@Raebo56",
-          "text": "Don't get distracted by the midterms, Trump isn't. He couldn't care less about the outcome He and his crime family will have stolen more money by Nov 3/2026 from the American people and insider trading than all past Presidents and Congressional members put together since 1776.",
-          "posted_at": "2026-05-31T22:18:11",
-          "outrage_index": 0.0023,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0725,
-          "status_url": "https://x.com/i/web/status/2061210659107590258"
-        },
-        {
-          "id": 117,
-          "platform": "x",
-          "external_id": "2061209413877457099",
-          "author_id": "24198415",
-          "author_handle": "@MichaelARothman",
-          "text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE America Act is voter ID  -  very important  -  proof of citizenship, and no mail-in ballots, with exceptions if you are in the military, or you are disabled, or you are sick, or you are going on vacation. I will be liberal on that subject. But no, with exceptions.\u201d The factual frame Trump put on the international comparison: \u201cNo other country in the world is doing mail-in voting anymore because it is a fraud. You cannot keep it honest. There is no way of keeping it honest.\u201d The pressure on Senator Cornyn and the rest of the Republican Senate, on the record: \u201cThe Republican Senate has to get going. The House has passed it. The Republican Senate has to get going. They have to. They have no choice.\u201d And the structural point Trump tied to it in the same interview: \u201cI do not think a Republican can win in California unless you pass the SAVE America Act. Then they are going to have to show proof of citizenship. They are going to have to get rid of their mail-in voting.\u201d Mail-in voting is how California stays blue forever. Voter ID and proof of citizenship is how California becomes competitive again. Pass the SAVE America Act. Before the midterms. No excuses.",
-          "posted_at": "2026-05-31T22:13:14",
-          "outrage_index": 0.0076,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 1.0,
-          "status_url": "https://x.com/i/web/status/2061209413877457099"
-        },
-        {
-          "id": 118,
-          "platform": "x",
-          "external_id": "2061200921510433213",
-          "author_id": "1923828566443065344",
-          "author_handle": "@AjayJarret31000",
-          "text": "That\u2019s why I say at the end of the 2026 midterms Bernie Sanders will either be a kingmaker or an opinionated grumpy old man",
-          "posted_at": "2026-05-31T21:39:29",
-          "outrage_index": 0.0026,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0556,
-          "status_url": "https://x.com/i/web/status/2061200921510433213"
-        }
-      ],
-      "cib": {
-        "narrative_id": 4,
-        "suspicion_score": 0.6,
-        "organic_score": 0.4,
-        "signals": [
-          "cross_author_fuzzy_2authors_2posts_j1.00",
-          "cross_pollination_10_multi_narrative_actors",
-          "cross_pollination_actor_@pamalamalamala2_also_in_midterms_2026",
-          "cross_pollination_actor_@MichaelARothman_also_in_midterms_2026",
-          "cross_pollination_actor_@Raebo56_also_in_midterms_2026"
-        ],
-        "node_count": 10,
-        "edge_count": 0,
-        "density": 0.0,
-        "top_amplifiers": [
-          {
-            "author_id": "1923828566443065344",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0026
           },
           {
-            "author_id": "24198415",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0076
-          },
-          {
-            "author_id": "1466263472132423681",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0023
-          },
-          {
-            "author_id": "1648149942190632961",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0037
-          },
-          {
-            "author_id": "1791965943431667712",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0015
-          },
-          {
-            "author_id": "1777383147950280706",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0015
-          },
-          {
-            "author_id": "1828029219277791232",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0034
-          },
-          {
-            "author_id": "1760317411390054400",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0018
-          },
-          {
-            "author_id": "373607124",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0057
-          },
-          {
-            "author_id": "2497137228",
-            "out_degree": 0,
-            "in_degree": 0,
-            "max_outrage": 0.0139
-          }
-        ],
-        "coordinated_clusters": [],
-        "iu_astroturf": {
-          "authors_in_narrative": 10,
-          "platforms": [
-            "x"
-          ],
-          "x_authors_checked": 10,
-          "known_political_bots": 0,
-          "known_bot_ratio": 0.0,
-          "labeled_accounts": [],
-          "note": null
-        }
-      },
-      "sentiment": {
-        "narrative_id": 4,
-        "buckets": [
-          {
-            "date": "2026-05-31",
-            "mean_outrage": 0.0044,
-            "count": 10
-          }
-        ],
-        "trend": "insufficient_data"
-      },
-      "amplification": {
-        "narrative_id": 4,
-        "cluster_count": 1,
-        "clusters": [
-          {
-            "count": 2,
-            "author_count": 2,
-            "author_ids": [
-              "1777383147950280706",
-              "1791965943431667712"
-            ],
-            "post_ids": [
-              114,
-              113
-            ],
-            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
-            "burst_synchronized": false,
-            "burst_author_count": 2,
-            "cluster_span_seconds": 10.0,
-            "min_inter_arrival_seconds": 10.0
-          }
-        ]
-      },
-      "near_duplicates": {
-        "threshold": 0.82,
-        "default_threshold": 0.82,
-        "threshold_min": 0.55,
-        "threshold_max": 0.98,
-        "threshold_step": 0.01,
-        "threshold_live": true,
-        "same_author_group_count": 0,
-        "group_count": 0,
-        "groups": [],
-        "cross_author_fuzzy_count": 1,
-        "cross_author_fuzzy": [
-          {
-            "cluster_id": 0,
-            "post_ids": [
-              113,
-              114
-            ],
-            "author_ids": [
-              "1777383147950280706",
-              "1791965943431667712"
-            ],
-            "author_count": 2,
-            "count": 2,
-            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
-            "max_similarity": 1.0,
-            "burst_synchronized": false,
-            "burst_author_count": 2,
-            "cluster_span_seconds": 10.0,
-            "min_inter_arrival_seconds": 10.0
-          }
-        ],
-        "author_summaries": []
-      },
-      "cross_pollination_hits": {
-        "narrative_id": 4,
-        "hit_count": 10,
-        "actors": [
-          {
-            "actor_key": "x:373607124",
-            "platform": "x",
-            "author_id": "373607124",
-            "author_handle": "@pamalamalamala2",
-            "narrative_count": 2,
-            "total_posts": 5,
-            "pollination_score": 5.2974,
-            "span_days": 0.74,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 4,
-                "max_outrage": 0.12,
-                "first_seen": "2026-05-31T23:12:45",
-                "last_seen": "2026-06-01T16:53:55"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0057,
-                "first_seen": "2026-05-31T23:12:45",
-                "last_seen": "2026-05-31T23:12:45"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 4,
-                "max_outrage": 0.12,
-                "first_seen": "2026-05-31T23:12:45",
-                "last_seen": "2026-06-01T16:53:55"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:24198415",
-            "platform": "x",
-            "author_id": "24198415",
-            "author_handle": "@MichaelARothman",
-            "narrative_count": 2,
-            "total_posts": 3,
-            "pollination_score": 4.1187,
-            "span_days": 0.89,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 2,
-                "max_outrage": 0.1174,
-                "first_seen": "2026-05-31T22:13:14",
-                "last_seen": "2026-06-01T19:33:02"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0076,
-                "first_seen": "2026-05-31T22:13:14",
-                "last_seen": "2026-05-31T22:13:14"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 2,
-                "max_outrage": 0.1174,
-                "first_seen": "2026-05-31T22:13:14",
-                "last_seen": "2026-06-01T19:33:02"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1466263472132423681",
-            "platform": "x",
-            "author_id": "1466263472132423681",
-            "author_handle": "@Raebo56",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1129,
-                "first_seen": "2026-05-31T22:18:11",
-                "last_seen": "2026-05-31T22:18:11"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0023,
-                "first_seen": "2026-05-31T22:18:11",
-                "last_seen": "2026-05-31T22:18:11"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1129,
-                "first_seen": "2026-05-31T22:18:11",
-                "last_seen": "2026-05-31T22:18:11"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1648149942190632961",
-            "platform": "x",
-            "author_id": "1648149942190632961",
-            "author_handle": "@curiouscammie",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1143,
-                "first_seen": "2026-05-31T22:18:51",
-                "last_seen": "2026-05-31T22:18:51"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0037,
-                "first_seen": "2026-05-31T22:18:51",
-                "last_seen": "2026-05-31T22:18:51"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1143,
-                "first_seen": "2026-05-31T22:18:51",
-                "last_seen": "2026-05-31T22:18:51"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1760317411390054400",
-            "platform": "x",
-            "author_id": "1760317411390054400",
-            "author_handle": "@Willowthorns777",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1117,
-                "first_seen": "2026-05-31T22:47:03",
-                "last_seen": "2026-05-31T22:47:03"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0018,
-                "first_seen": "2026-05-31T22:47:03",
-                "last_seen": "2026-05-31T22:47:03"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1117,
-                "first_seen": "2026-05-31T22:47:03",
-                "last_seen": "2026-05-31T22:47:03"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1777383147950280706",
-            "platform": "x",
-            "author_id": "1777383147950280706",
-            "author_handle": "@permit75592",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1143,
-                "first_seen": "2026-05-31T22:45:14",
-                "last_seen": "2026-05-31T22:45:14"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0015,
-                "first_seen": "2026-05-31T22:45:14",
-                "last_seen": "2026-05-31T22:45:14"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1143,
-                "first_seen": "2026-05-31T22:45:14",
-                "last_seen": "2026-05-31T22:45:14"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1791965943431667712",
-            "platform": "x",
-            "author_id": "1791965943431667712",
-            "author_handle": "@yazi_the",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1143,
-                "first_seen": "2026-05-31T22:45:04",
-                "last_seen": "2026-05-31T22:45:04"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0015,
-                "first_seen": "2026-05-31T22:45:04",
-                "last_seen": "2026-05-31T22:45:04"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1143,
-                "first_seen": "2026-05-31T22:45:04",
-                "last_seen": "2026-05-31T22:45:04"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1828029219277791232",
-            "platform": "x",
-            "author_id": "1828029219277791232",
-            "author_handle": "@TheBenTurner83",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.114,
-                "first_seen": "2026-05-31T22:46:45",
-                "last_seen": "2026-05-31T22:46:45"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0034,
-                "first_seen": "2026-05-31T22:46:45",
-                "last_seen": "2026-05-31T22:46:45"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.114,
-                "first_seen": "2026-05-31T22:46:45",
-                "last_seen": "2026-05-31T22:46:45"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:1923828566443065344",
-            "platform": "x",
-            "author_id": "1923828566443065344",
-            "author_handle": "@AjayJarret31000",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1132,
-                "first_seen": "2026-05-31T21:39:29",
-                "last_seen": "2026-05-31T21:39:29"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0026,
-                "first_seen": "2026-05-31T21:39:29",
-                "last_seen": "2026-05-31T21:39:29"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1132,
-                "first_seen": "2026-05-31T21:39:29",
-                "last_seen": "2026-05-31T21:39:29"
-              }
-            ],
-            "other_narrative_count": 1
-          },
-          {
-            "actor_key": "x:2497137228",
-            "platform": "x",
-            "author_id": "2497137228",
-            "author_handle": "@ChetRusinek",
-            "narrative_count": 2,
-            "total_posts": 2,
-            "pollination_score": 3.1699,
-            "span_days": 0.0,
-            "narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1245,
-                "first_seen": "2026-05-31T23:36:44",
-                "last_seen": "2026-05-31T23:36:44"
-              },
-              {
-                "narrative_id": 4,
-                "narrative_name": "test_x",
-                "post_count": 1,
-                "max_outrage": 0.0139,
-                "first_seen": "2026-05-31T23:36:44",
-                "last_seen": "2026-05-31T23:36:44"
-              }
-            ],
-            "other_narratives": [
-              {
-                "narrative_id": 3,
-                "narrative_name": "midterms_2026",
-                "post_count": 1,
-                "max_outrage": 0.1245,
-                "first_seen": "2026-05-31T23:36:44",
-                "last_seen": "2026-05-31T23:36:44"
-              }
-            ],
-            "other_narrative_count": 1
-          }
-        ]
-      },
-      "graph": {
-        "authors": [
-          {
-            "author_id": "1923828566443065344",
-            "handle": "@AjayJarret31000",
-            "max_outrage": 0.0026,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "24198415",
-            "handle": "@MichaelARothman",
-            "max_outrage": 0.0076,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1466263472132423681",
-            "handle": "@Raebo56",
-            "max_outrage": 0.0023,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1648149942190632961",
-            "handle": "@curiouscammie",
-            "max_outrage": 0.0037,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1791965943431667712",
-            "handle": "@yazi_the",
-            "max_outrage": 0.0015,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1777383147950280706",
-            "handle": "@permit75592",
-            "max_outrage": 0.0015,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1828029219277791232",
-            "handle": "@TheBenTurner83",
-            "max_outrage": 0.0034,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "1760317411390054400",
-            "handle": "@Willowthorns777",
-            "max_outrage": 0.0018,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "373607124",
-            "handle": "@pamalamalamala2",
-            "max_outrage": 0.0057,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          },
-          {
-            "author_id": "2497137228",
-            "handle": "@ChetRusinek",
-            "max_outrage": 0.0139,
-            "post_count": 1,
-            "known_bot": false,
-            "bot_label": null
-          }
-        ],
-        "edges": [],
-        "stats": {
-          "edge_count": 0,
-          "author_count": 10,
-          "connected_author_count": 0,
-          "isolated_author_count": 10,
-          "by_type": {}
-        }
-      },
-      "themes": {
-        "narrative_id": 4,
-        "post_count": 10,
-        "cluster_count": 3,
-        "method": "kmeans",
-        "model": "all-MiniLM-L6-v2",
-        "clusters": [
-          {
-            "cluster_id": 1,
-            "post_ids": [
-              118,
-              115,
-              112,
-              111,
-              109
-            ],
-            "size": 5,
-            "cohesion": 0.7018,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
+            "cluster_id": 3,
             "label_terms": [
+              "oil",
+              "mkt",
+              "gld",
               "midterms",
-              "say",
-              "end",
-              "bernie",
-              "sanders",
-              "kingmaker"
+              "djt",
+              "btc"
             ],
-            "sample_text": "My goal for the 2026 Iowa midterms has been fulfilled. Anything beyond what has already been accomplished is simply cake and ice cream.",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 0,
-            "post_ids": [
-              117,
-              116,
-              110
-            ],
-            "size": 3,
-            "cohesion": 0.768,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
-            "label_terms": [
-              "trump",
-              "save",
-              "america",
-              "act",
-              "going",
-              "senate"
-            ],
-            "sample_text": "TRUMP JUST DEMANDED THE SENATE GOP PASS THE SAVE AMERICA ACT BEFORE THE MIDTERMS President Trump on camera, on the actual legislative lift left on the table for the 2026 election cycle: \u201cWe really have to pass the SAVE America Act. SAVE Ame\u2026",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          },
-          {
-            "cluster_id": 2,
-            "post_ids": [
-              114,
-              113
-            ],
-            "size": 2,
-            "cohesion": 1.0,
-            "lexicon_hit_rate": 0.0,
             "emerging_theme": false,
-            "label_terms": [
-              "fascist",
-              "redneck",
-              "judges",
-              "cut",
-              "chase",
-              "block"
-            ],
-            "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
+            "size": 64,
             "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "active_days": 1
-          }
-        ],
-        "emerging_theme_count": 2,
-        "available": true,
-        "reason": null,
-        "timeline": [
-          {
-            "cluster_id": 1,
-            "label_terms": [
-              "midterms",
-              "say",
-              "end",
-              "bernie",
-              "sanders",
-              "kingmaker"
-            ],
-            "emerging_theme": true,
-            "size": 5,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
+            "last_seen": "2026-06-01",
             "post_ids": [
-              118,
-              115,
-              112,
-              111,
-              109
+              40,
+              39,
+              38,
+              37,
+              36,
+              35,
+              137,
+              136,
+              132,
+              131,
+              123,
+              122,
+              121,
+              120,
+              119,
+              167,
+              165,
+              164,
+              163,
+              161,
+              159,
+              158,
+              157,
+              156,
+              155,
+              154,
+              188,
+              187,
+              184,
+              179,
+              178,
+              176,
+              175,
+              174,
+              173,
+              172,
+              171,
+              170,
+              208,
+              207,
+              206,
+              205,
+              203,
+              202,
+              200,
+              198,
+              196,
+              194,
+              192,
+              228,
+              224,
+              223,
+              222,
+              221,
+              237,
+              217,
+              216,
+              215,
+              213,
+              212,
+              210,
+              236,
+              234,
+              231
             ]
           },
           {
             "cluster_id": 0,
             "label_terms": [
+              "midterms",
+              "cheat",
               "trump",
-              "save",
-              "america",
-              "act",
-              "going",
-              "senate"
-            ],
-            "emerging_theme": true,
-            "size": 3,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
-            "post_ids": [
-              117,
-              116,
-              110
-            ]
-          },
-          {
-            "cluster_id": 2,
-            "label_terms": [
-              "fascist",
-              "redneck",
-              "judges",
-              "cut",
-              "chase",
-              "block"
+              "election",
+              "federal",
+              "order"
             ],
             "emerging_theme": false,
-            "size": 2,
+            "size": 19,
             "first_seen": "2026-05-31",
-            "last_seen": "2026-05-31",
+            "last_seen": "2026-06-01",
             "post_ids": [
-              114,
-              113
+              34,
+              33,
+              99,
+              134,
+              124,
+              186,
+              177,
+              201,
+              199,
+              197,
+              195,
+              193,
+              227,
+              220,
+              219,
+              238,
+              214,
+              232,
+              229
             ]
           }
         ]
@@ -8776,299 +5848,10 @@
   },
   "cross_pollination": {
     "min_narratives": 2,
-    "actor_count": 10,
-    "narrative_count": 2,
-    "actors": [
-      {
-        "actor_key": "x:373607124",
-        "platform": "x",
-        "author_id": "373607124",
-        "author_handle": "@pamalamalamala2",
-        "narrative_count": 2,
-        "total_posts": 5,
-        "pollination_score": 5.2974,
-        "span_days": 0.74,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 4,
-            "max_outrage": 0.12,
-            "first_seen": "2026-05-31T23:12:45",
-            "last_seen": "2026-06-01T16:53:55"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0057,
-            "first_seen": "2026-05-31T23:12:45",
-            "last_seen": "2026-05-31T23:12:45"
-          }
-        ]
-      },
-      {
-        "actor_key": "x:24198415",
-        "platform": "x",
-        "author_id": "24198415",
-        "author_handle": "@MichaelARothman",
-        "narrative_count": 2,
-        "total_posts": 3,
-        "pollination_score": 4.1187,
-        "span_days": 0.89,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 2,
-            "max_outrage": 0.1174,
-            "first_seen": "2026-05-31T22:13:14",
-            "last_seen": "2026-06-01T19:33:02"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0076,
-            "first_seen": "2026-05-31T22:13:14",
-            "last_seen": "2026-05-31T22:13:14"
-          }
-        ]
-      },
-      {
-        "actor_key": "x:1466263472132423681",
-        "platform": "x",
-        "author_id": "1466263472132423681",
-        "author_handle": "@Raebo56",
-        "narrative_count": 2,
-        "total_posts": 2,
-        "pollination_score": 3.1699,
-        "span_days": 0.0,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 1,
-            "max_outrage": 0.1129,
-            "first_seen": "2026-05-31T22:18:11",
-            "last_seen": "2026-05-31T22:18:11"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0023,
-            "first_seen": "2026-05-31T22:18:11",
-            "last_seen": "2026-05-31T22:18:11"
-          }
-        ]
-      },
-      {
-        "actor_key": "x:1648149942190632961",
-        "platform": "x",
-        "author_id": "1648149942190632961",
-        "author_handle": "@curiouscammie",
-        "narrative_count": 2,
-        "total_posts": 2,
-        "pollination_score": 3.1699,
-        "span_days": 0.0,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 1,
-            "max_outrage": 0.1143,
-            "first_seen": "2026-05-31T22:18:51",
-            "last_seen": "2026-05-31T22:18:51"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0037,
-            "first_seen": "2026-05-31T22:18:51",
-            "last_seen": "2026-05-31T22:18:51"
-          }
-        ]
-      },
-      {
-        "actor_key": "x:1760317411390054400",
-        "platform": "x",
-        "author_id": "1760317411390054400",
-        "author_handle": "@Willowthorns777",
-        "narrative_count": 2,
-        "total_posts": 2,
-        "pollination_score": 3.1699,
-        "span_days": 0.0,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 1,
-            "max_outrage": 0.1117,
-            "first_seen": "2026-05-31T22:47:03",
-            "last_seen": "2026-05-31T22:47:03"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0018,
-            "first_seen": "2026-05-31T22:47:03",
-            "last_seen": "2026-05-31T22:47:03"
-          }
-        ]
-      },
-      {
-        "actor_key": "x:1777383147950280706",
-        "platform": "x",
-        "author_id": "1777383147950280706",
-        "author_handle": "@permit75592",
-        "narrative_count": 2,
-        "total_posts": 2,
-        "pollination_score": 3.1699,
-        "span_days": 0.0,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 1,
-            "max_outrage": 0.1143,
-            "first_seen": "2026-05-31T22:45:14",
-            "last_seen": "2026-05-31T22:45:14"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0015,
-            "first_seen": "2026-05-31T22:45:14",
-            "last_seen": "2026-05-31T22:45:14"
-          }
-        ]
-      },
-      {
-        "actor_key": "x:1791965943431667712",
-        "platform": "x",
-        "author_id": "1791965943431667712",
-        "author_handle": "@yazi_the",
-        "narrative_count": 2,
-        "total_posts": 2,
-        "pollination_score": 3.1699,
-        "span_days": 0.0,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 1,
-            "max_outrage": 0.1143,
-            "first_seen": "2026-05-31T22:45:04",
-            "last_seen": "2026-05-31T22:45:04"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0015,
-            "first_seen": "2026-05-31T22:45:04",
-            "last_seen": "2026-05-31T22:45:04"
-          }
-        ]
-      },
-      {
-        "actor_key": "x:1828029219277791232",
-        "platform": "x",
-        "author_id": "1828029219277791232",
-        "author_handle": "@TheBenTurner83",
-        "narrative_count": 2,
-        "total_posts": 2,
-        "pollination_score": 3.1699,
-        "span_days": 0.0,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 1,
-            "max_outrage": 0.114,
-            "first_seen": "2026-05-31T22:46:45",
-            "last_seen": "2026-05-31T22:46:45"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0034,
-            "first_seen": "2026-05-31T22:46:45",
-            "last_seen": "2026-05-31T22:46:45"
-          }
-        ]
-      },
-      {
-        "actor_key": "x:1923828566443065344",
-        "platform": "x",
-        "author_id": "1923828566443065344",
-        "author_handle": "@AjayJarret31000",
-        "narrative_count": 2,
-        "total_posts": 2,
-        "pollination_score": 3.1699,
-        "span_days": 0.0,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 1,
-            "max_outrage": 0.1132,
-            "first_seen": "2026-05-31T21:39:29",
-            "last_seen": "2026-05-31T21:39:29"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0026,
-            "first_seen": "2026-05-31T21:39:29",
-            "last_seen": "2026-05-31T21:39:29"
-          }
-        ]
-      },
-      {
-        "actor_key": "x:2497137228",
-        "platform": "x",
-        "author_id": "2497137228",
-        "author_handle": "@ChetRusinek",
-        "narrative_count": 2,
-        "total_posts": 2,
-        "pollination_score": 3.1699,
-        "span_days": 0.0,
-        "narratives": [
-          {
-            "narrative_id": 3,
-            "narrative_name": "midterms_2026",
-            "post_count": 1,
-            "max_outrage": 0.1245,
-            "first_seen": "2026-05-31T23:36:44",
-            "last_seen": "2026-05-31T23:36:44"
-          },
-          {
-            "narrative_id": 4,
-            "narrative_name": "test_x",
-            "post_count": 1,
-            "max_outrage": 0.0139,
-            "first_seen": "2026-05-31T23:36:44",
-            "last_seen": "2026-05-31T23:36:44"
-          }
-        ]
-      }
-    ],
-    "narrative_pairs": [
-      {
-        "narrative_a_id": 3,
-        "narrative_a_name": "midterms_2026",
-        "narrative_b_id": 4,
-        "narrative_b_name": "test_x",
-        "shared_actor_count": 10
-      }
-    ],
+    "actor_count": 0,
+    "narrative_count": 0,
+    "actors": [],
+    "narrative_pairs": [],
     "available": true
   },
   "meta": {
