@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "generated_at": "2026-06-02T06:19:43.765421+00:00",
+  "generated_at": "2026-06-02T07:03:41.161853+00:00",
   "narratives": [
     {
       "id": 3,
@@ -6332,15 +6332,103 @@
             "source_post_id": 242,
             "target_post_id": null,
             "occurred_at": "2026-06-02T01:28:33"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1298624375692894210",
+            "type": "reply",
+            "source_post_id": 52,
+            "target_post_id": null,
+            "occurred_at": "2026-05-27T22:45:39"
+          },
+          {
+            "source": "1981085696665227264",
+            "target": "92186819",
+            "type": "reply",
+            "source_post_id": 54,
+            "target_post_id": null,
+            "occurred_at": "2026-05-27T20:37:06"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "880488806528561153",
+            "type": "reply",
+            "source_post_id": 55,
+            "target_post_id": null,
+            "occurred_at": "2026-05-27T16:17:26"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1553528614242717700",
+            "type": "reply",
+            "source_post_id": 58,
+            "target_post_id": null,
+            "occurred_at": "2026-05-25T22:38:34"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1098091506886471680",
+            "type": "reply",
+            "source_post_id": 101,
+            "target_post_id": null,
+            "occurred_at": "2026-05-24T17:12:32"
+          },
+          {
+            "source": "876574565228589059",
+            "target": "2162812627",
+            "type": "reply",
+            "source_post_id": 102,
+            "target_post_id": null,
+            "occurred_at": "2026-05-23T22:41:44"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1186465203858231297",
+            "type": "reply",
+            "source_post_id": 139,
+            "target_post_id": null,
+            "occurred_at": "2026-05-22T22:04:07"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1428911804781056004",
+            "type": "reply",
+            "source_post_id": 140,
+            "target_post_id": null,
+            "occurred_at": "2026-05-22T21:08:55"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "64438719",
+            "type": "reply",
+            "source_post_id": 143,
+            "target_post_id": null,
+            "occurred_at": "2026-05-21T21:13:00"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1256697863150669827",
+            "type": "reply",
+            "source_post_id": 144,
+            "target_post_id": null,
+            "occurred_at": "2026-05-21T20:29:08"
+          },
+          {
+            "source": "1667019116505333761",
+            "target": "1807783879996006400",
+            "type": "reply",
+            "source_post_id": 145,
+            "target_post_id": null,
+            "occurred_at": "2026-05-21T17:28:57"
           }
         ],
         "stats": {
-          "edge_count": 41,
+          "edge_count": 52,
           "author_count": 193,
           "connected_author_count": 23,
           "isolated_author_count": 170,
           "by_type": {
-            "reply": 41
+            "reply": 52
           }
         }
       },
@@ -7688,7 +7776,7 @@
         "coordination_signal_count": 15,
         "distinct_theme_count": 27,
         "theme_cluster_count": 29,
-        "graph_edge_count": 41,
+        "graph_edge_count": 52,
         "graph_author_count": 193,
         "graph_connected_author_count": 23,
         "graph_coverage_pct": 11.9,
@@ -7716,7 +7804,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-02",
-      "count": 4
+      "count": 5
     }
   }
 }
