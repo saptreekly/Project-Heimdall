@@ -179,9 +179,59 @@ function noSpreadNoticeHtml(edgeCount: number): string {
       <p class="scatter-diagnosis-sub">
         Confirm in
         <a href="#propagation-graph-panel">Propagation network</a> (badge: <em>no edges</em>).
-        Use duplicate-text / theme panels for coordination signals until edges exist.
+        Prefer <a href="#analysis-section-nav">Overview → text coordination</a> and
+        <a href="#analysis-section-nav">Anomalies</a> for copypasta/fuzzy clusters until edges exist.
       </p>
     </div>
+  `;
+}
+
+function priorityExplainerHtml(edgeCount: number, outrageDiag: OutrageDiagnostics): string {
+  const noSpread = edgeCount === 0;
+  const yCompressed = outrageDiag.compressed;
+
+  let rankingNote: string;
+  if (noSpread && yCompressed) {
+    rankingNote =
+      "This snapshot has <strong>no propagation edges</strong> and <strong>low outrage scores</strong>, so the chart cannot rank spread × toxicity. The list below flags <em>relative targets</em> — authors in the top outrage tier for this narrative, not necessarily high absolute threat.";
+  } else if (noSpread) {
+    rankingNote =
+      "Spread (X) is unavailable — no retweet/reply edges in ingest. The list ranks by <strong>outrage only</strong>. Use Anomalies and text coordination for copypasta signals.";
+  } else if (yCompressed) {
+    rankingNote =
+      "Outrage scores are compressed near the lexicon floor. Flagged authors are high <em>relative to this narrative</em>; check duplicate-text and theme panels for coordination without high outrage.";
+  } else {
+    rankingNote =
+      "Authors in the <strong>top-right</strong> (high spread and high outrage) are flagged as critical targets — the usual starting point for investigation.";
+  }
+
+  return `
+    <details class="priority-explainer" open>
+      <summary>What this chart shows</summary>
+      <div class="priority-explainer-body">
+        <p>
+          Each dot is one account in this narrative. The chart helps you decide <strong>who to investigate first</strong>
+          by plotting two signals at once:
+        </p>
+        <dl class="priority-explainer-axes">
+          <div>
+            <dt>Horizontal (X) — Out-degree · spread</dt>
+            <dd>How many other authors this account amplified (retweets, replies, shares). Further right = wider reach in the propagation graph.</dd>
+          </div>
+          <div>
+            <dt>Vertical (Y) — Max outrage index</dt>
+            <dd>The highest outrage score among this author’s posts (0–1 from the lexicon). Higher = more inflammatory language in their worst post.</dd>
+          </div>
+        </dl>
+        <p>${rankingNote}</p>
+        <p class="priority-explainer-legend">
+          <span class="priority-legend-dot priority-legend-author"></span> Author
+          <span class="priority-legend-dot priority-legend-critical"></span> Flagged target
+          <span class="priority-legend-dot priority-legend-bot"></span> IU known bot
+          · Click any dot or list row to filter posts.
+        </p>
+      </div>
+    </details>
   `;
 }
 
@@ -203,17 +253,18 @@ export function priorityScatterPanelHtml(
       <h2>Author prioritization
         <span class="topology-badge ${noSpread || yCompressed ? "topology-isolated" : "topology-star"}">${criticalCount} ${badgeLabel}</span>
       </h2>
+      ${priorityExplainerHtml(edgeCount, outrageDiag)}
       ${noSpreadNoticeHtml(edgeCount)}
       ${scatterOutrageFloorNoticeHtml(outrageDiag)}
       <p class="chart-caption">
-        X: out-degree (spread). Y: max outrage. Bright red = IU astroturf known bot.
-        ${noSpread ? "With no edges, all authors sit at X = 0." : "Top-right quadrant = operational mitigation priority."}
-        ${yCompressed ? ` Outrage scores are capped near ${outrageDiag.maxAuthorOutrage.toFixed(2)} (lexicon floor).` : ""}
-        Click a point to investigate.
+        ${noSpread ? "All authors at X = 0 until propagation edges exist." : "Top-right = highest spread and outrage."}
+        ${yCompressed && !noSpread ? ` Y-axis zoomed — max outrage ${outrageDiag.maxAuthorOutrage.toFixed(2)}.` : ""}
       </p>
       <div class="chart-wrap chart-wrap-scatter">
         <canvas id="priority-scatter-chart" aria-label="Author prioritization scatter plot"></canvas>
       </div>
+      <h3 class="priority-target-list-heading">Flagged accounts</h3>
+      <p class="chart-caption priority-target-list-caption">Sorted by spread × outrage when both axes have signal; otherwise by relative outrage tier.</p>
       <ul class="priority-target-list" id="priority-target-list"></ul>
     </section>
   `;

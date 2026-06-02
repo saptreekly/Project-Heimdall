@@ -656,6 +656,108 @@ html:not(.chart-density-compact) .graph-canvas {
   color: var(--warn);
 }
 
+.priority-explainer {
+  margin: 0 0 0.85rem;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.priority-explainer summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text);
+  list-style: none;
+}
+
+.priority-explainer summary::-webkit-details-marker {
+  display: none;
+}
+
+.priority-explainer summary::before {
+  content: "▸ ";
+  color: var(--muted);
+}
+
+.priority-explainer[open] summary::before {
+  content: "▾ ";
+}
+
+.priority-explainer-body {
+  margin-top: 0.65rem;
+}
+
+.priority-explainer-body p {
+  margin: 0 0 0.55rem;
+  color: var(--muted);
+}
+
+.priority-explainer-axes {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.55rem 0 0.65rem;
+}
+
+.priority-explainer-axes dt {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.priority-explainer-axes dd {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.priority-explainer-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.85rem;
+  font-size: 0.78rem !important;
+  margin-bottom: 0 !important;
+}
+
+.priority-legend-dot {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+
+.priority-legend-author {
+  background: rgba(100, 149, 237, 0.85);
+}
+
+.priority-legend-critical {
+  background: #f5a623;
+  border: 1px solid #fff8e7;
+}
+
+.priority-legend-bot {
+  background: #ff2d2d;
+  border: 1px solid #fff;
+}
+
+.priority-target-list-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0.85rem 0 0.25rem;
+}
+
+.priority-target-list-caption {
+  margin-bottom: 0.5rem !important;
+}
+
 .priority-target-list {
   list-style: none;
   margin: 0.85rem 0 0;
