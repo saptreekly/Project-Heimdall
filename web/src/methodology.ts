@@ -74,7 +74,8 @@ export function renderMethodology(): string {
         <p class="sub">
           API: <code>GET /api/v1/narratives/&#123;id&#125;/themes</code>.
           Labels use PMI-ranked phrases with filler filtering (multi-word frames like “red wave” stay intact).
-          The dashboard shows a sortable cluster table; select a row to inspect sample text, escalation mix, and filter posts.
+          Fin-twit and crypto ticker posts are filtered out of clustering by default; the dashboard hides them unless you toggle “market chatter”.
+          Select a cluster row to inspect sample text, escalation mix, and filter posts.
         </p>
       </section>
 

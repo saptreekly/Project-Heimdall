@@ -14,6 +14,8 @@ interface ThemeRow {
   size: number;
   emerging_theme: boolean;
   is_noise: boolean;
+  is_market_chatter: boolean;
+  market_chatter_rate: number;
   first_seen: string | null;
   last_seen: string | null;
   label_distinctiveness: number;
@@ -22,8 +24,10 @@ interface ThemeRow {
 }
 
 let clusterIndex = new Map<number, ThemeRow>();
+let showMarketChatter = false;
 
-function primaryLabel(labels: string[], clusterId: number): string {
+function primaryLabel(labels: string[], clusterId: number, isMarket: boolean): string {
+  if (isMarket) return "Market / crypto chatter";
   if (labels.length > 0) return labels[0];
   return `cluster ${clusterId}`;
 }
@@ -43,14 +47,17 @@ function normalizeRow(
 ): ThemeRow {
   const labels = displayLabels(entry);
   const cluster = clusters.find((c) => c.cluster_id === entry.cluster_id);
+  const isMarket = Boolean(entry.is_market_chatter ?? cluster?.is_market_chatter);
   return {
     cluster_id: entry.cluster_id,
     labels,
-    title: primaryLabel(labels, entry.cluster_id),
+    title: primaryLabel(labels, entry.cluster_id, isMarket),
     post_ids: entry.post_ids ?? cluster?.post_ids ?? [],
     size: entry.size ?? cluster?.size ?? entry.post_ids?.length ?? 0,
     emerging_theme: Boolean(entry.emerging_theme),
     is_noise: Boolean(entry.is_noise),
+    is_market_chatter: isMarket,
+    market_chatter_rate: entry.market_chatter_rate ?? cluster?.market_chatter_rate ?? 0,
     first_seen: entry.first_seen ?? cluster?.first_seen ?? null,
     last_seen: entry.last_seen ?? cluster?.last_seen ?? null,
     label_distinctiveness: entry.label_distinctiveness ?? cluster?.label_distinctiveness ?? 0,
@@ -59,22 +66,34 @@ function normalizeRow(
   };
 }
 
-function normalizeThemes(report: ThemesReport): ThemeRow[] {
+function normalizeThemes(report: ThemesReport, includeMarket: boolean): ThemeRow[] {
   const clusters = report.clusters ?? [];
   const source = report.timeline?.length
-    ? report.timeline
+    ? [...report.timeline, ...clusters.filter((c) => c.is_market_chatter)]
     : clusters.filter(
         (c) =>
-          (c.label_distinctiveness ?? 0) >= 0.12 || c.emerging_theme || c.is_noise
+          (c.label_distinctiveness ?? 0) >= 0.12 ||
+          c.emerging_theme ||
+          c.is_noise ||
+          c.is_market_chatter
       );
 
-  const rows = source.map((entry) => normalizeRow(entry, clusters));
-  rows.sort((a, b) => {
+  const seen = new Set<number>();
+  const uniqueSource = source.filter((entry) => {
+    if (seen.has(entry.cluster_id)) return false;
+    seen.add(entry.cluster_id);
+    return true;
+  });
+
+  const rows = uniqueSource.map((entry) => normalizeRow(entry, clusters));
+  const filtered = includeMarket ? rows : rows.filter((row) => !row.is_market_chatter);
+  filtered.sort((a, b) => {
+    if (a.is_market_chatter !== b.is_market_chatter) return a.is_market_chatter ? 1 : -1;
     if (a.emerging_theme !== b.emerging_theme) return a.emerging_theme ? -1 : 1;
     if (a.is_noise !== b.is_noise) return a.is_noise ? 1 : -1;
     return b.size - a.size;
   });
-  return rows;
+  return filtered;
 }
 
 function dateSpan(row: ThemeRow): string {
@@ -143,7 +162,7 @@ function renderDetail(row: ThemeRow, posts: Post[]): string {
   `;
 }
 
-function renderTable(rows: ThemeRow[]): string {
+function renderTable(rows: ThemeRow[], hiddenMarketCount: number): string {
   const visible = rows.slice(0, MAX_VISIBLE_CLUSTERS);
   const hiddenCount = Math.max(rows.length - visible.length, 0);
 
@@ -163,7 +182,7 @@ function renderTable(rows: ThemeRow[]): string {
             const distinctPct = Math.round(row.label_distinctiveness * 100);
             const qualityPct = Math.round(row.quality_score * 100);
             return `<tr
-              class="theme-row${row.emerging_theme ? " theme-row-emerging" : ""}${row.is_noise ? " theme-row-noise" : ""}"
+              class="theme-row${row.emerging_theme ? " theme-row-emerging" : ""}${row.is_noise ? " theme-row-noise" : ""}${row.is_market_chatter ? " theme-row-market" : ""}"
               data-cluster-id="${row.cluster_id}"
               tabindex="0"
               role="button"
@@ -172,9 +191,11 @@ function renderTable(rows: ThemeRow[]): string {
               <td class="theme-row-label">
                 <span class="theme-row-title">${escapeHtml(row.title)}</span>
                 ${
-                  row.labels.length > 1
-                    ? `<span class="theme-row-sub">${escapeHtml(row.labels.slice(1, 3).join(" · "))}</span>`
-                    : ""
+                  row.is_market_chatter
+                    ? `<span class="theme-row-sub">Fin-twit / ticker spam · ${Math.round(row.market_chatter_rate * 100)}% market signal</span>`
+                    : row.labels.length > 1
+                      ? `<span class="theme-row-sub">${escapeHtml(row.labels.slice(1, 3).join(" · "))}</span>`
+                      : ""
                 }
               </td>
               <td>${row.size}</td>
@@ -190,8 +211,13 @@ function renderTable(rows: ThemeRow[]): string {
       </tbody>
     </table>
     ${
+      hiddenMarketCount > 0
+        ? `<p class="chart-caption">${hiddenMarketCount} market/crypto cluster${hiddenMarketCount === 1 ? "" : "s"} hidden — toggle below to include.</p>`
+        : ""
+    }
+    ${
       hiddenCount > 0
-        ? `<p class="chart-caption">${hiddenCount} smaller cluster${hiddenCount === 1 ? "" : "s"} hidden (showing top ${MAX_VISIBLE_CLUSTERS}).</p>`
+        ? `<p class="chart-caption">${hiddenCount} smaller narrative cluster${hiddenCount === 1 ? "" : "s"} hidden (showing top ${MAX_VISIBLE_CLUSTERS}).</p>`
         : ""
     }
   `;
@@ -252,8 +278,12 @@ export function emergingThemesPanelHtml(report: ThemesReport, asInner = false): 
       ${fallbackNote}
       <p class="chart-caption">
         Embedding clusters with PMI phrase labels (multi-word frames like “red wave” stay together).
-        Select a cluster to inspect sample framing and filter posts.
+        Fin-twit and crypto ticker spam is filtered out of clustering by default. Select a row to inspect framing and filter posts.
       </p>
+      <label class="theme-market-toggle">
+        <input type="checkbox" id="theme-show-market" />
+        Show market / crypto chatter clusters
+      </label>
       <div class="theme-workbench">
         <div id="themes-list-host" class="themes-list-host">
           ${stateLoadingHtml("Loading theme clusters…")}
@@ -277,7 +307,9 @@ export function renderEmergingThemesTimeline(
 ): void {
   const meta = document.getElementById("themes-meta");
   const detailHost = document.getElementById("themes-detail-host");
+  const marketToggle = document.getElementById("theme-show-market") as HTMLInputElement | null;
   clusterIndex = new Map();
+  showMarketChatter = marketToggle?.checked ?? false;
 
   if (!report.available) {
     const hint = report.reason?.includes("USE_EMBEDDING_THEMES")
@@ -289,7 +321,26 @@ export function renderEmergingThemesTimeline(
     return;
   }
 
-  const rows = normalizeThemes(report);
+  const allRows = normalizeThemes(report, true);
+  const rows = normalizeThemes(report, showMarketChatter);
+  const hiddenMarketCount = showMarketChatter
+    ? 0
+    : allRows.filter((row) => row.is_market_chatter).length;
+
+  if (rows.length === 0 && hiddenMarketCount > 0) {
+    host.innerHTML =
+      "<p class='empty'>Only market/crypto chatter clusters detected — enable the toggle above to inspect them.</p>";
+    if (detailHost) detailHost.innerHTML = "";
+    if (meta) {
+      meta.textContent = `${hiddenMarketCount} market cluster(s) filtered · ${report.post_count} posts`;
+    }
+    marketToggle?.addEventListener("change", () => {
+      showMarketChatter = marketToggle.checked;
+      renderEmergingThemesTimeline(host, report, posts);
+    });
+    return;
+  }
+
   if (rows.length === 0) {
     host.innerHTML =
       "<p class='empty'>No embedding clusters for this narrative (need ≥3 posts and USE_EMBEDDING_THEMES on export).</p>";
@@ -298,21 +349,33 @@ export function renderEmergingThemesTimeline(
     return;
   }
 
-  for (const row of rows) {
+  for (const row of allRows) {
     clusterIndex.set(row.cluster_id, row);
   }
 
-  host.innerHTML = renderTable(rows);
+  host.innerHTML = renderTable(rows, hiddenMarketCount);
   bindTable(host, detailHost, rows, posts);
 
-  const firstEmerging = rows.find((row) => row.emerging_theme && !row.is_noise) ?? rows[0];
-  if (firstEmerging) {
-    selectRow(host, detailHost, firstEmerging, posts);
+  const firstPick =
+    rows.find((row) => row.emerging_theme && !row.is_market_chatter && !row.is_noise) ??
+    rows.find((row) => !row.is_market_chatter && !row.is_noise) ??
+    rows[0];
+  if (firstPick) {
+    selectRow(host, detailHost, firstPick, posts);
   }
+
+  marketToggle?.addEventListener("change", () => {
+    showMarketChatter = marketToggle.checked;
+    renderEmergingThemesTimeline(host, report, posts);
+  });
 
   if (meta) {
     const encoder = report.model === "tfidf-fallback" ? "TF-IDF lexical vectors" : safeText(report.model);
-    meta.textContent = `${report.distinct_theme_count ?? report.cluster_count} distinct · ${report.emerging_theme_count} emerging · ${report.method} · ${encoder}`;
+    const marketNote =
+      (report.market_chatter_post_count ?? 0) > 0
+        ? ` · ${report.market_chatter_post_count} market posts filtered`
+        : "";
+    meta.textContent = `${report.distinct_theme_count ?? report.cluster_count} distinct · ${report.emerging_theme_count} emerging · ${report.method} · ${encoder}${marketNote}`;
   }
 }
 

@@ -10,6 +10,12 @@ import numpy as np
 
 from heimdall.nlp.embeddings import DEFAULT_EMBEDDING_MODEL, encode_texts
 from heimdall.nlp.lexicon import lexicon_hit_strength
+from heimdall.nlp.market_chatter import (
+    MARKET_CLUSTER_ID,
+    cluster_market_chatter_rate,
+    is_market_chatter_cluster,
+    is_market_chatter_post,
+)
 from heimdall.nlp.theme_phrases import assign_distinct_phrase_labels, label_terms as _phrase_label_terms
 
 DBSCAN_MIN_SAMPLES = 2
@@ -40,6 +46,8 @@ class ThemeCluster:
     author_entropy: float = 0.0
     quality_score: float = 0.0
     is_noise: bool = False
+    is_market_chatter: bool = False
+    market_chatter_rate: float = 0.0
     map_x: float | None = None
     map_y: float | None = None
 
@@ -352,11 +360,28 @@ def cluster_posts(
         )
 
     post_ids, texts, author_ids = _parse_posts(posts)
-    embeddings, encoder = encode_texts(texts, model_name=model_name)
+
+    narrative_idx = [i for i, text in enumerate(texts) if not is_market_chatter_post(text)]
+    market_idx = [i for i, text in enumerate(texts) if is_market_chatter_post(text)]
+
+    cluster_indices = narrative_idx if len(narrative_idx) >= 3 else list(range(len(texts)))
+    cluster_texts_list = [texts[i] for i in cluster_indices]
+    cluster_post_ids_list = [post_ids[i] for i in cluster_indices]
+    cluster_author_ids_list = [author_ids[i] for i in cluster_indices]
+
+    embeddings, encoder = encode_texts(cluster_texts_list, model_name=model_name)
     neural = encoder != "tfidf-fallback"
     raw_labels, method = _cluster_labels(embeddings, neural=neural)
     if encoder == "tfidf-fallback":
         method = f"{method}+tfidf"
+    if market_idx and narrative_idx:
+        method = f"{method}+market_filtered"
+
+    # Map subset indices back to original post ids / texts / authors
+    subset_to_global = {sub: cluster_indices[sub] for sub in range(len(cluster_indices))}
+    global_post_ids = [post_ids[subset_to_global[i]] for i in range(len(cluster_indices))]
+    global_texts = [texts[subset_to_global[i]] for i in range(len(cluster_indices))]
+    global_author_ids = [author_ids[subset_to_global[i]] for i in range(len(cluster_indices))]
 
     cluster_texts: dict[int, list[str]] = {}
     unique_labels = sorted({int(x) for x in raw_labels})
@@ -365,9 +390,9 @@ def cluster_posts(
         member_idx = np.where(raw_labels == cluster_id)[0]
         if len(member_idx) < MIN_CLUSTER_SIZE_EXPORT:
             continue
-        cluster_texts[cluster_id] = [texts[i] for i in member_idx]
+        cluster_texts[cluster_id] = [global_texts[i] for i in member_idx]
 
-    label_map = _assign_distinct_cluster_labels(cluster_texts, texts)
+    label_map = _assign_distinct_cluster_labels(cluster_texts, global_texts)
 
     centroids_for_map: list[np.ndarray] = []
     map_cluster_ids: list[int] = []
@@ -381,28 +406,33 @@ def cluster_posts(
             continue
 
         is_noise = cluster_id == NOISE_CLUSTER_ID
-        member_post_ids = [post_ids[i] for i in member_idx]
+        member_post_ids = [global_post_ids[i] for i in member_idx]
         member_texts = cluster_texts[cluster_id]
         display_labels, fallback_terms, label_distinctiveness = label_map.get(
             cluster_id, ([], [], 0.0)
         )
         label_phrases = [p for p in display_labels if " " in p] or display_labels[:3]
         label_terms = display_labels if display_labels else fallback_terms
+        market_rate = cluster_market_chatter_rate(member_texts)
+        market_chatter = is_market_chatter_cluster(member_texts, label_terms)
 
         cohesion = _cluster_cohesion(embeddings, member_idx)
         lex_rates = [lexicon_hit_strength(t) for t in member_texts]
         lexicon_rate = float(np.mean(lex_rates)) if lex_rates else 0.0
 
-        member_authors = [author_ids[i] for i in member_idx if author_ids[i]]
+        member_authors = [global_author_ids[i] for i in member_idx if global_author_ids[i]]
         author_entropy = _author_entropy(member_authors)
         quality = _quality_score(
             cohesion=cohesion,
             distinctiveness=label_distinctiveness,
             lexicon_rate=lexicon_rate,
         )
+        if market_chatter:
+            quality = round(quality * 0.35, 4)
 
         emerging = (
             not is_noise
+            and not market_chatter
             and len(member_idx) >= EMERGING_MIN_CLUSTER_SIZE
             and cohesion >= EMERGING_MIN_COHESION
             and lexicon_rate <= EMERGING_LEXICON_MAX
@@ -435,6 +465,8 @@ def cluster_posts(
                 author_entropy=author_entropy,
                 quality_score=quality,
                 is_noise=is_noise,
+                is_market_chatter=market_chatter,
+                market_chatter_rate=market_rate,
             )
         )
 
@@ -442,6 +474,34 @@ def cluster_posts(
             boost = min(THEME_OUTRAGE_BOOST_MAX, 0.06 + cohesion * 0.08)
             for pid in member_post_ids:
                 boosts[pid] = max(boosts.get(pid, 0.0), boost)
+
+    if len(market_idx) >= MIN_CLUSTER_SIZE_EXPORT:
+        market_post_ids = [post_ids[i] for i in market_idx]
+        market_texts = [texts[i] for i in market_idx]
+        market_authors = [author_ids[i] for i in market_idx if author_ids[i]]
+        market_rate = cluster_market_chatter_rate(market_texts)
+        market_labels = _phrase_label_terms(market_texts, top_n=4)
+        market_phrases = [p for p in market_labels if " " in p][:2]
+        sample = max(market_texts, key=len)
+        clusters.append(
+            ThemeCluster(
+                cluster_id=MARKET_CLUSTER_ID,
+                post_ids=market_post_ids,
+                size=len(market_post_ids),
+                cohesion=1.0,
+                lexicon_hit_rate=0.0,
+                emerging_theme=False,
+                label_terms=market_labels[:4] or ["market chatter"],
+                label_phrases=market_phrases,
+                label_distinctiveness=0.0,
+                sample_text=sample[:240] + ("…" if len(sample) > 240 else ""),
+                author_entropy=_author_entropy([a for a in market_authors if a]),
+                quality_score=0.0,
+                is_noise=False,
+                is_market_chatter=True,
+                market_chatter_rate=market_rate,
+            )
+        )
 
     map_coords = _cluster_map_coords(map_cluster_ids, centroids_for_map)
     enriched: list[ThemeCluster] = []
@@ -452,6 +512,7 @@ def cluster_posts(
     enriched.sort(
         key=lambda c: (
             c.is_noise,
+            c.is_market_chatter,
             -c.label_distinctiveness,
             -int(c.emerging_theme),
             -c.size,
@@ -497,6 +558,8 @@ def report_to_dict(report: ThemeClusterReport) -> dict:
                 "author_entropy": c.author_entropy,
                 "quality_score": c.quality_score,
                 "is_noise": c.is_noise,
+                "is_market_chatter": c.is_market_chatter,
+                "market_chatter_rate": c.market_chatter_rate,
                 "map_x": c.map_x,
                 "map_y": c.map_y,
             }
@@ -516,8 +579,14 @@ def report_to_dict(report: ThemeClusterReport) -> dict:
             if c.map_x is not None and c.map_y is not None and not c.is_noise
         ],
         "emerging_theme_count": sum(1 for c in report.clusters if c.emerging_theme),
+        "market_chatter_count": sum(1 for c in report.clusters if c.is_market_chatter),
+        "market_chatter_post_count": sum(c.size for c in report.clusters if c.is_market_chatter),
         "distinct_theme_count": sum(
-            1 for c in report.clusters if c.label_distinctiveness >= MIN_TIMELINE_DISTINCTIVENESS
+            1
+            for c in report.clusters
+            if c.label_distinctiveness >= MIN_TIMELINE_DISTINCTIVENESS
+            and not c.is_market_chatter
+            and not c.is_noise
         ),
         "cluster_similarity": report.cluster_similarity,
         "merge_candidates": [

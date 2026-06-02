@@ -333,6 +333,8 @@ async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
                 "quality_score": c.get("quality_score", 0.0),
                 "author_entropy": c.get("author_entropy", 0.0),
                 "is_noise": c.get("is_noise", False),
+                "is_market_chatter": c.get("is_market_chatter", False),
+                "market_chatter_rate": c.get("market_chatter_rate", 0.0),
                 "size": c.get("size", 0),
                 "first_seen": c.get("first_seen"),
                 "last_seen": c.get("last_seen"),
@@ -343,8 +345,11 @@ async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
                 (
                     c
                     for c in clusters
-                    if float(c.get("label_distinctiveness", 0.0)) >= 0.12
-                    or c.get("emerging_theme")
+                    if not c.get("is_market_chatter")
+                    and (
+                        float(c.get("label_distinctiveness", 0.0)) >= 0.12
+                        or c.get("emerging_theme")
+                    )
                 ),
                 key=lambda c: (
                     c.get("first_seen") or "9999",

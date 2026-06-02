@@ -187,6 +187,12 @@ def theme_stopwords() -> frozenset[str]:
             base = set()
         base.update(_PLATFORM_STOP)
         base.update(_FILLER_WORDS)
+        try:
+            from heimdall.nlp.market_chatter import market_stopwords
+
+            base.update(market_stopwords())
+        except ImportError:
+            pass
         _THEME_STOPWORDS = frozenset(base)
     return _THEME_STOPWORDS
 

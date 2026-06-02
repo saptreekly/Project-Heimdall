@@ -293,6 +293,8 @@ export interface ThemeCluster {
   author_entropy?: number;
   quality_score?: number;
   is_noise?: boolean;
+  is_market_chatter?: boolean;
+  market_chatter_rate?: number;
   map_x?: number | null;
   map_y?: number | null;
 }
@@ -332,6 +334,8 @@ export interface ThemeTimelineEntry {
   quality_score?: number;
   author_entropy?: number;
   is_noise?: boolean;
+  is_market_chatter?: boolean;
+  market_chatter_rate?: number;
   size: number;
   first_seen: string | null;
   last_seen: string | null;
@@ -354,6 +358,8 @@ export interface ThemesReport {
   merge_candidates?: ClusterSimilarityEdge[];
   merge_tree?: ThemeMergeNode[];
   emerging_theme_count: number;
+  market_chatter_count?: number;
+  market_chatter_post_count?: number;
   distinct_theme_count?: number;
 }
 
