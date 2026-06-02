@@ -1,12 +1,12 @@
 {
   "version": 5,
-  "generated_at": "2026-06-02T22:05:47.778262+00:00",
+  "generated_at": "2026-06-02T22:27:52.365168+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
       "keywords": "2026 midterms,midterm elections 2026,2026 midterm fraud,2026 red wave,2026 blue wave,Senate race 2026,House race 2026",
-      "post_count": 309
+      "post_count": 310
     }
   ],
   "by_narrative_id": {
@@ -75,6 +75,22 @@
           "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.061,
           "status_url": "https://x.com/i/web/status/2061928545589305764"
+        },
+        {
+          "id": 350,
+          "platform": "x",
+          "external_id": "2061927326448021515",
+          "author_id": "1278058673038700545",
+          "author_handle": "@grinchypooh",
+          "text": "Trump is LYING about voter fraud to rig or cry foul about the 2026 midterm elections. Because cheating is the trump way.",
+          "posted_at": "2026-06-02T21:45:58",
+          "outrage_index": 0.0047,
+          "sentiment_label": "neutral",
+          "benchmark_label": null,
+          "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
+          "copypasta_score": 0.0175,
+          "status_url": "https://x.com/i/web/status/2061927326448021515"
         },
         {
           "id": 335,
@@ -3995,22 +4011,6 @@
           "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0179,
           "status_url": "https://x.com/i/web/status/2061115943917441384"
-        },
-        {
-          "id": 45,
-          "platform": "x",
-          "external_id": "2061113485358940621",
-          "author_id": "2008989490929651712",
-          "author_handle": "@Saeed1094601",
-          "text": "patriots, Republicans, and Christians who love this country, the American flag, and the values America was built on. Get out and vote in the 2026 midterm elections every single vote counts. We must keep strong Republican majorities in the House and Senate to protect our freedoms and preserve the America we love.",
-          "posted_at": "2026-05-31T15:52:03",
-          "outrage_index": 0.0026,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.013,
-          "status_url": "https://x.com/i/web/status/2061113485358940621"
         }
       ],
       "cib": {
@@ -4036,7 +4036,7 @@
           "cross_author_fuzzy_2authors_2posts_j1.00",
           "cross_author_fuzzy_2authors_2posts_j0.94"
         ],
-        "node_count": 315,
+        "node_count": 316,
         "edge_count": 69,
         "density": 0.0007,
         "top_amplifiers": [
@@ -4103,11 +4103,11 @@
         ],
         "coordinated_clusters": [],
         "iu_astroturf": {
-          "authors_in_narrative": 256,
+          "authors_in_narrative": 257,
           "platforms": [
             "x"
           ],
-          "x_authors_checked": 256,
+          "x_authors_checked": 257,
           "known_political_bots": 0,
           "known_bot_ratio": 0.0,
           "labeled_accounts": [],
@@ -4119,8 +4119,8 @@
         "buckets": [
           {
             "date": "2026-05-31",
-            "mean_outrage": 0.0399,
-            "count": 35
+            "mean_outrage": 0.041,
+            "count": 34
           },
           {
             "date": "2026-06-01",
@@ -4129,8 +4129,8 @@
           },
           {
             "date": "2026-06-02",
-            "mean_outrage": 0.0443,
-            "count": 105
+            "mean_outrage": 0.0439,
+            "count": 106
           }
         ],
         "trend": "stable"
@@ -6696,6 +6696,14 @@
             "bot_label": null
           },
           {
+            "author_id": "1278058673038700545",
+            "handle": "@grinchypooh",
+            "max_outrage": 0.0047,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
             "author_id": "1967975758216953856",
             "handle": "@Buster_Meow",
             "max_outrage": 0.0181,
@@ -7968,21 +7976,85 @@
             "source_post_id": 346,
             "target_post_id": null,
             "occurred_at": "2026-06-02T19:42:30"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1298624375692894210",
+            "type": "reply",
+            "source_post_id": 52,
+            "target_post_id": null,
+            "occurred_at": "2026-05-27T22:45:39"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "880488806528561153",
+            "type": "reply",
+            "source_post_id": 55,
+            "target_post_id": null,
+            "occurred_at": "2026-05-27T16:17:26"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1553528614242717700",
+            "type": "reply",
+            "source_post_id": 58,
+            "target_post_id": null,
+            "occurred_at": "2026-05-25T22:38:34"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1098091506886471680",
+            "type": "reply",
+            "source_post_id": 101,
+            "target_post_id": null,
+            "occurred_at": "2026-05-24T17:12:32"
+          },
+          {
+            "source": "876574565228589059",
+            "target": "2162812627",
+            "type": "reply",
+            "source_post_id": 102,
+            "target_post_id": null,
+            "occurred_at": "2026-05-23T22:41:44"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1186465203858231297",
+            "type": "reply",
+            "source_post_id": 139,
+            "target_post_id": null,
+            "occurred_at": "2026-05-22T22:04:07"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "1428911804781056004",
+            "type": "reply",
+            "source_post_id": 140,
+            "target_post_id": null,
+            "occurred_at": "2026-05-22T21:08:55"
+          },
+          {
+            "source": "1518777787213041665",
+            "target": "64438719",
+            "type": "reply",
+            "source_post_id": 143,
+            "target_post_id": null,
+            "occurred_at": "2026-05-21T21:13:00"
           }
         ],
         "stats": {
-          "edge_count": 156,
-          "author_count": 256,
+          "edge_count": 164,
+          "author_count": 257,
           "connected_author_count": 59,
-          "isolated_author_count": 197,
+          "isolated_author_count": 198,
           "by_type": {
-            "reply": 156
+            "reply": 164
           }
         }
       },
       "themes": {
         "narrative_id": 3,
-        "post_count": 309,
+        "post_count": 310,
         "cluster_count": 34,
         "method": "dbscan",
         "model": "all-MiniLM-L6-v2",
@@ -8019,32 +8091,6 @@
             "active_days": 3
           },
           {
-            "cluster_id": 17,
-            "post_ids": [
-              99,
-              201,
-              199,
-              326
-            ],
-            "size": 4,
-            "cohesion": 1.0,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
-            "label_terms": [
-              "lose",
-              "voteblue",
-              "toobigtorig",
-              "corruptgop",
-              "cheat",
-              "upcoming"
-            ],
-            "label_distinctiveness": 1.0,
-            "sample_text": "Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat like in 2024. RiseUp VoteBlue in numbers T\u2026",
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-06-02",
-            "active_days": 3
-          },
-          {
             "cluster_id": 9,
             "post_ids": [
               50,
@@ -8061,7 +8107,7 @@
               "ice",
               "trying",
               "politicians",
-              "remember"
+              "vote"
             ],
             "label_distinctiveness": 1.0,
             "sample_text": "Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE",
@@ -8135,7 +8181,7 @@
               "democrat",
               "don",
               "fascist",
-              "redneck"
+              "voting"
             ],
             "label_distinctiveness": 1.0,
             "sample_text": "These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what they're waiting for.",
@@ -8181,9 +8227,9 @@
               "days",
               "june",
               "today",
-              "vote",
               "pedos",
-              "protectors"
+              "protectors",
+              "midterms"
             ],
             "label_distinctiveness": 1.0,
             "sample_text": "Today is June 1, 2026 there are 154 days until midterms and we will vote out all PEDOS and their protectors.",
@@ -8281,7 +8327,7 @@
               "united",
               "voices"
             ],
-            "label_distinctiveness": 0.9763,
+            "label_distinctiveness": 0.9848,
             "sample_text": "Here is a fully transformed, 2026 version of the 2020 text\u2014 rewritten as an update before the 2026 midterms (purpose to identify similarities with the 2020 midterms), keeping the structure, the Round Table framing, the alternating voices (P\u2026",
             "first_seen": "2026-06-02",
             "last_seen": "2026-06-02",
@@ -8305,7 +8351,7 @@
               "run",
               "nancy"
             ],
-            "label_distinctiveness": 0.8273,
+            "label_distinctiveness": 0.8345,
             "sample_text": "what happens when nancy mace looses her race in sc gubernatorial race? would she be able to run for house in 2026?",
             "first_seen": "2026-05-30",
             "last_seen": "2026-06-02",
@@ -8329,7 +8375,7 @@
               "watch",
               "political"
             ],
-            "label_distinctiveness": 0.757,
+            "label_distinctiveness": 0.7636,
             "sample_text": "The latest political headlines are getting wild. From the Graham Plattner sexting scandal to what Republicans need to do to hold the House, Sean Spicer breaks down the stories shaping the 2026 midterms. Don\u2019t miss the full episode. Tune in \u2026",
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-01",
@@ -8354,7 +8400,7 @@
               "despite",
               "votes"
             ],
-            "label_distinctiveness": 0.7266,
+            "label_distinctiveness": 0.7306,
             "sample_text": "Trump endorses NJ Rep. Tom Kean Jr., praising him for \"working tirelessly\"\u2014despite Kean missing 100+ floor votes since March due to an undisclosed illness. The 7th district seat could be pivotal in 2026 midterms. Trump NewJersey Congress Mi\u2026",
             "first_seen": "2026-06-02",
             "last_seen": "2026-06-02",
@@ -8383,11 +8429,39 @@
               "yes",
               "said"
             ],
-            "label_distinctiveness": 0.6922,
+            "label_distinctiveness": 0.6983,
             "sample_text": "If 2026 is a blue wave year, it might be the year that Lauren Boebert finally goes down Despite repping the Trump+19 safe red CO-4 in eastern Colorado, Boebert only won by 10 in 2024 and she's running against a former Navy admiral",
             "first_seen": "2026-05-30",
             "last_seen": "2026-06-02",
             "active_days": 4
+          },
+          {
+            "cluster_id": 17,
+            "post_ids": [
+              99,
+              134,
+              201,
+              199,
+              326,
+              350
+            ],
+            "size": 6,
+            "cohesion": 0.8931,
+            "lexicon_hit_rate": 0.0238,
+            "emerging_theme": true,
+            "label_terms": [
+              "corruptgop",
+              "lose",
+              "voteblue",
+              "toobigtorig",
+              "cheat",
+              "upcoming"
+            ],
+            "label_distinctiveness": 0.6215,
+            "sample_text": "Absolutely crazy that some voters were fooled to believe that the election was rigged &amp; those who did it are still in government pushing the lie to succeed this time but the 2026 midterms can end this shitshow by ENFORCING 14thAmendment\u2026",
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-06-02",
+            "active_days": 3
           },
           {
             "cluster_id": 8,
@@ -8408,7 +8482,7 @@
               "roughly",
               "mexico"
             ],
-            "label_distinctiveness": 0.57,
+            "label_distinctiveness": 0.575,
             "sample_text": "Axios: Texas population boom, Latino backlash scramble 2026 Senate race \"Texas has gained more than 2.5 million new residents since 2020  -  roughly the entire population of New Mexico  -  reshaping the electorate and injecting new uncertai\u2026",
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
@@ -8432,7 +8506,7 @@
               "fight",
               "americans"
             ],
-            "label_distinctiveness": 0.5567,
+            "label_distinctiveness": 0.5616,
             "sample_text": "I'm updating one 2026 prediction. The anti-AI, anti-data center thing is mostly a meme and will largely be old news and not salient enough to really matter by the time we get to the midterms. That political fight will be over much more visc\u2026",
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-01",
@@ -8456,12 +8530,12 @@
             "label_terms": [
               "red",
               "let",
-              "rigged",
               "support",
               "voted",
-              "montana"
+              "montana",
+              "agenda"
             ],
-            "label_distinctiveness": 0.5256,
+            "label_distinctiveness": 0.5303,
             "sample_text": "The red wave is literally just starting, and growing fast. Many are not understanding how dead the evil democrat party is. The MAGA Party fully begins after the 2026 midterms, which take effect January 2027. Enjoy the show.",
             "first_seen": "2026-05-29",
             "last_seen": "2026-06-02",
@@ -8481,8 +8555,7 @@
               "deserts",
               "west",
               "golden",
-              "leaves",
-              "midterms"
+              "leaves"
             ],
             "label_distinctiveness": 0.5,
             "sample_text": "Midterms 2026 from the deserts of the west to the golden leaves of NE",
@@ -8531,9 +8604,9 @@
               "iran",
               "doesn",
               "donald",
-              "low"
+              "absolutely"
             ],
-            "label_distinctiveness": 0.4187,
+            "label_distinctiveness": 0.4224,
             "sample_text": "Donald Trump completely dismissed growing anxieties surrounding the upcoming 2026 midterm elections, declaring \"I don't care about the midterms\" during a high-stakes cabinet meeting regarding the war with Iran. IranWar Trump2026 MidtermElec\u2026",
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-02",
@@ -8557,7 +8630,7 @@
               "gerrymandering",
               "straight"
             ],
-            "label_distinctiveness": 0.396,
+            "label_distinctiveness": 0.3995,
             "sample_text": "\ud83d\udea8 LOUISIANA RED WAVE HITS Senate passes redrawn congressional map, crushing racial gerrymandering and ELIMINATING a Democrat safe seat for good. Louisiana flips to solid 5R-1D dominance ahead of 2026 midterms. Heads straight to Gov. Jeff La\u2026",
             "first_seen": "2026-05-29",
             "last_seen": "2026-05-30",
@@ -8583,7 +8656,7 @@
               "coming",
               "cuts"
             ],
-            "label_distinctiveness": 0.3565,
+            "label_distinctiveness": 0.3589,
             "sample_text": "THE BIG BEAUTIFUL Bill DELAY Republicans planned this & project 2025 H.R.1 (The \"Big Beautiful Bill\") was designed to delay the damage until after 2026 midterms. Here's what's coming... but not just yet: HIGHER TAXES- CUTS COMING AFTER THE \u2026",
             "first_seen": "2026-06-02",
             "last_seen": "2026-06-02",
@@ -8613,7 +8686,7 @@
               "gaslighting",
               "happy"
             ],
-            "label_distinctiveness": 0.3504,
+            "label_distinctiveness": 0.3517,
             "sample_text": "Elections are still not secure. DemoKKKrats still cheat. Republicans still don't seem to care. Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accou\u2026",
             "first_seen": "2026-05-21",
             "last_seen": "2026-05-27",
@@ -8637,7 +8710,7 @@
               "ken",
               "paxton"
             ],
-            "label_distinctiveness": 0.3376,
+            "label_distinctiveness": 0.3391,
             "sample_text": "The X post from polling account highlights a May 27-28, 2026 internal poll by Slingshot Strategies for Democrat James Talarico showing him leading Republican Ken Paxton 47%-44% in the Texas 2026 US Senate race among 1,670 likely voters. Las\u2026",
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
@@ -8661,7 +8734,7 @@
               "ensuring",
               "american"
             ],
-            "label_distinctiveness": 0.3349,
+            "label_distinctiveness": 0.3354,
             "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
             "first_seen": "2026-05-25",
             "last_seen": "2026-05-26",
@@ -8685,7 +8758,7 @@
               "legal",
               "congressional"
             ],
-            "label_distinctiveness": 0.33,
+            "label_distinctiveness": 0.3329,
             "sample_text": "Votebeat: A dispute over Missouri\u2019s congressional map could snowball into a legal and logistical elections crisis Secretary of State Denny Hoskins wants to use the GOP\u2019s new gerrymander in the 2026 midterms, even though a pending veto refer\u2026",
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-02",
@@ -8740,7 +8813,7 @@
               "groundwork",
               "disrupt"
             ],
-            "label_distinctiveness": 0.2231,
+            "label_distinctiveness": 0.2236,
             "sample_text": "\"Hackers .. preparing for the 2026 midterms .. campaigns, fundraising platforms, public websites and local governments could face a wave of phishing, credential theft, AI-generated deception &amp; foreign influence activity.\"",
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-02",
@@ -8819,7 +8892,7 @@
               "candidates",
               "governor"
             ],
-            "label_distinctiveness": 0.1267,
+            "label_distinctiveness": 0.1278,
             "sample_text": "California is heading to the polls this June 2nd, and because of the state\u2019s unique \"top-two\" primary system, today is shaping up to be a high-stakes turning point for the 2026 midterms. \ud83d\uddf3\ufe0f In this system, all candidates appear on one ballo\u2026",
             "first_seen": "2026-05-31",
             "last_seen": "2026-06-02",
@@ -8905,7 +8978,7 @@
               "gaslighting",
               "happy"
             ],
-            "label_distinctiveness": 0.3504,
+            "label_distinctiveness": 0.3517,
             "emerging_theme": true,
             "size": 8,
             "first_seen": "2026-05-21",
@@ -8931,7 +9004,7 @@
               "ensuring",
               "american"
             ],
-            "label_distinctiveness": 0.3349,
+            "label_distinctiveness": 0.3354,
             "emerging_theme": false,
             "size": 2,
             "first_seen": "2026-05-25",
@@ -8967,12 +9040,12 @@
             "label_terms": [
               "red",
               "let",
-              "rigged",
               "support",
               "voted",
-              "montana"
+              "montana",
+              "agenda"
             ],
-            "label_distinctiveness": 0.5256,
+            "label_distinctiveness": 0.5303,
             "emerging_theme": true,
             "size": 7,
             "first_seen": "2026-05-29",
@@ -8997,7 +9070,7 @@
               "gerrymandering",
               "straight"
             ],
-            "label_distinctiveness": 0.396,
+            "label_distinctiveness": 0.3995,
             "emerging_theme": false,
             "size": 2,
             "first_seen": "2026-05-29",
@@ -9017,7 +9090,7 @@
               "run",
               "nancy"
             ],
-            "label_distinctiveness": 0.8273,
+            "label_distinctiveness": 0.8345,
             "emerging_theme": false,
             "size": 2,
             "first_seen": "2026-05-30",
@@ -9037,7 +9110,7 @@
               "yes",
               "said"
             ],
-            "label_distinctiveness": 0.6922,
+            "label_distinctiveness": 0.6983,
             "emerging_theme": true,
             "size": 7,
             "first_seen": "2026-05-30",
@@ -9080,28 +9153,6 @@
             ]
           },
           {
-            "cluster_id": 17,
-            "label_terms": [
-              "lose",
-              "voteblue",
-              "toobigtorig",
-              "corruptgop",
-              "cheat",
-              "upcoming"
-            ],
-            "label_distinctiveness": 1.0,
-            "emerging_theme": true,
-            "size": 4,
-            "first_seen": "2026-05-31",
-            "last_seen": "2026-06-02",
-            "post_ids": [
-              99,
-              201,
-              199,
-              326
-            ]
-          },
-          {
             "cluster_id": 9,
             "label_terms": [
               "dem",
@@ -9109,7 +9160,7 @@
               "ice",
               "trying",
               "politicians",
-              "remember"
+              "vote"
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
@@ -9130,7 +9181,7 @@
               "democrat",
               "don",
               "fascist",
-              "redneck"
+              "voting"
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": false,
@@ -9183,6 +9234,30 @@
             ]
           },
           {
+            "cluster_id": 17,
+            "label_terms": [
+              "corruptgop",
+              "lose",
+              "voteblue",
+              "toobigtorig",
+              "cheat",
+              "upcoming"
+            ],
+            "label_distinctiveness": 0.6215,
+            "emerging_theme": true,
+            "size": 6,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-06-02",
+            "post_ids": [
+              99,
+              134,
+              201,
+              199,
+              326,
+              350
+            ]
+          },
+          {
             "cluster_id": 8,
             "label_terms": [
               "backlash",
@@ -9192,7 +9267,7 @@
               "roughly",
               "mexico"
             ],
-            "label_distinctiveness": 0.57,
+            "label_distinctiveness": 0.575,
             "emerging_theme": true,
             "size": 3,
             "first_seen": "2026-05-31",
@@ -9233,7 +9308,7 @@
               "ken",
               "paxton"
             ],
-            "label_distinctiveness": 0.3376,
+            "label_distinctiveness": 0.3391,
             "emerging_theme": false,
             "size": 2,
             "first_seen": "2026-05-31",
@@ -9253,7 +9328,7 @@
               "candidates",
               "governor"
             ],
-            "label_distinctiveness": 0.1267,
+            "label_distinctiveness": 0.1278,
             "emerging_theme": true,
             "size": 8,
             "first_seen": "2026-05-31",
@@ -9316,9 +9391,9 @@
               "days",
               "june",
               "today",
-              "vote",
               "pedos",
-              "protectors"
+              "protectors",
+              "midterms"
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": false,
@@ -9360,7 +9435,7 @@
               "watch",
               "political"
             ],
-            "label_distinctiveness": 0.757,
+            "label_distinctiveness": 0.7636,
             "emerging_theme": false,
             "size": 2,
             "first_seen": "2026-06-01",
@@ -9380,7 +9455,7 @@
               "fight",
               "americans"
             ],
-            "label_distinctiveness": 0.5567,
+            "label_distinctiveness": 0.5616,
             "emerging_theme": false,
             "size": 2,
             "first_seen": "2026-06-01",
@@ -9396,8 +9471,7 @@
               "deserts",
               "west",
               "golden",
-              "leaves",
-              "midterms"
+              "leaves"
             ],
             "label_distinctiveness": 0.5,
             "emerging_theme": false,
@@ -9417,9 +9491,9 @@
               "iran",
               "doesn",
               "donald",
-              "low"
+              "absolutely"
             ],
-            "label_distinctiveness": 0.4187,
+            "label_distinctiveness": 0.4224,
             "emerging_theme": true,
             "size": 3,
             "first_seen": "2026-06-01",
@@ -9440,7 +9514,7 @@
               "legal",
               "congressional"
             ],
-            "label_distinctiveness": 0.33,
+            "label_distinctiveness": 0.3329,
             "emerging_theme": false,
             "size": 2,
             "first_seen": "2026-06-01",
@@ -9483,7 +9557,7 @@
               "groundwork",
               "disrupt"
             ],
-            "label_distinctiveness": 0.2231,
+            "label_distinctiveness": 0.2236,
             "emerging_theme": true,
             "size": 6,
             "first_seen": "2026-06-01",
@@ -9527,7 +9601,7 @@
               "united",
               "voices"
             ],
-            "label_distinctiveness": 0.9763,
+            "label_distinctiveness": 0.9848,
             "emerging_theme": false,
             "size": 2,
             "first_seen": "2026-06-02",
@@ -9547,7 +9621,7 @@
               "despite",
               "votes"
             ],
-            "label_distinctiveness": 0.7266,
+            "label_distinctiveness": 0.7306,
             "emerging_theme": true,
             "size": 3,
             "first_seen": "2026-06-02",
@@ -9568,7 +9642,7 @@
               "coming",
               "cuts"
             ],
-            "label_distinctiveness": 0.3565,
+            "label_distinctiveness": 0.3589,
             "emerging_theme": true,
             "size": 4,
             "first_seen": "2026-06-02",
@@ -9605,11 +9679,11 @@
       },
       "benchmark": null,
       "provenance": {
-        "posts_total_db": 309,
+        "posts_total_db": 310,
         "posts_in_snapshot": 250,
         "snapshot_post_limit": 250,
         "posts_truncated": true,
-        "posts_per_author": 0.98,
+        "posts_per_author": 0.97,
         "analysis_scope": "snapshot_cohort",
         "sentiment_scope": "snapshot_cohort",
         "text_coordination_scope": "all_db_posts",
@@ -9619,8 +9693,8 @@
         "coordination_signal_count": 17,
         "distinct_theme_count": 33,
         "theme_cluster_count": 34,
-        "graph_edge_count": 156,
-        "graph_author_count": 256,
+        "graph_edge_count": 164,
+        "graph_author_count": 257,
         "graph_connected_author_count": 59,
         "graph_coverage_pct": 23.0,
         "graph_sufficient": true,
@@ -9647,7 +9721,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-02",
-      "count": 16
+      "count": 17
     }
   }
 }
