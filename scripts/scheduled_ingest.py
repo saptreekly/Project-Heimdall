@@ -250,6 +250,9 @@ async def run(config: Path, export: bool) -> int:
                 "USE_EMBEDDING_THEMES": __import__("os").environ.get(
                     "USE_EMBEDDING_THEMES", "true"
                 ),
+                "RESCORE_BEFORE_EXPORT": __import__("os").environ.get(
+                    "RESCORE_BEFORE_EXPORT", "true"
+                ),
             },
         )
 

@@ -33,6 +33,8 @@ def build_report(data: dict) -> dict:
         cib = bundle.get("cib") or {}
         themes = bundle.get("themes") or {}
         provenance = bundle.get("provenance") or {}
+        sentiment = bundle.get("sentiment") or {}
+        wow = sentiment.get("week_over_week") or {}
         total_posts += len(posts)
         rows.append(
             {
@@ -48,6 +50,9 @@ def build_report(data: dict) -> dict:
                 "emerging_themes": themes.get("emerging_theme_count"),
                 "fuzzy_clusters": provenance.get("fuzzy_cluster_count"),
                 "duplicate_clusters": provenance.get("duplicate_cluster_count"),
+                "sentiment_trend": sentiment.get("trend"),
+                "sentiment_wow_alert": wow.get("alert"),
+                "outrage_model_version": provenance.get("outrage_model_version"),
             }
         )
 
@@ -83,24 +88,28 @@ def markdown_report(report: dict) -> str:
     ]
     if report.get("cross_pollination_actors") is not None:
         lines.append(f"- **Cross-pollination actors:** {report['cross_pollination_actors']}")
-    lines.extend(["", "| Narrative | Posts | Text coord | Themes | Signals |", "| --- | ---: | ---: | ---: | --- |"])
+    lines.extend(
+        [
+            "",
+            "| Narrative | Posts | Text coord | Sentiment | Model | Signals |",
+            "| --- | ---: | ---: | --- | --- | --- |",
+        ]
+    )
     for row in report.get("narratives") or []:
         posts = row.get("posts_in_snapshot", "?")
         total = row.get("posts_total_db")
         post_cell = f"{posts}/{total}" if total and total != posts else str(posts)
         text = row.get("text_coordination")
         text_cell = f"{text:.2f}" if isinstance(text, (int, float)) else "—"
-        themes = row.get("distinct_themes")
-        emerging = row.get("emerging_themes")
-        theme_cell = (
-            f"{themes} distinct ({emerging} emerging)"
-            if themes is not None
-            else "—"
-        )
+        trend = row.get("sentiment_trend") or "—"
+        wow = row.get("sentiment_wow_alert")
+        sentiment_cell = trend if not wow else f"{trend} ({wow})"
+        model = row.get("outrage_model_version") or "—"
         fuzzy = row.get("fuzzy_clusters") or 0
         dup = row.get("duplicate_clusters") or 0
         lines.append(
-            f"| {row.get('name', '?')} | {post_cell} | {text_cell} | {theme_cell} | {fuzzy} fuzzy · {dup} dup |"
+            f"| {row.get('name', '?')} | {post_cell} | {text_cell} | {sentiment_cell} | "
+            f"{model} | {fuzzy} fuzzy · {dup} dup |"
         )
     return "\n".join(lines) + "\n"
 

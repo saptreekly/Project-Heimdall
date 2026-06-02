@@ -14,8 +14,19 @@ DEFAULT_OUT = ROOT / "web" / "public" / "data" / "snapshot.json"
 
 
 async def run(out: Path) -> int:
+    import os
+
     from heimdall.db.session import get_session_factory, init_db
     from heimdall.export.dashboard_snapshot import build_dashboard_snapshot
+
+    if os.environ.get("RESCORE_BEFORE_EXPORT", "true").lower() not in ("0", "false", "no"):
+        import subprocess
+
+        subprocess.run(
+            [sys.executable, "scripts/rescore_dashboard_narratives.py", "--if-stale"],
+            cwd=ROOT,
+            check=True,
+        )
 
     await init_db()
     factory = get_session_factory()

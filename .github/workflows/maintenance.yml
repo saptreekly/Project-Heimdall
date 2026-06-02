@@ -17,6 +17,10 @@ env:
   HF_HOME: ${{ github.workspace }}/.cache/huggingface
   TRANSFORMERS_CACHE: ${{ github.workspace }}/.cache/huggingface
   SENTENCE_TRANSFORMERS_HOME: ${{ github.workspace }}/.cache/huggingface
+  USE_EMBEDDING_THEMES: "true"
+  RESCORE_BEFORE_EXPORT: "true"
+  USE_TRANSFORMER_SENTIMENT: "false"
+  DATABASE_URL: sqlite+aiosqlite:///./data/dashboard/heimdall.db
 
 jobs:
   maintain:
@@ -40,6 +44,9 @@ jobs:
             exit 1
           fi
 
+      - name: Rescore narratives (lexicon v2.3 + embed themes)
+        run: python scripts/rescore_dashboard_narratives.py --if-stale
+
       - name: Database maintenance
         run: python scripts/maintain_dashboard_db.py --markdown >> "$GITHUB_STEP_SUMMARY"
 
@@ -52,8 +59,6 @@ jobs:
             --update-baseline
 
       - name: Keyword audit + gap discovery
-        env:
-          DATABASE_URL: sqlite+aiosqlite:///./data/dashboard/heimdall.db
         run: |
           STAMP=$(date -u +%Y-%m-%d)
           python scripts/keyword_audit.py \
@@ -62,19 +67,26 @@ jobs:
             --output "reports/keyword-audit-${STAMP}.md"
 
       - name: Rotate stale keywords
-        env:
-          DATABASE_URL: sqlite+aiosqlite:///./data/dashboard/heimdall.db
         run: |
           python scripts/rotate_keywords.py \
             --narrative midterms_2026 \
             --days 7 \
             --apply >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Re-export snapshot after maintenance
+        run: python scripts/export_dashboard_data.py
+
+      - name: TweetEval lexicon benchmark (offline sample)
+        continue-on-error: true
+        run: |
+          pip install -e ".[hf]" -q
+          python scripts/benchmark_outrage.py --subset hate --subset offensive --limit 50
+
       - name: Commit maintenance outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dashboard/heimdall.db data/dashboard/theme_baseline.json data/dashboard/keyword_suggestions.json data/dashboard/x_keyword_rotation.json data/scheduled_ingest.json reports/
+          git add data/dashboard/heimdall.db data/dashboard/theme_baseline.json data/dashboard/keyword_suggestions.json data/dashboard/x_keyword_rotation.json data/scheduled_ingest.json web/public/data/snapshot.json reports/
           for f in data/dashboard/keyword_rotation_log.jsonl; do
             [ -f "$f" ] && git add "$f"
           done

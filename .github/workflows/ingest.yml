@@ -27,6 +27,9 @@ env:
   HF_HOME: ${{ github.workspace }}/.cache/huggingface
   TRANSFORMERS_CACHE: ${{ github.workspace }}/.cache/huggingface
   SENTENCE_TRANSFORMERS_HOME: ${{ github.workspace }}/.cache/huggingface
+  USE_EMBEDDING_THEMES: "true"
+  RESCORE_BEFORE_EXPORT: "true"
+  USE_TRANSFORMER_SENTIMENT: "false"
 
 jobs:
   ingest:
@@ -75,13 +78,14 @@ jobs:
           X_RATE_STATE_PATH: data/dashboard/x_rate_state.json
           X_ROTATION_STATE_PATH: data/dashboard/x_keyword_rotation.json
           X_SCHEDULED_KEYWORDS_PER_RUN: "1"
-          USE_EMBEDDING_THEMES: "true"
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           CT0: ${{ secrets.CT0 }}
           X_INGEST_ENABLED: "true"
         run: python scripts/scheduled_ingest.py
 
       - name: Verify dashboard snapshot
+        env:
+          SNAPSHOT_SENTIMENT_STRICT: "true"
         run: python scripts/verify_snapshot.py
 
       - name: Commit ingest data to repo
@@ -90,6 +94,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/dashboard/heimdall.db data/dashboard/x_rate_state.json data/dashboard/x_keyword_rotation.json web/public/data/snapshot.json
+          if [ -f data/dashboard/SENTIMENT_WATCHLIST.md ]; then
+            git add data/dashboard/SENTIMENT_WATCHLIST.md data/dashboard/sentiment_watchlist_state.json
+          fi
           if [ -f data/dashboard/ingest_runs.jsonl ]; then
             git add data/dashboard/ingest_runs.jsonl
           fi

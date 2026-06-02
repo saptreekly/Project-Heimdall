@@ -16,7 +16,7 @@ from heimdall.ingestion.x import XIngester
 from heimdall.ingestion.x_guard import XIngestPlan
 from heimdall.ingestion.schemas import RawPost
 from heimdall.ingestion.text_clean import clean_post_text
-from heimdall.nlp.outrage import OutrageAnalyzer
+from heimdall.nlp.outrage import OutrageAnalyzer, build_outrage_analyzer
 
 
 def _dialect_insert(table):
@@ -77,10 +77,7 @@ class IngestionPipeline:
             settings.ingest_requests_per_minute,
             settings.ingest_burst,
         )
-        self._analyzer = analyzer or OutrageAnalyzer(
-            use_embeddings=settings.use_embedding_themes,
-            embedding_model=settings.embedding_model,
-        )
+        self._analyzer = analyzer or build_outrage_analyzer(settings)
 
     async def ensure_narrative(self, name: str, keywords: list[str]) -> Narrative:
         result = await self._session.execute(select(Narrative).where(Narrative.name == name))
@@ -144,7 +141,7 @@ class IngestionPipeline:
 
         await self._session.commit()
 
-        if self._analyzer.use_embeddings and scored >= 3:
+        if inserted > 0 or (self._analyzer.use_embeddings and scored >= 3):
             rescore_result = await self._analyzer.rescore_narrative(self._session, narrative.id)
             scored = rescore_result.get("rescored", scored)
 

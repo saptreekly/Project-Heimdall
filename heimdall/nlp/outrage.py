@@ -3,32 +3,53 @@ from dataclasses import dataclass
 from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from heimdall.config import Settings, get_settings
 from heimdall.db.models import OutrageScore, Post
 from heimdall.nlp.lexicon import (
     AFFECTION,
     ANTI_AUTHORITY,
+    CONSPIRACY,
     DEHUMANIZING,
     HIGH_CONFLICT,
     NEGATIVE_LEXICON,
     RAGEBAIT_MARKERS,
     STANCE_POLARIZATION,
     STANDALONE_BITCH,
+    THREAT_VIOLENCE,
     TOXIC_PROFANITY,
 )
 
-MODEL_VERSION = "heimdall-lexicon-v2.2"
+MODEL_VERSION = "heimdall-lexicon-v2.3"
 MODEL_VERSION_EMBED = f"{MODEL_VERSION}+embed-cluster"
+MODEL_VERSION_TRANSFORMER = f"{MODEL_VERSION}+twitter-roberta"
+
+ESCALATION_TIERS = frozenset({"neutral", "escalating", "high_conflict", "emerging_theme"})
+POLARITIES = frozenset({"negative", "neutral", "positive"})
 
 
 @dataclass
 class OutrageResult:
     outrage_index: float
     sentiment_label: str
+    polarity: str
+    escalation_tier: str
+    negativity_score: float
+    ragebait_score: float
+    stance_score: float
     dehumanization_score: float
     anti_authority_score: float
     conflict_escalation: float
     theme_boost: float = 0.0
     emerging_theme: bool = False
+
+
+def build_outrage_analyzer(settings: Settings | None = None) -> "OutrageAnalyzer":
+    cfg = settings or get_settings()
+    return OutrageAnalyzer(
+        use_transformers=cfg.use_transformer_sentiment,
+        use_embeddings=cfg.use_embedding_themes,
+        embedding_model=cfg.embedding_model,
+    )
 
 
 class OutrageAnalyzer:
@@ -46,6 +67,7 @@ class OutrageAnalyzer:
         embedding_model: str | None = None,
     ) -> None:
         self._sentiment_pipe = None
+        self.use_transformers = use_transformers
         self.use_embeddings = use_embeddings
         self._embedding_model = embedding_model
         if use_transformers:
@@ -71,7 +93,7 @@ class OutrageAnalyzer:
         emerging_theme: bool = False,
     ) -> OutrageResult:
         if not text:
-            return OutrageResult(0.0, "neutral", 0.0, 0.0, 0.0)
+            return self._empty_result()
 
         dehuman = min(1.0, len(DEHUMANIZING.findall(text)) * 0.4)
         anti_auth = min(1.0, len(ANTI_AUTHORITY.findall(text)) * 0.35)
@@ -81,42 +103,60 @@ class OutrageAnalyzer:
         if STANDALONE_BITCH.search(text) and not AFFECTION.search(text):
             toxic = min(1.0, toxic + 0.2)
         stance = min(1.0, len(STANCE_POLARIZATION.findall(text)) * 0.28)
+        conspiracy = min(1.0, len(CONSPIRACY.findall(text)) * 0.25)
+        threat = min(1.0, len(THREAT_VIOLENCE.findall(text)) * 0.4)
 
-        sentiment_label, neg_weight = self._sentiment(text)
+        polarity, negativity_score = self._polarity(text)
         caps_ratio = sum(1 for c in text if c.isupper()) / max(len(text), 1)
         punctuation_spike = min(1.0, text.count("!") * 0.12)
 
         has_escalation_signal = (
-            neg_weight > 0.15 or dehuman > 0 or anti_auth > 0 or toxic > 0 or rage > 0
+            negativity_score > 0.15
+            or dehuman > 0
+            or anti_auth > 0
+            or toxic > 0
+            or rage > 0
+            or threat > 0
         )
-        caps_boost = min(0.2, caps_ratio * 1.2) if has_escalation_signal else min(0.06, caps_ratio * 0.4)
+        caps_boost = (
+            min(0.2, caps_ratio * 1.2) if has_escalation_signal else min(0.06, caps_ratio * 0.4)
+        )
 
-        conflict_escalation = min(1.0, conflict + rage * 0.45 + toxic * 0.5 + caps_boost)
+        ragebait_score = min(1.0, rage + punctuation_spike * 0.35)
+        conflict_escalation = min(
+            1.0,
+            conflict + rage * 0.45 + toxic * 0.5 + caps_boost + conspiracy * 0.2 + threat * 0.35,
+        )
         outrage_index = min(
             1.0,
-            0.18 * neg_weight
+            0.18 * negativity_score
             + 0.2 * dehuman
             + 0.16 * anti_auth
             + 0.2 * conflict_escalation
             + 0.08 * punctuation_spike
             + 0.1 * toxic
             + 0.08 * stance
+            + 0.1 * conspiracy
+            + 0.12 * threat
             + theme_boost,
         )
 
         if AFFECTION.search(text):
             outrage_index = min(outrage_index, outrage_index * 0.5 + 0.05)
+            if polarity == "negative" and outrage_index < 0.2:
+                polarity = "neutral"
 
-        if outrage_index >= 0.55:
-            sentiment_label = "high_conflict"
-        elif outrage_index >= 0.32:
-            sentiment_label = "escalating"
-        elif emerging_theme and outrage_index >= 0.22:
-            sentiment_label = "emerging_theme"
+        escalation_tier = self._escalation_tier(outrage_index, emerging_theme)
+        sentiment_label = escalation_tier
 
         return OutrageResult(
             outrage_index=round(outrage_index, 4),
             sentiment_label=sentiment_label,
+            polarity=polarity,
+            escalation_tier=escalation_tier,
+            negativity_score=round(negativity_score, 4),
+            ragebait_score=round(ragebait_score, 4),
+            stance_score=round(stance, 4),
             dehumanization_score=round(dehuman, 4),
             anti_authority_score=round(anti_auth, 4),
             conflict_escalation=round(conflict_escalation, 4),
@@ -124,20 +164,52 @@ class OutrageAnalyzer:
             emerging_theme=emerging_theme,
         )
 
-    def _sentiment(self, text: str) -> tuple[str, float]:
+    @staticmethod
+    def _empty_result() -> OutrageResult:
+        return OutrageResult(
+            0.0,
+            "neutral",
+            "neutral",
+            "neutral",
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+        )
+
+    @staticmethod
+    def _escalation_tier(outrage_index: float, emerging_theme: bool) -> str:
+        if outrage_index >= 0.55:
+            return "high_conflict"
+        if outrage_index >= 0.32:
+            return "escalating"
+        if emerging_theme and outrage_index >= 0.22:
+            return "emerging_theme"
+        return "neutral"
+
+    def _polarity(self, text: str) -> tuple[str, float]:
         if self._sentiment_pipe:
             try:
                 out = self._sentiment_pipe(text[:512])[0]
                 label = out["label"].lower()
                 score = float(out["score"])
-                neg = score if "neg" in label else (1 - score) * 0.3
-                return label, neg
+                if "neg" in label:
+                    return "negative", score
+                if "pos" in label:
+                    return "positive", max(0.0, (1.0 - score) * 0.15)
+                return "neutral", max(0.0, (1.0 - score) * 0.25)
             except Exception:
                 pass
+
         negative_words = len(NEGATIVE_LEXICON.findall(text))
         neg_weight = min(1.0, negative_words * 0.22)
-        label = "negative" if neg_weight > 0.25 else "neutral"
-        return label, neg_weight
+        if AFFECTION.search(text) and neg_weight < 0.35:
+            return "positive", max(0.0, neg_weight * 0.5)
+        if neg_weight > 0.2:
+            return "negative", neg_weight
+        return "neutral", neg_weight
 
     def _theme_context(
         self,
@@ -145,7 +217,6 @@ class OutrageAnalyzer:
     ) -> tuple[dict[int, float], dict[int, bool]]:
         if not self.use_embeddings or len(post_list) < 3:
             return {}, {}
-        from heimdall.config import get_settings
         from heimdall.nlp.embeddings import DEFAULT_EMBEDDING_MODEL
         from heimdall.nlp.theme_clusters import cluster_posts
 
@@ -190,6 +261,11 @@ class OutrageAnalyzer:
                 post_id=post_id,
                 outrage_index=result.outrage_index,
                 sentiment_label=result.sentiment_label,
+                polarity=result.polarity,
+                escalation_tier=result.escalation_tier,
+                negativity_score=result.negativity_score,
+                ragebait_score=result.ragebait_score,
+                stance_score=result.stance_score,
                 dehumanization_score=result.dehumanization_score,
                 anti_authority_score=result.anti_authority_score,
                 conflict_escalation=result.conflict_escalation,
@@ -198,7 +274,11 @@ class OutrageAnalyzer:
         )
 
     def _model_version(self) -> str:
-        return MODEL_VERSION_EMBED if self.use_embeddings else MODEL_VERSION
+        if self.use_embeddings:
+            return MODEL_VERSION_EMBED
+        if self.use_transformers and self._sentiment_pipe:
+            return MODEL_VERSION_TRANSFORMER
+        return MODEL_VERSION
 
     async def rescore_narrative(self, session: AsyncSession, narrative_id: int) -> dict:
         posts = await session.execute(select(Post).where(Post.narrative_id == narrative_id))
@@ -226,4 +306,5 @@ class OutrageAnalyzer:
             "rescored": len(post_list),
             "model_version": version,
             "embedding_themes": bool(boosts),
+            "transformer_sentiment": bool(self._sentiment_pipe),
         }

@@ -27,6 +27,12 @@ jobs:
       - name: Verify snapshot structure
         run: python scripts/verify_snapshot.py
 
+      - name: Warn on legacy sentiment schema
+        continue-on-error: true
+        env:
+          SNAPSHOT_SENTIMENT_STRICT: "true"
+        run: python scripts/verify_snapshot.py
+
       - name: Snapshot report
         run: python scripts/snapshot_report.py --format github-summary
 

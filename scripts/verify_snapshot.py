@@ -13,12 +13,53 @@ SNAPSHOT = ROOT / "web" / "public" / "data" / "snapshot.json"
 PREVIOUS = ROOT / "data" / "dashboard" / ".snapshot_smoke_previous.json"
 
 
+def validate_sentiment_bundle(bundle: dict, *, strict: bool = False) -> list[str]:
+    """Return list of validation errors (empty if OK)."""
+    errors: list[str] = []
+    sentiment = bundle.get("sentiment")
+    if not isinstance(sentiment, dict):
+        return ["missing sentiment object"] if strict else errors
+
+    for key in ("buckets", "trend"):
+        if key not in sentiment:
+            errors.append(f"sentiment missing {key}")
+
+    if strict:
+        for key in ("divergence_days", "week_over_week"):
+            if key not in sentiment:
+                errors.append(f"sentiment missing {key}")
+        posts = bundle.get("posts") or []
+        if posts:
+            sample = posts[0]
+            for key in ("polarity", "escalation_tier", "negativity_score"):
+                if key not in sample:
+                    errors.append(f"post missing {key}")
+        provenance = bundle.get("provenance") or {}
+        version = str(provenance.get("outrage_model_version") or "")
+        if version and not version.startswith("heimdall-lexicon-v2.3"):
+            errors.append(f"outrage_model_version not v2.3: {version}")
+    return errors
+
+
 def main() -> int:
-    if not SNAPSHOT.is_file():
-        print(f"Missing {SNAPSHOT}", file=sys.stderr)
+    import os
+
+    parser = __import__("argparse").ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "-s",
+        "--snapshot",
+        type=Path,
+        default=SNAPSHOT,
+        help="Path to snapshot.json (default: web/public/data/snapshot.json)",
+    )
+    args = parser.parse_args()
+    snapshot_path = args.snapshot
+
+    if not snapshot_path.is_file():
+        print(f"Missing {snapshot_path}", file=sys.stderr)
         return 1
 
-    data = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
+    data = json.loads(snapshot_path.read_text(encoding="utf-8"))
     generated = data.get("generated_at")
     if not generated:
         print("snapshot.json missing generated_at", file=sys.stderr)
@@ -38,6 +79,29 @@ def main() -> int:
     if total_posts < 1:
         print("snapshot.json has zero posts across narratives", file=sys.stderr)
         return 1
+
+    strict = os.environ.get("SNAPSHOT_SENTIMENT_STRICT", "").lower() in (
+        "1",
+        "true",
+        "yes",
+    )
+    for summary in narratives:
+        nid = str(summary["id"])
+        bundle = data.get("by_narrative_id", {}).get(nid, {})
+        errors = validate_sentiment_bundle(bundle, strict=strict)
+        for err in errors:
+            msg = f"narrative {summary.get('name', nid)}: {err}"
+            if strict:
+                print(msg, file=sys.stderr)
+            else:
+                print(f"Warning: {msg}", file=sys.stderr)
+
+    if strict:
+        for summary in narratives:
+            nid = str(summary["id"])
+            bundle = data.get("by_narrative_id", {}).get(nid, {})
+            if validate_sentiment_bundle(bundle, strict=True):
+                return 1
 
     print(f"OK: {len(narratives)} narrative(s), {total_posts} posts, generated_at={generated}")
 

@@ -22,10 +22,10 @@ from heimdall.api.schemas import (
 from heimdall.config import get_settings
 from heimdall.datasets.astroturf import count_known_bots, import_astroturf
 from heimdall.datasets.tweet_eval import ALL_SUBSETS, RAGEBAIT_SUBSETS, parse_tweet_eval_meta
-from heimdall.nlp.calibrate import tweet_eval_calibration
+from heimdall.nlp.calibrate import benchmark_outrage_on_tweet_eval, tweet_eval_calibration
 from heimdall.nlp.embeddings import EmbeddingUnavailableError
 from heimdall.nlp.narrative_themes import narrative_theme_clusters
-from heimdall.nlp.outrage import OutrageAnalyzer
+from heimdall.nlp.outrage import build_outrage_analyzer
 from heimdall.db.models import Narrative, Platform, Post
 from heimdall.db.session import get_db
 from heimdall.graph.export import build_graph_export
@@ -147,6 +147,8 @@ async def x_usage() -> dict:
 async def list_posts(
     narrative_id: int,
     min_outrage: float | None = None,
+    escalation_tier: str | None = None,
+    polarity: str | None = None,
     db: AsyncSession = Depends(get_db),
 ) -> list[PostOut]:
     q = (
@@ -163,6 +165,10 @@ async def list_posts(
         score = p.scores[0] if p.scores else None
         if min_outrage is not None and (not score or score.outrage_index < min_outrage):
             continue
+        if escalation_tier and (not score or score.escalation_tier != escalation_tier):
+            continue
+        if polarity and (not score or score.polarity != polarity):
+            continue
         meta = parse_tweet_eval_meta(p.raw_json)
         out.append(
             PostOut(
@@ -173,6 +179,14 @@ async def list_posts(
                 posted_at=p.posted_at,
                 outrage_index=score.outrage_index if score else None,
                 sentiment_label=score.sentiment_label if score else None,
+                polarity=score.polarity if score else None,
+                escalation_tier=score.escalation_tier if score else None,
+                negativity_score=score.negativity_score if score else None,
+                ragebait_score=score.ragebait_score if score else None,
+                stance_score=score.stance_score if score else None,
+                dehumanization_score=score.dehumanization_score if score else None,
+                anti_authority_score=score.anti_authority_score if score else None,
+                conflict_escalation=score.conflict_escalation if score else None,
                 benchmark_label=meta.get("label_name") if meta else None,
             )
         )
@@ -285,10 +299,7 @@ async def rescore_narrative(narrative_id: int, db: AsyncSession = Depends(get_db
     if not exists.scalar_one_or_none():
         raise HTTPException(status_code=404, detail="Narrative not found")
     settings = get_settings()
-    analyzer = OutrageAnalyzer(
-        use_embeddings=settings.use_embedding_themes,
-        embedding_model=settings.embedding_model,
-    )
+    analyzer = build_outrage_analyzer(settings)
     try:
         return await analyzer.rescore_narrative(db, narrative_id)
     except (EmbeddingUnavailableError, RuntimeError) as exc:
@@ -310,6 +321,26 @@ async def narrative_themes(narrative_id: int, db: AsyncSession = Depends(get_db)
 @router.get("/narratives/{narrative_id}/calibration")
 async def outrage_calibration(narrative_id: int, db: AsyncSession = Depends(get_db)) -> dict:
     return await tweet_eval_calibration(db, narrative_id)
+
+
+@router.get("/benchmarks/tweet-eval")
+async def tweet_eval_benchmark(
+    subset: str | None = None,
+    split: str | None = None,
+    limit: int = 200,
+) -> dict:
+    """Offline TweetEval benchmark without DB (requires datasets optional dep)."""
+    settings = get_settings()
+    subsets = [subset] if subset else None
+    try:
+        return benchmark_outrage_on_tweet_eval(
+            subsets,
+            split=split or settings.tweet_eval_split,
+            limit_per_subset=min(max(limit, 10), 500),
+            use_transformers=settings.use_transformer_sentiment,
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
 
 
 @router.get("/datasets/astroturf/stats")

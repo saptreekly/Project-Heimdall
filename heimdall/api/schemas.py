@@ -45,6 +45,14 @@ class PostOut(BaseModel):
     posted_at: datetime
     outrage_index: float | None = None
     sentiment_label: str | None = None
+    polarity: str | None = None
+    escalation_tier: str | None = None
+    negativity_score: float | None = None
+    ragebait_score: float | None = None
+    stance_score: float | None = None
+    dehumanization_score: float | None = None
+    anti_authority_score: float | None = None
+    conflict_escalation: float | None = None
     benchmark_label: str | None = None
     near_duplicate_group: int | None = None
     cross_author_fuzzy_cluster: int | None = None

@@ -114,8 +114,11 @@ jobs:
         env:
           DATABASE_URL: sqlite+aiosqlite:///./data/dashboard/heimdall.db
           USE_EMBEDDING_THEMES: "true"
+          RESCORE_BEFORE_EXPORT: "true"
+          USE_TRANSFORMER_SENTIMENT: "false"
         run: |
           python scripts/export_dashboard_data.py -o /tmp/snapshot-export.json
+          SNAPSHOT_SENTIMENT_STRICT=true python scripts/verify_snapshot.py -s /tmp/snapshot-export.json
           python -c "
           import json
           from pathlib import Path
@@ -126,5 +129,12 @@ jobs:
           bundle = data['by_narrative_id'][nid]
           assert 'provenance' in bundle
           assert 'text_coordination_score' in bundle['cib']
+          sentiment = bundle['sentiment']
+          assert 'divergence_days' in sentiment
+          assert 'week_over_week' in sentiment
+          posts = bundle.get('posts') or []
+          if posts:
+              assert 'escalation_tier' in posts[0]
+              assert 'polarity' in posts[0]
           print('Export regression OK:', data.get('version'), len(data['narratives']), 'narratives')
           "

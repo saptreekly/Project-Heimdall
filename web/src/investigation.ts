@@ -5,6 +5,7 @@ export interface InvestigationFilter {
   date: string | null;
   postIds: number[] | null;
   label: string | null;
+  escalationTier: string | null;
   hoursBack: number | null;
   burstOnly: boolean;
 }
@@ -17,6 +18,7 @@ let filter: InvestigationFilter = {
   date: null,
   postIds: null,
   label: null,
+  escalationTier: null,
   hoursBack: null,
   burstOnly: false,
 };
@@ -58,6 +60,7 @@ export function selectAuthor(authorId: string, label?: string): void {
     authorId,
     date: null,
     postIds: null,
+    escalationTier: null,
     label: label ?? `Author ${authorId.slice(0, 12)}`,
     burstOnly: false,
   };
@@ -70,6 +73,7 @@ export function selectDate(date: string): void {
     authorId: null,
     date,
     postIds: null,
+    escalationTier: null,
     label: `Date ${date}`,
     burstOnly: false,
   };
@@ -82,6 +86,7 @@ export function selectThemeCluster(label: string, postIds: number[]): void {
     authorId: null,
     date: null,
     postIds,
+    escalationTier: null,
     label: `Theme: ${label}`,
     burstOnly: false,
   };
@@ -94,8 +99,22 @@ export function selectDuplicateCluster(label: string, postIds: number[], burst: 
     authorId: null,
     date: null,
     postIds,
+    escalationTier: null,
     label: burst ? `Burst: ${label}` : `Duplicate: ${label}`,
     burstOnly: burst,
+  };
+  notify();
+}
+
+export function selectEscalationTier(tier: string | null, label?: string): void {
+  filter = {
+    ...filter,
+    authorId: null,
+    date: null,
+    postIds: null,
+    escalationTier: tier,
+    label: label ?? (tier ? `Tier: ${tier.replace(/_/g, " ")}` : null),
+    burstOnly: false,
   };
   notify();
 }
@@ -110,6 +129,7 @@ export function clearInvestigationFilter(): void {
     !filter.authorId &&
     !filter.date &&
     !filter.postIds?.length &&
+    !filter.escalationTier &&
     !filter.hoursBack &&
     !filter.burstOnly
   ) {
@@ -120,6 +140,7 @@ export function clearInvestigationFilter(): void {
     date: null,
     postIds: null,
     label: null,
+    escalationTier: null,
     hoursBack: null,
     burstOnly: false,
   };
@@ -138,6 +159,13 @@ export function filterPosts(posts: Post[] = allPosts): Post[] {
     const ids = new Set(filter.postIds);
     out = out.filter((p) => ids.has(p.id));
   }
+  if (filter.escalationTier) {
+    out = out.filter(
+      (p) =>
+        (p.escalation_tier ?? p.sentiment_label ?? "neutral") ===
+        filter.escalationTier
+    );
+  }
   if (filter.hoursBack != null && filter.hoursBack > 0) {
     out = out.filter((p) => postAgeHours(p.posted_at) <= filter.hoursBack!);
   }
@@ -149,6 +177,7 @@ export function hasActiveFilter(): boolean {
     filter.authorId ||
       filter.date ||
       filter.postIds?.length ||
+      filter.escalationTier ||
       filter.hoursBack ||
       filter.burstOnly
   );

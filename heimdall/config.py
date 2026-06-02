@@ -51,6 +51,9 @@ class Settings(BaseSettings):
     use_embedding_themes: bool = False
     embedding_model: str = "all-MiniLM-L6-v2"
 
+    # Hugging Face twitter-roberta sentiment (pip install -e ".[ml-hf]")
+    use_transformer_sentiment: bool = False
+
     # Near-duplicate / fuzzy Jaccard (export default; dashboard can tune live)
     near_duplicate_jaccard_threshold: float = 0.82
     near_duplicate_jaccard_min: float = 0.55

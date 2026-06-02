@@ -32,7 +32,7 @@ flowchart LR
 | Layer | Role |
 |-------|------|
 | **Ingestion** | Async pipeline with token-bucket rate limiting, text normalization, upsert into Postgres |
-| **NLP** | Lexicon + optional Hugging Face sentiment → outrage index, dehumanization, anti-authority signals |
+| **NLP** | Lexicon v2.3 (+ conspiracy/threat families) → outrage index, polarity, escalation tier, component scores; optional Hugging Face twitter-roberta sentiment |
 | **Graph** | Author-level directed graph from shares/replies; density/hub/cluster heuristics for CIB |
 
 ## Quick start (no Docker)
@@ -211,8 +211,14 @@ Neo4j authors get `known_bot` and `bot_label` when matched.
 | `NEO4J_*` | Graph export via `POST /narratives/{id}/graph/neo4j` |
 | `MASTODON_INSTANCE_URL` | Instance for hashtag timelines |
 | `DEFAULT_INGESTER` | `hackernews`, `mastodon`, `mock`, etc. |
+| `USE_EMBEDDING_THEMES` | Enable embed theme clustering on export/rescore (CI: `true`) |
+| `RESCORE_BEFORE_EXPORT` | Rescore stale narratives before snapshot export (CI: `true`) |
+| `USE_TRANSFORMER_SENTIMENT` | Optional twitter-roberta polarity (`pip install -e ".[ml-hf]"`; CI: `false`) |
+| `SNAPSHOT_SENTIMENT_STRICT` | Fail `verify_snapshot.py` if sentiment v2.3 fields are missing |
 
 Theme clustering: set `USE_EMBEDDING_THEMES=true` when exporting the dashboard snapshot. Base install uses **TF-IDF + DBSCAN/KMeans** when neural embeddings are unavailable; `pip install -e ".[ml]"` (Python 3.11–3.12) adds **sentence-transformers** (`all-MiniLM-L6-v2`). CI enables themes automatically. API: `GET /api/v1/narratives/{id}/themes`.
+
+**Sentiment automation (GitHub Actions):** ingest and export workflows set `USE_EMBEDDING_THEMES=true` and `RESCORE_BEFORE_EXPORT=true`, so each run rescores stale posts to `heimdall-lexicon-v2.3+embed-cluster` before writing `snapshot.json`. Weekly **maintenance** rescores + re-exports and runs a TweetEval benchmark sample. **daily-analytics** updates `data/dashboard/SENTIMENT_WATCHLIST.md` and opens `sentiment-alert` issues on WoW/trend crossings.
 
 ## Legal & ethical use
 

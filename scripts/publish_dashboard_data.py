@@ -38,6 +38,7 @@ def main() -> int:
         **__import__("os").environ,
         "DATABASE_URL": f"sqlite+aiosqlite:///{TARGET_DB.resolve()}",
         "USE_EMBEDDING_THEMES": __import__("os").environ.get("USE_EMBEDDING_THEMES", "true"),
+        "RESCORE_BEFORE_EXPORT": __import__("os").environ.get("RESCORE_BEFORE_EXPORT", "true"),
     }
     subprocess.run(
         [sys.executable, "scripts/export_dashboard_data.py"],

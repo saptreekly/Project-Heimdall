@@ -76,6 +76,7 @@ import {
   selectAuthor,
   selectDate,
   selectDuplicateCluster,
+  selectEscalationTier,
   selectThemeCluster,
   setHoursBack,
   setInvestigationPosts,
@@ -108,7 +109,8 @@ import {
   renderPriorityTargetList,
 } from "./prioritization-scatter";
 import { computeOutrageDiagnostics } from "./outrage-diagnostics";
-import { mountSentimentChart, sentimentChartPanelHtml } from "./sentiment-chart";
+import { buildSentimentAlerts } from "./sentiment-alerts";
+import { mountSentimentChart, mountSentimentTierChart, sentimentChartPanelHtml } from "./sentiment-chart";
 import {
   bindGlobalInvestigationClear,
   globalInvestigationBarHtml,
@@ -610,6 +612,14 @@ function bindPostToolbar(): void {
     postListLimit = POST_LIST_MAX;
     updatePostsPanel();
   });
+  document.querySelectorAll<HTMLButtonElement>(".tier-filter").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tier = btn.dataset.tier || null;
+      selectEscalationTier(tier, tier ? `Tier: ${tier.replace(/_/g, " ")}` : undefined);
+      document.querySelectorAll(".tier-filter").forEach((b) => b.classList.remove("tier-filter-active"));
+      btn.classList.add("tier-filter-active");
+    });
+  });
 }
 
 function refreshBriefPanel(): void {
@@ -780,7 +790,10 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     lastCriticalCount = criticalCount;
     lastAnomalyCount = dupCount + fuzzyCount + crossActorCount;
 
-    const alertRows = buildAlertRows(amp, cib, lastNearDup, crossPollination, themes);
+    const alertRows = [
+      ...buildSentimentAlerts(sentiment),
+      ...buildAlertRows(amp, cib, lastNearDup, crossPollination, themes),
+    ];
     const sectionBadges: SectionBadges = {
       signals: criticalCount || undefined,
       anomalies: lastAnomalyCount || undefined,
@@ -803,7 +816,11 @@ async function loadDashboard(narrativeId: number): Promise<void> {
           </section>
         </div>
         ${renderProvenancePanelHtml(provenance, cib)}
-        ${sentimentChartPanelHtml(escapeHtml(sentiment.trend), outrageDiag)}
+        ${sentimentChartPanelHtml(
+          escapeHtml(sentiment.trend),
+          outrageDiag,
+          sentiment.week_over_week?.alert
+        )}
         ${renderAlertInboxHtml(alertRows)}
         ${cibSnapshotHtml(cib)}
         ${panelRollupHtml(
@@ -855,6 +872,13 @@ async function loadDashboard(narrativeId: number): Promise<void> {
             </button>
           </div>
           ${postsPanelCalloutHtml()}
+          <div class="sentiment-tier-filters" id="sentiment-tier-filters">
+            <span class="filter-label">Escalation tier</span>
+            <button type="button" class="btn btn-secondary btn-small tier-filter" data-tier="">All</button>
+            <button type="button" class="btn btn-secondary btn-small tier-filter" data-tier="escalating">Escalating</button>
+            <button type="button" class="btn btn-secondary btn-small tier-filter" data-tier="high_conflict">High conflict</button>
+            <button type="button" class="btn btn-secondary btn-small tier-filter" data-tier="emerging_theme">Emerging theme</button>
+          </div>
           <div id="post-list-host"></div>
           <button type="button" id="load-more-posts" class="btn btn-secondary btn-small load-more-posts" hidden>
             Show more posts
@@ -888,6 +912,12 @@ async function loadDashboard(narrativeId: number): Promise<void> {
             (date) => selectDate(date),
             outrageDiag
           );
+        }
+        const tierCanvas = document.getElementById(
+          "sentiment-tier-chart"
+        ) as HTMLCanvasElement | null;
+        if (tierCanvas) {
+          mountSentimentTierChart(tierCanvas, sentiment.buckets);
         }
         const themesHost = document.getElementById("themes-timeline-host");
         if (themesHost && themesHost.dataset.mounted !== "1") {

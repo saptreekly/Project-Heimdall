@@ -101,9 +101,18 @@ async def narrative_posts(db: AsyncSession, narrative_id: int) -> list[PostOut]:
     out: list[PostOut] = []
     for pid, platform_raw, external_id, author_id, text, posted_at, raw_json in raw_rows:
         score_row = await db.execute(
-            select(OutrageScore.outrage_index, OutrageScore.sentiment_label).where(
-                OutrageScore.post_id == pid
-            )
+            select(
+                OutrageScore.outrage_index,
+                OutrageScore.sentiment_label,
+                OutrageScore.polarity,
+                OutrageScore.escalation_tier,
+                OutrageScore.negativity_score,
+                OutrageScore.ragebait_score,
+                OutrageScore.stance_score,
+                OutrageScore.dehumanization_score,
+                OutrageScore.anti_authority_score,
+                OutrageScore.conflict_escalation,
+            ).where(OutrageScore.post_id == pid)
         )
         score = score_row.first()
         meta = parse_tweet_eval_meta(raw_json)
@@ -120,6 +129,14 @@ async def narrative_posts(db: AsyncSession, narrative_id: int) -> list[PostOut]:
                 posted_at=posted_at,
                 outrage_index=score[0] if score else None,
                 sentiment_label=score[1] if score else None,
+                polarity=score[2] if score else None,
+                escalation_tier=score[3] if score else None,
+                negativity_score=score[4] if score else None,
+                ragebait_score=score[5] if score else None,
+                stance_score=score[6] if score else None,
+                dehumanization_score=score[7] if score else None,
+                anti_authority_score=score[8] if score else None,
+                conflict_escalation=score[9] if score else None,
                 benchmark_label=meta.get("label_name") if meta else None,
                 near_duplicate_group=near_map.get(pid),
                 cross_author_fuzzy_cluster=cross_map.get(pid),

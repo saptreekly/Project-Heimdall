@@ -8,6 +8,7 @@ import {
   BarElement,
   CategoryScale,
   Chart,
+  Filler,
   Legend,
   LinearScale,
   LineController,
@@ -26,16 +27,26 @@ Chart.register(
   CategoryScale,
   LinearScale,
   Legend,
-  Tooltip
+  Tooltip,
+  Filler
 );
 
 export interface SentimentBucket {
   date: string;
   mean_outrage: number;
   count: number;
+  mean_negativity?: number;
+  mean_ragebait?: number;
+  mean_stance?: number;
+  mean_dehumanization?: number;
+  mean_anti_authority?: number;
+  tier_counts?: Record<string, number>;
+  polarity_counts?: Record<string, number>;
+  volume_outrage_divergence?: boolean;
 }
 
 let activeChart: Chart | null = null;
+let activeTierChart: Chart | null = null;
 
 const COLORS = {
   text: "#8b9cb3",
@@ -45,12 +56,27 @@ const COLORS = {
   outrageFill: "rgba(192, 57, 43, 0.12)",
   volume: "rgba(138, 155, 179, 0.5)",
   volumeBorder: "rgba(138, 155, 179, 0.85)",
+  tierNeutral: "rgba(138, 155, 179, 0.55)",
+  tierEscalating: "rgba(230, 126, 34, 0.75)",
+  tierHighConflict: "rgba(192, 57, 43, 0.85)",
+  tierEmerging: "rgba(155, 89, 182, 0.75)",
 };
+
+const TIER_ORDER = [
+  "neutral",
+  "escalating",
+  "high_conflict",
+  "emerging_theme",
+] as const;
 
 export function sentimentChartPanelHtml(
   trend: string,
-  outrageDiag: OutrageDiagnostics
+  outrageDiag: OutrageDiagnostics,
+  wowAlert?: string | null
 ): string {
+  const wowLine = wowAlert
+    ? `<p class="chart-caption sentiment-wow-alert">Week-over-week: ${escapeHtml(wowAlert.replace(/_/g, " "))}</p>`
+    : "";
   return `
     <section class="panel panel-chart-wide" id="sentiment-chart-panel">
       <h2>Sentiment shift <span class="trend-pill">${trend}</span></h2>
@@ -60,11 +86,32 @@ export function sentimentChartPanelHtml(
         ${outrageDiag.compressed ? "High bar + flat red line = volume without lexicon outrage signal." : ""}
         Click a day to filter posts below.
       </p>
+      ${wowLine}
       <div class="chart-wrap">
         <canvas id="sentiment-timeline-chart" aria-label="Daily mean outrage and post volume"></canvas>
       </div>
+      <p class="chart-caption chart-caption-sub">Stacked area: escalation tier mix per day (share of posts).</p>
+      <div class="chart-wrap chart-wrap-compact">
+        <canvas id="sentiment-tier-chart" aria-label="Daily escalation tier mix"></canvas>
+      </div>
     </section>
   `;
+}
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function tierShare(bucket: SentimentBucket, tier: string): number {
+  const counts = bucket.tier_counts;
+  if (!counts) return 0;
+  const total = TIER_ORDER.reduce((sum, key) => sum + (counts[key] ?? 0), 0);
+  if (total === 0) return 0;
+  return ((counts[tier] ?? 0) / total) * 100;
 }
 
 export function mountSentimentChart(
@@ -105,8 +152,16 @@ export function mountSentimentChart(
           label: "Posts per day",
           data: buckets.map((b) => b.count),
           yAxisID: "yVolume",
-          backgroundColor: COLORS.volume,
-          borderColor: COLORS.volumeBorder,
+          backgroundColor: buckets.map((b) =>
+            b.volume_outrage_divergence
+              ? "rgba(241, 196, 15, 0.55)"
+              : COLORS.volume
+          ),
+          borderColor: buckets.map((b) =>
+            b.volume_outrage_divergence
+              ? "rgba(241, 196, 15, 0.9)"
+              : COLORS.volumeBorder
+          ),
           borderWidth: 1,
           borderRadius: 3,
           order: 2,
@@ -155,10 +210,17 @@ export function mountSentimentChart(
             label: (item) => {
               const idx = item.dataIndex;
               const b = buckets[idx];
-              return [
+              const lines = [
                 `Mean outrage: ${b.mean_outrage.toFixed(3)}`,
                 `Posts: ${b.count}`,
               ];
+              if (b.mean_dehumanization != null) {
+                lines.push(`Dehumanization: ${b.mean_dehumanization.toFixed(3)}`);
+              }
+              if (b.volume_outrage_divergence) {
+                lines.push("Volume–outrage divergence");
+              }
+              return lines;
             },
           },
         },
@@ -210,9 +272,95 @@ export function mountSentimentChart(
   activeChart = new Chart(canvas, config);
 }
 
+export function mountSentimentTierChart(
+  canvas: HTMLCanvasElement,
+  buckets: SentimentBucket[]
+): void {
+  if (activeTierChart) {
+    activeTierChart.destroy();
+    activeTierChart = null;
+  }
+  if (buckets.length === 0 || !buckets.some((b) => b.tier_counts)) {
+    const parent = canvas.parentElement;
+    if (parent) parent.hidden = true;
+    return;
+  }
+
+  const labels = buckets.map((b) => b.date);
+  const tierColors: Record<string, string> = {
+    neutral: COLORS.tierNeutral,
+    escalating: COLORS.tierEscalating,
+    high_conflict: COLORS.tierHighConflict,
+    emerging_theme: COLORS.tierEmerging,
+  };
+  const tierLabels: Record<string, string> = {
+    neutral: "Neutral",
+    escalating: "Escalating",
+    high_conflict: "High conflict",
+    emerging_theme: "Emerging theme",
+  };
+
+  activeTierChart = new Chart(canvas, {
+    type: "line",
+    data: {
+      labels,
+      datasets: TIER_ORDER.map((tier) => ({
+        label: tierLabels[tier],
+        data: buckets.map((b) => tierShare(b, tier)),
+        borderColor: tierColors[tier],
+        backgroundColor: tierColors[tier],
+        fill: true,
+        stack: "tiers",
+        tension: 0.25,
+        pointRadius: 0,
+        borderWidth: 1,
+      })),
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: {
+          position: "top",
+          align: "end",
+          labels: { color: COLORS.text, boxWidth: 10, padding: 10 },
+        },
+        tooltip: {
+          callbacks: {
+            label: (item) =>
+              `${item.dataset.label}: ${Number(item.raw).toFixed(1)}%`,
+          },
+        },
+      },
+      scales: {
+        x: {
+          stacked: true,
+          ticks: { color: COLORS.text, maxRotation: 45 },
+          grid: { color: COLORS.gridSubtle },
+        },
+        y: {
+          stacked: true,
+          min: 0,
+          max: 100,
+          ticks: {
+            color: COLORS.text,
+            callback: (v) => `${v}%`,
+          },
+          grid: { color: COLORS.grid },
+        },
+      },
+    },
+  });
+}
+
 export function destroySentimentChart(): void {
   if (activeChart) {
     activeChart.destroy();
     activeChart = null;
+  }
+  if (activeTierChart) {
+    activeTierChart.destroy();
+    activeTierChart = null;
   }
 }

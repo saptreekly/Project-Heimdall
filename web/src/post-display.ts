@@ -38,6 +38,36 @@ function authorLabel(p: Post): string {
   return escapeHtml(authorLabelPlain(p));
 }
 
+function tierTag(p: Post): string {
+  const tier = p.escalation_tier ?? p.sentiment_label ?? "neutral";
+  if (tier === "neutral") return "";
+  const cls =
+    tier === "high_conflict"
+      ? "tag-tier-high"
+      : tier === "escalating"
+        ? "tag-tier-escalating"
+        : "tag-tier-emerging";
+  return `<span class="tag ${cls}">${escapeHtml(tier.replace(/_/g, " "))}</span>`;
+}
+
+function componentTags(p: Post): string {
+  const parts: string[] = [];
+  if (p.dehumanization_score != null && p.dehumanization_score > 0) {
+    parts.push(`dehuman ${p.dehumanization_score.toFixed(2)}`);
+  }
+  if (p.anti_authority_score != null && p.anti_authority_score > 0) {
+    parts.push(`anti-auth ${p.anti_authority_score.toFixed(2)}`);
+  }
+  if (p.ragebait_score != null && p.ragebait_score > 0.15) {
+    parts.push(`ragebait ${p.ragebait_score.toFixed(2)}`);
+  }
+  if (p.stance_score != null && p.stance_score > 0.15) {
+    parts.push(`stance ${p.stance_score.toFixed(2)}`);
+  }
+  if (parts.length === 0) return "";
+  return `<span class="tag tag-components" title="Lexicon component scores">${escapeHtml(parts.join(" · "))}</span>`;
+}
+
 function renderPostItem(p: Post, activeAuthorId: string | null, blurSensitive: boolean): string {
   const link = postStatusLink(p);
   const tweetMeta = p.external_id
@@ -65,7 +95,10 @@ function renderPostItem(p: Post, activeAuthorId: string | null, blurSensitive: b
       ${nearTag}
       ${fuzzyTag}
       ${pastaTag}
+      ${tierTag(p)}
+      ${componentTags(p)}
       <span class="outrage-tag">outrage ${p.outrage_index?.toFixed(3) ?? "n/a"}</span>
+      ${p.polarity ? `<span class="tag tag-polarity">${escapeHtml(p.polarity)}</span>` : ""}
     </div>
     <p class="post-text${sensitive ? " post-text-blurred" : ""}">${escapeHtml(truncate(p.text, 280))}</p>
     ${

@@ -20,6 +20,9 @@ env:
   HF_HOME: ${{ github.workspace }}/.cache/huggingface
   TRANSFORMERS_CACHE: ${{ github.workspace }}/.cache/huggingface
   SENTENCE_TRANSFORMERS_HOME: ${{ github.workspace }}/.cache/huggingface
+  USE_EMBEDDING_THEMES: "true"
+  RESCORE_BEFORE_EXPORT: "true"
+  USE_TRANSFORMER_SENTIMENT: "false"
 
 jobs:
   export:
@@ -63,10 +66,11 @@ jobs:
       - name: Export dashboard snapshot
         env:
           DATABASE_URL: sqlite+aiosqlite:///./data/dashboard/heimdall.db
-          USE_EMBEDDING_THEMES: "true"
         run: python scripts/export_dashboard_data.py
 
-      - name: Verify snapshot
+      - name: Verify snapshot (strict sentiment schema)
+        env:
+          SNAPSHOT_SENTIMENT_STRICT: "true"
         run: python scripts/verify_snapshot.py
 
       - name: Snapshot report

@@ -1,4 +1,4 @@
-# Daily coordination watchlist + GitHub issues on tier crossings.
+# Daily coordination watchlist + sentiment alerts + GitHub issues on tier crossings.
 name: daily-analytics
 
 on:
@@ -38,28 +38,34 @@ jobs:
             --write \
             --crossings-out /tmp/coordination_crossings.json
 
-      - name: Commit watchlist
+      - name: Update sentiment watchlist
+        run: |
+          python scripts/sentiment_watchlist.py \
+            --write \
+            --crossings-out /tmp/sentiment_crossings.json
+
+      - name: Commit watchlists
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/dashboard/WATCHLIST.md data/dashboard/watchlist_state.json
+          git add data/dashboard/SENTIMENT_WATCHLIST.md data/dashboard/sentiment_watchlist_state.json
           if git diff --staged --quiet; then
-            echo "Watchlist unchanged."
+            echo "Watchlists unchanged."
           else
-            git commit -m "chore: daily coordination watchlist update"
+            git commit -m "chore: daily coordination and sentiment watchlist update"
             git push
           fi
 
-      - name: Open issues for tier crossings
+      - name: Open issues for coordination tier crossings
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh label create coordination-alert --color FF8800 --description "Text coordination tier crossing" 2>/dev/null || true
           if [ ! -s /tmp/coordination_crossings.json ] || [ "$(cat /tmp/coordination_crossings.json)" = "[]" ]; then
-            echo "No tier crossings — skipping issues."
-            exit 0
-          fi
-          python <<'PY'
+            echo "No coordination tier crossings — skipping issues."
+          else
+            python <<'PY'
           import json
           import os
           import subprocess
@@ -89,6 +95,44 @@ jobs:
                       "--title", title,
                       "--body", body,
                       "--label", "coordination-alert",
+                  ],
+                  check=False,
+                  env={**os.environ},
+              )
+          PY
+          fi
+
+      - name: Open issues for sentiment alerts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create sentiment-alert --color C0392B --description "Sentiment trend or WoW alert" 2>/dev/null || true
+          if [ ! -s /tmp/sentiment_crossings.json ] || [ "$(cat /tmp/sentiment_crossings.json)" = "[]" ]; then
+            echo "No sentiment alerts — skipping issues."
+            exit 0
+          fi
+          python <<'PY'
+          import json
+          import os
+          import subprocess
+
+          alerts = json.loads(open("/tmp/sentiment_crossings.json").read())
+          for row in alerts:
+              title = f"Sentiment alert: {row['narrative']} — {row['kind'].replace('_', ' ')}"
+              body = (
+                  f"Automated sentiment watchlist alert.\n\n"
+                  f"- Narrative: **{row['narrative']}**\n"
+                  f"- Kind: `{row['kind']}`\n"
+                  f"- Trend: `{row.get('trend', 'n/a')}`\n"
+                  f"- Detail: {row.get('detail', '')}\n\n"
+                  f"See `data/dashboard/SENTIMENT_WATCHLIST.md` for history."
+              )
+              subprocess.run(
+                  [
+                      "gh", "issue", "create",
+                      "--title", title,
+                      "--body", body,
+                      "--label", "sentiment-alert",
                   ],
                   check=False,
                   env={**os.environ},

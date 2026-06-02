@@ -15,6 +15,14 @@ export interface Post {
   posted_at: string;
   outrage_index: number | null;
   sentiment_label: string | null;
+  polarity?: string | null;
+  escalation_tier?: string | null;
+  negativity_score?: number | null;
+  ragebait_score?: number | null;
+  stance_score?: number | null;
+  dehumanization_score?: number | null;
+  anti_authority_score?: number | null;
+  conflict_escalation?: number | null;
   benchmark_label: string | null;
   near_duplicate_group?: number | null;
   cross_author_fuzzy_cluster?: number | null;
@@ -189,8 +197,32 @@ export interface NarrativeProvenance {
 
 export interface SentimentShift {
   narrative_id: number;
-  buckets: Array<{ date: string; mean_outrage: number; count: number }>;
+  buckets: Array<{
+    date: string;
+    mean_outrage: number;
+    count: number;
+    mean_negativity?: number;
+    mean_ragebait?: number;
+    mean_stance?: number;
+    mean_dehumanization?: number;
+    mean_anti_authority?: number;
+    tier_counts?: Record<string, number>;
+    polarity_counts?: Record<string, number>;
+    volume_outrage_divergence?: boolean;
+  }>;
   trend: string;
+  divergence_days?: Array<{ date: string; count: number; mean_outrage: number }>;
+  week_over_week?: {
+    available: boolean;
+    reason?: string;
+    recent_week_mean_outrage?: number;
+    prior_week_mean_outrage?: number;
+    mean_outrage_delta?: number;
+    recent_week_posts?: number;
+    prior_week_posts?: number;
+    volume_delta_pct?: number;
+    alert?: string | null;
+  };
 }
 
 export interface DuplicateCluster {
