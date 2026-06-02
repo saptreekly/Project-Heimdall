@@ -1,17 +1,49 @@
 {
   "version": 5,
-  "generated_at": "2026-06-02T22:27:52.365168+00:00",
+  "generated_at": "2026-06-02T22:52:48.161600+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
       "keywords": "2026 midterms,midterm elections 2026,2026 midterm fraud,2026 red wave,2026 blue wave,Senate race 2026,House race 2026",
-      "post_count": 310
+      "post_count": 312
     }
   ],
   "by_narrative_id": {
     "3": {
       "posts": [
+        {
+          "id": 351,
+          "platform": "x",
+          "external_id": "2061936563484045571",
+          "author_id": "1281556502667579392",
+          "author_handle": "@RPublic2",
+          "text": "They\u2019ll be the laughing stock of the world.... Please, please tell me this has a chance of going forward. It all but guarantees an easy win for Bruce Blakeman. Insanity didn\u2019t end well in 2024 for democrats and it will not end well again in 2026. Make no mistake a red wave is coming to NYS in November.",
+          "posted_at": "2026-06-02T22:22:40",
+          "outrage_index": 0.0029,
+          "sentiment_label": "neutral",
+          "benchmark_label": null,
+          "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
+          "copypasta_score": 0.0235,
+          "status_url": "https://x.com/i/web/status/2061936563484045571"
+        },
+        {
+          "id": 352,
+          "platform": "x",
+          "external_id": "2061932833317487098",
+          "author_id": "1583964429032398849",
+          "author_handle": "@MugenSwords",
+          "text": "Add CA-22 and CA-1 and CA-6 as well. I agree that CA-40 will stay red in 2026 regardless of whether a Democrat advances or not. My prediction is that CA-40 is lean Republican (the GOP wins by 4-5 points) because of the probable blue wave year in 2026.",
+          "posted_at": "2026-06-02T22:07:50",
+          "outrage_index": 0.0057,
+          "sentiment_label": "neutral",
+          "benchmark_label": null,
+          "near_duplicate_group": null,
+          "cross_author_fuzzy_cluster": null,
+          "copypasta_score": 0.0789,
+          "status_url": "https://x.com/i/web/status/2061932833317487098"
+        },
         {
           "id": 331,
           "platform": "x",
@@ -3979,38 +4011,6 @@
           "cross_author_fuzzy_cluster": null,
           "copypasta_score": 0.0238,
           "status_url": "https://x.com/i/web/status/2061117902699495898"
-        },
-        {
-          "id": 63,
-          "platform": "x",
-          "external_id": "2061117144213913799",
-          "author_id": "21361969",
-          "author_handle": "@jcmeadows",
-          "text": "\ud83d\udea8BIG RED WAVE WIN! Missouri Supreme Court just upheld the new 7R-1D Congressional map for 2026. Democrats officially lose another seat. Redistricting is paying off big time. Keep the pressure on, we\u2019re winning!",
-          "posted_at": "2026-05-31T16:06:35",
-          "outrage_index": 0.0276,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0139,
-          "status_url": "https://x.com/i/web/status/2061117144213913799"
-        },
-        {
-          "id": 44,
-          "platform": "x",
-          "external_id": "2061115943917441384",
-          "author_id": "1828163680497737728",
-          "author_handle": "@michael_je98504",
-          "text": "Presidential elections in the U.S. are always bullish for Bitcoin, while midterm elections are always bearish for Bitcoin! The next midterm elections are in November 2026 \ud83e\uddd0\ud83e\uddd0\ud83e\uddd0!!!",
-          "posted_at": "2026-05-31T16:01:49",
-          "outrage_index": 0.0416,
-          "sentiment_label": "neutral",
-          "benchmark_label": null,
-          "near_duplicate_group": null,
-          "cross_author_fuzzy_cluster": null,
-          "copypasta_score": 0.0179,
-          "status_url": "https://x.com/i/web/status/2061115943917441384"
         }
       ],
       "cib": {
@@ -4020,7 +4020,7 @@
         "graph_suspicion_score": 0.0,
         "text_coordination_score": 0.55,
         "graph_sufficient": true,
-        "graph_coverage_pct": 23.0,
+        "graph_coverage_pct": 23.6,
         "signals": [
           "cross_author_fuzzy_2authors_2posts_j1.00",
           "cross_author_fuzzy_2authors_2posts_j1.00",
@@ -4036,8 +4036,8 @@
           "cross_author_fuzzy_2authors_2posts_j1.00",
           "cross_author_fuzzy_2authors_2posts_j0.94"
         ],
-        "node_count": 316,
-        "edge_count": 69,
+        "node_count": 320,
+        "edge_count": 71,
         "density": 0.0007,
         "top_amplifiers": [
           {
@@ -4103,11 +4103,11 @@
         ],
         "coordinated_clusters": [],
         "iu_astroturf": {
-          "authors_in_narrative": 257,
+          "authors_in_narrative": 259,
           "platforms": [
             "x"
           ],
-          "x_authors_checked": 257,
+          "x_authors_checked": 259,
           "known_political_bots": 0,
           "known_bot_ratio": 0.0,
           "labeled_accounts": [],
@@ -4119,8 +4119,8 @@
         "buckets": [
           {
             "date": "2026-05-31",
-            "mean_outrage": 0.041,
-            "count": 34
+            "mean_outrage": 0.0414,
+            "count": 32
           },
           {
             "date": "2026-06-01",
@@ -4129,8 +4129,8 @@
           },
           {
             "date": "2026-06-02",
-            "mean_outrage": 0.0439,
-            "count": 106
+            "mean_outrage": 0.0432,
+            "count": 108
           }
         ],
         "trend": "stable"
@@ -6726,6 +6726,22 @@
             "post_count": 1,
             "known_bot": false,
             "bot_label": null
+          },
+          {
+            "author_id": "1583964429032398849",
+            "handle": "@MugenSwords",
+            "max_outrage": 0.0057,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
+          },
+          {
+            "author_id": "1281556502667579392",
+            "handle": "@RPublic2",
+            "max_outrage": 0.0029,
+            "post_count": 1,
+            "known_bot": false,
+            "bot_label": null
           }
         ],
         "edges": [
@@ -8040,21 +8056,101 @@
             "source_post_id": 143,
             "target_post_id": null,
             "occurred_at": "2026-05-21T21:13:00"
+          },
+          {
+            "source": "1281556502667579392",
+            "target": "1326229737551912960",
+            "type": "reply",
+            "source_post_id": 351,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T22:22:40"
+          },
+          {
+            "source": "1583964429032398849",
+            "target": "1283244077501292544",
+            "type": "reply",
+            "source_post_id": 352,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T22:07:50"
+          },
+          {
+            "source": "2582938576",
+            "target": "1860885548123951104",
+            "type": "reply",
+            "source_post_id": 306,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T17:18:54"
+          },
+          {
+            "source": "1219849674099740672",
+            "target": "2942316616",
+            "type": "reply",
+            "source_post_id": 309,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T13:11:47"
+          },
+          {
+            "source": "1740421772875546624",
+            "target": "2004203029894193152",
+            "type": "reply",
+            "source_post_id": 292,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T12:40:30"
+          },
+          {
+            "source": "1806980276796735488",
+            "target": "507419482",
+            "type": "reply",
+            "source_post_id": 255,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T04:32:10"
+          },
+          {
+            "source": "2017359896786739200",
+            "target": "1477337764353957891",
+            "type": "reply",
+            "source_post_id": 256,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T01:06:26"
+          },
+          {
+            "source": "1686731947501076481",
+            "target": "1313591858476482560",
+            "type": "reply",
+            "source_post_id": 257,
+            "target_post_id": null,
+            "occurred_at": "2026-06-02T00:34:10"
+          },
+          {
+            "source": "1418992647524454404",
+            "target": "1418992647524454404",
+            "type": "reply",
+            "source_post_id": 147,
+            "target_post_id": null,
+            "occurred_at": "2026-06-01T03:39:14"
+          },
+          {
+            "source": "41475976",
+            "target": "41475976",
+            "type": "reply",
+            "source_post_id": 61,
+            "target_post_id": null,
+            "occurred_at": "2026-05-31T19:25:27"
           }
         ],
         "stats": {
-          "edge_count": 164,
-          "author_count": 257,
-          "connected_author_count": 59,
+          "edge_count": 174,
+          "author_count": 259,
+          "connected_author_count": 61,
           "isolated_author_count": 198,
           "by_type": {
-            "reply": 164
+            "reply": 174
           }
         }
       },
       "themes": {
         "narrative_id": 3,
-        "post_count": 310,
+        "post_count": 312,
         "cluster_count": 34,
         "method": "dbscan",
         "model": "all-MiniLM-L6-v2",
@@ -9679,7 +9775,7 @@
       },
       "benchmark": null,
       "provenance": {
-        "posts_total_db": 310,
+        "posts_total_db": 312,
         "posts_in_snapshot": 250,
         "snapshot_post_limit": 250,
         "posts_truncated": true,
@@ -9693,17 +9789,17 @@
         "coordination_signal_count": 17,
         "distinct_theme_count": 33,
         "theme_cluster_count": 34,
-        "graph_edge_count": 164,
-        "graph_author_count": 257,
-        "graph_connected_author_count": 59,
-        "graph_coverage_pct": 23.0,
+        "graph_edge_count": 174,
+        "graph_author_count": 259,
+        "graph_connected_author_count": 61,
+        "graph_coverage_pct": 23.6,
         "graph_sufficient": true,
         "theme_model": "all-MiniLM-L6-v2",
         "theme_method": "dbscan",
         "theme_model_reliable": true,
         "outrage_scored_count": 250,
         "outrage_max": 0.2579,
-        "outrage_mean": 0.0456,
+        "outrage_mean": 0.0454,
         "outrage_compressed": false
       }
     }
@@ -9721,7 +9817,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-02",
-      "count": 17
+      "count": 18
     }
   }
 }
