@@ -1,0 +1,25 @@
+{
+  "midterms_2026": {
+    "text_coordination": 0.55,
+    "combined_suspicion": 0.55,
+    "tier": "elevated",
+    "updated_at": "2026-06-02T19:00:52.303877+00:00",
+    "snapshot_generated_at": "2026-06-02T18:56:53.354080+00:00"
+  },
+  "_history": [
+    {
+      "at": "2026-06-02T19:00:52.303912+00:00",
+      "narrative": "midterms_2026",
+      "from": "none",
+      "to": "elevated",
+      "score": 0.55,
+      "combined": 0.55,
+      "signals": [
+        "cross_author_fuzzy_2authors_2posts_j1.00",
+        "cross_author_fuzzy_3authors_3posts_j1.00",
+        "cross_author_fuzzy_2authors_2posts_j1.00",
+        "cross_author_fuzzy_2authors_2posts_j0.94"
+      ]
+    }
+  ]
+}
