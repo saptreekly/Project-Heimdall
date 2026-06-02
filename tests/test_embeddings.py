@@ -1,5 +1,3 @@
-import os
-
 from heimdall.nlp.embeddings import encode_texts, neural_embeddings_enabled
 
 
