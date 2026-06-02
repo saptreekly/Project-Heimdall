@@ -214,6 +214,8 @@ Neo4j authors get `known_bot` and `bot_label` when matched.
 | `USE_EMBEDDING_THEMES` | Enable embed theme clustering on export/rescore (CI: `true`) |
 | `RESCORE_BEFORE_EXPORT` | Rescore stale narratives before snapshot export (CI: `true`) |
 | `USE_TRANSFORMER_SENTIMENT` | Optional twitter-roberta polarity (`pip install -e ".[ml-hf]"`; CI: `false`) |
+| `USE_NEURAL_EMBEDDINGS` | Set `false` in CI to use TF-IDF theme clustering (avoids HF 429 rate limits) |
+| `RESCORE_USE_EMBEDDINGS` | Rescore with embed theme boosts before export (CI: `false`; lexicon-only rescore) |
 | `SNAPSHOT_SENTIMENT_STRICT` | Fail `verify_snapshot.py` if sentiment v2.3 fields are missing |
 
 Theme clustering: set `USE_EMBEDDING_THEMES=true` when exporting the dashboard snapshot. Base install uses **TF-IDF + DBSCAN/KMeans** when neural embeddings are unavailable; `pip install -e ".[ml]"` (Python 3.11–3.12) adds **sentence-transformers** (`all-MiniLM-L6-v2`). CI enables themes automatically. API: `GET /api/v1/narratives/{id}/themes`.

@@ -2,7 +2,12 @@
 
 from __future__ import annotations
 
+import logging
+import os
+
 import numpy as np
+
+logger = logging.getLogger(__name__)
 
 DEFAULT_EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
@@ -12,6 +17,11 @@ _model_name: str | None = None
 
 class EmbeddingUnavailableError(RuntimeError):
     pass
+
+
+def neural_embeddings_enabled() -> bool:
+    """When false, use TF-IDF only (avoids Hugging Face hub rate limits in CI)."""
+    return os.environ.get("USE_NEURAL_EMBEDDINGS", "true").lower() not in ("0", "false", "no")
 
 
 def _load_model(model_name: str):
@@ -68,6 +78,9 @@ def encode_texts(
         return np.zeros((0, 384), dtype=np.float32), model_name
 
     cleaned = [(t or "").strip()[:512] or " " for t in texts]
+    if not neural_embeddings_enabled():
+        return encode_texts_tfidf(cleaned), "tfidf-fallback"
+
     try:
         model = _load_model(model_name)
         vectors = model.encode(
@@ -80,6 +93,11 @@ def encode_texts(
     except EmbeddingUnavailableError:
         if not allow_tfidf_fallback:
             raise
+        return encode_texts_tfidf(cleaned), "tfidf-fallback"
+    except Exception as exc:
+        if not allow_tfidf_fallback:
+            raise EmbeddingUnavailableError(str(exc)) from exc
+        logger.warning("Neural embeddings unavailable (%s); using TF-IDF fallback", exc)
         return encode_texts_tfidf(cleaned), "tfidf-fallback"
 
 

@@ -53,7 +53,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "Watchlists unchanged."
           else
-            git commit -m "chore: daily coordination and sentiment watchlist update"
+            git commit -m "chore: daily coordination and sentiment watchlist update [skip ci]"
             git push
           fi
 

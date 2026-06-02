@@ -21,7 +21,6 @@ on:
       - "web/**"
       - "heimdall/**"
       - "scripts/**"
-      - "data/dashboard/**"
       - "data/scheduled_ingest.json"
       - ".github/workflows/maintenance.yml"
       - ".github/workflows/daily-analytics.yml"
@@ -45,6 +44,8 @@ env:
   TRANSFORMERS_CACHE: ${{ github.workspace }}/.cache/huggingface
   SENTENCE_TRANSFORMERS_HOME: ${{ github.workspace }}/.cache/huggingface
   USE_EMBEDDING_THEMES: "true"
+  USE_NEURAL_EMBEDDINGS: "false"
+  RESCORE_USE_EMBEDDINGS: "false"
   RESCORE_BEFORE_EXPORT: "true"
   USE_TRANSFORMER_SENTIMENT: "false"
 
@@ -80,6 +81,7 @@ jobs:
         run: pip install -e ".[ml]"
 
       - name: Warm sentence-transformers model (populate cache)
+        if: env.USE_NEURAL_EMBEDDINGS == 'true'
         run: |
           python -c "
           from sentence_transformers import SentenceTransformer
@@ -130,7 +132,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "Metrics history unchanged."
           else
-            git commit -m "chore: append daily snapshot metrics"
+            git commit -m "chore: append daily snapshot metrics [skip ci]"
             git push
           fi
 

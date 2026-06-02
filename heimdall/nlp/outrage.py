@@ -43,11 +43,28 @@ class OutrageResult:
     emerging_theme: bool = False
 
 
-def build_outrage_analyzer(settings: Settings | None = None) -> "OutrageAnalyzer":
+def rescore_use_embeddings(settings: Settings | None = None) -> bool:
+    import os
+
     cfg = settings or get_settings()
+    raw = os.environ.get("RESCORE_USE_EMBEDDINGS", "false").lower()
+    if raw in ("1", "true", "yes"):
+        return cfg.use_embedding_themes
+    if raw in ("0", "false", "no"):
+        return False
+    return cfg.use_embedding_themes
+
+
+def build_outrage_analyzer(
+    settings: Settings | None = None,
+    *,
+    use_embeddings: bool | None = None,
+) -> "OutrageAnalyzer":
+    cfg = settings or get_settings()
+    embed = cfg.use_embedding_themes if use_embeddings is None else use_embeddings
     return OutrageAnalyzer(
         use_transformers=cfg.use_transformer_sentiment,
-        use_embeddings=cfg.use_embedding_themes,
+        use_embeddings=embed,
         embedding_model=cfg.embedding_model,
     )
 

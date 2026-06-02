@@ -22,10 +22,15 @@ async def run(out: Path) -> int:
     if os.environ.get("RESCORE_BEFORE_EXPORT", "true").lower() not in ("0", "false", "no"):
         import subprocess
 
+        rescore_env = {
+            **os.environ,
+            "RESCORE_USE_EMBEDDINGS": os.environ.get("RESCORE_USE_EMBEDDINGS", "false"),
+        }
         subprocess.run(
             [sys.executable, "scripts/rescore_dashboard_narratives.py", "--if-stale"],
             cwd=ROOT,
             check=True,
+            env=rescore_env,
         )
 
     await init_db()

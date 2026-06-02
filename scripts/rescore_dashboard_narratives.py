@@ -24,10 +24,16 @@ async def rescore_all(*, if_stale: bool = False) -> dict:
 
     from heimdall.db.models import Narrative, OutrageScore, Post
     from heimdall.db.session import get_session_factory, init_db
-    from heimdall.nlp.outrage import MODEL_VERSION, MODEL_VERSION_EMBED, build_outrage_analyzer
+    from heimdall.nlp.outrage import (
+        MODEL_VERSION,
+        MODEL_VERSION_EMBED,
+        build_outrage_analyzer,
+        rescore_use_embeddings,
+    )
 
     await init_db()
-    analyzer = build_outrage_analyzer()
+    use_embed = rescore_use_embeddings()
+    analyzer = build_outrage_analyzer(use_embeddings=use_embed)
     target_version = MODEL_VERSION_EMBED if analyzer.use_embeddings else MODEL_VERSION
 
     factory = get_session_factory()

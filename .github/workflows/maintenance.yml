@@ -18,6 +18,8 @@ env:
   TRANSFORMERS_CACHE: ${{ github.workspace }}/.cache/huggingface
   SENTENCE_TRANSFORMERS_HOME: ${{ github.workspace }}/.cache/huggingface
   USE_EMBEDDING_THEMES: "true"
+  USE_NEURAL_EMBEDDINGS: "false"
+  RESCORE_USE_EMBEDDINGS: "false"
   RESCORE_BEFORE_EXPORT: "true"
   USE_TRANSFORMER_SENTIMENT: "false"
   DATABASE_URL: sqlite+aiosqlite:///./data/dashboard/heimdall.db
@@ -93,6 +95,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No maintenance changes to commit."
           else
-            git commit -m "chore: weekly maintenance, theme drift, keyword audit"
+            git commit -m "chore: weekly maintenance, theme drift, keyword audit [skip ci]"
             git push
           fi
