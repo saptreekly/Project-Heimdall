@@ -1,4 +1,5 @@
 import type { ClusterSimilarityEdge, ThemeMergeNode, ThemeTimelineEntry } from "./types";
+import { escapeHtml, labelList, safeText } from "./safe-text";
 
 export interface MergedThemeGroup {
   id: string;
@@ -20,10 +21,11 @@ export interface ThemeTimelineLike {
 }
 
 function displayLabel(entry: ThemeTimelineLike): string {
-  const phrases = entry.label_phrases ?? [];
+  const phrases = labelList(entry.label_phrases);
   if (phrases.length > 0) return phrases[0];
-  const terms = entry.label_terms ?? [];
-  return terms[0] ?? `cluster ${entry.cluster_id}`;
+  const terms = labelList(entry.label_terms);
+  if (terms.length > 0) return terms[0];
+  return `cluster ${entry.cluster_id}`;
 }
 
 function unionFindParent(parent: Map<number, number>, node: number): number {
@@ -70,29 +72,53 @@ export function computeMergedGroups(
     groups.set(root, bucket);
   }
 
-  return [...groups.entries()].map(([root, members]) => {
-    const labels = members.map(displayLabel);
-    const postIds = [...new Set(members.flatMap((m) => m.post_ids ?? []))];
-    return {
-      id: members.length === 1 ? `c${root}` : `m${root}`,
-      clusterIds: members.map((m) => m.cluster_id),
-      label: members.length === 1 ? labels[0] : labels.slice(0, 2).join(" + "),
-      postIds,
-      size: postIds.length,
-      emerging: members.some((m) => m.emerging_theme),
-    };
-  }).sort((a, b) => b.size - a.size);
+  return [...groups.entries()]
+    .map(([root, members]) => {
+      const labels = members.map(displayLabel);
+      const postIds = [...new Set(members.flatMap((m) => m.post_ids ?? []))];
+      return {
+        id: members.length === 1 ? `c${root}` : `m${root}`,
+        clusterIds: members.map((m) => m.cluster_id),
+        label: members.length === 1 ? labels[0] : labels.slice(0, 2).join(" + "),
+        postIds,
+        size: postIds.length,
+        emerging: members.some((m) => m.emerging_theme),
+      };
+    })
+    .sort((a, b) => b.size - a.size);
 }
 
-function escapeHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+function mergeGroupsHtml(groups: MergedThemeGroup[]): string {
+  return groups
+    .map(
+      (group) => `<button
+        type="button"
+        class="theme-merge-group${group.emerging ? " theme-merge-group-emerging" : ""}${group.clusterIds.length > 1 ? " theme-merge-group-merged" : ""}"
+        data-group-id="${escapeHtml(group.id)}"
+      >
+        <span class="theme-merge-group-label">${escapeHtml(group.label)}</span>
+        <span class="theme-merge-group-meta">${group.size} posts · ${group.clusterIds.length} cluster${group.clusterIds.length === 1 ? "" : "s"}</span>
+      </button>`
+    )
+    .join("");
 }
 
-export function renderMergeExplorer(
+function bindMergeGroupClicks(
+  host: HTMLElement,
+  groups: MergedThemeGroup[],
+  onSelectGroup: (group: MergedThemeGroup) => void
+): void {
+  host.querySelectorAll<HTMLButtonElement>(".theme-merge-group").forEach((btn, idx) => {
+    btn.addEventListener("click", () => {
+      host.querySelectorAll(".theme-merge-group").forEach((el) => el.classList.remove("theme-merge-group-active"));
+      btn.classList.add("theme-merge-group-active");
+      onSelectGroup(groups[idx]);
+    });
+  });
+}
+
+/** Mount merge explorer once; slider updates groups without rebuilding the whole panel. */
+export function updateMergeExplorer(
   host: HTMLElement,
   similarity: ClusterSimilarityEdge[],
   mergeCandidates: ClusterSimilarityEdge[],
@@ -105,67 +131,75 @@ export function renderMergeExplorer(
   const maxSim = similarity[0]?.similarity ?? MERGE_DEFAULT_MAX;
   const minSim = similarity[similarity.length - 1]?.similarity ?? MERGE_DEFAULT_MIN;
 
-  host.innerHTML = `
-    <div class="theme-merge-panel">
-      <div class="theme-merge-controls">
-        <label class="theme-merge-label" for="theme-merge-threshold">
-          Merge threshold
-          <span class="theme-merge-value" id="theme-merge-value">${threshold.toFixed(2)}</span>
-        </label>
-        <input
-          id="theme-merge-threshold"
-          class="theme-merge-slider"
-          type="range"
-          min="${minSim.toFixed(2)}"
-          max="${Math.max(maxSim, 0.95).toFixed(2)}"
-          step="0.01"
-          value="${threshold.toFixed(2)}"
-        />
-        <p class="chart-caption theme-merge-hint">
-          Drag right to merge more clusters. Auto-merge at export uses ${AUTO_MERGE_SIM.toFixed(2)} cosine similarity.
-        </p>
+  if (!host.dataset.mounted) {
+    host.dataset.mounted = "1";
+    host.innerHTML = `
+      <div class="theme-merge-panel">
+        <div class="theme-merge-controls">
+          <label class="theme-merge-label" for="theme-merge-threshold">
+            Merge threshold
+            <span class="theme-merge-value" id="theme-merge-value">${threshold.toFixed(2)}</span>
+          </label>
+          <input
+            id="theme-merge-threshold"
+            class="theme-merge-slider"
+            type="range"
+            min="${minSim.toFixed(2)}"
+            max="${Math.max(maxSim, 0.95).toFixed(2)}"
+            step="0.01"
+            value="${threshold.toFixed(2)}"
+          />
+          <p class="chart-caption theme-merge-hint">
+            Drag right to merge more clusters. Auto-merge at export uses ${AUTO_MERGE_SIM.toFixed(2)} cosine similarity.
+          </p>
+        </div>
+        <div id="theme-merge-candidates-host">${
+          mergeCandidates.length
+            ? `<ul class="theme-merge-candidates">${mergeCandidates
+                .slice(0, 4)
+                .map(
+                  (edge) =>
+                    `<li><code>${edge.a}</code> ↔ <code>${edge.b}</code> · ${(edge.similarity * 100).toFixed(0)}% similar</li>`
+                )
+                .join("")}</ul>`
+            : ""
+        }</div>
+        <div class="theme-merge-groups" id="theme-merge-groups-host">${mergeGroupsHtml(groups)}</div>
       </div>
-      ${
-        mergeCandidates.length
-          ? `<ul class="theme-merge-candidates">${mergeCandidates
-              .slice(0, 4)
-              .map(
-                (edge) =>
-                  `<li><code>${edge.a}</code> ↔ <code>${edge.b}</code> · ${(edge.similarity * 100).toFixed(0)}% similar</li>`
-              )
-              .join("")}</ul>`
-          : ""
-      }
-      <div class="theme-merge-groups">${groups
-        .map(
-          (group) => `<button
-            type="button"
-            class="theme-merge-group${group.emerging ? " theme-merge-group-emerging" : ""}${group.clusterIds.length > 1 ? " theme-merge-group-merged" : ""}"
-            data-group-id="${escapeHtml(group.id)}"
-          >
-            <span class="theme-merge-group-label">${escapeHtml(group.label)}</span>
-            <span class="theme-merge-group-meta">${group.size} posts · ${group.clusterIds.length} cluster${group.clusterIds.length === 1 ? "" : "s"}</span>
-          </button>`
-        )
-        .join("")}</div>
-    </div>
-  `;
+    `;
 
-  const slider = host.querySelector<HTMLInputElement>("#theme-merge-threshold");
-  const valueEl = host.querySelector("#theme-merge-value");
-  slider?.addEventListener("input", () => {
-    const value = parseFloat(slider.value);
-    if (valueEl) valueEl.textContent = value.toFixed(2);
-    onThresholdChange(value);
-  });
-
-  host.querySelectorAll<HTMLButtonElement>(".theme-merge-group").forEach((btn, idx) => {
-    btn.addEventListener("click", () => {
-      host.querySelectorAll(".theme-merge-group").forEach((el) => el.classList.remove("theme-merge-group-active"));
-      btn.classList.add("theme-merge-group-active");
-      onSelectGroup(groups[idx]);
+    const slider = host.querySelector<HTMLInputElement>("#theme-merge-threshold");
+    const valueEl = host.querySelector("#theme-merge-value");
+    let sliderTimer: number | undefined;
+    slider?.addEventListener("input", () => {
+      const value = parseFloat(slider.value);
+      if (valueEl) valueEl.textContent = value.toFixed(2);
+      window.clearTimeout(sliderTimer);
+      sliderTimer = window.setTimeout(() => {
+        onThresholdChange(value);
+        const nextGroups = computeMergedGroups(timeline, similarity, value);
+        const groupsHost = host.querySelector("#theme-merge-groups-host");
+        if (groupsHost) {
+          groupsHost.innerHTML = mergeGroupsHtml(nextGroups);
+          bindMergeGroupClicks(host, nextGroups, onSelectGroup);
+        }
+      }, 120);
     });
-  });
+
+    bindMergeGroupClicks(host, groups, onSelectGroup);
+    return;
+  }
+
+  const valueEl = host.querySelector("#theme-merge-value");
+  const slider = host.querySelector<HTMLInputElement>("#theme-merge-threshold");
+  if (valueEl) valueEl.textContent = threshold.toFixed(2);
+  if (slider) slider.value = threshold.toFixed(2);
+
+  const groupsHost = host.querySelector("#theme-merge-groups-host");
+  if (groupsHost) {
+    groupsHost.innerHTML = mergeGroupsHtml(groups);
+    bindMergeGroupClicks(host, groups, onSelectGroup);
+  }
 }
 
 export function renderMergeDendrogram(host: HTMLElement, mergeTree: ThemeMergeNode[]): void {
@@ -182,7 +216,7 @@ export function renderMergeDendrogram(host: HTMLElement, mergeTree: ThemeMergeNo
       <div class="theme-dendrogram-leaves">${leaves
         .map(
           (node) =>
-            `<span class="theme-dendrogram-leaf" data-cluster-id="${node.cluster_id ?? ""}" title="${escapeHtml(node.label)}">${escapeHtml(node.label)}</span>`
+            `<span class="theme-dendrogram-leaf" data-cluster-id="${node.cluster_id ?? ""}" title="${escapeHtml(safeText(node.label))}">${escapeHtml(safeText(node.label))}</span>`
         )
         .join("")}</div>
       <div class="theme-dendrogram-merges">${internals
@@ -190,7 +224,7 @@ export function renderMergeDendrogram(host: HTMLElement, mergeTree: ThemeMergeNo
           (node) =>
             `<div class="theme-dendrogram-merge" style="--merge-sim:${((node.similarity ?? 0) * 100).toFixed(0)}">
               <span class="theme-dendrogram-merge-bar"></span>
-              <span class="theme-dendrogram-merge-label">${escapeHtml(node.label)} <em>${((node.similarity ?? 0) * 100).toFixed(0)}%</em></span>
+              <span class="theme-dendrogram-merge-label">${escapeHtml(safeText(node.label))} <em>${((node.similarity ?? 0) * 100).toFixed(0)}%</em></span>
             </div>`
         )
         .join("")}</div>

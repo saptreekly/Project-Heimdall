@@ -1,4 +1,5 @@
 import type { Post, ThemeCluster, ThemesReport } from "./types";
+import { escapeHtml, labelList, safeText } from "./safe-text";
 import {
   activeBrushClusterIds,
   brushOpacity,
@@ -12,7 +13,6 @@ import {
   BubbleController,
   CategoryScale,
   Chart,
-  Filler,
   Legend,
   LinearScale,
   LineController,
@@ -32,8 +32,7 @@ Chart.register(
   CategoryScale,
   LinearScale,
   Legend,
-  Tooltip,
-  Filler
+  Tooltip
 );
 
 export interface ThemeTimelineVizEntry {
@@ -58,6 +57,8 @@ let activeTier: Chart | null = null;
 let streamClusterIds: number[] = [];
 let scatterClusterIds: number[] = [];
 let tierClusterIds: number[] = [];
+let tierDatasetBaseColors: string[] = [];
+let sankeyHostRef: HTMLElement | null = null;
 let brushUnsub: (() => void) | null = null;
 let onClusterClick: ((clusterId: number, label: string, postIds: number[]) => void) | null = null;
 
@@ -79,11 +80,15 @@ const TIER_COLORS: Record<string, string> = {
   unknown: "rgba(100, 116, 139, 0.5)",
 };
 
+const MAX_STREAM_THEMES = 6;
+const MAX_STREAM_DATES = 60;
+
 export function clusterLabel(entry: ThemeTimelineVizEntry | ThemeCluster): string {
-  const phrases = entry.label_phrases ?? [];
+  const phrases = labelList(entry.label_phrases);
   if (phrases.length > 0) return phrases[0];
-  const terms = entry.label_terms ?? [];
-  return terms[0] ?? `cluster ${entry.cluster_id}`;
+  const terms = labelList(entry.label_terms);
+  if (terms.length > 0) return terms[0];
+  return `cluster ${entry.cluster_id}`;
 }
 
 function paletteColor(index: number, alpha = 1): string {
@@ -95,6 +100,21 @@ function paletteColor(index: number, alpha = 1): string {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
+function withAlpha(rgba: string, alpha: number): string {
+  if (alpha >= 1) return rgba;
+  const match = rgba.match(/rgba?\(([^)]+)\)/);
+  if (!match) return rgba;
+  const parts = match[1].split(",").map((p) => p.trim());
+  if (parts.length < 3) return rgba;
+  return `rgba(${parts[0]}, ${parts[1]}, ${parts[2]}, ${alpha})`;
+}
+
+function sampleDates(dates: string[], max: number): string[] {
+  if (dates.length <= max) return dates;
+  const step = Math.ceil(dates.length / max);
+  return dates.filter((_, idx) => idx % step === 0 || idx === dates.length - 1);
+}
+
 function allDates(timeline: ThemeTimelineVizEntry[]): string[] {
   const set = new Set<string>();
   for (const entry of timeline) {
@@ -102,7 +122,22 @@ function allDates(timeline: ThemeTimelineVizEntry[]): string[] {
       set.add(day);
     }
   }
-  return [...set].sort();
+  return sampleDates([...set].sort(), MAX_STREAM_DATES);
+}
+
+function applySankeyBrush(host: HTMLElement | null): void {
+  if (!host) return;
+  const active = activeBrushClusterIds();
+  host.querySelectorAll<SVGElement>(".theme-sankey-link").forEach((el) => {
+    const clusterId = parseInt(el.dataset.themeClusterId ?? "", 10);
+    if (!Number.isFinite(clusterId)) return;
+    el.style.opacity = String(active ? brushOpacity(clusterId) : 0.75);
+  });
+  host.querySelectorAll<SVGElement>(".theme-sankey-node").forEach((el) => {
+    const clusterId = parseInt(el.dataset.themeClusterId ?? "", 10);
+    if (!Number.isFinite(clusterId)) return;
+    el.style.opacity = String(active ? brushOpacity(clusterId) : 1);
+  });
 }
 
 function applyChartBrush(): void {
@@ -114,33 +149,27 @@ function applyChartBrush(): void {
       const opacity = active && clusterId != null ? brushOpacity(clusterId) : 1;
       const color = paletteColor(idx, opacity);
       dataset.borderColor = color;
-      dataset.backgroundColor = color;
+      dataset.backgroundColor = paletteColor(idx, opacity * 0.35);
     });
     activeStream.update("none");
   }
 
   if (activeScatter && scatterClusterIds.length) {
-    const bg = scatterClusterIds.map((clusterId, idx) => {
+    activeScatter.data.datasets[0].backgroundColor = scatterClusterIds.map((clusterId, idx) => {
       const opacity = active ? brushOpacity(clusterId) : 1;
-      const point = activeScatter!.data.datasets[0].data[idx] as { r?: number };
-      const baseR = point?.r ?? 8;
-      return paletteColor(idx, opacity);
+      return paletteColor(idx, opacity * 0.75);
     });
-    activeScatter.data.datasets[0].backgroundColor = bg;
     activeScatter.update("none");
   }
 
   if (activeTier && tierClusterIds.length) {
-    const datasets = activeTier.data.datasets;
-    for (const dataset of datasets) {
-      const colors = tierClusterIds.map((clusterId) => {
-        const base = (dataset.backgroundColor as string) ?? TIER_COLORS.unknown;
+    activeTier.data.datasets.forEach((dataset, di) => {
+      const base = tierDatasetBaseColors[di] ?? TIER_COLORS.unknown;
+      dataset.backgroundColor = tierClusterIds.map((clusterId) => {
         const opacity = active ? brushOpacity(clusterId) : 1;
-        if (opacity >= 1) return base;
-        return base.replace(/[\d.]+\)$/, `${opacity})`);
+        return withAlpha(base, opacity);
       });
-      dataset.backgroundColor = colors;
-    }
+    });
     activeTier.update("none");
   }
 
@@ -149,10 +178,12 @@ function applyChartBrush(): void {
     if (!Number.isFinite(clusterId)) return;
     el.style.opacity = String(active ? brushOpacity(clusterId) : 1);
   });
+
+  applySankeyBrush(sankeyHostRef);
 }
 
-function bindBrushListener(): void {
-  brushUnsub?.();
+function ensureBrushListener(): void {
+  if (brushUnsub) return;
   brushUnsub = onThemeBrushChange(() => applyChartBrush());
 }
 
@@ -181,12 +212,12 @@ export function renderThemeGantt(
         ((new Date(entry.last_seen!).getTime() - new Date(entry.first_seen!).getTime()) / span) * 100 + 2
       );
       const color = PALETTE[idx % PALETTE.length];
-      const label = clusterLabel(entry);
+      const label = escapeHtml(clusterLabel(entry));
       return `<button
         type="button"
         class="theme-gantt-row theme-gantt-row-btn"
         data-theme-cluster-id="${entry.cluster_id}"
-        title="${label}: ${entry.first_seen} → ${entry.last_seen}"
+        title="${label}: ${escapeHtml(entry.first_seen)} → ${escapeHtml(entry.last_seen)}"
       >
         <span class="theme-gantt-label">${label}</span>
         <div class="theme-gantt-track">
@@ -224,17 +255,21 @@ export function mountThemeStreamgraph(
   const dates = allDates(timeline);
   if (dates.length === 0) return;
 
-  const entries = timeline.filter((t) => !t.is_noise).slice(0, 8);
+  const entries = timeline
+    .filter((t) => !t.is_noise)
+    .sort((a, b) => b.size - a.size)
+    .slice(0, MAX_STREAM_THEMES);
   streamClusterIds = entries.map((e) => e.cluster_id);
 
   const datasets = entries.map((entry, idx) => ({
     label: clusterLabel(entry),
     data: dates.map((d) => entry.daily_counts?.[d] ?? 0),
     borderColor: paletteColor(idx),
-    backgroundColor: paletteColor(idx, 0.35),
-    fill: idx === 0 ? "origin" : "-1",
-    tension: 0.35,
+    backgroundColor: paletteColor(idx, 0.2),
+    fill: false,
+    tension: 0.3,
     pointRadius: 0,
+    borderWidth: 2,
   }));
 
   const config: ChartConfiguration<"line"> = {
@@ -243,6 +278,7 @@ export function mountThemeStreamgraph(
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      animation: false,
       interaction: { mode: "index", intersect: false },
       onClick(_evt, elements) {
         if (!elements.length) return;
@@ -260,11 +296,11 @@ export function mountThemeStreamgraph(
       },
       scales: {
         x: {
-          ticks: { color: "#8b9cb3", maxRotation: 45, autoSkip: true },
+          ticks: { color: "#8b9cb3", maxRotation: 45, autoSkip: true, maxTicksLimit: 12 },
           grid: { color: "#1f2a3a" },
         },
         y: {
-          stacked: true,
+          stacked: false,
           ticks: { color: "#8b9cb3" },
           grid: { color: "#2a384c" },
         },
@@ -273,7 +309,7 @@ export function mountThemeStreamgraph(
   };
 
   activeStream = new Chart(canvas, config);
-  bindBrushListener();
+  ensureBrushListener();
   applyChartBrush();
 }
 
@@ -284,7 +320,10 @@ export function mountThemeScatter(canvas: HTMLCanvasElement, report: ThemesRepor
 
   const points =
     report.cluster_map?.length
-      ? report.cluster_map
+      ? report.cluster_map.map((p) => ({
+          ...p,
+          label: safeText(p.label, `cluster ${p.cluster_id}`),
+        }))
       : report.clusters
           .filter((c) => c.map_x != null && c.map_y != null && !c.is_noise)
           .map((c) => ({
@@ -318,6 +357,7 @@ export function mountThemeScatter(canvas: HTMLCanvasElement, report: ThemesRepor
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      animation: false,
       onClick(_evt, elements) {
         if (!elements.length) return;
         const idx = elements[0].index;
@@ -346,7 +386,7 @@ export function mountThemeScatter(canvas: HTMLCanvasElement, report: ThemesRepor
   };
 
   activeScatter = new Chart(canvas, config);
-  bindBrushListener();
+  ensureBrushListener();
   applyChartBrush();
 }
 
@@ -358,6 +398,7 @@ export function mountThemeEscalationChart(
   activeTier?.destroy();
   activeTier = null;
   tierClusterIds = [];
+  tierDatasetBaseColors = [];
 
   const postMap = new Map(posts.map((p) => [p.id, p]));
   const themes = clusters.filter((c) => !c.is_noise).slice(0, 6);
@@ -367,20 +408,24 @@ export function mountThemeEscalationChart(
   const tiers = ["neutral", "escalating", "inflammatory", "unknown"];
   const labels = themes.map((c) => clusterLabel(c));
 
-  const datasets = tiers.map((tier) => ({
-    label: tier,
-    data: themes.map((cluster) => {
-      let count = 0;
-      for (const pid of cluster.post_ids) {
-        const post = postMap.get(pid);
-        const t = post?.escalation_tier ?? "unknown";
-        if (t === tier) count += 1;
-      }
-      return count;
-    }),
-    backgroundColor: TIER_COLORS[tier] ?? TIER_COLORS.unknown,
-    stack: "tier",
-  }));
+  const datasets = tiers.map((tier) => {
+    const base = TIER_COLORS[tier] ?? TIER_COLORS.unknown;
+    tierDatasetBaseColors.push(base);
+    return {
+      label: tier,
+      data: themes.map((cluster) => {
+        let count = 0;
+        for (const pid of cluster.post_ids) {
+          const post = postMap.get(pid);
+          const t = post?.escalation_tier ?? "unknown";
+          if (t === tier) count += 1;
+        }
+        return count;
+      }),
+      backgroundColor: base,
+      stack: "tier",
+    };
+  });
 
   const config: ChartConfiguration<"bar"> = {
     type: "bar",
@@ -388,6 +433,7 @@ export function mountThemeEscalationChart(
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      animation: false,
       onClick(_evt, elements) {
         if (!elements.length) return;
         const idx = elements[0].index;
@@ -415,7 +461,7 @@ export function mountThemeEscalationChart(
   };
 
   activeTier = new Chart(canvas, config);
-  bindBrushListener();
+  ensureBrushListener();
   applyChartBrush();
 }
 
@@ -450,6 +496,7 @@ export function renderThemeSankey(
   clusters: ThemeCluster[],
   posts: Post[]
 ): void {
+  sankeyHostRef = host;
   const flows = buildSankeyFlows(clusters, posts);
   if (flows.length === 0) {
     host.innerHTML = "<p class='empty'>No escalation flows to chart.</p>";
@@ -461,7 +508,6 @@ export function renderThemeSankey(
     flows.some((f) => f.tier === tier)
   );
   const themeTotals = new Map(themes.map((t) => [t, flows.filter((f) => f.theme === t).reduce((s, f) => s + f.count, 0)]));
-  const tierTotals = new Map(tiers.map((t) => [t, flows.filter((f) => f.tier === t).reduce((s, f) => s + f.count, 0)]));
   const maxTotal = Math.max(...themeTotals.values(), 1);
   const width = 640;
   const height = Math.max(180, themes.length * 28 + tiers.length * 8);
@@ -489,8 +535,6 @@ export function renderThemeSankey(
       const y1 = tierY.get(flow.tier)! + 10;
       const strokeW = Math.max(2, (flow.count / maxTotal) * 18);
       const color = TIER_COLORS[flow.tier] ?? TIER_COLORS.unknown;
-      const active = activeBrushClusterIds();
-      const opacity = active ? brushOpacity(flow.clusterId) : 0.75;
       return `<path
         class="theme-sankey-link"
         data-theme-cluster-id="${flow.clusterId}"
@@ -498,7 +542,7 @@ export function renderThemeSankey(
         stroke="${color}"
         stroke-width="${strokeW}"
         fill="none"
-        opacity="${opacity}"
+        opacity="0.75"
       />`;
     })
     .join("");
@@ -509,22 +553,23 @@ export function renderThemeSankey(
       const clusterId = flows.find((f) => f.theme === theme)?.clusterId ?? -1;
       const barH = Math.max(8, (total / maxTotal) * 20);
       const y = themeY.get(theme)!;
+      const label = escapeHtml(theme);
       return `<g class="theme-sankey-node" data-theme-cluster-id="${clusterId}">
         <rect x="${leftX}" y="${y}" width="96" height="${barH}" rx="3" fill="${paletteColor(idx, 0.85)}" />
-        <text x="${leftX + 100}" y="${y + barH - 2}" class="theme-sankey-label">${theme}</text>
+        <text x="${leftX + 100}" y="${y + barH - 2}" class="theme-sankey-label">${label}</text>
       </g>`;
     })
     .join("");
 
   const tierNodes = tiers
     .map((tier) => {
-      const total = tierTotals.get(tier) ?? 0;
+      const total = flows.filter((f) => f.tier === tier).reduce((s, f) => s + f.count, 0);
       const barH = Math.max(8, (total / maxTotal) * 20);
       const y = tierY.get(tier)!;
       const color = TIER_COLORS[tier] ?? TIER_COLORS.unknown;
       return `<g class="theme-sankey-tier">
         <rect x="${rightX}" y="${y}" width="96" height="${barH}" rx="3" fill="${color}" />
-        <text x="${rightX - 6}" y="${y + barH - 2}" text-anchor="end" class="theme-sankey-label">${tier}</text>
+        <text x="${rightX - 6}" y="${y + barH - 2}" text-anchor="end" class="theme-sankey-label">${escapeHtml(tier)}</text>
       </g>`;
     })
     .join("");
@@ -546,8 +591,8 @@ export function renderThemeSankey(
     });
   });
 
-  bindBrushListener();
-  applyChartBrush();
+  ensureBrushListener();
+  applySankeyBrush(host);
 }
 
 export function setThemeVizClusterHandler(
@@ -563,10 +608,7 @@ export function destroyThemeViz(): void {
   activeStream = null;
   activeScatter = null;
   activeTier = null;
+  sankeyHostRef = null;
   brushUnsub?.();
   brushUnsub = null;
-}
-
-export function refreshThemeSankey(host: HTMLElement, clusters: ThemeCluster[], posts: Post[]): void {
-  renderThemeSankey(host, clusters, posts);
 }

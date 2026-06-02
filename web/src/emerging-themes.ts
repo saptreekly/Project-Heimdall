@@ -1,10 +1,8 @@
 import { selectThemeCluster } from "./investigation";
+import { escapeHtml, labelList } from "./safe-text";
 import type { Post, ThemesReport } from "./types";
 import {
   clearThemeBrush,
-  onThemeBrushChange,
-  brushOpacity,
-  activeBrushClusterIds,
   setThemeBrushHover,
   setThemeBrushSelection,
 } from "./theme-brush";
@@ -12,34 +10,26 @@ import {
   AUTO_MERGE_SIM,
   MERGE_DEFAULT_MAX,
   renderMergeDendrogram,
-  renderMergeExplorer,
+  updateMergeExplorer,
 } from "./theme-merge";
 import {
+  destroyThemeViz,
   mountThemeEscalationChart,
   mountThemeScatter,
   mountThemeStreamgraph,
-  refreshThemeSankey,
   renderThemeGantt,
   renderThemeSankey,
   setThemeVizClusterHandler,
 } from "./theme-viz";
 import { stateLoadingHtml } from "./ui-states";
 
-function escapeHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
 function displayLabels(entry: {
   label_phrases?: string[];
   label_terms?: string[];
 }): string[] {
-  const phrases = entry.label_phrases ?? [];
+  const phrases = labelList(entry.label_phrases);
   if (phrases.length > 0) return phrases;
-  return entry.label_terms ?? [];
+  return labelList(entry.label_terms);
 }
 
 function formatTermTokens(terms: string[]): string {
@@ -58,7 +48,13 @@ function cardLabel(terms: string[]): string {
 }
 
 let mergeThreshold = MERGE_DEFAULT_MAX;
-let brushCleanup: (() => void) | null = null;
+
+function postIdsForCluster(
+  timeline: Array<{ cluster_id: number; post_ids?: number[] }>,
+  clusterId: number
+): number[] {
+  return timeline.find((t) => t.cluster_id === clusterId)?.post_ids ?? [];
+}
 
 function activateClusterSelection(
   clusterId: number,
@@ -146,8 +142,7 @@ export function renderEmergingThemesTimeline(
   report: ThemesReport,
   posts: Post[] = []
 ): void {
-  brushCleanup?.();
-  brushCleanup = null;
+  destroyThemeViz();
   clearThemeBrush();
 
   const meta = document.getElementById("themes-meta");
@@ -155,6 +150,8 @@ export function renderEmergingThemesTimeline(
   const mergeHost = document.getElementById("theme-merge-host");
   const dendrogramHost = document.getElementById("theme-dendrogram-host");
   const sankeyHost = document.getElementById("theme-sankey-host");
+
+  if (mergeHost) delete mergeHost.dataset.mounted;
 
   setThemeVizClusterHandler((clusterId, label, postIds) => {
     activateClusterSelection(clusterId, label, postIds);
@@ -216,17 +213,15 @@ export function renderEmergingThemesTimeline(
   const similarity = report.cluster_similarity ?? [];
   const mergeCandidates = report.merge_candidates ?? [];
 
-  const remountMerge = (threshold: number) => {
-    if (!mergeHost) return;
-    renderMergeExplorer(
+  if (mergeHost) {
+    updateMergeExplorer(
       mergeHost,
       similarity,
       mergeCandidates,
       timeline,
-      threshold,
+      mergeThreshold,
       (value) => {
         mergeThreshold = value;
-        remountMerge(value);
       },
       (group) => {
         const leadId = group.clusterIds[0];
@@ -238,16 +233,12 @@ export function renderEmergingThemesTimeline(
         );
       }
     );
-  };
+  }
 
   if (ganttHost) {
     renderThemeGantt(ganttHost, timeline, (clusterId, label, postIds) => {
       activateClusterSelection(clusterId, label, postIds);
     });
-  }
-
-  if (mergeHost) {
-    remountMerge(mergeThreshold);
   }
 
   if (dendrogramHost && report.merge_tree?.length) {
@@ -288,7 +279,6 @@ export function renderEmergingThemesTimeline(
         class="theme-card${entry.emerging_theme ? " theme-card-emerging" : ""}${entry.is_noise ? " theme-card-noise" : ""}"
         data-cluster-id="${entry.cluster_id}"
         data-theme-cluster-id="${entry.cluster_id}"
-        data-post-ids="${(entry.post_ids ?? []).join(",")}"
         aria-label="Theme cluster ${escapeHtml(label)}"
       >
         <span class="theme-card-date">${escapeHtml(span)}</span>
@@ -310,11 +300,8 @@ export function renderEmergingThemesTimeline(
     });
     btn.addEventListener("mouseleave", () => setThemeBrushHover(null));
     btn.addEventListener("click", () => {
-      const ids = (btn.dataset.postIds ?? "")
-        .split(",")
-        .map((s) => parseInt(s, 10))
-        .filter((n) => Number.isFinite(n));
       const clusterId = parseInt(btn.dataset.clusterId ?? "", 10);
+      const ids = postIdsForCluster(timeline, clusterId);
       const card = timeline.find((t) => t.cluster_id === clusterId);
       const terms = card ? displayLabels(card) : [];
       const label = terms.length ? `[${terms.join(", ")}]` : `cluster ${clusterId}`;
@@ -339,17 +326,6 @@ export function renderEmergingThemesTimeline(
   if (sankeyHost) {
     renderThemeSankey(sankeyHost, report.clusters, posts);
   }
-
-  brushCleanup = onThemeBrushChange(() => {
-    if (sankeyHost) {
-      refreshThemeSankey(sankeyHost, report.clusters, posts);
-    }
-    document.querySelectorAll<HTMLElement>("[data-theme-cluster-id]").forEach((el) => {
-      const clusterId = parseInt(el.dataset.themeClusterId ?? "", 10);
-      if (!Number.isFinite(clusterId)) return;
-      el.style.opacity = String(activeBrushClusterIds() ? brushOpacity(clusterId) : 1);
-    });
-  });
 
   if (meta) {
     const encoder =
