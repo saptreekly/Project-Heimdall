@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-03 12:49:59 UTC
+> Tactical snapshot · 2026-06-03 13:03:16 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 399 / 102 |
-| Distinct themes | 9 |
+| Distinct themes | 11 |
 | Duplicate clusters (full DB) | 15 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 0 bots / 314 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **30**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **27**
-- Net new: **455** · re-seen: **30**
-- Duplicate rate: **6.2%**
+- Runs: **28**
+- Net new: **455** · re-seen: **60**
+- Duplicate rate: **11.7%**
 
 ## Sentiment drift
 
@@ -31,8 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Near-copy campaign** · red wave, midterm election, executive order, voter fraud, save america (340 posts · 199 authors · 9 exact · 3 fuzzy subclusters)
-- **Shared frame** · midterms days, days presidential, election days, midterms days presidential, days presidential election (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · red wave, midterm election, executive order, save america, president trump (332 posts · 192 authors · 8 exact · 3 fuzzy subclusters)
+- **Shared frame (emerging)** · acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · elections post, cybersecurity teams, mercury news, endorses aisha (3 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -76,9 +82,9 @@ _None spanning multiple narratives._
 - corrupt doj, stop gaslighting, happy talk (8 posts)
 - fest heart, race gmmtv, live house, birdy barista, ppnaravit phuwintang (3 posts)
 - sorry senile, pig bonespur, draft dodger, inbreeds cuz, loves winners (9 posts)
+- acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts)
 - affordability set, migration trend, points continued, appeal republican, backed economic (3 posts)
-- beautiful delay, republicans planned, damage midterms, coming higher, work rules (5 posts)
-- _…1 more emerging theme(s)._
+- _…2 more emerging theme(s)._
 
 ## Scope note
 
