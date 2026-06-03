@@ -46,7 +46,7 @@ jobs:
             exit 1
           fi
 
-      - name: Rescore narratives (lexicon v2.3 + embed themes)
+      - name: Rescore narratives (lexicon + embed themes)
         run: python scripts/rescore_dashboard_narratives.py --if-stale
 
       - name: Database maintenance

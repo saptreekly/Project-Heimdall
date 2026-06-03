@@ -12,6 +12,11 @@ ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "web" / "public" / "data" / "snapshot.json"
 PREVIOUS = ROOT / "data" / "dashboard" / ".snapshot_smoke_previous.json"
 
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from heimdall.nlp.outrage import MODEL_VERSION  # noqa: E402
+
 
 def validate_sentiment_bundle(bundle: dict, *, strict: bool = False) -> list[str]:
     """Return list of validation errors (empty if OK)."""
@@ -36,8 +41,8 @@ def validate_sentiment_bundle(bundle: dict, *, strict: bool = False) -> list[str
                     errors.append(f"post missing {key}")
         provenance = bundle.get("provenance") or {}
         version = str(provenance.get("outrage_model_version") or "")
-        if version and not version.startswith("heimdall-lexicon-v2.3"):
-            errors.append(f"outrage_model_version not v2.3: {version}")
+        if version and not version.startswith(MODEL_VERSION):
+            errors.append(f"outrage_model_version not {MODEL_VERSION}: {version}")
     return errors
 
 

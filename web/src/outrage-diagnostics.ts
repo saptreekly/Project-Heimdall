@@ -108,7 +108,7 @@ export function sentimentOutrageNoticeHtml(diag: OutrageDiagnostics): string {
       <p>
         Daily mean outrage flatlines near zero despite activity in the timeline.${spikeLine}
         Text in this narrative is scoring as civil/neutral under the static regex lexicon
-        (<code>heimdall-lexicon-v2.3</code>), so author max outrage tops out around
+        (<code>heimdall-lexicon-v2.4</code>), so author max outrage tops out around
         <strong>${diag.maxAuthorOutrage.toFixed(3)}</strong> (≤ ${OUTRAGE_COMPRESSION_THRESHOLD}).
       </p>
       <p class="scatter-diagnosis-sub">

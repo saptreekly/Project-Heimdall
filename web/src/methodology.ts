@@ -83,7 +83,7 @@ export function renderMethodology(): string {
         <h2>Outrage index</h2>
         <p>
           Each post gets an <strong>outrage index</strong> in [0, 1] from a lexicon pipeline
-          (<code>heimdall-lexicon-v2.3</code>, optional <code>+embed-cluster</code> or
+          (<code>heimdall-lexicon-v2.4</code>, optional <code>+embed-cluster</code> or
           <code>+twitter-roberta</code>): dehumanizing language,
           anti-authority framing,
           ragebait markers, conflict terms, negative sentiment, and stance polarization. Affection

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rescore all narratives in the dashboard DB (lexicon v2.3 + optional embed themes)."""
+"""Rescore all narratives in the dashboard DB (current lexicon + optional embed themes)."""
 
 from __future__ import annotations
 

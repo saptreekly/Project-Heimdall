@@ -1,3 +1,4 @@
+from heimdall.nlp.outrage import MODEL_VERSION, MODEL_VERSION_EMBED
 from scripts.verify_snapshot import validate_sentiment_bundle
 
 
@@ -11,7 +12,7 @@ def test_validate_sentiment_bundle_strict_requires_new_fields():
     errors = validate_sentiment_bundle(bundle, strict=True)
     assert any("divergence_days" in e for e in errors)
     assert any("polarity" in e for e in errors)
-    assert any("v2.3" in e for e in errors)
+    assert any(MODEL_VERSION in e for e in errors)
 
 
 def test_validate_sentiment_bundle_ok_when_complete():
@@ -30,6 +31,6 @@ def test_validate_sentiment_bundle_ok_when_complete():
                 "negativity_score": 0.0,
             }
         ],
-        "provenance": {"outrage_model_version": "heimdall-lexicon-v2.3+embed-cluster"},
+        "provenance": {"outrage_model_version": MODEL_VERSION_EMBED},
     }
     assert validate_sentiment_bundle(bundle, strict=True) == []
