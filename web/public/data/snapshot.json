@@ -1,11 +1,11 @@
 {
   "version": 5,
-  "generated_at": "2026-06-03T06:32:33.649032+00:00",
+  "generated_at": "2026-06-03T07:20:32.402923+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
-      "keywords": "2026 red wave",
+      "keywords": "author:alpha",
       "post_count": 359
     }
   ],
@@ -13688,11 +13688,9 @@
         ],
         "sightings": {
           "total_resightings": 0,
-          "total_net_new": 13,
+          "total_net_new": 0,
           "daily_resightings": {},
-          "daily_net_new": {
-            "2026-06-03": 13
-          }
+          "daily_net_new": {}
         }
       },
       "benchmark": null,
@@ -13726,8 +13724,8 @@
       },
       "brief": {
         "version": 1,
-        "generated_at": "2026-06-03T06:32:33.649032+00:00",
-        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-03 06:32:33 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **359** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.00 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 377 / 94 |\n| Distinct themes | 11 |\n| Duplicate clusters (full DB) | 14 |\n| Fuzzy clusters (snapshot cohort) | 3 |\n| IU astroturf overlap | 0 bots / 298 authors |\n\n## Ingest yield (last 14 days)\n\n- Runs: **24**\n- Net new: **438** \u00b7 re-seen: **17**\n- Duplicate rate: **3.7%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Near-copy campaign** \u00b7 red wave, midterm election, executive order, save america, president trump (315 posts \u00b7 190 authors \u00b7 8 exact \u00b7 3 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts \u00b7 3 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 elections post, cybersecurity teams, mercury news, endorses aisha (3 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 felony charges, harris installed, fraud invasion, stay ready (3 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n\n## CIB warning signals\n\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j0.94\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **6 posts** \u00b7 1 author(s) \u2014 Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and\u2026\n- **4 posts** \u00b7 1 author(s) \u2014 Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat l\u2026\n- **3 posts** \u00b7 1 author(s) \u2014 Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE\n- **3 posts** \u00b7 1 author(s) \u2014 With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations\u2026\n- _\u20268 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **4 posts** \u00b7 4 authors \u00b7 ~100% Jaccard \u2014 Hackers are already laying groundwork to disrupt the 2026 midterms, research says via\n- **2 posts** \u00b7 2 authors \u00b7 ~94% Jaccard \u2014 \"Tina Peters, a former elections clerk convicted of multiple charges related to security breaches of Colorado\u2019s 2020 presidential election results, on Monday accused Democrats of trying to \u201ccheat\u201d in\u2026\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- corrupt doj, stop gaslighting, happy talk (8 posts)\n- fest heart, race gmmtv, live house, birdy barista, ppnaravit phuwintang (3 posts)\n- sorry senile, pig bonespur, draft dodger, inbreeds cuz, loves winners (9 posts)\n- acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts)\n- elections post, cybersecurity teams, mercury news, endorses aisha (3 posts)\n- _\u20262 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 359 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
+        "generated_at": "2026-06-03T07:20:32.402923+00:00",
+        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-03 07:20:32 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **359** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.00 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 377 / 94 |\n| Distinct themes | 11 |\n| Duplicate clusters (full DB) | 14 |\n| Fuzzy clusters (snapshot cohort) | 3 |\n| IU astroturf overlap | 0 bots / 298 authors |\n\n## Ingest yield (last 14 days)\n\n- Runs: **25**\n- Net new: **438** \u00b7 re-seen: **17**\n- Duplicate rate: **3.7%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Near-copy campaign** \u00b7 red wave, midterm election, executive order, save america, president trump (315 posts \u00b7 190 authors \u00b7 8 exact \u00b7 3 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts \u00b7 3 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 elections post, cybersecurity teams, mercury news, endorses aisha (3 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 felony charges, harris installed, fraud invasion, stay ready (3 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n\n## CIB warning signals\n\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j0.94\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **6 posts** \u00b7 1 author(s) \u2014 Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and\u2026\n- **4 posts** \u00b7 1 author(s) \u2014 Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat l\u2026\n- **3 posts** \u00b7 1 author(s) \u2014 Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE\n- **3 posts** \u00b7 1 author(s) \u2014 With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations\u2026\n- _\u20268 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **4 posts** \u00b7 4 authors \u00b7 ~100% Jaccard \u2014 Hackers are already laying groundwork to disrupt the 2026 midterms, research says via\n- **2 posts** \u00b7 2 authors \u00b7 ~94% Jaccard \u2014 \"Tina Peters, a former elections clerk convicted of multiple charges related to security breaches of Colorado\u2019s 2020 presidential election results, on Monday accused Democrats of trying to \u201ccheat\u201d in\u2026\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- corrupt doj, stop gaslighting, happy talk (8 posts)\n- fest heart, race gmmtv, live house, birdy barista, ppnaravit phuwintang (3 posts)\n- sorry senile, pig bonespur, draft dodger, inbreeds cuz, loves winners (9 posts)\n- acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts)\n- elections post, cybersecurity teams, mercury news, endorses aisha (3 posts)\n- _\u20262 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 359 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
         "meta": {
           "narrative_name": "midterms_2026",
           "posts_total_db": 359,
@@ -13761,21 +13759,19 @@
           "ingest_yield": {
             "available": true,
             "window_days": 14,
-            "runs": 24,
+            "runs": 25,
             "net_new": 438,
             "duplicates": 17,
             "filtered": 7,
             "fetched": 462,
             "duplicate_rate": 0.037,
-            "latest_run_at": "2026-06-03T06:32:31.827831+00:00"
+            "latest_run_at": "2026-06-03T07:20:30.869117+00:00"
           },
           "sightings": {
             "total_resightings": 0,
-            "total_net_new": 13,
+            "total_net_new": 0,
             "daily_resightings": {},
-            "daily_net_new": {
-              "2026-06-03": 13
-            }
+            "daily_net_new": {}
           },
           "sentiment": {
             "trend": "stable",
@@ -14216,7 +14212,7 @@
     "x_rate": {
       "date": "2026-06-03",
       "count": 1,
-      "requests_used": 4
+      "requests_used": 5
     }
   }
 }
