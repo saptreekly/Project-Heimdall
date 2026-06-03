@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 14,
+      "run_counter": 15,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1266,6 +1266,58 @@
         },
         "1591400760": {
           "author_id": "1591400760",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1364451347542736896": {
+          "author_id": "1364451347542736896",
+          "handle": "ShanePandeSA",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1104764949027586048": {
+          "author_id": "1104764949027586048",
+          "handle": "DJGray35150003",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "862718426757779457": {
+          "author_id": "862718426757779457",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2030547049759043584": {
+          "author_id": "2030547049759043584",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
