@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-03 14:16:22 UTC
+> Tactical snapshot · 2026-06-03 15:12:38 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **376** |
+| Posts in database | **396** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 399 / 102 |
-| Distinct themes | 9 |
+| Graph nodes / edges | 420 / 110 |
+| Distinct themes | 13 |
 | Duplicate clusters (full DB) | 15 |
 | Fuzzy clusters (snapshot cohort) | 3 |
-| IU astroturf overlap | 0 bots / 314 authors |
+| IU astroturf overlap | 0 bots / 333 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **29**
-- Net new: **455** · re-seen: **60**
-- Duplicate rate: **11.7%**
+- Runs: **30**
+- Net new: **475** · re-seen: **60**
+- Duplicate rate: **11.2%**
 
 ## Sentiment drift
 
@@ -31,8 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Near-copy campaign** · red wave, midterm election, executive order, voter fraud, save america (340 posts · 199 authors · 9 exact · 3 fuzzy subclusters)
-- **Shared frame** · midterms days, days presidential, election days, midterms days presidential, days presidential election (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 78 authors · 8 exact · 1 fuzzy subclusters)
+- **Shared frame** · reuters reported, affordability set, migration trend, points continued, appeal republican (69 posts · 51 authors · 2 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · tina peters, usps proposed, presidential power, elections clerk (22 posts · 20 authors · 0 exact · 1 fuzzy subclusters)
+- **Shared frame** · john thune, eliminate filibuster, far republicans, mitchell post, you're wondering (20 posts · 17 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · executive order, mail ballot, federal judge, block trump, citizenship verification (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · gavin newsome, steve hilton, total votes, listening voted (11 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -73,16 +78,17 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- fest heart, race gmmtv, live house, birdy barista, ppnaravit phuwintang (3 posts)
-- sorry senile, pig bonespur, draft dodger, inbreeds cuz, loves winners (9 posts)
-- affordability set, migration trend, points continued, appeal republican, backed economic (3 posts)
-- beautiful delay, republicans planned, damage midterms, coming higher, work rules (5 posts)
-- _…1 more emerging theme(s)._
+- executive order, mail ballot, federal judge, block trump, citizenship verification (11 posts)
+- gavin newsome, steve hilton, total votes, listening voted (11 posts)
+- sorry senile, pig bonespur, draft dodger, inbreeds cuz, losers america (9 posts)
+- 'blue wave', writes strong, mayors influence (10 posts)
+- black district, legal standard (9 posts)
+- bigger primary, days calendar, states including, nation largest, high stakes (8 posts)
+- _…4 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 376 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 396 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
