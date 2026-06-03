@@ -20,6 +20,7 @@ from heimdall.analysis.near_duplicates import (
     post_id_to_near_group,
     resolve_jaccard_threshold,
 )
+from heimdall.export.brief import build_narrative_brief
 from heimdall.export.coordination_overlay import attach_coordination_overlays
 from heimdall.export.cross_pollination_loader import load_cross_pollination, per_narrative_hits
 from heimdall.export.provenance import SNAPSHOT_POST_LIMIT, build_narrative_provenance
@@ -386,6 +387,7 @@ async def build_dashboard_snapshot(db: AsyncSession) -> dict:
     summaries = await list_narrative_summaries(db)
     cross_pollination = await load_cross_pollination(db)
     by_id: dict[str, dict] = {}
+    generated_at = datetime.now(UTC).isoformat()
     for summary in summaries:
         nid = summary.id
         raw_rows = await _narrative_post_rows(db, nid)
@@ -430,10 +432,17 @@ async def build_dashboard_snapshot(db: AsyncSession) -> dict:
                 fuzzy_cluster_count=near_dup.get("cross_author_fuzzy_count", 0),
             ),
         }
+        bundle = by_id[str(nid)]
+        bundle["brief"] = build_narrative_brief(
+            narrative=summary.model_dump(mode="json"),
+            bundle=bundle,
+            cross_pollination=cross_pollination,
+            generated_at=generated_at,
+        )
 
     return {
         "version": 5,
-        "generated_at": datetime.now(UTC).isoformat(),
+        "generated_at": generated_at,
         "narratives": [s.model_dump(mode="json") for s in summaries],
         "by_narrative_id": by_id,
         "cross_pollination": cross_pollination,

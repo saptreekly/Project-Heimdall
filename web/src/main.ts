@@ -3,6 +3,7 @@ import {
   DATA_LINKS,
   fetchAmplification,
   fetchBenchmark,
+  fetchBrief,
   fetchCib,
   fetchCrossPollination,
   fetchNearDuplicates,
@@ -37,7 +38,7 @@ import {
 } from "./desk-inspector";
 import { buildAlertRows, renderAlertInboxHtml } from "./alert-inbox";
 import { findParentThemeLabel, setCoordinationContext } from "./cluster-coordination";
-import { bindBriefPrint, briefPanelHtml, renderBrief } from "./brief";
+import { bindBriefPrint, briefPanelHtml, renderBrief, resetBriefClipboardBinding } from "./brief";
 import { renderContentNotice } from "./content-notice";
 import {
   duplicatePanelCaption,
@@ -141,6 +142,7 @@ import type {
   NearDuplicatesReport,
   Post,
   ThemesReport,
+  NarrativeBrief,
 } from "./types";
 
 const BLUR_SENSITIVE_KEY = "heimdall-blur-sensitive";
@@ -171,6 +173,7 @@ let briefContext: {
   amp: AmplificationReport;
   themes: ThemesReport;
   crossPollination: import("./types").CrossPollinationReport | null;
+  brief: NarrativeBrief | null;
 } | null = null;
 
 type ChartMountFns = {
@@ -676,7 +679,8 @@ function refreshBriefPanel(): void {
     briefContext.amp,
     briefContext.themes,
     lastNearDup,
-    briefContext.crossPollination ?? null
+    briefContext.crossPollination ?? null,
+    briefContext.brief
   );
 }
 
@@ -793,7 +797,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
   try {
     const narratives = await listNarratives();
     const narrativeMeta = narratives.find((n) => n.id === narrativeId);
-    const [posts, cib, sentiment, amp, graph, themes, nearDup, benchmark, crossPollination, pollinationHits, provenance] =
+    const [posts, cib, sentiment, amp, graph, themes, nearDup, benchmark, crossPollination, pollinationHits, provenance, brief] =
       await Promise.all([
         fetchPosts(narrativeId),
         fetchCib(narrativeId),
@@ -806,6 +810,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         fetchCrossPollination(),
         fetchNarrativeCrossPollinationHits(narrativeId),
         fetchProvenance(narrativeId),
+        fetchBrief(narrativeId),
       ]);
     clusterSourcePosts = posts;
     const bounds = resolveThresholdBounds(nearDup);
@@ -827,7 +832,9 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         amp,
         themes,
         crossPollination,
+        brief,
       };
+      resetBriefClipboardBinding();
       refreshBriefPanel();
     }
 

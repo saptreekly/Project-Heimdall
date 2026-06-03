@@ -92,7 +92,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dashboard/heimdall.db data/dashboard/theme_baseline.json data/dashboard/keyword_suggestions.json data/dashboard/x_keyword_rotation.json data/dashboard/author_watchlist.json data/scheduled_ingest.json web/public/data/snapshot.json reports/
+          git add data/dashboard/heimdall.db data/dashboard/theme_baseline.json data/dashboard/keyword_suggestions.json data/dashboard/x_keyword_rotation.json data/dashboard/author_watchlist.json data/scheduled_ingest.json web/public/data/snapshot.json data/dashboard/briefs web/public/data/briefs reports/
           for f in data/dashboard/keyword_rotation_log.jsonl; do
             [ -f "$f" ] && git add "$f"
           done

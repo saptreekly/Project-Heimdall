@@ -45,6 +45,17 @@ async def run(out: Path) -> int:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(snapshot, indent=2), encoding="utf-8")
     print(f"Wrote {out} ({len(snapshot['narratives'])} narratives)")
+
+    from heimdall.export.brief import write_brief_artifacts
+
+    brief_dirs = [
+        ROOT / "data" / "dashboard" / "briefs",
+        ROOT / "web" / "public" / "data" / "briefs",
+    ]
+    for brief_dir in brief_dirs:
+        paths = write_brief_artifacts(snapshot, brief_dir)
+        print(f"Wrote {len(paths)} brief artifact(s) to {brief_dir}")
+
     return 0
 
 

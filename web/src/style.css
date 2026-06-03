@@ -2203,6 +2203,56 @@ html:not(.chart-density-compact) .graph-canvas {
   color: var(--muted);
 }
 
+.brief-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem 1rem;
+  margin: 0.75rem 0 1rem;
+  font-size: 0.88rem;
+}
+
+.brief-metrics dt {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.brief-metrics dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.brief-section {
+  margin-top: 1rem;
+}
+
+.brief-section h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.brief-corpus-line {
+  margin: 0.35rem 0 0.5rem;
+}
+
+.brief-more-note,
+.brief-legacy-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0.35rem 0 0;
+}
+
+.brief-frame-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.brief-download {
+  text-decoration: none;
+}
+
 .brief-actions {
   display: flex;
   flex-wrap: wrap;

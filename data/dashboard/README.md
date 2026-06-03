@@ -31,7 +31,7 @@ python scripts/export_dashboard_data.py
 
 1. Runs jobs in `data/scheduled_ingest.json` with X guardrails (one rotated keyword per run ≈ 1 GraphQL request)
 2. Requires GitHub secrets `AUTH_TOKEN` and `CT0`
-3. Commits `heimdall.db`, `x_rate_state.json`, `x_keyword_rotation.json`, and `snapshot.json`
+3. Commits `heimdall.db`, `x_rate_state.json`, `x_keyword_rotation.json`, `snapshot.json`, and auto-generated narrative briefs under `data/dashboard/briefs/` (mirrored to `web/public/data/briefs/` for static download)
 
 The Pages workflow (`/.github/workflows/pages.yml`) runs on push after ingest and daily at 14:00 UTC:
 
@@ -61,6 +61,7 @@ The Pages workflow (`/.github/workflows/pages.yml`) runs on push after ingest an
 | `keyword_suggestions.json` | Weekly keyword gap discovery |
 | `keyword_rotation_log.jsonl` | Weekly auto keyword swap audit trail |
 | `author_watchlist.json` | X author frontier for snowball `from:` polls |
+| `briefs/` | Auto-generated Markdown briefings per narrative (`INDEX.md` + `{narrative}.md`) on every export |
 | `data/scheduled_ingest.json` | Updated weekly when stale keywords are swapped |
 
 **Keyword auto-rotation** (weekly `maintenance.yml`): removes keywords with 0 yield after 3+ runs (never unpins `2026 midterms`), adds top gap suggestions from theme/corpus analysis. Requires ≥5 ingest runs in the 7-day window before swapping.

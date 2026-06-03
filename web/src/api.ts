@@ -7,6 +7,7 @@ import type {
   GraphAuthor,
   NarrativePollinationHits,
   NarrativeProvenance,
+  NarrativeBrief,
   NarrativeSummary,
   NearDuplicatesReport,
   Post,
@@ -204,6 +205,11 @@ export async function fetchThemes(narrativeId: number): Promise<ThemesReport> {
     return { ...EMPTY_THEMES, narrative_id: narrativeId };
   }
   return { ...EMPTY_THEMES, ...themes, narrative_id: narrativeId };
+}
+
+export async function fetchBrief(narrativeId: number): Promise<NarrativeBrief | null> {
+  await loadSnapshot();
+  return bundleFor(narrativeId).brief ?? null;
 }
 
 export async function fetchPropagationGraph(narrativeId: number): Promise<PropagationGraph> {

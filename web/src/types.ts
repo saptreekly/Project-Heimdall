@@ -427,6 +427,43 @@ export interface NarrativeBundle {
   themes?: ThemesReport;
   benchmark?: BenchmarkStats | null;
   provenance?: NarrativeProvenance;
+  brief?: NarrativeBrief;
+}
+
+export interface NarrativeBrief {
+  version: number;
+  generated_at: string;
+  markdown: string;
+  meta: {
+    narrative_name: string;
+    posts_total_db: number;
+    posts_in_snapshot: number;
+    posts_truncated: boolean;
+    section_limits?: Record<string, number>;
+    totals?: Record<string, number>;
+  };
+  sections?: {
+    corpus?: Record<string, unknown>;
+    ingest_yield?: Record<string, unknown>;
+    sightings?: Record<string, unknown>;
+    sentiment?: { trend?: string; week_over_week_alert?: string };
+    coordination_frames?: Array<{
+      label?: string;
+      tier?: string;
+      tier_label?: string;
+      unique_post_count?: number;
+      unique_author_count?: number;
+      exact_subclusters?: number;
+      fuzzy_subclusters?: number;
+    }>;
+    signals?: string[];
+    exact_duplicates?: DuplicateCluster[];
+    bursts?: DuplicateCluster[];
+    fuzzy?: CrossAuthorFuzzyCluster[];
+    emerging_themes?: ThemeTimelineEntry[];
+    cross_pollination_narrative?: CrossPollinationActor[];
+    cross_pollination_global?: CrossPollinationActor[];
+  };
 }
 
 export interface DashboardSnapshot {
