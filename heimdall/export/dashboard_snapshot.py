@@ -346,6 +346,7 @@ async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
                     c
                     for c in clusters
                     if not c.get("is_market_chatter")
+                    and not c.get("filter_reason")
                     and (
                         float(c.get("label_distinctiveness", 0.0)) >= 0.12
                         or c.get("emerging_theme")

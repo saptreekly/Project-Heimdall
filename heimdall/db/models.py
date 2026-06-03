@@ -1,7 +1,7 @@
 import enum
 from datetime import datetime
 
-from sqlalchemy import DateTime, Enum, Float, ForeignKey, Index, String, Text, func
+from sqlalchemy import DateTime, Enum, Float, ForeignKey, Index, LargeBinary, String, Text, func
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
@@ -57,10 +57,29 @@ class Post(Base):
 
     narrative: Mapped["Narrative"] = relationship(back_populates="posts")
     scores: Mapped[list["OutrageScore"]] = relationship(back_populates="post")
+    embedding: Mapped["PostEmbedding | None"] = relationship(
+        back_populates="post",
+        uselist=False,
+    )
     edges_out: Mapped[list["InteractionEdge"]] = relationship(
         back_populates="source_post",
         foreign_keys="InteractionEdge.source_post_id",
     )
+
+
+class PostEmbedding(Base):
+    """Cached L2-normalized sentence embedding for theme clustering."""
+
+    __tablename__ = "post_embeddings"
+
+    post_id: Mapped[int] = mapped_column(ForeignKey("posts.id"), primary_key=True)
+    model: Mapped[str] = mapped_column(String(64))
+    dim: Mapped[int] = mapped_column()
+    vector: Mapped[bytes] = mapped_column(LargeBinary)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+
+    post: Mapped["Post"] = relationship(back_populates="embedding")
 
 
 class OutrageScore(Base):

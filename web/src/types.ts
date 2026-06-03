@@ -292,9 +292,11 @@ export interface ThemeCluster {
   daily_counts?: Record<string, number>;
   author_entropy?: number;
   quality_score?: number;
+  confidence_tier?: "high" | "medium" | "low";
   is_noise?: boolean;
   is_market_chatter?: boolean;
   market_chatter_rate?: number;
+  filter_reason?: string | null;
   map_x?: number | null;
   map_y?: number | null;
 }
@@ -361,6 +363,26 @@ export interface ThemesReport {
   market_chatter_count?: number;
   market_chatter_post_count?: number;
   distinct_theme_count?: number;
+  filtered_post_count?: number;
+  quality_metrics?: {
+    silhouette?: number | null;
+    davies_bouldin?: number | null;
+    noise_ratio?: number;
+    narrative_purity?: number | null;
+    notes?: string[];
+  };
+  theme_lineage?: Array<{
+    week: string;
+    cluster_count: number;
+    clusters: Array<{
+      cluster_id: number;
+      label: string;
+      size: number;
+      post_ids: number[];
+      emerging_theme: boolean;
+    }>;
+    continues_from: Array<{ week: string; label: string; overlap: number }>;
+  }>;
 }
 
 export interface NarrativeBundle {

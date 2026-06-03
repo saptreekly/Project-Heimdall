@@ -80,6 +80,31 @@ MARKET_CHATTER_POST_THRESHOLD = 0.42
 MARKET_CHATTER_CLUSTER_THRESHOLD = 0.32
 MARKET_CLUSTER_ID = -2
 
+# Posts with political framing can mention tickers; rescue below this combined score.
+POLITICAL_FRAME_TERMS = frozenset(
+    {
+        "accountability",
+        "ballot",
+        "biden",
+        "border",
+        "congress",
+        "deep",
+        "democrat",
+        "election",
+        "fraud",
+        "gop",
+        "immigration",
+        "midterm",
+        "republican",
+        "state",
+        "trump",
+        "vote",
+        "voter",
+        "wave",
+    }
+)
+POLITICAL_RESCUE_SCORE = 0.65
+
 
 def market_stopwords() -> frozenset[str]:
     return MARKET_TICKERS
@@ -118,8 +143,26 @@ def market_chatter_score(text: str) -> float:
     return round(min(1.0, score), 4)
 
 
+def has_political_frame(text: str) -> bool:
+    lowered = (text or "").lower()
+    if any(
+        phrase in lowered
+        for phrase in ("red wave", "deep state", "election fraud", "vote steal", "stop the steal")
+    ):
+        return True
+    tokens = set(_tokens(text))
+    core = tokens & POLITICAL_FRAME_TERMS
+    strong = core - {"gop", "wave", "state"}
+    return len(strong) >= 2 or (len(core) >= 3 and len(strong) >= 1)
+
+
 def is_market_chatter_post(text: str) -> bool:
-    return market_chatter_score(text) >= MARKET_CHATTER_POST_THRESHOLD
+    score = market_chatter_score(text)
+    if score < MARKET_CHATTER_POST_THRESHOLD:
+        return False
+    if has_political_frame(text) and score < POLITICAL_RESCUE_SCORE:
+        return False
+    return True
 
 
 def cluster_market_chatter_rate(texts: list[str]) -> float:

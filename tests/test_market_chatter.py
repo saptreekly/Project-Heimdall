@@ -35,3 +35,8 @@ def test_cluster_market_detection() -> None:
 def test_political_cluster_not_market() -> None:
     texts = [SAMPLE_POLITICAL, SAMPLE_POLITICAL.replace("FBI", "DOJ")]
     assert not is_market_chatter_cluster(texts, ["election", "fraud", "midterm"])
+
+
+def test_red_wave_with_tickers_not_market() -> None:
+    text = "red wave election fraud accountability spx vix mkt"
+    assert not is_market_chatter_post(text)

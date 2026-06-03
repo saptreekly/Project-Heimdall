@@ -3,20 +3,31 @@
 from __future__ import annotations
 
 import math
-from collections import Counter
+from collections import Counter, defaultdict
 from dataclasses import dataclass, field, replace
+from datetime import datetime
 
 import numpy as np
 
-from heimdall.nlp.embeddings import DEFAULT_EMBEDDING_MODEL, encode_texts
+from heimdall.nlp.embeddings import DEFAULT_EMBEDDING_MODEL
 from heimdall.nlp.lexicon import lexicon_hit_strength
 from heimdall.nlp.market_chatter import (
     MARKET_CLUSTER_ID,
     cluster_market_chatter_rate,
     is_market_chatter_cluster,
-    is_market_chatter_post,
 )
+from heimdall.nlp.post_embeddings import resolve_embedding_matrix
 from heimdall.nlp.theme_phrases import assign_distinct_phrase_labels, label_terms as _phrase_label_terms
+from heimdall.nlp.theme_prefilter import (
+    NON_ENGLISH_CLUSTER_ID,
+    OFF_TOPIC_CLUSTER_ID,
+    PROMO_CLUSTER_ID,
+    SHORT_CLUSTER_ID,
+    PrefilterReason,
+    classify_post_for_clustering,
+    narrative_keyword_hits,
+    prefilter_cluster_id,
+)
 
 DBSCAN_MIN_SAMPLES = 2
 EMERGING_LEXICON_MAX = 0.25
@@ -29,6 +40,16 @@ KMEANS_MAX_CLUSTERS = 6
 KMEANS_POSTS_PER_CLUSTER = 25
 MERGE_CENTROID_SIM = 0.87
 NOISE_CLUSTER_ID = -1
+TWO_PASS_MIN_SIZE = 8
+LINEAGE_OVERLAP_MIN = 0.35
+
+FILTER_BUCKET_META: dict[int, tuple[str, str]] = {
+    PROMO_CLUSTER_ID: ("promo", "Promo / link spam"),
+    SHORT_CLUSTER_ID: ("short", "Ultra-short posts"),
+    NON_ENGLISH_CLUSTER_ID: ("non_english", "Non-English / mixed"),
+    OFF_TOPIC_CLUSTER_ID: ("off_topic", "Off-narrative keywords"),
+    MARKET_CLUSTER_ID: ("market", "Market / crypto chatter"),
+}
 
 
 @dataclass(frozen=True)
@@ -45,9 +66,11 @@ class ThemeCluster:
     sample_text: str
     author_entropy: float = 0.0
     quality_score: float = 0.0
+    confidence_tier: str = "medium"
     is_noise: bool = False
     is_market_chatter: bool = False
     market_chatter_rate: float = 0.0
+    filter_reason: str | None = None
     map_x: float | None = None
     map_y: float | None = None
 
@@ -63,6 +86,9 @@ class ThemeClusterReport:
     post_theme_boost: dict[int, float] = field(default_factory=dict)
     cluster_similarity: list[dict] = field(default_factory=list)
     merge_tree: list[dict] = field(default_factory=list)
+    quality_metrics: dict = field(default_factory=dict)
+    theme_lineage: list[dict] = field(default_factory=list)
+    filtered_post_count: int = 0
 
 
 def _label_terms(texts: list[str], *, top_n: int = 6) -> list[str]:
@@ -75,7 +101,6 @@ def _assign_distinct_cluster_labels(
     *,
     top_n: int = 6,
 ) -> dict[int, tuple[list[str], list[str], float]]:
-    """Return per cluster: (display labels, fallback unigrams, distinctiveness)."""
     raw = assign_distinct_phrase_labels(cluster_texts, all_texts, top_n=top_n)
     labels: dict[int, tuple[list[str], list[str], float]] = {}
     for cluster_id, (phrases, fallback, distinctiveness) in raw.items():
@@ -96,6 +121,15 @@ def _author_entropy(author_ids: list[str]) -> float:
 
 def _quality_score(*, cohesion: float, distinctiveness: float, lexicon_rate: float) -> float:
     return round(0.45 * cohesion + 0.35 * distinctiveness + 0.2 * (1.0 - lexicon_rate), 4)
+
+
+def _confidence_tier(*, model: str, quality_score: float, cohesion: float) -> str:
+    neural = "tfidf" not in (model or "").lower()
+    if neural and quality_score >= 0.55 and cohesion >= 0.55:
+        return "high"
+    if neural or quality_score >= 0.4:
+        return "medium"
+    return "low"
 
 
 def _cluster_primary_label(cluster: ThemeCluster) -> str:
@@ -127,12 +161,11 @@ def _build_merge_tree(
     clusters: list[ThemeCluster],
     centroids: dict[int, np.ndarray],
 ) -> list[dict]:
-    """Greedy agglomerative merge history for dendrogram visualization."""
     cluster_by_id = {c.cluster_id: c for c in clusters}
     active: dict[int, dict] = {}
     for cluster_id, centroid in centroids.items():
         cluster = cluster_by_id.get(cluster_id)
-        if cluster is None or cluster.is_noise:
+        if cluster is None or cluster.is_noise or cluster.filter_reason:
             continue
         active[cluster_id] = {
             "node_id": f"c{cluster_id}",
@@ -258,7 +291,109 @@ def _merge_similar_clusters(embeddings: np.ndarray, labels: np.ndarray) -> np.nd
     return merged
 
 
-def _cluster_labels(embeddings: np.ndarray, *, neural: bool) -> tuple[np.ndarray, str]:
+def _apply_must_link_groups(
+    labels: np.ndarray,
+    must_link_groups: list[list[int]] | None,
+    post_ids: list[int],
+) -> np.ndarray:
+    if not must_link_groups:
+        return labels
+    id_to_idx = {pid: i for i, pid in enumerate(post_ids)}
+    merged = labels.copy()
+    for group in must_link_groups:
+        indices = [id_to_idx[pid] for pid in group if pid in id_to_idx]
+        if len(indices) < 2:
+            continue
+        cluster_ids = [int(merged[i]) for i in indices if merged[i] >= 0]
+        if cluster_ids:
+            target = Counter(cluster_ids).most_common(1)[0][0]
+        else:
+            target = max(labels) + 1 if len(labels) else 0
+        for idx in indices:
+            merged[idx] = target
+    return merged
+
+
+def _hdbscan_labels(embeddings: np.ndarray) -> tuple[np.ndarray, str] | None:
+    n = len(embeddings)
+    if n < 4:
+        return None
+    try:
+        import hdbscan
+    except ImportError:
+        return None
+
+    min_cluster_size = max(3, min(5, n // 12 or 3))
+    clusterer = hdbscan.HDBSCAN(
+        min_cluster_size=min_cluster_size,
+        min_samples=DBSCAN_MIN_SAMPLES,
+        metric="euclidean",
+        cluster_selection_method="eom",
+    )
+    labels = clusterer.fit_predict(embeddings)
+    valid = labels[labels >= 0]
+    n_clusters = len(set(valid.tolist())) if len(valid) else 0
+    noise_ratio = float((labels == -1).sum()) / n
+    if n_clusters >= 2 and noise_ratio <= 0.65:
+        return labels, "hdbscan"
+    if n_clusters >= 1 and noise_ratio <= 0.45:
+        return labels, "hdbscan"
+    return None
+
+
+def _dbscan_labels(embeddings: np.ndarray, *, neural: bool) -> tuple[np.ndarray, str]:
+    from sklearn.cluster import DBSCAN
+
+    eps = _adaptive_dbscan_eps(embeddings, neural=neural)
+    db = DBSCAN(eps=eps, min_samples=DBSCAN_MIN_SAMPLES, metric="cosine")
+    labels = db.fit_predict(embeddings)
+    return labels, "dbscan"
+
+
+def _kmeans_labels(embeddings: np.ndarray) -> tuple[np.ndarray, str]:
+    from sklearn.cluster import KMeans
+
+    k = _kmeans_cluster_count(len(embeddings))
+    labels = KMeans(n_clusters=k, random_state=42, n_init=10).fit_predict(embeddings)
+    return labels, "kmeans"
+
+
+def _two_pass_refinement(embeddings: np.ndarray, labels: np.ndarray) -> np.ndarray:
+    """Re-cluster large super-clusters for finer narrative frames."""
+    refined = labels.copy()
+    next_id = int(labels.max()) + 1 if len(labels) else 0
+    for cluster_id in sorted({int(x) for x in labels if int(x) >= 0}):
+        member_idx = np.where(labels == cluster_id)[0]
+        if len(member_idx) < TWO_PASS_MIN_SIZE:
+            continue
+        subset = embeddings[member_idx]
+        inner = _hdbscan_labels(subset)
+        if inner is None:
+            inner_labels, _ = _dbscan_labels(subset, neural=True)
+        else:
+            inner_labels, _ = inner
+        inner_valid = inner_labels[inner_labels >= 0]
+        if len(set(inner_valid.tolist())) < 2:
+            continue
+        mapping: dict[int, int] = {}
+        for inner_id in sorted({int(x) for x in inner_labels if int(x) >= 0}):
+            mapping[inner_id] = cluster_id if inner_id == 0 else next_id
+            if inner_id != 0:
+                next_id += 1
+        for local_i, global_i in enumerate(member_idx):
+            inner_label = int(inner_labels[local_i])
+            if inner_label >= 0:
+                refined[global_i] = mapping.get(inner_label, cluster_id)
+    return refined
+
+
+def _cluster_labels(
+    embeddings: np.ndarray,
+    *,
+    neural: bool,
+    must_link_groups: list[list[int]] | None = None,
+    post_ids: list[int] | None = None,
+) -> tuple[np.ndarray, str]:
     n = len(embeddings)
     if n == 0:
         return np.array([], dtype=int), "none"
@@ -266,27 +401,30 @@ def _cluster_labels(embeddings: np.ndarray, *, neural: bool) -> tuple[np.ndarray
         return np.zeros(n, dtype=int), "single_cluster"
 
     try:
-        from sklearn.cluster import DBSCAN, KMeans
+        from sklearn.cluster import DBSCAN, KMeans  # noqa: F401
     except ImportError as exc:
         raise RuntimeError(
             "Theme clustering requires scikit-learn: pip install -e '.[ml]'"
         ) from exc
 
-    eps = _adaptive_dbscan_eps(embeddings, neural=neural)
-    db = DBSCAN(eps=eps, min_samples=DBSCAN_MIN_SAMPLES, metric="cosine")
-    labels = db.fit_predict(embeddings)
-    labels = _merge_similar_clusters(embeddings, labels)
-    valid = labels[labels >= 0]
-    n_clusters = len(set(valid.tolist())) if len(valid) else 0
-    noise_ratio = float((labels == -1).sum()) / n
+    method = "hdbscan"
+    hdb = _hdbscan_labels(embeddings)
+    if hdb is not None:
+        labels, method = hdb
+    else:
+        labels, method = _dbscan_labels(embeddings, neural=neural)
+        valid = labels[labels >= 0]
+        n_clusters = len(set(valid.tolist())) if len(valid) else 0
+        noise_ratio = float((labels == -1).sum()) / n
+        if n_clusters < 2 or noise_ratio > 0.55:
+            labels, method = _kmeans_labels(embeddings)
 
-    if n_clusters >= 2 and noise_ratio <= 0.55:
-        return labels, "dbscan"
-
-    k = _kmeans_cluster_count(n)
-    labels = KMeans(n_clusters=k, random_state=42, n_init=10).fit_predict(embeddings)
     labels = _merge_similar_clusters(embeddings, labels)
-    return labels, "kmeans"
+    labels = _two_pass_refinement(embeddings, labels)
+    if post_ids:
+        labels = _apply_must_link_groups(labels, must_link_groups, post_ids)
+        labels = _merge_similar_clusters(embeddings, labels)
+    return labels, method
 
 
 def _cluster_cohesion(embeddings: np.ndarray, member_idx: np.ndarray) -> float:
@@ -339,17 +477,168 @@ def _parse_posts(
     return post_ids, texts, authors
 
 
+def _iso_week(day: str) -> str:
+    try:
+        dt = datetime.fromisoformat(day.replace("Z", "+00:00"))
+    except ValueError:
+        dt = datetime.strptime(day[:10], "%Y-%m-%d")
+    year, week, _ = dt.isocalendar()
+    return f"{year}-W{week:02d}"
+
+
+def _cluster_label_key(cluster: dict) -> str:
+    phrases = cluster.get("label_phrases") or []
+    if phrases:
+        return phrases[0]
+    terms = cluster.get("label_terms") or []
+    if terms:
+        return terms[0]
+    return f"cluster-{cluster.get('cluster_id', '?')}"
+
+
+def _post_overlap(a: set[int], b: set[int]) -> float:
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def compute_theme_lineage(
+    posts: list[tuple[int, str]] | list[tuple[int, str, str | None]],
+    post_dates: dict[int, str],
+    *,
+    narrative_id: int = 0,
+    model_name: str = DEFAULT_EMBEDDING_MODEL,
+    narrative_keywords: list[str] | None = None,
+) -> list[dict]:
+    """Weekly theme windows with lineage links across consecutive weeks."""
+    post_ids, texts, authors = _parse_posts(posts)
+    if not post_dates or len(post_ids) < 6:
+        return []
+
+    week_buckets: dict[str, list[int]] = defaultdict(list)
+    for i, pid in enumerate(post_ids):
+        day = post_dates.get(pid)
+        if not day:
+            continue
+        week_buckets[_iso_week(day)].append(i)
+
+    weeks = sorted(week_buckets.keys())
+    if len(weeks) < 2:
+        return []
+
+    week_reports: dict[str, dict] = {}
+    for week in weeks:
+        indices = week_buckets[week]
+        subset_posts = [
+            (post_ids[i], texts[i], authors[i]) if authors[i] is not None else (post_ids[i], texts[i])
+            for i in indices
+        ]
+        if len(subset_posts) < 3:
+            continue
+        report = cluster_posts(
+            subset_posts,
+            narrative_id=narrative_id,
+            model_name=model_name,
+            narrative_keywords=narrative_keywords,
+        )
+        week_reports[week] = report_to_dict(report)
+
+    lineage: list[dict] = []
+    prev_week: str | None = None
+    for week in weeks:
+        data = week_reports.get(week)
+        if not data:
+            continue
+        narrative_clusters = [
+            c
+            for c in data.get("clusters", [])
+            if not c.get("is_market_chatter")
+            and not c.get("is_noise")
+            and not c.get("filter_reason")
+        ]
+        entry = {
+            "week": week,
+            "cluster_count": len(narrative_clusters),
+            "clusters": [
+                {
+                    "cluster_id": c["cluster_id"],
+                    "label": _cluster_label_key(c),
+                    "size": c["size"],
+                    "post_ids": c["post_ids"],
+                    "emerging_theme": c.get("emerging_theme", False),
+                }
+                for c in narrative_clusters
+            ],
+            "continues_from": [],
+        }
+        if prev_week and prev_week in week_reports:
+            prev_clusters = [
+                c
+                for c in week_reports[prev_week].get("clusters", [])
+                if not c.get("is_market_chatter")
+                and not c.get("is_noise")
+                and not c.get("filter_reason")
+            ]
+            for cluster in entry["clusters"]:
+                current_posts = set(cluster["post_ids"])
+                for prev in prev_clusters:
+                    overlap = _post_overlap(current_posts, set(prev["post_ids"]))
+                    if overlap >= LINEAGE_OVERLAP_MIN:
+                        entry["continues_from"].append(
+                            {
+                                "week": prev_week,
+                                "label": _cluster_label_key(prev),
+                                "overlap": round(overlap, 4),
+                            }
+                        )
+        lineage.append(entry)
+        prev_week = week
+    return lineage
+
+
+def _build_filter_bucket_cluster(
+    cluster_id: int,
+    post_ids: list[int],
+    texts: list[str],
+    authors: list[str | None],
+    *,
+    filter_reason: str,
+    default_label: str,
+) -> ThemeCluster:
+    labels = _phrase_label_terms(texts, top_n=4) or [default_label]
+    sample = max(texts, key=len)
+    member_authors = [a for a in authors if a]
+    return ThemeCluster(
+        cluster_id=cluster_id,
+        post_ids=post_ids,
+        size=len(post_ids),
+        cohesion=1.0,
+        lexicon_hit_rate=0.0,
+        emerging_theme=False,
+        label_terms=labels[:4],
+        label_phrases=[p for p in labels if " " in p][:2],
+        label_distinctiveness=0.0,
+        sample_text=sample[:240] + ("…" if len(sample) > 240 else ""),
+        author_entropy=_author_entropy(member_authors),
+        quality_score=0.0,
+        confidence_tier="low",
+        is_noise=False,
+        is_market_chatter=filter_reason == "market",
+        market_chatter_rate=cluster_market_chatter_rate(texts) if filter_reason == "market" else 0.0,
+        filter_reason=filter_reason,
+    )
+
+
 def cluster_posts(
     posts: list[tuple[int, str]] | list[tuple[int, str, str | None]],
     *,
     narrative_id: int = 0,
     model_name: str = DEFAULT_EMBEDDING_MODEL,
+    cached_embeddings: dict[int, np.ndarray] | None = None,
+    must_link_groups: list[list[int]] | None = None,
+    narrative_keywords: list[str] | None = None,
+    post_dates: dict[int, str] | None = None,
 ) -> ThemeClusterReport:
-    """
-    Cluster post texts in embedding space.
-
-    posts: list of (post_id, text) or (post_id, text, author_id)
-    """
     if not posts:
         return ThemeClusterReport(
             narrative_id=narrative_id,
@@ -361,23 +650,51 @@ def cluster_posts(
 
     post_ids, texts, author_ids = _parse_posts(posts)
 
-    narrative_idx = [i for i, text in enumerate(texts) if not is_market_chatter_post(text)]
-    market_idx = [i for i, text in enumerate(texts) if is_market_chatter_post(text)]
+    apply_off_topic = False
+    if narrative_keywords:
+        hits = sum(1 for text in texts if narrative_keyword_hits(text, narrative_keywords) >= 1)
+        apply_off_topic = hits / max(len(texts), 1) >= 0.25
+
+    bucket_indices: dict[int, list[int]] = defaultdict(list)
+    narrative_idx: list[int] = []
+    for i, text in enumerate(texts):
+        reason = classify_post_for_clustering(text, narrative_keywords=narrative_keywords)
+        if reason == PrefilterReason.OFF_TOPIC and not apply_off_topic:
+            reason = PrefilterReason.NARRATIVE
+        if reason == PrefilterReason.NARRATIVE:
+            narrative_idx.append(i)
+            continue
+        if reason == PrefilterReason.MARKET:
+            bucket_indices[MARKET_CLUSTER_ID].append(i)
+            continue
+        bucket_id = prefilter_cluster_id(reason)
+        if bucket_id is not None:
+            bucket_indices[bucket_id].append(i)
 
     cluster_indices = narrative_idx if len(narrative_idx) >= 3 else list(range(len(texts)))
     cluster_texts_list = [texts[i] for i in cluster_indices]
     cluster_post_ids_list = [post_ids[i] for i in cluster_indices]
-    cluster_author_ids_list = [author_ids[i] for i in cluster_indices]
 
-    embeddings, encoder = encode_texts(cluster_texts_list, model_name=model_name)
+    embeddings, encoder = resolve_embedding_matrix(
+        cluster_post_ids_list,
+        cluster_texts_list,
+        cached=cached_embeddings,
+        model_name=model_name,
+    )
     neural = encoder != "tfidf-fallback"
-    raw_labels, method = _cluster_labels(embeddings, neural=neural)
+    raw_labels, method = _cluster_labels(
+        embeddings,
+        neural=neural,
+        must_link_groups=must_link_groups,
+        post_ids=cluster_post_ids_list,
+    )
     if encoder == "tfidf-fallback":
         method = f"{method}+tfidf"
-    if market_idx and narrative_idx:
-        method = f"{method}+market_filtered"
+    if bucket_indices:
+        method = f"{method}+prefiltered"
+    if must_link_groups:
+        method = f"{method}+must_link"
 
-    # Map subset indices back to original post ids / texts / authors
     subset_to_global = {sub: cluster_indices[sub] for sub in range(len(cluster_indices))}
     global_post_ids = [post_ids[subset_to_global[i]] for i in range(len(cluster_indices))]
     global_texts = [texts[subset_to_global[i]] for i in range(len(cluster_indices))]
@@ -430,6 +747,8 @@ def cluster_posts(
         if market_chatter:
             quality = round(quality * 0.35, 4)
 
+        tier = _confidence_tier(model=encoder, quality_score=quality, cohesion=cohesion)
+
         emerging = (
             not is_noise
             and not market_chatter
@@ -464,6 +783,7 @@ def cluster_posts(
                 sample_text=sample[:240] + ("…" if len(sample) > 240 else ""),
                 author_entropy=author_entropy,
                 quality_score=quality,
+                confidence_tier=tier,
                 is_noise=is_noise,
                 is_market_chatter=market_chatter,
                 market_chatter_rate=market_rate,
@@ -475,33 +795,25 @@ def cluster_posts(
             for pid in member_post_ids:
                 boosts[pid] = max(boosts.get(pid, 0.0), boost)
 
-    if len(market_idx) >= MIN_CLUSTER_SIZE_EXPORT:
-        market_post_ids = [post_ids[i] for i in market_idx]
-        market_texts = [texts[i] for i in market_idx]
-        market_authors = [author_ids[i] for i in market_idx if author_ids[i]]
-        market_rate = cluster_market_chatter_rate(market_texts)
-        market_labels = _phrase_label_terms(market_texts, top_n=4)
-        market_phrases = [p for p in market_labels if " " in p][:2]
-        sample = max(market_texts, key=len)
+    filtered_count = 0
+    for bucket_id, indices in bucket_indices.items():
+        if len(indices) < MIN_CLUSTER_SIZE_EXPORT:
+            continue
+        reason, default_label = FILTER_BUCKET_META.get(bucket_id, ("filtered", "Filtered posts"))
+        bucket_post_ids = [post_ids[i] for i in indices]
+        bucket_texts = [texts[i] for i in indices]
+        bucket_authors = [author_ids[i] for i in indices]
         clusters.append(
-            ThemeCluster(
-                cluster_id=MARKET_CLUSTER_ID,
-                post_ids=market_post_ids,
-                size=len(market_post_ids),
-                cohesion=1.0,
-                lexicon_hit_rate=0.0,
-                emerging_theme=False,
-                label_terms=market_labels[:4] or ["market chatter"],
-                label_phrases=market_phrases,
-                label_distinctiveness=0.0,
-                sample_text=sample[:240] + ("…" if len(sample) > 240 else ""),
-                author_entropy=_author_entropy([a for a in market_authors if a]),
-                quality_score=0.0,
-                is_noise=False,
-                is_market_chatter=True,
-                market_chatter_rate=market_rate,
+            _build_filter_bucket_cluster(
+                bucket_id,
+                bucket_post_ids,
+                bucket_texts,
+                bucket_authors,
+                filter_reason=reason,
+                default_label=default_label,
             )
         )
+        filtered_count += len(indices)
 
     map_coords = _cluster_map_coords(map_cluster_ids, centroids_for_map)
     enriched: list[ThemeCluster] = []
@@ -512,6 +824,7 @@ def cluster_posts(
     enriched.sort(
         key=lambda c: (
             c.is_noise,
+            c.filter_reason is not None,
             c.is_market_chatter,
             -c.label_distinctiveness,
             -int(c.emerging_theme),
@@ -523,6 +836,38 @@ def cluster_posts(
     similarity = _cluster_similarity_edges(centroids_by_id)
     merge_tree = _build_merge_tree(enriched, centroids_by_id)
 
+    from heimdall.nlp.theme_cluster_eval import evaluate_theme_report
+
+    eval_metrics = evaluate_theme_report(
+        ThemeClusterReport(
+            narrative_id=narrative_id,
+            post_count=len(posts),
+            cluster_count=len(enriched),
+            method=method,
+            model=encoder,
+            clusters=enriched,
+        ),
+        embeddings,
+        cluster_post_ids_list,
+    )
+    quality_metrics = {
+        "silhouette": eval_metrics.silhouette,
+        "davies_bouldin": eval_metrics.davies_bouldin,
+        "noise_ratio": eval_metrics.noise_ratio,
+        "narrative_purity": eval_metrics.narrative_purity,
+        "notes": eval_metrics.notes,
+    }
+
+    theme_lineage: list[dict] = []
+    if post_dates:
+        theme_lineage = compute_theme_lineage(
+            posts,
+            post_dates,
+            narrative_id=narrative_id,
+            model_name=model_name,
+            narrative_keywords=narrative_keywords,
+        )
+
     return ThemeClusterReport(
         narrative_id=narrative_id,
         post_count=len(posts),
@@ -533,6 +878,9 @@ def cluster_posts(
         post_theme_boost=boosts,
         cluster_similarity=similarity,
         merge_tree=merge_tree,
+        quality_metrics=quality_metrics,
+        theme_lineage=theme_lineage,
+        filtered_post_count=filtered_count,
     )
 
 
@@ -543,6 +891,9 @@ def report_to_dict(report: ThemeClusterReport) -> dict:
         "cluster_count": report.cluster_count,
         "method": report.method,
         "model": report.model,
+        "filtered_post_count": report.filtered_post_count,
+        "quality_metrics": report.quality_metrics,
+        "theme_lineage": report.theme_lineage,
         "clusters": [
             {
                 "cluster_id": c.cluster_id,
@@ -557,9 +908,11 @@ def report_to_dict(report: ThemeClusterReport) -> dict:
                 "sample_text": c.sample_text,
                 "author_entropy": c.author_entropy,
                 "quality_score": c.quality_score,
+                "confidence_tier": c.confidence_tier,
                 "is_noise": c.is_noise,
                 "is_market_chatter": c.is_market_chatter,
                 "market_chatter_rate": c.market_chatter_rate,
+                "filter_reason": c.filter_reason,
                 "map_x": c.map_x,
                 "map_y": c.map_y,
             }
@@ -576,17 +929,20 @@ def report_to_dict(report: ThemeClusterReport) -> dict:
                 "is_noise": c.is_noise,
             }
             for c in report.clusters
-            if c.map_x is not None and c.map_y is not None and not c.is_noise
+            if c.map_x is not None and c.map_y is not None and not c.is_noise and not c.filter_reason
         ],
         "emerging_theme_count": sum(1 for c in report.clusters if c.emerging_theme),
         "market_chatter_count": sum(1 for c in report.clusters if c.is_market_chatter),
-        "market_chatter_post_count": sum(c.size for c in report.clusters if c.is_market_chatter),
+        "market_chatter_post_count": sum(
+            c.size for c in report.clusters if c.is_market_chatter or c.filter_reason == "market"
+        ),
         "distinct_theme_count": sum(
             1
             for c in report.clusters
             if c.label_distinctiveness >= MIN_TIMELINE_DISTINCTIVENESS
             and not c.is_market_chatter
             and not c.is_noise
+            and not c.filter_reason
         ),
         "cluster_similarity": report.cluster_similarity,
         "merge_candidates": [

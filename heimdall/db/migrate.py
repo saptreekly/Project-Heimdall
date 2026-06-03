@@ -127,3 +127,50 @@ async def migrate_outrage_score_v23(conn: AsyncConnection) -> None:
             """
         )
     )
+
+
+async def migrate_post_embeddings(conn: AsyncConnection) -> None:
+    """Create post_embeddings table on existing DBs (create_all handles fresh installs)."""
+    dialect = conn.dialect.name
+    if dialect == "sqlite":
+        await conn.execute(
+            text(
+                """
+                CREATE TABLE IF NOT EXISTS post_embeddings (
+                    post_id INTEGER NOT NULL PRIMARY KEY,
+                    model VARCHAR(64) NOT NULL,
+                    dim INTEGER NOT NULL,
+                    vector BLOB NOT NULL,
+                    created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+                    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+                    FOREIGN KEY(post_id) REFERENCES posts (id)
+                )
+                """
+            )
+        )
+        return
+
+    result = await conn.execute(
+        text(
+            """
+            SELECT 1 FROM information_schema.tables
+            WHERE table_schema = 'public' AND table_name = 'post_embeddings'
+            """
+        )
+    )
+    if result.first():
+        return
+    await conn.execute(
+        text(
+            """
+            CREATE TABLE post_embeddings (
+                post_id INTEGER NOT NULL PRIMARY KEY REFERENCES posts(id),
+                model VARCHAR(64) NOT NULL,
+                dim INTEGER NOT NULL,
+                vector BYTEA NOT NULL,
+                created_at TIMESTAMPTZ DEFAULT NOW() NOT NULL,
+                updated_at TIMESTAMPTZ DEFAULT NOW() NOT NULL
+            )
+            """
+        )
+    )

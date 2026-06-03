@@ -31,6 +31,7 @@ hf = [
 # Sentence embeddings for theme clustering (CI uses this; local may fall back to TF-IDF).
 ml = [
     "sentence-transformers>=3.0.0",
+    "hdbscan>=0.8.38",
 ]
 # Optional: transformer sentiment (install with pip install -e ".[ml,ml-hf]")
 ml-hf = [

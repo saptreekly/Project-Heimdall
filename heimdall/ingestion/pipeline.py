@@ -17,6 +17,7 @@ from heimdall.ingestion.x_guard import XIngestPlan
 from heimdall.ingestion.schemas import RawPost
 from heimdall.ingestion.text_clean import clean_post_text
 from heimdall.nlp.outrage import OutrageAnalyzer, build_outrage_analyzer
+from heimdall.nlp.post_embeddings import persist_post_embedding
 
 
 def _dialect_insert(table):
@@ -110,6 +111,7 @@ class IngestionPipeline:
             if post_id:
                 inserted += 1
                 external_to_id[raw.external_id] = post_id
+                await self._maybe_persist_embedding(post_id, raw.text)
                 if await self._analyzer.score_and_persist(self._session, post_id, raw.text):
                     scored += 1
 
@@ -196,6 +198,20 @@ class IngestionPipeline:
             )
         )
         return existing.scalar_one_or_none()
+
+    async def _maybe_persist_embedding(self, post_id: int, text: str) -> None:
+        settings = get_settings()
+        if not settings.use_embedding_themes:
+            return
+        try:
+            await persist_post_embedding(
+                self._session,
+                post_id,
+                clean_post_text(text),
+                model_name=settings.embedding_model,
+            )
+        except Exception:
+            return
 
     async def _find_post_id(
         self,
