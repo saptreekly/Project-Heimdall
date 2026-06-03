@@ -1,42 +1,47 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-03 22:32:43 UTC
+> Tactical snapshot · 2026-06-03 22:55:14 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **425** |
+| Posts in database | **433** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 447 / 122 |
-| Distinct themes | 21 |
+| Graph nodes / edges | 457 / 125 |
+| Distinct themes | 15 |
 | Duplicate clusters (full DB) | 20 |
 | Fuzzy clusters (snapshot cohort) | 4 |
-| IU astroturf overlap | 0 bots / 351 authors |
+| IU astroturf overlap | 0 bots / 358 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **9**
+- Net-new posts logged: **8**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **37**
-- Net new: **504** · re-seen: **80**
-- Duplicate rate: **13.7%**
+- Runs: **38**
+- Net new: **512** · re-seen: **89**
+- Duplicate rate: **14.8%**
 
 ## Sentiment drift
 
-- Trend: **stable**
+- Trend: **escalating**
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · executive order, federal judge (11 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · laying groundwork, hackers preparing, local governments, credential theft (10 posts · 10 authors · 2 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · racially drawn, upholds alabama, overturning lower (9 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · graham platner, susan collins, boom latino, winner odds (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, major win, midterms ele, watch cheating (6 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 67 authors · 8 exact · 1 fuzzy subclusters)
+- **Shared frame** · executive order, mail ballot, election integrity, federal judge (13 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · legal standard, louisiana callais, purcell principle (10 posts · 7 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · reuters reported, strait hormuz, public health, normal atlantic, middle east (9 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · bigger primary, days calendar, states including, nation largest, high stakes (8 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -81,18 +86,17 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts)
-- election fraud, accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- radical left, sidney powell (8 posts)
-- save america, republican senate, proof citizenship, act midterms, house passed (7 posts)
 - democrats ideas, cash party, level touch, maga rebuilding, country voters (5 posts)
-- sorry senile, pig bonespur, draft dodger, inbreeds cuz, loves winners (9 posts)
-- racially drawn, upholds alabama, overturning lower (9 posts)
-- _…14 more emerging theme(s)._
+- sorry senile, pig bonespur, draft dodger, inbreeds cuz, losers america (9 posts)
+- legal standard, louisiana callais, purcell principle (10 posts)
+- reuters reported, strait hormuz, public health, normal atlantic, middle east (9 posts)
+- bigger primary, days calendar, states including, nation largest, high stakes (8 posts)
+- laying groundwork, hackers preparing, local governments, wave phishing, credential theft (6 posts)
+- _…6 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 425 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 433 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
