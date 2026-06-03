@@ -12,6 +12,7 @@ from heimdall.api.schemas import (
     AstroturfImportResponse,
     CIBResponse,
     DuplicateClusterOut,
+    IngestPreviewRequest,
     IngestRequest,
     IngestResponse,
     NarrativeCreate,
@@ -32,6 +33,8 @@ from heimdall.graph.export import build_graph_export
 from heimdall.graph.neo4j_sync import Neo4jGraphSync
 from heimdall.graph.stats import build_graph_stats
 from heimdall.ingestion.pipeline import IngestionPipeline
+from heimdall.ingestion.ingest_options import IngestOptions
+from heimdall.ingestion.query_plan import QueryPlanOptions, build_query_plan
 from heimdall.ingestion.x_guard import (
     XDailyBudgetExceeded,
     XIngestDisabled,
@@ -90,16 +93,57 @@ def _parse_platform(name: str | None) -> Platform | None:
         ) from exc
 
 
+def _ingest_options(body: IngestRequest) -> IngestOptions:
+    return IngestOptions(
+        x_exclude_terms=tuple(body.x_exclude_terms),
+        x_list_sources=tuple(body.x_list_sources),
+        reddit_subreddits=tuple(body.reddit_subreddits)
+        if body.reddit_subreddits
+        else IngestOptions().reddit_subreddits,
+        apply_ingest_filter=body.apply_ingest_filter,
+        require_keyword_hit=body.require_keyword_hit,
+    )
+
+
+@router.post("/ingest/preview")
+async def ingest_preview(
+    body: IngestPreviewRequest,
+    db: AsyncSession = Depends(get_db),
+) -> dict:
+    platform = _parse_platform(body.platform)
+    try:
+        pipeline = IngestionPipeline(db, platform=platform)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return await pipeline.preview_ingest(
+        body.narrative_name,
+        body.keywords,
+        limit=body.limit,
+        options=_ingest_options(body),
+    )
+
+
 @router.post("/ingest", response_model=IngestResponse)
 async def ingest(body: IngestRequest, db: AsyncSession = Depends(get_db)) -> IngestResponse:
     platform = _parse_platform(body.platform)
     x_plan = None
     keywords = body.keywords
     limit = body.limit
+    options = _ingest_options(body)
 
     if platform == Platform.X:
         try:
-            x_plan = plan_x_ingest(keywords, limit)
+            plan_opts = QueryPlanOptions(
+                x_exclude_terms=options.x_exclude_terms or QueryPlanOptions().x_exclude_terms,
+                x_list_sources=options.x_list_sources,
+                reddit_subreddits=options.reddit_subreddits,
+            )
+            query_plan = build_query_plan(platform, keywords, limit, options=plan_opts)
+            x_plan = plan_x_ingest(
+                keywords,
+                limit,
+                graphql_requests=len(query_plan.queries),
+            )
         except XIngestDisabled as exc:
             raise HTTPException(status_code=403, detail=str(exc)) from exc
         except ValueError as exc:
@@ -116,6 +160,7 @@ async def ingest(body: IngestRequest, db: AsyncSession = Depends(get_db)) -> Ing
             body.narrative_name,
             keywords,
             limit=limit,
+            options=options,
         )
     except XDailyBudgetExceeded as exc:
         raise HTTPException(status_code=429, detail=str(exc)) from exc

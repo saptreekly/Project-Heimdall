@@ -5,6 +5,7 @@ import httpx
 
 from heimdall.db.models import Platform
 from heimdall.ingestion.base import PlatformIngester
+from heimdall.ingestion.query_plan import QueryPlan
 from heimdall.ingestion.schemas import RawPost
 from heimdall.ingestion.text_clean import clean_post_text
 
@@ -17,8 +18,39 @@ class HackerNewsIngester(PlatformIngester):
     def __init__(self) -> None:
         self._client = httpx.AsyncClient(timeout=30.0)
 
-    async def fetch_by_keywords(self, keywords: list[str], limit: int = 50) -> list[RawPost]:
-        query = " ".join(keywords)
+    async def fetch_by_keywords(
+        self,
+        keywords: list[str],
+        limit: int = 50,
+        *,
+        query_plan: QueryPlan | None = None,
+    ) -> list[RawPost]:
+        if query_plan and query_plan.queries:
+            seen: set[str] = set()
+            posts: list[RawPost] = []
+            for query in query_plan.queries:
+                batch = await self._search(query.platform_query, query.max_results)
+                for post in batch:
+                    if post.external_id in seen:
+                        continue
+                    seen.add(post.external_id)
+                    post = RawPost(
+                        platform=post.platform,
+                        external_id=post.external_id,
+                        author_id=post.author_id,
+                        author_handle=post.author_handle,
+                        text=post.text,
+                        posted_at=post.posted_at,
+                        raw_json=post.raw_json,
+                        source_keyword=query.narrative_keyword,
+                    )
+                    posts.append(post)
+                    if len(posts) >= limit:
+                        return posts[:limit]
+            return posts
+        return await self._search(" ".join(keywords), limit)
+
+    async def _search(self, query: str, limit: int) -> list[RawPost]:
         params = {
             "query": query,
             "tags": "story",

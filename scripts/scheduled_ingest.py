@@ -13,8 +13,9 @@ import asyncio
 import json
 import os
 import sys
+from collections import defaultdict
 from dataclasses import dataclass
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,6 +31,11 @@ class IngestJob:
     platform: str
     keywords: list[str]
     limit: int
+    fallback_platforms: tuple[str, ...] = ()
+    x_exclude_terms: tuple[str, ...] = ()
+    x_list_sources: tuple[str, ...] = ()
+    reddit_subreddits: tuple[str, ...] = ("politics", "news", "Conservative")
+    rotation_strategy: str = "round_robin"
 
 
 def load_jobs(path: Path) -> list[IngestJob]:
@@ -42,6 +48,13 @@ def load_jobs(path: Path) -> list[IngestJob]:
                 platform=item["platform"].lower(),
                 keywords=list(item["keywords"]),
                 limit=int(item["limit"]),
+                fallback_platforms=tuple(item.get("fallback_platforms") or ()),
+                x_exclude_terms=tuple(item.get("x_exclude_terms") or ()),
+                x_list_sources=tuple(item.get("x_list_sources") or ()),
+                reddit_subreddits=tuple(
+                    item.get("reddit_subreddits") or ("politics", "news", "Conservative")
+                ),
+                rotation_strategy=str(item.get("rotation_strategy") or "round_robin"),
             )
         )
     return jobs
@@ -69,13 +82,44 @@ def _rotation_state_path() -> Path:
     return Path(raw) if raw else DEFAULT_ROTATION
 
 
-def rotate_x_keywords(keywords: list[str], count: int) -> tuple[list[str], int]:
-    """
-    Pick the next `count` keyword(s) for this cron run (round-robin).
+def _ingest_log_path() -> Path:
+    raw = os.environ.get("INGEST_RUNS_PATH", "").strip()
+    return Path(raw) if raw else DEFAULT_INGEST_LOG
 
-    Used with X_SCHEDULED_KEYWORDS_PER_RUN=1 so 30 daily workflow runs map to
-    ~30 GraphQL requests when X_MAX_GRAPHQL_REQUESTS_PER_DAY=30.
-    """
+
+def _load_keyword_yield_stats(keywords: list[str], *, days: int = 14) -> dict[str, float]:
+    path = _ingest_log_path()
+    if not path.is_file():
+        return {kw: 0.0 for kw in keywords}
+    cutoff = datetime.now(UTC) - timedelta(days=days)
+    stats: dict[str, dict[str, int]] = defaultdict(lambda: {"runs": 0, "inserted": 0})
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        at = row.get("at")
+        if at:
+            try:
+                if datetime.fromisoformat(at.replace("Z", "+00:00")) < cutoff:
+                    continue
+            except ValueError:
+                pass
+        for kw in row.get("keywords") or []:
+            if kw not in keywords:
+                continue
+            stats[kw]["runs"] += 1
+            stats[kw]["inserted"] += int(row.get("inserted") or 0)
+    yields: dict[str, float] = {}
+    for kw in keywords:
+        runs = stats[kw]["runs"]
+        yields[kw] = (stats[kw]["inserted"] / runs) if runs else 0.0
+    return yields
+
+
+def rotate_x_keywords(keywords: list[str], count: int) -> tuple[list[str], int]:
     cleaned = [k.strip() for k in keywords if k.strip()]
     if not cleaned or count <= 0:
         return [], 0
@@ -96,21 +140,23 @@ def rotate_x_keywords(keywords: list[str], count: int) -> tuple[list[str], int]:
     return selected, state["keyword_index"]
 
 
-def keywords_for_scheduled_job(job: IngestJob) -> list[str]:
+def select_keywords_for_run(job: IngestJob) -> list[str]:
     per_run = _scheduled_keywords_per_run()
     if per_run is None or job.platform != "x":
         return job.keywords
+    if job.rotation_strategy == "yield":
+        yields = _load_keyword_yield_stats(job.keywords)
+        ranked = sorted(job.keywords, key=lambda kw: (-yields.get(kw, 0.0), kw))
+        return ranked[:per_run]
     rotated, _ = rotate_x_keywords(job.keywords, per_run)
     return rotated or job.keywords
 
 
-def _ingest_log_path() -> Path:
-    raw = os.environ.get("INGEST_RUNS_PATH", "").strip()
-    return Path(raw) if raw else DEFAULT_INGEST_LOG
+def keywords_for_scheduled_job(job: IngestJob) -> list[str]:
+    return select_keywords_for_run(job)
 
 
 def append_ingest_run(row: dict) -> None:
-    """Append one JSON line for keyword audit / rotation reporting."""
     path = _ingest_log_path()
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {"at": datetime.now(UTC).isoformat(), **row}
@@ -118,10 +164,22 @@ def append_ingest_run(row: dict) -> None:
         handle.write(json.dumps(payload) + "\n")
 
 
-async def run_job(job: IngestJob) -> dict:
+def _ingest_options_from_job(job: IngestJob):
+    from heimdall.ingestion.ingest_options import IngestOptions
+
+    return IngestOptions(
+        x_exclude_terms=job.x_exclude_terms,
+        x_list_sources=job.x_list_sources,
+        reddit_subreddits=job.reddit_subreddits,
+        fallback_platforms=job.fallback_platforms,
+    )
+
+
+async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list[str]) -> dict:
     from heimdall.config import get_settings
     from heimdall.db.models import Platform
     from heimdall.ingestion.pipeline import IngestionPipeline
+    from heimdall.ingestion.query_plan import build_query_plan
     from heimdall.ingestion.x_guard import (
         XDailyBudgetExceeded,
         XIngestDisabled,
@@ -130,32 +188,51 @@ async def run_job(job: IngestJob) -> dict:
     )
 
     settings = get_settings()
-
     try:
-        platform = Platform(job.platform)
+        platform = Platform(platform_name)
     except ValueError as exc:
-        raise ValueError(f"Unknown platform '{job.platform}' in job {job.narrative_name}") from exc
+        raise ValueError(f"Unknown platform '{platform_name}' in job {job.narrative_name}") from exc
 
+    options = _ingest_options_from_job(job)
     x_plan = None
     if platform == Platform.X:
         if not _x_credentials_present():
             return {
                 "narrative_name": job.narrative_name,
+                "platform": platform_name,
                 "skipped": True,
                 "reason": "AUTH_TOKEN / CT0 not set",
             }
         if not settings.x_ingest_enabled:
             return {
                 "narrative_name": job.narrative_name,
+                "platform": platform_name,
                 "skipped": True,
                 "reason": "X_INGEST_ENABLED=false",
             }
-        keywords = keywords_for_scheduled_job(job)
-        x_plan = plan_x_ingest(keywords, job.limit)
+        plan_opts = options
+        from heimdall.ingestion.query_plan import QueryPlanOptions
+
+        query_plan = build_query_plan(
+            platform,
+            keywords,
+            job.limit,
+            options=QueryPlanOptions(
+                x_exclude_terms=plan_opts.x_exclude_terms or QueryPlanOptions().x_exclude_terms,
+                x_list_sources=plan_opts.x_list_sources,
+                reddit_subreddits=plan_opts.reddit_subreddits,
+            ),
+        )
+        x_plan = plan_x_ingest(
+            keywords,
+            job.limit,
+            graphql_requests=len(query_plan.queries),
+        )
         usage_before = await daily_usage_snapshot()
         if usage_before["requests_remaining"] < x_plan.graphql_requests:
             return {
                 "narrative_name": job.narrative_name,
+                "platform": platform_name,
                 "skipped": True,
                 "reason": (
                     f"daily GraphQL budget insufficient "
@@ -169,22 +246,24 @@ async def run_job(job: IngestJob) -> dict:
     factory = get_session_factory()
     async with factory() as db:
         pipeline = IngestionPipeline(db, platform=platform, x_plan=x_plan)
-        keywords = x_plan.keywords if x_plan else job.keywords
+        run_keywords = x_plan.keywords if x_plan else keywords
         limit = x_plan.limit if x_plan else job.limit
         try:
             result = await pipeline.ingest_narrative(
                 job.narrative_name,
-                keywords,
+                run_keywords,
                 limit=limit,
+                options=options,
             )
         except (XDailyBudgetExceeded, XIngestDisabled) as exc:
             return {
                 "narrative_name": job.narrative_name,
+                "platform": platform_name,
                 "skipped": True,
                 "reason": str(exc),
             }
 
-    out = {"narrative_name": job.narrative_name, **result}
+    out = {"narrative_name": job.narrative_name, "platform": platform_name, **result}
     if x_plan:
         out["planned_keywords"] = x_plan.keywords
         out["planned_limit"] = x_plan.limit
@@ -192,7 +271,29 @@ async def run_job(job: IngestJob) -> dict:
         out["plan_notes"] = x_plan.notes
         if _scheduled_keywords_per_run() is not None:
             out["scheduled_keyword_rotation"] = True
+            out["rotation_strategy"] = job.rotation_strategy
     return out
+
+
+async def run_job(job: IngestJob) -> dict:
+    keywords = keywords_for_scheduled_job(job)
+    primary = await run_job_on_platform(job, job.platform, keywords)
+    if not primary.get("skipped"):
+        return primary
+
+    attempts = [primary]
+    for fallback in job.fallback_platforms:
+        if fallback.lower() == job.platform:
+            continue
+        attempt = await run_job_on_platform(job, fallback.lower(), job.keywords)
+        attempts.append(attempt)
+        if not attempt.get("skipped"):
+            attempt["fallback_from"] = job.platform
+            attempt["primary_skip_reason"] = primary.get("reason")
+            return attempt
+
+    primary["fallback_attempts"] = attempts[1:]
+    return primary
 
 
 async def run(config: Path, export: bool) -> int:
@@ -219,14 +320,19 @@ async def run(config: Path, export: bool) -> int:
         print(json.dumps(row, indent=2))
         log_row = {
             "narrative_name": job.narrative_name,
-            "platform": job.platform,
+            "platform": row.get("platform", job.platform),
             "keywords": row.get("planned_keywords") or keywords_for_scheduled_job(job),
             "skipped": bool(row.get("skipped")),
             "reason": row.get("reason"),
             "fetched": row.get("fetched"),
             "inserted": row.get("inserted"),
+            "updated": row.get("updated"),
+            "filtered": row.get("filtered"),
+            "duplicates": row.get("duplicates"),
             "scored": row.get("scored"),
             "edges": row.get("edges"),
+            "keyword_stats": row.get("keyword_stats"),
+            "fallback_from": row.get("fallback_from"),
         }
         append_ingest_run(log_row)
         if not row.get("skipped"):

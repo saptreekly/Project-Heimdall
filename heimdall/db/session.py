@@ -35,6 +35,7 @@ async def init_db() -> None:
     from heimdall.db.migrate import (
         migrate_outrage_score_v23,
         migrate_post_embeddings,
+        migrate_post_ingest_fields,
         migrate_postgres_enums_to_varchar,
         migrate_posts_unique_per_narrative,
     )
@@ -47,6 +48,7 @@ async def init_db() -> None:
         await migrate_posts_unique_per_narrative(conn)
         await migrate_outrage_score_v23(conn)
         await migrate_post_embeddings(conn)
+        await migrate_post_ingest_fields(conn)
 
     await _maybe_import_astroturf()
 

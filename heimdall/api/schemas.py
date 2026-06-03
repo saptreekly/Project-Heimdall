@@ -12,8 +12,16 @@ class IngestRequest(BaseModel):
     narrative_name: str
     keywords: list[str]
     limit: int = Field(default=50, ge=1, le=200)
-    # Omit for DEFAULT_INGESTER (hackernews). Options: hackernews, mastodon, mock, reddit, tweet_eval
     platform: str | None = None
+    x_exclude_terms: list[str] = Field(default_factory=list)
+    x_list_sources: list[str] = Field(default_factory=list)
+    reddit_subreddits: list[str] = Field(default_factory=list)
+    apply_ingest_filter: bool = True
+    require_keyword_hit: bool = True
+
+
+class IngestPreviewRequest(IngestRequest):
+    sample_limit: int = Field(default=20, ge=1, le=50)
 
 
 class Neo4jSyncResponse(BaseModel):
@@ -32,6 +40,10 @@ class IngestResponse(BaseModel):
     inserted: int
     scored: int
     edges: int
+    updated: int = 0
+    duplicates: int = 0
+    filtered: int = 0
+    keyword_stats: dict | None = None
     guardrails: dict | None = None
 
 

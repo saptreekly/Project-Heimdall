@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from heimdall.config import get_settings
 from heimdall.db.models import InteractionType, Platform
 from heimdall.ingestion.base import PlatformIngester
+from heimdall.ingestion.query_plan import QueryPlan, SearchQuery
 from heimdall.ingestion.schemas import RawInteraction, RawPost
 from heimdall.ingestion.text_clean import clean_post_text
 from heimdall.ingestion.x_client import ParsedXTweet, XGraphQLClient
@@ -36,34 +37,53 @@ class XIngester(PlatformIngester):
         self._plan = plan
         self.last_usage: dict | None = None
 
-    async def fetch_by_keywords(self, keywords: list[str], limit: int = 50) -> list[RawPost]:
-        plan = self._plan or plan_x_ingest(keywords, limit)
-        self.last_usage = await reserve_daily_requests(plan.graphql_requests)
-        per_search = max_tweets_per_search(plan)
+    async def fetch_by_keywords(
+        self,
+        keywords: list[str],
+        limit: int = 50,
+        *,
+        query_plan: QueryPlan | None = None,
+    ) -> list[RawPost]:
+        searches: list[SearchQuery]
+        if query_plan:
+            searches = query_plan.queries
+            gql_count = len(searches)
+            plan = self._plan or plan_x_ingest(
+                query_plan.keywords,
+                min(limit, query_plan.total_limit),
+                graphql_requests=gql_count,
+            )
+        else:
+            plan = self._plan or plan_x_ingest(keywords, limit)
+            per_search = max_tweets_per_search(plan)
+            searches = []
+            for keyword in plan.keywords:
+                token = keyword.strip()
+                qtype = "list" if token.lower().startswith(_LIST_PREFIX) else "search"
+                searches.append(SearchQuery(keyword, token, qtype, per_search))
 
+        self.last_usage = await reserve_daily_requests(len(searches))
         seen: set[str] = set()
         posts: list[RawPost] = []
         first = True
 
-        for keyword in plan.keywords:
+        for query in searches:
             if not first:
                 await wait_between_searches()
             first = False
 
-            token = keyword.strip()
-            if token.lower().startswith(_LIST_PREFIX):
-                list_id = token[len(_LIST_PREFIX) :].strip()
-                batch = await self._client.list_timeline(
-                    list_id, count=min(per_search, get_settings().x_max_tweets_per_search)
-                )
+            cap = min(query.max_results, get_settings().x_max_tweets_per_search)
+            if query.query_type == "list":
+                list_id = query.platform_query[len(_LIST_PREFIX) :].strip()
+                batch = await self._client.list_timeline(list_id, count=cap)
             else:
                 batch = await self._client.search(
-                    token,
-                    count=min(per_search, get_settings().x_max_tweets_per_search),
+                    query.platform_query,
+                    count=cap,
                     product="Latest",
                 )
             for parsed in batch:
-                for raw in _raw_posts_from_tweet(parsed):
+                for raw in _raw_posts_from_tweet(parsed, source_keyword=query.narrative_keyword):
                     if raw.external_id in seen:
                         continue
                     seen.add(raw.external_id)
@@ -72,8 +92,30 @@ class XIngester(PlatformIngester):
                         return posts[: plan.limit]
         return posts
 
+    async def fetch_reply_targets(
+        self,
+        tweet_ids: list[str],
+        *,
+        max_targets: int = 5,
+    ) -> list[RawPost]:
+        seen: set[str] = set()
+        posts: list[RawPost] = []
+        for tid in tweet_ids[:max_targets]:
+            tweets = await self._client.fetch_by_tweet_ids([tid])
+            for parsed in tweets:
+                for raw in _raw_posts_from_tweet(parsed, source_keyword="reply_backfill"):
+                    if raw.external_id in seen:
+                        continue
+                    seen.add(raw.external_id)
+                    posts.append(raw)
+        return posts
 
-def _raw_posts_from_tweet(parsed: ParsedXTweet) -> list[RawPost]:
+
+def _raw_posts_from_tweet(
+    parsed: ParsedXTweet,
+    *,
+    source_keyword: str | None = None,
+) -> list[RawPost]:
     posted_at = parsed.created_at or datetime.now(timezone.utc)
     handle = f"@{parsed.screen_name}"
     interactions: list[RawInteraction] = []
@@ -117,6 +159,7 @@ def _raw_posts_from_tweet(parsed: ParsedXTweet) -> list[RawPost]:
         author_handle=handle,
         text=clean_post_text(parsed.text),
         posted_at=posted_at,
+        source_keyword=source_keyword,
         raw_json=json.dumps(
             {
                 "screen_name": parsed.screen_name,

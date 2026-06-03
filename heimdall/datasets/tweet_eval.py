@@ -6,6 +6,7 @@ from datetime import datetime, timedelta, timezone
 
 from heimdall.db.models import Platform
 from heimdall.ingestion.base import PlatformIngester
+from heimdall.ingestion.query_plan import QueryPlan
 from heimdall.ingestion.schemas import RawPost
 from heimdall.ingestion.text_clean import clean_post_text
 
@@ -60,7 +61,13 @@ class TweetEvalIngester(PlatformIngester):
     def __init__(self, split: str = "test") -> None:
         self._split = split
 
-    async def fetch_by_keywords(self, keywords: list[str], limit: int = 50) -> list[RawPost]:
+    async def fetch_by_keywords(
+        self,
+        keywords: list[str],
+        limit: int = 50,
+        *,
+        query_plan: QueryPlan | None = None,
+    ) -> list[RawPost]:
         import asyncio
 
         subsets = _normalize_subsets(keywords)

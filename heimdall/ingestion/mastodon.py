@@ -7,6 +7,7 @@ import httpx
 from heimdall.config import get_settings
 from heimdall.db.models import InteractionType, Platform
 from heimdall.ingestion.base import PlatformIngester
+from heimdall.ingestion.query_plan import QueryPlan, SearchQuery
 from heimdall.ingestion.schemas import RawInteraction, RawPost
 from heimdall.ingestion.text_clean import clean_post_text
 
@@ -24,16 +25,28 @@ class MastodonIngester(PlatformIngester):
         self._base = settings.mastodon_instance_url.rstrip("/")
         self._client = httpx.AsyncClient(timeout=30.0)
 
-    async def fetch_by_keywords(self, keywords: list[str], limit: int = 50) -> list[RawPost]:
+    async def fetch_by_keywords(
+        self,
+        keywords: list[str],
+        limit: int = 50,
+        *,
+        query_plan: QueryPlan | None = None,
+    ) -> list[RawPost]:
         seen: set[str] = set()
         posts: list[RawPost] = []
-        per_tag = max(limit // max(len(keywords), 1), 10)
+        queries: list[SearchQuery] = list(query_plan.queries) if query_plan else []
+        if not queries:
+            per_tag = max(limit // max(len(keywords), 1), 10)
+            for keyword in keywords:
+                tag = _keyword_to_hashtag(keyword)
+                if tag:
+                    queries.append(
+                        SearchQuery(keyword, tag, "hashtag", per_tag)
+                    )
 
-        for keyword in keywords:
-            tag = _keyword_to_hashtag(keyword)
-            if not tag:
-                continue
-            batch = await self._fetch_tag(tag, limit=per_tag)
+        for query in queries:
+            tag = query.platform_query
+            batch = await self._fetch_tag(tag, limit=query.max_results, source_keyword=query.narrative_keyword)
             for post in batch:
                 if post.external_id in seen:
                     continue
@@ -43,7 +56,13 @@ class MastodonIngester(PlatformIngester):
                     return posts[:limit]
         return posts
 
-    async def _fetch_tag(self, tag: str, limit: int) -> list[RawPost]:
+    async def _fetch_tag(
+        self,
+        tag: str,
+        limit: int,
+        *,
+        source_keyword: str | None = None,
+    ) -> list[RawPost]:
         url = f"{self._base}/api/v1/timelines/tag/{tag}"
         response = await self._client.get(url, params={"limit": min(limit, 40)})
         response.raise_for_status()
@@ -53,13 +72,19 @@ class MastodonIngester(PlatformIngester):
         for status in statuses:
             reblog = status.get("reblog")
             if reblog:
-                posts.extend(_posts_from_reblog(status, reblog, tag, self._base))
+                posts.extend(_posts_from_reblog(status, reblog, tag, self._base, source_keyword))
             else:
-                posts.append(_post_from_status(status, tag, self._base))
+                posts.append(_post_from_status(status, tag, self._base, source_keyword))
         return posts
 
 
-def _posts_from_reblog(status: dict, reblog: dict, tag: str, base: str) -> list[RawPost]:
+def _posts_from_reblog(
+    status: dict,
+    reblog: dict,
+    tag: str,
+    base: str,
+    source_keyword: str | None = None,
+) -> list[RawPost]:
     """Original post plus a boost wrapper post that carries the SHARE edge."""
     booster = status.get("account") or {}
     booster_id = str(booster.get("id", "unknown"))
@@ -67,7 +92,7 @@ def _posts_from_reblog(status: dict, reblog: dict, tag: str, base: str) -> list[
     boost_id = str(status.get("id", ""))
     posted_at = _parse_time(status.get("created_at"))
 
-    original = _post_from_status(reblog, tag, base)
+    original = _post_from_status(reblog, tag, base, source_keyword)
     boost_post = RawPost(
         platform=Platform.MASTODON,
         external_id=f"boost-{boost_id}",
@@ -75,6 +100,7 @@ def _posts_from_reblog(status: dict, reblog: dict, tag: str, base: str) -> list[
         author_handle=f"@{booster_handle}" if booster_handle else None,
         text=clean_post_text(f"boost: {original.text[:200]}"),
         posted_at=posted_at,
+        source_keyword=source_keyword,
         raw_json=json.dumps({"type": "boost", "boosted_id": original.external_id, "tag": tag}),
         interactions=[
             RawInteraction(
@@ -89,7 +115,12 @@ def _posts_from_reblog(status: dict, reblog: dict, tag: str, base: str) -> list[
     return [original, boost_post]
 
 
-def _post_from_status(status: dict, tag: str, base: str) -> RawPost:
+def _post_from_status(
+    status: dict,
+    tag: str,
+    base: str,
+    source_keyword: str | None = None,
+) -> RawPost:
     status_id = str(status.get("id", ""))
     account = status.get("account") or {}
     author_id = str(account.get("id", "unknown"))
@@ -105,6 +136,7 @@ def _post_from_status(status: dict, tag: str, base: str) -> RawPost:
         author_handle=f"@{handle}" if handle else None,
         text=text or "(empty)",
         posted_at=posted_at,
+        source_keyword=source_keyword,
         raw_json=json.dumps(
             {
                 "tag": tag,

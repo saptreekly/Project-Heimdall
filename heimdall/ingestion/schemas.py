@@ -22,4 +22,5 @@ class RawPost:
     posted_at: datetime
     author_handle: str | None = None
     raw_json: str | None = None
+    source_keyword: str | None = None
     interactions: list[RawInteraction] = field(default_factory=list)

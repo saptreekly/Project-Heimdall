@@ -461,6 +461,19 @@ class XGraphQLClient:
         )
         return parse_list_timeline(payload)
 
+    async def fetch_by_tweet_ids(self, tweet_ids: list[str]) -> list[ParsedXTweet]:
+        """Best-effort fetch for reply-target backfill via search by tweet id."""
+        found: list[ParsedXTweet] = []
+        for tid in tweet_ids:
+            if not tid:
+                continue
+            batch = await self.search(tid, count=5, product="Latest")
+            for tweet in batch:
+                if tweet.tweet_id == tid:
+                    found.append(tweet)
+                    break
+        return found
+
 
 async def resolve_query_id_from_bundle(operation_name: str) -> str | None:
     """Best-effort query id discovery from x.com JS bundles (used in tests/fallback)."""

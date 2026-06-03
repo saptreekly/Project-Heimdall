@@ -4,13 +4,20 @@ from datetime import datetime, timedelta, timezone
 
 from heimdall.db.models import InteractionType, Platform
 from heimdall.ingestion.base import PlatformIngester
+from heimdall.ingestion.query_plan import QueryPlan
 from heimdall.ingestion.schemas import RawInteraction, RawPost
 
 
 class MockIngester(PlatformIngester):
     """Synthetic posts for local dev without API keys."""
 
-    async def fetch_by_keywords(self, keywords: list[str], limit: int = 50) -> list[RawPost]:
+    async def fetch_by_keywords(
+        self,
+        keywords: list[str],
+        limit: int = 50,
+        *,
+        query_plan: QueryPlan | None = None,
+    ) -> list[RawPost]:
         now = datetime.now(timezone.utc)
         posts: list[RawPost] = []
         bot_cluster = ["bot_alpha", "bot_beta", "bot_gamma"]

@@ -8,7 +8,12 @@
         "2026 midterm fraud",
         "2026 red wave"
       ],
-      "limit": 60
+      "limit": 60,
+      "fallback_platforms": ["mastodon", "hackernews"],
+      "x_exclude_terms": ["$SPX", "$VIX", "$NDX", "btc", "eth", "crypto", "mkt"],
+      "x_list_sources": [],
+      "reddit_subreddits": ["politics", "news", "Conservative"],
+      "rotation_strategy": "yield"
     }
   ]
 }

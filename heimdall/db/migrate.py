@@ -174,3 +174,14 @@ async def migrate_post_embeddings(conn: AsyncConnection) -> None:
             """
         )
     )
+
+
+async def migrate_post_ingest_fields(conn: AsyncConnection) -> None:
+    additions = [
+        ("ingest_keyword", "VARCHAR(255)"),
+        ("last_seen_at", "DATETIME"),
+    ]
+    for column, spec in additions:
+        if await _table_has_column(conn, "posts", column):
+            continue
+        await conn.execute(text(f"ALTER TABLE posts ADD COLUMN {column} {spec}"))

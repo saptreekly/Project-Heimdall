@@ -52,6 +52,8 @@ class Post(Base):
     author_handle: Mapped[str | None] = mapped_column(String(255), nullable=True)
     text: Mapped[str] = mapped_column(Text)
     posted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    ingest_keyword: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    last_seen_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     raw_json: Mapped[str | None] = mapped_column(Text, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
