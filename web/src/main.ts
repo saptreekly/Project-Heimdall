@@ -825,7 +825,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         ${cibSnapshotHtml(cib)}
         ${panelRollupHtml(
           `Emerging themes ${emergingThemesBadge(themes)}`,
-          `<div class="panel panel-chart-wide themes-panel">${emergingThemesPanelHtml(themes, true)}</div>`
+          `<div class="themes-panel">${emergingThemesPanelHtml(themes, true)}</div>`
         )}
       </section>
 

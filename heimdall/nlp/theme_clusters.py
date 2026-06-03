@@ -17,7 +17,11 @@ from heimdall.nlp.market_chatter import (
     is_market_chatter_cluster,
 )
 from heimdall.nlp.post_embeddings import resolve_embedding_matrix
-from heimdall.nlp.theme_phrases import assign_distinct_phrase_labels, label_terms as _phrase_label_terms
+from heimdall.nlp.theme_phrases import (
+    assign_distinct_phrase_labels,
+    cluster_lexical_relatedness,
+    label_terms as _phrase_label_terms,
+)
 from heimdall.nlp.theme_prefilter import (
     NON_ENGLISH_CLUSTER_ID,
     OFF_TOPIC_CLUSTER_ID,
@@ -38,7 +42,8 @@ MIN_TIMELINE_DISTINCTIVENESS = 0.12
 MIN_CLUSTER_SIZE_EXPORT = 2
 KMEANS_MAX_CLUSTERS = 6
 KMEANS_POSTS_PER_CLUSTER = 25
-MERGE_CENTROID_SIM = 0.87
+MERGE_CENTROID_SIM_STRICT = 0.91
+MERGE_RELATED_SIM_MIN = 0.76
 NOISE_CLUSTER_ID = -1
 TWO_PASS_MIN_SIZE = 8
 LINEAGE_OVERLAP_MIN = 0.35
@@ -252,7 +257,27 @@ def _adaptive_dbscan_eps(embeddings: np.ndarray, *, neural: bool) -> float:
     return float(np.clip(eps, lo, hi))
 
 
-def _merge_similar_clusters(embeddings: np.ndarray, labels: np.ndarray) -> np.ndarray:
+def _should_merge_cluster_pair(
+    sim: float,
+    texts_a: list[str] | None,
+    texts_b: list[str] | None,
+) -> bool:
+    if sim >= MERGE_CENTROID_SIM_STRICT:
+        return True
+    if texts_a is None or texts_b is None:
+        return False
+    if sim < MERGE_RELATED_SIM_MIN:
+        return False
+    related, score = cluster_lexical_relatedness(texts_a, texts_b)
+    return related and score >= 0.18
+
+
+def _merge_similar_clusters(
+    embeddings: np.ndarray,
+    labels: np.ndarray,
+    *,
+    cluster_texts: dict[int, list[str]] | None = None,
+) -> np.ndarray:
     unique = sorted({int(x) for x in labels if int(x) >= 0})
     if len(unique) < 2:
         return labels
@@ -275,10 +300,13 @@ def _merge_similar_clusters(embeddings: np.ndarray, labels: np.ndarray) -> np.nd
     for i, left in enumerate(unique):
         for right in unique[i + 1 :]:
             sim = float(centroids[left] @ centroids[right])
-            if sim >= MERGE_CENTROID_SIM:
-                root_left, root_right = find(left), find(right)
-                if root_left != root_right:
-                    parent[root_right] = root_left
+            texts_left = (cluster_texts or {}).get(left)
+            texts_right = (cluster_texts or {}).get(right)
+            if not _should_merge_cluster_pair(sim, texts_left, texts_right):
+                continue
+            root_left, root_right = find(left), find(right)
+            if root_left != root_right:
+                parent[root_right] = root_left
 
     merged = labels.copy()
     for cluster_id in unique:
@@ -696,8 +724,25 @@ def cluster_posts(
     global_author_ids = [author_ids[subset_to_global[i]] for i in range(len(cluster_indices))]
 
     cluster_texts: dict[int, list[str]] = {}
-    unique_labels = sorted({int(x) for x in raw_labels})
+    pre_merge_labels = sorted({int(x) for x in raw_labels if int(x) >= 0})
 
+    for cluster_id in pre_merge_labels:
+        member_idx = np.where(raw_labels == cluster_id)[0]
+        if len(member_idx) < MIN_CLUSTER_SIZE_EXPORT:
+            continue
+        cluster_texts[cluster_id] = [global_texts[i] for i in member_idx]
+
+    raw_labels = _merge_similar_clusters(
+        embeddings,
+        raw_labels,
+        cluster_texts=cluster_texts,
+    )
+    merged_ids = {int(x) for x in raw_labels if int(x) >= 0}
+    if len(merged_ids) < len(pre_merge_labels):
+        method = f"{method}+related_merge"
+
+    unique_labels = sorted(merged_ids)
+    cluster_texts = {}
     for cluster_id in unique_labels:
         member_idx = np.where(raw_labels == cluster_id)[0]
         if len(member_idx) < MIN_CLUSTER_SIZE_EXPORT:
@@ -938,10 +983,5 @@ def report_to_dict(report: ThemeClusterReport) -> dict:
             and not c.filter_reason
         ),
         "cluster_similarity": report.cluster_similarity,
-        "merge_candidates": [
-            edge
-            for edge in report.cluster_similarity
-            if 0.72 <= edge["similarity"] < MERGE_CENTROID_SIM
-        ],
         "merge_tree": report.merge_tree,
     }

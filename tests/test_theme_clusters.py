@@ -5,10 +5,11 @@ from heimdall.nlp.theme_clusters import (
     EMERGING_LEXICON_MAX,
     _assign_distinct_cluster_labels,
     _label_terms,
+    _merge_similar_clusters,
     cluster_posts,
     report_to_dict,
 )
-from heimdall.nlp.theme_phrases import score_distinct_phrases
+from heimdall.nlp.theme_phrases import cluster_lexical_relatedness, score_distinct_phrases
 
 
 def _synthetic_embeddings(n: int, *, groups: list[tuple[int, int]]) -> np.ndarray:
@@ -155,6 +156,69 @@ def test_kmeans_cluster_count_caps_slices() -> None:
     assert _kmeans_cluster_count(2) == 1
 
 
+def test_merge_related_clusters_when_lexically_aligned() -> None:
+    rng = np.random.default_rng(7)
+    dim = 8
+    base = rng.standard_normal(dim).astype(np.float32)
+    base /= np.linalg.norm(base) + 1e-9
+    embeddings = np.stack(
+        [
+            base + rng.standard_normal(dim).astype(np.float32) * 0.03,
+            base + rng.standard_normal(dim).astype(np.float32) * 0.03,
+            base + rng.standard_normal(dim).astype(np.float32) * 0.03,
+            base + rng.standard_normal(dim).astype(np.float32) * 0.04,
+            base + rng.standard_normal(dim).astype(np.float32) * 0.04,
+            base + rng.standard_normal(dim).astype(np.float32) * 0.04,
+        ]
+    )
+    embeddings = embeddings / (np.linalg.norm(embeddings, axis=1, keepdims=True) + 1e-9)
+    labels = np.array([0, 0, 0, 1, 1, 1], dtype=int)
+    cluster_texts = {
+        0: [
+            "Governor race election fraud claims in swing states.",
+            "Governor race turnout and election integrity matter.",
+            "Election fraud in the governor race dominates headlines.",
+        ],
+        1: [
+            "Governor election fraud investigation updates statewide.",
+            "Election fraud probe tied to governor race.",
+            "Governor race fraud allegations continue.",
+        ],
+    }
+    merged = _merge_similar_clusters(embeddings, labels, cluster_texts=cluster_texts)
+    assert len({int(x) for x in merged if int(x) >= 0}) == 1
+
+
+def test_merge_skips_similar_but_unrelated_topics() -> None:
+    rng = np.random.default_rng(8)
+    dim = 8
+    vec_a = rng.standard_normal(dim).astype(np.float32)
+    vec_b = rng.standard_normal(dim).astype(np.float32)
+    vec_a /= np.linalg.norm(vec_a) + 1e-9
+    vec_b /= np.linalg.norm(vec_b) + 1e-9
+    embeddings = np.stack([vec_a, vec_a * 0.99, vec_b, vec_b * 0.99])
+    embeddings = embeddings / (np.linalg.norm(embeddings, axis=1, keepdims=True) + 1e-9)
+    labels = np.array([0, 0, 1, 1], dtype=int)
+    cluster_texts = {
+        0: ["Red wave heat preparedness seminar cross training."],
+        1: ["Nazi senile pig insult rant feel sorry losers."],
+    }
+    merged = _merge_similar_clusters(embeddings, labels, cluster_texts=cluster_texts)
+    assert len({int(x) for x in merged if int(x) >= 0}) == 2
+
+
+def test_cluster_lexical_relatedness_detects_shared_frame() -> None:
+    election_a = ["Governor race election fraud in Michigan."]
+    election_b = ["Election fraud claims in governor race nationwide."]
+    related, score = cluster_lexical_relatedness(election_a, election_b)
+    assert related
+    assert score > 0
+
+    insult = ["Nazi senile pig insult rant feel sorry."]
+    related2, _ = cluster_lexical_relatedness(election_a, insult)
+    assert not related2
+
+
 def test_report_to_dict_shape() -> None:
     report = cluster_posts([], narrative_id=0)
     data = report_to_dict(report)
@@ -163,6 +227,7 @@ def test_report_to_dict_shape() -> None:
     assert "cluster_map" in data
     assert "merge_tree" in data
     assert "cluster_similarity" in data
+    assert "merge_candidates" not in data
 
 
 def test_merge_tree_and_similarity_export(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -188,7 +253,7 @@ def test_merge_tree_and_similarity_export(monkeypatch: pytest.MonkeyPatch) -> No
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._merge_similar_clusters",
-        lambda _emb, labels: labels,
+        lambda _emb, labels, **kwargs: labels,
     )
     report = cluster_posts(posts, narrative_id=7)
     data = report_to_dict(report)

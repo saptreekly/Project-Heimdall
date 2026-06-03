@@ -390,6 +390,48 @@ def _known_phrase_counts(texts: list[str]) -> Counter[str]:
     return counts
 
 
+def cluster_lexical_relatedness(
+    texts_a: list[str],
+    texts_b: list[str],
+) -> tuple[bool, float]:
+    """
+    Whether two post groups discuss the same substantive frame (not merely similar wording).
+
+    Returns (is_related, score 0-1).
+    """
+    if not texts_a or not texts_b:
+        return False, 0.0
+
+    counts_a: Counter[str] = Counter()
+    counts_b: Counter[str] = Counter()
+    for text in texts_a:
+        for token in tokenize(text):
+            counts_a[token] += 1
+    for text in texts_b:
+        for token in tokenize(text):
+            counts_b[token] += 1
+
+    top_a = {word for word, _ in counts_a.most_common(10)}
+    top_b = {word for word, _ in counts_b.most_common(10)}
+    shared = top_a & top_b
+
+    known_shared = set(_known_phrase_counts(texts_a)) & set(_known_phrase_counts(texts_b))
+    if known_shared:
+        return True, 1.0
+
+    substantive = {token for token in shared if len(token) >= 5}
+    if substantive:
+        score = len(shared) / max(min(len(top_a), len(top_b)), 1)
+        return True, round(score, 4)
+
+    if len(shared) >= 2:
+        union = top_a | top_b
+        score = len(shared) / max(len(union), 1)
+        return score >= 0.2, round(score, 4)
+
+    return False, 0.0
+
+
 def _ngram_counts(texts: list[str], n: int) -> Counter[str]:
     counts: Counter[str] = Counter()
     for text in texts:

@@ -1,6 +1,6 @@
 import { selectThemeCluster } from "./investigation";
 import { escapeHtml, labelList, safeText } from "./safe-text";
-import { applyThemeOverrides, loadThemeOverrides, mergeThemeClusters } from "./theme-overrides";
+import { applyThemeOverrides, loadThemeOverrides } from "./theme-overrides";
 import type { Post, ThemeCluster, ThemeTimelineEntry, ThemesReport } from "./types";
 import { truncate } from "./post-display";
 import { stateLoadingHtml } from "./ui-states";
@@ -185,32 +185,6 @@ function renderDetail(row: ThemeRow, posts: Post[]): string {
   `;
 }
 
-function renderMergeBar(report: ThemesReport, rows: ThemeRow[]): string {
-  const candidates = report.merge_candidates ?? [];
-  if (candidates.length === 0) return "";
-  const options = candidates
-    .slice(0, 6)
-    .map((edge) => {
-      const a = rows.find((r) => r.cluster_id === edge.a);
-      const b = rows.find((r) => r.cluster_id === edge.b);
-      if (!a || !b) return "";
-      return `<option value="${edge.a}:${edge.b}">${escapeHtml(a.title)} + ${escapeHtml(b.title)} (${Math.round(edge.similarity * 100)}%)</option>`;
-    })
-    .filter(Boolean)
-    .join("");
-  if (!options) return "";
-  return `
-    <div class="theme-merge-bar">
-      <label for="theme-merge-select">Merge similar clusters</label>
-      <select id="theme-merge-select" class="theme-merge-select">
-        <option value="">Select merge candidate…</option>
-        ${options}
-      </select>
-      <button type="button" class="btn btn-secondary btn-small" id="theme-merge-apply">Apply merge</button>
-    </div>
-  `;
-}
-
 function renderTable(rows: ThemeRow[], hiddenFilteredCount: number, report: ThemesReport): string {
   const visible = rows.slice(0, MAX_VISIBLE_CLUSTERS);
   const hiddenCount = Math.max(rows.length - visible.length, 0);
@@ -261,15 +235,14 @@ function renderTable(rows: ThemeRow[], hiddenFilteredCount: number, report: Them
           .join("")}
       </tbody>
     </table>
-    ${renderMergeBar(report, rows)}
     ${
       hiddenFilteredCount > 0
-        ? `<p class="chart-caption">${hiddenFilteredCount} filtered cluster${hiddenFilteredCount === 1 ? "" : "s"} hidden — toggle below to include.</p>`
+        ? `<p class="chart-caption theme-table-footnote">${hiddenFilteredCount} filtered cluster${hiddenFilteredCount === 1 ? "" : "s"} hidden — toggle below to include.</p>`
         : ""
     }
     ${
       hiddenCount > 0
-        ? `<p class="chart-caption">${hiddenCount} smaller narrative cluster${hiddenCount === 1 ? "" : "s"} hidden (showing top ${MAX_VISIBLE_CLUSTERS}).</p>`
+        ? `<p class="chart-caption theme-table-footnote">${hiddenCount} smaller narrative cluster${hiddenCount === 1 ? "" : "s"} hidden (showing top ${MAX_VISIBLE_CLUSTERS}).</p>`
         : ""
     }
   `;
@@ -327,17 +300,19 @@ export function emergingThemesPanelHtml(report: ThemesReport, asInner = false): 
     : "";
   const inner = `
       <h2 class="themes-panel-title">Theme clusters ${badge}</h2>
-      ${fallbackNote}
-      <p class="chart-caption">
-        Embedding clusters with PMI phrase labels. Theme anchors can be a single term
-        (e.g. governor) or a known frame (e.g. election fraud); weak fragments like
-        “he's purposely” are filtered out. Fin-twit and crypto ticker spam is filtered
-        out of clustering by default. Select a row to inspect framing and filter posts.
-      </p>
-      <label class="theme-market-toggle">
-        <input type="checkbox" id="theme-show-market" />
-        Show filtered buckets (market, promo, off-topic)
-      </label>
+      <div class="themes-panel-intro">
+        ${fallbackNote}
+        <p class="chart-caption">
+          Embedding clusters with PMI phrase labels. Related clusters merge automatically when
+          they share substantive frames (e.g. governor + election fraud). Fin-twit and crypto
+          ticker spam is filtered out of clustering by default. Select a row to inspect framing
+          and filter posts.
+        </p>
+        <label class="theme-market-toggle">
+          <input type="checkbox" id="theme-show-market" />
+          Show filtered buckets (market, promo, off-topic)
+        </label>
+      </div>
       <div class="theme-workbench">
         <div id="themes-list-host" class="themes-list-host">
           ${stateLoadingHtml("Loading theme clusters…")}
@@ -411,16 +386,6 @@ export function renderEmergingThemesTimeline(
 
   host.innerHTML = renderTable(rows, hiddenFilteredCount, report);
   bindTable(host, detailHost, rows, posts);
-
-  document.getElementById("theme-merge-apply")?.addEventListener("click", () => {
-    const select = document.getElementById("theme-merge-select") as HTMLSelectElement | null;
-    const value = select?.value ?? "";
-    if (!value.includes(":")) return;
-    const [a, b] = value.split(":").map((part) => parseInt(part, 10));
-    if (Number.isNaN(a) || Number.isNaN(b)) return;
-    mergeThemeClusters(activeNarrativeId, [a, b], a);
-    renderEmergingThemesTimeline(host, report, posts, narrativeId);
-  });
 
   const firstPick =
     rows.find((row) => row.emerging_theme && !isFilteredBucket(row) && !row.is_noise) ??
