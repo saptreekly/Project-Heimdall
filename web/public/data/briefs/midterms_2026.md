@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-03 07:20:32 UTC
+> Tactical snapshot · 2026-06-03 08:28:48 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **359** |
+| Posts in database | **376** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 377 / 94 |
-| Distinct themes | 11 |
-| Duplicate clusters (full DB) | 14 |
+| Graph nodes / edges | 399 / 102 |
+| Distinct themes | 9 |
+| Duplicate clusters (full DB) | 15 |
 | Fuzzy clusters (snapshot cohort) | 3 |
-| IU astroturf overlap | 0 bots / 298 authors |
+| IU astroturf overlap | 0 bots / 314 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **13**
+- Net-new posts logged: **17**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **25**
-- Net new: **438** · re-seen: **17**
-- Duplicate rate: **3.7%**
+- Runs: **26**
+- Net new: **455** · re-seen: **30**
+- Duplicate rate: **6.2%**
 
 ## Sentiment drift
 
@@ -31,16 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Near-copy campaign** · red wave, midterm election, executive order, save america, president trump (315 posts · 190 authors · 8 exact · 3 fuzzy subclusters)
-- **Shared frame (emerging)** · acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · elections post, cybersecurity teams, mercury news, endorses aisha (3 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · felony charges, harris installed, fraud invasion, stay ready (3 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · red wave, midterm election, executive order, voter fraud, save america (340 posts · 199 authors · 9 exact · 3 fuzzy subclusters)
+- **Shared frame** · midterms days, days presidential, election days, midterms days presidential, days presidential election (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
+- cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j0.94
 
@@ -52,7 +56,7 @@
 - **4 posts** · 1 author(s) — Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat l…
 - **3 posts** · 1 author(s) — Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE
 - **3 posts** · 1 author(s) — With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations…
-- _…8 more exact-duplicate cluster(s) in database._
+- _…9 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -77,13 +81,13 @@ _None spanning multiple narratives._
 - corrupt doj, stop gaslighting, happy talk (8 posts)
 - fest heart, race gmmtv, live house, birdy barista, ppnaravit phuwintang (3 posts)
 - sorry senile, pig bonespur, draft dodger, inbreeds cuz, loves winners (9 posts)
-- acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts)
-- elections post, cybersecurity teams, mercury news, endorses aisha (3 posts)
-- _…2 more emerging theme(s)._
+- affordability set, migration trend, points continued, appeal republican, backed economic (3 posts)
+- beautiful delay, republicans planned, damage midterms, coming higher, work rules (5 posts)
+- _…1 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 359 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 376 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
