@@ -101,12 +101,7 @@ def _assign_distinct_cluster_labels(
     *,
     top_n: int = 6,
 ) -> dict[int, tuple[list[str], list[str], float]]:
-    raw = assign_distinct_phrase_labels(cluster_texts, all_texts, top_n=top_n)
-    labels: dict[int, tuple[list[str], list[str], float]] = {}
-    for cluster_id, (phrases, fallback, distinctiveness) in raw.items():
-        display = phrases if phrases else fallback
-        labels[cluster_id] = (display, fallback, distinctiveness)
-    return labels
+    return assign_distinct_phrase_labels(cluster_texts, all_texts, top_n=top_n)
 
 
 def _author_entropy(author_ids: list[str]) -> float:
@@ -133,10 +128,10 @@ def _confidence_tier(*, model: str, quality_score: float, cohesion: float) -> st
 
 
 def _cluster_primary_label(cluster: ThemeCluster) -> str:
-    if cluster.label_phrases:
-        return cluster.label_phrases[0]
     if cluster.label_terms:
         return cluster.label_terms[0]
+    if cluster.label_phrases:
+        return cluster.label_phrases[0]
     return f"cluster {cluster.cluster_id}"
 
 
@@ -725,11 +720,9 @@ def cluster_posts(
         is_noise = cluster_id == NOISE_CLUSTER_ID
         member_post_ids = [global_post_ids[i] for i in member_idx]
         member_texts = cluster_texts[cluster_id]
-        display_labels, fallback_terms, label_distinctiveness = label_map.get(
+        label_terms, label_phrases, label_distinctiveness = label_map.get(
             cluster_id, ([], [], 0.0)
         )
-        label_phrases = [p for p in display_labels if " " in p] or display_labels[:3]
-        label_terms = display_labels if display_labels else fallback_terms
         market_rate = cluster_market_chatter_rate(member_texts)
         market_chatter = is_market_chatter_cluster(member_texts, label_terms)
 

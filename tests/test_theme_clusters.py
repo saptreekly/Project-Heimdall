@@ -137,7 +137,12 @@ def test_assign_distinct_cluster_labels() -> None:
         for t in ("nazi", "senile", "pig", "losers", "insult", "rant")
     )
     wave_labels = labels[2][0]
-    assert "red wave" in wave_labels or "red wave" in labels[2][0] + (labels[2][1] or [])
+    wave_phrases = labels[2][1]
+    assert (
+        "red wave" in wave_labels
+        or "red wave" in wave_phrases
+        or "red wave" in wave_labels + wave_phrases
+    )
     assert labels[1][2] > 0
     assert labels[2][2] > 0
 

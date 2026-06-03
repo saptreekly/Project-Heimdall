@@ -156,6 +156,13 @@ KNOWN_PHRASES: tuple[str, ...] = (
     "open border",
     "border crisis",
     "election fraud",
+    "election integrity",
+    "voter fraud",
+    "mail ballot",
+    "ballot harvesting",
+    "executive order",
+    "governor race",
+    "midterm election",
     "fake news",
     "radical left",
     "radical right",
@@ -171,6 +178,104 @@ KNOWN_PHRASES: tuple[str, ...] = (
     "gun control",
     "pro life",
     "pro choice",
+)
+
+KNOWN_PHRASES_SET = frozenset(KNOWN_PHRASES)
+
+# Bigram/trigram fragments that PMI often over-ranks but aren't thematic anchors.
+_FRAGMENT_PHRASES = frozenset(
+    {
+        "feel sorry",
+        "he's purposely",
+        "what's coming",
+        "hackers laying",
+        "slow rolling",
+        "spread word",
+        "word spread",
+    }
+)
+
+_WEAK_START_TOKENS = frozenset(
+    {
+        "he",
+        "she",
+        "it",
+        "we",
+        "they",
+        "what",
+        "that",
+        "this",
+        "there",
+        "here",
+        "who",
+        "how",
+        "when",
+        "where",
+        "why",
+        "he's",
+        "she's",
+        "it's",
+        "we're",
+        "they're",
+        "what's",
+        "that's",
+        "who's",
+        "here's",
+        "there's",
+        "feel",
+        "felt",
+    }
+)
+
+_WEAK_END_TOKENS = frozenset(
+    {
+        "laying",
+        "coming",
+        "going",
+        "doing",
+        "being",
+        "getting",
+        "making",
+        "taking",
+        "purposely",
+        "slowly",
+        "rolling",
+        "spread",
+        "sorry",
+        "really",
+        "just",
+        "still",
+        "again",
+        "about",
+        "around",
+    }
+)
+
+_AUX_OR_GLUE = frozenset(
+    {
+        "is",
+        "are",
+        "was",
+        "were",
+        "be",
+        "been",
+        "being",
+        "have",
+        "has",
+        "had",
+        "do",
+        "does",
+        "did",
+        "will",
+        "would",
+        "could",
+        "should",
+        "may",
+        "might",
+        "can",
+        "purposely",
+        "slowly",
+    }
 )
 
 _THEME_STOPWORDS: frozenset[str] | None = None
@@ -211,6 +316,68 @@ def is_meaningful_token(word: str) -> bool:
 
 def tokenize(text: str) -> list[str]:
     return [t for t in _TOKEN_RE.findall((text or "").lower()) if is_meaningful_token(t)]
+
+
+def phrase_label_quality(phrase: str) -> float:
+    """
+    0–1 multiplier: penalize verb fragments and pronoun-led bigrams that PMI over-ranks.
+
+    Unigrams pass through if the token itself is meaningful; known frames score highest.
+    """
+    normalized = (phrase or "").lower().strip()
+    if not normalized:
+        return 0.0
+    if normalized in _FRAGMENT_PHRASES:
+        return 0.05
+    if normalized in KNOWN_PHRASES_SET:
+        return 1.0
+
+    parts = normalized.split()
+    if len(parts) == 1:
+        return 1.0 if is_meaningful_token(parts[0]) else 0.0
+
+    if parts[0] in _WEAK_START_TOKENS:
+        return 0.12
+    if parts[-1] in _WEAK_END_TOKENS:
+        return 0.18
+    if len(parts) == 2 and parts[0] in _AUX_OR_GLUE and parts[1] in _AUX_OR_GLUE:
+        return 0.08
+    if len(parts) == 2 and parts[0] in _AUX_OR_GLUE:
+        return 0.22
+    if len(parts) == 2 and parts[1] in _AUX_OR_GLUE and parts[0] not in _WEAK_START_TOKENS:
+        return 0.55
+    if len(parts) >= 2 and all(len(p) <= 4 for p in parts):
+        return 0.35
+    return 1.0
+
+
+def _known_phrase_boost(phrase: str) -> float:
+    if phrase in KNOWN_PHRASES_SET:
+        return 1.45
+    for known in KNOWN_PHRASES:
+        if known in phrase or phrase in known:
+            return 1.25
+    return 1.0
+
+
+def _adjusted_label_score(phrase: str, pmi_score: float) -> float:
+    quality = phrase_label_quality(phrase)
+    if quality < 0.25:
+        return 0.0
+    return pmi_score * quality * _known_phrase_boost(phrase)
+
+
+def _content_word_bonus(phrase: str) -> float:
+    """Prefer substantive single-word anchors (governor, hacker, executive)."""
+    parts = phrase.split()
+    if len(parts) != 1:
+        return 0.0
+    word = parts[0]
+    if len(word) >= 7:
+        return 0.35
+    if len(word) >= 5:
+        return 0.2
+    return 0.0
 
 
 def _known_phrase_counts(texts: list[str]) -> Counter[str]:
@@ -291,13 +458,73 @@ def _pmi_phrase_scores(
         pmi = math.log2((p_phrase + 1e-9) / (p_contrast + 1e-9))
         if pmi < 1.0 and " " not in phrase:
             continue
-        if pmi < 0.5 and " " in phrase:
+        if pmi < 0.65 and " " in phrase and phrase not in KNOWN_PHRASES_SET:
             continue
         score = pmi * math.log1p(count)
         scored.append((phrase, score))
 
-    scored.sort(key=lambda item: ((" " in item[0]), item[1]), reverse=True)
+    scored.sort(
+        key=lambda item: (_adjusted_label_score(item[0], item[1]), (" " in item[0])),
+        reverse=True,
+    )
     return scored
+
+
+def rank_theme_labels(
+    member_texts: list[str],
+    contrast_texts: list[str],
+    *,
+    top_n: int = 6,
+) -> tuple[list[str], list[str], float]:
+    """
+    Pick a theme anchor (unigram or phrase) plus supporting terms.
+
+    Returns (theme_terms, quality_phrases, distinctiveness).
+    theme_terms[0] is the best primary label for the cluster.
+    """
+    scored = _pmi_phrase_scores(member_texts, contrast_texts)
+    unigram_scored = _pmi_phrase_scores(member_texts, contrast_texts, min_count=1)
+
+    ranked: list[tuple[str, float]] = []
+    seen: set[str] = set()
+    for phrase, raw_score in scored + unigram_scored:
+        if phrase in seen:
+            continue
+        adj = _adjusted_label_score(phrase, raw_score) + _content_word_bonus(phrase)
+        if adj <= 0.0:
+            continue
+        ranked.append((phrase, adj))
+        seen.add(phrase)
+    ranked.sort(key=lambda item: item[1], reverse=True)
+
+    theme_terms: list[str] = []
+    quality_phrases: list[str] = []
+    used_tokens: set[str] = set()
+
+    for phrase, _score in ranked:
+        parts = phrase.split()
+        if any(p in used_tokens for p in parts):
+            continue
+        if " " in phrase and phrase_label_quality(phrase) >= 0.55:
+            quality_phrases.append(phrase)
+        if len(theme_terms) < top_n:
+            theme_terms.append(phrase)
+        used_tokens.update(parts)
+        if len(theme_terms) >= top_n and len(quality_phrases) >= min(3, top_n // 2):
+            break
+
+    if not theme_terms:
+        fallback = label_terms(member_texts, top_n=top_n)
+        theme_terms = fallback
+        if not quality_phrases:
+            quality_phrases = [p for p in fallback if " " in p]
+
+    distinctiveness = 0.0
+    if ranked:
+        top_scores = [s for _, s in ranked[:3]]
+        distinctiveness = round(min(1.0, sum(top_scores) / max(len(top_scores), 1) / 6.0), 4)
+
+    return theme_terms[:top_n], quality_phrases[:top_n], distinctiveness
 
 
 def score_distinct_phrases(
@@ -307,41 +534,31 @@ def score_distinct_phrases(
     top_n: int = 6,
 ) -> tuple[list[str], list[str], float]:
     """
-    Return (phrases, fallback_unigrams, distinctiveness).
+    Return (display_labels, fallback_unigrams, distinctiveness).
 
-    Phrases prefer multi-word frames like 'red wave' over separate 'red' + 'wave'.
+    display_labels[0] is the theme anchor (unigram or known phrase); weak PMI fragments
+    are filtered out in favor of substantive terms like governor or election fraud.
     """
-    scored = _pmi_phrase_scores(member_texts, contrast_texts)
-    phrases: list[str] = []
-    used_tokens: set[str] = set()
-
-    for phrase, score in scored:
-        if phrase in phrases:
-            continue
-        parts = phrase.split()
-        if any(p in used_tokens for p in parts):
-            continue
-        phrases.append(phrase)
-        used_tokens.update(parts)
-        if len(phrases) >= top_n:
-            break
-
-    unigram_scored = _pmi_phrase_scores(
+    theme_terms, quality_phrases, distinctiveness = rank_theme_labels(
         member_texts,
         contrast_texts,
-        min_count=1,
+        top_n=top_n,
     )
-    fallback = [p for p, _ in unigram_scored if " " not in p][:top_n]
+    display: list[str] = []
+    seen: set[str] = set()
+    for label in theme_terms:
+        if label in seen:
+            continue
+        display.append(label)
+        seen.add(label)
+    for phrase in quality_phrases:
+        if phrase in seen:
+            continue
+        display.append(phrase)
+        seen.add(phrase)
 
-    if not phrases and fallback:
-        phrases = fallback[: min(3, top_n)]
-
-    distinctiveness = 0.0
-    if scored:
-        top_scores = [s for _, s in scored[:3]]
-        distinctiveness = round(min(1.0, sum(top_scores) / max(len(top_scores), 1) / 6.0), 4)
-
-    return phrases[:top_n], fallback[:top_n], distinctiveness
+    fallback = [t for t in theme_terms if " " not in t][:top_n]
+    return display[:top_n], fallback[:top_n], distinctiveness
 
 
 def assign_distinct_phrase_labels(
@@ -389,21 +606,37 @@ def assign_distinct_phrase_labels(
             contrast,
             top_n=top_n,
         )
+        theme_terms, quality_phrases, _ = rank_theme_labels(texts, contrast, top_n=top_n)
 
         filtered: list[str] = []
-        for phrase in phrases:
-            parts = phrase.split()
-            if phrase in claimed_phrases:
+        filtered_phrases: list[str] = []
+        for label in theme_terms:
+            parts = label.split()
+            if label in claimed_phrases:
                 continue
             if any(p in claimed_tokens for p in parts):
                 continue
-            filtered.append(phrase)
+            filtered.append(label)
+            claimed_phrases.add(label)
+            claimed_tokens.update(parts)
+            if " " in label and phrase_label_quality(label) >= 0.55:
+                filtered_phrases.append(label)
+
+        for phrase in quality_phrases:
+            if phrase in filtered_phrases or phrase in claimed_phrases:
+                continue
+            parts = phrase.split()
+            if any(p in claimed_tokens for p in parts):
+                continue
+            filtered_phrases.append(phrase)
             claimed_phrases.add(phrase)
             claimed_tokens.update(parts)
 
         if len(filtered) < 2:
             for phrase, _ in cluster_scores[cluster_id]:
                 if phrase in filtered or phrase in claimed_phrases:
+                    continue
+                if phrase_label_quality(phrase) < 0.25:
                     continue
                 filtered.append(phrase)
                 claimed_phrases.add(phrase)
@@ -413,8 +646,12 @@ def assign_distinct_phrase_labels(
 
         if not filtered:
             filtered = [w for w, _ in _pmi_phrase_scores(texts, contrast, min_count=1)][:top_n]
+            filtered = [w for w in filtered if phrase_label_quality(w) >= 0.25]
 
-        labels[cluster_id] = (filtered[:top_n], fallback[:top_n], distinctiveness)
+        if not filtered_phrases:
+            filtered_phrases = [p for p in filtered if " " in p and phrase_label_quality(p) >= 0.55]
+
+        labels[cluster_id] = (filtered[:top_n], filtered_phrases[:top_n], distinctiveness)
 
     return labels
 

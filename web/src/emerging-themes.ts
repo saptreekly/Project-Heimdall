@@ -49,9 +49,15 @@ function displayLabels(entry: {
   label_phrases?: string[];
   label_terms?: string[];
 }): string[] {
+  const terms = labelList(entry.label_terms);
   const phrases = labelList(entry.label_phrases);
-  if (phrases.length > 0) return phrases.slice(0, 6);
-  return labelList(entry.label_terms).slice(0, 6);
+  const primary = terms[0] ?? phrases[0] ?? "";
+  const tail = [
+    ...phrases.filter((p) => p !== primary),
+    ...terms.slice(1).filter((t) => t !== primary && !phrases.includes(t)),
+  ];
+  if (primary) return [primary, ...tail].slice(0, 6);
+  return tail.slice(0, 6);
 }
 
 function normalizeRow(
@@ -323,8 +329,10 @@ export function emergingThemesPanelHtml(report: ThemesReport, asInner = false): 
       <h2 class="themes-panel-title">Theme clusters ${badge}</h2>
       ${fallbackNote}
       <p class="chart-caption">
-        Embedding clusters with PMI phrase labels (multi-word frames like “red wave” stay together).
-        Fin-twit and crypto ticker spam is filtered out of clustering by default. Select a row to inspect framing and filter posts.
+        Embedding clusters with PMI phrase labels. Theme anchors can be a single term
+        (e.g. governor) or a known frame (e.g. election fraud); weak fragments like
+        “he's purposely” are filtered out. Fin-twit and crypto ticker spam is filtered
+        out of clustering by default. Select a row to inspect framing and filter posts.
       </p>
       <label class="theme-market-toggle">
         <input type="checkbox" id="theme-show-market" />

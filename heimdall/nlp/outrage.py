@@ -17,9 +17,10 @@ from heimdall.nlp.lexicon import (
     STANDALONE_BITCH,
     THREAT_VIOLENCE,
     TOXIC_PROFANITY,
+    inflammatory_strength,
 )
 
-MODEL_VERSION = "heimdall-lexicon-v2.3"
+MODEL_VERSION = "heimdall-lexicon-v2.4"
 MODEL_VERSION_EMBED = f"{MODEL_VERSION}+embed-cluster"
 MODEL_VERSION_TRANSFORMER = f"{MODEL_VERSION}+twitter-roberta"
 
@@ -122,8 +123,9 @@ class OutrageAnalyzer:
         stance = min(1.0, len(STANCE_POLARIZATION.findall(text)) * 0.28)
         conspiracy = min(1.0, len(CONSPIRACY.findall(text)) * 0.25)
         threat = min(1.0, len(THREAT_VIOLENCE.findall(text)) * 0.4)
+        inflame_strength, inflame_hits = inflammatory_strength(text)
 
-        polarity, negativity_score = self._polarity(text)
+        polarity, negativity_score = self._polarity(text, inflammatory_strength=inflame_strength)
         caps_ratio = sum(1 for c in text if c.isupper()) / max(len(text), 1)
         punctuation_spike = min(1.0, text.count("!") * 0.12)
 
@@ -158,12 +160,20 @@ class OutrageAnalyzer:
             + theme_boost,
         )
 
-        if AFFECTION.search(text):
+        if AFFECTION.search(text) and inflame_strength < 0.25:
             outrage_index = min(outrage_index, outrage_index * 0.5 + 0.05)
-            if polarity == "negative" and outrage_index < 0.2:
+            if polarity == "negative" and outrage_index < 0.2 and inflame_hits == 0:
                 polarity = "neutral"
 
-        escalation_tier = self._escalation_tier(outrage_index, emerging_theme)
+        escalation_tier = self._escalation_tier(
+            outrage_index,
+            emerging_theme,
+            inflammatory_strength=inflame_strength,
+            inflammatory_hits=inflame_hits,
+            conflict_escalation=conflict_escalation,
+            dehumanization_score=dehuman,
+            threat_score=threat,
+        )
         sentiment_label = escalation_tier
 
         return OutrageResult(
@@ -197,34 +207,62 @@ class OutrageAnalyzer:
         )
 
     @staticmethod
-    def _escalation_tier(outrage_index: float, emerging_theme: bool) -> str:
+    def _escalation_tier(
+        outrage_index: float,
+        emerging_theme: bool,
+        *,
+        inflammatory_strength: float = 0.0,
+        inflammatory_hits: int = 0,
+        conflict_escalation: float = 0.0,
+        dehumanization_score: float = 0.0,
+        threat_score: float = 0.0,
+    ) -> str:
         if outrage_index >= 0.55:
             return "high_conflict"
         if outrage_index >= 0.32:
+            return "escalating"
+        if (
+            inflammatory_strength >= 0.5
+            or dehumanization_score >= 0.35
+            or threat_score >= 0.35
+        ):
+            return "escalating"
+        if inflammatory_hits >= 2 and conflict_escalation >= 0.2:
+            return "escalating"
+        if inflammatory_strength >= 0.35 and conflict_escalation >= 0.15:
             return "escalating"
         if emerging_theme and outrage_index >= 0.22:
             return "emerging_theme"
         return "neutral"
 
-    def _polarity(self, text: str) -> tuple[str, float]:
+    def _polarity(
+        self,
+        text: str,
+        *,
+        inflammatory_strength: float = 0.0,
+    ) -> tuple[str, float]:
         if self._sentiment_pipe:
             try:
                 out = self._sentiment_pipe(text[:512])[0]
                 label = out["label"].lower()
                 score = float(out["score"])
                 if "neg" in label:
-                    return "negative", score
+                    return "negative", max(score, inflammatory_strength * 0.75)
                 if "pos" in label:
                     return "positive", max(0.0, (1.0 - score) * 0.15)
+                lex_boost = inflammatory_strength * 0.85
+                if lex_boost >= 0.18:
+                    return "negative", lex_boost
                 return "neutral", max(0.0, (1.0 - score) * 0.25)
             except Exception:
                 pass
 
         negative_words = len(NEGATIVE_LEXICON.findall(text))
         neg_weight = min(1.0, negative_words * 0.22)
-        if AFFECTION.search(text) and neg_weight < 0.35:
+        neg_weight = max(neg_weight, inflammatory_strength * 0.85)
+        if AFFECTION.search(text) and neg_weight < 0.35 and inflammatory_strength < 0.25:
             return "positive", max(0.0, neg_weight * 0.5)
-        if neg_weight > 0.2:
+        if neg_weight >= 0.18:
             return "negative", neg_weight
         return "neutral", neg_weight
 

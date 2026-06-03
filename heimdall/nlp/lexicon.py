@@ -41,9 +41,10 @@ AFFECTION = re.compile(
     re.I,
 )
 NEGATIVE_LEXICON = re.compile(
-    r"\b(hate|destroy|evil|corrupt|lie|fake|invad|deport|illegal|"
-    r"traitor|disgusting|pathetic|scum|garbage human|worst president|"
-    r"clown show|disaster|betray|sellout|grifter|predator|sickening)\b",
+    r"\b(hate|destroy|evil|corrupt|lie|liar|fake|invad|deport|illegal|"
+    r"fraud|rigged|stolen|traitor|disgusting|pathetic|scum|garbage human|"
+    r"worst president|clown show|disaster|betray|sellout|grifter|predator|"
+    r"sickening|unhinged|deranged|insane|lunatic)\b",
     re.I,
 )
 STANCE_POLARIZATION = re.compile(
@@ -77,6 +78,34 @@ LEXICON_PATTERNS: tuple[re.Pattern[str], ...] = (
     CONSPIRACY,
     THREAT_VIOLENCE,
 )
+
+INFLAMMATORY_FAMILIES: tuple[re.Pattern[str], ...] = (
+    DEHUMANIZING,
+    ANTI_AUTHORITY,
+    RAGEBAIT_MARKERS,
+    HIGH_CONFLICT,
+    TOXIC_PROFANITY,
+    STANCE_POLARIZATION,
+    CONSPIRACY,
+    THREAT_VIOLENCE,
+)
+
+
+def inflammatory_strength(text: str) -> tuple[float, int]:
+    """
+    Strength of escalation-oriented lexicon hits (excludes generic negativity alone).
+
+    Returns (0-1 strength, number of distinct family hits).
+    """
+    if not text:
+        return 0.0, 0
+    hits = sum(1 for pattern in INFLAMMATORY_FAMILIES if pattern.search(text))
+    if STANDALONE_BITCH.search(text) and not AFFECTION.search(text):
+        hits += 1
+    if hits == 0:
+        return 0.0, 0
+    strength = min(1.0, 0.35 + (hits - 1) * 0.15)
+    return round(strength, 4), hits
 
 
 def lexicon_hit_strength(text: str) -> float:
