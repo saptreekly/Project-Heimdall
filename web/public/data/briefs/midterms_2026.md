@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-03 19:57:05 UTC
+> Tactical snapshot · 2026-06-03 20:07:00 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **416** |
+| Posts in database | **421** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 439 / 117 |
-| Distinct themes | 16 |
-| Duplicate clusters (full DB) | 19 |
+| Graph nodes / edges | 442 / 120 |
+| Distinct themes | 22 |
+| Duplicate clusters (full DB) | 20 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 0 bots / 348 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **5**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **32**
-- Net new: **495** · re-seen: **60**
-- Duplicate rate: **10.8%**
+- Runs: **33**
+- Net new: **500** · re-seen: **62**
+- Duplicate rate: **11.0%**
 
 ## Sentiment drift
 
@@ -31,12 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · breaking trump, court announcement, major win, midterms ele, watch cheating (6 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 70 authors · 8 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · executive order, mail ballot, federal judge, citizenship verification (9 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · laying groundwork, counter disinformation, hackers preparing, local governments, wave phishing (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · affordability set, migration trend, points continued, backed economic (8 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · legal standard, votebeat dispute (8 posts · 7 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · laying groundwork, hackers preparing, local governments, credential theft (10 posts · 10 authors · 2 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · united states, purpose identify, cabinet meeting, fully transformed (10 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · graham platner, susan collins, boom latino, winner odds (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · racially drawn, upholds alabama, overturning lower (9 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · bigger primary, days calendar, nation largest, governor race (9 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -54,11 +60,11 @@
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **6 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
+- **4 posts** · 1 author(s) — Democrats are out of ideas, out of cash at the party level, and out of touch. MAGA is rebuilding the country. Voters see it. The 2026 midterms will be a reckoning. America is rejecting the old failur…
 - **4 posts** · 1 author(s) — Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat l…
 - **3 posts** · 3 author(s) — 🔥 Breaking: Trump SUPREME COURT Announcement MAJOR Win 2026 Midterms Ele... via
 - **3 posts** · 1 author(s) — Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE
-- **3 posts** · 1 author(s) — With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations…
-- _…12 more exact-duplicate cluster(s) in database._
+- _…13 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -81,17 +87,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- sorry senile, pig bonespur, draft dodger, inbreeds cuz, losers america (9 posts)
-- gavin newsome, fair total, stress democrats, historic loss, completely overhaul (6 posts)
-- executive order, mail ballot, federal judge, citizenship verification (9 posts)
-- laying groundwork, counter disinformation, hackers preparing, local governments, wave phishing (8 posts)
-- affordability set, migration trend, points continued, backed economic (8 posts)
-- legal standard, votebeat dispute (8 posts)
-- _…9 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts)
+- election fraud, accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- radical left, sidney powell (8 posts)
+- save america, republican senate, proof citizenship, act midterms, house passed (8 posts)
+- democrats ideas, cash party, level touch, maga rebuilding, country voters (4 posts)
+- united states, purpose identify, cabinet meeting, fully transformed (10 posts)
+- graham platner, susan collins, boom latino, winner odds (10 posts)
+- _…15 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 416 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 421 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
