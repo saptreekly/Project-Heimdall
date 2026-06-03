@@ -1,45 +1,58 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-03 06:01:35 UTC
+> Tactical snapshot · 2026-06-03 06:32:33 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **78** |
-| Posts in snapshot cohort | 78 |
-| Snapshot truncated | no |
-| CIB suspicion | **0.38** |
-| Text coordination | 0.38 |
+| Posts in database | **359** |
+| Posts in snapshot cohort | 250 |
+| Snapshot truncated | yes |
+| CIB suspicion | **0.55** |
+| Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
-| Organic score | 0.62 |
-| Graph nodes / edges | 70 / 0 |
-| Distinct themes | ? |
-| Duplicate clusters (full DB) | 4 |
-| Fuzzy clusters (snapshot cohort) | 2 |
-| IU astroturf overlap | 0 bots / 70 authors |
+| Organic score | 0.45 |
+| Graph nodes / edges | 377 / 94 |
+| Distinct themes | 11 |
+| Duplicate clusters (full DB) | 14 |
+| Fuzzy clusters (snapshot cohort) | 3 |
+| IU astroturf overlap | 0 bots / 298 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **23**
-- Net new: **425** · re-seen: **17**
-- Duplicate rate: **3.8%**
+- Runs: **24**
+- Net new: **438** · re-seen: **17**
+- Duplicate rate: **3.7%**
 
 ## Sentiment drift
 
 - Trend: **stable**
 
+## Layered coordination (frames)
+
+- **Near-copy campaign** · red wave, midterm election, executive order, save america, president trump (315 posts · 190 authors · 8 exact · 3 fuzzy subclusters)
+- **Shared frame (emerging)** · acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · elections post, cybersecurity teams, mercury news, endorses aisha (3 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · felony charges, harris installed, fraud invasion, stay ready (3 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+
 ## CIB warning signals
 
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
+- cross_author_fuzzy_4authors_4posts_j1.00
+- cross_author_fuzzy_2authors_2posts_j1.00
+- cross_author_fuzzy_2authors_2posts_j0.94
 
 ## Exact duplicate text (Layer 1 — copy coordination)
 
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
-- **4 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
+- **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
+- **6 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
+- **4 posts** · 1 author(s) — Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat l…
 - **3 posts** · 1 author(s) — Remember ! When you VOTE On Nov 3rd, 2026 Midterm Elections DEM Politicians Are STILL TRYING to Shut Down ICE
-- **2 posts** · 2 author(s) — 🚨BREAKING:📷 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his "Elections Czar" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no mo…
+- **3 posts** · 1 author(s) — With affordability set to dominate the 2026 midterms, the migration trend points to continued appeal for Republican-backed economic policies, despite Democrats' attempts to pin economic frustrations…
+- _…8 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -47,8 +60,9 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **2 posts** · 2 authors · ~100% Jaccard — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
-- **2 posts** · 2 authors · ~100% Jaccard — 🚨BREAKING:📷 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his "Elections Czar" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no mo…
+- **2 posts** · 2 authors · ~100% Jaccard — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
+- **4 posts** · 4 authors · ~100% Jaccard — Hackers are already laying groundwork to disrupt the 2026 midterms, research says via
+- **2 posts** · 2 authors · ~94% Jaccard — "Tina Peters, a former elections clerk convicted of multiple charges related to security breaches of Colorado’s 2020 presidential election results, on Monday accused Democrats of trying to “cheat” in…
 
 ## Cross-narrative actors (this narrative)
 
@@ -60,7 +74,16 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-_No emerging themes flagged._
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- fest heart, race gmmtv, live house, birdy barista, ppnaravit phuwintang (3 posts)
+- sorry senile, pig bonespur, draft dodger, inbreeds cuz, loves winners (9 posts)
+- acabar nas, china expandiu, investimentos brasil, longo dos, mandatos lula (5 posts)
+- elections post, cybersecurity teams, mercury news, endorses aisha (3 posts)
+- _…2 more emerging theme(s)._
+
+## Scope note
+
+Coordination dupes and CIB text signals scan **all 359 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
