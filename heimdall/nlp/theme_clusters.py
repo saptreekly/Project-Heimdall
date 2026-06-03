@@ -42,8 +42,12 @@ MIN_TIMELINE_DISTINCTIVENESS = 0.12
 MIN_CLUSTER_SIZE_EXPORT = 2
 KMEANS_MAX_CLUSTERS = 6
 KMEANS_POSTS_PER_CLUSTER = 25
-MERGE_CENTROID_SIM_STRICT = 0.91
-MERGE_RELATED_SIM_MIN = 0.76
+MERGE_CENTROID_SIM_STRICT = 0.93
+MERGE_RELATED_SIM_MIN = 0.82
+MERGE_RELATED_SCORE_MIN = 0.28
+MERGE_MAX_CLUSTER_SIZE = 48
+MERGE_MAX_CLUSTER_FRACTION = 0.32
+SPLIT_OVERSIZED_MIN = 12
 NOISE_CLUSTER_ID = -1
 TWO_PASS_MIN_SIZE = 8
 LINEAGE_OVERLAP_MIN = 0.35
@@ -269,7 +273,13 @@ def _should_merge_cluster_pair(
     if sim < MERGE_RELATED_SIM_MIN:
         return False
     related, score = cluster_lexical_relatedness(texts_a, texts_b)
-    return related and score >= 0.18
+    return related and score >= MERGE_RELATED_SCORE_MIN
+
+
+def _merge_size_cap(total_posts: int) -> int:
+    if total_posts <= 0:
+        return MERGE_MAX_CLUSTER_SIZE
+    return min(MERGE_MAX_CLUSTER_SIZE, max(12, int(total_posts * MERGE_MAX_CLUSTER_FRACTION)))
 
 
 def _merge_similar_clusters(
@@ -277,19 +287,26 @@ def _merge_similar_clusters(
     labels: np.ndarray,
     *,
     cluster_texts: dict[int, list[str]] | None = None,
+    total_posts: int | None = None,
 ) -> np.ndarray:
     unique = sorted({int(x) for x in labels if int(x) >= 0})
     if len(unique) < 2:
         return labels
 
+    n_posts = total_posts or len(labels)
+    size_cap = _merge_size_cap(n_posts)
+
     centroids: dict[int, np.ndarray] = {}
+    cluster_sizes: dict[int, int] = {}
     for cluster_id in unique:
         idx = np.where(labels == cluster_id)[0]
+        cluster_sizes[cluster_id] = len(idx)
         centroid = embeddings[idx].mean(axis=0)
         norm = float(np.linalg.norm(centroid))
         centroids[cluster_id] = centroid / norm if norm > 1e-9 else centroid
 
     parent = {cid: cid for cid in unique}
+    sizes = dict(cluster_sizes)
 
     def find(cluster_id: int) -> int:
         while parent[cluster_id] != cluster_id:
@@ -297,6 +314,7 @@ def _merge_similar_clusters(
             cluster_id = parent[cluster_id]
         return cluster_id
 
+    merge_pairs: list[tuple[float, int, int]] = []
     for i, left in enumerate(unique):
         for right in unique[i + 1 :]:
             sim = float(centroids[left] @ centroids[right])
@@ -304,9 +322,18 @@ def _merge_similar_clusters(
             texts_right = (cluster_texts or {}).get(right)
             if not _should_merge_cluster_pair(sim, texts_left, texts_right):
                 continue
-            root_left, root_right = find(left), find(right)
-            if root_left != root_right:
-                parent[root_right] = root_left
+            merge_pairs.append((sim, left, right))
+    merge_pairs.sort(key=lambda item: item[0], reverse=True)
+
+    for _sim, left, right in merge_pairs:
+        root_left, root_right = find(left), find(right)
+        if root_left == root_right:
+            continue
+        combined = sizes[root_left] + sizes[root_right]
+        if combined > size_cap:
+            continue
+        parent[root_right] = root_left
+        sizes[root_left] = combined
 
     merged = labels.copy()
     for cluster_id in unique:
@@ -381,18 +408,24 @@ def _kmeans_labels(embeddings: np.ndarray) -> tuple[np.ndarray, str]:
     return labels, "kmeans"
 
 
-def _two_pass_refinement(embeddings: np.ndarray, labels: np.ndarray) -> np.ndarray:
+def _two_pass_refinement(
+    embeddings: np.ndarray,
+    labels: np.ndarray,
+    *,
+    neural: bool,
+    min_size: int = TWO_PASS_MIN_SIZE,
+) -> np.ndarray:
     """Re-cluster large super-clusters for finer narrative frames."""
     refined = labels.copy()
     next_id = int(labels.max()) + 1 if len(labels) else 0
     for cluster_id in sorted({int(x) for x in labels if int(x) >= 0}):
         member_idx = np.where(labels == cluster_id)[0]
-        if len(member_idx) < TWO_PASS_MIN_SIZE:
+        if len(member_idx) < min_size:
             continue
         subset = embeddings[member_idx]
         inner = _hdbscan_labels(subset)
         if inner is None:
-            inner_labels, _ = _dbscan_labels(subset, neural=True)
+            inner_labels, _ = _dbscan_labels(subset, neural=neural)
         else:
             inner_labels, _ = inner
         inner_valid = inner_labels[inner_labels >= 0]
@@ -443,7 +476,7 @@ def _cluster_labels(
             labels, method = _kmeans_labels(embeddings)
 
     labels = _merge_similar_clusters(embeddings, labels)
-    labels = _two_pass_refinement(embeddings, labels)
+    labels = _two_pass_refinement(embeddings, labels, neural=neural)
     if post_ids:
         labels = _apply_must_link_groups(labels, must_link_groups, post_ids)
         labels = _merge_similar_clusters(embeddings, labels)
@@ -736,12 +769,24 @@ def cluster_posts(
         embeddings,
         raw_labels,
         cluster_texts=cluster_texts,
+        total_posts=len(cluster_indices),
     )
     merged_ids = {int(x) for x in raw_labels if int(x) >= 0}
     if len(merged_ids) < len(pre_merge_labels):
         method = f"{method}+related_merge"
 
-    unique_labels = sorted(merged_ids)
+    pre_split = len(merged_ids)
+    raw_labels = _two_pass_refinement(
+        embeddings,
+        raw_labels,
+        neural=neural,
+        min_size=SPLIT_OVERSIZED_MIN,
+    )
+    post_split = len({int(x) for x in raw_labels if int(x) >= 0})
+    if post_split > pre_split:
+        method = f"{method}+split"
+
+    unique_labels = sorted({int(x) for x in raw_labels if int(x) >= 0})
     cluster_texts = {}
     for cluster_id in unique_labels:
         member_idx = np.where(raw_labels == cluster_id)[0]

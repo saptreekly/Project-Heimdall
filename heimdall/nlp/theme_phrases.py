@@ -182,6 +182,56 @@ KNOWN_PHRASES: tuple[str, ...] = (
 
 KNOWN_PHRASES_SET = frozenset(KNOWN_PHRASES)
 
+# Broad election/politics vocabulary — shared tokens alone should not trigger cluster merge.
+_GENERIC_THEME_TOKENS = frozenset(
+    {
+        "election",
+        "elections",
+        "vote",
+        "votes",
+        "voting",
+        "ballot",
+        "ballots",
+        "trump",
+        "biden",
+        "gop",
+        "democrat",
+        "democrats",
+        "republican",
+        "republicans",
+        "midterm",
+        "midterms",
+        "senate",
+        "house",
+        "state",
+        "states",
+        "president",
+        "political",
+        "politics",
+        "campaign",
+        "primary",
+        "general",
+        "county",
+        "american",
+        "america",
+        "country",
+        "national",
+        "rights",
+        "news",
+        "media",
+        "people",
+        "today",
+        "year",
+        "years",
+        "day",
+        "days",
+        "need",
+        "make",
+        "just",
+        "like",
+    }
+)
+
 # Bigram/trigram fragments that PMI often over-ranks but aren't thematic anchors.
 _FRAGMENT_PHRASES = frozenset(
     {
@@ -390,6 +440,14 @@ def _known_phrase_counts(texts: list[str]) -> Counter[str]:
     return counts
 
 
+def _distinctive_shared_tokens(shared: set[str]) -> set[str]:
+    return {
+        token
+        for token in shared
+        if token not in _GENERIC_THEME_TOKENS and is_meaningful_token(token)
+    }
+
+
 def cluster_lexical_relatedness(
     texts_a: list[str],
     texts_b: list[str],
@@ -419,15 +477,14 @@ def cluster_lexical_relatedness(
     if known_shared:
         return True, 1.0
 
-    substantive = {token for token in shared if len(token) >= 5}
-    if substantive:
-        score = len(shared) / max(min(len(top_a), len(top_b)), 1)
-        return True, round(score, 4)
+    distinctive = _distinctive_shared_tokens(shared)
+    if len(distinctive) >= 2:
+        score = len(distinctive) / max(min(len(top_a), len(top_b)), 1)
+        return score >= 0.22, round(score, 4)
 
-    if len(shared) >= 2:
-        union = top_a | top_b
-        score = len(shared) / max(len(union), 1)
-        return score >= 0.2, round(score, 4)
+    if len(distinctive) == 1 and len(shared) >= 2:
+        score = len(distinctive) / max(min(len(top_a), len(top_b)), 1)
+        return score >= 0.35, round(score, 4)
 
     return False, 0.0
 

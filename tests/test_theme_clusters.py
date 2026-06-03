@@ -219,6 +219,44 @@ def test_cluster_lexical_relatedness_detects_shared_frame() -> None:
     assert not related2
 
 
+def test_cluster_lexical_relatedness_ignores_generic_overlap() -> None:
+    executive = ["Executive order on mail ballot verification in the election."]
+    red_wave = ["Red wave predictions and voting rights ahead of midterms."]
+    related, _ = cluster_lexical_relatedness(executive, red_wave)
+    assert not related
+
+
+def test_merge_skips_when_only_generic_tokens_overlap() -> None:
+    rng = np.random.default_rng(11)
+    dim = 8
+    vec_a = rng.standard_normal(dim).astype(np.float32)
+    vec_b = rng.standard_normal(dim).astype(np.float32)
+    vec_a /= np.linalg.norm(vec_a) + 1e-9
+    vec_b /= np.linalg.norm(vec_b) + 1e-9
+    # Blend so centroid similarity is in the related-merge band, not strict auto-merge.
+    vec_b = 0.6 * vec_a + 0.4 * vec_b
+    vec_b /= np.linalg.norm(vec_b) + 1e-9
+    embeddings = np.stack([vec_a, vec_a, vec_b, vec_b])
+    labels = np.array([0, 0, 1, 1], dtype=int)
+    cluster_texts = {
+        0: [
+            "Executive order on mail ballot verification trump election.",
+            "Federal executive order challenges election ballot rules.",
+        ],
+        1: [
+            "Red wave heat predictions voting rights senate election.",
+            "Red wave seminar cross training voting rights midterms.",
+        ],
+    }
+    merged = _merge_similar_clusters(
+        embeddings,
+        labels,
+        cluster_texts=cluster_texts,
+        total_posts=4,
+    )
+    assert len({int(x) for x in merged if int(x) >= 0}) == 2
+
+
 def test_report_to_dict_shape() -> None:
     report = cluster_posts([], narrative_id=0)
     data = report_to_dict(report)
