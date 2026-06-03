@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-03 15:12:38 UTC
+> Tactical snapshot · 2026-06-03 15:55:12 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 420 / 110 |
-| Distinct themes | 13 |
+| Distinct themes | 9 |
 | Duplicate clusters (full DB) | 15 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 0 bots / 333 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **30**
+- Runs: **31**
 - Net new: **475** · re-seen: **60**
 - Duplicate rate: **11.2%**
 
@@ -31,13 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 78 authors · 8 exact · 1 fuzzy subclusters)
-- **Shared frame** · reuters reported, affordability set, migration trend, points continued, appeal republican (69 posts · 51 authors · 2 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · tina peters, usps proposed, presidential power, elections clerk (22 posts · 20 authors · 0 exact · 1 fuzzy subclusters)
-- **Shared frame** · john thune, eliminate filibuster, far republicans, mitchell post, you're wondering (20 posts · 17 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · executive order, mail ballot, federal judge, block trump, citizenship verification (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · gavin newsome, steve hilton, total votes, listening voted (11 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Near-copy campaign** · red wave, midterm election, executive order, supreme court, president trump (356 posts · 206 authors · 9 exact · 3 fuzzy subclusters)
+- **Shared frame (emerging)** · elections post, cybersecurity teams, mercury news, endorses aisha (3 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -78,13 +73,12 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- executive order, mail ballot, federal judge, block trump, citizenship verification (11 posts)
-- gavin newsome, steve hilton, total votes, listening voted (11 posts)
-- sorry senile, pig bonespur, draft dodger, inbreeds cuz, losers america (9 posts)
-- 'blue wave', writes strong, mayors influence (10 posts)
-- black district, legal standard (9 posts)
-- bigger primary, days calendar, states including, nation largest, high stakes (8 posts)
-- _…4 more emerging theme(s)._
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- live house, fest heart, race gmmtv, birdy barista, ppnaravit phuwintang (4 posts)
+- sorry senile, pig bonespur, draft dodger, inbreeds cuz, loves winners (9 posts)
+- affordability set, migration trend, points continued, appeal republican, backed economic (3 posts)
+- elections post, cybersecurity teams, mercury news, endorses aisha (3 posts)
+- _…1 more emerging theme(s)._
 
 ## Scope note
 
