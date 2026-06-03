@@ -179,8 +179,7 @@ function noSpreadNoticeHtml(edgeCount: number): string {
       <p class="scatter-diagnosis-sub">
         Confirm in
         <a href="#propagation-graph-panel">Propagation network</a> (badge: <em>no edges</em>).
-        Prefer <a href="#analysis-section-nav">Overview → text coordination</a> and
-        <a href="#analysis-section-nav">Anomalies</a> for copypasta/fuzzy clusters until edges exist.
+        Prefer Pulse → text coordination and Network for copypasta/fuzzy clusters until edges exist.
       </p>
     </div>
   `;
@@ -196,7 +195,7 @@ function priorityExplainerHtml(edgeCount: number, outrageDiag: OutrageDiagnostic
       "This snapshot has <strong>no propagation edges</strong> and <strong>low outrage scores</strong>, so the chart cannot rank spread × toxicity. The list below flags <em>relative targets</em> — authors in the top outrage tier for this narrative, not necessarily high absolute threat.";
   } else if (noSpread) {
     rankingNote =
-      "Spread (X) is unavailable — no retweet/reply edges in ingest. The list ranks by <strong>outrage only</strong>. Use Anomalies and text coordination for copypasta signals.";
+      "Spread (X) is unavailable — no retweet/reply edges in ingest. The list ranks by <strong>outrage only</strong>. Use Network and text coordination for copypasta signals.";
   } else if (yCompressed) {
     rankingNote =
       "Outrage scores are compressed near the lexicon floor. Flagged authors are high <em>relative to this narrative</em>; check duplicate-text and theme panels for coordination without high outrage.";

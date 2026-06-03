@@ -154,9 +154,9 @@ export function renderAlertInboxHtml(rows: AlertRow[]): string {
     .map((row) => {
       const cta =
         row.kind === "cib"
-          ? `<span class="alert-inbox-cta">Open Signals →</span>`
+          ? `<span class="alert-inbox-cta">Open Pulse →</span>`
           : row.kind === "cross-pollination"
-            ? `<span class="alert-inbox-cta">Open Anomalies →</span>`
+            ? `<span class="alert-inbox-cta">Open Network →</span>`
             : row.postIds.length
               ? `<span class="alert-inbox-cta">View ${row.count} posts →</span>`
               : "";

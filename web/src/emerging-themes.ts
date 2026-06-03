@@ -254,12 +254,15 @@ function selectRow(host: HTMLElement, detailHost: HTMLElement | null, row: Theme
     .querySelector(`.theme-row[data-cluster-id="${row.cluster_id}"]`)
     ?.classList.add("theme-row-active");
 
+  const sub = document.getElementById("desk-inspector-sub");
+  if (sub) sub.textContent = row.title;
+
   if (detailHost) {
     detailHost.innerHTML = renderDetail(row, posts);
     detailHost.querySelector<HTMLButtonElement>(".theme-detail-cta")?.addEventListener("click", () => {
       const label = `[${row.labels.join(", ") || row.title}]`;
       selectThemeCluster(label, row.post_ids);
-      window.dispatchEvent(new CustomEvent("heimdall:goto-posts"));
+      window.dispatchEvent(new CustomEvent("heimdall:goto-evidence"));
     });
   }
 }
@@ -313,11 +316,10 @@ export function emergingThemesPanelHtml(report: ThemesReport, asInner = false): 
           Show filtered buckets (market, promo, off-topic)
         </label>
       </div>
-      <div class="theme-workbench">
+      <div class="theme-workbench theme-workbench-table-only">
         <div id="themes-list-host" class="themes-list-host">
           ${stateLoadingHtml("Loading theme clusters…")}
         </div>
-        <div id="themes-detail-host" class="themes-detail-host"></div>
       </div>
       <p class="metric-sub themes-meta" id="themes-meta"></p>
   `;
@@ -336,7 +338,7 @@ export function renderEmergingThemesTimeline(
   narrativeId = 0
 ): void {
   const meta = document.getElementById("themes-meta");
-  const detailHost = document.getElementById("themes-detail-host");
+  const detailHost = document.getElementById("desk-inspector-body");
   const marketToggle = document.getElementById("theme-show-market") as HTMLInputElement | null;
   clusterIndex = new Map();
   activeNarrativeId = narrativeId;

@@ -30,7 +30,7 @@ export function setTabInUrl(tab: AppTab): void {
 
 export function renderTabNav(active: AppTab): string {
   const buttons = TABS.map((tab) => {
-    const label = tab === "analysis" ? "Analysis" : tab === "brief" ? "Briefing" : "Methodology";
+    const label = tab === "analysis" ? "Desk" : tab === "brief" ? "Briefing" : "Methodology";
     return `<button type="button" role="tab" id="${TAB_BUTTON_IDS[tab]}" data-tab="${tab}" aria-selected="${active === tab}" aria-controls="${TAB_PANEL_IDS[tab]}" tabindex="${active === tab ? "0" : "-1"}">${label}</button>`;
   }).join("");
   return `

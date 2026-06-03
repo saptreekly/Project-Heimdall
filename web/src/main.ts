@@ -17,15 +17,22 @@ import {
   loadSnapshot,
 } from "./api";
 import {
-  analysisLayoutHtml,
-  analysisSectionFromUrl,
-  bindAnalysisSectionNav,
+  bindDeskModeNav,
+  deskLayoutHtml,
+  deskModeFromUrl,
   panelRollupHtml,
-  setAnalysisSectionInUrl,
-  showAnalysisSection,
-  type AnalysisSection,
-  type SectionBadges,
-} from "./analysis-sections";
+  setDeskModeInUrl,
+  showDeskMode,
+  type DeskMode,
+  type ModeBadges,
+} from "./desk-modes";
+import { bindDeskKeyboard, bindMethodologyDrawer } from "./desk-keyboard";
+import {
+  bindInspectorViewAuthor,
+  renderAuthorInspector,
+  resetInspectorEmpty,
+  setInspectorContext,
+} from "./desk-inspector";
 import { buildAlertRows, renderAlertInboxHtml } from "./alert-inbox";
 import { bindBriefPrint, briefPanelHtml, renderBrief } from "./brief";
 import { renderContentNotice } from "./content-notice";
@@ -139,7 +146,9 @@ const POST_LIST_INITIAL = 20;
 const POST_LIST_MAX = 50;
 
 let currentTab: AppTab = tabFromUrl();
-let currentAnalysisSection: AnalysisSection = analysisSectionFromUrl();
+let currentDeskMode: DeskMode = deskModeFromUrl();
+let lastLoadedPosts: Post[] = [];
+let lastGraphEdgeCount = 0;
 let blurSensitive = localStorage.getItem(BLUR_SENSITIVE_KEY) === "1";
 let compactCharts = localStorage.getItem(COMPACT_CHARTS_KEY) !== "0";
 let groupAuthorPosts = true;
@@ -160,17 +169,15 @@ let briefContext: {
 } | null = null;
 
 type ChartMountFns = {
-  mountOverview: () => void;
-  mountSignals: () => void;
-  mountGraphs: () => void;
-  mountAnomalies: () => void;
+  mountPulse: () => void;
+  mountFrames: () => void;
+  mountNetwork: () => void;
 };
 let chartMountFns: ChartMountFns | null = null;
 const chartsMounted = {
-  overview: false,
-  signals: false,
-  graphs: false,
-  anomalies: false,
+  pulse: false,
+  frames: false,
+  network: false,
 };
 
 const rootEl = document.getElementById("app");
@@ -191,52 +198,48 @@ function applyChartDensity(): void {
   document.documentElement.classList.toggle("chart-density-compact", compactCharts);
 }
 
-function switchAnalysisSection(section: AnalysisSection, options?: { scroll?: boolean }): void {
-  currentAnalysisSection = section;
-  setAnalysisSectionInUrl(section);
-  showAnalysisSection(section);
-  ensureChartsMountedForSection(section);
+function switchDeskMode(mode: DeskMode, options?: { scroll?: boolean }): void {
+  currentDeskMode = mode;
+  setDeskModeInUrl(mode);
+  showDeskMode(mode);
+  ensureChartsMountedForMode(mode);
   if (options?.scroll !== false) {
     document
-      .querySelector(`[data-analysis-section-panel="${section}"]`)
+      .querySelector(`[data-desk-mode-panel="${mode}"]`)
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 
-function ensureChartsMountedForSection(section: AnalysisSection): void {
+function ensureChartsMountedForMode(mode: DeskMode): void {
   if (!chartMountFns) return;
-  if (section === "overview" && !chartsMounted.overview) {
-    chartsMounted.overview = true;
-    chartMountFns.mountOverview();
+  if (mode === "pulse" && !chartsMounted.pulse) {
+    chartsMounted.pulse = true;
+    chartMountFns.mountPulse();
   }
-  if (section === "signals" && !chartsMounted.signals) {
-    chartsMounted.signals = true;
-    chartMountFns.mountSignals();
+  if (mode === "frames" && !chartsMounted.frames) {
+    chartsMounted.frames = true;
+    chartMountFns.mountFrames();
   }
-  if (section === "graphs" && !chartsMounted.graphs) {
-    chartsMounted.graphs = true;
-    chartMountFns.mountGraphs();
-  }
-  if (section === "anomalies" && !chartsMounted.anomalies) {
-    chartsMounted.anomalies = true;
-    chartMountFns.mountAnomalies();
+  if (mode === "network" && !chartsMounted.network) {
+    chartsMounted.network = true;
+    chartMountFns.mountNetwork();
   }
 }
 
-function computeSectionBadges(): SectionBadges {
-  const badges: SectionBadges = {};
-  if (lastCriticalCount > 0) badges.signals = lastCriticalCount;
-  if (lastAnomalyCount > 0) badges.anomalies = lastAnomalyCount;
+function computeModeBadges(): ModeBadges {
+  const badges: ModeBadges = {};
+  if (lastCriticalCount > 0) badges.pulse = lastCriticalCount;
+  if (lastAnomalyCount > 0) badges.network = lastAnomalyCount;
   if (hasActiveFilter()) {
-    badges.posts = countMatchingPosts();
+    badges.evidence = countMatchingPosts();
   } else if (totalNarrativePosts > 0) {
-    badges.posts = totalNarrativePosts;
+    badges.evidence = totalNarrativePosts;
   }
   return badges;
 }
 
-function refreshGlobalInvestigationBar(): void {
-  updateGlobalInvestigationBar(computeSectionBadges);
+function refreshDeskStrip(): void {
+  updateGlobalInvestigationBar(computeModeBadges);
 }
 
 function mean(nums: number[]): number | null {
@@ -337,23 +340,41 @@ function updatePostsPanel(): void {
       countEl.textContent = `Showing ${shown} of ${totalNarrativePosts} by outrage`;
     }
   }
-  refreshGlobalInvestigationBar();
+  refreshDeskStrip();
 }
 
 function applyInvestigation(authorId: string | null): void {
   focusPropagationAuthor(authorId);
   updatePostsPanel();
+  const f = getInvestigationFilter();
+  if (f.authorId && lastLoadedPosts.length) {
+    const label = f.label ?? f.authorId.slice(0, 12);
+    setInspectorContext(
+      label,
+      renderAuthorInspector(f.authorId, label, lastLoadedPosts, lastGraphEdgeCount)
+    );
+    bindInspectorViewAuthor(() => {
+      switchDeskMode("evidence", { scroll: false });
+      scrollGlobalInvestigationIntoView();
+    });
+  } else if (!f.postIds?.length && !f.date && !f.escalationTier) {
+    resetInspectorEmpty();
+  }
   if (hasActiveFilter()) {
-    switchAnalysisSection("posts", { scroll: false });
+    switchDeskMode("evidence", { scroll: false });
     scrollGlobalInvestigationIntoView();
   }
 }
 
 function bindGlobalInvestigationChrome(): void {
-  bindGlobalInvestigationClear(() => {
-    clearThemeCardSelection();
-    clearInvestigationFilter();
-  });
+  bindGlobalInvestigationClear(
+    () => {
+      clearThemeCardSelection();
+      clearInvestigationFilter();
+      resetInspectorEmpty();
+    },
+    () => switchDeskMode("evidence", { scroll: false })
+  );
 }
 
 function bindInvestigationChrome(): void {
@@ -361,6 +382,7 @@ function bindInvestigationChrome(): void {
   clearBtn?.addEventListener("click", () => {
     clearThemeCardSelection();
     clearInvestigationFilter();
+    resetInspectorEmpty();
   });
   bindGlobalInvestigationChrome();
   onInvestigationChange((f) => {
@@ -534,8 +556,8 @@ function cibSnapshotHtml(cib: CibReport): string {
   `;
 }
 
-function analysisSectionHiddenAttr(section: AnalysisSection): string {
-  return section === currentAnalysisSection ? "" : " hidden";
+function deskModeHiddenAttr(mode: DeskMode): string {
+  return mode === currentDeskMode ? "" : " hidden";
 }
 
 function bindClusterButtons(): void {
@@ -548,7 +570,7 @@ function bindClusterButtons(): void {
       const burst = btn.dataset.burst === "1";
       const sample = btn.querySelector(".post-text")?.textContent ?? "cluster";
       selectDuplicateCluster(sample.slice(0, 40), ids, burst);
-      switchAnalysisSection("posts", { scroll: false });
+      switchDeskMode("evidence", { scroll: false });
       scrollGlobalInvestigationIntoView();
     });
   });
@@ -559,11 +581,11 @@ function bindAlertInbox(): void {
     btn.addEventListener("click", () => {
       const action = btn.dataset.alertAction;
       if (action === "signals") {
-        switchAnalysisSection("signals");
+        switchDeskMode("pulse");
         return;
       }
       if (action === "anomalies") {
-        switchAnalysisSection("anomalies");
+        switchDeskMode("network");
         return;
       }
       const kind = btn.dataset.alertKind;
@@ -583,7 +605,7 @@ function bindAlertInbox(): void {
         const label = btn.dataset.clusterLabel ?? "cluster";
         selectDuplicateCluster(label, ids, burst);
       }
-      switchAnalysisSection("posts", { scroll: false });
+      switchDeskMode("evidence", { scroll: false });
       scrollGlobalInvestigationIntoView();
     });
   });
@@ -649,8 +671,9 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
     <div class="app">
       <header class="site-header">
         <div class="header-top">
-          <h1><span class="brand">Heimdall</span> Narrative Analysis</h1>
+          <h1><span class="brand">Heimdall</span> Narrative Desk</h1>
           <p class="data-badge">Repo snapshot${stamp}</p>
+          <button type="button" id="open-methodology-drawer" class="btn btn-secondary btn-small header-methodology-btn" title="Methods &amp; limitations">Methodology</button>
         </div>
         ${renderContentNotice()}
         ${renderOnboardingHintHtml()}
@@ -690,8 +713,8 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
             </fieldset>
           </div>
         </div>
+        <main id="content" class="dashboard desk-dashboard">${stateLoadingHtml()}</main>
         ${globalInvestigationBarHtml()}
-        <main id="content" class="dashboard">${stateLoadingHtml()}</main>
       </div>
       <div id="panel-brief" class="panel-brief" role="tabpanel" aria-labelledby="tab-brief"${currentTab !== "brief" ? " hidden" : ""}>
         <main class="dashboard">${briefPanelHtml(generatedAt)}</main>
@@ -699,6 +722,14 @@ function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: 
       <div id="panel-methodology" class="panel-methodology" role="tabpanel" aria-labelledby="tab-methodology"${currentTab !== "methodology" ? " hidden" : ""}>
         <main class="dashboard prose-wrap">${renderMethodology()}</main>
       </div>
+      <div id="methodology-drawer-backdrop" class="methodology-drawer-backdrop" hidden></div>
+      <aside id="methodology-drawer" class="methodology-drawer" hidden aria-label="Methodology">
+        <header class="methodology-drawer-header">
+          <h2>Methodology</h2>
+          <button type="button" id="close-methodology-drawer" class="btn btn-secondary btn-small">Close</button>
+        </header>
+        <div class="methodology-drawer-body prose-wrap">${renderMethodology()}</div>
+      </aside>
     </div>
   `;
 }
@@ -790,24 +821,33 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     lastCriticalCount = criticalCount;
     lastAnomalyCount = dupCount + fuzzyCount + crossActorCount;
 
+    lastLoadedPosts = posts;
+    lastGraphEdgeCount = graph.edges.length;
+
     const alertRows = [
       ...buildSentimentAlerts(sentiment),
       ...buildAlertRows(amp, cib, lastNearDup, crossPollination, themes),
     ];
-    const sectionBadges: SectionBadges = {
-      signals: criticalCount || undefined,
-      anomalies: lastAnomalyCount || undefined,
-      posts: totalNarrativePosts,
+    const emergingCount = themes.emerging_theme_count ?? 0;
+    const distinctCount = themes.distinct_theme_count ?? themes.cluster_count ?? 0;
+    const modeBadges: ModeBadges = {
+      pulse: criticalCount || undefined,
+      frames: emergingCount || distinctCount || undefined,
+      network: lastAnomalyCount || undefined,
+      evidence: totalNarrativePosts,
     };
 
     postListLimit = POST_LIST_INITIAL;
-    chartsMounted.overview = false;
-    chartsMounted.signals = false;
-    chartsMounted.graphs = false;
-    chartsMounted.anomalies = false;
+    chartsMounted.pulse = false;
+    chartsMounted.frames = false;
+    chartsMounted.network = false;
 
-    const sectionPanels = `
-      <section class="analysis-section" data-analysis-section-panel="overview"${analysisSectionHiddenAttr("overview")}>
+    const modePanels = `
+      <section class="desk-mode-panel" data-desk-mode-panel="pulse"${deskModeHiddenAttr("pulse")}>
+        <div class="desk-mode-header">
+          <h2 class="desk-mode-title">Pulse</h2>
+          <p class="desk-mode-desc">Narrative health, sentiment drift, and priority signals</p>
+        </div>
         <div class="metrics-histogram-row">
           ${buildMetricsGrid(posts, authors, avg, cib, provenance)}
           <section class="panel panel-histogram-compact">
@@ -823,47 +863,30 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         )}
         ${renderAlertInboxHtml(alertRows)}
         ${cibSnapshotHtml(cib)}
-        ${panelRollupHtml(
-          `Emerging themes ${emergingThemesBadge(themes)}`,
-          `<div class="themes-panel">${emergingThemesPanelHtml(themes, true)}</div>`
-        )}
-      </section>
-
-      <section class="analysis-section" data-analysis-section-panel="signals"${analysisSectionHiddenAttr("signals")}>
         ${priorityScatterPanelHtml(criticalCount, graph.edges.length, outrageDiag)}
-        <section class="panel">
-          <h2>CIB signals</h2>
-          <div class="signal-body">
-            ${cib.signals.length ? `<ul class="signal-list">${cib.signals.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>` : "<p class='empty'>No elevated CIB signals.</p>"}
-            ${
-              cib.iu_astroturf
-                ? `<p class="metric-sub">IU astroturf: ${cib.iu_astroturf.known_political_bots} known bots / ${cib.iu_astroturf.authors_in_narrative} authors</p>`
-                : ""
-            }
-          </div>
+        <section class="panel panel-pulse-frames-teaser">
+          <h2>Theme frames ${emergingThemesBadge(themes)}</h2>
+          <p class="chart-caption">
+            ${emergingCount} emerging · ${distinctCount} distinct clusters in this narrative.
+            Open <strong>Frames</strong> to inspect cluster labels, confidence, and post filters.
+          </p>
+          <button type="button" class="btn btn-secondary btn-small" data-goto-mode="frames">Open Frames →</button>
         </section>
       </section>
 
-      <section class="analysis-section" data-analysis-section-panel="graphs"${analysisSectionHiddenAttr("graphs")}>
-        ${graphPanelHtml()}
+      <section class="desk-mode-panel" data-desk-mode-panel="frames"${deskModeHiddenAttr("frames")}>
+        <div class="desk-mode-header">
+          <h2 class="desk-mode-title">Frames</h2>
+          <p class="desk-mode-desc">Embedding clusters with PMI phrase labels — select a row to inspect in the sidebar</p>
+        </div>
+        <div class="themes-panel">${emergingThemesPanelHtml(themes, true)}</div>
       </section>
 
-      <section class="analysis-section" data-analysis-section-panel="anomalies"${analysisSectionHiddenAttr("anomalies")}>
-        ${panelRollupHtml(
-          `Exact duplicate text (${dupCount} cluster${dupCount === 1 ? "" : "s"})`,
-          `<div class="panel panel-duplicates">${renderDuplicatesInner(amp.clusters)}</div>`
-        )}
-        ${panelRollupHtml(
-          `Cross-author fuzzy amplification (${fuzzyCount} cluster${fuzzyCount === 1 ? "" : "s"})`,
-          fuzzyAmplificationPanelHtml(nearDup, jaccardThreshold, bounds, true)
-        )}
-        ${panelRollupHtml(
-          `Narrative cross-pollination (${crossActorCount} cross-narrative actor${crossActorCount === 1 ? "" : "s"})`,
-          crossPollinationPanelHtml(crossPollination, true)
-        )}
-      </section>
-
-      <section class="analysis-section posts-section" data-analysis-section-panel="posts"${analysisSectionHiddenAttr("posts")}>
+      <section class="desk-mode-panel evidence-mode-panel" data-desk-mode-panel="evidence"${deskModeHiddenAttr("evidence")}>
+        <div class="desk-mode-header">
+          <h2 class="desk-mode-title">Evidence</h2>
+          <p class="desk-mode-desc">Filtered post stream — follows your investigation filter from any mode</p>
+        </div>
         <section class="panel posts-panel" id="posts-panel">
           <div class="posts-panel-header">
             <h2>Posts <span class="post-list-count" id="post-list-count"></span></h2>
@@ -890,18 +913,50 @@ async function loadDashboard(narrativeId: number): Promise<void> {
             : ""
         }
       </section>
+
+      <section class="desk-mode-panel" data-desk-mode-panel="network"${deskModeHiddenAttr("network")}>
+        <div class="desk-mode-header">
+          <h2 class="desk-mode-title">Network</h2>
+          <p class="desk-mode-desc">Propagation graph, duplicate text, fuzzy amplification, cross-narrative actors</p>
+        </div>
+        ${graphPanelHtml()}
+        ${panelRollupHtml(
+          `Exact duplicate text (${dupCount} cluster${dupCount === 1 ? "" : "s"})`,
+          `<div class="panel panel-duplicates">${renderDuplicatesInner(amp.clusters)}</div>`
+        )}
+        ${panelRollupHtml(
+          `Cross-author fuzzy amplification (${fuzzyCount} cluster${fuzzyCount === 1 ? "" : "s"})`,
+          fuzzyAmplificationPanelHtml(nearDup, jaccardThreshold, bounds, true)
+        )}
+        ${panelRollupHtml(
+          `Narrative cross-pollination (${crossActorCount} cross-narrative actor${crossActorCount === 1 ? "" : "s"})`,
+          crossPollinationPanelHtml(crossPollination, true)
+        )}
+        <section class="panel">
+          <h2>CIB signals</h2>
+          <div class="signal-body">
+            ${cib.signals.length ? `<ul class="signal-list">${cib.signals.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>` : "<p class='empty'>No elevated CIB signals.</p>"}
+            ${
+              cib.iu_astroturf
+                ? `<p class="metric-sub">IU astroturf: ${cib.iu_astroturf.known_political_bots} known bots / ${cib.iu_astroturf.authors_in_narrative} authors</p>`
+                : ""
+            }
+          </div>
+        </section>
+      </section>
     `;
 
-    content.innerHTML = analysisLayoutHtml(sectionPanels, currentAnalysisSection, sectionBadges);
+    content.innerHTML = deskLayoutHtml(modePanels, currentDeskMode, modeBadges);
 
     clearInvestigationFilter();
+    resetInspectorEmpty();
 
     const pickAuthor = (authorId: string, label: string) => {
       selectAuthor(authorId, label);
     };
 
     chartMountFns = {
-      mountOverview: () => {
+      mountPulse: () => {
         const sentimentCanvas = document.getElementById(
           "sentiment-timeline-chart"
         ) as HTMLCanvasElement | null;
@@ -919,13 +974,6 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         if (tierCanvas) {
           mountSentimentTierChart(tierCanvas, sentiment.buckets);
         }
-        const themesHost = document.getElementById("themes-list-host");
-        if (themesHost && themesHost.dataset.mounted !== "1") {
-          themesHost.dataset.mounted = "1";
-          renderEmergingThemesTimeline(themesHost, themes, posts, narrativeId);
-        }
-      },
-      mountSignals: () => {
         const scatterCanvas = document.getElementById(
           "priority-scatter-chart"
         ) as HTMLCanvasElement | null;
@@ -949,7 +997,14 @@ async function loadDashboard(narrativeId: number): Promise<void> {
           );
         }
       },
-      mountGraphs: () => {
+      mountFrames: () => {
+        const themesHost = document.getElementById("themes-list-host");
+        if (themesHost && themesHost.dataset.mounted !== "1") {
+          themesHost.dataset.mounted = "1";
+          renderEmergingThemesTimeline(themesHost, themes, posts, narrativeId);
+        }
+      },
+      mountNetwork: () => {
         setPropagationAuthorHandler((authorId) => {
           const author = graph.authors.find((a) => a.author_id === authorId);
           const label = author?.handle ? `@${author.handle}` : authorId.slice(0, 12);
@@ -961,7 +1016,6 @@ async function loadDashboard(narrativeId: number): Promise<void> {
           updatePropagationGraphBadge(meta);
         }
       },
-      mountAnomalies: () => {},
     };
 
     const fuzzyHost = document.getElementById("fuzzy-clusters-host");
@@ -979,7 +1033,13 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       );
     }
 
-    bindAnalysisSectionNav((section) => switchAnalysisSection(section));
+    bindDeskModeNav((mode) => switchDeskMode(mode));
+    document.querySelectorAll<HTMLButtonElement>("[data-goto-mode]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const mode = btn.dataset.gotoMode as DeskMode;
+        if (mode) switchDeskMode(mode);
+      });
+    });
     bindInvestigationChrome();
     bindClusterButtons();
     bindAlertInbox();
@@ -989,7 +1049,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     bindGraphFullscreen();
     bindPostListAuthorLinks(document.getElementById("post-list-host") ?? document);
     updatePostsPanel();
-    ensureChartsMountedForSection(currentAnalysisSection);
+    ensureChartsMountedForMode(currentDeskMode);
     scrollPageToTop();
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
@@ -1111,6 +1171,15 @@ async function bootstrap(): Promise<void> {
     bindPostToolbar();
     bindBriefPrint();
     bindOnboardingHint();
+    bindMethodologyDrawer();
+    bindDeskKeyboard(
+      (mode) => switchDeskMode(mode),
+      () => {
+        clearThemeCardSelection();
+        clearInvestigationFilter();
+        resetInspectorEmpty();
+      }
+    );
     showTabPanel(currentTab);
     if (currentTab === "brief") refreshBriefPanel();
   } catch (e) {
@@ -1119,11 +1188,15 @@ async function bootstrap(): Promise<void> {
   }
 }
 
-window.addEventListener("heimdall:goto-posts", () => {
+window.addEventListener("heimdall:goto-evidence", () => {
   if (currentTab === "analysis") {
-    switchAnalysisSection("posts", { scroll: false });
+    switchDeskMode("evidence", { scroll: false });
     scrollGlobalInvestigationIntoView();
   }
+});
+
+window.addEventListener("heimdall:goto-posts", () => {
+  window.dispatchEvent(new CustomEvent("heimdall:goto-evidence"));
 });
 
 void bootstrap();

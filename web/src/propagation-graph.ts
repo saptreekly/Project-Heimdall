@@ -248,7 +248,7 @@ export function renderGraphDiagnostics(
         </p>
         <ul class="graph-diagnostics-list">
           <li>Re-run ingest after deploying reply/quote edge parsing (Phase 1).</li>
-          <li>Check <strong>Anomalies</strong> and duplicate panels for text-level coordination meanwhile.</li>
+          <li>Check <strong>Network</strong> and duplicate panels for text-level coordination meanwhile.</li>
           <li>List timelines (<code>list:&lt;id&gt;</code>) can surface more retweets than keyword search alone.</li>
         </ul>
       </div>
