@@ -1,7 +1,7 @@
 import numpy as np
 
 from heimdall.nlp.theme_cluster_eval import compute_cluster_metrics, evaluate_theme_report
-from heimdall.nlp.theme_clusters import ThemeCluster, ThemeClusterReport, cluster_posts
+from heimdall.nlp.theme_clusters import ThemeCluster, ThemeClusterReport
 
 
 def test_compute_cluster_metrics() -> None:

@@ -334,10 +334,12 @@ export interface ThemeTimelineEntry {
   label_distinctiveness?: number;
   emerging_theme: boolean;
   quality_score?: number;
+  confidence_tier?: "high" | "medium" | "low";
   author_entropy?: number;
   is_noise?: boolean;
   is_market_chatter?: boolean;
   market_chatter_rate?: number;
+  filter_reason?: string | null;
   size: number;
   first_seen: string | null;
   last_seen: string | null;

@@ -6,7 +6,7 @@ from dataclasses import dataclass, field
 
 import numpy as np
 
-from heimdall.nlp.theme_clusters import ThemeCluster, ThemeClusterReport
+from heimdall.nlp.theme_clusters import ThemeClusterReport
 
 
 @dataclass

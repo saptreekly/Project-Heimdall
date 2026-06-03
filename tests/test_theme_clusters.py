@@ -45,8 +45,8 @@ def test_cluster_posts_detects_emerging_low_lexicon_theme(monkeypatch: pytest.Mo
     embeddings = _synthetic_embeddings(5, groups=[(0, 3), (3, 2)])
 
     monkeypatch.setattr(
-        "heimdall.nlp.theme_clusters.encode_texts",
-        lambda texts, **kwargs: (embeddings[: len(texts)], "test-model"),
+        "heimdall.nlp.post_embeddings.resolve_embedding_matrix",
+        lambda post_ids, texts, **kwargs: (embeddings[: len(texts)], "test-model"),
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._cluster_labels",
@@ -71,8 +71,8 @@ def test_cluster_posts_lexicon_heavy_not_emerging(monkeypatch: pytest.MonkeyPatc
     ]
     embeddings = _synthetic_embeddings(3, groups=[(0, 3)])
     monkeypatch.setattr(
-        "heimdall.nlp.theme_clusters.encode_texts",
-        lambda texts, **kwargs: (embeddings[: len(texts)], "test-model"),
+        "heimdall.nlp.post_embeddings.resolve_embedding_matrix",
+        lambda post_ids, texts, **kwargs: (embeddings[: len(texts)], "test-model"),
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._cluster_labels",
@@ -171,8 +171,8 @@ def test_merge_tree_and_similarity_export(monkeypatch: pytest.MonkeyPatch) -> No
     ]
     embeddings = _synthetic_embeddings(6, groups=[(0, 3), (3, 3)])
     monkeypatch.setattr(
-        "heimdall.nlp.theme_clusters.encode_texts",
-        lambda texts, **kwargs: (embeddings[: len(texts)], "test-model"),
+        "heimdall.nlp.post_embeddings.resolve_embedding_matrix",
+        lambda post_ids, texts, **kwargs: (embeddings[: len(texts)], "test-model"),
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._cluster_labels",
@@ -200,8 +200,8 @@ def test_outrage_analyzer_applies_theme_boost(monkeypatch: pytest.MonkeyPatch) -
     posts = [(i, f"zorbax theme phrase number {i}") for i in range(1, 5)]
     embeddings = _synthetic_embeddings(4, groups=[(0, 4)])
     monkeypatch.setattr(
-        "heimdall.nlp.theme_clusters.encode_texts",
-        lambda texts, **kwargs: (embeddings[: len(texts)], "test-model"),
+        "heimdall.nlp.post_embeddings.resolve_embedding_matrix",
+        lambda post_ids, texts, **kwargs: (embeddings[: len(texts)], "test-model"),
     )
     monkeypatch.setattr(
         "heimdall.nlp.theme_clusters._cluster_labels",

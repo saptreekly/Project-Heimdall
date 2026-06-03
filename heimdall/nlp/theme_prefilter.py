@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from enum import Enum
 
-from heimdall.nlp.market_chatter import is_market_chatter_post, market_chatter_score
+from heimdall.nlp.market_chatter import is_market_chatter_post
 
 _URL_RE = re.compile(r"https?://|www\.", re.I)
 _PROMO_RE = re.compile(
