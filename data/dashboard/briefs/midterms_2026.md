@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-03 20:41:42 UTC
+> Tactical snapshot · 2026-06-03 21:35:09 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 447 / 122 |
-| Distinct themes | 17 |
+| Distinct themes | 21 |
 | Duplicate clusters (full DB) | 20 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 0 bots / 351 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **14**
-- Net-new posts logged: **4**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **34**
-- Net new: **504** · re-seen: **76**
-- Duplicate rate: **13.1%**
+- Runs: **35**
+- Net new: **504** · re-seen: **78**
+- Duplicate rate: **13.4%**
 
 ## Sentiment drift
 
@@ -36,12 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · breaking trump, court announcement, major win, midterms ele, watch cheating (6 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 68 authors · 8 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · majority black, civil rights, legal standard (11 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · executive order, mail ballot, election integrity, federal judge (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · bigger primary, days calendar, nation largest, high stakes (10 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · purpose identify, fully transformed, version text, similarities united, states presidential (8 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · executive order, federal judge (12 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · laying groundwork, hackers preparing, local governments, credential theft (10 posts · 10 authors · 2 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · united states, purpose identify, cabinet meeting, fully transformed (10 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · graham platner, susan collins, boom latino, winner odds (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · racially drawn, upholds alabama, overturning lower (9 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -86,14 +87,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts)
+- election fraud, accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- radical left, sidney powell (8 posts)
+- save america, republican senate, proof citizenship, act midterms, house passed (7 posts)
 - democrats ideas, cash party, level touch, maga rebuilding, country voters (5 posts)
-- executive order, mail ballot, election integrity, federal judge (11 posts)
-- sorry senile, pig bonespur, draft dodger, inbreeds cuz, losers america (9 posts)
-- fascist redneck, judges cut, chase block (4 posts)
-- total votes, ruling impact (3 posts)
-- majority black, civil rights, legal standard (11 posts)
-- bigger primary, days calendar, nation largest, high stakes (10 posts)
-- _…10 more emerging theme(s)._
+- executive order, federal judge (12 posts)
+- united states, purpose identify, cabinet meeting, fully transformed (10 posts)
+- _…14 more emerging theme(s)._
 
 ## Scope note
 
