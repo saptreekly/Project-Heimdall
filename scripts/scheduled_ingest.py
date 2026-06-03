@@ -36,6 +36,7 @@ class IngestJob:
     x_list_sources: tuple[str, ...] = ()
     reddit_subreddits: tuple[str, ...] = ("politics", "news", "Conservative")
     rotation_strategy: str = "round_robin"
+    author_watch_enabled: bool = True
 
 
 def load_jobs(path: Path) -> list[IngestJob]:
@@ -55,6 +56,7 @@ def load_jobs(path: Path) -> list[IngestJob]:
                     item.get("reddit_subreddits") or ("politics", "news", "Conservative")
                 ),
                 rotation_strategy=str(item.get("rotation_strategy") or "round_robin"),
+                author_watch_enabled=bool(item.get("author_watch_enabled", True)),
             )
         )
     return jobs
@@ -164,15 +166,56 @@ def append_ingest_run(row: dict) -> None:
         handle.write(json.dumps(payload) + "\n")
 
 
-def _ingest_options_from_job(job: IngestJob):
+def _ingest_options_from_job(job: IngestJob, **overrides):
     from heimdall.ingestion.ingest_options import IngestOptions
 
-    return IngestOptions(
+    base = dict(
         x_exclude_terms=job.x_exclude_terms,
         x_list_sources=job.x_list_sources,
         reddit_subreddits=job.reddit_subreddits,
         fallback_platforms=job.fallback_platforms,
     )
+    base.update(overrides)
+    return IngestOptions(**base)
+
+
+async def _known_bot_author_ids(author_ids: list[str]) -> set[str]:
+    if not author_ids:
+        return set()
+    from heimdall.datasets.astroturf import lookup_labels
+    from heimdall.db.session import get_session_factory
+
+    factory = get_session_factory()
+    async with factory() as db:
+        labels = await lookup_labels(db, author_ids)
+    return set(labels.keys())
+
+
+async def _apply_author_watchlist_updates(
+    job: IngestJob,
+    result: dict,
+    *,
+    polled_author_id: str | None = None,
+) -> None:
+    from heimdall.ingestion.author_watchlist import (
+        apply_pipeline_discoveries,
+        record_author_poll_result,
+    )
+
+    discoveries = list(result.get("author_discoveries") or [])
+    author_ids = [str(d.get("author_id") or "") for d in discoveries]
+    if polled_author_id:
+        author_ids.append(polled_author_id)
+    bots = await _known_bot_author_ids([a for a in author_ids if a])
+    apply_pipeline_discoveries(job.narrative_name, discoveries, bot_author_ids=bots)
+    if polled_author_id:
+        poll_inserts = int(result.get("inserted") or 0)
+        record_author_poll_result(
+            job.narrative_name,
+            polled_author_id,
+            inserts=poll_inserts,
+            latest_post_at=result.get("latest_post_at"),
+        )
 
 
 async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list[str]) -> dict:
@@ -195,6 +238,8 @@ async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list
 
     options = _ingest_options_from_job(job)
     x_plan = None
+    polled_author_id: str | None = None
+    ingest_mode = "keyword"
     if platform == Platform.X:
         if not _x_credentials_present():
             return {
@@ -210,24 +255,63 @@ async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list
                 "skipped": True,
                 "reason": "X_INGEST_ENABLED=false",
             }
-        plan_opts = options
+
+        from heimdall.ingestion.author_watchlist import (
+            AuthorWatchlistStore,
+            build_author_poll_plan,
+            context_terms_from_keywords,
+            record_author_poll_start,
+            resolve_x_scheduled_mode,
+        )
         from heimdall.ingestion.query_plan import QueryPlanOptions
 
-        query_plan = build_query_plan(
-            platform,
-            keywords,
-            job.limit,
-            options=QueryPlanOptions(
-                x_exclude_terms=plan_opts.x_exclude_terms or QueryPlanOptions().x_exclude_terms,
-                x_list_sources=plan_opts.x_list_sources,
-                reddit_subreddits=plan_opts.reddit_subreddits,
-            ),
+        plan_opts = QueryPlanOptions(
+            x_exclude_terms=options.x_exclude_terms or QueryPlanOptions().x_exclude_terms,
+            x_list_sources=options.x_list_sources,
+            reddit_subreddits=options.reddit_subreddits,
         )
-        x_plan = plan_x_ingest(
-            keywords,
-            job.limit,
-            graphql_requests=len(query_plan.queries),
-        )
+        watch_store = AuthorWatchlistStore.load()
+        poll_author = None
+        poll_options = options
+        run_keywords = keywords
+        if job.author_watch_enabled:
+            ingest_mode, poll_author, watch_store = resolve_x_scheduled_mode(
+                job.narrative_name,
+                store=watch_store,
+            )
+
+        if ingest_mode == "author_poll" and poll_author:
+            polled_author_id = poll_author.author_id
+            context = context_terms_from_keywords(job.keywords)
+            query_plan_override = build_author_poll_plan(
+                poll_author,
+                context_terms=context,
+                limit=job.limit,
+                exclude_terms=plan_opts.x_exclude_terms,
+            )
+            handle = poll_author.handle or poll_author.author_id
+            run_keywords = [f"author:{handle.lstrip('@')}"]
+            x_plan = plan_x_ingest(run_keywords, job.limit, graphql_requests=1)
+            poll_options = _ingest_options_from_job(
+                job,
+                require_keyword_hit=False,
+                query_plan_override=query_plan_override,
+            )
+            record_author_poll_start(job.narrative_name, poll_author, store=watch_store)
+        else:
+            ingest_mode = "keyword"
+            query_plan = build_query_plan(
+                platform,
+                keywords,
+                job.limit,
+                options=plan_opts,
+            )
+            x_plan = plan_x_ingest(
+                keywords,
+                job.limit,
+                graphql_requests=len(query_plan.queries),
+            )
+
         usage_before = await daily_usage_snapshot()
         if usage_before["requests_remaining"] < x_plan.graphql_requests:
             return {
@@ -240,20 +324,22 @@ async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list
                     f"need {x_plan.graphql_requests})"
                 ),
             }
+    else:
+        poll_options = options
+        run_keywords = keywords
 
     from heimdall.db.session import get_session_factory
 
     factory = get_session_factory()
     async with factory() as db:
         pipeline = IngestionPipeline(db, platform=platform, x_plan=x_plan)
-        run_keywords = x_plan.keywords if x_plan else keywords
         limit = x_plan.limit if x_plan else job.limit
         try:
             result = await pipeline.ingest_narrative(
                 job.narrative_name,
-                run_keywords,
+                run_keywords if platform == Platform.X else keywords,
                 limit=limit,
-                options=options,
+                options=poll_options if platform == Platform.X else options,
             )
         except (XDailyBudgetExceeded, XIngestDisabled) as exc:
             return {
@@ -263,13 +349,24 @@ async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list
                 "reason": str(exc),
             }
 
+    if platform == Platform.X and job.author_watch_enabled and not result.get("skipped"):
+        await _apply_author_watchlist_updates(
+            job,
+            result,
+            polled_author_id=polled_author_id,
+        )
+
     out = {"narrative_name": job.narrative_name, "platform": platform_name, **result}
+    if platform == Platform.X:
+        out["ingest_mode"] = ingest_mode
+        if polled_author_id:
+            out["polled_author_id"] = polled_author_id
     if x_plan:
         out["planned_keywords"] = x_plan.keywords
         out["planned_limit"] = x_plan.limit
         out["planned_graphql_requests"] = x_plan.graphql_requests
         out["plan_notes"] = x_plan.notes
-        if _scheduled_keywords_per_run() is not None:
+        if ingest_mode == "keyword" and _scheduled_keywords_per_run() is not None:
             out["scheduled_keyword_rotation"] = True
             out["rotation_strategy"] = job.rotation_strategy
     return out
@@ -329,10 +426,18 @@ async def run(config: Path, export: bool) -> int:
             "updated": row.get("updated"),
             "filtered": row.get("filtered"),
             "duplicates": row.get("duplicates"),
+            "net_new": row.get("net_new", row.get("inserted")),
+            "duplicate_rate": row.get("duplicate_rate"),
+            "processed": row.get("processed"),
+            "pages_fetched": row.get("pages_fetched"),
+            "second_page_triggered": row.get("second_page_triggered"),
             "scored": row.get("scored"),
+            "rescored_total": row.get("rescored_total", row.get("scored")),
             "edges": row.get("edges"),
             "keyword_stats": row.get("keyword_stats"),
             "fallback_from": row.get("fallback_from"),
+            "ingest_mode": row.get("ingest_mode"),
+            "polled_author_id": row.get("polled_author_id"),
         }
         append_ingest_run(log_row)
         if not row.get("skipped"):

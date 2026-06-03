@@ -255,6 +255,32 @@ def parse_tweet_result(result: dict[str, Any]) -> ParsedXTweet | None:
     )
 
 
+def _extract_bottom_cursor(instructions: list[Any]) -> str | None:
+    for instruction in instructions:
+        if not isinstance(instruction, dict):
+            continue
+        entries = instruction.get("entries") or instruction.get("moduleItems") or []
+        if not isinstance(entries, list):
+            continue
+        for entry in entries:
+            if not isinstance(entry, dict):
+                continue
+            content = entry.get("content")
+            if not isinstance(content, dict):
+                continue
+            if content.get("entryType") == "TimelineTimelineCursor":
+                if content.get("cursorType") == "Bottom":
+                    value = content.get("value")
+                    if isinstance(value, str) and value:
+                        return value
+            entry_id = str(entry.get("entryId") or "")
+            if "cursor-bottom" in entry_id:
+                value = content.get("value")
+                if isinstance(value, str) and value:
+                    return value
+    return None
+
+
 def _iter_timeline_tweets(instructions: list[Any]) -> list[ParsedXTweet]:
     tweets: list[ParsedXTweet] = []
     for instruction in instructions:
@@ -308,7 +334,7 @@ def parse_list_timeline(payload: dict[str, Any]) -> list[ParsedXTweet]:
     return _iter_timeline_tweets(instructions)
 
 
-def parse_search_timeline(payload: dict[str, Any]) -> list[ParsedXTweet]:
+def parse_search_timeline_page(payload: dict[str, Any]) -> tuple[list[ParsedXTweet], str | None]:
     instructions = _deep_get(
         payload,
         "data",
@@ -318,8 +344,13 @@ def parse_search_timeline(payload: dict[str, Any]) -> list[ParsedXTweet]:
         "instructions",
     )
     if not isinstance(instructions, list):
-        return []
-    return _iter_timeline_tweets(instructions)
+        return [], None
+    return _iter_timeline_tweets(instructions), _extract_bottom_cursor(instructions)
+
+
+def parse_search_timeline(payload: dict[str, Any]) -> list[ParsedXTweet]:
+    tweets, _cursor = parse_search_timeline_page(payload)
+    return tweets
 
 
 class XGraphQLClient:
@@ -435,13 +466,32 @@ class XGraphQLClient:
         *,
         count: int = 20,
         product: str = "Latest",
+        cursor: str | None = None,
     ) -> list[ParsedXTweet]:
-        variables = {
+        tweets, _next_cursor = await self.search_page(
+            raw_query,
+            count=count,
+            product=product,
+            cursor=cursor,
+        )
+        return tweets
+
+    async def search_page(
+        self,
+        raw_query: str,
+        *,
+        count: int = 20,
+        product: str = "Latest",
+        cursor: str | None = None,
+    ) -> tuple[list[ParsedXTweet], str | None]:
+        variables: dict[str, Any] = {
             "rawQuery": raw_query,
             "count": count,
             "querySource": "typed_query",
             "product": product,
         }
+        if cursor:
+            variables["cursor"] = cursor
         payload = await self._graphql_request(
             "SearchTimeline",
             variables,
@@ -450,7 +500,7 @@ class XGraphQLClient:
             field_toggles=SEARCH_FIELD_TOGGLES,
             prefer_post=True,
         )
-        return parse_search_timeline(payload)
+        return parse_search_timeline_page(payload)
 
     async def list_timeline(self, list_id: str, *, count: int = 20) -> list[ParsedXTweet]:
         variables = {"listId": list_id, "count": count}

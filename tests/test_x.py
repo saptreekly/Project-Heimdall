@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 from heimdall.ingestion.x import _raw_posts_from_tweet
-from heimdall.ingestion.x_client import parse_search_timeline, parse_tweet_result
+from heimdall.ingestion.x_client import parse_search_timeline, parse_search_timeline_page, parse_tweet_result
 from heimdall.db.models import InteractionType, Platform
 
 FIXTURE = Path(__file__).parent / "fixtures" / "x_search_timeline.json"
@@ -16,6 +16,36 @@ def test_parse_search_timeline_fixture() -> None:
     assert tweets[0].author_id == "42"
     assert tweets[0].screen_name == "alice"
     assert "border crisis" in tweets[0].text
+
+
+def test_parse_search_timeline_page_extracts_bottom_cursor() -> None:
+    payload = {
+        "data": {
+            "search_by_raw_query": {
+                "search_timeline": {
+                    "timeline": {
+                        "instructions": [
+                            {
+                                "entries": [
+                                    {
+                                        "entryId": "cursor-bottom-abc",
+                                        "content": {
+                                            "entryType": "TimelineTimelineCursor",
+                                            "cursorType": "Bottom",
+                                            "value": "cursor-token-123",
+                                        },
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+    tweets, cursor = parse_search_timeline_page(payload)
+    assert tweets == []
+    assert cursor == "cursor-token-123"
 
 
 def test_raw_post_platform_x() -> None:

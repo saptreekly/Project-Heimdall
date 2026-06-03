@@ -299,6 +299,34 @@ export interface ThemeCluster {
   filter_reason?: string | null;
   map_x?: number | null;
   map_y?: number | null;
+  coordination?: CoordinationOverlay;
+}
+
+export interface CoordinationSubclusterRef {
+  ref_id: string;
+  overlap_count: number;
+  cluster_count: number;
+  author_count: number;
+  burst_synchronized: boolean;
+  sample_text: string;
+  post_ids: number[];
+}
+
+export interface CoordinationOverlay {
+  unique_author_count: number;
+  unique_post_count: number;
+  exact_duplicate_clusters: CoordinationSubclusterRef[];
+  fuzzy_clusters: CoordinationSubclusterRef[];
+  same_author_groups: CoordinationSubclusterRef[];
+  tier: "high" | "medium" | "low" | "context";
+  tier_label: string;
+}
+
+export interface ThemeSightingsSummary {
+  total_resightings: number;
+  total_net_new: number;
+  daily_resightings: Record<string, number>;
+  daily_net_new: Record<string, number>;
 }
 
 export interface ThemeClusterMapPoint {
@@ -385,6 +413,7 @@ export interface ThemesReport {
     }>;
     continues_from: Array<{ week: string; label: string; overlap: number }>;
   }>;
+  sightings?: ThemeSightingsSummary;
 }
 
 export interface NarrativeBundle {

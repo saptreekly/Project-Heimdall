@@ -56,6 +56,30 @@ def _x_exclude_clause(terms: tuple[str, ...]) -> str:
     return f"-({inner})"
 
 
+def build_author_poll_query(
+    handle: str,
+    *,
+    context_terms: list[str] | None = None,
+    exclude_terms: tuple[str, ...] = _DEFAULT_X_EXCLUDES,
+    since_date: str | None = None,
+) -> str:
+    """X search query polling a single account (from: + optional narrative OR + since)."""
+    token = handle.strip().lstrip("@")
+    if not token:
+        raise ValueError("handle required for author poll query")
+    parts: list[str] = [f"from:{token}"]
+    terms = [t.strip() for t in (context_terms or []) if t.strip()]
+    if terms:
+        quoted = " OR ".join(_quote_phrase(t) for t in terms)
+        parts.append(f"({quoted})")
+    if since_date:
+        parts.append(f"since:{since_date}")
+    exclude = _x_exclude_clause(exclude_terms)
+    if exclude:
+        parts.append(exclude)
+    return " ".join(parts)
+
+
 def _mastodon_hashtags(keyword: str) -> list[str]:
     raw = keyword.strip().lower()
     if not raw:

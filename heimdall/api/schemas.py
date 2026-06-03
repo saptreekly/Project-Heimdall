@@ -43,6 +43,12 @@ class IngestResponse(BaseModel):
     updated: int = 0
     duplicates: int = 0
     filtered: int = 0
+    net_new: int = 0
+    duplicate_rate: float = 0.0
+    processed: int = 0
+    pages_fetched: int = 1
+    second_page_triggered: bool = False
+    rescored_total: int = 0
     keyword_stats: dict | None = None
     guardrails: dict | None = None
 

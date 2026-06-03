@@ -2,8 +2,12 @@ import { selectThemeCluster } from "./investigation";
 import { escapeHtml, labelList, safeText } from "./safe-text";
 import { applyThemeOverrides, loadThemeOverrides } from "./theme-overrides";
 import type { Post, ThemeCluster, ThemeTimelineEntry, ThemesReport } from "./types";
-import { truncate } from "./post-display";
 import { stateLoadingHtml } from "./ui-states";
+import { computeThemeCoordination } from "./cluster-coordination";
+import {
+  bindInspectorViewTheme,
+  renderCombinedClusterInspector,
+} from "./desk-inspector";
 
 const MAX_VISIBLE_CLUSTERS = 16;
 
@@ -30,6 +34,7 @@ let clusterIndex = new Map<number, ThemeRow>();
 let showMarketChatter = false;
 let showFilteredBuckets = false;
 let activeNarrativeId = 0;
+let activeThemesReport: ThemesReport | null = null;
 
 function primaryLabel(labels: string[], clusterId: number, isMarket: boolean, filterReason: string | null): string {
   if (filterReason === "promo") return "Promo / link spam";
@@ -128,61 +133,18 @@ function dateSpan(row: ThemeRow): string {
   return "—";
 }
 
-function tierBreakdown(postIds: number[], posts: Post[]): Array<{ tier: string; count: number }> {
-  const postMap = new Map(posts.map((p) => [p.id, p]));
-  const counts = new Map<string, number>();
-  for (const pid of postIds) {
-    const tier = postMap.get(pid)?.escalation_tier ?? "unknown";
-    counts.set(tier, (counts.get(tier) ?? 0) + 1);
-  }
-  const order = ["inflammatory", "escalating", "neutral", "unknown"];
-  return order
-    .map((tier) => ({ tier, count: counts.get(tier) ?? 0 }))
-    .filter((row) => row.count > 0);
-}
-
-function renderDetail(row: ThemeRow, posts: Post[]): string {
-  const tiers = tierBreakdown(row.post_ids, posts);
-  const maxTier = Math.max(...tiers.map((t) => t.count), 1);
-  const tags = row.labels
-    .map((label) => {
-      const cls = label.includes(" ") ? "theme-token theme-token-phrase" : "theme-token";
-      return `<span class="${cls}">${escapeHtml(label)}</span>`;
-    })
-    .join("");
-
-  return `
-    <div class="theme-detail">
-      <div class="theme-detail-header">
-        <h3>${escapeHtml(row.title)}</h3>
-        <p class="theme-detail-meta">${row.size} posts · ${escapeHtml(dateSpan(row))}${
-          row.emerging_theme ? " · <span class='topology-badge topology-star'>emerging</span>" : ""
-        }</p>
-      </div>
-      <div class="theme-detail-tags">${tags || "<span class='theme-token theme-token-empty'>(no labels)</span>"}</div>
-      ${
-        row.sample_text
-          ? `<blockquote class="theme-detail-sample">${escapeHtml(truncate(row.sample_text, 320))}</blockquote>`
-          : ""
-      }
-      ${
-        tiers.length
-          ? `<div class="theme-tier-breakdown">${tiers
-              .map(
-                (tier) => `<div class="theme-tier-row">
-                  <span class="theme-tier-name">${escapeHtml(tier.tier)}</span>
-                  <span class="theme-tier-bar-track"><span class="theme-tier-bar theme-tier-bar-${escapeHtml(tier.tier)}" style="width:${((tier.count / maxTier) * 100).toFixed(1)}%"></span></span>
-                  <span class="theme-tier-count">${tier.count}</span>
-                </div>`
-              )
-              .join("")}</div>`
-          : ""
-      }
-      <button type="button" class="btn btn-secondary btn-small theme-detail-cta" data-cluster-id="${row.cluster_id}">
-        View ${row.size} posts →
-      </button>
-    </div>
-  `;
+function renderDetail(row: ThemeRow, posts: Post[], report: ThemesReport): string {
+  const cluster = report.clusters.find((c) => c.cluster_id === row.cluster_id);
+  const overlay = computeThemeCoordination(row.post_ids, posts, cluster);
+  return renderCombinedClusterInspector(
+    row.title,
+    row.labels,
+    row.sample_text,
+    posts,
+    row.post_ids,
+    overlay,
+    { resightings: report.sightings?.total_resightings || undefined }
+  );
 }
 
 function renderTable(rows: ThemeRow[], hiddenFilteredCount: number, report: ThemesReport): string {
@@ -205,6 +167,8 @@ function renderTable(rows: ThemeRow[], hiddenFilteredCount: number, report: Them
             const distinctPct = Math.round(row.label_distinctiveness * 100);
             const qualityPct = Math.round(row.quality_score * 100);
             const tier = row.confidence_tier || "medium";
+            const cluster = report.clusters.find((c) => c.cluster_id === row.cluster_id);
+            const coordTier = cluster?.coordination?.tier_label;
             return `<tr
               class="theme-row${row.emerging_theme ? " theme-row-emerging" : ""}${row.is_noise ? " theme-row-noise" : ""}${row.is_market_chatter ? " theme-row-market" : ""}${row.filter_reason ? " theme-row-filtered" : ""}"
               data-cluster-id="${row.cluster_id}"
@@ -229,6 +193,7 @@ function renderTable(rows: ThemeRow[], hiddenFilteredCount: number, report: Them
                 ${tier === "high" ? `<span class="theme-signal-pill theme-signal-high">high conf</span>` : tier === "low" ? `<span class="theme-signal-pill theme-signal-low">low conf</span>` : ""}
                 ${distinctPct > 0 ? `<span class="theme-signal-pill">${distinctPct}% distinct</span>` : ""}
                 ${qualityPct > 0 ? `<span class="theme-signal-pill">${qualityPct}% quality</span>` : ""}
+                ${coordTier ? `<span class="theme-signal-pill coord-tier-pill">${escapeHtml(coordTier)}</span>` : ""}
               </td>
             </tr>`;
           })
@@ -248,7 +213,7 @@ function renderTable(rows: ThemeRow[], hiddenFilteredCount: number, report: Them
   `;
 }
 
-function selectRow(host: HTMLElement, detailHost: HTMLElement | null, row: ThemeRow, posts: Post[]): void {
+function selectRow(host: HTMLElement, detailHost: HTMLElement | null, row: ThemeRow, posts: Post[], report: ThemesReport): void {
   host.querySelectorAll(".theme-row").forEach((el) => el.classList.remove("theme-row-active"));
   host
     .querySelector(`.theme-row[data-cluster-id="${row.cluster_id}"]`)
@@ -258,8 +223,8 @@ function selectRow(host: HTMLElement, detailHost: HTMLElement | null, row: Theme
   if (sub) sub.textContent = row.title;
 
   if (detailHost) {
-    detailHost.innerHTML = renderDetail(row, posts);
-    detailHost.querySelector<HTMLButtonElement>(".theme-detail-cta")?.addEventListener("click", () => {
+    detailHost.innerHTML = renderDetail(row, posts, report);
+    bindInspectorViewTheme(() => {
       const label = `[${row.labels.join(", ") || row.title}]`;
       selectThemeCluster(label, row.post_ids);
       window.dispatchEvent(new CustomEvent("heimdall:goto-evidence"));
@@ -267,13 +232,13 @@ function selectRow(host: HTMLElement, detailHost: HTMLElement | null, row: Theme
   }
 }
 
-function bindTable(host: HTMLElement, detailHost: HTMLElement | null, rows: ThemeRow[], posts: Post[]): void {
+function bindTable(host: HTMLElement, detailHost: HTMLElement | null, rows: ThemeRow[], posts: Post[], report: ThemesReport): void {
   host.querySelectorAll<HTMLElement>(".theme-row").forEach((el) => {
     const clusterId = parseInt(el.dataset.clusterId ?? "", 10);
     const row = clusterIndex.get(clusterId);
     if (!row) return;
 
-    const activate = () => selectRow(host, detailHost, row, posts);
+    const activate = () => selectRow(host, detailHost, row, posts, report);
     el.addEventListener("click", activate);
     el.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
@@ -342,6 +307,7 @@ export function renderEmergingThemesTimeline(
   const marketToggle = document.getElementById("theme-show-market") as HTMLInputElement | null;
   clusterIndex = new Map();
   activeNarrativeId = narrativeId;
+  activeThemesReport = report;
   showFilteredBuckets = marketToggle?.checked ?? false;
 
   if (!report.available) {
@@ -387,14 +353,14 @@ export function renderEmergingThemesTimeline(
   }
 
   host.innerHTML = renderTable(rows, hiddenFilteredCount, report);
-  bindTable(host, detailHost, rows, posts);
+  bindTable(host, detailHost, rows, posts, report);
 
   const firstPick =
     rows.find((row) => row.emerging_theme && !isFilteredBucket(row) && !row.is_noise) ??
     rows.find((row) => !isFilteredBucket(row) && !row.is_noise) ??
     rows[0];
   if (firstPick) {
-    selectRow(host, detailHost, firstPick, posts);
+    selectRow(host, detailHost, firstPick, posts, report);
   }
 
   marketToggle?.addEventListener("change", () => {

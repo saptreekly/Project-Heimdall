@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+from heimdall.ingestion.query_plan import QueryPlan
+
 
 @dataclass
 class IngestOptions:
@@ -16,4 +18,5 @@ class IngestOptions:
     backfill_reply_targets: bool = True
     backfill_max_targets: int = 5
     dry_run: bool = False
+    query_plan_override: QueryPlan | None = None
     query_plan_notes: list[str] = field(default_factory=list)

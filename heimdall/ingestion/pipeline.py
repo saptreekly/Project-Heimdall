@@ -18,6 +18,7 @@ from heimdall.ingestion.rate_limit import TokenBucketRateLimiter
 from heimdall.ingestion.reddit import RedditIngester
 from heimdall.ingestion.tweet_eval import build_tweet_eval_ingester
 from heimdall.ingestion.schemas import RawPost
+from heimdall.ingestion.sightings import append_ingest_sighting
 from heimdall.ingestion.text_clean import clean_post_text
 from heimdall.ingestion.x import XIngester
 from heimdall.ingestion.x_guard import XIngestPlan
@@ -192,7 +193,10 @@ class IngestionPipeline:
         narrative = await self.ensure_narrative(name, keywords)
         platform = self._resolve_platform()
         plan_opts = self._plan_options(opts)
-        query_plan = build_query_plan(platform, keywords, limit, options=plan_opts)
+        if opts.query_plan_override is not None:
+            query_plan = opts.query_plan_override
+        else:
+            query_plan = build_query_plan(platform, keywords, limit, options=plan_opts)
 
         raw_posts = await self._ingester.fetch_by_keywords(
             keywords,
@@ -206,12 +210,23 @@ class IngestionPipeline:
         filtered = 0
         scored = 0
         edges = 0
+        pages_fetched = 1
+        second_page_triggered = False
         keyword_stats: dict[str, dict[str, int]] = {}
         external_to_id: dict[str, int] = {}
+        author_discoveries: dict[str, dict] = {}
+        interaction_discoveries: list[dict] = []
+        latest_post_at: str | None = None
+        seen_external_ids: set[str] = set()
 
-        for raw in raw_posts:
+        async def process_raw(raw: RawPost) -> None:
+            nonlocal inserted, updated, duplicates, filtered, scored, latest_post_at
+            seen_external_ids.add(raw.external_id)
             kw = raw.source_keyword or "unknown"
-            keyword_stats.setdefault(kw, {"fetched": 0, "inserted": 0, "updated": 0, "filtered": 0})
+            keyword_stats.setdefault(
+                kw,
+                {"fetched": 0, "inserted": 0, "updated": 0, "filtered": 0, "duplicates": 0},
+            )
             keyword_stats[kw]["fetched"] += 1
 
             text = clean_post_text(raw.text)
@@ -224,23 +239,112 @@ class IngestionPipeline:
                 if not decision.allow:
                     filtered += 1
                     keyword_stats[kw]["filtered"] += 1
-                    continue
+                    return
 
             action, post_id = await self._upsert_post(narrative.id, raw)
             if post_id is None:
-                continue
+                return
             external_to_id[raw.external_id] = post_id
+            posted_iso = raw.posted_at.isoformat()
+            if latest_post_at is None or posted_iso > latest_post_at:
+                latest_post_at = posted_iso
+            via = "author_poll" if kw.startswith("author:") else "keyword"
+            depth = 0 if via == "keyword" else 0
+            disc = author_discoveries.setdefault(
+                raw.author_id,
+                {
+                    "author_id": raw.author_id,
+                    "handle": raw.author_handle,
+                    "discovered_via": via,
+                    "depth": depth,
+                    "inserted": 0,
+                },
+            )
             if action == "inserted":
                 inserted += 1
                 keyword_stats[kw]["inserted"] += 1
+                disc["inserted"] = int(disc["inserted"]) + 1
                 await self._maybe_persist_embedding(post_id, raw.text)
                 if await self._analyzer.score_and_persist(self._session, post_id, raw.text):
                     scored += 1
+                append_ingest_sighting(
+                    {
+                        "narrative_name": name,
+                        "platform": platform.value,
+                        "ingest_keyword": kw,
+                        "post_id": post_id,
+                        "external_id": raw.external_id,
+                        "author_id": raw.author_id,
+                        "event": "inserted",
+                        "posted_at": posted_iso,
+                    }
+                )
             elif action == "updated":
                 updated += 1
                 keyword_stats[kw]["updated"] += 1
+                append_ingest_sighting(
+                    {
+                        "narrative_name": name,
+                        "platform": platform.value,
+                        "ingest_keyword": kw,
+                        "post_id": post_id,
+                        "external_id": raw.external_id,
+                        "author_id": raw.author_id,
+                        "event": "updated",
+                        "posted_at": posted_iso,
+                    }
+                )
             else:
                 duplicates += 1
+                keyword_stats[kw]["duplicates"] += 1
+                append_ingest_sighting(
+                    {
+                        "narrative_name": name,
+                        "platform": platform.value,
+                        "ingest_keyword": kw,
+                        "post_id": post_id,
+                        "external_id": raw.external_id,
+                        "author_id": raw.author_id,
+                        "event": "duplicate",
+                        "posted_at": posted_iso,
+                    }
+                )
+
+            for interaction in raw.interactions:
+                target_id = interaction.target_author_id
+                if target_id and target_id != raw.author_id:
+                    interaction_discoveries.append(
+                        {
+                            "author_id": target_id,
+                            "handle": None,
+                            "discovered_via": interaction.interaction_type.value,
+                            "depth": 1,
+                            "inserted": 0,
+                        }
+                    )
+
+        for raw in raw_posts:
+            await process_raw(raw)
+
+        eligible = inserted + updated + duplicates
+        if (
+            isinstance(self._ingester, XIngester)
+            and eligible > 0
+            and duplicates >= eligible
+            and len(raw_posts) > 0
+        ):
+            plan_limit = self._x_plan.limit if self._x_plan else limit
+            remaining = max(plan_limit - len(seen_external_ids), 0)
+            extra_posts = await self._ingester.fetch_search_next_page(
+                seen=seen_external_ids,
+                limit=remaining,
+            )
+            if extra_posts:
+                second_page_triggered = True
+                pages_fetched = 2
+                raw_posts = [*raw_posts, *extra_posts]
+                for raw in extra_posts:
+                    await process_raw(raw)
 
         if opts.backfill_reply_targets and isinstance(self._ingester, XIngester):
             backfill_posts = await self._backfill_reply_targets(
@@ -296,17 +400,28 @@ class IngestionPipeline:
             rescore_result = await self._analyzer.rescore_narrative(self._session, narrative.id)
             scored = rescore_result.get("rescored", scored)
 
+        processed = inserted + updated + duplicates
+        duplicate_rate = round(duplicates / max(processed, 1), 3)
         result = {
             "narrative_id": narrative.id,
             "fetched": len(raw_posts),
             "inserted": inserted,
+            "net_new": inserted,
             "updated": updated,
             "duplicates": duplicates,
+            "re_seen": duplicates,
             "filtered": filtered,
+            "processed": processed,
+            "duplicate_rate": duplicate_rate,
+            "pages_fetched": pages_fetched,
+            "second_page_triggered": second_page_triggered,
             "scored": scored,
+            "rescored_total": scored,
             "edges": edges,
             "keyword_stats": keyword_stats,
             "query_plan_notes": query_plan.notes + opts.query_plan_notes,
+            "author_discoveries": list(author_discoveries.values()) + interaction_discoveries,
+            "latest_post_at": latest_post_at,
         }
         if isinstance(self._ingester, XIngester):
             guardrails: dict = {"notes": list(self._x_plan.notes) if self._x_plan else []}

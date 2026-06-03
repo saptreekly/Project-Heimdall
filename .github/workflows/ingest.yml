@@ -96,7 +96,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dashboard/heimdall.db data/dashboard/x_rate_state.json data/dashboard/x_keyword_rotation.json web/public/data/snapshot.json
+          git add data/dashboard/heimdall.db data/dashboard/x_rate_state.json data/dashboard/x_keyword_rotation.json data/dashboard/author_watchlist.json web/public/data/snapshot.json
           if [ -f data/dashboard/SENTIMENT_WATCHLIST.md ]; then
             git add data/dashboard/SENTIMENT_WATCHLIST.md data/dashboard/sentiment_watchlist_state.json
           fi

@@ -13,7 +13,8 @@
       "x_exclude_terms": ["$SPX", "$VIX", "$NDX", "btc", "eth", "crypto", "mkt"],
       "x_list_sources": [],
       "reddit_subreddits": ["politics", "news", "Conservative"],
-      "rotation_strategy": "yield"
+      "rotation_strategy": "yield",
+      "author_watch_enabled": true
     }
   ]
 }

@@ -20,8 +20,10 @@ from heimdall.analysis.near_duplicates import (
     post_id_to_near_group,
     resolve_jaccard_threshold,
 )
+from heimdall.export.coordination_overlay import attach_coordination_overlays
 from heimdall.export.cross_pollination_loader import load_cross_pollination, per_narrative_hits
 from heimdall.export.provenance import SNAPSHOT_POST_LIMIT, build_narrative_provenance
+from heimdall.ingestion.sightings import load_sightings_for_narrative, summarize_sightings
 from heimdall.export.post_meta import parse_x_screen_name, post_status_url
 from heimdall.analysis.sentiment_shift import narrative_sentiment_shift
 from heimdall.api.schemas import CIBResponse, DuplicateClusterOut, NarrativeSummary, PostOut
@@ -393,6 +395,16 @@ async def build_dashboard_snapshot(db: AsyncSession) -> dict:
         amp = await narrative_amplification(db, nid)
         near_dup = await narrative_near_duplicates(db, nid)
         themes = await narrative_themes(db, nid)
+        post_payload = [p.model_dump(mode="json") for p in posts]
+        attach_coordination_overlays(
+            themes.get("clusters", []),
+            amp.get("clusters", []),
+            near_dup.get("cross_author_fuzzy", []),
+            near_dup.get("groups", []),
+            post_payload,
+        )
+        sightings_rows = load_sightings_for_narrative(summary.name)
+        themes["sightings"] = summarize_sightings(sightings_rows)
         cib = await narrative_cib(
             db,
             nid,

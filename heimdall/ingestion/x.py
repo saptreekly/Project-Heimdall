@@ -1,4 +1,5 @@
 import json
+from dataclasses import dataclass
 from datetime import datetime, timezone
 
 from heimdall.config import get_settings
@@ -19,6 +20,14 @@ from heimdall.ingestion.x_guard import (
 _LIST_PREFIX = "list:"
 
 
+@dataclass
+class _PendingSearch:
+    platform_query: str
+    narrative_keyword: str
+    cap: int
+    cursor: str | None
+
+
 class XIngester(PlatformIngester):
     """
     Ingest public X timelines via session cookies (AUTH_TOKEN + CT0).
@@ -36,6 +45,7 @@ class XIngester(PlatformIngester):
         self._client = XGraphQLClient(settings.x_auth_token, settings.x_ct0)
         self._plan = plan
         self.last_usage: dict | None = None
+        self._pending_search: _PendingSearch | None = None
 
     async def fetch_by_keywords(
         self,
@@ -66,6 +76,7 @@ class XIngester(PlatformIngester):
         seen: set[str] = set()
         posts: list[RawPost] = []
         first = True
+        self._pending_search = None
 
         for query in searches:
             if not first:
@@ -77,10 +88,16 @@ class XIngester(PlatformIngester):
                 list_id = query.platform_query[len(_LIST_PREFIX) :].strip()
                 batch = await self._client.list_timeline(list_id, count=cap)
             else:
-                batch = await self._client.search(
+                batch, next_cursor = await self._client.search_page(
                     query.platform_query,
                     count=cap,
                     product="Latest",
+                )
+                self._pending_search = _PendingSearch(
+                    platform_query=query.platform_query,
+                    narrative_keyword=query.narrative_keyword,
+                    cap=cap,
+                    cursor=next_cursor,
                 )
             for parsed in batch:
                 for raw in _raw_posts_from_tweet(parsed, source_keyword=query.narrative_keyword):
@@ -90,6 +107,36 @@ class XIngester(PlatformIngester):
                     posts.append(raw)
                     if len(posts) >= plan.limit:
                         return posts[: plan.limit]
+        return posts
+
+    async def fetch_search_next_page(
+        self,
+        *,
+        seen: set[str],
+        limit: int,
+    ) -> list[RawPost]:
+        pending = self._pending_search
+        if not pending or not pending.cursor or limit <= 0:
+            return []
+
+        self.last_usage = await reserve_daily_requests(1)
+        await wait_between_searches()
+        batch, next_cursor = await self._client.search_page(
+            pending.platform_query,
+            count=pending.cap,
+            product="Latest",
+            cursor=pending.cursor,
+        )
+        pending.cursor = next_cursor
+        posts: list[RawPost] = []
+        for parsed in batch:
+            for raw in _raw_posts_from_tweet(parsed, source_keyword=pending.narrative_keyword):
+                if raw.external_id in seen:
+                    continue
+                seen.add(raw.external_id)
+                posts.append(raw)
+                if len(posts) >= limit:
+                    return posts
         return posts
 
     async def fetch_reply_targets(

@@ -60,9 +60,12 @@ The Pages workflow (`/.github/workflows/pages.yml`) runs on push after ingest an
 | `theme_baseline.json` | Weekly theme drift (comparison baseline) |
 | `keyword_suggestions.json` | Weekly keyword gap discovery |
 | `keyword_rotation_log.jsonl` | Weekly auto keyword swap audit trail |
+| `author_watchlist.json` | X author frontier for snowball `from:` polls |
 | `data/scheduled_ingest.json` | Updated weekly when stale keywords are swapped |
 
 **Keyword auto-rotation** (weekly `maintenance.yml`): removes keywords with 0 yield after 3+ runs (never unpins `2026 midterms`), adds top gap suggestions from theme/corpus analysis. Requires ≥5 ingest runs in the 7-day window before swapping.
+
+**Author tree ingest** (every ingest run when enabled): keyword searches register high-value authors in `author_watchlist.json`. Every second scheduled run (`X_AUTHOR_POLL_EVERY_N=2`) polls one watched account via `from:handle (narrative terms…) since:…` — same GraphQL budget, deeper longitudinal coverage. Weekly maintenance prunes authors with 2+ polls and zero inserts.
 
 Dependabot (`.github/dependabot.yml`) opens weekly PRs for GitHub Actions and npm updates.
 

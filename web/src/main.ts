@@ -29,11 +29,14 @@ import {
 import { bindDeskKeyboard, bindMethodologyDrawer } from "./desk-keyboard";
 import {
   bindInspectorViewAuthor,
+  bindInspectorViewCluster,
   renderAuthorInspector,
+  renderDuplicateClusterInspector,
   resetInspectorEmpty,
   setInspectorContext,
 } from "./desk-inspector";
 import { buildAlertRows, renderAlertInboxHtml } from "./alert-inbox";
+import { findParentThemeLabel, setCoordinationContext } from "./cluster-coordination";
 import { bindBriefPrint, briefPanelHtml, renderBrief } from "./brief";
 import { renderContentNotice } from "./content-notice";
 import {
@@ -154,6 +157,8 @@ let compactCharts = localStorage.getItem(COMPACT_CHARTS_KEY) !== "0";
 let groupAuthorPosts = true;
 let postListLimit = POST_LIST_INITIAL;
 let lastNearDup: NearDuplicatesReport | null = null;
+let lastAmpClusters: DuplicateCluster[] = [];
+let lastThemesReport: ThemesReport | null = null;
 let clusterSourcePosts: Post[] = [];
 let jaccardThreshold = 0.82;
 let totalNarrativePosts = 0;
@@ -561,7 +566,7 @@ function deskModeHiddenAttr(mode: DeskMode): string {
 }
 
 function bindClusterButtons(): void {
-  document.querySelectorAll<HTMLButtonElement>(".cluster-btn").forEach((btn) => {
+  document.querySelectorAll<HTMLButtonElement>(".cluster-btn:not(.fuzzy-cluster-btn)").forEach((btn) => {
     btn.addEventListener("click", () => {
       const ids = (btn.dataset.postIds ?? "")
         .split(",")
@@ -569,9 +574,25 @@ function bindClusterButtons(): void {
         .filter((n) => Number.isFinite(n));
       const burst = btn.dataset.burst === "1";
       const sample = btn.querySelector(".post-text")?.textContent ?? "cluster";
-      selectDuplicateCluster(sample.slice(0, 40), ids, burst);
-      switchDeskMode("evidence", { scroll: false });
-      scrollGlobalInvestigationIntoView();
+      const cluster = lastAmpClusters.find(
+        (c) => c.post_ids.length === ids.length && c.post_ids.every((id) => ids.includes(id))
+      );
+      if (cluster) {
+        const parentTheme = findParentThemeLabel(ids, lastThemesReport?.clusters ?? []);
+        setInspectorContext(
+          burst ? "Synchronized burst" : "Duplicate cluster",
+          renderDuplicateClusterInspector(cluster, "exact", parentTheme)
+        );
+        bindInspectorViewCluster(() => {
+          selectDuplicateCluster(sample.slice(0, 40), ids, burst);
+          switchDeskMode("evidence", { scroll: false });
+          scrollGlobalInvestigationIntoView();
+        });
+      } else {
+        selectDuplicateCluster(sample.slice(0, 40), ids, burst);
+        switchDeskMode("evidence", { scroll: false });
+        scrollGlobalInvestigationIntoView();
+      }
     });
   });
 }
@@ -794,6 +815,9 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       bounds.max
     );
     lastNearDup = recomputeNearDuplicatesReport(posts, jaccardThreshold, nearDup);
+    lastAmpClusters = amp.clusters;
+    lastThemesReport = themes;
+    setCoordinationContext({ amp, nearDup: lastNearDup, posts, themes: themes.clusters });
     setInvestigationPosts(applyClusterTagsToPosts(posts, lastNearDup));
     if (narrativeMeta) {
       briefContext = {
@@ -867,8 +891,13 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         <section class="panel panel-pulse-frames-teaser">
           <h2>Theme frames ${emergingThemesBadge(themes)}</h2>
           <p class="chart-caption">
-            ${emergingCount} emerging · ${distinctCount} distinct clusters in this narrative.
-            Open <strong>Frames</strong> to inspect cluster labels, confidence, and post filters.
+            ${emergingCount} emerging · ${distinctCount} distinct clusters.
+            ${
+              themes.sightings?.total_resightings
+                ? `${themes.sightings.total_resightings} re-sightings logged (duplicate encounters at ingest).`
+                : "Dupes at ingest are coordination evidence, not waste."
+            }
+            Open <strong>Frames</strong> for combined copy + narrative coordination cards.
           </p>
           <button type="button" class="btn btn-secondary btn-small" data-goto-mode="frames">Open Frames →</button>
         </section>

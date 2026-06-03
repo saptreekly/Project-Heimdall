@@ -1,3 +1,4 @@
+import { classifyDuplicateCluster, computeThemeCoordination } from "./cluster-coordination";
 import { escapeHtml, truncate } from "./post-display";
 import { labelList } from "./safe-text";
 import type {
@@ -20,6 +21,8 @@ export interface AlertRow {
   burst: boolean;
   kind: "burst" | "duplicate" | "fuzzy" | "cross-pollination" | "cib" | "theme";
   themeLabel?: string;
+  tier?: "high" | "medium" | "low" | "context";
+  tierLabel?: string;
 }
 
 function burstClusters(clusters: DuplicateCluster[]): DuplicateCluster[] {
@@ -40,14 +43,17 @@ export function buildAlertRows(
   const rows: AlertRow[] = [];
 
   for (const c of burstClusters(amp.clusters).slice(0, 5)) {
+    const tierInfo = classifyDuplicateCluster(c, "exact");
     rows.push({
       severity: "critical",
       title: "Synchronized burst",
-      detail: truncate(c.sample_text, 120),
+      detail: `${tierInfo.label} · ${truncate(c.sample_text, 100)}`,
       count: c.count,
       postIds: c.post_ids,
       burst: true,
       kind: "burst",
+      tier: tierInfo.tier,
+      tierLabel: tierInfo.label,
     });
   }
 
@@ -78,26 +84,32 @@ export function buildAlertRows(
   }
 
   for (const c of (nearDup?.cross_author_fuzzy ?? []).slice(0, 4)) {
+    const tierInfo = classifyDuplicateCluster(c, "fuzzy");
     rows.push({
       severity: "watch",
       title: c.burst_synchronized ? "Fuzzy burst" : "Cross-author fuzzy cluster",
-      detail: truncate(c.sample_text, 120),
+      detail: `${tierInfo.label} · ${truncate(c.sample_text, 100)}`,
       count: c.count,
       postIds: c.post_ids,
       burst: Boolean(c.burst_synchronized),
       kind: "fuzzy",
+      tier: tierInfo.tier,
+      tierLabel: tierInfo.label,
     });
   }
 
   for (const c of exactClusters(amp.clusters).slice(0, 3)) {
+    const tierInfo = classifyDuplicateCluster(c, "exact");
     rows.push({
       severity: "watch",
       title: "Exact duplicate text",
-      detail: truncate(c.sample_text, 120),
+      detail: `${tierInfo.label} · ${truncate(c.sample_text, 100)}`,
       count: c.count,
       postIds: c.post_ids,
       burst: false,
       kind: "duplicate",
+      tier: tierInfo.tier,
+      tierLabel: tierInfo.label,
     });
   }
 
@@ -120,15 +132,19 @@ export function buildAlertRows(
     const phrases = labelList(t.label_phrases);
     const terms = phrases.length ? phrases : labelList(t.label_terms);
     const label = terms.slice(0, 4).join(" · ") || `cluster ${t.cluster_id}`;
+    const fullCluster = themes.clusters.find((c) => c.cluster_id === t.cluster_id);
+    const overlay = computeThemeCoordination(t.post_ids ?? [], [], fullCluster);
     rows.push({
-      severity: themeLowConfidence ? "context" : "context",
+      severity: themeLowConfidence ? "context" : overlay.tier === "high" ? "watch" : "context",
       title: themeLowConfidence ? "Theme cluster (lexical fallback)" : "Emerging theme",
-      detail: label,
+      detail: `${overlay.tier_label} · ${label}`,
       count: t.size ?? t.post_ids?.length ?? 0,
       postIds: t.post_ids ?? [],
       burst: false,
       kind: "theme",
       themeLabel: label,
+      tier: overlay.tier,
+      tierLabel: overlay.tier_label,
     });
   }
 
@@ -174,6 +190,7 @@ export function renderAlertInboxHtml(rows: AlertRow[]): string {
         <div class="alert-inbox-body">
           <strong class="alert-inbox-title">${escapeHtml(row.title)}</strong>
           <span class="alert-inbox-count">${row.count}</span>
+          ${row.tierLabel ? `<span class="coord-tier-badge coord-tier-${row.tier ?? "context"}">${escapeHtml(row.tierLabel)}</span>` : ""}
           <p class="alert-inbox-detail">${escapeHtml(row.detail)}</p>
         </div>
         <button type="button" class="alert-inbox-btn btn btn-secondary btn-small" ${dataAttrs}>

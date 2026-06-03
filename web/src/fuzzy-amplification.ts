@@ -1,3 +1,9 @@
+import { findParentThemeLabel } from "./cluster-coordination";
+import {
+  bindInspectorViewCluster,
+  renderDuplicateClusterInspector,
+  setInspectorContext,
+} from "./desk-inspector";
 import { selectDuplicateCluster } from "./investigation";
 import { escapeHtml, truncate } from "./post-display";
 import { stateEmptyHtml } from "./ui-states";
@@ -131,8 +137,23 @@ export function renderFuzzyClusters(
         .filter((n) => Number.isFinite(n));
       const burst = btn.dataset.burst === "1";
       const sample = btn.querySelector(".post-text")?.textContent ?? "fuzzy cluster";
-      selectDuplicateCluster(`Fuzzy: ${sample.slice(0, 36)}`, ids, burst);
-      window.dispatchEvent(new CustomEvent("heimdall:goto-posts"));
+      const cluster = clusters.find(
+        (c) => c.post_ids.length === ids.length && c.post_ids.every((id) => ids.includes(id))
+      );
+      if (cluster) {
+        const parentTheme = findParentThemeLabel(ids);
+        setInspectorContext(
+          burst ? "Fuzzy burst" : "Fuzzy cluster",
+          renderDuplicateClusterInspector(cluster, "fuzzy", parentTheme)
+        );
+        bindInspectorViewCluster(() => {
+          selectDuplicateCluster(`Fuzzy: ${sample.slice(0, 36)}`, ids, burst);
+          window.dispatchEvent(new CustomEvent("heimdall:goto-evidence"));
+        });
+      } else {
+        selectDuplicateCluster(`Fuzzy: ${sample.slice(0, 36)}`, ids, burst);
+        window.dispatchEvent(new CustomEvent("heimdall:goto-evidence"));
+      }
     });
   });
 
