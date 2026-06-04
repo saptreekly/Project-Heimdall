@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-04 12:32:40 UTC
+> Tactical snapshot · 2026-06-04 13:36:54 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **480** |
+| Posts in database | **494** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 489 / 147 |
-| Distinct themes | 26 |
-| Duplicate clusters (full DB) | 25 |
-| Fuzzy clusters (snapshot cohort) | 3 |
-| IU astroturf overlap | 0 bots / 375 authors |
+| Graph nodes / edges | 503 / 158 |
+| Distinct themes | 24 |
+| Duplicate clusters (full DB) | 28 |
+| Fuzzy clusters (snapshot cohort) | 4 |
+| IU astroturf overlap | 0 bots / 382 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **4**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **5**
+- Net-new posts logged: **14**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **49**
-- Net new: **559** · re-seen: **164**
-- Duplicate rate: **22.7%**
+- Runs: **50**
+- Net new: **573** · re-seen: **169**
+- Duplicate rate: **22.8%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · breaking trump, court announcement, major win, midterms ele, nears rulings (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · red wave, midwest democrat, resigns electoral, disaster looms, state setting (30 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · congressional map, majority black, civil rights, legal standard (14 posts · 11 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · laying groundwork, winning record (12 posts · 9 authors · 2 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, carl nichols (11 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · sanctuary cities, remember vote, elections dem, politicians trying (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
-- **Shared frame** · affordability set, migration trend, points continued, backed economic (10 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, major win, midterms ele, nears rulings (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 48 authors · 8 exact · 1 fuzzy subclusters)
+- **Shared frame** · federal judge, carl nichols (17 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · racially drawn, upholds alabama, overturning lower (12 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · mail ballots military, voter proof, america first, executive orders, rinos games (8 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · musk stands, away world's, trillionaire democrats, seizing milestone, fresh rallying (7 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · laying groundwork, hackers preparing, local governments, wave phishing, credential theft (7 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -51,6 +51,7 @@
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
+- cross_author_fuzzy_3authors_4posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j0.94
@@ -64,7 +65,7 @@
 - **4 posts** · 1 author(s) — Democrats are out of ideas, out of cash at the party level, and out of touch. MAGA is rebuilding the country. Voters see it. The 2026 midterms will be a reckoning. America is rejecting the old failur…
 - **4 posts** · 1 author(s) — Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat l…
 - **4 posts** · 1 author(s) — 2028 we will vote THUNE OUT Bill Mitchell post If you're wondering why John Thune doesn't eliminate the filibuster, I'll tell you. John Thune, Mitch McConnell and their globalist friends in the Senat…
-- _…18 more exact-duplicate cluster(s) in database._
+- _…21 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -74,6 +75,7 @@ _None (need ≥5 authors in 90s window)._
 
 - **2 posts** · 2 authors · ~100% Jaccard — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **4 posts** · 4 authors · ~100% Jaccard — 🔥 Breaking: Trump SUPREME COURT Announcement MAJOR Win 2026 Midterms Ele... via
+- **4 posts** · 3 authors · ~100% Jaccard — Elon Musk stands days away from becoming the world's first trillionaire, and Democrats are seizing on the milestone as a fresh rallying cry against extreme wealth heading into the 2026 midterms. Read…
 - **3 posts** · 3 authors · ~100% Jaccard — Hackers are already laying groundwork to disrupt the 2026 midterms, research says via
 
 ## Cross-narrative actors (this narrative)
@@ -86,18 +88,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (30 posts)
-- election fraud, accountability midterm, corrupt doj, happy talk (8 posts)
-- sanctuary cities, remember vote, elections dem, politicians trying (11 posts)
-- affordability set, migration trend, points continued, backed economic (10 posts)
-- congressional map, majority black, civil rights, legal standard (14 posts)
-- federal judge, carl nichols (11 posts)
-- live house, fest heart, race gmmtv, birdy barista, ppnaravit phuwintang (5 posts)
-- _…16 more emerging theme(s)._
+- election pratt, democrat dominated, ballot harvesting, california communists, poised steal (5 posts)
+- racially drawn, upholds alabama, overturning lower (12 posts)
+- ww2 destroy, coward facist, sorry senile, loves winners, 10000's fascist (9 posts)
+- send message, fair total, ruling impact (5 posts)
+- endorses rep, working tirelessly, votes march, undisclosed illness, kean praising (5 posts)
+- breaking trump, court announcement, major win, midterms ele, nears rulings (8 posts)
+- purpose identify, similarities united, states presidential, peters elections, clerk convicted (7 posts)
+- _…14 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 480 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 494 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
