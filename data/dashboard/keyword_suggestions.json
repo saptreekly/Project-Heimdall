@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-06-04T06:32:11.422607+00:00",
+  "window_days": 14,
+  "dead_keywords": [],
+  "suggestions": [
+    {
+      "query": "2026 house senate midterms",
+      "source": "corpus c-TF-IDF",
+      "score": 67.977,
+      "rationale": "High-lift term in recent posts, uncovered by keyword list."
+    },
+    {
+      "query": "2026 resigns electoral",
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 29 posts)",
+      "score": 29.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 disaster looms",
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 29 posts)",
+      "score": 29.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 state setting",
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 29 posts)",
+      "score": 29.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 hulhumale phase",
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 29 posts)",
+      "score": 29.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 racially drawn",
+      "source": "theme cluster (racially drawn \u00b7 upholds alabama \u00b7 overturning lower, 12 posts)",
+      "score": 12.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 upholds alabama",
+      "source": "theme cluster (racially drawn \u00b7 upholds alabama \u00b7 overturning lower, 12 posts)",
+      "score": 12.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 overturning lower",
+      "source": "theme cluster (racially drawn \u00b7 upholds alabama \u00b7 overturning lower, 12 posts)",
+      "score": 12.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    }
+  ]
+}

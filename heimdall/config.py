@@ -31,7 +31,7 @@ class Settings(BaseSettings):
 
     # X ingest guardrails (unofficial GraphQL; keep conservative)
     x_ingest_enabled: bool = True
-    x_max_keywords_per_ingest: int = 5
+    x_max_keywords_per_ingest: int = 8
     x_max_posts_per_ingest: int = 80
     x_max_tweets_per_search: int = 20
     x_min_seconds_between_searches: float = 3.0

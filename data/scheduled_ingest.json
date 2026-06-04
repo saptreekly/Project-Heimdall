@@ -6,13 +6,32 @@
       "keywords": [
         "2026 midterms",
         "2026 midterm fraud",
-        "2026 red wave"
+        "2026 red wave",
+        "2026 supreme court",
+        "2026 election integrity",
+        "2026 gerrymandering",
+        "2026 midwest democrat"
       ],
       "limit": 60,
-      "fallback_platforms": ["mastodon", "hackernews"],
-      "x_exclude_terms": ["$SPX", "$VIX", "$NDX", "btc", "eth", "crypto", "mkt"],
+      "fallback_platforms": [
+        "mastodon",
+        "hackernews"
+      ],
+      "x_exclude_terms": [
+        "$SPX",
+        "$VIX",
+        "$NDX",
+        "btc",
+        "eth",
+        "crypto",
+        "mkt"
+      ],
       "x_list_sources": [],
-      "reddit_subreddits": ["politics", "news", "Conservative"],
+      "reddit_subreddits": [
+        "politics",
+        "news",
+        "Conservative"
+      ],
       "rotation_strategy": "yield",
       "author_watch_enabled": true
     }

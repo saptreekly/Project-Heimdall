@@ -28,8 +28,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_ROTATION_STATE = ROOT / "data" / "dashboard" / "x_keyword_rotation.json"
 DEFAULT_LOG = ROOT / "data" / "dashboard" / "keyword_rotation_log.jsonl"
 
-MIN_KEYWORDS = 2
-MAX_KEYWORDS = 5
+MIN_KEYWORDS = 3
+MAX_KEYWORDS = 8
 MIN_RUNS_BEFORE_SWAP = 5
 MIN_RUNS_STALE = 3
 STALE_MAX_INSERTED = 2
