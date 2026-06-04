@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-04 04:56:53 UTC
+> Tactical snapshot · 2026-06-04 05:29:30 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **456** |
+| Posts in database | **465** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 479 / 137 |
-| Distinct themes | 19 |
+| Graph nodes / edges | 479 / 138 |
+| Distinct themes | 26 |
 | Duplicate clusters (full DB) | 23 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 0 bots / 369 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **9**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **42**
-- Net new: **535** · re-seen: **123**
-- Duplicate rate: **18.7%**
+- Runs: **43**
+- Net new: **544** · re-seen: **126**
+- Duplicate rate: **18.8%**
 
 ## Sentiment drift
 
@@ -31,12 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · breaking trump, court announcement, major win, midterms ele, nears rulings (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 59 authors · 8 exact · 1 fuzzy subclusters)
-- **Shared frame** · reuters reported, chairman george (133 posts · 93 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · congressional map, majority black, civil rights, legal standard, louisiana callais (15 posts · 12 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · executive order, mail ballot, federal judge, citizenship verification, voters ahead (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · peters elections, clerk convicted, multiple charges, related security, breaches colorado (9 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, major win, nears rulings, watch cheating (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · racially drawn, upholds alabama, overturning lower (12 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · graham platner, susan collins, boom latino, winner odds (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · save america, republican senate, proof citizenship (9 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · affordability set, migration trend, points continued, backed economic (8 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · cheat upcoming, voteblue numbers, hates lose, lost unless (7 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -80,18 +86,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- democrats ideas, cash party, level touch, maga rebuilding (4 posts)
-- broke buried, debt directionless (4 posts)
-- sorry senile, pig bonespur, draft dodger, inbreeds cuz, losers america (9 posts)
-- total votes, stolen judicial, biden's years (8 posts)
-- congressional map, majority black, civil rights, legal standard, louisiana callais (15 posts)
-- executive order, mail ballot, federal judge, citizenship verification, voters ahead (11 posts)
-- peters elections, clerk convicted, multiple charges, related security, breaches colorado (9 posts)
-- _…9 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts)
+- save america, republican senate, proof citizenship (9 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- radical left, sidney powell, voter fraud, breaking president (4 posts)
+- affordability set, migration trend, points continued, backed economic (8 posts)
+- racially drawn, upholds alabama, overturning lower (12 posts)
+- live house, fest heart, race gmmtv, birdy barista, ppnaravit phuwintang (5 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 456 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 465 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
