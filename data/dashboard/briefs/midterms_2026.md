@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-04 11:24:32 UTC
+> Tactical snapshot · 2026-06-04 11:41:40 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **468** |
+| Posts in database | **477** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 482 / 139 |
-| Distinct themes | 24 |
-| Duplicate clusters (full DB) | 23 |
+| Graph nodes / edges | 487 / 144 |
+| Distinct themes | 19 |
+| Duplicate clusters (full DB) | 25 |
 | Fuzzy clusters (snapshot cohort) | 3 |
-| IU astroturf overlap | 0 bots / 371 authors |
+| IU astroturf overlap | 0 bots / 375 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **10**
+- Net-new posts logged: **9**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **47**
-- Net new: **547** · re-seen: **150**
-- Duplicate rate: **21.5%**
+- Runs: **48**
+- Net new: **556** · re-seen: **160**
+- Duplicate rate: **22.3%**
 
 ## Sentiment drift
 
@@ -36,13 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court announcement, nears rulings, watch cheating (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts · 4 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · congressional map, majority black, civil rights, legal standard (13 posts · 11 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · laying groundwork, hackers preparing, local governments, credential theft (10 posts · 6 authors · 3 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · save america, republican senate, proof citizenship, act midterms (9 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · affordability set, migration trend, points continued, backed economic (9 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · graham platner, susan collins, boom latino, winner odds (8 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, major win, midterms ele, nears rulings, watch cheating (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 53 authors · 8 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · racially drawn, alabama map, overturning lower (13 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · affordability set, migration trend, points continued, backed economic (8 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · laying groundwork, hackers preparing, local governments, wave phishing, credential theft (7 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · governor race, bigger primary, days calendar, nation largest (7 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -63,8 +62,8 @@
 - **4 posts** · 1 author(s) — Democrats are out of ideas, out of cash at the party level, and out of touch. MAGA is rebuilding the country. Voters see it. The 2026 midterms will be a reckoning. America is rejecting the old failur…
 - **4 posts** · 1 author(s) — Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat l…
 - **4 posts** · 1 author(s) — 2028 we will vote THUNE OUT Bill Mitchell post If you're wondering why John Thune doesn't eliminate the filibuster, I'll tell you. John Thune, Mitch McConnell and their globalist friends in the Senat…
-- **3 posts** · 3 author(s) — 🔥 Breaking: Trump SUPREME COURT Announcement MAJOR Win 2026 Midterms Ele... via
-- _…16 more exact-duplicate cluster(s) in database._
+- **4 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
+- _…18 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -86,18 +85,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
-- save america, republican senate, proof citizenship, act midterms (9 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- radical left, sidney powell, voter fraud, breaking president (4 posts)
-- affordability set, migration trend, points continued, backed economic (9 posts)
-- congressional map, majority black, civil rights, legal standard (13 posts)
-- live house, fest heart, race gmmtv, birdy barista, ppnaravit phuwintang (5 posts)
-- _…15 more emerging theme(s)._
+- ruling potentially, administration months, plaintiffs renew (7 posts)
+- racially drawn, alabama map, overturning lower (13 posts)
+- sorry senile, pig bonespur, draft dodger, inbreeds cuz, losers america (9 posts)
+- send message, fair total, justice world, sided massacre, sweeps maga (6 posts)
+- fascist redneck, judges cut (4 posts)
+- bernie sanders, kingmaker opinionated, grumpy old, bravo pennlive, poll pennsylvania (5 posts)
+- court announcement, major win, midterms ele, nears rulings, watch cheating (8 posts)
+- _…11 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 468 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 477 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
