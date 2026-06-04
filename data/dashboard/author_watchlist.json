@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 27,
+      "run_counter": 28,
       "authors": {
         "111": {
           "author_id": "111",
@@ -168,45 +168,6 @@
           "last_polled_at": null,
           "last_tweet_at": null,
           "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "109015332": {
-          "author_id": "109015332",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 0,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2025749262315945984": {
-          "author_id": "2025749262315945984",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 0,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1061762696": {
-          "author_id": "1061762696",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 0,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1841,12 +1802,12 @@
           "handle": "tanman_foxbody",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.9299999999999999,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 4,
-          "polls": 0,
-          "inserts_from_polls": 0,
+          "priority": 1.0,
+          "last_polled_at": "2026-06-04T12:32:24.112236+00:00",
+          "last_tweet_at": "2026-06-04T11:51:47+00:00",
+          "inserted_total": 10,
+          "polls": 1,
+          "inserts_from_polls": 3,
           "status": "active"
         },
         "1560723083866083328": {
@@ -1942,6 +1903,45 @@
         },
         "1313591858476482560": {
           "author_id": "1313591858476482560",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1689361538522497024": {
+          "author_id": "1689361538522497024",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "15212187": {
+          "author_id": "15212187",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "21651982": {
+          "author_id": "21651982",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
