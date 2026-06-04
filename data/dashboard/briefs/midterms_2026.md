@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-04 13:36:54 UTC
+> Tactical snapshot · 2026-06-04 14:11:54 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 503 / 158 |
-| Distinct themes | 24 |
+| Distinct themes | 27 |
 | Duplicate clusters (full DB) | 28 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 0 bots / 382 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **5**
-- Net-new posts logged: **14**
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **50**
-- Net new: **573** · re-seen: **169**
-- Duplicate rate: **22.8%**
+- Runs: **51**
+- Net new: **573** · re-seen: **172**
+- Duplicate rate: **23.1%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, midterms ele, nears rulings (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 48 authors · 8 exact · 1 fuzzy subclusters)
-- **Shared frame** · federal judge, carl nichols (17 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · racially drawn, upholds alabama, overturning lower (12 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · mail ballots military, voter proof, america first, executive orders, rinos games (8 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · musk stands, away world's, trillionaire democrats, seizing milestone, fresh rallying (7 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · laying groundwork, hackers preparing, local governments, wave phishing, credential theft (7 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · congressional map, majority black, alabama republican, civil rights, legal standard (16 posts · 13 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge (9 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · affordability set, migration trend, points continued, backed economic (9 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (8 posts · 2 authors · 3 exact · 1 fuzzy subclusters)
+- **Shared frame** · took venezuelan, dictatorship block, openai wednesday (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -88,14 +88,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- election pratt, democrat dominated, ballot harvesting, california communists, poised steal (5 posts)
-- racially drawn, upholds alabama, overturning lower (12 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
+- election fraud, accountability midterm, corrupt doj, happy talk (8 posts)
+- radical left, sidney powell (8 posts)
+- affordability set, migration trend, points continued, backed economic (9 posts)
+- congressional map, majority black, alabama republican, civil rights, legal standard (16 posts)
+- live house, fest heart, birdy barista, ppnaravit phuwintang, posting daily (5 posts)
 - ww2 destroy, coward facist, sorry senile, loves winners, 10000's fascist (9 posts)
-- send message, fair total, ruling impact (5 posts)
-- endorses rep, working tirelessly, votes march, undisclosed illness, kean praising (5 posts)
-- breaking trump, court announcement, major win, midterms ele, nears rulings (8 posts)
-- purpose identify, similarities united, states presidential, peters elections, clerk convicted (7 posts)
-- _…14 more emerging theme(s)._
+- _…19 more emerging theme(s)._
 
 ## Scope note
 
