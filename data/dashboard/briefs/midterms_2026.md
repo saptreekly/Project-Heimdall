@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-04 16:35:30 UTC
+> Tactical snapshot · 2026-06-04 17:28:50 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 537 / 180 |
-| Distinct themes | 24 |
+| Distinct themes | 32 |
 | Duplicate clusters (full DB) | 29 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 0 bots / 398 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **10**
-- Net-new posts logged: **8**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **54**
-- Net new: **606** · re-seen: **189**
-- Duplicate rate: **23.8%**
+- Runs: **55**
+- Net new: **606** · re-seen: **191**
+- Duplicate rate: **24.0%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 41 authors · 8 exact · 1 fuzzy subclusters)
-- **Shared frame** · governor race, acting odni (23 posts · 12 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · pro republican, racially drawn, upholds alabama, overturning lower (12 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · listening voted, office pass (9 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · affordability set, migration trend, points continued, backed economic (7 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · underselling success, winning record, rare advantage (7 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, major win, midterms ele, nears rulings (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · red wave, midwest democrat, resigns electoral, disaster looms, state setting (40 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · congressional map, majority black, louisiana callais (17 posts · 13 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (12 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · camera actual (6 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · affordability set, migration trend, points continued, backed economic (6 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -89,14 +89,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (40 posts)
+- accountability midterm, corrupt doj, happy talk (8 posts)
+- radical left, sidney powell (12 posts)
+- plaintiffs renew, measure additional (6 posts)
+- congressional map, majority black, louisiana callais (17 posts)
 - ww2 destroy, coward facist, sorry senile, losers america, loves winners (16 posts)
-- pro republican, racially drawn, upholds alabama, overturning lower (12 posts)
-- send message, fair total, ruling impact (5 posts)
-- blue wave, polls realizes, drown gop (5 posts)
-- judges cut, chase block (4 posts)
-- listening voted, office pass (9 posts)
-- breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts)
-- _…15 more emerging theme(s)._
+- live house, fest heart, birdy barista, ppnaravit phuwintang, posting daily (5 posts)
+- _…23 more emerging theme(s)._
 
 ## Scope note
 
