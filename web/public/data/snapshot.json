@@ -1,11 +1,11 @@
 {
   "version": 5,
-  "generated_at": "2026-06-04T17:28:50.455545+00:00",
+  "generated_at": "2026-06-04T17:51:47.949812+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
-      "keywords": "author:hulda03",
+      "keywords": "2026 red wave",
       "post_count": 527
     }
   ],
@@ -6116,9 +6116,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "373607124",
               "841489249157468161",
-              "14247236"
+              "14247236",
+              "373607124"
             ]
           }
         ],
@@ -13561,15 +13561,143 @@
             "source_post_id": 422,
             "target_post_id": null,
             "occurred_at": "2026-06-03T13:54:16"
+          },
+          {
+            "source": "224074204",
+            "target": "1841988608825466880",
+            "type": "reply",
+            "source_post_id": 387,
+            "target_post_id": null,
+            "occurred_at": "2026-05-20T15:32:24"
+          },
+          {
+            "source": "1830761186742222854",
+            "target": "109015332",
+            "type": "reply",
+            "source_post_id": 388,
+            "target_post_id": null,
+            "occurred_at": "2026-05-20T15:30:01"
+          },
+          {
+            "source": "1408682098953752578",
+            "target": "2025749262315945984",
+            "type": "reply",
+            "source_post_id": 389,
+            "target_post_id": null,
+            "occurred_at": "2026-05-20T01:39:38"
+          },
+          {
+            "source": "418251491",
+            "target": "829906328147615744",
+            "type": "reply",
+            "source_post_id": 390,
+            "target_post_id": 391,
+            "occurred_at": "2026-05-12T19:46:11"
+          },
+          {
+            "source": "829906328147615744",
+            "target": "1061762696",
+            "type": "reply",
+            "source_post_id": 391,
+            "target_post_id": null,
+            "occurred_at": "2026-05-12T14:46:38"
+          },
+          {
+            "source": "383724130",
+            "target": "1587856302809747458",
+            "type": "reply",
+            "source_post_id": 393,
+            "target_post_id": null,
+            "occurred_at": "2026-05-11T17:26:22"
+          },
+          {
+            "source": "1668016234615668736",
+            "target": "1666961845826224128",
+            "type": "reply",
+            "source_post_id": 395,
+            "target_post_id": null,
+            "occurred_at": "2026-05-03T07:50:00"
+          },
+          {
+            "source": "1812587810408243200",
+            "target": "1879644163769335808",
+            "type": "reply",
+            "source_post_id": 398,
+            "target_post_id": null,
+            "occurred_at": "2026-04-29T21:33:03"
+          },
+          {
+            "source": "1696239039022551040",
+            "target": "1686901686185721857",
+            "type": "reply",
+            "source_post_id": 400,
+            "target_post_id": null,
+            "occurred_at": "2026-04-21T03:57:19"
+          },
+          {
+            "source": "1702231002998091776",
+            "target": "1355721251180961792",
+            "type": "reply",
+            "source_post_id": 404,
+            "target_post_id": null,
+            "occurred_at": "2026-03-26T04:00:55"
+          },
+          {
+            "source": "1428704618696032261",
+            "target": "21612122",
+            "type": "reply",
+            "source_post_id": 405,
+            "target_post_id": null,
+            "occurred_at": "2026-03-25T17:52:04"
+          },
+          {
+            "source": "1645511697820516355",
+            "target": "763094579491008512",
+            "type": "reply",
+            "source_post_id": 406,
+            "target_post_id": null,
+            "occurred_at": "2026-03-13T14:09:44"
+          },
+          {
+            "source": "1634941384221392896",
+            "target": "1879670389057474560",
+            "type": "reply",
+            "source_post_id": 412,
+            "target_post_id": null,
+            "occurred_at": "2026-02-26T20:37:58"
+          },
+          {
+            "source": "2010722250652278784",
+            "target": "537709549",
+            "type": "reply",
+            "source_post_id": 413,
+            "target_post_id": null,
+            "occurred_at": "2026-02-26T05:10:46"
+          },
+          {
+            "source": "385240272",
+            "target": "47973510",
+            "type": "reply",
+            "source_post_id": 414,
+            "target_post_id": null,
+            "occurred_at": "2026-02-22T17:21:05"
+          },
+          {
+            "source": "1597542646158921728",
+            "target": "17980523",
+            "type": "reply",
+            "source_post_id": 416,
+            "target_post_id": null,
+            "occurred_at": "2026-02-18T21:44:42"
           }
         ],
         "stats": {
-          "edge_count": 409,
+          "edge_count": 425,
           "author_count": 398,
           "connected_author_count": 131,
           "isolated_author_count": 267,
           "by_type": {
-            "reply": 409
+            "reply": 425
           }
         }
       },
@@ -18568,10 +18696,10 @@
           }
         ],
         "sightings": {
-          "total_resightings": 2,
+          "total_resightings": 30,
           "total_net_new": 0,
           "daily_resightings": {
-            "2026-06-04": 2
+            "2026-06-04": 30
           },
           "daily_net_new": {}
         }
@@ -18592,7 +18720,7 @@
         "coordination_signal_count": 33,
         "distinct_theme_count": 32,
         "theme_cluster_count": 32,
-        "graph_edge_count": 409,
+        "graph_edge_count": 425,
         "graph_author_count": 398,
         "graph_connected_author_count": 131,
         "graph_coverage_pct": 32.9,
@@ -18607,8 +18735,8 @@
       },
       "brief": {
         "version": 1,
-        "generated_at": "2026-06-04T17:28:50.455545+00:00",
-        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-04 17:28:50 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **527** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.15 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 537 / 180 |\n| Distinct themes | 32 |\n| Duplicate clusters (full DB) | 29 |\n| Fuzzy clusters (snapshot cohort) | 4 |\n| IU astroturf overlap | 0 bots / 398 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **2**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **55**\n- Net new: **606** \u00b7 re-seen: **191**\n- Duplicate rate: **24.0%**\n\n## Sentiment drift\n\n- Trend: **escalating**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 breaking trump, court announcement, major win, midterms ele, nears rulings (8 posts \u00b7 7 authors \u00b7 1 exact \u00b7 1 fuzzy subclusters)\n- **Shared frame** \u00b7 red wave, midwest democrat, resigns electoral, disaster looms, state setting (40 posts \u00b7 2 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 congressional map, majority black, louisiana callais (17 posts \u00b7 13 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Near-copy campaign** \u00b7 radical left, sidney powell (12 posts \u00b7 5 authors \u00b7 2 exact \u00b7 1 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 federal judge (10 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 camera actual (6 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame** \u00b7 affordability set, migration trend, points continued, backed economic (6 posts \u00b7 2 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_39_size_3\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_3authors_4posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j0.94\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **9 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- **8 posts** \u00b7 1 author(s) \u2014 \ud83d\udea8The FBI and DOJ need to go to California now, while the fraud is going on\u2014it's a crime in progress\u2014and investigate and arrest now\u2014not three months from now, before they destroy the evidence.\ud83d\udea8 The Ca\u2026\n- **7 posts** \u00b7 1 author(s) \u2014 \ud83d\udca9 and RINOs \ud83d\udca9 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! \ud83d\udca5TERMINATE THE FILIBUSTER \u2014 NOW AND VOTE! \ud83d\udca5 \u2705Fully fund DHS \u2013 It\u2019s\u2026\n- **6 posts** \u00b7 1 author(s) \u2014 Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and\u2026\n- **4 posts** \u00b7 1 author(s) \u2014 Democrats are out of ideas, out of cash at the party level, and out of touch. MAGA is rebuilding the country. Voters see it. The 2026 midterms will be a reckoning. America is rejecting the old failur\u2026\n- _\u202622 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **4 posts** \u00b7 4 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udd25 Breaking: Trump SUPREME COURT Announcement MAJOR Win 2026 Midterms Ele... via\n- **4 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Elon Musk stands days away from becoming the world's first trillionaire, and Democrats are seizing on the milestone as a fresh rallying cry against extreme wealth heading into the 2026 midterms. Read\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Hackers are already laying groundwork to disrupt the 2026 midterms, research says via\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (40 posts)\n- accountability midterm, corrupt doj, happy talk (8 posts)\n- radical left, sidney powell (12 posts)\n- plaintiffs renew, measure additional (6 posts)\n- congressional map, majority black, louisiana callais (17 posts)\n- ww2 destroy, coward facist, sorry senile, losers america, loves winners (16 posts)\n- live house, fest heart, birdy barista, ppnaravit phuwintang, posting daily (5 posts)\n- _\u202623 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 527 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
+        "generated_at": "2026-06-04T17:51:47.949812+00:00",
+        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-04 17:51:47 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **527** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.15 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 537 / 180 |\n| Distinct themes | 32 |\n| Duplicate clusters (full DB) | 29 |\n| Fuzzy clusters (snapshot cohort) | 4 |\n| IU astroturf overlap | 0 bots / 398 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **30**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **56**\n- Net new: **606** \u00b7 re-seen: **221**\n- Duplicate rate: **26.7%**\n\n## Sentiment drift\n\n- Trend: **escalating**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 breaking trump, court announcement, major win, midterms ele, nears rulings (8 posts \u00b7 7 authors \u00b7 1 exact \u00b7 1 fuzzy subclusters)\n- **Shared frame** \u00b7 red wave, midwest democrat, resigns electoral, disaster looms, state setting (40 posts \u00b7 2 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 congressional map, majority black, louisiana callais (17 posts \u00b7 13 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Near-copy campaign** \u00b7 radical left, sidney powell (12 posts \u00b7 5 authors \u00b7 2 exact \u00b7 1 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 federal judge (10 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 camera actual (6 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame** \u00b7 affordability set, migration trend, points continued, backed economic (6 posts \u00b7 2 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_39_size_3\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_3authors_4posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j0.94\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **9 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- **8 posts** \u00b7 1 author(s) \u2014 \ud83d\udea8The FBI and DOJ need to go to California now, while the fraud is going on\u2014it's a crime in progress\u2014and investigate and arrest now\u2014not three months from now, before they destroy the evidence.\ud83d\udea8 The Ca\u2026\n- **7 posts** \u00b7 1 author(s) \u2014 \ud83d\udca9 and RINOs \ud83d\udca9 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! \ud83d\udca5TERMINATE THE FILIBUSTER \u2014 NOW AND VOTE! \ud83d\udca5 \u2705Fully fund DHS \u2013 It\u2019s\u2026\n- **6 posts** \u00b7 1 author(s) \u2014 Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk \ud83e\udd21 No one is being held accountable for - mounting federal debt - waste, fraud and\u2026\n- **4 posts** \u00b7 1 author(s) \u2014 Democrats are out of ideas, out of cash at the party level, and out of touch. MAGA is rebuilding the country. Voters see it. The 2026 midterms will be a reckoning. America is rejecting the old failur\u2026\n- _\u202622 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **4 posts** \u00b7 4 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udd25 Breaking: Trump SUPREME COURT Announcement MAJOR Win 2026 Midterms Ele... via\n- **4 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Elon Musk stands days away from becoming the world's first trillionaire, and Democrats are seizing on the milestone as a fresh rallying cry against extreme wealth heading into the 2026 midterms. Read\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Hackers are already laying groundwork to disrupt the 2026 midterms, research says via\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (40 posts)\n- accountability midterm, corrupt doj, happy talk (8 posts)\n- radical left, sidney powell (12 posts)\n- plaintiffs renew, measure additional (6 posts)\n- congressional map, majority black, louisiana callais (17 posts)\n- ww2 destroy, coward facist, sorry senile, losers america, loves winners (16 posts)\n- live house, fest heart, birdy barista, ppnaravit phuwintang, posting daily (5 posts)\n- _\u202623 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 527 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
         "meta": {
           "narrative_name": "midterms_2026",
           "posts_total_db": 527,
@@ -18642,19 +18770,19 @@
           "ingest_yield": {
             "available": true,
             "window_days": 14,
-            "runs": 55,
+            "runs": 56,
             "net_new": 606,
-            "duplicates": 191,
-            "filtered": 52,
-            "fetched": 849,
-            "duplicate_rate": 0.24,
-            "latest_run_at": "2026-06-04T17:28:48.980629+00:00"
+            "duplicates": 221,
+            "filtered": 62,
+            "fetched": 889,
+            "duplicate_rate": 0.267,
+            "latest_run_at": "2026-06-04T17:51:46.394044+00:00"
           },
           "sightings": {
-            "total_resightings": 2,
+            "total_resightings": 30,
             "total_net_new": 0,
             "daily_resightings": {
-              "2026-06-04": 2
+              "2026-06-04": 30
             },
             "daily_net_new": {}
           },
@@ -19346,7 +19474,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-04",
-      "requests_used": 21
+      "requests_used": 23
     }
   }
 }
