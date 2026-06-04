@@ -1,48 +1,43 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-04 14:11:54 UTC
+> Tactical snapshot · 2026-06-04 15:36:38 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **494** |
+| Posts in database | **512** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 503 / 158 |
-| Distinct themes | 27 |
+| Graph nodes / edges | 523 / 169 |
+| Distinct themes | 25 |
 | Duplicate clusters (full DB) | 28 |
 | Fuzzy clusters (snapshot cohort) | 4 |
-| IU astroturf overlap | 0 bots / 382 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **0**
+| IU astroturf overlap | 0 bots / 392 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **51**
-- Net new: **573** · re-seen: **172**
-- Duplicate rate: **23.1%**
+- Runs: **52**
+- Net new: **591** · re-seen: **172**
+- Duplicate rate: **22.5%**
 
 ## Sentiment drift
 
-- Trend: **stable**
+- Trend: **escalating**
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · breaking trump, court announcement, major win, midterms ele, nears rulings (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · congressional map, majority black, alabama republican, civil rights, legal standard (16 posts · 13 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge (9 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · affordability set, migration trend, points continued, backed economic (9 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · radical left, sidney powell (8 posts · 2 authors · 3 exact · 1 fuzzy subclusters)
-- **Shared frame** · took venezuelan, dictatorship block, openai wednesday (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 43 authors · 8 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge, citizenship verification (16 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · rights act, scotus stayed, partisan gerrymandering, legislatively enacted (10 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · blue wave, polls realizes, drown gop (10 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · musk stands, away world's, trillionaire democrats, seizing milestone, fresh rallying (9 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · pro republican, racially drawn, upholds alabama, overturning lower (7 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -60,11 +55,11 @@
 
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
+- **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
 - **6 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
 - **4 posts** · 1 author(s) — Democrats are out of ideas, out of cash at the party level, and out of touch. MAGA is rebuilding the country. Voters see it. The 2026 midterms will be a reckoning. America is rejecting the old failur…
 - **4 posts** · 1 author(s) — Trump &amp; the CorruptGOP are doing everything to cheat in the upcoming midterms. Republicans know everyone hates them &amp; they will lose in 2026, just like trump lost in 2020, unless they cheat l…
-- **4 posts** · 1 author(s) — 2028 we will vote THUNE OUT Bill Mitchell post If you're wondering why John Thune doesn't eliminate the filibuster, I'll tell you. John Thune, Mitch McConnell and their globalist friends in the Senat…
 - _…21 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
@@ -88,18 +83,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
-- election fraud, accountability midterm, corrupt doj, happy talk (8 posts)
-- radical left, sidney powell (8 posts)
-- affordability set, migration trend, points continued, backed economic (9 posts)
-- congressional map, majority black, alabama republican, civil rights, legal standard (16 posts)
-- live house, fest heart, birdy barista, ppnaravit phuwintang, posting daily (5 posts)
+- rights act, scotus stayed, partisan gerrymandering, legislatively enacted (10 posts)
+- blue wave, polls realizes, drown gop (10 posts)
 - ww2 destroy, coward facist, sorry senile, loves winners, 10000's fascist (9 posts)
-- _…19 more emerging theme(s)._
+- endorses rep, working tirelessly, votes march, undisclosed illness, kean praising (7 posts)
+- send message, fair total, ruling impact (5 posts)
+- federal judge, citizenship verification (16 posts)
+- musk stands, away world's, trillionaire democrats, seizing milestone, fresh rallying (9 posts)
+- _…16 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 494 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 512 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
