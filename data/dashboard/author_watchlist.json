@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 58,
+      "run_counter": 59,
       "authors": {
         "111": {
           "author_id": "111",
@@ -42,19 +42,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1074699729794199552": {
-          "author_id": "1074699729794199552",
-          "handle": "Freedom_reign4",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1604925289406304257": {
           "author_id": "1604925289406304257",
           "handle": "hulda03",
@@ -65,19 +52,6 @@
           "last_tweet_at": "2026-06-04T12:05:53+00:00",
           "inserted_total": 2,
           "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1058038885765255175": {
-          "author_id": "1058038885765255175",
-          "handle": "RedistrictNet",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
@@ -92,32 +66,6 @@
           "inserted_total": 22,
           "polls": 1,
           "inserts_from_polls": 9,
-          "status": "active"
-        },
-        "1730531341106634752": {
-          "author_id": "1730531341106634752",
-          "handle": "E_DataGuy",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "114030608": {
-          "author_id": "114030608",
-          "handle": "dyon1sus",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1933535245103403008": {
@@ -1940,8 +1888,60 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "875856268056969216": {
-          "author_id": "875856268056969216",
+        "1972424315078414336": {
+          "author_id": "1972424315078414336",
+          "handle": "davidtetzlaff20",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1846659947897012225": {
+          "author_id": "1846659947897012225",
+          "handle": "GerryArnold2024",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1707763125280219136": {
+          "author_id": "1707763125280219136",
+          "handle": "AesPolitics1",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "360710726": {
+          "author_id": "360710726",
+          "handle": "dizzyoungdad",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1666277865317634048": {
+          "author_id": "1666277865317634048",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
