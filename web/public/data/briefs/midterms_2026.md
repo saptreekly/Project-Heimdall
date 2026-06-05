@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 18:30:06 UTC
+> Tactical snapshot · 2026-06-05 19:23:11 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **644** |
+| Posts in database | **652** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 632 / 227 |
-| Distinct themes | 37 |
+| Graph nodes / edges | 642 / 233 |
+| Distinct themes | 38 |
 | Duplicate clusters (full DB) | 36 |
 | Fuzzy clusters (snapshot cohort) | 5 |
-| IU astroturf overlap | 0 bots / 457 authors |
+| IU astroturf overlap | 0 bots / 464 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **6**
+- Net-new posts logged: **8**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **83**
-- Net new: **723** · re-seen: **354**
-- Duplicate rate: **32.9%**
+- Runs: **84**
+- Net new: **731** · re-seen: **360**
+- Duplicate rate: **33.0%**
 
 ## Sentiment drift
 
@@ -38,10 +38,10 @@
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
 - **Shared frame (emerging)** · congressional map, majority black, alabama republican, rights act, louisiana callais (17 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (15 posts · 5 authors · 2 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · radical left, sidney powell (14 posts · 6 authors · 4 exact · 3 fuzzy subclusters)
-- **Shared frame (emerging)** · verified lists (10 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · iran completely, humiliated global, cowardly defense, skyrocketing domestic (8 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal elections, verified lists (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · china expandiu, investimentos brasil, longo dos, mandatos lula (8 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · graham platner, winner odds, susan collins, house governors (8 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -90,19 +90,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (33 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- data centers, laying groundwork, local communities, hackers preparing, phishing credential (15 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts)
 - cash party, level touch, country voters (5 posts)
 - ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
 - congressional map, majority black, alabama republican, rights act, louisiana callais (17 posts)
-- graham platner, winner odds, susan collins, house governors (7 posts)
+- graham platner, winner odds, susan collins, house governors (8 posts)
 - awakening largest, voting force, actually believe (5 posts)
 - _…27 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 644 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 652 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

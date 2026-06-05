@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 62,
+      "run_counter": 63,
       "authors": {
         "111": {
           "author_id": "111",
@@ -68,58 +68,6 @@
           "inserts_from_polls": 9,
           "status": "active"
         },
-        "881377104": {
-          "author_id": "881377104",
-          "handle": "ErnieMilleur",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-05T18:30:01.164540+00:00",
-          "last_tweet_at": "2026-06-03T11:16:33+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1276904608032591875": {
-          "author_id": "1276904608032591875",
-          "handle": "FitzgeraldJr17",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "460685093": {
-          "author_id": "460685093",
-          "handle": "loosecannon8282",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "164748585": {
-          "author_id": "164748585",
-          "handle": "cjanderson1988",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "258495978": {
           "author_id": "258495978",
           "handle": "GrumpyTechBro",
@@ -130,19 +78,6 @@
           "last_tweet_at": "2026-06-04T16:49:18+00:00",
           "inserted_total": 2,
           "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1855450319011885056": {
-          "author_id": "1855450319011885056",
-          "handle": "runningtojesus1",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
@@ -159,32 +94,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1625752063127830528": {
-          "author_id": "1625752063127830528",
-          "handle": "CovertRecon_17",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1593590615987687425": {
-          "author_id": "1593590615987687425",
-          "handle": "Bebe6491",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "940462152": {
           "author_id": "940462152",
           "handle": "JmkWalkow",
@@ -196,19 +105,6 @@
           "inserted_total": 4,
           "polls": 1,
           "inserts_from_polls": 1,
-          "status": "active"
-        },
-        "1525889716431728640": {
-          "author_id": "1525889716431728640",
-          "handle": "ForIntOrg",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1673752635587829770": {
@@ -1940,8 +1836,112 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1813198414722588672": {
-          "author_id": "1813198414722588672",
+        "1597542646158921728": {
+          "author_id": "1597542646158921728",
+          "handle": "head_debora",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1391738824846286851": {
+          "author_id": "1391738824846286851",
+          "handle": "FutureAIRepeat",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1753593213489700864": {
+          "author_id": "1753593213489700864",
+          "handle": "The_Patriot_Guy",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "15738163": {
+          "author_id": "15738163",
+          "handle": "ohiogop",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1637819698917113862": {
+          "author_id": "1637819698917113862",
+          "handle": "MtLilly1976",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1715752397254078464": {
+          "author_id": "1715752397254078464",
+          "handle": "InfraTechHub",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1494501155128369156": {
+          "author_id": "1494501155128369156",
+          "handle": "d2wuzup",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1845139142474076164": {
+          "author_id": "1845139142474076164",
+          "handle": "HHSKLG32",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1355721251180961792": {
+          "author_id": "1355721251180961792",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
