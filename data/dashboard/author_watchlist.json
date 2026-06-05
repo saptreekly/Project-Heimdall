@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 53,
+      "run_counter": 54,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1646,12 +1646,12 @@
           "handle": "LibWatchUSA",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.93,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 4,
-          "polls": 0,
-          "inserts_from_polls": 0,
+          "priority": 1.0,
+          "last_polled_at": "2026-06-05T13:32:00.218442+00:00",
+          "last_tweet_at": "2026-06-05T11:51:41+00:00",
+          "inserted_total": 6,
+          "polls": 1,
+          "inserts_from_polls": 1,
           "status": "active"
         },
         "248437936": {
@@ -1940,8 +1940,8 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "216881337": {
-          "author_id": "216881337",
+        "109065990": {
+          "author_id": "109065990",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
