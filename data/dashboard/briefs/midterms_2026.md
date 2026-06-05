@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 15:24:35 UTC
+> Tactical snapshot · 2026-06-05 15:42:11 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **610** |
+| Posts in database | **628** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 601 / 210 |
-| Distinct themes | 39 |
-| Duplicate clusters (full DB) | 34 |
-| Fuzzy clusters (snapshot cohort) | 3 |
-| IU astroturf overlap | 0 bots / 438 authors |
+| Graph nodes / edges | 616 / 218 |
+| Distinct themes | 31 |
+| Duplicate clusters (full DB) | 35 |
+| Fuzzy clusters (snapshot cohort) | 4 |
+| IU astroturf overlap | 0 bots / 448 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **18**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **77**
-- Net new: **689** · re-seen: **320**
-- Duplicate rate: **31.7%**
+- Runs: **78**
+- Net new: **707** · re-seen: **322**
+- Duplicate rate: **31.3%**
 
 ## Sentiment drift
 
@@ -32,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · congressional map, majority black, louisiana callais (14 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · graham platner, winner odds, susan collins (11 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · cheat upcoming, voteblue numbers, hates lose, lost unless (10 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · voter fraud, radical left, sidney powell (10 posts · 2 authors · 3 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · endorses rep, working tirelessly, votes march, undisclosed illness, kean praising (7 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · took venezuelan, dictatorship block, executive order (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge, voter rolls (13 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · civil rights, scotus stayed, partisan gerrymandering (11 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · reuters reported, strait hormuz, public health, normal atlantic, middle east (9 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · data centers, laying groundwork, local communities, power grids, hackers preparing (8 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · send message, respect white (8 posts · 5 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · underselling success, second term, winning record (7 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -61,8 +66,8 @@
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
 - **6 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
-- **5 posts** · 1 author(s) — Gen Z &amp; Millennials: We’ve been ghosted by the system, but we’re the awakening. The largest voting force ever. No more barriers—it’s time for affordable homes and a future we actually believe in.…
-- _…26 more exact-duplicate cluster(s) in database._
+- **6 posts** · 1 author(s) — 🔥 “I WILL deliver Voter ID, proof of citizenship, and an end to mass mail-in ballots (except for military and disabled voters) — ONE WAY OR ANOTHER. Whether Congress approves it or not.” — President…
+- _…27 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -73,6 +78,7 @@ _None (need ≥5 authors in 90s window)._
 - **4 posts** · 4 authors · ~100% Jaccard — 🔥 Breaking: Trump SUPREME COURT Announcement MAJOR Win 2026 Midterms Ele... via
 - **4 posts** · 3 authors · ~100% Jaccard — Elon Musk stands days away from becoming the world's first trillionaire, and Democrats are seizing on the milestone as a fresh rallying cry against extreme wealth heading into the 2026 midterms. Read…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨BREAKING: Teamsters Union, who is historically pro Democrat will start donating to Republicans for the upcoming 2026 Midterms Elections! Democrat Party has collapsed
+- **2 posts** · 2 authors · ~90% Jaccard — 🗺️ 2026 MIDTERMS REDISTRICTING UPDATE 🗺️ 🔴 Republican gains: 📍TX: +5 📍NC: +1 📍MO: +1 📍FL: +4 📍OH: +2 📍TN: +1 📍LA: +1 📍AL: +1 🔵 Democratic gains: 📍CA: +5 📍UT: +1 ❌ Failed gerrymanders: 📍VA: +4 D 📍SC:…
 
 ## Cross-narrative actors (this narrative)
 
@@ -84,19 +90,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (30 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- voter fraud, radical left, sidney powell (10 posts)
-- cash party, level touch, maga rebuilding, country voters (5 posts)
-- ww2 destroy, won't tolerate, coward facist, sorry senile, losers america (18 posts)
-- congressional map, majority black, louisiana callais (14 posts)
-- graham platner, winner odds, susan collins (11 posts)
-- zionistwarcriminal's lobby's (6 posts)
-- _…30 more emerging theme(s)._
+- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
+- civil rights, scotus stayed, partisan gerrymandering (11 posts)
+- send message, respect white (8 posts)
+- strengthinnumbers democrats (6 posts)
+- awakening largest, voting force, actually believe (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (7 posts)
+- _…21 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 610 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 628 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
