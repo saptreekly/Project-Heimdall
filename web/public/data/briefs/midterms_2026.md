@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 06:05:03 UTC
+> Tactical snapshot · 2026-06-05 06:48:42 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **593** |
+| Posts in database | **595** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 585 / 201 |
-| Distinct themes | 37 |
+| Graph nodes / edges | 588 / 203 |
+| Distinct themes | 27 |
 | Duplicate clusters (full DB) | 33 |
-| Fuzzy clusters (snapshot cohort) | 4 |
-| IU astroturf overlap | 0 bots / 427 authors |
+| Fuzzy clusters (snapshot cohort) | 3 |
+| IU astroturf overlap | 0 bots / 429 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **4**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **17**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **69**
-- Net new: **672** · re-seen: **262**
-- Duplicate rate: **28.1%**
+- Runs: **70**
+- Net new: **674** · re-seen: **279**
+- Duplicate rate: **29.3%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · executive order, federal judge (12 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · rights act, racially drawn, scotus stayed (11 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · graham platner, susan collins, winner odds (10 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · steve hilton, judges avoid, looking overly, political announce, senior weeks (10 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · radical left, sidney powell (10 posts · 4 authors · 3 exact · 2 fuzzy subclusters)
-- **Shared frame** · cheat upcoming, voteblue numbers, hates lose, lost unless (9 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame** · midterms, wave, red, trump (203 posts · 11 authors · 8 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · pro republican, scotus stayed, partisan gerrymandering, map effect (11 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · send message, 'blue wave', campaigns fundraising (11 posts · 7 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · executive order, federal judge (11 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · shapiro pritzker, fair total, historic loss, completely overhaul (9 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · purpose identify, similarities united, tina peters, elections clerk (8 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -75,7 +75,6 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **2 posts** · 2 authors · ~100% Jaccard — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **4 posts** · 4 authors · ~100% Jaccard — 🔥 Breaking: Trump SUPREME COURT Announcement MAJOR Win 2026 Midterms Ele... via
 - **4 posts** · 3 authors · ~100% Jaccard — Elon Musk stands days away from becoming the world's first trillionaire, and Democrats are seizing on the milestone as a fresh rallying cry against extreme wealth heading into the 2026 midterms. Read…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨BREAKING: Teamsters Union, who is historically pro Democrat will start donating to Republicans for the upcoming 2026 Midterms Elections! Democrat Party has collapsed
@@ -90,19 +89,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (38 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- radical left, sidney powell (10 posts)
-- ww2 destroy, won't tolerate, coward facist, sorry senile, losers america (18 posts)
-- rights act, racially drawn, scotus stayed (11 posts)
-- graham platner, susan collins, winner odds (10 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (6 posts)
+- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
+- pro republican, scotus stayed, partisan gerrymandering, map effect (11 posts)
+- send message, 'blue wave', campaigns fundraising (11 posts)
+- strengthinnumbers democrats (6 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- _…28 more emerging theme(s)._
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- shapiro pritzker, fair total, historic loss, completely overhaul (9 posts)
+- _…19 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 593 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 595 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
