@@ -1,20 +1,20 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 15:42:11 UTC
+> Tactical snapshot · 2026-06-05 16:17:19 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **628** |
+| Posts in database | **633** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 616 / 218 |
-| Distinct themes | 31 |
+| Graph nodes / edges | 620 / 223 |
+| Distinct themes | 39 |
 | Duplicate clusters (full DB) | 35 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 0 bots / 448 authors |
@@ -22,12 +22,12 @@
 ## Ingest activity
 
 - Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **18**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **78**
-- Net new: **707** · re-seen: **322**
+- Runs: **79**
+- Net new: **712** · re-seen: **324**
 - Duplicate rate: **31.3%**
 
 ## Sentiment drift
@@ -37,12 +37,11 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, voter rolls (13 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · civil rights, scotus stayed, partisan gerrymandering (11 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · reuters reported, strait hormuz, public health, normal atlantic, middle east (9 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · data centers, laying groundwork, local communities, power grids, hackers preparing (8 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · send message, respect white (8 posts · 5 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · underselling success, second term, winning record (7 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · congressional map, majority black, alabama republican, rights act, louisiana callais (15 posts · 11 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · iran completely, humiliated global, cowardly defense, skyrocketing domestic (8 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · graham platner, winner odds, susan collins, house governors (8 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · judges cut, chase block (8 posts · 4 authors · 2 exact · 2 fuzzy subclusters)
+- **Shared frame (emerging)** · camera actual (7 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -90,18 +89,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (31 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- voter fraud, radical left, sidney powell (11 posts)
+- data centers, local communities, power grids, hackers preparing, governments face (5 posts)
 - ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
-- civil rights, scotus stayed, partisan gerrymandering (11 posts)
-- send message, respect white (8 posts)
-- strengthinnumbers democrats (6 posts)
+- congressional map, majority black, alabama republican, rights act, louisiana callais (15 posts)
+- graham platner, winner odds, susan collins, house governors (8 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (7 posts)
-- _…21 more emerging theme(s)._
+- _…30 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 628 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 633 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
