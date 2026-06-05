@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 11:36:55 UTC
+> Tactical snapshot · 2026-06-05 11:51:11 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 595 / 206 |
-| Distinct themes | 26 |
+| Distinct themes | 38 |
 | Duplicate clusters (full DB) | 33 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 0 bots / 435 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **13**
-- Net-new posts logged: **7**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **72**
-- Net new: **681** · re-seen: **298**
-- Duplicate rate: **30.4%**
+- Runs: **73**
+- Net new: **681** · re-seen: **300**
+- Duplicate rate: **30.6%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · midterms, wave, red, trump (203 posts · 8 authors · 8 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · congressional map, majority black, civil rights, louisiana callais, racial discrimination (15 posts · 11 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, voter rolls (13 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · purpose identify, similarities united, tina peters, elections clerk (8 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · 'blue wave', fair total, nick fuentes (8 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · underselling success, winning record, rare advantage (7 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · congressional map, majority black, rights act, louisiana callais (14 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge (11 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · cheat upcoming, voteblue numbers, hates lose, lost unless (10 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame** · graham platner, susan collins, winner odds (10 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (10 posts · 2 authors · 3 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · pre rigged, send message, real pressure (8 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -89,14 +89,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
-- congressional map, majority black, civil rights, louisiana callais, racial discrimination (15 posts)
-- strengthinnumbers democrats (6 posts)
-- send message, respect white, case fraudulent (6 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- 'blue wave', fair total, nick fuentes (8 posts)
-- _…18 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (30 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- radical left, sidney powell (10 posts)
+- ww2 destroy, won't tolerate, coward facist, sorry senile, losers america (18 posts)
+- congressional map, majority black, rights act, louisiana callais (14 posts)
+- graham platner, susan collins, winner odds (10 posts)
+- pre rigged, send message, real pressure (8 posts)
+- economy concern, news worry, approach doubt (7 posts)
+- _…29 more emerging theme(s)._
 
 ## Scope note
 
