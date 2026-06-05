@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 22:07:41 UTC
+> Tactical snapshot · 2026-06-05 22:46:08 UTC
 
 ## Corpus
 
@@ -14,19 +14,19 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 661 / 243 |
-| Distinct themes | 35 |
+| Distinct themes | 32 |
 | Duplicate clusters (full DB) | 38 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 0 bots / 477 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **9**
-- Net-new posts logged: **11**
+- Re-sightings (duplicate encounters): **5**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **88**
+- Runs: **89**
 - Net new: **750** · re-seen: **382**
 - Duplicate rate: **33.7%**
 
@@ -36,12 +36,13 @@
 
 ## Layered coordination (frames)
 
+- **Exact duplicate campaign** · strike laws, allowing late (11 posts · 8 authors · 2 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · strike laws, allowing late (5 posts · 5 authors · 2 exact · 2 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, verified lists, citizenship verification (14 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · pro republican, scotus stayed, partisan gerrymandering, rights act (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · iran completely, humiliated global, cowardly defense (10 posts · 5 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · reuters reported, strait hormuz, public health, normal atlantic, middle east (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge, governor race, verified lists (18 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · netanyahu giveth, total leaning (14 posts · 6 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · rights act, pro republican, scotus stayed (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · listening voted, office pass, needs immediately (9 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · purpose identify, similarities united, tina peters, elections clerk (8 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -91,15 +92,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- pro republican, scotus stayed, partisan gerrymandering, rights act (12 posts)
-- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
-- iran completely, humiliated global, cowardly defense (10 posts)
+- red wave, radical left, midwest democrat, resigns electoral, disaster looms (30 posts)
+- ww2 destroy, won't tolerate, coward facist, sorry senile, losers america (18 posts)
+- netanyahu giveth, total leaning (14 posts)
+- rights act, pro republican, scotus stayed (12 posts)
 - awakening largest, voting force, actually believe (5 posts)
 - midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (6 posts)
-- blue wave, polls realizes, drown gop (7 posts)
-- _…24 more emerging theme(s)._
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- _…23 more emerging theme(s)._
 
 ## Scope note
 
