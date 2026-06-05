@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 18:04:50 UTC
+> Tactical snapshot · 2026-06-05 18:30:06 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 632 / 227 |
-| Distinct themes | 31 |
+| Distinct themes | 37 |
 | Duplicate clusters (full DB) | 36 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 0 bots / 457 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **12**
-- Net-new posts logged: **7**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **82**
-- Net new: **723** · re-seen: **353**
-- Duplicate rate: **32.8%**
+- Runs: **83**
+- Net new: **723** · re-seen: **354**
+- Duplicate rate: **32.9%**
 
 ## Sentiment drift
 
@@ -37,12 +37,11 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, verified lists (14 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · civil rights, scotus stayed, partisan gerrymandering (13 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · speaker mike, bullish chances (11 posts · 7 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · purpose identify, similarities united, tina peters, elections clerk (8 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · reuters reported, strait hormuz, public health, normal atlantic, middle east (8 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · fascist redneck, judges cut, chase block (8 posts · 6 authors · 2 exact · 3 fuzzy subclusters)
+- **Shared frame (emerging)** · congressional map, majority black, alabama republican, rights act, louisiana callais (17 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (15 posts · 5 authors · 2 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (14 posts · 6 authors · 4 exact · 3 fuzzy subclusters)
+- **Shared frame (emerging)** · verified lists (10 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · iran completely, humiliated global, cowardly defense, skyrocketing domestic (8 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -91,14 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- civil rights, scotus stayed, partisan gerrymandering (13 posts)
-- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
-- speaker mike, bullish chances (11 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (33 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- data centers, laying groundwork, local communities, hackers preparing, phishing credential (15 posts)
+- cash party, level touch, country voters (5 posts)
+- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
+- congressional map, majority black, alabama republican, rights act, louisiana callais (17 posts)
+- graham platner, winner odds, susan collins, house governors (7 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
-- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- _…23 more emerging theme(s)._
+- _…27 more emerging theme(s)._
 
 ## Scope note
 
