@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 06:48:42 UTC
+> Tactical snapshot · 2026-06-05 07:18:31 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 588 / 203 |
-| Distinct themes | 27 |
+| Distinct themes | 38 |
 | Duplicate clusters (full DB) | 33 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 0 bots / 429 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **17**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **6**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **70**
-- Net new: **674** · re-seen: **279**
-- Duplicate rate: **29.3%**
+- Runs: **71**
+- Net new: **674** · re-seen: **285**
+- Duplicate rate: **29.7%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · midterms, wave, red, trump (203 posts · 11 authors · 8 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · pro republican, scotus stayed, partisan gerrymandering, map effect (11 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · send message, 'blue wave', campaigns fundraising (11 posts · 7 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · executive order, federal judge (11 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · shapiro pritzker, fair total, historic loss, completely overhaul (9 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · purpose identify, similarities united, tina peters, elections clerk (8 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · rights act, racially drawn, scotus stayed (11 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · graham platner, susan collins, winner odds (11 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (10 posts · 2 authors · 3 exact · 1 fuzzy subclusters)
+- **Shared frame** · cheat upcoming, voteblue numbers, hates lose, lost unless (9 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · republican senate, camera actual (7 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -89,14 +89,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
-- pro republican, scotus stayed, partisan gerrymandering, map effect (11 posts)
-- send message, 'blue wave', campaigns fundraising (11 posts)
-- strengthinnumbers democrats (6 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (39 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- radical left, sidney powell (10 posts)
+- ww2 destroy, won't tolerate, coward facist, sorry senile, losers america (18 posts)
+- rights act, racially drawn, scotus stayed (11 posts)
+- graham platner, susan collins, winner odds (11 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (6 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- shapiro pritzker, fair total, historic loss, completely overhaul (9 posts)
-- _…19 more emerging theme(s)._
+- _…29 more emerging theme(s)._
 
 ## Scope note
 
