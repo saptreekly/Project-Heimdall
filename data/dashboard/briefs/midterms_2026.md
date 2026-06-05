@@ -1,42 +1,48 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-04 23:43:32 UTC
+> Tactical snapshot · 2026-06-05 00:21:19 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **564** |
+| Posts in database | **577** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 559 / 189 |
-| Distinct themes | 23 |
-| Duplicate clusters (full DB) | 32 |
+| Graph nodes / edges | 571 / 196 |
+| Distinct themes | 27 |
+| Duplicate clusters (full DB) | 33 |
 | Fuzzy clusters (snapshot cohort) | 3 |
-| IU astroturf overlap | 0 bots / 412 authors |
+| IU astroturf overlap | 0 bots / 418 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **6**
+- Net-new posts logged: **13**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **65**
-- Net new: **643** · re-seen: **245**
-- Duplicate rate: **27.6%**
+- Runs: **66**
+- Net new: **656** · re-seen: **251**
+- Duplicate rate: **27.7%**
 
 ## Sentiment drift
 
-- Trend: **escalating**
+- Trend: **stable**
 
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · midterms, trump, fraud, elections (171 posts · 25 authors · 7 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · red wave, forced labor, switches logged, republican registration, generic ballot (31 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · congressional map, majority black, civil rights, louisiana callais, racial discrimination (15 posts · 12 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge (12 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · listening voted, office pass (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 19 authors · 8 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · pro republican, racially drawn, scotus stayed, partisan gerrymandering (11 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · gavin newsome, shapiro pritzker, listening voted, office pass (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · 'blue wave', writes strong, mayors influence, nick fuentes (8 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · musk stands, away world's, trillionaire democrats, seizing milestone, fresh rallying (7 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · randy feenstra, governor race, xavier becerra (7 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -61,7 +67,7 @@
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
 - **6 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
 - **5 posts** · 1 author(s) — Gen Z &amp; Millennials: We’ve been ghosted by the system, but we’re the awakening. The largest voting force ever. No more barriers—it’s time for affordable homes and a future we actually believe in.…
-- _…24 more exact-duplicate cluster(s) in database._
+- _…25 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -83,18 +89,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, forced labor, switches logged, republican registration, generic ballot (31 posts)
-- reuters reported, strait hormuz, public health, normal atlantic, pre rigged (10 posts)
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (17 posts)
-- congressional map, majority black, civil rights, louisiana callais, racial discrimination (15 posts)
+- ww2 destroy, coward facist, sorry senile, losers america, loves winners (18 posts)
+- pro republican, racially drawn, scotus stayed, partisan gerrymandering (11 posts)
 - awakening largest, voting force, actually believe (5 posts)
 - dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- endorses rep, working tirelessly, votes march, undisclosed illness, kean praising (8 posts)
-- _…14 more emerging theme(s)._
+- total votes, justice world, sided massacre, sweeps maga, ruling impact (5 posts)
+- judges cut, chase block (4 posts)
+- breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 564 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 577 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
