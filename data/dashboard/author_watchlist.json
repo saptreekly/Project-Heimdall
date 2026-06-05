@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 64,
+      "run_counter": 65,
       "authors": {
         "111": {
           "author_id": "111",
@@ -133,45 +133,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1817382730557947904": {
-          "author_id": "1817382730557947904",
-          "handle": "SandraSa10172",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-05T20:21:40.159683+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1417946932052430850": {
-          "author_id": "1417946932052430850",
-          "handle": "LimenAdnan",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2006192492706668545": {
-          "author_id": "2006192492706668545",
-          "handle": "TXgodluvngwoman",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1766224121128435712": {
           "author_id": "1766224121128435712",
           "handle": "SadieSherr45406",
@@ -183,58 +144,6 @@
           "inserted_total": 14,
           "polls": 1,
           "inserts_from_polls": 5,
-          "status": "active"
-        },
-        "1504452844581277701": {
-          "author_id": "1504452844581277701",
-          "handle": "gowan_brenda",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1818052765563981824": {
-          "author_id": "1818052765563981824",
-          "handle": "catlinbc",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "749016639287414784": {
-          "author_id": "749016639287414784",
-          "handle": "theamgreatness",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2056014715357212672": {
-          "author_id": "2056014715357212672",
-          "handle": "MichelinPfeiff",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1575610458693738498": {
@@ -1568,10 +1477,10 @@
           "handle": "mgholcombe1976",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.5700000000000001,
+          "priority": 0.6900000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 1,
+          "inserted_total": 2,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,8 +1849,99 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1355721251180961792": {
-          "author_id": "1355721251180961792",
+        "245884632": {
+          "author_id": "245884632",
+          "handle": "PaulGoldEagle",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "130600206": {
+          "author_id": "130600206",
+          "handle": "Heritage_Action",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1930360851070103552": {
+          "author_id": "1930360851070103552",
+          "handle": "afterpartyemily",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1147606495154069504": {
+          "author_id": "1147606495154069504",
+          "handle": "jhartman516",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1744602515088330752": {
+          "author_id": "1744602515088330752",
+          "handle": "ridi377196",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1893697280982552576": {
+          "author_id": "1893697280982552576",
+          "handle": "TV_ABRAHAM_X",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1561961223855304704": {
+          "author_id": "1561961223855304704",
+          "handle": "JackKen89907300",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "58570746": {
+          "author_id": "58570746",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
