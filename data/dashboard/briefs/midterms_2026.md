@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 20:57:02 UTC
+> Tactical snapshot · 2026-06-05 21:42:00 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 651 / 236 |
-| Distinct themes | 32 |
+| Distinct themes | 39 |
 | Duplicate clusters (full DB) | 37 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 0 bots / 470 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **11**
-- Net-new posts logged: **8**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **86**
-- Net new: **739** · re-seen: **371**
-- Duplicate rate: **33.4%**
+- Runs: **87**
+- Net new: **739** · re-seen: **373**
+- Duplicate rate: **33.5%**
 
 ## Sentiment drift
 
@@ -36,13 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, verified lists, citizenship verification (15 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · pro republican, scotus stayed, partisan gerrymandering, rights act (13 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · reuters reported, strait hormuz, public health, normal atlantic, pre rigged (13 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · fascist redneck, judges cut, chase block (10 posts · 8 authors · 3 exact · 4 fuzzy subclusters)
-- **Shared frame** · purpose identify, similarities united, tina peters, elections clerk (8 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · listening voted, office pass, needs immediately (8 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · congressional map, majority black, alabama republican, rights act, louisiana callais (17 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (16 posts · 8 authors · 5 exact · 4 fuzzy subclusters)
+- **Shared frame (emerging)** · china expandiu, investimentos brasil, longo dos, mandatos lula (10 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame** · graham platner, house governors, ohio thats (9 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -92,14 +91,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (38 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts)
 - cash party, level touch, country voters (5 posts)
-- pro republican, scotus stayed, partisan gerrymandering, rights act (13 posts)
-- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
-- 'blue wave', blue wave, writes strong (8 posts)
+- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
+- congressional map, majority black, alabama republican, rights act, louisiana callais (17 posts)
+- graham platner, house governors, ohio thats (9 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
-- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (5 posts)
-- _…23 more emerging theme(s)._
+- _…29 more emerging theme(s)._
 
 ## Scope note
 
