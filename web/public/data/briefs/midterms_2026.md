@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 00:21:19 UTC
+> Tactical snapshot · 2026-06-05 04:40:37 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **577** |
+| Posts in database | **578** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 571 / 196 |
-| Distinct themes | 27 |
+| Graph nodes / edges | 572 / 197 |
+| Distinct themes | 32 |
 | Duplicate clusters (full DB) | 33 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 0 bots / 418 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **6**
-- Net-new posts logged: **13**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **66**
-- Net new: **656** · re-seen: **251**
-- Duplicate rate: **27.7%**
+- Runs: **67**
+- Net new: **657** · re-seen: **253**
+- Duplicate rate: **27.8%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 19 authors · 8 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · pro republican, racially drawn, scotus stayed, partisan gerrymandering (11 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · gavin newsome, shapiro pritzker, listening voted, office pass (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · 'blue wave', writes strong, mayors influence, nick fuentes (8 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · musk stands, away world's, trillionaire democrats, seizing milestone, fresh rallying (7 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · randy feenstra, governor race, xavier becerra (7 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · congressional map, majority black, alabama republican, rights act, louisiana callais (14 posts · 11 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · executive order, federal judge (11 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · laying groundwork, winning record (9 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · randy feenstra, bigger primary, days calendar (9 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (8 posts · 2 authors · 3 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · took venezuelan, dictatorship block, voter fraud (7 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -89,18 +89,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (18 posts)
-- pro republican, racially drawn, scotus stayed, partisan gerrymandering (11 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (40 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- radical left, sidney powell (8 posts)
+- ww2 destroy, won't tolerate, coward facist, sorry senile, losers america (17 posts)
+- congressional map, majority black, alabama republican, rights act, louisiana callais (14 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- total votes, justice world, sided massacre, sweeps maga, ruling impact (5 posts)
-- judges cut, chase block (4 posts)
-- breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts)
-- _…18 more emerging theme(s)._
+- live house, fest heart, race gmmtv, birdy barista, ppnaravit phuwintang (5 posts)
+- _…24 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 577 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 578 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
