@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 60,
+      "run_counter": 61,
       "authors": {
         "111": {
           "author_id": "111",
@@ -66,97 +66,6 @@
           "inserted_total": 22,
           "polls": 1,
           "inserts_from_polls": 9,
-          "status": "active"
-        },
-        "1933535245103403008": {
-          "author_id": "1933535245103403008",
-          "handle": "FavePresident",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1573284594115223558": {
-          "author_id": "1573284594115223558",
-          "handle": "vanhoa2272",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2044789625139372032": {
-          "author_id": "2044789625139372032",
-          "handle": "CarterCuriousUS",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1745137685147070464": {
-          "author_id": "1745137685147070464",
-          "handle": "EncounterNewsX",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "853318060052291584": {
-          "author_id": "853318060052291584",
-          "handle": "OwenGregorian",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1448958148405047296": {
-          "author_id": "1448958148405047296",
-          "handle": "KeepingKen",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1886472368316399616": {
-          "author_id": "1886472368316399616",
-          "handle": "America47X",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "881377104": {
@@ -1940,8 +1849,99 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "23572083": {
-          "author_id": "23572083",
+        "2548616318": {
+          "author_id": "2548616318",
+          "handle": "routefifty",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "4117238354": {
+          "author_id": "4117238354",
+          "handle": "metaculus",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1447943742502154243": {
+          "author_id": "1447943742502154243",
+          "handle": "FinalTelegraph",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1074699729794199552": {
+          "author_id": "1074699729794199552",
+          "handle": "Freedom_reign4",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1586219740183244801": {
+          "author_id": "1586219740183244801",
+          "handle": "spicybrown1128",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1758098392201179136": {
+          "author_id": "1758098392201179136",
+          "handle": "DavinBerwick",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "953020365051187202": {
+          "author_id": "953020365051187202",
+          "handle": "Dude_Lebowskii",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1813198414722588672": {
+          "author_id": "1813198414722588672",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

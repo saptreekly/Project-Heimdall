@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 17:25:55 UTC
+> Tactical snapshot · 2026-06-05 18:04:50 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **637** |
+| Posts in database | **644** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 625 / 224 |
-| Distinct themes | 43 |
+| Graph nodes / edges | 632 / 227 |
+| Distinct themes | 31 |
 | Duplicate clusters (full DB) | 36 |
 | Fuzzy clusters (snapshot cohort) | 5 |
-| IU astroturf overlap | 0 bots / 452 authors |
+| IU astroturf overlap | 0 bots / 457 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **7**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **81**
-- Net new: **716** · re-seen: **341**
-- Duplicate rate: **32.3%**
+- Runs: **82**
+- Net new: **723** · re-seen: **353**
+- Duplicate rate: **32.8%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · congressional map, majority black, louisiana callais (14 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · china expandiu, investimentos brasil, longo dos, mandatos lula (8 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · judges cut, chase block (8 posts · 4 authors · 2 exact · 2 fuzzy subclusters)
-- **Shared frame (emerging)** · camera actual (7 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · pre rigged, ruling potentially, administration months (7 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · graham platner, winner odds, susan collins (7 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge, verified lists (14 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · civil rights, scotus stayed, partisan gerrymandering (13 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · speaker mike, bullish chances (11 posts · 7 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · purpose identify, similarities united, tina peters, elections clerk (8 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · reuters reported, strait hormuz, public health, normal atlantic, middle east (8 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · fascist redneck, judges cut, chase block (8 posts · 6 authors · 2 exact · 3 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -91,19 +91,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- voter fraud, radical left, sidney powell (8 posts)
-- pre rigged, ruling potentially, administration months (7 posts)
-- data centers, local communities, power grids, hackers preparing, governments face (5 posts)
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
-- congressional map, majority black, louisiana callais (14 posts)
-- graham platner, winner odds, susan collins (7 posts)
-- _…33 more emerging theme(s)._
+- civil rights, scotus stayed, partisan gerrymandering (13 posts)
+- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
+- speaker mike, bullish chances (11 posts)
+- awakening largest, voting force, actually believe (5 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
+- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- _…23 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 637 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 644 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
