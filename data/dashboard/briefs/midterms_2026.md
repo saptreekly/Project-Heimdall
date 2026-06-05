@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-05 05:06:16 UTC
+> Tactical snapshot · 2026-06-05 06:05:03 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **592** |
+| Posts in database | **593** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 585 / 201 |
-| Distinct themes | 29 |
+| Distinct themes | 37 |
 | Duplicate clusters (full DB) | 33 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 0 bots / 427 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **5**
-- Net-new posts logged: **14**
+- Re-sightings (duplicate encounters): **4**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **68**
-- Net new: **671** · re-seen: **258**
-- Duplicate rate: **27.8%**
+- Runs: **69**
+- Net new: **672** · re-seen: **262**
+- Duplicate rate: **28.1%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, major win, nears rulings, watch cheating (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · midterms, wave, red, trump (203 posts · 13 authors · 8 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · pro republican, scotus stayed, partisan gerrymandering, map effect (11 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · send message, 'blue wave', campaigns fundraising (11 posts · 7 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · shapiro pritzker, historic loss, completely overhaul (9 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · purpose identify, similarities united, tina peters, elections clerk (8 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · randy feenstra, governor race, xavier becerra (8 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · executive order, federal judge (12 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · rights act, racially drawn, scotus stayed (11 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · graham platner, susan collins, winner odds (10 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · steve hilton, judges avoid, looking overly, political announce, senior weeks (10 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (10 posts · 4 authors · 3 exact · 2 fuzzy subclusters)
+- **Shared frame** · cheat upcoming, voteblue numbers, hates lose, lost unless (9 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -90,18 +90,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
-- pro republican, scotus stayed, partisan gerrymandering, map effect (11 posts)
-- send message, 'blue wave', campaigns fundraising (11 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (38 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- radical left, sidney powell (10 posts)
+- ww2 destroy, won't tolerate, coward facist, sorry senile, losers america (18 posts)
+- rights act, racially drawn, scotus stayed (11 posts)
+- graham platner, susan collins, winner odds (10 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (6 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- shapiro pritzker, historic loss, completely overhaul (9 posts)
-- endorses rep, working tirelessly, votes march, undisclosed illness, kean praising (7 posts)
-- _…21 more emerging theme(s)._
+- _…28 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 592 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 593 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
