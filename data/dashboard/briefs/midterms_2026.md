@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 20:22:44 UTC
+> Tactical snapshot · 2026-06-06 21:13:34 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **757** |
+| Posts in database | **777** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 748 / 279 |
-| Distinct themes | 48 |
-| Duplicate clusters (full DB) | 41 |
-| Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 0 bots / 545 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| Graph nodes / edges | 769 / 292 |
+| Distinct themes | 35 |
+| Duplicate clusters (full DB) | 42 |
+| Fuzzy clusters (snapshot cohort) | 7 |
+| IU astroturf overlap | 0 bots / 556 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **115**
-- Net new: **836** · re-seen: **435**
-- Duplicate rate: **34.2%**
+- Runs: **116**
+- Net new: **856** · re-seen: **435**
+- Duplicate rate: **33.7%**
 
 ## Sentiment drift
 
@@ -36,13 +31,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, strike laws, allowing late (5 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · racially drawn (14 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (13 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame** · real pressure, ynta newsmax, breaks washington, media road (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · china expandiu, investimentos brasil, longo dos, mandatos lula (11 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (9 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, weeks later, strike laws, allowing late, watson republican (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · citizenship verification (19 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · scotus stayed (14 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · senate gop, nuke filibuster (12 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · war powers, vote exposes, growing divide, involvement iran, act exposed (10 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -52,8 +46,8 @@
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
+- cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_3authors_4posts_j1.00
-- cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
@@ -65,10 +59,10 @@
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **10 posts** · 1 author(s) — Millennials &amp; Gen Z We don't just want the dream back—we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.…
 - **9 posts** · 1 author(s) — I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes…
+- **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
-- **6 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
-- _…33 more exact-duplicate cluster(s) in database._
+- _…34 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -77,9 +71,8 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **2 posts** · 2 authors · ~100% Jaccard — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
-- **4 posts** · 4 authors · ~100% Jaccard — 🔥 Breaking: Trump SUPREME COURT Announcement MAJOR Win 2026 Midterms Ele... via
+- **4 posts** · 4 authors · ~100% Jaccard — 🚨BREAKING: The Supreme Court is poised to strike down laws allowing late-arriving mail-in ballots (even if postmarked by Election Day) in Watson v. Republican National Committee. Justice Alito slamme…
 - **4 posts** · 3 authors · ~100% Jaccard — Elon Musk stands days away from becoming the world's first trillionaire, and Democrats are seizing on the milestone as a fresh rallying cry against extreme wealth heading into the 2026 midterms. Read…
-- **3 posts** · 3 authors · ~100% Jaccard — 🚨BREAKING: The Supreme Court is poised to strike down laws allowing late-arriving mail-in ballots (even if postmarked by Election Day) in Watson v. Republican National Committee. Justice Alito slamme…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 IT'S OFFICIAL, WE WIN! "The US Supreme Court moments ago has ruled AGAINST Virginia Democrats when it comes to reviving their pro-Democrat redistricting map ahead of the 2026 midterms." WOULD'VE BE…
 - **2 posts** · 2 authors · ~100% Jaccard — Representative Marlin Stutzman is currently up for reelection in the 2026 midterms. The general election for Indiana's 3rd Congressional District will take place on November 3, 2026. Vote him out.
 - _…2 more fuzzy cluster(s) in snapshot cohort._
@@ -94,19 +87,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (33 posts)
-- gains failed (5 posts)
-- initial success, gerrymandering strategy, facing roadblocks, gavin newsom, criminal legal (4 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
-- blue seats, upholds california's, upheld texas (5 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- radical left, sidney powell (7 posts)
-- sanctuary cities, remember vote, dem politicians, trying shut (4 posts)
-- _…38 more emerging theme(s)._
+- senate gop, nuke filibuster (12 posts)
+- cash party, level touch, country voters (5 posts)
+- scotus stayed (14 posts)
+- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
+- awakening largest, voting force, actually believe (5 posts)
+- presidential election (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- _…24 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 757 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 777 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
