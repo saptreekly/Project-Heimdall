@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 14:03:18 UTC
+> Tactical snapshot · 2026-06-06 14:22:03 UTC
 
 ## Corpus
 
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **4**
-- Net-new posts logged: **9**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **106**
-- Net new: **801** · re-seen: **411**
-- Duplicate rate: **33.9%**
+- Runs: **107**
+- Net new: **801** · re-seen: **412**
+- Duplicate rate: **34.0%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · strike laws, allowing late (5 posts · 5 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · strike laws, allowing late (4 posts · 4 authors · 1 exact · 2 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (13 posts · 5 authors · 4 exact · 3 fuzzy subclusters)
 - **Shared frame (emerging)** · racially drawn, scotus stayed (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
 - **Shared frame (emerging)** · anchor babies, cornell law, professor explains, aliens supreme (11 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
 - **Shared frame** · investimentos brasil, longo dos, mandatos lula (10 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
 - **Shared frame (emerging)** · federal judge, voter rolls (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -92,15 +92,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- gains failed (5 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (10 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (27 posts)
-- election integrity, mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
 - anchor babies, cornell law, professor explains, aliens supreme (11 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- radical left, sidney powell (8 posts)
-- data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts)
-- _…37 more emerging theme(s)._
+- data centers, local communities, hackers preparing, phishing credential, generated deception (9 posts)
+- cash party, level touch, country voters (5 posts)
+- ww2 destroy, killed 10000's, coward facist, sorry senile, losers america (18 posts)
+- _…36 more emerging theme(s)._
 
 ## Scope note
 
