@@ -69,6 +69,9 @@ class Settings(BaseSettings):
     ingest_requests_per_minute: int = 30
     ingest_burst: int = 5
 
+    # Comma-separated origins for FastAPI CORS (local Vite dev server by default)
+    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
+
     # Default narrative keywords for domestic polarization tracking
     default_narrative_keywords: list[str] = [
         "border crisis",
