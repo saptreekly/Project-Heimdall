@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 17:50:10 UTC
+> Tactical snapshot · 2026-06-06 18:52:11 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **741** |
+| Posts in database | **743** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
-| Graph suspicion | 0.15 |
+| Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 724 / 264 |
-| Distinct themes | 49 |
+| Graph nodes / edges | 726 / 266 |
+| Distinct themes | 48 |
 | Duplicate clusters (full DB) | 41 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 0 bots / 531 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **112**
-- Net new: **820** · re-seen: **417**
-- Duplicate rate: **33.7%**
+- Runs: **113**
+- Net new: **822** · re-seen: **420**
+- Duplicate rate: **33.8%**
 
 ## Sentiment drift
 
@@ -37,17 +37,16 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, strike laws, allowing late (8 posts · 5 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, strike laws, allowing late (3 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
 - **Shared frame (emerging)** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (16 posts · 5 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame** · racially drawn (14 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · racially drawn (15 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - **Shared frame** · real pressure, downtown atlanta, rally sen, jon ossoff, keisha lance (13 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · investimentos brasil, longo dos, mandatos lula (11 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · investimentos brasil, longo dos, mandatos lula (10 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
 - **Shared frame (emerging)** · anchor babies, cornell law, professor explains, aliens supreme, hostile hearing (10 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
-- dense_cluster_382_size_3
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
@@ -55,6 +54,7 @@
 - cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_3authors_4posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
+- cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 
@@ -98,15 +98,15 @@ _None spanning multiple narratives._
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
 - blue seats, upholds california's, upheld texas (5 posts)
+- racially drawn (15 posts)
 - anchor babies, cornell law, professor explains, aliens supreme, hostile hearing (10 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
 - radical left, sidney powell (7 posts)
-- sanctuary cities, remember vote, dem politicians, trying shut (4 posts)
-- _…39 more emerging theme(s)._
+- _…37 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 741 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 743 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

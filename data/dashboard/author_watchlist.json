@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 91,
+      "run_counter": 92,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1867,12 +1867,12 @@
           "handle": "BobBrigham",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 2,
-          "polls": 0,
-          "inserts_from_polls": 0,
+          "priority": 1.0,
+          "last_polled_at": "2026-06-06T18:51:46.686539+00:00",
+          "last_tweet_at": "2026-06-06T07:54:43+00:00",
+          "inserted_total": 6,
+          "polls": 1,
+          "inserts_from_polls": 2,
           "status": "active"
         },
         "1719092445042900992": {
@@ -1940,8 +1940,8 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "862718426757779457": {
-          "author_id": "862718426757779457",
+        "143991014": {
+          "author_id": "143991014",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
