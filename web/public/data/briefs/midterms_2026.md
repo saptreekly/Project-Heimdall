@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 08:11:13 UTC
+> Tactical snapshot · 2026-06-06 09:07:08 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **693** |
+| Posts in database | **697** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 680 / 250 |
-| Distinct themes | 38 |
+| Distinct themes | 42 |
 | Duplicate clusters (full DB) | 39 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 0 bots / 493 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **4**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **98**
-- Net new: **772** · re-seen: **383**
+- Runs: **99**
+- Net new: **776** · re-seen: **386**
 - Duplicate rate: **33.2%**
 
 ## Sentiment drift
@@ -32,11 +37,11 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · strike laws, allowing late (5 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · radical left, sidney powell (14 posts · 6 authors · 4 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · strike laws, allowing late (4 posts · 4 authors · 1 exact · 2 fuzzy subclusters)
 - **Shared frame (emerging)** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (13 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · rights act, pro republican, racially drawn, scotus stayed (11 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, governor race mexico (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell, voter fraud (13 posts · 5 authors · 4 exact · 3 fuzzy subclusters)
+- **Shared frame (emerging)** · racially drawn, scotus stayed (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · poster child, total leaning, respect white, case fraudulent (8 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -87,18 +92,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (28 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
-- citizenship mail ballots, camera actual (5 posts)
+- election integrity, mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
 - data centers, laying groundwork, local communities, hackers preparing, phishing credential (13 posts)
-- ww2 destroy, killed 10000's, coward facist, sorry senile, losers america (18 posts)
-- rights act, pro republican, racially drawn, scotus stayed (11 posts)
+- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
+- racially drawn, scotus stayed (12 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- _…28 more emerging theme(s)._
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
+- _…32 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 693 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 697 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
