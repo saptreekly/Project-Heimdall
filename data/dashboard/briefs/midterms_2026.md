@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 22:40:48 UTC
+> Tactical snapshot · 2026-06-06 23:34:45 UTC
 
 ## Corpus
 
@@ -26,8 +26,8 @@
 
 ## Ingest yield (last 14 days)
 
-- Runs: **118**
-- Net new: **856** · re-seen: **444**
+- Runs: **119**
+- Net new: **856** · re-seen: **445**
 - Duplicate rate: **34.2%**
 
 ## Sentiment drift
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, weeks later, strike laws, allowing late (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · radical left, sidney powell (14 posts · 8 authors · 5 exact · 4 fuzzy subclusters)
-- **Shared frame** · racially drawn (13 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · weeks later, strike laws, allowing late, watson republican (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · racially drawn (15 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell, voter fraud (14 posts · 8 authors · 5 exact · 4 fuzzy subclusters)
 - **Shared frame (emerging)** · china expandiu, investimentos brasil, longo dos, mandatos lula (12 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
 - **Shared frame** · war powers, vote exposes, growing divide, involvement iran, act exposed (10 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · federal judge (10 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · mail ballot, federal elections, mail absentee, executive order, trump executive order (10 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -93,13 +93,13 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (33 posts)
-- initial success, gerrymandering strategy, facing roadblocks, criminal legal (5 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
+- initial success, gerrymandering strategy, facing roadblocks, gavin newsom, criminal legal (4 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
 - blue seats, upholds california's, upheld texas (5 posts)
-- camera actual (6 posts)
+- racially drawn (15 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, dem politicians, trying shut (6 posts)
+- sanctuary cities, took venezuelan, dictatorship block (9 posts)
 - data centers, local communities, power grids, artificial intelligence, battle congress (8 posts)
 - _…38 more emerging theme(s)._
 
