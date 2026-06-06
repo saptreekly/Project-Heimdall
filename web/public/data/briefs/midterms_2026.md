@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 19:52:38 UTC
+> Tactical snapshot · 2026-06-06 20:22:44 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 748 / 279 |
-| Distinct themes | 47 |
+| Distinct themes | 48 |
 | Duplicate clusters (full DB) | 41 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 0 bots / 545 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **14**
-- Net-new posts logged: **14**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **114**
-- Net new: **836** · re-seen: **434**
+- Runs: **115**
+- Net new: **836** · re-seen: **435**
 - Duplicate rate: **34.2%**
 
 ## Sentiment drift
@@ -37,11 +37,11 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, strike laws, allowing late (3 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · racially drawn (15 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, strike laws, allowing late (5 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · racially drawn (14 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - **Shared frame (emerging)** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (13 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
 - **Shared frame** · real pressure, ynta newsmax, breaks washington, media road (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · china expandiu, investimentos brasil, longo dos, mandatos lula (10 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · china expandiu, investimentos brasil, longo dos, mandatos lula (11 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
 - **Shared frame (emerging)** · neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (9 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -95,14 +95,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (33 posts)
+- gains failed (5 posts)
 - initial success, gerrymandering strategy, facing roadblocks, gavin newsom, criminal legal (4 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
 - blue seats, upholds california's, upheld texas (5 posts)
-- racially drawn (15 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
 - radical left, sidney powell (7 posts)
 - sanctuary cities, remember vote, dem politicians, trying shut (4 posts)
-- _…36 more emerging theme(s)._
+- _…38 more emerging theme(s)._
 
 ## Scope note
 
