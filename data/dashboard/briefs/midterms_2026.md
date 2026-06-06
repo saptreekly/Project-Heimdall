@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 16:20:21 UTC
+> Tactical snapshot · 2026-06-06 17:23:53 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 724 / 264 |
-| Distinct themes | 32 |
+| Distinct themes | 49 |
 | Duplicate clusters (full DB) | 41 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 0 bots / 531 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **110**
-- Net new: **820** · re-seen: **414**
-- Duplicate rate: **33.5%**
+- Runs: **111**
+- Net new: **820** · re-seen: **416**
+- Duplicate rate: **33.7%**
 
 ## Sentiment drift
 
@@ -31,12 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · strike laws, allowing late (10 posts · 7 authors · 3 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · reuters reported, federal judge, verified lists (23 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · pro republican, racially drawn, scotus stayed, partisan gerrymandering (14 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · speaker mike, bullish chances, total leaning (13 posts · 6 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · senate gop, nuke filibuster (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, strike laws, allowing late (8 posts · 5 authors · 2 exact · 2 fuzzy subclusters)
+- **Shared frame (emerging)** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (16 posts · 5 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame** · racially drawn (14 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · real pressure, downtown atlanta, rally sen, jon ossoff, keisha lance (13 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · investimentos brasil, longo dos, mandatos lula (11 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · anchor babies, cornell law, professor explains, aliens supreme, hostile hearing (10 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -88,14 +94,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senate gop, nuke filibuster (11 posts)
-- ww2 destroy, won't tolerate, coward facist, sorry senile, losers america (18 posts)
-- pro republican, racially drawn, scotus stayed, partisan gerrymandering (14 posts)
-- speaker mike, bullish chances, total leaning (13 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- presidential election (5 posts)
-- red wave, broke buried, debt directionless (5 posts)
-- _…20 more emerging theme(s)._
+- initial success, gerrymandering strategy, facing roadblocks, gavin newsom, criminal legal (4 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (29 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
+- blue seats, upholds california's, upheld texas (5 posts)
+- anchor babies, cornell law, professor explains, aliens supreme, hostile hearing (10 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- radical left, sidney powell (7 posts)
+- sanctuary cities, remember vote, dem politicians, trying shut (4 posts)
+- _…39 more emerging theme(s)._
 
 ## Scope note
 
