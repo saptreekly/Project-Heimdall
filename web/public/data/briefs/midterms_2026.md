@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 05:36:30 UTC
+> Tactical snapshot · 2026-06-06 06:07:50 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 675 / 248 |
-| Distinct themes | 39 |
+| Distinct themes | 40 |
 | Duplicate clusters (full DB) | 39 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 0 bots / 489 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **94**
+- Runs: **95**
 - Net new: **768** · re-seen: **383**
 - Duplicate rate: **33.3%**
 
@@ -32,12 +32,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · strike laws, allowing late (5 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · radical left, sidney powell (14 posts · 6 authors · 4 exact · 3 fuzzy subclusters)
-- **Shared frame (emerging)** · rights act, pro republican, racially drawn, scotus stayed (13 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (13 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame** · acabar nas, china expandiu, investimentos brasil, longo dos (10 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · strike laws, allowing late (4 posts · 4 authors · 1 exact · 2 fuzzy subclusters)
+- **Shared frame (emerging)** · racially drawn, scotus stayed (13 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (13 posts · 5 authors · 4 exact · 3 fuzzy subclusters)
+- **Shared frame** · china expandiu, investimentos brasil, longo dos, mandatos lula (11 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
 - **Shared frame** · graham platner, house governors, ohio thats (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · position steelmanned, rights democratic, grok critique (8 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -87,15 +87,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (28 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
-- pass save america, citizenship mail ballots, camera actual (5 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (27 posts)
+- election integrity, mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- data centers, laying groundwork, local communities, hackers preparing, phishing credential (13 posts)
-- rights act, pro republican, racially drawn, scotus stayed (13 posts)
-- ww2 destroy, coward facist, won't tolerate, losers killed, sorry senile (11 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts)
+- ww2 destroy, killed 10000's, coward facist, sorry senile, losers america (18 posts)
+- racially drawn, scotus stayed (13 posts)
+- neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (7 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- _…28 more emerging theme(s)._
+- _…29 more emerging theme(s)._
 
 ## Scope note
 
