@@ -7,4 +7,9 @@ export {
   updateGlobalInvestigationBar,
 } from "./investigation-bar";
 export { metricCardHtml, metricsGridHtml } from "./metric-card";
-export { renderAlertInboxHtml, buildAlertRows } from "./alert-inbox-row";
+export {
+  bindAlertInbox,
+  renderAlertInboxHtml,
+  buildAlertRows,
+  type AlertInboxHandlers,
+} from "../alert-inbox";

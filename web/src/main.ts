@@ -49,7 +49,7 @@ import {
   resetInspectorEmpty,
   setInspectorContext,
 } from "./desk-inspector";
-import { buildAlertRows, renderAlertInboxHtml } from "./alert-inbox";
+import { bindAlertInbox, buildAlertRows, renderAlertInboxHtml } from "./alert-inbox";
 import { findParentThemeLabel, setCoordinationContext } from "./cluster-coordination";
 import { bindBriefPrint, renderBrief, resetBriefClipboardBinding } from "./brief";
 import {
@@ -456,41 +456,6 @@ function bindClusterButtons(): void {
   });
 }
 
-function bindAlertInbox(): void {
-  document.querySelectorAll<HTMLButtonElement>(".alert-inbox-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const action = btn.dataset.alertAction;
-      if (action === "signals") {
-        switchDeskMode("pulse");
-        return;
-      }
-      if (action === "anomalies") {
-        switchDeskMode("network");
-        return;
-      }
-      const kind = btn.dataset.alertKind;
-      if (kind === "theme") {
-        const ids = (btn.dataset.postIds ?? "")
-          .split(",")
-          .map((s) => parseInt(s, 10))
-          .filter((n) => Number.isFinite(n));
-        const label = btn.dataset.themeLabel ?? "theme cluster";
-        selectThemeCluster(label, ids);
-      } else if (kind === "cluster") {
-        const ids = (btn.dataset.postIds ?? "")
-          .split(",")
-          .map((s) => parseInt(s, 10))
-          .filter((n) => Number.isFinite(n));
-        const burst = btn.dataset.burst === "1";
-        const label = btn.dataset.clusterLabel ?? "cluster";
-        selectDuplicateCluster(label, ids, burst);
-      }
-      switchDeskMode("evidence", { scroll: false });
-      scrollGlobalInvestigationIntoView();
-    });
-  });
-}
-
 function bindPostToolbar(): void {
   document.getElementById("time-range-select")?.addEventListener("change", (e) => {
     const v = (e.target as HTMLSelectElement).value;
@@ -618,9 +583,12 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     appState.lastGraphEdgeCount = graph.edges.length;
 
     const alertRows = [
-      ...buildSentimentAlerts(sentiment),
       ...buildAlertRows(amp, cib, appState.lastNearDup, crossPollination, themes),
-    ];
+      ...buildSentimentAlerts(sentiment),
+    ].sort((a, b) => {
+      const order = { critical: 0, watch: 1, context: 2 };
+      return order[a.severity] - order[b.severity];
+    });
     const emergingCount = themes.emerging_theme_count ?? 0;
     const distinctCount = themes.distinct_theme_count ?? themes.cluster_count ?? 0;
     const modeBadges: ModeBadges = {
@@ -656,7 +624,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
             outrageDiag,
             sentiment.week_over_week?.alert
           )}
-          ${cibSnapshotHtml(cib)}
+          <div id="panel-cib-snapshot">${cibSnapshotHtml(cib)}</div>
           ${priorityScatterPanelHtml(criticalCount, graph.edges.length, outrageDiag)}
           ${renderProvenancePanelHtml(provenance, cib)}
           <section class="panel panel-pulse-frames-teaser">
@@ -841,7 +809,16 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     });
     bindInvestigationChrome();
     bindClusterButtons();
-    bindAlertInbox();
+    bindAlertInbox({
+      switchDeskMode,
+      scrollInvestigationIntoView: scrollGlobalInvestigationIntoView,
+      selectThemeCluster,
+      selectDuplicateCluster,
+      selectDate,
+      scrollToElement: (id) => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      },
+    });
     bindPostToolbar();
     bindFuzzyJaccardHud(applyJaccardThreshold);
     bindBriefPrint();
