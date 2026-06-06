@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 15:47:39 UTC
+> Tactical snapshot · 2026-06-06 16:20:21 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **722** |
+| Posts in database | **741** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
-| Graph suspicion | 0.00 |
+| Graph suspicion | 0.15 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 707 / 257 |
-| Distinct themes | 46 |
-| Duplicate clusters (full DB) | 40 |
-| Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 0 bots / 517 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| Graph nodes / edges | 724 / 264 |
+| Distinct themes | 32 |
+| Duplicate clusters (full DB) | 41 |
+| Fuzzy clusters (snapshot cohort) | 8 |
+| IU astroturf overlap | 0 bots / 531 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **109**
-- Net new: **801** · re-seen: **414**
-- Duplicate rate: **34.1%**
+- Runs: **110**
+- Net new: **820** · re-seen: **414**
+- Duplicate rate: **33.5%**
 
 ## Sentiment drift
 
@@ -36,17 +31,17 @@
 
 ## Layered coordination (frames)
 
+- **Exact duplicate campaign** · strike laws, allowing late (10 posts · 7 authors · 3 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · strike laws, allowing late (5 posts · 5 authors · 2 exact · 2 fuzzy subclusters)
-- **Shared frame (emerging)** · racially drawn, scotus stayed (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · anchor babies, cornell law, professor explains, aliens supreme (11 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · investimentos brasil, longo dos, mandatos lula (10 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, voter rolls (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · reuters reported, federal judge, verified lists (23 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · pro republican, racially drawn, scotus stayed, partisan gerrymandering (14 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · speaker mike, bullish chances, total leaning (13 posts · 6 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · senate gop, nuke filibuster (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
+- dense_cluster_382_size_3
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
@@ -67,7 +62,7 @@
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
 - **6 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
-- _…32 more exact-duplicate cluster(s) in database._
+- _…33 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -79,6 +74,7 @@ _None (need ≥5 authors in 90s window)._
 - **4 posts** · 4 authors · ~100% Jaccard — 🔥 Breaking: Trump SUPREME COURT Announcement MAJOR Win 2026 Midterms Ele... via
 - **4 posts** · 3 authors · ~100% Jaccard — Elon Musk stands days away from becoming the world's first trillionaire, and Democrats are seizing on the milestone as a fresh rallying cry against extreme wealth heading into the 2026 midterms. Read…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨BREAKING: The Supreme Court is poised to strike down laws allowing late-arriving mail-in ballots (even if postmarked by Election Day) in Watson v. Republican National Committee. Justice Alito slamme…
+- **2 posts** · 2 authors · ~100% Jaccard — 🚨 IT'S OFFICIAL, WE WIN! "The US Supreme Court moments ago has ruled AGAINST Virginia Democrats when it comes to reviving their pro-Democrat redistricting map ahead of the 2026 midterms." WOULD'VE BE…
 - **2 posts** · 2 authors · ~100% Jaccard — Representative Marlin Stutzman is currently up for reelection in the 2026 midterms. The general election for Indiana's 3rd Congressional District will take place on November 3, 2026. Vote him out.
 - _…2 more fuzzy cluster(s) in snapshot cohort._
 
@@ -92,19 +88,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- gains failed (5 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (27 posts)
-- election integrity, mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
-- anchor babies, cornell law, professor explains, aliens supreme (11 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- radical left, sidney powell (8 posts)
-- data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts)
-- _…37 more emerging theme(s)._
+- senate gop, nuke filibuster (11 posts)
+- ww2 destroy, won't tolerate, coward facist, sorry senile, losers america (18 posts)
+- pro republican, racially drawn, scotus stayed, partisan gerrymandering (14 posts)
+- speaker mike, bullish chances, total leaning (13 posts)
+- awakening largest, voting force, actually believe (5 posts)
+- presidential election (5 posts)
+- red wave, broke buried, debt directionless (5 posts)
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 722 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 741 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
