@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 21:13:34 UTC
+> Tactical snapshot · 2026-06-06 21:46:57 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 769 / 292 |
-| Distinct themes | 35 |
+| Distinct themes | 48 |
 | Duplicate clusters (full DB) | 42 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 0 bots / 556 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **116**
-- Net new: **856** · re-seen: **435**
-- Duplicate rate: **33.7%**
+- Runs: **117**
+- Net new: **856** · re-seen: **443**
+- Duplicate rate: **34.1%**
 
 ## Sentiment drift
 
@@ -32,11 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, weeks later, strike laws, allowing late, watson republican (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · citizenship verification (19 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · scotus stayed (14 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · senate gop, nuke filibuster (12 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · weeks later, strike laws, allowing late, watson republican (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · racially drawn (15 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell, voter fraud (14 posts · 8 authors · 5 exact · 4 fuzzy subclusters)
+- **Shared frame (emerging)** · china expandiu, investimentos brasil, longo dos, mandatos lula (12 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
 - **Shared frame** · war powers, vote exposes, growing divide, involvement iran, act exposed (10 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · mail ballot, federal elections, mail absentee, executive order, trump executive order (10 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -87,14 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senate gop, nuke filibuster (12 posts)
-- cash party, level touch, country voters (5 posts)
-- scotus stayed (14 posts)
-- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- presidential election (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- _…24 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
+- initial success, gerrymandering strategy, facing roadblocks, gavin newsom, criminal legal (4 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
+- blue seats, upholds california's, upheld texas (5 posts)
+- racially drawn (15 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- sanctuary cities, took venezuelan, dictatorship block (9 posts)
+- data centers, local communities, power grids, artificial intelligence, battle congress (8 posts)
+- _…38 more emerging theme(s)._
 
 ## Scope note
 

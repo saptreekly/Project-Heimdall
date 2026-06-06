@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 95,
+      "run_counter": 96,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1789,11 +1789,11 @@
           "handle": "shgcci",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 1.05,
-          "last_polled_at": null,
-          "last_tweet_at": null,
+          "priority": 1.0,
+          "last_polled_at": "2026-06-06T21:46:50.652856+00:00",
+          "last_tweet_at": "2026-06-06T21:11:52+00:00",
           "inserted_total": 9,
-          "polls": 0,
+          "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
         },
@@ -1940,8 +1940,8 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "5496932": {
-          "author_id": "5496932",
+        "24198415": {
+          "author_id": "24198415",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
