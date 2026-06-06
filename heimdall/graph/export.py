@@ -5,6 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from heimdall.datasets.astroturf import lookup_labels
 from heimdall.db.models import InteractionEdge, Narrative, OutrageScore, Platform, Post
+from heimdall.graph.author_signals import enrich_author_bot_signals
 from heimdall.graph.networkx_analysis import NarrativeGraphAnalyzer
 
 
@@ -133,6 +134,8 @@ async def build_graph_export(
         }
         for source, target, itype, source_post_id, target_post_id, occurred_at in edges_result.all()
     ]
+
+    enrich_author_bot_signals(author_map, post_rows)
 
     cib_data = None
     if include_cib:

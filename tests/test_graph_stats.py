@@ -17,3 +17,15 @@ def test_build_graph_stats_counts_types_and_isolated() -> None:
     assert stats["connected_author_count"] == 2
     assert stats["isolated_author_count"] == 1
     assert stats["by_type"] == {"reply": 1, "share": 1}
+    assert stats["high_velocity_author_count"] == 0
+    assert stats["known_bot_author_count"] == 0
+
+
+def test_build_graph_stats_bot_signals() -> None:
+    authors = [
+        {"author_id": "a", "high_velocity": True, "known_bot": True},
+        {"author_id": "b"},
+    ]
+    stats = build_graph_stats(authors, [])
+    assert stats["high_velocity_author_count"] == 1
+    assert stats["known_bot_author_count"] == 1

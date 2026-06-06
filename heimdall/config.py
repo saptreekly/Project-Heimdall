@@ -9,7 +9,6 @@ class Settings(BaseSettings):
 
     # Default: SQLite file DB (no Docker). Use Postgres URL when docker compose is up.
     database_url: str = "sqlite+aiosqlite:///./heimdall.db"
-    redis_url: str = "redis://localhost:6379/0"
     neo4j_uri: str = "bolt://localhost:7687"
     neo4j_user: str = "neo4j"
     neo4j_password: str = "heimdallgraph"
@@ -71,6 +70,13 @@ class Settings(BaseSettings):
 
     # Comma-separated origins for FastAPI CORS (local Vite dev server by default)
     cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
+
+    # Optional API key for mutating routes (POST /ingest, /rescore, etc.). Empty = disabled.
+    ingest_api_key: str = ""
+
+    # JSON logs on stderr when true (useful in production / CI orchestration).
+    json_logs: bool = False
+    log_level: str = "INFO"
 
     # Default narrative keywords for domestic polarization tracking
     default_narrative_keywords: list[str] = [

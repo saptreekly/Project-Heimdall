@@ -13,14 +13,27 @@ import {
   fetchProvenance,
   fetchSentimentShift,
   fetchThemes,
+  getMetricsHistory,
+  getPrimaryNarrativeName,
   getSnapshotGeneratedAt,
   listNarratives,
   loadSnapshot,
 } from "./api";
+import { metricsTrendPanelHtml, mountMetricsTrendChart } from "./app/metrics-trend";
+import { buildMetricsGrid, mean, renderHistogram } from "./app/outrage-metrics";
+import { renderMissingSnapshot, shell } from "./app/shell";
+import {
+  appState,
+  BLUR_SENSITIVE_KEY,
+  COMPACT_CHARTS_KEY,
+  POST_LIST_INITIAL,
+  POST_LIST_MAX,
+  root,
+} from "./app/state";
+import { narrativeIdFromUrl, setUrlNarrative } from "./app/url-state";
 import {
   bindDeskModeNav,
   deskLayoutHtml,
-  deskModeFromUrl,
   panelRollupHtml,
   setDeskModeInUrl,
   showDeskMode,
@@ -38,15 +51,11 @@ import {
 } from "./desk-inspector";
 import { buildAlertRows, renderAlertInboxHtml } from "./alert-inbox";
 import { findParentThemeLabel, setCoordinationContext } from "./cluster-coordination";
-import { bindBriefPrint, briefPanelHtml, renderBrief, resetBriefClipboardBinding } from "./brief";
-import { renderContentNotice } from "./content-notice";
+import { bindBriefPrint, renderBrief, resetBriefClipboardBinding } from "./brief";
 import {
   duplicatePanelCaption,
   duplicatePanelTitle,
   postsPanelCalloutHtml,
-  renderDataAsOfHtml,
-  renderDataLinksExtra,
-  renderRateFooter,
 } from "./dashboard-meta";
 import {
   crossPollinationPanelHtml,
@@ -68,13 +77,10 @@ import {
   storeThreshold,
 } from "./near-duplicate-clustering";
 import { renderProvenancePanelHtml } from "./provenance-panel";
-import { renderMethodology } from "./methodology";
 import {
   bindTabNav,
-  renderTabNav,
   showTabPanel,
   setTabInUrl,
-  tabFromUrl,
   type AppTab,
 } from "./tabs";
 import {
@@ -92,7 +98,7 @@ import {
   setHoursBack,
   setInvestigationPosts,
 } from "./investigation";
-import { bindOnboardingHint, renderOnboardingHintHtml } from "./onboarding-hint";
+import { bindOnboardingHint } from "./onboarding-hint";
 import {
   bindPostListAuthorLinks,
   escapeHtml,
@@ -124,73 +130,13 @@ import { buildSentimentAlerts } from "./sentiment-alerts";
 import { mountSentimentChart, mountSentimentTierChart, sentimentChartPanelHtml } from "./sentiment-chart";
 import {
   bindGlobalInvestigationClear,
-  globalInvestigationBarHtml,
-  metricCardHtml,
-  metricsGridHtml as metricsGridShell,
   scrollGlobalInvestigationIntoView,
   stateEmptyHtml,
   stateErrorHtml,
   stateLoadingHtml,
   updateGlobalInvestigationBar,
 } from "./ui";
-import type {
-  AmplificationReport,
-  CibReport,
-  DuplicateCluster,
-  NarrativeProvenance,
-  NarrativeSummary,
-  NearDuplicatesReport,
-  Post,
-  ThemesReport,
-  NarrativeBrief,
-} from "./types";
-
-const BLUR_SENSITIVE_KEY = "heimdall-blur-sensitive";
-const COMPACT_CHARTS_KEY = "heimdall-compact-charts";
-const POST_LIST_INITIAL = 20;
-const POST_LIST_MAX = 50;
-
-let currentTab: AppTab = tabFromUrl();
-let currentDeskMode: DeskMode = deskModeFromUrl();
-let lastLoadedPosts: Post[] = [];
-let lastGraphEdgeCount = 0;
-let blurSensitive = localStorage.getItem(BLUR_SENSITIVE_KEY) === "1";
-let compactCharts = localStorage.getItem(COMPACT_CHARTS_KEY) !== "0";
-let groupAuthorPosts = true;
-let postListLimit = POST_LIST_INITIAL;
-let lastNearDup: NearDuplicatesReport | null = null;
-let lastAmpClusters: DuplicateCluster[] = [];
-let lastThemesReport: ThemesReport | null = null;
-let clusterSourcePosts: Post[] = [];
-let jaccardThreshold = 0.82;
-let totalNarrativePosts = 0;
-let lastCriticalCount = 0;
-let lastAnomalyCount = 0;
-let briefContext: {
-  narrative: NarrativeSummary;
-  posts: Post[];
-  cib: CibReport;
-  amp: AmplificationReport;
-  themes: ThemesReport;
-  crossPollination: import("./types").CrossPollinationReport | null;
-  brief: NarrativeBrief | null;
-} | null = null;
-
-type ChartMountFns = {
-  mountPulse: () => void;
-  mountFrames: () => void;
-  mountNetwork: () => void;
-};
-let chartMountFns: ChartMountFns | null = null;
-const chartsMounted = {
-  pulse: false,
-  frames: false,
-  network: false,
-};
-
-const rootEl = document.getElementById("app");
-if (!rootEl) throw new Error("#app missing");
-const root: HTMLElement = rootEl;
+import type { CibReport, DuplicateCluster, NarrativeSummary } from "./types";
 
 applyChartDensity();
 
@@ -203,11 +149,11 @@ function scrollPageToTop(): void {
 }
 
 function applyChartDensity(): void {
-  document.documentElement.classList.toggle("chart-density-compact", compactCharts);
+  document.documentElement.classList.toggle("chart-density-compact", appState.compactCharts);
 }
 
 function switchDeskMode(mode: DeskMode, options?: { scroll?: boolean }): void {
-  currentDeskMode = mode;
+  appState.currentDeskMode = mode;
   setDeskModeInUrl(mode);
   showDeskMode(mode);
   ensureChartsMountedForMode(mode);
@@ -219,29 +165,29 @@ function switchDeskMode(mode: DeskMode, options?: { scroll?: boolean }): void {
 }
 
 function ensureChartsMountedForMode(mode: DeskMode): void {
-  if (!chartMountFns) return;
-  if (mode === "pulse" && !chartsMounted.pulse) {
-    chartsMounted.pulse = true;
-    chartMountFns.mountPulse();
+  if (!appState.chartMountFns) return;
+  if (mode === "pulse" && !appState.chartsMounted.pulse) {
+    appState.chartsMounted.pulse = true;
+    appState.chartMountFns.mountPulse();
   }
-  if (mode === "frames" && !chartsMounted.frames) {
-    chartsMounted.frames = true;
-    chartMountFns.mountFrames();
+  if (mode === "frames" && !appState.chartsMounted.frames) {
+    appState.chartsMounted.frames = true;
+    appState.chartMountFns.mountFrames();
   }
-  if (mode === "network" && !chartsMounted.network) {
-    chartsMounted.network = true;
-    chartMountFns.mountNetwork();
+  if (mode === "network" && !appState.chartsMounted.network) {
+    appState.chartsMounted.network = true;
+    appState.chartMountFns.mountNetwork();
   }
 }
 
 function computeModeBadges(): ModeBadges {
   const badges: ModeBadges = {};
-  if (lastCriticalCount > 0) badges.pulse = lastCriticalCount;
-  if (lastAnomalyCount > 0) badges.network = lastAnomalyCount;
+  if (appState.lastCriticalCount > 0) badges.pulse = appState.lastCriticalCount;
+  if (appState.lastAnomalyCount > 0) badges.network = appState.lastAnomalyCount;
   if (hasActiveFilter()) {
     badges.evidence = countMatchingPosts();
-  } else if (totalNarrativePosts > 0) {
-    badges.evidence = totalNarrativePosts;
+  } else if (appState.totalNarrativePosts > 0) {
+    badges.evidence = appState.totalNarrativePosts;
   }
   return badges;
 }
@@ -250,65 +196,20 @@ function refreshDeskStrip(): void {
   updateGlobalInvestigationBar(computeModeBadges);
 }
 
-function mean(nums: number[]): number | null {
-  if (nums.length === 0) return null;
-  return nums.reduce((a, b) => a + b, 0) / nums.length;
-}
-
-function outrageHistogram(posts: Post[]): Map<string, number> {
-  const bins = new Map<string, number>([
-    ["0-0.2", 0],
-    ["0.2-0.4", 0],
-    ["0.4-0.6", 0],
-    ["0.6-0.8", 0],
-    ["0.8-1.0", 0],
-    ["(none)", 0],
-  ]);
-  for (const p of posts) {
-    const o = p.outrage_index;
-    if (o == null) {
-      bins.set("(none)", (bins.get("(none)") ?? 0) + 1);
-      continue;
-    }
-    if (o < 0.2) bins.set("0-0.2", (bins.get("0-0.2") ?? 0) + 1);
-    else if (o < 0.4) bins.set("0.2-0.4", (bins.get("0.2-0.4") ?? 0) + 1);
-    else if (o < 0.6) bins.set("0.4-0.6", (bins.get("0.4-0.6") ?? 0) + 1);
-    else if (o < 0.8) bins.set("0.6-0.8", (bins.get("0.6-0.8") ?? 0) + 1);
-    else bins.set("0.8-1.0", (bins.get("0.8-1.0") ?? 0) + 1);
-  }
-  return bins;
-}
-
-function renderHistogram(posts: Post[]): string {
-  const bins = outrageHistogram(posts);
-  const max = Math.max(1, ...bins.values());
-  const rows = [...bins.entries()]
-    .map(([label, count]) => {
-      const pct = (count / max) * 100;
-      return `<div class="bar-row">
-        <span class="bar-label">${escapeHtml(label)}</span>
-        <div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
-        <span>${count}</span>
-      </div>`;
-    })
-    .join("");
-  return `<div class="chart">${rows}</div>`;
-}
-
 function applyJaccardThreshold(threshold: number): void {
-  jaccardThreshold = threshold;
+  appState.jaccardThreshold = threshold;
   storeThreshold(threshold);
-  if (!clusterSourcePosts.length) return;
-  lastNearDup = recomputeNearDuplicatesReport(
-    clusterSourcePosts,
+  if (!appState.clusterSourcePosts.length) return;
+  appState.lastNearDup = recomputeNearDuplicatesReport(
+    appState.clusterSourcePosts,
     threshold,
-    lastNearDup
+    appState.lastNearDup
   );
-  setInvestigationPosts(applyClusterTagsToPosts(clusterSourcePosts, lastNearDup));
+  setInvestigationPosts(applyClusterTagsToPosts(appState.clusterSourcePosts, appState.lastNearDup));
   const fuzzyHost = document.getElementById("fuzzy-clusters-host");
-  if (fuzzyHost) renderFuzzyClusters(fuzzyHost, lastNearDup, { pulse: true });
-  updateFuzzyThresholdBadge(threshold, lastNearDup.cross_author_fuzzy_count ?? 0);
-  syncJaccardThresholdHud(threshold, resolveThresholdBounds(lastNearDup));
+  if (fuzzyHost) renderFuzzyClusters(fuzzyHost, appState.lastNearDup, { pulse: true });
+  updateFuzzyThresholdBadge(threshold, appState.lastNearDup.cross_author_fuzzy_count ?? 0);
+  syncJaccardThresholdHud(threshold, resolveThresholdBounds(appState.lastNearDup));
   updatePostsPanel();
 }
 
@@ -320,32 +221,32 @@ function updatePostsPanel(): void {
   const filtered = filterPosts();
   const active = getInvestigationFilter();
   host.innerHTML = renderPostsList(filtered, {
-    limit: postListLimit,
+    limit: appState.postListLimit,
     activeAuthorId: active.authorId,
-    blurSensitive,
-    nearDup: lastNearDup,
-    groupAuthors: groupAuthorPosts,
+    blurSensitive: appState.blurSensitive,
+    nearDup: appState.lastNearDup,
+    groupAuthors: appState.groupAuthorPosts,
   });
   bindPostListAuthorLinks(host);
   const loadMore = document.getElementById("load-more-posts");
   const canLoadMore =
-    filtered.length > postListLimit && postListLimit < POST_LIST_MAX;
+    filtered.length > appState.postListLimit && appState.postListLimit < POST_LIST_MAX;
   if (loadMore) {
     if (canLoadMore) {
       loadMore.removeAttribute("hidden");
-      loadMore.textContent = `Show more posts (${Math.min(POST_LIST_MAX, filtered.length) - postListLimit} more)`;
+      loadMore.textContent = `Show more posts (${Math.min(POST_LIST_MAX, filtered.length) - appState.postListLimit} more)`;
     } else {
       loadMore.setAttribute("hidden", "");
     }
   }
-  const shown = Math.min(postListLimit, filtered.length);
+  const shown = Math.min(appState.postListLimit, filtered.length);
   if (countEl) {
     if (hasActiveFilter()) {
-      countEl.textContent = `Showing ${shown} of ${filtered.length} matching (${totalNarrativePosts} in narrative)`;
+      countEl.textContent = `Showing ${shown} of ${filtered.length} matching (${appState.totalNarrativePosts} in narrative)`;
     } else if (filtered.length > POST_LIST_MAX && shown >= POST_LIST_MAX) {
-      countEl.textContent = `Showing ${shown} of ${totalNarrativePosts} (capped — export Briefing for full summary)`;
+      countEl.textContent = `Showing ${shown} of ${appState.totalNarrativePosts} (capped — export Briefing for full summary)`;
     } else {
-      countEl.textContent = `Showing ${shown} of ${totalNarrativePosts} by outrage`;
+      countEl.textContent = `Showing ${shown} of ${appState.totalNarrativePosts} by outrage`;
     }
   }
   refreshDeskStrip();
@@ -355,11 +256,11 @@ function applyInvestigation(authorId: string | null): void {
   focusPropagationAuthor(authorId);
   updatePostsPanel();
   const f = getInvestigationFilter();
-  if (f.authorId && lastLoadedPosts.length) {
+  if (f.authorId && appState.lastLoadedPosts.length) {
     const label = f.label ?? f.authorId.slice(0, 12);
     setInspectorContext(
       label,
-      renderAuthorInspector(f.authorId, label, lastLoadedPosts, lastGraphEdgeCount)
+      renderAuthorInspector(f.authorId, label, appState.lastLoadedPosts, appState.lastGraphEdgeCount)
     );
     bindInspectorViewAuthor(() => {
       switchDeskMode("evidence", { scroll: false });
@@ -468,51 +369,6 @@ function renderDuplicatesPanel(
   return `<section class="panel panel-duplicates">${renderDuplicatesInner(clusters)}</section>`;
 }
 
-function buildMetricsGrid(
-  posts: Post[],
-  authors: Set<string>,
-  avg: number | null,
-  cib: CibReport,
-  provenance?: NarrativeProvenance | null
-): string {
-  const postsPerAuthor =
-    provenance?.posts_per_author ??
-    (authors.size > 0 ? Math.round((posts.length / authors.size) * 10) / 10 : null);
-  const scoredCount = provenance?.outrage_scored_count ?? posts.filter((p) => p.outrage_index != null).length;
-  const scoredPct =
-    posts.length > 0 ? `${Math.round((scoredCount / posts.length) * 100)}% scored` : "";
-  const outrageLabel = provenance?.outrage_compressed
-    ? `max ${provenance.outrage_max?.toFixed(3) ?? "n/a"}`
-    : avg != null
-      ? `mean ${avg.toFixed(3)}`
-      : "n/a";
-  const outrageSub = provenance?.outrage_compressed
-    ? `${scoredPct} · lexicon floor`
-    : scoredPct;
-  const postsLabel = provenance?.posts_truncated
-    ? `${posts.length} / ${provenance.posts_total_db}`
-    : `${posts.length}`;
-  const fuzzyCount = provenance?.fuzzy_cluster_count ?? 0;
-  const dupCount = provenance?.duplicate_cluster_count ?? 0;
-  const graphNote = cib.graph_sufficient
-    ? `graph ${cib.graph_suspicion_score.toFixed(2)} · ${cib.edge_count} edges`
-    : `${fuzzyCount} fuzzy · ${dupCount} dup clusters`;
-
-  return metricsGridShell(
-    [
-      metricCardHtml("Posts in view", postsLabel, postsPerAuthor != null ? `${postsPerAuthor} per author` : undefined),
-      metricCardHtml("Unique authors", authors.size, `${posts.length} posts total`),
-      metricCardHtml("Outrage", outrageLabel, outrageSub),
-      metricCardHtml(
-        "Text coordination",
-        cib.text_coordination_score.toFixed(2),
-        graphNote,
-        true
-      ),
-    ].join("")
-  );
-}
-
 function cibSnapshotHtml(cib: CibReport): string {
   const textSignals = cib.text_signals ?? [];
   const graphSignals = cib.graph_signals ?? [];
@@ -565,7 +421,7 @@ function cibSnapshotHtml(cib: CibReport): string {
 }
 
 function deskModeHiddenAttr(mode: DeskMode): string {
-  return mode === currentDeskMode ? "" : " hidden";
+  return mode === appState.currentDeskMode ? "" : " hidden";
 }
 
 function bindClusterButtons(): void {
@@ -577,11 +433,11 @@ function bindClusterButtons(): void {
         .filter((n) => Number.isFinite(n));
       const burst = btn.dataset.burst === "1";
       const sample = btn.querySelector(".post-text")?.textContent ?? "cluster";
-      const cluster = lastAmpClusters.find(
+      const cluster = appState.lastAmpClusters.find(
         (c) => c.post_ids.length === ids.length && c.post_ids.every((id) => ids.includes(id))
       );
       if (cluster) {
-        const parentTheme = findParentThemeLabel(ids, lastThemesReport?.clusters ?? []);
+        const parentTheme = findParentThemeLabel(ids, appState.lastThemesReport?.clusters ?? []);
         setInspectorContext(
           burst ? "Synchronized burst" : "Duplicate cluster",
           renderDuplicateClusterInspector(cluster, "exact", parentTheme)
@@ -641,21 +497,21 @@ function bindPostToolbar(): void {
     setHoursBack(v ? parseInt(v, 10) : null);
   });
   document.getElementById("blur-sensitive-toggle")?.addEventListener("change", (e) => {
-    blurSensitive = (e.target as HTMLInputElement).checked;
-    localStorage.setItem(BLUR_SENSITIVE_KEY, blurSensitive ? "1" : "0");
+    appState.blurSensitive = (e.target as HTMLInputElement).checked;
+    localStorage.setItem(BLUR_SENSITIVE_KEY, appState.blurSensitive ? "1" : "0");
     updatePostsPanel();
   });
   document.getElementById("group-authors-toggle")?.addEventListener("change", (e) => {
-    groupAuthorPosts = (e.target as HTMLInputElement).checked;
+    appState.groupAuthorPosts = (e.target as HTMLInputElement).checked;
     updatePostsPanel();
   });
   document.getElementById("compact-charts-toggle")?.addEventListener("change", (e) => {
-    compactCharts = (e.target as HTMLInputElement).checked;
-    localStorage.setItem(COMPACT_CHARTS_KEY, compactCharts ? "1" : "0");
+    appState.compactCharts = (e.target as HTMLInputElement).checked;
+    localStorage.setItem(COMPACT_CHARTS_KEY, appState.compactCharts ? "1" : "0");
     applyChartDensity();
   });
   document.getElementById("load-more-posts")?.addEventListener("click", () => {
-    postListLimit = POST_LIST_MAX;
+    appState.postListLimit = POST_LIST_MAX;
     updatePostsPanel();
   });
   document.querySelectorAll<HTMLButtonElement>(".tier-filter").forEach((btn) => {
@@ -670,123 +526,29 @@ function bindPostToolbar(): void {
 
 function refreshBriefPanel(): void {
   const host = document.getElementById("brief-content");
-  if (!host || !briefContext) return;
+  if (!host || !appState.briefContext) return;
   renderBrief(
     host,
-    briefContext.narrative,
-    briefContext.posts,
-    briefContext.cib,
-    briefContext.amp,
-    briefContext.themes,
-    lastNearDup,
-    briefContext.crossPollination ?? null,
-    briefContext.brief
+    appState.briefContext.narrative,
+    appState.briefContext.posts,
+    appState.briefContext.cib,
+    appState.briefContext.amp,
+    appState.briefContext.themes,
+    appState.lastNearDup,
+    appState.briefContext.crossPollination ?? null,
+    appState.briefContext.brief
   );
 }
 
-function shell(narratives: NarrativeSummary[], selectedId: number, generatedAt: string | null): string {
-  const options = narratives
-    .map(
-      (n) =>
-        `<option value="${n.id}" ${n.id === selectedId ? "selected" : ""}>${escapeHtml(n.name)} (${n.post_count} posts)</option>`
-    )
-    .join("");
-  const stamp = generatedAt ? ` · ${escapeHtml(generatedAt.slice(0, 19))} UTC` : "";
-  return `
-    <div class="app">
-      <header class="site-header">
-        <div class="header-top">
-          <h1><span class="brand">Heimdall</span> Narrative Desk</h1>
-          <p class="data-badge">Repo snapshot${stamp}</p>
-          <button type="button" id="open-methodology-drawer" class="btn btn-secondary btn-small header-methodology-btn" title="Methods &amp; limitations">Methodology</button>
-        </div>
-        ${renderContentNotice()}
-        ${renderOnboardingHintHtml()}
-        <details class="header-meta-collapse">
-          <summary class="header-meta-summary">Data sources &amp; ingest</summary>
-          <p class="data-links">Source data: ${renderDataLinksExtra()}</p>
-          ${renderRateFooter()}
-        </details>
-      </header>
-      ${renderTabNav(currentTab)}
-      <div id="panel-analysis" role="tabpanel" aria-labelledby="tab-analysis"${currentTab !== "analysis" ? " hidden" : ""}>
-        <div class="toolbar">
-          <div class="toolbar-inner">
-            <fieldset class="toolbar-group">
-              <legend>Data</legend>
-              <label for="narrative-select">Narrative</label>
-              <select id="narrative-select" class="narrative-select">${options}</select>
-              ${renderDataAsOfHtml(generatedAt)}
-            </fieldset>
-            <fieldset class="toolbar-group">
-              <legend>Display</legend>
-              <label for="time-range-select" class="toolbar-label">Window</label>
-              <select id="time-range-select" class="toolbar-select" aria-label="Time window">
-                <option value="">All time</option>
-                <option value="24">Last 24h</option>
-                <option value="72">Last 72h</option>
-                <option value="168">Last 7d</option>
-              </select>
-              <label class="toolbar-check"><input type="checkbox" id="group-authors-toggle" checked /> Group busy authors</label>
-              <label class="toolbar-check"><input type="checkbox" id="blur-sensitive-toggle" ${blurSensitive ? "checked" : ""} /> Blur sensitive text</label>
-              <label class="toolbar-check"><input type="checkbox" id="compact-charts-toggle" ${compactCharts ? "checked" : ""} /> Compact charts</label>
-            </fieldset>
-            <fieldset class="toolbar-group toolbar-group-actions">
-              <legend>Actions</legend>
-              <button type="button" id="refresh-btn" class="btn btn-secondary" title="Re-fetch snapshot.json from this site — does not pull new social data until CI publishes a new export">Refresh snapshot file</button>
-              <button type="button" id="goto-brief-btn" class="btn btn-secondary">Export briefing</button>
-            </fieldset>
-          </div>
-        </div>
-        <main id="content" class="dashboard desk-dashboard">${stateLoadingHtml()}</main>
-        ${globalInvestigationBarHtml()}
-      </div>
-      <div id="panel-brief" class="panel-brief" role="tabpanel" aria-labelledby="tab-brief"${currentTab !== "brief" ? " hidden" : ""}>
-        <main class="dashboard">${briefPanelHtml(generatedAt)}</main>
-      </div>
-      <div id="panel-methodology" class="panel-methodology" role="tabpanel" aria-labelledby="tab-methodology"${currentTab !== "methodology" ? " hidden" : ""}>
-        <main class="dashboard prose-wrap">${renderMethodology()}</main>
-      </div>
-      <div id="methodology-drawer-backdrop" class="methodology-drawer-backdrop" hidden></div>
-      <aside id="methodology-drawer" class="methodology-drawer" hidden aria-label="Methodology">
-        <header class="methodology-drawer-header">
-          <h2>Methodology</h2>
-          <button type="button" id="close-methodology-drawer" class="btn btn-secondary btn-small">Close</button>
-        </header>
-        <div class="methodology-drawer-body prose-wrap">${renderMethodology()}</div>
-      </aside>
-    </div>
-  `;
-}
-
 function switchTab(tab: AppTab): void {
-  currentTab = tab;
+  appState.currentTab = tab;
   setTabInUrl(tab);
   showTabPanel(tab);
   if (tab === "brief") refreshBriefPanel();
 }
 
-function renderMissingSnapshot(message: string): void {
-  root.innerHTML = `
-    <header class="site-header">
-      <h1><span class="brand">Heimdall</span> Narrative Analysis</h1>
-      ${renderContentNotice()}
-    </header>
-    <main>
-      <div class="state-error">
-        <strong>Dashboard data not yet published</strong>
-        <p>${escapeHtml(message)}</p>
-        <p class="state-hint">This site reads a frozen snapshot file updated by automated ingest. Check back after the next deploy, or ask a maintainer for status.</p>
-        <details class="maintainer-details">
-          <summary>For maintainers</summary>
-          <p class="sub">Publish ingest to the repo with <code>python scripts/publish_dashboard_data.py</code>, then redeploy Pages.</p>
-          <p class="data-links">
-            <a href="${DATA_LINKS.publishDocs}" target="_blank" rel="noopener">data/dashboard/README.md</a>
-          </p>
-        </details>
-      </div>
-    </main>
-  `;
+function showMissingSnapshot(message: string): void {
+  root.innerHTML = renderMissingSnapshot(message, DATA_LINKS.publishDocs);
 }
 
 async function loadDashboard(narrativeId: number): Promise<void> {
@@ -812,20 +574,20 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         fetchProvenance(narrativeId),
         fetchBrief(narrativeId),
       ]);
-    clusterSourcePosts = posts;
+    appState.clusterSourcePosts = posts;
     const bounds = resolveThresholdBounds(nearDup);
-    jaccardThreshold = loadStoredThreshold(
+    appState.jaccardThreshold = loadStoredThreshold(
       bounds.defaultThreshold,
       bounds.min,
       bounds.max
     );
-    lastNearDup = recomputeNearDuplicatesReport(posts, jaccardThreshold, nearDup);
-    lastAmpClusters = amp.clusters;
-    lastThemesReport = themes;
-    setCoordinationContext({ amp, nearDup: lastNearDup, posts, themes: themes.clusters });
-    setInvestigationPosts(applyClusterTagsToPosts(posts, lastNearDup));
+    appState.lastNearDup = recomputeNearDuplicatesReport(posts, appState.jaccardThreshold, nearDup);
+    appState.lastAmpClusters = amp.clusters;
+    appState.lastThemesReport = themes;
+    setCoordinationContext({ amp, nearDup: appState.lastNearDup, posts, themes: themes.clusters });
+    setInvestigationPosts(applyClusterTagsToPosts(posts, appState.lastNearDup));
     if (narrativeMeta) {
-      briefContext = {
+      appState.briefContext = {
         narrative: narrativeMeta,
         posts,
         cib,
@@ -845,33 +607,33 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     const outrageDiag = computeOutrageDiagnostics(posts, sentiment.buckets);
     const priorityPoints = buildAuthorPriorityPoints(graph, cib, posts);
     const criticalCount = priorityPoints.filter((p) => p.critical).length;
-    const fuzzyCount = lastNearDup?.cross_author_fuzzy_count ?? 0;
+    const fuzzyCount = appState.lastNearDup?.cross_author_fuzzy_count ?? 0;
     const crossActorCount = crossPollination?.actor_count ?? 0;
     const dupCount = amp.clusters.length;
-    totalNarrativePosts = posts.length;
-    lastCriticalCount = criticalCount;
-    lastAnomalyCount = dupCount + fuzzyCount + crossActorCount;
+    appState.totalNarrativePosts = posts.length;
+    appState.lastCriticalCount = criticalCount;
+    appState.lastAnomalyCount = dupCount + fuzzyCount + crossActorCount;
 
-    lastLoadedPosts = posts;
-    lastGraphEdgeCount = graph.edges.length;
+    appState.lastLoadedPosts = posts;
+    appState.lastGraphEdgeCount = graph.edges.length;
 
     const alertRows = [
       ...buildSentimentAlerts(sentiment),
-      ...buildAlertRows(amp, cib, lastNearDup, crossPollination, themes),
+      ...buildAlertRows(amp, cib, appState.lastNearDup, crossPollination, themes),
     ];
     const emergingCount = themes.emerging_theme_count ?? 0;
     const distinctCount = themes.distinct_theme_count ?? themes.cluster_count ?? 0;
     const modeBadges: ModeBadges = {
       pulse: criticalCount || undefined,
       frames: emergingCount || distinctCount || undefined,
-      network: lastAnomalyCount || undefined,
-      evidence: totalNarrativePosts,
+      network: appState.lastAnomalyCount || undefined,
+      evidence: appState.totalNarrativePosts,
     };
 
-    postListLimit = POST_LIST_INITIAL;
-    chartsMounted.pulse = false;
-    chartsMounted.frames = false;
-    chartsMounted.network = false;
+    appState.postListLimit = POST_LIST_INITIAL;
+    appState.chartsMounted.pulse = false;
+    appState.chartsMounted.frames = false;
+    appState.chartsMounted.network = false;
 
     const modePanels = `
       <section class="desk-mode-panel" data-desk-mode-panel="pulse"${deskModeHiddenAttr("pulse")}>
@@ -887,6 +649,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
           </section>
         </div>
         ${renderProvenancePanelHtml(provenance, cib)}
+        ${metricsTrendPanelHtml(getMetricsHistory(), narrativeMeta?.name ?? "narrative")}
         ${sentimentChartPanelHtml(
           escapeHtml(sentiment.trend),
           outrageDiag,
@@ -962,7 +725,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
         )}
         ${panelRollupHtml(
           `Cross-author fuzzy amplification (${fuzzyCount} cluster${fuzzyCount === 1 ? "" : "s"})`,
-          fuzzyAmplificationPanelHtml(nearDup, jaccardThreshold, bounds, true)
+          fuzzyAmplificationPanelHtml(nearDup, appState.jaccardThreshold, bounds, true)
         )}
         ${panelRollupHtml(
           `Narrative cross-pollination (${crossActorCount} cross-narrative actor${crossActorCount === 1 ? "" : "s"})`,
@@ -982,7 +745,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       </section>
     `;
 
-    content.innerHTML = deskLayoutHtml(modePanels, currentDeskMode, modeBadges);
+    content.innerHTML = deskLayoutHtml(modePanels, appState.currentDeskMode, modeBadges);
 
     clearInvestigationFilter();
     resetInspectorEmpty();
@@ -991,7 +754,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       selectAuthor(authorId, label);
     };
 
-    chartMountFns = {
+    appState.chartMountFns = {
       mountPulse: () => {
         const sentimentCanvas = document.getElementById(
           "sentiment-timeline-chart"
@@ -1032,6 +795,12 @@ async function loadDashboard(narrativeId: number): Promise<void> {
             outrageDiag
           );
         }
+        const metricsCanvas = document.getElementById(
+          "metrics-trend-chart"
+        ) as HTMLCanvasElement | null;
+        if (metricsCanvas && narrativeMeta) {
+          mountMetricsTrendChart(metricsCanvas, getMetricsHistory(), narrativeMeta.name);
+        }
       },
       mountFrames: () => {
         const themesHost = document.getElementById("themes-list-host");
@@ -1055,8 +824,8 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     };
 
     const fuzzyHost = document.getElementById("fuzzy-clusters-host");
-    if (fuzzyHost) renderFuzzyClusters(fuzzyHost, lastNearDup);
-    updateFuzzyThresholdBadge(jaccardThreshold, fuzzyCount);
+    if (fuzzyHost) renderFuzzyClusters(fuzzyHost, appState.lastNearDup);
+    updateFuzzyThresholdBadge(appState.jaccardThreshold, fuzzyCount);
     const crossGlobalHost = document.getElementById("cross-pollination-global-host");
     if (crossGlobalHost) renderGlobalCrossPollination(crossGlobalHost, crossPollination);
     const crossNarrativeHost = document.getElementById("cross-pollination-narrative-host");
@@ -1085,7 +854,7 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     bindGraphFullscreen();
     bindPostListAuthorLinks(document.getElementById("post-list-host") ?? document);
     updatePostsPanel();
-    ensureChartsMountedForMode(currentDeskMode);
+    ensureChartsMountedForMode(appState.currentDeskMode);
     scrollPageToTop();
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
@@ -1096,20 +865,6 @@ async function loadDashboard(narrativeId: number): Promise<void> {
     );
     scrollPageToTop();
   }
-}
-
-function narrativeIdFromUrl(): number | null {
-  const p = new URLSearchParams(window.location.search);
-  const n = p.get("narrative");
-  if (!n) return null;
-  const id = parseInt(n, 10);
-  return Number.isFinite(id) ? id : null;
-}
-
-function setUrlNarrative(id: number): void {
-  const url = new URL(window.location.href);
-  url.searchParams.set("narrative", String(id));
-  window.history.replaceState({}, "", url);
 }
 
 async function reloadSnapshotFromNetwork(narrativeId: number): Promise<void> {
@@ -1191,13 +946,14 @@ async function bootstrap(): Promise<void> {
     await loadSnapshot();
     const narratives = await listNarratives();
     if (narratives.length === 0) {
-      renderMissingSnapshot("Snapshot has no narratives.");
+      showMissingSnapshot("Snapshot has no narratives.");
       return;
     }
 
+    const primaryName = getPrimaryNarrativeName();
     const selected =
       narrativeIdFromUrl() ??
-      narratives.find((n) => n.name === "midterms_2026")?.id ??
+      (primaryName ? narratives.find((n) => n.name === primaryName)?.id : undefined) ??
       narratives[0].id;
 
     root.innerHTML = shell(narratives, selected, getSnapshotGeneratedAt());
@@ -1216,16 +972,16 @@ async function bootstrap(): Promise<void> {
         resetInspectorEmpty();
       }
     );
-    showTabPanel(currentTab);
-    if (currentTab === "brief") refreshBriefPanel();
+    showTabPanel(appState.currentTab);
+    if (appState.currentTab === "brief") refreshBriefPanel();
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
-    renderMissingSnapshot(msg);
+    showMissingSnapshot(msg);
   }
 }
 
 window.addEventListener("heimdall:goto-evidence", () => {
-  if (currentTab === "analysis") {
+  if (appState.currentTab === "analysis") {
     switchDeskMode("evidence", { scroll: false });
     scrollGlobalInvestigationIntoView();
   }

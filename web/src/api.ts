@@ -90,6 +90,14 @@ export function getSnapshotMeta(): SnapshotMeta | null {
   return snapshotCache?.meta ?? null;
 }
 
+export function getPrimaryNarrativeName(): string | null {
+  return snapshotCache?.meta?.primary_narrative ?? null;
+}
+
+export function getMetricsHistory(): import("./types").MetricsHistoryEntry[] {
+  return snapshotCache?.meta?.metrics_history ?? [];
+}
+
 export async function fetchNearDuplicates(narrativeId: number): Promise<NearDuplicatesReport | null> {
   await loadSnapshot();
   return bundleFor(narrativeId).near_duplicates ?? null;

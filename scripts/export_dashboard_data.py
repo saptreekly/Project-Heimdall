@@ -56,6 +56,13 @@ async def run(out: Path) -> int:
         paths = write_brief_artifacts(snapshot, brief_dir)
         print(f"Wrote {len(paths)} brief artifact(s) to {brief_dir}")
 
+    metrics_src = ROOT / "data" / "dashboard" / "metrics_history.jsonl"
+    metrics_dst = ROOT / "web" / "public" / "data" / "metrics_history.jsonl"
+    if metrics_src.is_file():
+        metrics_dst.parent.mkdir(parents=True, exist_ok=True)
+        metrics_dst.write_text(metrics_src.read_text(encoding="utf-8"), encoding="utf-8")
+        print(f"Copied metrics history to {metrics_dst}")
+
     return 0
 
 

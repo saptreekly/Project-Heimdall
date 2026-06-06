@@ -74,7 +74,6 @@ class IngestionPipeline:
         settings = get_settings()
         self._session = session
         self._platform = platform
-        self._platform = platform
         if ingester is not None:
             self._ingester = ingester
         elif platform == Platform.X and x_plan is not None:

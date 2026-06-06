@@ -362,16 +362,22 @@ export function renderPropagationGraph(
       return {
         id: a.author_id,
         label,
-        title: `${a.author_id}\nposts: ${a.post_count} · out: ${out} · in: ${inn}\nmax outrage: ${a.max_outrage.toFixed(2)}${a.known_bot ? "\nIU known bot" : ""}`,
+        title: `${a.author_id}\nposts: ${a.post_count} · out: ${out} · in: ${inn}\nmax outrage: ${a.max_outrage.toFixed(2)}${a.posts_per_hour != null ? `\nvelocity: ${a.posts_per_hour}/hr` : ""}${a.known_bot ? "\nIU known bot" : ""}${a.high_velocity ? "\nhigh posting velocity" : ""}`,
         size: 12 + Math.min(28, out * 4 + a.post_count * 2),
         color: {
           background: outrageColor(a.max_outrage),
-          border: isHub ? "#f5a623" : a.known_bot ? "#9b59b6" : "#2a384c",
+          border: isHub
+            ? "#f5a623"
+            : a.known_bot
+              ? "#9b59b6"
+              : a.high_velocity
+                ? "#e74c3c"
+                : "#2a384c",
           highlight: { background: "#c0392b", border: "#fff" },
         },
-        borderWidth: isHub ? 4 : 2,
+        borderWidth: isHub ? 4 : a.high_velocity ? 3 : 2,
         font: { color: "#e8edf4", size: 12 },
-        shape: a.known_bot ? "diamond" : "dot",
+        shape: a.known_bot ? "diamond" : a.high_velocity ? "triangle" : "dot",
       };
     })
   );

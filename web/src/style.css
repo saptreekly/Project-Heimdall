@@ -341,6 +341,11 @@ button {
   display: none !important;
 }
 
+.panel-metrics-trend canvas {
+  min-height: 140px;
+  max-height: 200px;
+}
+
 .metrics-histogram-row {
   display: grid;
   grid-template-columns: 1fr 1fr;

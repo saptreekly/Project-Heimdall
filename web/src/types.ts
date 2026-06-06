@@ -84,10 +84,28 @@ export interface BenchmarkStats {
   labels: string[];
 }
 
+export interface MetricsHistoryNarrativeRow {
+  id?: number;
+  name?: string;
+  posts_in_snapshot?: number;
+  combined_suspicion?: number | null;
+  text_coordination?: number | null;
+  sentiment_trend?: string | null;
+}
+
+export interface MetricsHistoryEntry {
+  generated_at?: string;
+  total_posts_in_snapshot?: number;
+  narrative_count?: number;
+  narratives?: MetricsHistoryNarrativeRow[];
+}
+
 export interface SnapshotMeta {
+  primary_narrative?: string | null;
   ingest_workflow_url?: string;
   pages_workflow_url?: string;
   x_rate?: { date?: string; count?: number } | null;
+  metrics_history?: MetricsHistoryEntry[];
 }
 
 export interface CrossPollinationNarrativeRef {
@@ -250,6 +268,11 @@ export interface GraphAuthor {
   post_count: number;
   known_bot?: boolean;
   bot_label?: string | null;
+  first_post_at?: string | null;
+  last_post_at?: string | null;
+  active_span_hours?: number;
+  posts_per_hour?: number;
+  high_velocity?: boolean;
 }
 
 export interface GraphEdge {
@@ -266,6 +289,8 @@ export interface GraphInteractionStats {
   author_count: number;
   connected_author_count: number;
   isolated_author_count: number;
+  high_velocity_author_count?: number;
+  known_bot_author_count?: number;
   by_type: Record<string, number>;
 }
 

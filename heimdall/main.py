@@ -8,12 +8,15 @@ from fastapi.staticfiles import StaticFiles
 from heimdall.api.routes import router
 from heimdall.config import get_settings
 from heimdall.db.session import init_db
+from heimdall.logging_config import setup_logging
 
 WEB_DIST = Path(__file__).resolve().parent.parent / "web" / "dist"
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    settings = get_settings()
+    setup_logging(level=settings.log_level, json_logs=settings.json_logs)
     await init_db()
     yield
 

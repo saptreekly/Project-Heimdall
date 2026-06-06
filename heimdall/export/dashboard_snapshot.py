@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -34,6 +35,8 @@ from heimdall.db.models import Narrative, OutrageScore, Platform, Post
 from heimdall.graph.export import build_graph_export
 from heimdall.graph.stats import build_graph_stats
 from heimdall.nlp.narrative_themes import narrative_theme_clusters
+
+logger = logging.getLogger(__name__)
 
 
 async def list_narrative_summaries(db: AsyncSession) -> list[NarrativeSummary]:
@@ -221,6 +224,34 @@ def _load_x_rate_state() -> dict | None:
         return None
 
 
+def _load_scheduled_primary_narrative() -> str | None:
+    path = Path(__file__).resolve().parents[2] / "data" / "scheduled_ingest.json"
+    if not path.is_file():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        jobs = data.get("jobs") or []
+        if jobs and jobs[0].get("narrative_name"):
+            return str(jobs[0]["narrative_name"])
+    except (json.JSONDecodeError, KeyError, IndexError):
+        return None
+    return None
+
+
+def _load_metrics_history_tail(*, limit: int = 30) -> list[dict]:
+    path = Path(__file__).resolve().parents[2] / "data" / "dashboard" / "metrics_history.jsonl"
+    if not path.is_file():
+        return []
+    lines = path.read_text(encoding="utf-8").strip().splitlines()
+    rows: list[dict] = []
+    for line in lines[-limit:]:
+        try:
+            rows.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+    return rows
+
+
 async def narrative_cib(
     db: AsyncSession,
     narrative_id: int,
@@ -369,6 +400,7 @@ async def narrative_themes(db: AsyncSession, narrative_id: int) -> dict:
         data["emerging_theme_count"] = len(emerging)
         return data
     except Exception as exc:
+        logger.warning("Theme clustering failed for narrative %s: %s", narrative_id, exc)
         return {
             "available": False,
             "reason": str(exc),
@@ -447,8 +479,10 @@ async def build_dashboard_snapshot(db: AsyncSession) -> dict:
         "by_narrative_id": by_id,
         "cross_pollination": cross_pollination,
         "meta": {
+            "primary_narrative": _load_scheduled_primary_narrative(),
             "ingest_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/ingest.yml",
             "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
             "x_rate": _load_x_rate_state(),
+            "metrics_history": _load_metrics_history_tail(),
         },
     }

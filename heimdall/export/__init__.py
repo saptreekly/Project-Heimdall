@@ -1,3 +1,1 @@
-from heimdall.export.dashboard_snapshot import build_dashboard_snapshot
-
-__all__ = ["build_dashboard_snapshot"]
+"""Dashboard export helpers (import submodules directly to avoid import cycles)."""

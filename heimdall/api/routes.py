@@ -1,9 +1,12 @@
+import logging
+
 import httpx
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload
 
+from heimdall.api.deps import require_ingest_api_key
 from heimdall.analysis.cib_report import build_cib_report
 from heimdall.analysis.duplicates import find_duplicate_clusters_from_rows
 from heimdall.export.cross_pollination_loader import load_cross_pollination, per_narrative_hits
@@ -42,6 +45,7 @@ from heimdall.ingestion.x_guard import (
 )
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
 
 @router.get("/health")
@@ -73,7 +77,7 @@ async def list_narratives(db: AsyncSession = Depends(get_db)) -> list[NarrativeS
     ]
 
 
-@router.post("/narratives", response_model=dict)
+@router.post("/narratives", response_model=dict, dependencies=[Depends(require_ingest_api_key)])
 async def create_narrative(body: NarrativeCreate, db: AsyncSession = Depends(get_db)) -> dict:
     pipeline = IngestionPipeline(db)
     narrative = await pipeline.ensure_narrative(body.name, body.keywords)
@@ -105,7 +109,7 @@ def _ingest_options(body: IngestRequest) -> IngestOptions:
     )
 
 
-@router.post("/ingest/preview")
+@router.post("/ingest/preview", dependencies=[Depends(require_ingest_api_key)])
 async def ingest_preview(
     body: IngestPreviewRequest,
     db: AsyncSession = Depends(get_db),
@@ -123,7 +127,7 @@ async def ingest_preview(
     )
 
 
-@router.post("/ingest", response_model=IngestResponse)
+@router.post("/ingest", response_model=IngestResponse, dependencies=[Depends(require_ingest_api_key)])
 async def ingest(body: IngestRequest, db: AsyncSession = Depends(get_db)) -> IngestResponse:
     platform = _parse_platform(body.platform)
     x_plan = None
@@ -163,9 +167,17 @@ async def ingest(body: IngestRequest, db: AsyncSession = Depends(get_db)) -> Ing
             options=options,
         )
     except XDailyBudgetExceeded as exc:
+        logger.warning("X daily budget exceeded: %s", exc)
         raise HTTPException(status_code=429, detail=str(exc)) from exc
     except (RuntimeError, httpx.HTTPStatusError) as exc:
+        logger.error("Ingest failed for %s: %s", body.narrative_name, exc)
         raise HTTPException(status_code=502, detail=str(exc)) from exc
+    logger.info(
+        "Ingest complete narrative=%s platform=%s inserted=%s",
+        body.narrative_name,
+        body.platform or "default",
+        result.get("inserted"),
+    )
     return IngestResponse(**result)
 
 
@@ -312,7 +324,11 @@ async def narrative_cross_pollination(
     return per_narrative_hits(report, narrative_id)
 
 
-@router.post("/datasets/astroturf/import", response_model=AstroturfImportResponse)
+@router.post(
+    "/datasets/astroturf/import",
+    response_model=AstroturfImportResponse,
+    dependencies=[Depends(require_ingest_api_key)],
+)
 async def astroturf_import(db: AsyncSession = Depends(get_db)) -> AstroturfImportResponse:
     try:
         result = await import_astroturf(db)
@@ -338,7 +354,10 @@ async def tweet_eval_subsets() -> dict:
     }
 
 
-@router.post("/narratives/{narrative_id}/rescore")
+@router.post(
+    "/narratives/{narrative_id}/rescore",
+    dependencies=[Depends(require_ingest_api_key)],
+)
 async def rescore_narrative(narrative_id: int, db: AsyncSession = Depends(get_db)) -> dict:
     exists = await db.execute(select(Narrative.id).where(Narrative.id == narrative_id))
     if not exists.scalar_one_or_none():
@@ -399,7 +418,11 @@ async def astroturf_stats(db: AsyncSession = Depends(get_db)) -> dict:
     }
 
 
-@router.post("/narratives/{narrative_id}/graph/neo4j", response_model=Neo4jSyncResponse)
+@router.post(
+    "/narratives/{narrative_id}/graph/neo4j",
+    response_model=Neo4jSyncResponse,
+    dependencies=[Depends(require_ingest_api_key)],
+)
 async def sync_neo4j(
     narrative_id: int,
     include_cib: bool = True,

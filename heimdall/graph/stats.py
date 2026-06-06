@@ -20,10 +20,15 @@ def build_graph_stats(authors: list[dict], edges: list[dict]) -> dict:
     connected = incident & author_ids
     isolated = author_ids - incident
 
+    high_velocity = sum(1 for a in authors if a.get("high_velocity"))
+    known_bots = sum(1 for a in authors if a.get("known_bot"))
+
     return {
         "edge_count": len(edges),
         "author_count": len(author_ids),
         "connected_author_count": len(connected),
         "isolated_author_count": len(isolated),
+        "high_velocity_author_count": high_velocity,
+        "known_bot_author_count": known_bots,
         "by_type": dict(sorted(by_type.items())),
     }
