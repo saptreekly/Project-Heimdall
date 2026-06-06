@@ -24,6 +24,10 @@ DEFAULT_DB = ROOT / "data" / "dashboard" / "heimdall.db"
 DEFAULT_ROTATION = ROOT / "data" / "dashboard" / "x_keyword_rotation.json"
 DEFAULT_INGEST_LOG = ROOT / "data" / "dashboard" / "ingest_runs.jsonl"
 
+EXPLORE_MIN_RUNS = 2
+YIELD_CANDIDATE_POOL = 3
+X_SEARCH_PRODUCTS = ("Latest", "Top")
+
 
 @dataclass(frozen=True)
 class IngestJob:
@@ -89,6 +93,49 @@ def _ingest_log_path() -> Path:
     return Path(raw) if raw else DEFAULT_INGEST_LOG
 
 
+def _load_keyword_run_counts(keywords: list[str], *, days: int = 14) -> dict[str, int]:
+    path = _ingest_log_path()
+    if not path.is_file():
+        return {kw: 0 for kw in keywords}
+    cutoff = datetime.now(UTC) - timedelta(days=days)
+    counts: dict[str, int] = defaultdict(int)
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        at = row.get("at")
+        if at:
+            try:
+                if datetime.fromisoformat(at.replace("Z", "+00:00")) < cutoff:
+                    continue
+            except ValueError:
+                pass
+        for kw in row.get("keywords") or []:
+            if kw in keywords:
+                counts[kw] += 1
+    return {kw: counts.get(kw, 0) for kw in keywords}
+
+
+def _load_rotation_state() -> dict:
+    path = _rotation_state_path()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if path.is_file():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            pass
+    return {"keyword_index": 0}
+
+
+def _save_rotation_state(state: dict) -> None:
+    path = _rotation_state_path()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+
+
 def _load_keyword_yield_stats(keywords: list[str], *, days: int = 14) -> dict[str, float]:
     path = _ingest_log_path()
     if not path.is_file():
@@ -126,36 +173,61 @@ def rotate_x_keywords(keywords: list[str], count: int) -> tuple[list[str], int]:
     if not cleaned or count <= 0:
         return [], 0
 
-    path = _rotation_state_path()
-    path.parent.mkdir(parents=True, exist_ok=True)
-    state: dict = {"keyword_index": 0}
-    if path.is_file():
-        try:
-            state = json.loads(path.read_text(encoding="utf-8"))
-        except json.JSONDecodeError:
-            state = {"keyword_index": 0}
-
+    state = _load_rotation_state()
     idx = int(state.get("keyword_index", 0)) % len(cleaned)
     selected = [cleaned[(idx + i) % len(cleaned)] for i in range(min(count, len(cleaned)))]
     state["keyword_index"] = idx + len(selected)
-    path.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+    _save_rotation_state(state)
     return selected, state["keyword_index"]
 
 
-def select_keywords_for_run(job: IngestJob) -> list[str]:
+def select_keywords_explore_yield(keywords: list[str], per_run: int) -> tuple[list[str], str]:
+    run_counts = _load_keyword_run_counts(keywords)
+    under_sampled = sorted(
+        [kw for kw in keywords if run_counts.get(kw, 0) < EXPLORE_MIN_RUNS],
+        key=lambda kw: (run_counts.get(kw, 0), kw),
+    )
+    if under_sampled:
+        return under_sampled[:per_run], "explore_under_sampled"
+
+    yields = _load_keyword_yield_stats(keywords)
+    ranked = sorted(keywords, key=lambda kw: (-yields.get(kw, 0.0), kw))
+    pool_size = max(YIELD_CANDIDATE_POOL, per_run)
+    pool = ranked[: min(pool_size, len(ranked))]
+    state = _load_rotation_state()
+    idx = int(state.get("yield_pick_index", 0)) % len(pool)
+    selected = [pool[(idx + i) % len(pool)] for i in range(min(per_run, len(pool)))]
+    state["yield_pick_index"] = idx + len(selected)
+    _save_rotation_state(state)
+    return selected, "yield_pool_rotate"
+
+
+def rotate_x_search_product() -> str:
+    state = _load_rotation_state()
+    idx = int(state.get("search_product_index", 0)) % len(X_SEARCH_PRODUCTS)
+    product = X_SEARCH_PRODUCTS[idx]
+    state["search_product_index"] = idx + 1
+    _save_rotation_state(state)
+    return product
+
+
+def select_keywords_for_run(job: IngestJob) -> tuple[list[str], str | None]:
     per_run = _scheduled_keywords_per_run()
     if per_run is None or job.platform != "x":
-        return job.keywords
+        return job.keywords, None
     if job.rotation_strategy == "yield":
         yields = _load_keyword_yield_stats(job.keywords)
         ranked = sorted(job.keywords, key=lambda kw: (-yields.get(kw, 0.0), kw))
-        return ranked[:per_run]
+        return ranked[:per_run], "yield"
+    if job.rotation_strategy == "explore_yield":
+        return select_keywords_explore_yield(job.keywords, per_run)
     rotated, _ = rotate_x_keywords(job.keywords, per_run)
-    return rotated or job.keywords
+    return rotated or job.keywords, "round_robin"
 
 
 def keywords_for_scheduled_job(job: IngestJob) -> list[str]:
-    return select_keywords_for_run(job)
+    keywords, _ = select_keywords_for_run(job)
+    return keywords
 
 
 def append_ingest_run(row: dict) -> None:
@@ -218,7 +290,14 @@ async def _apply_author_watchlist_updates(
         )
 
 
-async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list[str]) -> dict:
+async def run_job_on_platform(
+    job: IngestJob,
+    platform_name: str,
+    keywords: list[str],
+    *,
+    keyword_selection: str | None = None,
+    search_product: str | None = None,
+) -> dict:
     from heimdall.config import get_settings
     from heimdall.db.models import Platform
     from heimdall.ingestion.pipeline import IngestionPipeline
@@ -291,7 +370,12 @@ async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list
             )
             handle = poll_author.handle or poll_author.author_id
             run_keywords = [f"author:{handle.lstrip('@')}"]
-            x_plan = plan_x_ingest(run_keywords, job.limit, graphql_requests=1)
+            x_plan = plan_x_ingest(
+                run_keywords,
+                job.limit,
+                graphql_requests=1,
+                search_product=search_product or "Latest",
+            )
             poll_options = _ingest_options_from_job(
                 job,
                 require_keyword_hit=False,
@@ -310,6 +394,7 @@ async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list
                 keywords,
                 job.limit,
                 graphql_requests=len(query_plan.queries),
+                search_product=search_product or rotate_x_search_product(),
             )
 
         usage_before = await daily_usage_snapshot()
@@ -365,16 +450,32 @@ async def run_job_on_platform(job: IngestJob, platform_name: str, keywords: list
         out["planned_keywords"] = x_plan.keywords
         out["planned_limit"] = x_plan.limit
         out["planned_graphql_requests"] = x_plan.graphql_requests
+        out["search_product"] = x_plan.search_product
         out["plan_notes"] = x_plan.notes
         if ingest_mode == "keyword" and _scheduled_keywords_per_run() is not None:
             out["scheduled_keyword_rotation"] = True
             out["rotation_strategy"] = job.rotation_strategy
+            if keyword_selection:
+                out["keyword_selection"] = keyword_selection
     return out
 
 
 async def run_job(job: IngestJob) -> dict:
-    keywords = keywords_for_scheduled_job(job)
-    primary = await run_job_on_platform(job, job.platform, keywords)
+    keywords, keyword_selection = select_keywords_for_run(job)
+    search_product = rotate_x_search_product() if job.platform == "x" else None
+    primary = await run_job_on_platform(
+        job,
+        job.platform,
+        keywords,
+        keyword_selection=keyword_selection,
+        search_product=search_product,
+    )
+    if job.platform == "x" and "planned_keywords" not in primary:
+        primary["planned_keywords"] = keywords
+        if keyword_selection:
+            primary.setdefault("keyword_selection", keyword_selection)
+        if search_product:
+            primary.setdefault("search_product", search_product)
     if not primary.get("skipped"):
         return primary
 
@@ -382,7 +483,12 @@ async def run_job(job: IngestJob) -> dict:
     for fallback in job.fallback_platforms:
         if fallback.lower() == job.platform:
             continue
-        attempt = await run_job_on_platform(job, fallback.lower(), job.keywords)
+        attempt = await run_job_on_platform(
+            job,
+            fallback.lower(),
+            job.keywords,
+            search_product=rotate_x_search_product() if fallback.lower() == "x" else None,
+        )
         attempts.append(attempt)
         if not attempt.get("skipped"):
             attempt["fallback_from"] = job.platform
@@ -418,7 +524,7 @@ async def run(config: Path, export: bool) -> int:
         log_row = {
             "narrative_name": job.narrative_name,
             "platform": row.get("platform", job.platform),
-            "keywords": row.get("planned_keywords") or keywords_for_scheduled_job(job),
+            "keywords": row.get("planned_keywords") or job.keywords,
             "skipped": bool(row.get("skipped")),
             "reason": row.get("reason"),
             "fetched": row.get("fetched"),
@@ -438,6 +544,9 @@ async def run(config: Path, export: bool) -> int:
             "fallback_from": row.get("fallback_from"),
             "ingest_mode": row.get("ingest_mode"),
             "polled_author_id": row.get("polled_author_id"),
+            "search_product": row.get("search_product"),
+            "keyword_selection": row.get("keyword_selection"),
+            "rotation_strategy": row.get("rotation_strategy"),
         }
         append_ingest_run(log_row)
         if not row.get("skipped"):

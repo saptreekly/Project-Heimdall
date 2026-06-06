@@ -26,14 +26,15 @@ class _PendingSearch:
     narrative_keyword: str
     cap: int
     cursor: str | None
+    product: str = "Latest"
 
 
 class XIngester(PlatformIngester):
     """
     Ingest public X timelines via session cookies (AUTH_TOKEN + CT0).
 
-    Keywords are passed to SearchTimeline (product=Latest). Use ``list:1234567890``
-    to pull a list timeline instead of search. Subject to x_guard rate limits.
+    Keywords are passed to SearchTimeline (product rotates Latest/Top on scheduled runs).
+    Use ``list:1234567890`` to pull a list timeline instead of search.
     """
 
     def __init__(self, plan: XIngestPlan | None = None) -> None:
@@ -46,6 +47,11 @@ class XIngester(PlatformIngester):
         self._plan = plan
         self.last_usage: dict | None = None
         self._pending_search: _PendingSearch | None = None
+
+    def _search_product(self) -> str:
+        if self._plan and self._plan.search_product:
+            return self._plan.search_product
+        return "Latest"
 
     async def fetch_by_keywords(
         self,
@@ -88,16 +94,18 @@ class XIngester(PlatformIngester):
                 list_id = query.platform_query[len(_LIST_PREFIX) :].strip()
                 batch = await self._client.list_timeline(list_id, count=cap)
             else:
+                product = self._search_product()
                 batch, next_cursor = await self._client.search_page(
                     query.platform_query,
                     count=cap,
-                    product="Latest",
+                    product=product,
                 )
                 self._pending_search = _PendingSearch(
                     platform_query=query.platform_query,
                     narrative_keyword=query.narrative_keyword,
                     cap=cap,
                     cursor=next_cursor,
+                    product=product,
                 )
             for parsed in batch:
                 for raw in _raw_posts_from_tweet(parsed, source_keyword=query.narrative_keyword):
@@ -124,7 +132,7 @@ class XIngester(PlatformIngester):
         batch, next_cursor = await self._client.search_page(
             pending.platform_query,
             count=pending.cap,
-            product="Latest",
+            product=pending.product,
             cursor=pending.cursor,
         )
         pending.cursor = next_cursor

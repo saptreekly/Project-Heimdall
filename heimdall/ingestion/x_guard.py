@@ -32,6 +32,7 @@ class XIngestPlan:
     limit: int
     graphql_requests: int
     notes: list[str]
+    search_product: str = "Latest"
 
 
 def count_graphql_requests(keywords: list[str]) -> int:
@@ -43,6 +44,7 @@ def plan_x_ingest(
     limit: int,
     *,
     graphql_requests: int | None = None,
+    search_product: str = "Latest",
 ) -> XIngestPlan:
     settings = get_settings()
     notes: list[str] = []
@@ -77,6 +79,7 @@ def plan_x_ingest(
         limit=capped_limit,
         graphql_requests=requests,
         notes=notes,
+        search_product=search_product,
     )
 
 

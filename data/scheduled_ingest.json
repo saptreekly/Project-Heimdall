@@ -32,7 +32,7 @@
         "news",
         "Conservative"
       ],
-      "rotation_strategy": "yield",
+      "rotation_strategy": "explore_yield",
       "author_watch_enabled": true
     }
   ]

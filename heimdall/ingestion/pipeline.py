@@ -432,6 +432,7 @@ class IngestionPipeline:
                     "keywords": self._x_plan.keywords,
                     "limit": self._x_plan.limit,
                     "graphql_requests": self._x_plan.graphql_requests,
+                    "search_product": self._x_plan.search_product,
                 }
             result["guardrails"] = guardrails
         return result

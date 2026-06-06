@@ -1,6 +1,7 @@
 # Scheduled ingest → commit data/dashboard/heimdall.db + snapshot → Pages redeploys via workflow_run.
 # Requires GitHub secrets: AUTH_TOKEN and CT0 (or X_AUTH_TOKEN / X_CT0).
-# X schedule: 30 runs / 24h → one GraphQL search every 48 minutes (24*60/30).
+# X schedule: 30 runs / 24h (one keyword search each) + headroom for page-2 / author polls.
+# Daily GraphQL cap: 45 (X_MAX_GRAPHQL_REQUESTS_PER_DAY).
 #
 # Note: The Actions UI text "workflow_dispatch event trigger" only describes the manual Run button.
 # Cron schedules still run automatically when this workflow is enabled (not disabled in Actions list).

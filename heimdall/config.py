@@ -35,7 +35,7 @@ class Settings(BaseSettings):
     x_max_posts_per_ingest: int = 80
     x_max_tweets_per_search: int = 20
     x_min_seconds_between_searches: float = 3.0
-    x_max_graphql_requests_per_day: int = 30
+    x_max_graphql_requests_per_day: int = 45
     x_rate_state_path: str = "data/x_rate_state.json"
     x_author_poll_enabled: bool = True
     x_author_poll_every_n: int = 2
