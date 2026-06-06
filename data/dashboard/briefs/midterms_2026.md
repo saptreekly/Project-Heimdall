@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 10:15:38 UTC
+> Tactical snapshot · 2026-06-06 10:35:12 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **698** |
+| Posts in database | **713** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 680 / 250 |
-| Distinct themes | 39 |
-| Duplicate clusters (full DB) | 39 |
+| Graph nodes / edges | 696 / 253 |
+| Distinct themes | 44 |
+| Duplicate clusters (full DB) | 40 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 0 bots / 493 authors |
+| IU astroturf overlap | 0 bots / 508 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **4**
+- Net-new posts logged: **15**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **101**
-- Net new: **777** · re-seen: **401**
-- Duplicate rate: **34.0%**
+- Runs: **102**
+- Net new: **792** · re-seen: **405**
+- Duplicate rate: **33.8%**
 
 ## Sentiment drift
 
@@ -36,12 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court announcement, justice narasimha, ele watch, neetug supreme (9 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · strike laws, allowing late (4 posts · 4 authors · 1 exact · 2 fuzzy subclusters)
-- **Near-copy campaign** · radical left, sidney powell, breaking president (13 posts · 5 authors · 4 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · strike laws, allowing late (6 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
 - **Shared frame (emerging)** · racially drawn, scotus stayed (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (12 posts · 6 authors · 4 exact · 3 fuzzy subclusters)
+- **Shared frame (emerging)** · data centers, local communities, hackers preparing, phishing credential, generated deception (11 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
 - **Shared frame** · china expandiu, investimentos brasil, longo dos, mandatos lula (10 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, voter rolls (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -66,7 +66,7 @@
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
 - **6 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
-- _…31 more exact-duplicate cluster(s) in database._
+- _…32 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -91,19 +91,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (28 posts)
-- election integrity, mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (8 posts)
-- data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts)
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (27 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- sanctuary cities, dem politicians, trying shut (6 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (11 posts)
+- ww2 destroy, killed 10000's, coward facist, sorry senile, losers america (18 posts)
 - racially drawn, scotus stayed (12 posts)
-- graham platner, winner odds, susan collins, house governors (7 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- _…29 more emerging theme(s)._
+- _…34 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 698 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 713 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
