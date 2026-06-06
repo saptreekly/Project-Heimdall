@@ -275,7 +275,7 @@ def build_narrative_brief(
                 f"{frame.get('exact_subclusters')} exact · {frame.get('fuzzy_subclusters')} fuzzy subclusters)"
             )
         if len(coordination_frames) < len([c for c in themes.get('clusters') or [] if (c.get('coordination') or {}).get('tier') in ('high', 'medium')]):
-            lines.append(f"- _…and more frames in dashboard._")
+            lines.append("- _…and more frames in dashboard._")
         lines.append("")
 
     lines.extend(["## CIB warning signals", ""])

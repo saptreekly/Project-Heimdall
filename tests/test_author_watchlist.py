@@ -1,5 +1,3 @@
-import pytest
-
 from heimdall.ingestion.author_watchlist import (
     AuthorWatchlistStore,
     NarrativeWatchlist,
