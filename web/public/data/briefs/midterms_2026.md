@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-06 00:20:05 UTC
+> Tactical snapshot · 2026-06-06 04:13:59 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **671** |
+| Posts in database | **685** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 661 / 243 |
-| Distinct themes | 42 |
-| Duplicate clusters (full DB) | 38 |
+| Graph nodes / edges | 671 / 246 |
+| Distinct themes | 39 |
+| Duplicate clusters (full DB) | 39 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 0 bots / 477 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| IU astroturf overlap | 0 bots / 486 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **91**
-- Net new: **750** · re-seen: **383**
-- Duplicate rate: **33.8%**
+- Runs: **92**
+- Net new: **764** · re-seen: **383**
+- Duplicate rate: **33.4%**
 
 ## Sentiment drift
 
@@ -37,12 +32,11 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · strike laws, allowing late (4 posts · 4 authors · 1 exact · 2 fuzzy subclusters)
-- **Near-copy campaign** · radical left, sidney powell (13 posts · 5 authors · 4 exact · 3 fuzzy subclusters)
-- **Shared frame (emerging)** · racially drawn, scotus stayed (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · graham platner, house governors, ohio thats (11 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · china expandiu, investimentos brasil, longo dos, mandatos lula (10 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · position steelmanned, rights democratic, grok critique (8 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · strike laws, allowing late (5 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (14 posts · 6 authors · 4 exact · 3 fuzzy subclusters)
+- **Shared frame (emerging)** · rights act, pro republican, racially drawn, scotus stayed (12 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · acabar nas, china expandiu, investimentos brasil, longo dos (10 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame** · graham platner, house governors, ohio thats (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -67,7 +61,7 @@
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
 - **6 posts** · 1 author(s) — Accountability is the 2026 midterm issue. - TRUMP - corrupt DOJ/FBI - - Stop with all the gaslighting and Happy Talk 🤡 No one is being held accountable for - mounting federal debt - waste, fraud and…
-- _…30 more exact-duplicate cluster(s) in database._
+- _…31 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -93,18 +87,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (27 posts)
+- election integrity, mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
 - data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts)
 - ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
-- racially drawn, scotus stayed (12 posts)
+- rights act, pro republican, racially drawn, scotus stayed (12 posts)
 - neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (8 posts)
 - awakening largest, voting force, actually believe (5 posts)
-- presidential election (5 posts)
-- _…31 more emerging theme(s)._
+- _…28 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 671 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 685 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
