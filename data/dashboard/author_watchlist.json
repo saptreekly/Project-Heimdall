@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 78,
+      "run_counter": 79,
       "authors": {
         "111": {
           "author_id": "111",
@@ -222,19 +222,6 @@
           "inserted_total": 9,
           "polls": 1,
           "inserts_from_polls": 4,
-          "status": "active"
-        },
-        "1896222368801923072": {
-          "author_id": "1896222368801923072",
-          "handle": "SignalSuzie",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "308851637": {
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1740836313451098112": {
-          "author_id": "1740836313451098112",
+        "1945947587837870080": {
+          "author_id": "1945947587837870080",
+          "handle": "drhilllaw42",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1499556521457303555": {
+          "author_id": "1499556521457303555",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
