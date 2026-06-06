@@ -639,38 +639,32 @@ async function loadDashboard(narrativeId: number): Promise<void> {
       <section class="desk-mode-panel" data-desk-mode-panel="pulse"${deskModeHiddenAttr("pulse")}>
         <div class="desk-mode-header">
           <h2 class="desk-mode-title">Pulse</h2>
-          <p class="desk-mode-desc">Narrative health, sentiment drift, and priority signals</p>
+          <p class="desk-mode-desc">Alerts, volume trends, and coordination signals at a glance</p>
         </div>
-        <div class="metrics-histogram-row">
-          ${buildMetricsGrid(posts, authors, avg, cib, provenance)}
-          <section class="panel panel-histogram-compact">
-            <h2>Outrage distribution</h2>
-            ${renderHistogram(posts)}
+        <div class="pulse-primary-grid">
+          ${renderAlertInboxHtml(alertRows)}
+          <div class="metrics-histogram-row">
+            ${buildMetricsGrid(posts, authors, avg, cib, provenance)}
+            <section class="panel panel-histogram-compact">
+              <h2>Outrage distribution</h2>
+              ${renderHistogram(posts)}
+            </section>
+          </div>
+          ${metricsTrendPanelHtml(getMetricsHistory(), narrativeMeta?.name ?? "narrative")}
+          ${sentimentChartPanelHtml(
+            escapeHtml(sentiment.trend),
+            outrageDiag,
+            sentiment.week_over_week?.alert
+          )}
+          ${cibSnapshotHtml(cib)}
+          ${priorityScatterPanelHtml(criticalCount, graph.edges.length, outrageDiag)}
+          ${renderProvenancePanelHtml(provenance, cib)}
+          <section class="panel panel-pulse-frames-teaser">
+            <h2>Theme frames ${emergingThemesBadge(themes)}</h2>
+            <p class="chart-caption">${emergingCount} emerging · ${distinctCount} distinct — open Frames for cluster cards.</p>
+            <button type="button" class="btn btn-secondary btn-small" data-goto-mode="frames">Frames →</button>
           </section>
         </div>
-        ${renderProvenancePanelHtml(provenance, cib)}
-        ${metricsTrendPanelHtml(getMetricsHistory(), narrativeMeta?.name ?? "narrative")}
-        ${sentimentChartPanelHtml(
-          escapeHtml(sentiment.trend),
-          outrageDiag,
-          sentiment.week_over_week?.alert
-        )}
-        ${renderAlertInboxHtml(alertRows)}
-        ${cibSnapshotHtml(cib)}
-        ${priorityScatterPanelHtml(criticalCount, graph.edges.length, outrageDiag)}
-        <section class="panel panel-pulse-frames-teaser">
-          <h2>Theme frames ${emergingThemesBadge(themes)}</h2>
-          <p class="chart-caption">
-            ${emergingCount} emerging · ${distinctCount} distinct clusters.
-            ${
-              themes.sightings?.total_resightings
-                ? `${themes.sightings.total_resightings} re-sightings logged (duplicate encounters at ingest).`
-                : "Dupes at ingest are coordination evidence, not waste."
-            }
-            Open <strong>Frames</strong> for combined copy + narrative coordination cards.
-          </p>
-          <button type="button" class="btn btn-secondary btn-small" data-goto-mode="frames">Open Frames →</button>
-        </section>
       </section>
 
       <section class="desk-mode-panel" data-desk-mode-panel="frames"${deskModeHiddenAttr("frames")}>
@@ -890,15 +884,8 @@ async function reloadSnapshotFromNetwork(narrativeId: number): Promise<void> {
     if (stamp) {
       const at = getSnapshotGeneratedAt();
       stamp.textContent = at
-        ? `Repo snapshot · ${escapeHtml(at.slice(0, 19))} UTC (reloaded)`
-        : "Repo snapshot (reloaded)";
-    }
-    const asOf = document.getElementById("data-as-of");
-    if (asOf) {
-      const at = getSnapshotGeneratedAt();
-      asOf.innerHTML = at
-        ? `Data as of <strong>${escapeHtml(at.slice(0, 19))} UTC</strong> · snapshot file only`
-        : "Data as of: unknown";
+        ? `Snapshot · Updated ${escapeHtml(at.slice(0, 19))} UTC (reloaded)`
+        : "Snapshot (reloaded)";
     }
     await loadDashboard(narrativeId);
   } catch (e) {

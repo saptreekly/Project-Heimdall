@@ -6,10 +6,10 @@ const MODE_META: Record<
   DeskMode,
   { title: string; hint: string; shortcut: string; icon: string }
 > = {
-  pulse: { title: "Pulse", hint: "Metrics & alerts", shortcut: "1", icon: "◉" },
-  frames: { title: "Frames", hint: "Theme clusters", shortcut: "2", icon: "▦" },
-  evidence: { title: "Evidence", hint: "Post stream", shortcut: "3", icon: "☰" },
-  network: { title: "Network", hint: "Graph & coordination", shortcut: "4", icon: "◎" },
+  pulse: { title: "Pulse", hint: "Metrics & alerts", shortcut: "1", icon: "1" },
+  frames: { title: "Frames", hint: "Theme clusters", shortcut: "2", icon: "2" },
+  evidence: { title: "Evidence", hint: "Post stream", shortcut: "3", icon: "3" },
+  network: { title: "Network", hint: "Graph & coordination", shortcut: "4", icon: "4" },
 };
 
 const LEGACY_SECTION_MAP: Record<string, DeskMode> = {
@@ -31,13 +31,13 @@ export function deskModeFromUrl(): DeskMode {
   if (mode && MODES.includes(mode as DeskMode)) return mode as DeskMode;
   const legacy = params.get("section");
   if (legacy && LEGACY_SECTION_MAP[legacy]) return LEGACY_SECTION_MAP[legacy];
-  return "frames";
+  return "pulse";
 }
 
 export function setDeskModeInUrl(mode: DeskMode): void {
   const url = new URL(window.location.href);
   url.searchParams.delete("section");
-  if (mode === "frames") url.searchParams.delete("mode");
+  if (mode === "pulse") url.searchParams.delete("mode");
   else url.searchParams.set("mode", mode);
   window.history.replaceState({}, "", url);
 }
@@ -51,8 +51,8 @@ export function renderDeskModeRail(active: DeskMode, badges?: ModeBadges): strin
     const badge = showBadge
       ? `<span class="desk-mode-badge" aria-label="${badgeVal} items">${badgeVal}</span>`
       : "";
-    return `<button type="button" class="desk-mode-btn${id === active ? " desk-mode-active" : ""}" data-desk-mode="${id}" aria-current="${id === active ? "page" : "false"}" title="${meta.hint} · ${meta.shortcut}">
-      <span class="desk-mode-icon" aria-hidden="true">${meta.icon}</span>
+    return `<button type="button" class="desk-mode-btn${id === active ? " desk-mode-active" : ""}" data-desk-mode="${id}" aria-current="${id === active ? "page" : "false"}" title="${meta.hint} · key ${meta.shortcut}">
+      <span class="desk-mode-index" aria-hidden="true">${meta.icon}</span>
       <span class="desk-mode-text">
         <span class="desk-mode-label">${meta.title}</span>
         <span class="desk-mode-hint">${meta.hint}</span>

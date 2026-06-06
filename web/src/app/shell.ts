@@ -1,5 +1,5 @@
 import { renderContentNotice } from "../content-notice";
-import { renderDataAsOfHtml, renderDataLinksExtra, renderRateFooter } from "../dashboard-meta";
+import { renderDataLinksExtra, renderRateFooter } from "../dashboard-meta";
 import { briefPanelHtml } from "../brief";
 import { renderMethodology } from "../methodology";
 import { renderTabNav } from "../tabs";
@@ -9,6 +9,11 @@ import { escapeHtml } from "../post-display";
 import type { NarrativeSummary } from "../types";
 import { appState } from "./state";
 
+function formatDataAsOf(generatedAt: string | null): string {
+  if (!generatedAt) return "";
+  return `Updated ${escapeHtml(generatedAt.slice(0, 19))} UTC`;
+}
+
 export function shell(
   narratives: NarrativeSummary[],
   selectedId: number,
@@ -17,54 +22,48 @@ export function shell(
   const options = narratives
     .map(
       (n) =>
-        `<option value="${n.id}" ${n.id === selectedId ? "selected" : ""}>${escapeHtml(n.name)} (${n.post_count} posts)</option>`
+        `<option value="${n.id}" ${n.id === selectedId ? "selected" : ""}>${escapeHtml(n.name)} · ${n.post_count} posts</option>`
     )
     .join("");
-  const stamp = generatedAt ? ` · ${escapeHtml(generatedAt.slice(0, 19))} UTC` : "";
+  const asOf = formatDataAsOf(generatedAt);
   return `
     <div class="app">
       <header class="site-header">
         <div class="header-top">
           <h1><span class="brand">Heimdall</span> Narrative Desk</h1>
-          <p class="data-badge">Repo snapshot${stamp}</p>
-          <button type="button" id="open-methodology-drawer" class="btn btn-secondary btn-small header-methodology-btn" title="Methods &amp; limitations">Methodology</button>
+          <p class="data-badge">Snapshot${asOf ? ` · ${asOf}` : ""}</p>
         </div>
         ${renderContentNotice()}
         ${renderOnboardingHintHtml()}
         <details class="header-meta-collapse">
-          <summary class="header-meta-summary">Data sources &amp; ingest</summary>
+          <summary class="header-meta-summary">Data sources &amp; ingest pipeline</summary>
           <p class="data-links">Source data: ${renderDataLinksExtra()}</p>
           ${renderRateFooter()}
         </details>
       </header>
       ${renderTabNav(appState.currentTab)}
       <div id="panel-analysis" role="tabpanel" aria-labelledby="tab-analysis"${appState.currentTab !== "analysis" ? " hidden" : ""}>
-        <div class="toolbar">
-          <div class="toolbar-inner">
-            <fieldset class="toolbar-group">
-              <legend>Data</legend>
-              <label for="narrative-select">Narrative</label>
-              <select id="narrative-select" class="narrative-select">${options}</select>
-              ${renderDataAsOfHtml(generatedAt)}
-            </fieldset>
-            <fieldset class="toolbar-group">
-              <legend>Display</legend>
-              <label for="time-range-select" class="toolbar-label">Window</label>
-              <select id="time-range-select" class="toolbar-select" aria-label="Time window">
-                <option value="">All time</option>
-                <option value="24">Last 24h</option>
-                <option value="72">Last 72h</option>
-                <option value="168">Last 7d</option>
-              </select>
-              <label class="toolbar-check"><input type="checkbox" id="group-authors-toggle" checked /> Group busy authors</label>
-              <label class="toolbar-check"><input type="checkbox" id="blur-sensitive-toggle" ${appState.blurSensitive ? "checked" : ""} /> Blur sensitive text</label>
-              <label class="toolbar-check"><input type="checkbox" id="compact-charts-toggle" ${appState.compactCharts ? "checked" : ""} /> Compact charts</label>
-            </fieldset>
-            <fieldset class="toolbar-group toolbar-group-actions">
-              <legend>Actions</legend>
-              <button type="button" id="refresh-btn" class="btn btn-secondary" title="Re-fetch snapshot.json from this site — does not pull new social data until CI publishes a new export">Refresh snapshot file</button>
-              <button type="button" id="goto-brief-btn" class="btn btn-secondary">Export briefing</button>
-            </fieldset>
+        <div class="command-bar">
+          <div class="command-bar-primary">
+            <label class="sr-only" for="narrative-select">Narrative</label>
+            <select id="narrative-select" class="narrative-select command-select">${options}</select>
+            <span class="command-divider" aria-hidden="true"></span>
+            <label class="sr-only" for="time-range-select">Time window</label>
+            <select id="time-range-select" class="command-select-sm" aria-label="Time window">
+              <option value="">All time</option>
+              <option value="24">24 hours</option>
+              <option value="72">72 hours</option>
+              <option value="168">7 days</option>
+            </select>
+          </div>
+          <div class="command-bar-toggles">
+            <label class="toggle-chip"><input type="checkbox" id="group-authors-toggle" checked /><span>Group authors</span></label>
+            <label class="toggle-chip"><input type="checkbox" id="blur-sensitive-toggle" ${appState.blurSensitive ? "checked" : ""} /><span>Blur sensitive</span></label>
+            <label class="toggle-chip"><input type="checkbox" id="compact-charts-toggle" ${appState.compactCharts ? "checked" : ""} /><span>Compact charts</span></label>
+          </div>
+          <div class="command-bar-actions">
+            <button type="button" id="refresh-btn" class="btn btn-secondary btn-small" title="Re-fetch snapshot.json from this site">Refresh</button>
+            <button type="button" id="goto-brief-btn" class="btn btn-secondary btn-small">Briefing</button>
           </div>
         </div>
         <main id="content" class="dashboard desk-dashboard">${stateLoadingHtml()}</main>

@@ -5,9 +5,9 @@ import type { MetricsHistoryEntry } from "../types";
 export function metricsTrendPanelHtml(entries: MetricsHistoryEntry[], narrativeName: string): string {
   if (!entries.length) {
     return `
-      <section class="panel panel-metrics-trend">
+      <section class="panel panel-metrics-trend panel-muted">
         <h2>Volume trend</h2>
-        <p class="chart-caption empty">No metrics history yet — populated after Pages deploy runs snapshot_report.</p>
+        <p class="chart-caption empty">Daily metrics appear here after the Pages workflow runs <code>snapshot_report</code>.</p>
       </section>
     `;
   }
