@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-07 17:53:22 UTC
+> Tactical snapshot · 2026-06-07 18:53:22 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **820** |
+| Posts in database | **838** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 811 / 310 |
-| Distinct themes | 58 |
-| Duplicate clusters (full DB) | 42 |
+| Graph nodes / edges | 832 / 318 |
+| Distinct themes | 42 |
+| Duplicate clusters (full DB) | 43 |
 | Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 0 bots / 587 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| IU astroturf overlap | 0 bots / 601 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **137**
-- Net new: **899** · re-seen: **558**
-- Duplicate rate: **38.3%**
+- Runs: **138**
+- Net new: **917** · re-seen: **558**
+- Duplicate rate: **37.8%**
 
 ## Sentiment drift
 
@@ -36,13 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, mail ballots postmarked, election integrity count, days election, california hit (9 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch, elections pratt (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (11 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · humiliated global, cowardly defense, skyrocketing domestic (11 posts · 5 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · data centers, local communities, hackers preparing, phishing credential, generated deception (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (11 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (10 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, elections pratt, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · citizenship verification, absentee ballots (17 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · pro republican, scotus stayed (13 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · senate gop, nuke filibuster (11 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · affordability set, migration trend, points continued, backed economic (11 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -51,7 +46,7 @@
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_5authors_5posts_j1.00
-- cross_author_fuzzy_4authors_4posts_j1.00
+- cross_author_fuzzy_5authors_5posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_3authors_4posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
@@ -68,7 +63,7 @@
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
-- _…34 more exact-duplicate cluster(s) in database._
+- _…35 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -77,10 +72,10 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **2 posts** · 2 authors · ~100% Jaccard — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
-- **4 posts** · 4 authors · ~100% Jaccard — 🚨BREAKING: The Supreme Court is poised to strike down laws allowing late-arriving mail-in ballots (even if postmarked by Election Day) in Watson v. Republican National Committee. Justice Alito slamme…
+- **5 posts** · 5 authors · ~100% Jaccard — 🚨BREAKING: The Supreme Court is poised to strike down laws allowing late-arriving mail-in ballots (even if postmarked by Election Day) in Watson v. Republican National Committee. Justice Alito slamme…
+- **2 posts** · 2 authors · ~100% Jaccard — 💥BREAKING: 🇺🇸 Democrats plan to impeach and remove both Trump and Vance if they win the 2026 midterms. According to Polymarket, Democrats currently have an 81% chance to win the midterms.
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 IT'S OFFICIAL, WE WIN! "The US Supreme Court moments ago has ruled AGAINST Virginia Democrats when it comes to reviving their pro-Democrat redistricting map ahead of the 2026 midterms." WOULD'VE BE…
 - **2 posts** · 2 authors · ~100% Jaccard — Representative Marlin Stutzman is currently up for reelection in the 2026 midterms. The general election for Indiana's 3rd Congressional District will take place on November 3, 2026. Vote him out.
-- **2 posts** · 2 authors · ~100% Jaccard — Elon Musk stands days away from becoming the world's first trillionaire, and Democrats are seizing on the milestone as a fresh rallying cry against extreme wealth heading into the 2026 midterms.
 - _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -93,19 +88,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (35 posts)
-- initial success, gerrymandering strategy, facing roadblocks, digital usual (5 posts)
-- gains failed (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
-- blue seats, upholds california's, upheld texas (5 posts)
-- republican senate, camera actual (6 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- took venezuelan, dictatorship block, voter fraud, signs executive order (9 posts)
-- _…40 more emerging theme(s)._
+- senate gop, nuke filibuster (11 posts)
+- cash party, level touch, country voters (5 posts)
+- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
+- throw donald, unfortunate reality, inadvertently joined, ranks attempting, politicize issues (7 posts)
+- broke buried, debt directionless (6 posts)
+- awakening largest, voting force, actually believe (5 posts)
+- presidential election (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- _…31 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 820 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 838 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
