@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-07 06:47:40 UTC
+> Tactical snapshot · 2026-06-07 07:14:34 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **798** |
+| Posts in database | **799** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 787 / 301 |
-| Distinct themes | 58 |
+| Distinct themes | 60 |
 | Duplicate clusters (full DB) | 42 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 0 bots / 569 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **18**
+- Re-sightings (duplicate encounters): **2**
 - Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **124**
-- Net new: **877** · re-seen: **494**
-- Duplicate rate: **36.0%**
+- Runs: **125**
+- Net new: **878** · re-seen: **496**
+- Duplicate rate: **36.1%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · weeks later, postal service, strike laws, allowing late (8 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, weeks later, strike laws, allowing late (8 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame** · racially drawn (13 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · neon dynasty, south korea, worldcup2026 neondynasty (11 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · racially drawn (12 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - **Shared frame** · war powers, vote exposes, growing divide, involvement iran, act exposed (10 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (10 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -93,19 +93,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (35 posts)
 - initial success, gerrymandering strategy, facing roadblocks, digital usual (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
 - blue seats, upholds california's, upheld texas (5 posts)
-- republican senate, camera actual (6 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- took venezuelan, dictatorship block, voter fraud, signs executive order (9 posts)
+- took venezuelan, dictatorship block (10 posts)
 - data centers, local communities, hackers preparing, phishing credential, generated deception (9 posts)
-- _…39 more emerging theme(s)._
+- cash party, level touch, country voters (7 posts)
+- _…41 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 798 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 799 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
