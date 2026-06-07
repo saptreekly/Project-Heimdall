@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-07 05:14:20 UTC
+> Tactical snapshot · 2026-06-07 06:07:31 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 786 / 301 |
-| Distinct themes | 38 |
+| Distinct themes | 57 |
 | Duplicate clusters (full DB) | 42 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 0 bots / 568 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **122**
-- Net new: **876** · re-seen: **474**
-- Duplicate rate: **35.1%**
+- Runs: **123**
+- Net new: **876** · re-seen: **476**
+- Duplicate rate: **35.2%**
 
 ## Sentiment drift
 
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (11 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · weeks later, strike laws, allowing late (9 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · weeks later, strike laws, allowing late, watson republican (6 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · citizenship verification, absentee ballots (20 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · scotus stayed (13 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · pre rigged, votes cast, writes strong, mayors influence (13 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · senate gop, nuke filibuster (12 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame** · racially drawn (12 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · war powers, vote exposes, growing divide, involvement iran, act exposed (10 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · humiliated global, cowardly defense, skyrocketing domestic (9 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -88,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senate gop, nuke filibuster (12 posts)
-- democrats ideas, cash party, level touch, country voters (5 posts)
-- scotus stayed (13 posts)
-- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
-- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (8 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- presidential election (5 posts)
-- broke buried, debt directionless (5 posts)
-- _…26 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (35 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- took venezuelan, dictatorship block (10 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (9 posts)
+- cash party, level touch, country voters (5 posts)
+- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
+- _…38 more emerging theme(s)._
 
 ## Scope note
 
