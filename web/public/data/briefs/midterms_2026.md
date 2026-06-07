@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-07 14:34:40 UTC
+> Tactical snapshot · 2026-06-07 15:14:07 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 809 / 309 |
-| Distinct themes | 43 |
+| Distinct themes | 56 |
 | Duplicate clusters (full DB) | 42 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 0 bots / 586 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **132**
-- Net new: **898** · re-seen: **525**
-- Duplicate rate: **36.9%**
+- Runs: **133**
+- Net new: **898** · re-seen: **527**
+- Duplicate rate: **37.0%**
 
 ## Sentiment drift
 
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (11 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, count ruling (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, elections pratt, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, verified lists, declined immediately (15 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · senate gop, nuke filibuster (11 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · humiliated global, cowardly defense, skyrocketing domestic (10 posts · 4 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · strong mayors, ready happens, real pressure (10 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, mail ballots postmarked, election integrity count, days election, california hit (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch, elections pratt (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (13 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · data centers, local communities, hackers preparing, phishing credential, generated deception (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · cheat upcoming, voteblue numbers, lost unless, toobigtorig stoptrump (7 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -88,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senate gop, nuke filibuster (11 posts)
-- cash party, level touch, country voters (5 posts)
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (19 posts)
-- broke buried, debt directionless (6 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- presidential election (5 posts)
-- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- _…31 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (10 posts)
+- gains failed (5 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
+- republican senate, citizenship mail ballots, camera actual (6 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- took venezuelan, dictatorship block (10 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (9 posts)
+- _…38 more emerging theme(s)._
 
 ## Scope note
 
