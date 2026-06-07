@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-07 19:53:32 UTC
+> Tactical snapshot · 2026-06-07 20:38:39 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 832 / 318 |
-| Distinct themes | 59 |
+| Distinct themes | 58 |
 | Duplicate clusters (full DB) | 43 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 0 bots / 601 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **139**
-- Net new: **917** · re-seen: **558**
-- Duplicate rate: **37.8%**
+- Runs: **140**
+- Net new: **917** · re-seen: **559**
+- Duplicate rate: **37.9%**
 
 ## Sentiment drift
 
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (9 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots (12 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch, elections pratt (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Shared frame (emerging)** · neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (13 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · humiliated global, cowardly defense, skyrocketing domestic (10 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame (emerging)** · federal judge, voter rolls (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · winner odds, platner susan, plan impeach (9 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · data centers, local communities, hackers preparing, phishing credential, generated deception (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -88,10 +93,10 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
-- initial success, facing roadblocks, digital usual (6 posts)
-- gains failed, gerrymandering scorecard (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (35 posts)
+- initial success, gerrymandering strategy, facing roadblocks, digital usual, amazing house (5 posts)
+- gains failed (5 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
 - blue seats, upholds california's, upheld texas (5 posts)
 - republican senate, camera actual (6 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
