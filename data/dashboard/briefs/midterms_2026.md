@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-07 04:50:07 UTC
+> Tactical snapshot · 2026-06-07 05:14:20 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **777** |
+| Posts in database | **797** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 769 / 292 |
-| Distinct themes | 48 |
+| Graph nodes / edges | 786 / 301 |
+| Distinct themes | 38 |
 | Duplicate clusters (full DB) | 42 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 0 bots / 556 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| IU astroturf overlap | 0 bots / 568 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **121**
-- Net new: **856** · re-seen: **474**
-- Duplicate rate: **35.6%**
+- Runs: **122**
+- Net new: **876** · re-seen: **474**
+- Duplicate rate: **35.1%**
 
 ## Sentiment drift
 
@@ -36,13 +31,13 @@
 
 ## Layered coordination (frames)
 
+- **Exact duplicate campaign** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (11 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings, elections pratt (8 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, weeks later, strike laws, allowing late (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · radical left, sidney powell (14 posts · 8 authors · 5 exact · 4 fuzzy subclusters)
-- **Shared frame** · racially drawn (13 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · china expandiu, investimentos brasil, longo dos, mandatos lula (12 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame** · war powers, vote exposes, growing divide, involvement iran, act exposed (10 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · federal judge (10 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · weeks later, strike laws, allowing late, watson republican (6 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · citizenship verification, absentee ballots (20 posts · 10 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · scotus stayed (13 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · pre rigged, votes cast, writes strong, mayors influence (13 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · senate gop, nuke filibuster (12 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -50,7 +45,7 @@
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
-- cross_author_fuzzy_4authors_4posts_j1.00
+- cross_author_fuzzy_5authors_5posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_3authors_4posts_j1.00
@@ -93,19 +88,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (33 posts)
-- initial success, gerrymandering strategy, facing roadblocks, criminal legal (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
-- blue seats, upholds california's, upheld texas (5 posts)
-- camera actual (6 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, dem politicians, trying shut (6 posts)
-- data centers, local communities, power grids, artificial intelligence, battle congress (8 posts)
-- _…38 more emerging theme(s)._
+- senate gop, nuke filibuster (12 posts)
+- democrats ideas, cash party, level touch, country voters (5 posts)
+- scotus stayed (13 posts)
+- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
+- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (8 posts)
+- awakening largest, voting force, actually believe (5 posts)
+- presidential election (5 posts)
+- broke buried, debt directionless (5 posts)
+- _…26 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 777 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 797 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
