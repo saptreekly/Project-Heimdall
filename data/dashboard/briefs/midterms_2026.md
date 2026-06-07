@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-07 18:53:22 UTC
+> Tactical snapshot · 2026-06-07 19:53:32 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 832 / 318 |
-| Distinct themes | 42 |
+| Distinct themes | 59 |
 | Duplicate clusters (full DB) | 43 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 0 bots / 601 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **138**
+- Runs: **139**
 - Net new: **917** · re-seen: **558**
 - Duplicate rate: **37.8%**
 
@@ -31,13 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (11 posts · 4 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (10 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, elections pratt, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · citizenship verification, absentee ballots (17 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · pro republican, scotus stayed (13 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · senate gop, nuke filibuster (11 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · affordability set, migration trend, points continued, backed economic (11 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (9 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch, elections pratt (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (13 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge, voter rolls (10 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · winner odds, platner susan, plan impeach (9 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · data centers, local communities, hackers preparing, phishing credential, generated deception (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -88,15 +88,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senate gop, nuke filibuster (11 posts)
-- cash party, level touch, country voters (5 posts)
-- ww2 destroy, coward facist, won't tolerate, killed 10000's, sorry senile (11 posts)
-- throw donald, unfortunate reality, inadvertently joined, ranks attempting, politicize issues (7 posts)
-- broke buried, debt directionless (6 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- presidential election (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- _…31 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
+- initial success, facing roadblocks, digital usual (6 posts)
+- gains failed, gerrymandering scorecard (5 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
+- blue seats, upholds california's, upheld texas (5 posts)
+- republican senate, camera actual (6 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- sanctuary cities, malicious domains, used fraud (12 posts)
+- _…41 more emerging theme(s)._
 
 ## Scope note
 
