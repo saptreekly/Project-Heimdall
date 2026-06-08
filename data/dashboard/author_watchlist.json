@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 136,
+      "run_counter": 137,
       "authors": {
         "111": {
           "author_id": "111",
@@ -469,32 +469,6 @@
           "inserted_total": 4,
           "polls": 1,
           "inserts_from_polls": 1,
-          "status": "active"
-        },
-        "1511773446254047238": {
-          "author_id": "1511773446254047238",
-          "handle": "lorsung_tom",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-08T18:32:20.834022+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "28120133": {
-          "author_id": "28120133",
-          "handle": "TonyN737",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1915130582591541248": {
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1093221897125482497": {
-          "author_id": "1093221897125482497",
+        "1392580452494491652": {
+          "author_id": "1392580452494491652",
+          "handle": "BenEarly11",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1428122494041395201": {
+          "author_id": "1428122494041395201",
+          "handle": "mybuddysully",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1520136057928486920": {
+          "author_id": "1520136057928486920",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
