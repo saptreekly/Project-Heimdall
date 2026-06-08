@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-08 21:59:37 UTC
+> Tactical snapshot · 2026-06-08 22:17:20 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 914 / 361 |
-| Distinct themes | 47 |
+| Distinct themes | 57 |
 | Duplicate clusters (full DB) | 49 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 0 bots / 653 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **4**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **162**
-- Net new: **998** · re-seen: **697**
-- Duplicate rate: **41.1%**
+- Runs: **163**
+- Net new: **998** · re-seen: **701**
+- Duplicate rate: **41.3%**
 
 ## Sentiment drift
 
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (10 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (10 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · trump, red, wave, midterms (278 posts · 3 authors · 11 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · citizenship verification (20 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · nuke filibuster (11 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · pro democrat, official win, ago ruled, virginia democrats, comes reviving (11 posts · 6 authors · 3 exact · 2 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge, verified lists (18 posts · 6 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · graham platner, nearly points, winner odds (10 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · humiliated global, cowardly defense, skyrocketing domestic (10 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (10 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -88,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- nuke filibuster (11 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, passed house, july stalled (9 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- anchor babies, cornell law, professor explains (9 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- voter fraud, radical left, sidney powell (11 posts)
 - cash party, level touch, country voters (6 posts)
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (21 posts)
-- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
-- broke buried, debt directionless (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- _…34 more emerging theme(s)._
+- data centers, local communities, power grids, artificial intelligence, hackers preparing (6 posts)
+- _…44 more emerging theme(s)._
 
 ## Scope note
 
