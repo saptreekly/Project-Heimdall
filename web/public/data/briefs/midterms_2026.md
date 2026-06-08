@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-08 12:42:17 UTC
+> Tactical snapshot · 2026-06-08 12:51:34 UTC
 
 ## Corpus
 
@@ -26,8 +26,8 @@
 
 ## Ingest yield (last 14 days)
 
-- Runs: **151**
-- Net new: **955** · re-seen: **625**
+- Runs: **152**
+- Net new: **955** · re-seen: **626**
 - Duplicate rate: **39.6%**
 
 ## Sentiment drift
