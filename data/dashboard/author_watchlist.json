@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 138,
+      "run_counter": 139,
       "authors": {
         "111": {
           "author_id": "111",
@@ -469,19 +469,6 @@
           "inserted_total": 4,
           "polls": 1,
           "inserts_from_polls": 1,
-          "status": "active"
-        },
-        "1915130582591541248": {
-          "author_id": "1915130582591541248",
-          "handle": "NickRogersBTL",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1895140153699557376": {
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1507746668011171840": {
-          "author_id": "1507746668011171840",
+        "3005976796": {
+          "author_id": "3005976796",
+          "handle": "PatriotSteve64",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1526214604153446400": {
+          "author_id": "1526214604153446400",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

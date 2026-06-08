@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-08 19:42:36 UTC
+> Tactical snapshot · 2026-06-08 20:40:00 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **899** |
+| Posts in database | **900** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 891 / 345 |
-| Distinct themes | 50 |
+| Graph nodes / edges | 892 / 346 |
+| Distinct themes | 52 |
 | Duplicate clusters (full DB) | 48 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 0 bots / 642 authors |
+| IU astroturf overlap | 0 bots / 643 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **28**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **159**
-- Net new: **978** · re-seen: **669**
-- Duplicate rate: **40.6%**
+- Runs: **160**
+- Net new: **979** · re-seen: **697**
+- Duplicate rate: **41.6%**
 
 ## Sentiment drift
 
@@ -39,9 +39,10 @@
 - **Exact duplicate campaign** · similar rules (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · pre rigged, neon dynasty, south korea (18 posts · 8 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, verified lists (17 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge, verified lists (16 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · hostile hearing, dismissed case, attorneys filed (14 posts · 7 authors · 0 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · judges cut, chase block (10 posts · 5 authors · 3 exact · 2 fuzzy subclusters)
+- **Near-copy campaign** · graham platner, nearly points, winner odds (9 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -92,19 +93,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- voter fraud, radical left, sidney powell (9 posts)
+- voter fraud, radical left, sidney powell (10 posts)
 - sanctuary cities, dem politicians, trying shut (4 posts)
-- data centers, local communities, hackers preparing, phishing credential, generated deception (9 posts)
-- cash party, level touch, country voters (8 posts)
-- _…38 more emerging theme(s)._
+- cash party, level touch, country voters (9 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (7 posts)
+- _…40 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 899 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 900 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
