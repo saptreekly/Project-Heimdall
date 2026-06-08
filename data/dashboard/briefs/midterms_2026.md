@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-08 06:23:18 UTC
+> Tactical snapshot · 2026-06-08 07:12:44 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 851 / 327 |
-| Distinct themes | 53 |
+| Distinct themes | 52 |
 | Duplicate clusters (full DB) | 44 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 0 bots / 613 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **29**
+- Re-sightings (duplicate encounters): **3**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **148**
-- Net new: **937** · re-seen: **621**
-- Duplicate rate: **39.9%**
+- Runs: **149**
+- Net new: **937** · re-seen: **624**
+- Duplicate rate: **40.0%**
 
 ## Sentiment drift
 
@@ -39,9 +39,9 @@
 - **Exact duplicate campaign** · arriving mail ballots, similar rules (9 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch, elections pratt (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge (12 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · radical left, sidney powell, voter fraud (12 posts · 5 authors · 3 exact · 2 fuzzy subclusters)
-- **Shared frame (emerging)** · hostile hearing, dismissed case, attorneys filed (11 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · neon dynasty, south korea, worldcup2026 neondynasty, korearepublic taegeukwarriors (12 posts · 6 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge, citizenship verification (12 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · radical left, sidney powell (12 posts · 5 authors · 3 exact · 2 fuzzy subclusters)
 - **Shared frame (emerging)** · level touch (11 posts · 4 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -93,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (35 posts)
-- initial success, gerrymandering strategy, facing roadblocks, digital usual, amazing house (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
-- blue seats, upholds california's, upheld texas (5 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, sierra lamar, murder retrial (7 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- republican senate, camera actual (6 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, cabinet meeting, malicious domains (14 posts)
+- sanctuary cities, malicious domains, used fraud (12 posts)
 - level touch (11 posts)
-- data centers, local communities, power grids, artificial intelligence, battle congress (8 posts)
-- _…41 more emerging theme(s)._
+- data centers, local communities, power grids, artificial intelligence, hackers preparing (6 posts)
+- _…40 more emerging theme(s)._
 
 ## Scope note
 
