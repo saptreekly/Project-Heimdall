@@ -1,11 +1,11 @@
 {
   "version": 5,
-  "generated_at": "2026-06-09T05:51:15.704825+00:00",
+  "generated_at": "2026-06-09T06:32:15.694432+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
-      "keywords": "author:TheStormFiles",
+      "keywords": "2026 midterm fraud",
       "post_count": 937
     }
   ],
@@ -20441,29 +20441,37 @@
             "source_post_id": 942,
             "target_post_id": null,
             "occurred_at": "2026-06-08T21:46:04"
+          },
+          {
+            "source": "1364451347542736896",
+            "target": "862718426757779457",
+            "type": "reply",
+            "source_post_id": 362,
+            "target_post_id": null,
+            "occurred_at": "2026-04-16T06:15:17"
           }
         ],
         "stats": {
-          "edge_count": 936,
+          "edge_count": 937,
           "author_count": 668,
           "connected_author_count": 269,
           "isolated_author_count": 399,
           "by_type": {
-            "reply": 936
+            "reply": 937
           }
         }
       },
       "themes": {
         "narrative_id": 3,
         "post_count": 937,
-        "cluster_count": 57,
+        "cluster_count": 58,
         "method": "hdbscan+tfidf+prefiltered+must_link+split",
         "model": "tfidf-fallback",
         "filtered_post_count": 0,
         "quality_metrics": {
-          "silhouette": 0.4477,
-          "davies_bouldin": 1.5446,
-          "noise_ratio": 0.5705,
+          "silhouette": 0.4429,
+          "davies_bouldin": 1.5669,
+          "noise_ratio": 0.5652,
           "narrative_purity": null,
           "notes": []
         },
@@ -20738,7 +20746,7 @@
               {
                 "cluster_id": 0,
                 "label": "mail ballots",
-                "size": 8,
+                "size": 10,
                 "post_ids": [
                   762,
                   389,
@@ -20746,6 +20754,8 @@
                   305,
                   145,
                   142,
+                  141,
+                  138,
                   102,
                   60
                 ],
@@ -20756,7 +20766,7 @@
           },
           {
             "week": "2026-W22",
-            "cluster_count": 8,
+            "cluster_count": 6,
             "clusters": [
               {
                 "cluster_id": 0,
@@ -20786,24 +20796,23 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 5,
-                "label": "democrats ideas",
+                "cluster_id": 4,
+                "label": "3rd midterm elections",
                 "size": 5,
                 "post_ids": [
-                  461,
-                  460,
-                  41,
-                  38,
-                  137
+                  54,
+                  50,
+                  49,
+                  48,
+                  51
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 7,
+                "cluster_id": 5,
                 "label": "boom latino",
-                "size": 4,
+                "size": 3,
                 "post_ids": [
-                  106,
                   105,
                   88,
                   83
@@ -20811,29 +20820,26 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 6,
-                "label": "executive order",
-                "size": 3,
-                "post_ids": [
-                  738,
-                  47,
-                  43
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 4,
+                "cluster_id": 1,
                 "label": "red wave",
-                "size": 39,
+                "size": 69,
                 "post_ids": [
                   756,
                   56,
                   53,
+                  505,
+                  461,
+                  108,
+                  460,
                   107,
                   152,
                   151,
+                  459,
+                  458,
+                  650,
                   150,
                   149,
+                  457,
                   503,
                   618,
                   96,
@@ -20841,88 +20847,72 @@
                   104,
                   755,
                   103,
+                  70,
                   95,
                   94,
+                  736,
                   754,
                   69,
                   68,
                   502,
+                  737,
+                  67,
                   66,
                   65,
+                  80,
                   64,
                   79,
+                  77,
                   76,
                   75,
                   74,
+                  90,
+                  46,
+                  45,
                   63,
+                  89,
+                  73,
                   72,
                   71,
+                  87,
                   91,
                   86,
                   85,
                   61,
+                  82,
                   81,
                   39,
+                  41,
+                  38,
                   37,
-                  32
-                ],
-                "emerging_theme": false
-              },
-              {
-                "cluster_id": 1,
-                "label": "issue trump",
-                "size": 35,
-                "post_ids": [
-                  58,
-                  55,
-                  54,
-                  52,
-                  505,
-                  108,
-                  153,
-                  459,
-                  458,
-                  650,
-                  457,
-                  70,
-                  736,
-                  737,
-                  67,
-                  80,
-                  77,
-                  50,
-                  49,
-                  48,
-                  90,
-                  46,
-                  45,
-                  44,
-                  73,
-                  51,
-                  87,
-                  42,
-                  82,
-                  40,
+                  36,
                   35,
                   34,
                   33,
+                  32,
                   31,
-                  99
+                  99,
+                  137
                 ],
                 "emerging_theme": false
               },
               {
                 "cluster_id": 3,
                 "label": "voter fraud",
-                "size": 7,
+                "size": 12,
                 "post_ids": [
                   59,
                   57,
+                  738,
                   633,
                   504,
-                  89,
+                  106,
+                  47,
+                  44,
+                  43,
                   84,
-                  36
+                  42,
+                  40
                 ],
                 "emerging_theme": false
               }
@@ -20934,9 +20924,9 @@
             "cluster_count": 39,
             "clusters": [
               {
-                "cluster_id": 16,
+                "cluster_id": 13,
                 "label": "red wave",
-                "size": 13,
+                "size": 14,
                 "post_ids": [
                   147,
                   146,
@@ -20950,32 +20940,34 @@
                   309,
                   307,
                   306,
-                  871
+                  871,
+                  890
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 27,
-                "label": "racially drawn",
-                "size": 12,
+                "cluster_id": 26,
+                "label": "poster child",
+                "size": 13,
                 "post_ids": [
-                  173,
-                  234,
-                  383,
-                  382,
-                  377,
-                  366,
-                  430,
-                  428,
-                  427,
-                  551,
-                  636,
-                  845
+                  187,
+                  203,
+                  228,
+                  355,
+                  436,
+                  543,
+                  616,
+                  656,
+                  708,
+                  702,
+                  701,
+                  730,
+                  830
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 13,
+                "cluster_id": 9,
                 "label": "save america",
                 "size": 11,
                 "post_ids": [
@@ -21030,7 +21022,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
+                "cluster_id": 2,
                 "label": "war powers",
                 "size": 10,
                 "post_ids": [
@@ -21048,8 +21040,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 18,
-                "label": "democrat dominated",
+                "cluster_id": 21,
+                "label": "california communists",
                 "size": 9,
                 "post_ids": [
                   526,
@@ -21065,8 +21057,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 25,
-                "label": "similar rules",
+                "cluster_id": 24,
+                "label": "election integrity count",
                 "size": 9,
                 "post_ids": [
                   681,
@@ -21078,23 +21070,6 @@
                   848,
                   843,
                   878
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 15,
-                "label": "musk stands",
-                "size": 9,
-                "post_ids": [
-                  200,
-                  465,
-                  488,
-                  487,
-                  516,
-                  534,
-                  525,
-                  546,
-                  774
                 ],
                 "emerging_theme": true
               },
@@ -21132,42 +21107,11 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 8,
-                "label": "tie trumps",
-                "size": 8,
-                "post_ids": [
-                  171,
-                  206,
-                  316,
-                  384,
-                  658,
-                  764,
-                  867,
-                  862
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 9,
-                "label": "endorses rep",
-                "size": 8,
-                "post_ids": [
-                  231,
-                  348,
-                  336,
-                  335,
-                  334,
-                  331,
-                  368,
-                  627
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 28,
+                "cluster_id": 27,
                 "label": "breaking trump",
-                "size": 7,
+                "size": 8,
                 "post_ids": [
+                  234,
                   454,
                   453,
                   451,
@@ -21179,7 +21123,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 21,
+                "cluster_id": 25,
                 "label": "laying groundwork",
                 "size": 7,
                 "post_ids": [
@@ -21194,7 +21138,22 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 17,
+                "cluster_id": 28,
+                "label": "racially drawn",
+                "size": 7,
+                "post_ids": [
+                  383,
+                  377,
+                  366,
+                  430,
+                  428,
+                  427,
+                  845
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 14,
                 "label": "cheat upcoming",
                 "size": 7,
                 "post_ids": [
@@ -21224,6 +21183,36 @@
                 "emerging_theme": true
               },
               {
+                "cluster_id": 15,
+                "label": "endorses rep",
+                "size": 7,
+                "post_ids": [
+                  348,
+                  336,
+                  335,
+                  334,
+                  331,
+                  610,
+                  677
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 5,
+                "label": "awakening largest",
+                "size": 7,
+                "post_ids": [
+                  167,
+                  247,
+                  472,
+                  599,
+                  598,
+                  597,
+                  837
+                ],
+                "emerging_theme": true
+              },
+              {
                 "cluster_id": 1,
                 "label": "dissenting senator",
                 "size": 6,
@@ -21238,35 +21227,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 6,
-                "label": "purpose identify",
-                "size": 6,
-                "post_ids": [
-                  321,
-                  310,
-                  508,
-                  443,
-                  495,
-                  480
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 19,
-                "label": "plan impeach",
-                "size": 6,
-                "post_ids": [
-                  252,
-                  282,
-                  437,
-                  836,
-                  833,
-                  864
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 10,
+                "cluster_id": 8,
                 "label": "china expandiu",
                 "size": 6,
                 "post_ids": [
@@ -21276,6 +21237,20 @@
                   433,
                   611,
                   808
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 18,
+                "label": "data centers",
+                "size": 6,
+                "post_ids": [
+                  192,
+                  210,
+                  314,
+                  662,
+                  661,
+                  881
                 ],
                 "emerging_theme": true
               },
@@ -21293,21 +21268,47 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 23,
-                "label": "presidential election",
+                "cluster_id": 6,
+                "label": "purpose identify",
                 "size": 5,
                 "post_ids": [
-                  269,
-                  281,
-                  376,
-                  490,
-                  621
+                  321,
+                  310,
+                  508,
+                  443,
+                  480
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 20,
+                "label": "musk stands",
+                "size": 5,
+                "post_ids": [
+                  200,
+                  488,
+                  487,
+                  534,
+                  525
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 39,
+                "label": "position steelmanned",
+                "size": 5,
+                "post_ids": [
+                  379,
+                  424,
+                  455,
+                  438,
+                  636
                 ],
                 "emerging_theme": true
               },
               {
                 "cluster_id": 22,
-                "label": "liveprayer tuesday",
+                "label": "amnesty 20m",
                 "size": 5,
                 "post_ids": [
                   673,
@@ -21315,6 +21316,19 @@
                   671,
                   670,
                   669
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 16,
+                "label": "plan impeach",
+                "size": 5,
+                "post_ids": [
+                  252,
+                  282,
+                  836,
+                  833,
+                  864
                 ],
                 "emerging_theme": true
               },
@@ -21332,20 +21346,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 5,
-                "label": "awakening largest",
-                "size": 5,
-                "post_ids": [
-                  247,
-                  472,
-                  599,
-                  598,
-                  597
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 20,
+                "cluster_id": 17,
                 "label": "percentage points",
                 "size": 5,
                 "post_ids": [
@@ -21358,27 +21359,28 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 7,
-                "label": "cybersecurity teams",
+                "cluster_id": 19,
+                "label": "governor race",
                 "size": 5,
                 "post_ids": [
-                  227,
-                  299,
-                  352,
-                  663,
-                  660
+                  284,
+                  296,
+                  293,
+                  313,
+                  367
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 40,
-                "label": "position steelmanned",
-                "size": 4,
+                "cluster_id": 7,
+                "label": "tie trumps",
+                "size": 5,
                 "post_ids": [
-                  379,
-                  424,
-                  455,
-                  438
+                  171,
+                  206,
+                  384,
+                  658,
+                  862
                 ],
                 "emerging_theme": true
               },
@@ -21396,17 +21398,6 @@
               },
               {
                 "cluster_id": 41,
-                "label": "coward facist",
-                "size": 3,
-                "post_ids": [
-                  160,
-                  554,
-                  553
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 42,
                 "label": "tolerate patheticlosers",
                 "size": 3,
                 "post_ids": [
@@ -21417,7 +21408,18 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 39,
+                "cluster_id": 42,
+                "label": "coward facist",
+                "size": 3,
+                "post_ids": [
+                  160,
+                  554,
+                  553
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 40,
                 "label": "louisiana likely",
                 "size": 3,
                 "post_ids": [
@@ -21439,13 +21441,12 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 24,
+                "cluster_id": 23,
                 "label": "citizenship verification",
-                "size": 25,
+                "size": 24,
                 "post_ids": [
                   124,
                   119,
-                  237,
                   267,
                   264,
                   295,
@@ -21472,7 +21473,7 @@
                 "emerging_theme": false
               },
               {
-                "cluster_id": 2,
+                "cluster_id": 3,
                 "label": "post you're",
                 "size": 5,
                 "post_ids": [
@@ -21506,32 +21507,13 @@
                   375
                 ],
                 "emerging_theme": false
-              },
-              {
-                "cluster_id": 26,
-                "label": "poster child",
-                "size": 11,
-                "post_ids": [
-                  187,
-                  203,
-                  228,
-                  355,
-                  436,
-                  543,
-                  616,
-                  656,
-                  708,
-                  730,
-                  830
-                ],
-                "emerging_theme": true
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W24",
-            "cluster_count": 6,
+            "cluster_count": 5,
             "clusters": [
               {
                 "cluster_id": 0,
@@ -21561,7 +21543,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
+                "cluster_id": 4,
                 "label": "election integrity",
                 "size": 4,
                 "post_ids": [
@@ -21573,45 +21555,40 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 5,
-                "label": "date calendar",
-                "size": 2,
+                "cluster_id": 3,
+                "label": "senate rules",
+                "size": 5,
                 "post_ids": [
-                  955,
-                  954
+                  914,
+                  899,
+                  920,
+                  950,
+                  941
                 ],
-                "emerging_theme": false
-              },
-              {
-                "cluster_id": 4,
-                "label": "politician evidence",
-                "size": 2,
-                "post_ids": [
-                  904,
-                  917
-                ],
-                "emerging_theme": false
+                "emerging_theme": true
               },
               {
                 "cluster_id": 1,
-                "label": "senate rules",
-                "size": 48,
+                "label": "mail ballots",
+                "size": 53,
                 "post_ids": [
                   916,
-                  914,
+                  915,
                   913,
                   912,
                   911,
                   910,
                   909,
                   908,
+                  907,
                   906,
                   905,
+                  904,
                   903,
                   902,
                   901,
                   900,
-                  899,
+                  936,
                   935,
                   934,
                   933,
@@ -21620,26 +21597,29 @@
                   924,
                   922,
                   921,
-                  920,
                   919,
                   918,
+                  917,
                   959,
+                  955,
+                  954,
                   952,
                   951,
-                  950,
                   949,
                   948,
                   947,
                   946,
+                  945,
                   944,
                   943,
                   942,
-                  941,
                   975,
                   974,
                   973,
                   972,
+                  970,
                   969,
+                  966,
                   964,
                   963,
                   962,
@@ -21654,7 +21634,7 @@
         ],
         "clusters": [
           {
-            "cluster_id": 35,
+            "cluster_id": 36,
             "post_ids": [
               796,
               795,
@@ -21684,6 +21664,7 @@
               398,
               394,
               392,
+              389,
               151,
               148,
               69,
@@ -21693,9 +21674,9 @@
               191,
               255
             ],
-            "size": 36,
-            "cohesion": 0.7248,
-            "lexicon_hit_rate": 0.0154,
+            "size": 37,
+            "cohesion": 0.7212,
+            "lexicon_hit_rate": 0.015,
             "emerging_theme": true,
             "label_terms": [
               "red wave",
@@ -21715,18 +21696,18 @@
             ],
             "label_distinctiveness": 1.0,
             "sample_text": "Film actors ginakamun muskulhi beyfulhah kamiyabuvy Kiha gadha dhari MP bafa MP Hulhumale phase 1 phase 2 binthah huriha Red wave fiharathah Hulhumale phase 1 phase 2 old is gold young boys silver ehenveema 2026 film award Saleembeyah Eyna \u2026",
-            "author_entropy": 0.9944,
-            "quality_score": 0.8731,
+            "author_entropy": 0.9946,
+            "quality_score": 0.8715,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
-            "market_chatter_rate": 0.0114,
+            "market_chatter_rate": 0.0111,
             "filter_reason": null,
-            "map_x": -0.0012,
-            "map_y": 0.0257,
+            "map_x": -0.0043,
+            "map_y": 0.0229,
             "first_seen": "2025-08-13",
             "last_seen": "2026-06-02",
-            "active_days": 28,
+            "active_days": 29,
             "daily_counts": {
               "2025-08-13": 1,
               "2025-08-20": 1,
@@ -21751,6 +21732,7 @@
               "2026-04-29": 2,
               "2026-05-06": 1,
               "2026-05-11": 1,
+              "2026-05-20": 1,
               "2026-05-29": 1,
               "2026-05-30": 3,
               "2026-05-31": 1,
@@ -21759,7 +21741,7 @@
             },
             "coordination": {
               "unique_author_count": 0,
-              "unique_post_count": 36,
+              "unique_post_count": 37,
               "exact_duplicate_clusters": [
                 {
                   "ref_id": "exact_27",
@@ -21781,8 +21763,9 @@
             }
           },
           {
-            "cluster_id": 31,
+            "cluster_id": 32,
             "post_ids": [
+              47,
               124,
               119,
               202,
@@ -21791,7 +21774,6 @@
               264,
               349,
               421,
-              417,
               493,
               491,
               549,
@@ -21804,7 +21786,7 @@
               924
             ],
             "size": 19,
-            "cohesion": 0.5784,
+            "cohesion": 0.5694,
             "lexicon_hit_rate": 0.0175,
             "emerging_theme": true,
             "label_terms": [
@@ -21818,21 +21800,22 @@
             "label_distinctiveness": 1.0,
             "sample_text": "\ud83d\udea8Federal Judge Declines to Block Trump\u2019s Mail-In Ballot Verification Order Ahead of 2026 Midterms Washington, D.C., U.S. District Judge Carl Nichols on May 28 declined to immediately halt President Donald Trump\u2019s executive order directing f\u2026",
             "author_entropy": 0.983,
-            "quality_score": 0.8068,
+            "quality_score": 0.8027,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
-            "market_chatter_rate": 0.0081,
+            "market_chatter_rate": 0.0101,
             "filter_reason": null,
-            "map_x": 0.1269,
-            "map_y": -0.0859,
-            "first_seen": "2026-06-01",
+            "map_x": 0.1251,
+            "map_y": -0.0983,
+            "first_seen": "2026-05-31",
             "last_seen": "2026-06-08",
-            "active_days": 7,
+            "active_days": 8,
             "daily_counts": {
+              "2026-05-31": 1,
               "2026-06-01": 4,
               "2026-06-02": 3,
-              "2026-06-03": 2,
+              "2026-06-03": 1,
               "2026-06-04": 4,
               "2026-06-05": 1,
               "2026-06-07": 4,
@@ -21862,7 +21845,7 @@
             }
           },
           {
-            "cluster_id": 58,
+            "cluster_id": 59,
             "post_ids": [
               559,
               558,
@@ -21908,8 +21891,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": -0.6229,
-            "map_y": 0.7147,
+            "map_x": -0.6152,
+            "map_y": 0.7214,
             "first_seen": "2026-05-29",
             "last_seen": "2026-06-09",
             "active_days": 8,
@@ -21980,7 +21963,7 @@
             }
           },
           {
-            "cluster_id": 26,
+            "cluster_id": 28,
             "post_ids": [
               107,
               90,
@@ -21996,7 +21979,7 @@
               972
             ],
             "size": 12,
-            "cohesion": 0.6768,
+            "cohesion": 0.6801,
             "lexicon_hit_rate": 0.0,
             "emerging_theme": true,
             "label_terms": [
@@ -22012,14 +21995,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "DEMOCRATS NOW HAVE TO BEAT THEIR OWN 2024 RESULT BY NEARLY FIVE POINTS JUST TO WIN THE HOUSE A new Axios analysis lays out the brutal arithmetic now facing Democrats in the 2026 midterms. To win back the House, they no longer simply have to\u2026",
             "author_entropy": 0.9881,
-            "quality_score": 0.8546,
+            "quality_score": 0.8561,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.0435,
             "filter_reason": null,
-            "map_x": 0.0096,
-            "map_y": -0.143,
+            "map_x": 0.0089,
+            "map_y": -0.1427,
             "first_seen": "2026-05-29",
             "last_seen": "2026-06-08",
             "active_days": 9,
@@ -22086,7 +22069,7 @@
               665
             ],
             "size": 11,
-            "cohesion": 0.9982,
+            "cohesion": 0.9981,
             "lexicon_hit_rate": 0.0606,
             "emerging_theme": true,
             "label_terms": [
@@ -22110,8 +22093,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0989,
             "filter_reason": null,
-            "map_x": -0.0597,
-            "map_y": -0.1813,
+            "map_x": -0.0602,
+            "map_y": -0.1745,
             "first_seen": "2026-06-05",
             "last_seen": "2026-06-05",
             "active_days": 1,
@@ -22178,7 +22161,7 @@
             }
           },
           {
-            "cluster_id": 27,
+            "cluster_id": 31,
             "post_ids": [
               496,
               681,
@@ -22193,7 +22176,7 @@
               962
             ],
             "size": 11,
-            "cohesion": 0.86,
+            "cohesion": 0.8588,
             "lexicon_hit_rate": 0.0,
             "emerging_theme": true,
             "label_terms": [
@@ -22210,14 +22193,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "\ud83d\udea8BREAKING: The Supreme Court is poised to strike down laws allowing late-arriving mail-in ballots (even if postmarked by Election Day) in Watson v. Republican National Committee. Justice Alito slammed the shift from Election Day to \u201cElectio\u2026",
             "author_entropy": 1.0,
-            "quality_score": 0.937,
+            "quality_score": 0.9365,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.0409,
             "filter_reason": null,
-            "map_x": 0.1166,
-            "map_y": 0.0172,
+            "map_x": 0.117,
+            "map_y": 0.0255,
             "first_seen": "2026-06-04",
             "last_seen": "2026-06-09",
             "active_days": 6,
@@ -22273,81 +22256,7 @@
             }
           },
           {
-            "cluster_id": 32,
-            "post_ids": [
-              60,
-              59,
-              57,
-              47,
-              44,
-              43,
-              42,
-              185,
-              350,
-              361,
-              360
-            ],
-            "size": 11,
-            "cohesion": 0.71,
-            "lexicon_hit_rate": 0.101,
-            "emerging_theme": true,
-            "label_terms": [
-              "radical left",
-              "voter fraud",
-              "sidney powell"
-            ],
-            "label_phrases": [
-              "radical left",
-              "voter fraud",
-              "sidney powell"
-            ],
-            "label_distinctiveness": 1.0,
-            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
-            "author_entropy": 1.0,
-            "quality_score": 0.8493,
-            "confidence_tier": "medium",
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.0372,
-            "filter_reason": null,
-            "map_x": 0.0239,
-            "map_y": -0.0951,
-            "first_seen": "2026-05-24",
-            "last_seen": "2026-06-02",
-            "active_days": 6,
-            "daily_counts": {
-              "2026-05-24": 1,
-              "2026-05-25": 1,
-              "2026-05-26": 1,
-              "2026-05-31": 4,
-              "2026-06-01": 1,
-              "2026-06-02": 3
-            },
-            "coordination": {
-              "unique_author_count": 0,
-              "unique_post_count": 11,
-              "exact_duplicate_clusters": [
-                {
-                  "ref_id": "exact_28",
-                  "overlap_count": 2,
-                  "cluster_count": 2,
-                  "author_count": 2,
-                  "burst_synchronized": false,
-                  "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the",
-                  "post_ids": [
-                    57,
-                    59
-                  ]
-                }
-              ],
-              "fuzzy_clusters": [],
-              "same_author_groups": [],
-              "tier": "low",
-              "tier_label": "Distributed narrative"
-            }
-          },
-          {
-            "cluster_id": 62,
+            "cluster_id": 63,
             "post_ids": [
               588,
               587,
@@ -22389,8 +22298,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0375,
             "filter_reason": null,
-            "map_x": -0.1036,
-            "map_y": 0.0714,
+            "map_x": -0.1064,
+            "map_y": 0.0763,
             "first_seen": "2026-06-04",
             "last_seen": "2026-06-04",
             "active_days": 1,
@@ -22429,7 +22338,7 @@
             }
           },
           {
-            "cluster_id": 22,
+            "cluster_id": 24,
             "post_ids": [
               725,
               723,
@@ -22469,8 +22378,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0019,
             "filter_reason": null,
-            "map_x": -0.076,
-            "map_y": -0.0409,
+            "map_x": -0.0798,
+            "map_y": -0.0358,
             "first_seen": "2026-02-01",
             "last_seen": "2026-06-07",
             "active_days": 9,
@@ -22499,6 +22408,79 @@
                   "post_ids": [
                     716,
                     717
+                  ]
+                }
+              ],
+              "fuzzy_clusters": [],
+              "same_author_groups": [],
+              "tier": "low",
+              "tier_label": "Distributed narrative"
+            }
+          },
+          {
+            "cluster_id": 33,
+            "post_ids": [
+              60,
+              59,
+              57,
+              44,
+              43,
+              42,
+              185,
+              350,
+              361,
+              360
+            ],
+            "size": 10,
+            "cohesion": 0.7219,
+            "lexicon_hit_rate": 0.1111,
+            "emerging_theme": true,
+            "label_terms": [
+              "radical left",
+              "voter fraud",
+              "sidney powell"
+            ],
+            "label_phrases": [
+              "radical left",
+              "voter fraud",
+              "sidney powell"
+            ],
+            "label_distinctiveness": 1.0,
+            "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the 2026 midterm elections. There is no more fitting of a patriot to put in charge \u2026",
+            "author_entropy": 1.0,
+            "quality_score": 0.8526,
+            "confidence_tier": "medium",
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0372,
+            "filter_reason": null,
+            "map_x": 0.0168,
+            "map_y": -0.0894,
+            "first_seen": "2026-05-24",
+            "last_seen": "2026-06-02",
+            "active_days": 6,
+            "daily_counts": {
+              "2026-05-24": 1,
+              "2026-05-25": 1,
+              "2026-05-26": 1,
+              "2026-05-31": 3,
+              "2026-06-01": 1,
+              "2026-06-02": 3
+            },
+            "coordination": {
+              "unique_author_count": 0,
+              "unique_post_count": 10,
+              "exact_duplicate_clusters": [
+                {
+                  "ref_id": "exact_28",
+                  "overlap_count": 2,
+                  "cluster_count": 2,
+                  "author_count": 2,
+                  "burst_synchronized": false,
+                  "sample_text": "\ud83d\udea8BREAKING:\ud83d\udcf7 President Trump to name Sidney Powell a DOJ Special Attorney that he is calling his \"Elections Czar\" to investigate and prosecute voter fraud in the",
+                  "post_ids": [
+                    57,
+                    59
                   ]
                 }
               ],
@@ -22545,8 +22527,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0119,
             "filter_reason": null,
-            "map_x": 0.0245,
-            "map_y": -0.1949,
+            "map_x": 0.0213,
+            "map_y": -0.1943,
             "first_seen": "2026-05-31",
             "last_seen": "2026-06-07",
             "active_days": 7,
@@ -22596,7 +22578,7 @@
             }
           },
           {
-            "cluster_id": 21,
+            "cluster_id": 22,
             "post_ids": [
               809,
               806,
@@ -22637,8 +22619,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": 0.0066,
-            "map_y": -0.0428,
+            "map_x": 0.0046,
+            "map_y": -0.0383,
             "first_seen": "2026-06-06",
             "last_seen": "2026-06-06",
             "active_days": 1,
@@ -22709,7 +22691,7 @@
               535
             ],
             "size": 9,
-            "cohesion": 0.9795,
+            "cohesion": 0.9789,
             "lexicon_hit_rate": 0.2222,
             "emerging_theme": true,
             "label_terms": [
@@ -22729,14 +22711,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "\ud83d\udea8The FBI and DOJ need to go to California now, while the fraud is going on\u2014it's a crime in progress\u2014and investigate and arrest now\u2014not three months from now, before they destroy the evidence.\ud83d\udea8 The California communists are poised to steal t\u2026",
             "author_entropy": -0.0,
-            "quality_score": 0.9463,
+            "quality_score": 0.946,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.0333,
             "filter_reason": null,
-            "map_x": -0.0211,
-            "map_y": -0.0746,
+            "map_x": -0.0223,
+            "map_y": -0.0703,
             "first_seen": "2026-06-04",
             "last_seen": "2026-06-04",
             "active_days": 1,
@@ -22773,7 +22755,7 @@
             }
           },
           {
-            "cluster_id": 6,
+            "cluster_id": 5,
             "post_ids": [
               144,
               143,
@@ -22786,7 +22768,7 @@
               951
             ],
             "size": 9,
-            "cohesion": 0.9158,
+            "cohesion": 0.916,
             "lexicon_hit_rate": 0.1481,
             "emerging_theme": true,
             "label_terms": [
@@ -22804,14 +22786,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "\ud83d\udea8 BOMBSHELL: Rep. Anna Paulina Luna Drops NUCLEAR Option to CRUSH Election Fraud! \ud83d\udea8 California is a filthy sanctuary for voter fraud, with millions of illegal aliens and dead people still on the rolls stealing our elections. Rep. Luna just \u2026",
             "author_entropy": 0.5033,
-            "quality_score": 0.9325,
+            "quality_score": 0.9326,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.0719,
             "filter_reason": null,
-            "map_x": -0.016,
-            "map_y": -0.0781,
+            "map_x": -0.0154,
+            "map_y": -0.0774,
             "first_seen": "2026-05-21",
             "last_seen": "2026-06-08",
             "active_days": 6,
@@ -22885,8 +22867,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.1522,
             "filter_reason": null,
-            "map_x": -0.1343,
-            "map_y": -0.1472,
+            "map_x": -0.1358,
+            "map_y": -0.1361,
             "first_seen": "2026-06-04",
             "last_seen": "2026-06-05",
             "active_days": 2,
@@ -22955,8 +22937,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": -0.6171,
-            "map_y": 0.714,
+            "map_x": -0.6095,
+            "map_y": 0.7203,
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-08",
             "active_days": 4,
@@ -22977,7 +22959,7 @@
             }
           },
           {
-            "cluster_id": 20,
+            "cluster_id": 21,
             "post_ids": [
               39,
               348,
@@ -23015,8 +22997,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0195,
             "filter_reason": null,
-            "map_x": 0.1312,
-            "map_y": -0.0181,
+            "map_x": 0.1249,
+            "map_y": -0.0288,
             "first_seen": "2026-05-31",
             "last_seen": "2026-06-07",
             "active_days": 4,
@@ -23037,7 +23019,7 @@
             }
           },
           {
-            "cluster_id": 37,
+            "cluster_id": 38,
             "post_ids": [
               234,
               454,
@@ -23072,8 +23054,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0134,
             "filter_reason": null,
-            "map_x": 0.2687,
-            "map_y": 0.2189,
+            "map_x": 0.2758,
+            "map_y": 0.2276,
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-03",
             "active_days": 2,
@@ -23121,16 +23103,16 @@
             "lexicon_hit_rate": 0.0,
             "emerging_theme": true,
             "label_terms": [
-              "purpose identify",
-              "similarities united",
+              "identify similarities",
               "tina peters",
-              "elections clerk"
+              "elections clerk",
+              "convicted multiple"
             ],
             "label_phrases": [
-              "purpose identify",
-              "similarities united",
+              "identify similarities",
               "tina peters",
-              "elections clerk"
+              "elections clerk",
+              "convicted multiple"
             ],
             "label_distinctiveness": 1.0,
             "sample_text": "Here is a fully transformed, 2026 version of the 2020 text\u2014 rewritten as an update before the 2026 midterms (purpose to identify similarities with the 2020 midterms), keeping the structure, the Round Table framing, the alternating voices (P\u2026",
@@ -23141,8 +23123,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": 0.1086,
-            "map_y": -0.099,
+            "map_x": 0.1048,
+            "map_y": -0.1018,
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-04",
             "active_days": 4,
@@ -23163,7 +23145,7 @@
             }
           },
           {
-            "cluster_id": 23,
+            "cluster_id": 25,
             "post_ids": [
               281,
               673,
@@ -23174,7 +23156,7 @@
               959
             ],
             "size": 7,
-            "cohesion": 0.7835,
+            "cohesion": 0.7814,
             "lexicon_hit_rate": 0.0317,
             "emerging_theme": true,
             "label_terms": [
@@ -23188,14 +23170,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "why shocked???...they have been doing this for YEARS!!!...Bass will be Mayor again...and Becerra will be Gov...no matter who votes in November!!!...they want to do this nationally if they get power again! Liveprayer TV Tuesday June 2, 2026 \u2026",
             "author_entropy": 0.7248,
-            "quality_score": 0.8962,
+            "quality_score": 0.8953,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": -0.0439,
-            "map_y": -0.1745,
+            "map_x": -0.0454,
+            "map_y": -0.1744,
             "first_seen": "2026-06-02",
             "last_seen": "2026-06-08",
             "active_days": 3,
@@ -23252,8 +23234,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0029,
             "filter_reason": null,
-            "map_x": 0.1402,
-            "map_y": -0.0235,
+            "map_x": 0.138,
+            "map_y": -0.0277,
             "first_seen": "2026-05-28",
             "last_seen": "2026-06-07",
             "active_days": 5,
@@ -23312,8 +23294,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0316,
             "filter_reason": null,
-            "map_x": -0.0317,
-            "map_y": -0.2131,
+            "map_x": -0.0344,
+            "map_y": -0.2137,
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-08",
             "active_days": 4,
@@ -23366,8 +23348,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0375,
             "filter_reason": null,
-            "map_x": 0.0053,
-            "map_y": -0.0455,
+            "map_x": 0.0028,
+            "map_y": -0.0416,
             "first_seen": "2026-06-08",
             "last_seen": "2026-06-08",
             "active_days": 1,
@@ -23419,7 +23401,7 @@
             }
           },
           {
-            "cluster_id": 33,
+            "cluster_id": 34,
             "post_ids": [
               200,
               198,
@@ -23453,8 +23435,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": 0.1161,
-            "map_y": -0.0307,
+            "map_x": 0.1104,
+            "map_y": -0.0327,
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-06",
             "active_days": 4,
@@ -23501,7 +23483,7 @@
             }
           },
           {
-            "cluster_id": 28,
+            "cluster_id": 29,
             "post_ids": [
               99,
               201,
@@ -23535,8 +23517,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": -0.1193,
-            "map_y": 0.0308,
+            "map_x": -0.1221,
+            "map_y": 0.0269,
             "first_seen": "2026-05-31",
             "last_seen": "2026-06-04",
             "active_days": 4,
@@ -23584,121 +23566,7 @@
             }
           },
           {
-            "cluster_id": 8,
-            "post_ids": [
-              459,
-              458,
-              457,
-              85,
-              779,
-              827
-            ],
-            "size": 6,
-            "cohesion": 0.8248,
-            "lexicon_hit_rate": 0.1667,
-            "emerging_theme": true,
-            "label_terms": [
-              "broke buried",
-              "debt directionless"
-            ],
-            "label_phrases": [
-              "broke buried",
-              "debt directionless"
-            ],
-            "label_distinctiveness": 1.0,
-            "sample_text": "Its Primary Season. (And Democrats Are Taking No Prisoners)! \ud83e\udee1\ud83e\udee1 DEMOCRATS RECEIVE 48% OF THE POPULAR VOTE IN CALIFORNIA FOR GOVERNOR! \"Maga receives a mere 37%..\" Becerra would have gotten near 50% of the vote had the other Democrat, Steyer\u2026",
-            "author_entropy": 0.7897,
-            "quality_score": 0.8878,
-            "confidence_tier": "medium",
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.051,
-            "filter_reason": null,
-            "map_x": 0.0184,
-            "map_y": -0.031,
-            "first_seen": "2026-05-29",
-            "last_seen": "2026-06-07",
-            "active_days": 4,
-            "daily_counts": {
-              "2026-05-29": 3,
-              "2026-05-31": 1,
-              "2026-06-06": 1,
-              "2026-06-07": 1
-            },
-            "coordination": {
-              "unique_author_count": 2,
-              "unique_post_count": 6,
-              "exact_duplicate_clusters": [
-                {
-                  "ref_id": "exact_36",
-                  "overlap_count": 2,
-                  "cluster_count": 2,
-                  "author_count": 1,
-                  "burst_synchronized": false,
-                  "sample_text": "Democrats are in Freefall: Broke, Buried in Debt, Directionless and Doomed in 2026 Midterms. \ud83d\udca5 The numbers don't lie. While MAGA delivers results, the Democrat ",
-                  "post_ids": [
-                    458,
-                    459
-                  ]
-                }
-              ],
-              "fuzzy_clusters": [],
-              "same_author_groups": [],
-              "tier": "medium",
-              "tier_label": "Shared frame"
-            }
-          },
-          {
-            "cluster_id": 39,
-            "post_ids": [
-              383,
-              377,
-              366,
-              430,
-              428,
-              427
-            ],
-            "size": 6,
-            "cohesion": 0.8196,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
-            "label_terms": [
-              "racially drawn",
-              "overturning lower"
-            ],
-            "label_phrases": [
-              "racially drawn",
-              "overturning lower"
-            ],
-            "label_distinctiveness": 1.0,
-            "sample_text": "\ud83c\uddfa\ud83c\uddf8 The First Order Consequence: The U. S. Supreme Court\u2019s decision permits Alabama election officials to implement a congressional map that favors Republicans, shaping the immediate electoral environment by improving Republican prospects fo\u2026",
-            "author_entropy": 1.0,
-            "quality_score": 0.9188,
-            "confidence_tier": "medium",
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.0156,
-            "filter_reason": null,
-            "map_x": 0.4455,
-            "map_y": 0.2698,
-            "first_seen": "2026-06-03",
-            "last_seen": "2026-06-03",
-            "active_days": 1,
-            "daily_counts": {
-              "2026-06-03": 6
-            },
-            "coordination": {
-              "unique_author_count": 0,
-              "unique_post_count": 6,
-              "exact_duplicate_clusters": [],
-              "fuzzy_clusters": [],
-              "same_author_groups": [],
-              "tier": "low",
-              "tier_label": "Distributed narrative"
-            }
-          },
-          {
-            "cluster_id": 53,
+            "cluster_id": 54,
             "post_ids": [
               355,
               543,
@@ -23730,8 +23598,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0167,
             "filter_reason": null,
-            "map_x": 0.2901,
-            "map_y": -0.0027,
+            "map_x": 0.2861,
+            "map_y": -0.011,
             "first_seen": "2026-06-02",
             "last_seen": "2026-06-07",
             "active_days": 4,
@@ -23752,7 +23620,7 @@
             }
           },
           {
-            "cluster_id": 5,
+            "cluster_id": 7,
             "post_ids": [
               861,
               897,
@@ -23781,8 +23649,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.251,
             "filter_reason": null,
-            "map_x": -0.0894,
-            "map_y": -0.107,
+            "map_x": -0.0892,
+            "map_y": -0.1027,
             "first_seen": "2026-06-07",
             "last_seen": "2026-06-07",
             "active_days": 1,
@@ -23863,8 +23731,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0187,
             "filter_reason": null,
-            "map_x": -0.1245,
-            "map_y": 0.0387,
+            "map_x": -0.1267,
+            "map_y": 0.0453,
             "first_seen": "2026-05-29",
             "last_seen": "2026-06-04",
             "active_days": 2,
@@ -23899,7 +23767,7 @@
             }
           },
           {
-            "cluster_id": 24,
+            "cluster_id": 26,
             "post_ids": [
               633,
               269,
@@ -23931,8 +23799,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": 0.0044,
-            "map_y": -0.0742,
+            "map_x": 0.0009,
+            "map_y": -0.0715,
             "first_seen": "2026-05-29",
             "last_seen": "2026-06-05",
             "active_days": 5,
@@ -23983,8 +23851,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": -0.0213,
-            "map_y": -0.0607,
+            "map_x": -0.0243,
+            "map_y": -0.0584,
             "first_seen": "2026-06-02",
             "last_seen": "2026-06-03",
             "active_days": 2,
@@ -24017,7 +23885,7 @@
             }
           },
           {
-            "cluster_id": 45,
+            "cluster_id": 46,
             "post_ids": [
               923,
               976,
@@ -24048,8 +23916,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": 0.0141,
-            "map_y": -0.0545,
+            "map_x": 0.0116,
+            "map_y": -0.053,
             "first_seen": "2026-06-08",
             "last_seen": "2026-06-09",
             "active_days": 2,
@@ -24119,6 +23987,69 @@
             }
           },
           {
+            "cluster_id": 8,
+            "post_ids": [
+              459,
+              458,
+              457,
+              779,
+              827
+            ],
+            "size": 5,
+            "cohesion": 0.9103,
+            "lexicon_hit_rate": 0.2,
+            "emerging_theme": true,
+            "label_terms": [
+              "broke buried",
+              "debt directionless"
+            ],
+            "label_phrases": [
+              "broke buried",
+              "debt directionless"
+            ],
+            "label_distinctiveness": 1.0,
+            "sample_text": "Its Primary Season. (And Democrats Are Taking No Prisoners)! \ud83e\udee1\ud83e\udee1 DEMOCRATS RECEIVE 48% OF THE POPULAR VOTE IN CALIFORNIA FOR GOVERNOR! \"Maga receives a mere 37%..\" Becerra would have gotten near 50% of the vote had the other Democrat, Steyer\u2026",
+            "author_entropy": 0.7219,
+            "quality_score": 0.9196,
+            "confidence_tier": "medium",
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0462,
+            "filter_reason": null,
+            "map_x": 0.0121,
+            "map_y": -0.0271,
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-06-07",
+            "active_days": 3,
+            "daily_counts": {
+              "2026-05-29": 3,
+              "2026-06-06": 1,
+              "2026-06-07": 1
+            },
+            "coordination": {
+              "unique_author_count": 2,
+              "unique_post_count": 5,
+              "exact_duplicate_clusters": [
+                {
+                  "ref_id": "exact_36",
+                  "overlap_count": 2,
+                  "cluster_count": 2,
+                  "author_count": 1,
+                  "burst_synchronized": false,
+                  "sample_text": "Democrats are in Freefall: Broke, Buried in Debt, Directionless and Doomed in 2026 Midterms. \ud83d\udca5 The numbers don't lie. While MAGA delivers results, the Democrat ",
+                  "post_ids": [
+                    458,
+                    459
+                  ]
+                }
+              ],
+              "fuzzy_clusters": [],
+              "same_author_groups": [],
+              "tier": "medium",
+              "tier_label": "Shared frame"
+            }
+          },
+          {
             "cluster_id": 11,
             "post_ids": [
               461,
@@ -24150,8 +24081,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": -0.0179,
-            "map_y": -0.1593,
+            "map_x": -0.0205,
+            "map_y": -0.1544,
             "first_seen": "2026-05-28",
             "last_seen": "2026-06-06",
             "active_days": 4,
@@ -24187,7 +24118,7 @@
             }
           },
           {
-            "cluster_id": 7,
+            "cluster_id": 6,
             "post_ids": [
               488,
               487,
@@ -24224,8 +24155,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.02,
             "filter_reason": null,
-            "map_x": 0.1271,
-            "map_y": -0.0662,
+            "map_x": 0.1234,
+            "map_y": -0.0646,
             "first_seen": "2026-06-04",
             "last_seen": "2026-06-07",
             "active_days": 2,
@@ -24269,7 +24200,7 @@
             }
           },
           {
-            "cluster_id": 56,
+            "cluster_id": 57,
             "post_ids": [
               379,
               424,
@@ -24300,8 +24231,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.05,
             "filter_reason": null,
-            "map_x": 0.4391,
-            "map_y": 0.3251,
+            "map_x": 0.4485,
+            "map_y": 0.328,
             "first_seen": "2026-06-03",
             "last_seen": "2026-06-05",
             "active_days": 2,
@@ -24320,7 +24251,55 @@
             }
           },
           {
-            "cluster_id": 29,
+            "cluster_id": 40,
+            "post_ids": [
+              377,
+              366,
+              430,
+              428,
+              427
+            ],
+            "size": 5,
+            "cohesion": 0.8518,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "racially drawn",
+              "overturning lower"
+            ],
+            "label_phrases": [
+              "racially drawn",
+              "overturning lower"
+            ],
+            "label_distinctiveness": 1.0,
+            "sample_text": "BREAKING: SCOTUS 6-3 UPHOLDS ALABAMA\u2019S PRO-REPUBLICAN MAP \u2014 RACIAL GERRYMANDER BLOCK OVERTURNED The Supreme Court has just ruled 6-3 to uphold Alabama\u2019s congressional redistricting map \u2014 overturning the lower court that had blocked it and s\u2026",
+            "author_entropy": 1.0,
+            "quality_score": 0.9333,
+            "confidence_tier": "medium",
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0187,
+            "filter_reason": null,
+            "map_x": 0.4534,
+            "map_y": 0.2775,
+            "first_seen": "2026-06-03",
+            "last_seen": "2026-06-03",
+            "active_days": 1,
+            "daily_counts": {
+              "2026-06-03": 5
+            },
+            "coordination": {
+              "unique_author_count": 0,
+              "unique_post_count": 5,
+              "exact_duplicate_clusters": [],
+              "fuzzy_clusters": [],
+              "same_author_groups": [],
+              "tier": "low",
+              "tier_label": "Distributed narrative"
+            }
+          },
+          {
+            "cluster_id": 27,
             "post_ids": [
               746,
               745,
@@ -24329,7 +24308,7 @@
               742
             ],
             "size": 5,
-            "cohesion": 0.8434,
+            "cohesion": 0.8367,
             "lexicon_hit_rate": 0.0222,
             "emerging_theme": true,
             "label_terms": [
@@ -24347,14 +24326,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "\ud83d\udea8 BREAKING: US Supreme Court UPHOLDS California's pro-Democrat 2026 gerrymandering map that would add as many as +5 blue seats for the midterms SCOTUS also upheld Texas We NEED more red states to redistrict! Florida, you're next. DON'T HOLD\u2026",
             "author_entropy": 1.0,
-            "quality_score": 0.9251,
+            "quality_score": 0.9221,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.0225,
             "filter_reason": null,
-            "map_x": 0.2394,
-            "map_y": 0.2058,
+            "map_x": 0.2425,
+            "map_y": 0.208,
             "first_seen": "2026-02-04",
             "last_seen": "2026-02-04",
             "active_days": 1,
@@ -24382,6 +24361,84 @@
               "same_author_groups": [],
               "tier": "low",
               "tier_label": "Distributed narrative"
+            }
+          },
+          {
+            "cluster_id": 39,
+            "post_ids": [
+              383,
+              683,
+              711,
+              710,
+              845
+            ],
+            "size": 5,
+            "cohesion": 0.8208,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "louisiana likely",
+              "order consequence",
+              "decision permits"
+            ],
+            "label_phrases": [
+              "louisiana likely",
+              "order consequence",
+              "decision permits"
+            ],
+            "label_distinctiveness": 1.0,
+            "sample_text": "\ud83c\uddfa\ud83c\uddf8 The First Order Consequence: The U. S. Supreme Court\u2019s decision permits Alabama election officials to implement a congressional map that favors Republicans, shaping the immediate electoral environment by improving Republican prospects fo\u2026",
+            "author_entropy": 1.0,
+            "quality_score": 0.9194,
+            "confidence_tier": "medium",
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0,
+            "filter_reason": null,
+            "map_x": 0.4246,
+            "map_y": 0.3325,
+            "first_seen": "2026-06-03",
+            "last_seen": "2026-06-07",
+            "active_days": 3,
+            "daily_counts": {
+              "2026-06-03": 1,
+              "2026-06-05": 3,
+              "2026-06-07": 1
+            },
+            "coordination": {
+              "unique_author_count": 4,
+              "unique_post_count": 5,
+              "exact_duplicate_clusters": [
+                {
+                  "ref_id": "exact_2",
+                  "overlap_count": 2,
+                  "cluster_count": 2,
+                  "author_count": 2,
+                  "burst_synchronized": false,
+                  "sample_text": "Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge",
+                  "post_ids": [
+                    710,
+                    711
+                  ]
+                }
+              ],
+              "fuzzy_clusters": [
+                {
+                  "ref_id": "fuzzy_0",
+                  "overlap_count": 2,
+                  "cluster_count": 2,
+                  "author_count": 2,
+                  "burst_synchronized": false,
+                  "sample_text": "Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge",
+                  "post_ids": [
+                    710,
+                    711
+                  ]
+                }
+              ],
+              "same_author_groups": [],
+              "tier": "medium",
+              "tier_label": "Near-copy campaign"
             }
           },
           {
@@ -24418,8 +24475,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0045,
             "filter_reason": null,
-            "map_x": -0.1109,
-            "map_y": -0.2518,
+            "map_x": -0.1139,
+            "map_y": -0.2436,
             "first_seen": "2026-05-31",
             "last_seen": "2026-06-06",
             "active_days": 4,
@@ -24477,8 +24534,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.03,
             "filter_reason": null,
-            "map_x": -0.0011,
-            "map_y": -0.1071,
+            "map_x": -0.0048,
+            "map_y": -0.1036,
             "first_seen": "2026-06-03",
             "last_seen": "2026-06-05",
             "active_days": 3,
@@ -24498,7 +24555,7 @@
             }
           },
           {
-            "cluster_id": 34,
+            "cluster_id": 35,
             "post_ids": [
               618,
               447,
@@ -24535,8 +24592,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": 0.1953,
-            "map_y": -0.0428,
+            "map_x": 0.1902,
+            "map_y": -0.0491,
             "first_seen": "2026-05-29",
             "last_seen": "2026-06-08",
             "active_days": 4,
@@ -24570,7 +24627,59 @@
             }
           },
           {
-            "cluster_id": 25,
+            "cluster_id": 20,
+            "post_ids": [
+              94,
+              91,
+              694,
+              820,
+              899
+            ],
+            "size": 5,
+            "cohesion": 0.7335,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "overcome series",
+              "redistricting hurdles"
+            ],
+            "label_phrases": [
+              "overcome series",
+              "redistricting hurdles"
+            ],
+            "label_distinctiveness": 1.0,
+            "sample_text": "Here\u2019s why I\u2019m not supporting handcuffing the GOP in the 2026 midterms: When we can\u2019t pass a funding bill because of gridlock, and Trump is forced to cut ICE or DHS to fund the government, people are going to gloat at Trump supporters They \u2026",
+            "author_entropy": 1.0,
+            "quality_score": 0.8801,
+            "confidence_tier": "medium",
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0037,
+            "filter_reason": null,
+            "map_x": 0.0004,
+            "map_y": -0.0992,
+            "first_seen": "2026-05-30",
+            "last_seen": "2026-06-08",
+            "active_days": 5,
+            "daily_counts": {
+              "2026-05-30": 1,
+              "2026-05-31": 1,
+              "2026-06-05": 1,
+              "2026-06-07": 1,
+              "2026-06-08": 1
+            },
+            "coordination": {
+              "unique_author_count": 3,
+              "unique_post_count": 5,
+              "exact_duplicate_clusters": [],
+              "fuzzy_clusters": [],
+              "same_author_groups": [],
+              "tier": "medium",
+              "tier_label": "Shared frame (emerging)"
+            }
+          },
+          {
+            "cluster_id": 23,
             "post_ids": [
               285,
               280,
@@ -24579,7 +24688,7 @@
               431
             ],
             "size": 5,
-            "cohesion": 0.7105,
+            "cohesion": 0.7077,
             "lexicon_hit_rate": 0.0222,
             "emerging_theme": true,
             "label_terms": [
@@ -24595,14 +24704,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "Republicans can win the midterms if they just stop underselling success | Martha Jenkins, Fox News Republicans head into the 2026 midterms with a rare advantage: a concrete record of accomplishments to run on powered by President Donald Tru\u2026",
             "author_entropy": 1.0,
-            "quality_score": 0.8653,
+            "quality_score": 0.864,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.024,
             "filter_reason": null,
-            "map_x": 0.0182,
-            "map_y": -0.0927,
+            "map_x": 0.008,
+            "map_y": -0.1062,
             "first_seen": "2026-06-02",
             "last_seen": "2026-06-03",
             "active_days": 2,
@@ -24621,7 +24730,7 @@
             }
           },
           {
-            "cluster_id": 52,
+            "cluster_id": 53,
             "post_ids": [
               54,
               50,
@@ -24651,8 +24760,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": -0.0362,
-            "map_y": -0.0334,
+            "map_x": -0.0397,
+            "map_y": -0.031,
             "first_seen": "2026-05-27",
             "last_seen": "2026-05-31",
             "active_days": 2,
@@ -24685,81 +24794,7 @@
             }
           },
           {
-            "cluster_id": 38,
-            "post_ids": [
-              683,
-              711,
-              710,
-              845
-            ],
-            "size": 4,
-            "cohesion": 0.8921,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
-            "label_terms": [
-              "louisiana likely",
-              "politics source"
-            ],
-            "label_phrases": [
-              "louisiana likely",
-              "politics source"
-            ],
-            "label_distinctiveness": 1.0,
-            "sample_text": "Check out this video from null: Supreme Court ruling could impact 2026 midterms The Supreme Court ruled that Texas can use a congressional map drawn to give Republicans an advantage, with other states now following suit.",
-            "author_entropy": 1.0,
-            "quality_score": 0.9514,
-            "confidence_tier": "medium",
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.0,
-            "filter_reason": null,
-            "map_x": 0.386,
-            "map_y": 0.3351,
-            "first_seen": "2026-06-05",
-            "last_seen": "2026-06-07",
-            "active_days": 2,
-            "daily_counts": {
-              "2026-06-05": 3,
-              "2026-06-07": 1
-            },
-            "coordination": {
-              "unique_author_count": 4,
-              "unique_post_count": 4,
-              "exact_duplicate_clusters": [
-                {
-                  "ref_id": "exact_2",
-                  "overlap_count": 2,
-                  "cluster_count": 2,
-                  "author_count": 2,
-                  "burst_synchronized": false,
-                  "sample_text": "Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge",
-                  "post_ids": [
-                    710,
-                    711
-                  ]
-                }
-              ],
-              "fuzzy_clusters": [
-                {
-                  "ref_id": "fuzzy_0",
-                  "overlap_count": 2,
-                  "cluster_count": 2,
-                  "author_count": 2,
-                  "burst_synchronized": false,
-                  "sample_text": "Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge",
-                  "post_ids": [
-                    710,
-                    711
-                  ]
-                }
-              ],
-              "same_author_groups": [],
-              "tier": "medium",
-              "tier_label": "Near-copy campaign"
-            }
-          },
-          {
-            "cluster_id": 49,
+            "cluster_id": 50,
             "post_ids": [
               105,
               88,
@@ -24793,13 +24828,67 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0391,
             "filter_reason": null,
-            "map_x": -0.0791,
-            "map_y": 0.0093,
+            "map_x": -0.0805,
+            "map_y": 0.012,
             "first_seen": "2026-05-31",
             "last_seen": "2026-05-31",
             "active_days": 1,
             "daily_counts": {
               "2026-05-31": 4
+            },
+            "coordination": {
+              "unique_author_count": 0,
+              "unique_post_count": 4,
+              "exact_duplicate_clusters": [],
+              "fuzzy_clusters": [],
+              "same_author_groups": [],
+              "tier": "low",
+              "tier_label": "Distributed narrative"
+            }
+          },
+          {
+            "cluster_id": 52,
+            "post_ids": [
+              164,
+              262,
+              417,
+              638
+            ],
+            "size": 4,
+            "cohesion": 0.7921,
+            "lexicon_hit_rate": 0.0,
+            "emerging_theme": true,
+            "label_terms": [
+              "west golden",
+              "inflation economy",
+              "drive weak",
+              "national polls"
+            ],
+            "label_phrases": [
+              "west golden",
+              "inflation economy",
+              "drive weak",
+              "national polls"
+            ],
+            "label_distinctiveness": 1.0,
+            "sample_text": "In new , Max Stafford argues that mayors will help shape the narrative of the 2026 midterms. From migration to the cost of living, city leaders are increasingly influencing national political debates &amp; could emerge as key figures ahead \u2026",
+            "author_entropy": 0.9464,
+            "quality_score": 0.9064,
+            "confidence_tier": "medium",
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0,
+            "filter_reason": null,
+            "map_x": 0.1099,
+            "map_y": -0.0622,
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-05",
+            "active_days": 4,
+            "daily_counts": {
+              "2026-06-01": 1,
+              "2026-06-02": 1,
+              "2026-06-03": 1,
+              "2026-06-05": 1
             },
             "coordination": {
               "unique_author_count": 0,
@@ -24847,8 +24936,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0375,
             "filter_reason": null,
-            "map_x": -0.0856,
-            "map_y": 0.0559,
+            "map_x": -0.0885,
+            "map_y": 0.0604,
             "first_seen": "2026-05-29",
             "last_seen": "2026-05-29",
             "active_days": 1,
@@ -24880,7 +24969,7 @@
             }
           },
           {
-            "cluster_id": 59,
+            "cluster_id": 60,
             "post_ids": [
               133,
               129,
@@ -24910,8 +24999,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": -0.6099,
-            "map_y": 0.729,
+            "map_x": -0.6024,
+            "map_y": 0.7351,
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-01",
             "active_days": 1,
@@ -24942,7 +25031,7 @@
             }
           },
           {
-            "cluster_id": 63,
+            "cluster_id": 64,
             "post_ids": [
               771,
               769,
@@ -24969,8 +25058,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0562,
             "filter_reason": null,
-            "map_x": 0.2243,
-            "map_y": 0.1141,
+            "map_x": 0.2315,
+            "map_y": 0.1194,
             "first_seen": "2026-06-06",
             "last_seen": "2026-06-07",
             "active_days": 2,
@@ -25016,7 +25105,7 @@
             }
           },
           {
-            "cluster_id": 48,
+            "cluster_id": 49,
             "post_ids": [
               939,
               938,
@@ -25045,8 +25134,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": -0.0832,
-            "map_y": 0.0331,
+            "map_x": -0.0868,
+            "map_y": 0.0404,
             "first_seen": "2026-06-08",
             "last_seen": "2026-06-08",
             "active_days": 1,
@@ -25104,7 +25193,7 @@
             }
           },
           {
-            "cluster_id": 55,
+            "cluster_id": 56,
             "post_ids": [
               216,
               370,
@@ -25135,8 +25224,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": 0.4024,
-            "map_y": 0.2864,
+            "map_x": 0.4126,
+            "map_y": 0.2914,
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-04",
             "active_days": 3,
@@ -25156,57 +25245,7 @@
             }
           },
           {
-            "cluster_id": 51,
-            "post_ids": [
-              164,
-              262,
-              638
-            ],
-            "size": 3,
-            "cohesion": 0.8883,
-            "lexicon_hit_rate": 0.0,
-            "emerging_theme": true,
-            "label_terms": [
-              "west golden",
-              "max stafford",
-              "argues mayors"
-            ],
-            "label_phrases": [
-              "west golden",
-              "max stafford",
-              "argues mayors"
-            ],
-            "label_distinctiveness": 1.0,
-            "sample_text": "In new , Max Stafford argues that mayors will help shape the narrative of the 2026 midterms. From migration to the cost of living, city leaders are increasingly influencing national political debates &amp; could emerge as key figures ahead \u2026",
-            "author_entropy": 0.9183,
-            "quality_score": 0.9497,
-            "confidence_tier": "medium",
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.0,
-            "filter_reason": null,
-            "map_x": 0.0925,
-            "map_y": -0.0452,
-            "first_seen": "2026-06-01",
-            "last_seen": "2026-06-05",
-            "active_days": 3,
-            "daily_counts": {
-              "2026-06-01": 1,
-              "2026-06-02": 1,
-              "2026-06-05": 1
-            },
-            "coordination": {
-              "unique_author_count": 0,
-              "unique_post_count": 3,
-              "exact_duplicate_clusters": [],
-              "fuzzy_clusters": [],
-              "same_author_groups": [],
-              "tier": "low",
-              "tier_label": "Distributed narrative"
-            }
-          },
-          {
-            "cluster_id": 46,
+            "cluster_id": 47,
             "post_ids": [
               340,
               339,
@@ -25237,8 +25276,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0062,
             "filter_reason": null,
-            "map_x": -0.0759,
-            "map_y": 0.0118,
+            "map_x": -0.0796,
+            "map_y": 0.0148,
             "first_seen": "2026-06-02",
             "last_seen": "2026-06-06",
             "active_days": 2,
@@ -25270,7 +25309,7 @@
             }
           },
           {
-            "cluster_id": 54,
+            "cluster_id": 55,
             "post_ids": [
               228,
               676,
@@ -25297,8 +25336,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0139,
             "filter_reason": null,
-            "map_x": 0.2469,
-            "map_y": -0.0075,
+            "map_x": 0.2412,
+            "map_y": -0.0184,
             "first_seen": "2026-06-01",
             "last_seen": "2026-06-08",
             "active_days": 3,
@@ -25318,7 +25357,7 @@
             }
           },
           {
-            "cluster_id": 36,
+            "cluster_id": 37,
             "post_ids": [
               758,
               755,
@@ -25357,8 +25396,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": 0.3485,
-            "map_y": 0.018,
+            "map_x": 0.3479,
+            "map_y": 0.0132,
             "first_seen": "2026-05-21",
             "last_seen": "2026-06-08",
             "active_days": 10,
@@ -25385,7 +25424,7 @@
             }
           },
           {
-            "cluster_id": 57,
+            "cluster_id": 58,
             "post_ids": [
               34,
               33,
@@ -25416,14 +25455,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "\ud83d\uddfa\ufe0f 2026 MIDTERMS REDISTRICTING UPDATE \ud83d\uddfa\ufe0f \ud83d\udd34 Republican gains: \ud83d\udccdTX: +5 \ud83d\udccdNC: +1 \ud83d\udccdMO: +1 \ud83d\udccdFL: +4 \ud83d\udccdOH: +2 \ud83d\udccdTN: +1 \ud83d\udccdLA: +1 \ud83d\udccdAL: +1 \ud83d\udd35 Democratic gains: \ud83d\udccdCA: +5 \ud83d\udccdUT: +1 \u274c Failed gerrymanders: \ud83d\udccdVA: +4 D \ud83d\udccdSC: +1 R \ud83d\udccdMS: +1 R \ud83d\udccdGA: +1 R",
             "author_entropy": 1.0,
-            "quality_score": 0.7806,
+            "quality_score": 0.7807,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.0619,
             "filter_reason": null,
-            "map_x": 0.1141,
-            "map_y": 0.0306,
+            "map_x": 0.1069,
+            "map_y": 0.0205,
             "first_seen": "2026-05-31",
             "last_seen": "2026-06-05",
             "active_days": 4,
@@ -25503,7 +25542,7 @@
               823
             ],
             "size": 5,
-            "cohesion": 0.9719,
+            "cohesion": 0.9709,
             "lexicon_hit_rate": 0.3333,
             "emerging_theme": false,
             "label_terms": [
@@ -25520,14 +25559,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "Hey Tony, GROK states President nor VP can remove THUNE 2/3 RDS of the senators have to remove him 2028 we will vote THUNE OUT Bill Mitchell post If you're wondering why John Thune doesn't eliminate the filibuster, I'll tell you. John Thune\u2026",
             "author_entropy": -0.0,
-            "quality_score": 0.9207,
+            "quality_score": 0.9202,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.1088,
             "filter_reason": null,
-            "map_x": -0.5098,
-            "map_y": -0.4411,
+            "map_x": -0.5065,
+            "map_y": -0.4278,
             "first_seen": "2026-06-03",
             "last_seen": "2026-06-07",
             "active_days": 3,
@@ -25560,7 +25599,7 @@
             }
           },
           {
-            "cluster_id": 60,
+            "cluster_id": 61,
             "post_ids": [
               374,
               452,
@@ -25596,8 +25635,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.1088,
             "filter_reason": null,
-            "map_x": -0.5213,
-            "map_y": -0.4392,
+            "map_x": -0.5179,
+            "map_y": -0.4257,
             "first_seen": "2026-06-03",
             "last_seen": "2026-06-04",
             "active_days": 2,
@@ -25631,7 +25670,7 @@
             }
           },
           {
-            "cluster_id": 61,
+            "cluster_id": 62,
             "post_ids": [
               476,
               475,
@@ -25660,8 +25699,8 @@
             "is_market_chatter": false,
             "market_chatter_rate": 0.1088,
             "filter_reason": null,
-            "map_x": -0.5197,
-            "map_y": -0.437,
+            "map_x": -0.5163,
+            "map_y": -0.4235,
             "first_seen": "2026-06-03",
             "last_seen": "2026-06-03",
             "active_days": 1,
@@ -25693,13 +25732,13 @@
             }
           },
           {
-            "cluster_id": 50,
+            "cluster_id": 51,
             "post_ids": [
               707,
               829
             ],
             "size": 2,
-            "cohesion": 0.905,
+            "cohesion": 0.9083,
             "lexicon_hit_rate": 0.0556,
             "emerging_theme": false,
             "label_terms": [
@@ -25713,14 +25752,14 @@
             "label_distinctiveness": 1.0,
             "sample_text": "The NAACP is already filing complaints against the U.S. Postal Service over election mail handling \u2014 before the 2026 midterms have even started. This is the same agency Democrats expect Americans to trust with universal mail-in ballots. Mea\u2026",
             "author_entropy": -0.0,
-            "quality_score": 0.9461,
+            "quality_score": 0.9476,
             "confidence_tier": "medium",
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.0,
             "filter_reason": null,
-            "map_x": 0.0482,
-            "map_y": -0.1135,
+            "map_x": 0.0461,
+            "map_y": -0.1085,
             "first_seen": "2026-06-05",
             "last_seen": "2026-06-07",
             "active_days": 2,
@@ -25741,36 +25780,36 @@
         ],
         "cluster_map": [
           {
-            "cluster_id": 35,
-            "x": -0.0012,
-            "y": 0.0257,
-            "size": 36,
+            "cluster_id": 36,
+            "x": -0.0043,
+            "y": 0.0229,
+            "size": 37,
             "label": "red wave",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 31,
-            "x": 0.1269,
-            "y": -0.0859,
+            "cluster_id": 32,
+            "x": 0.1251,
+            "y": -0.0983,
             "size": 19,
             "label": "federal judge",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 58,
-            "x": -0.6229,
-            "y": 0.7147,
+            "cluster_id": 59,
+            "x": -0.6152,
+            "y": 0.7214,
             "size": 14,
             "label": "ww2 destroy",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 26,
-            "x": 0.0096,
-            "y": -0.143,
+            "cluster_id": 28,
+            "x": 0.0089,
+            "y": -0.1427,
             "size": 12,
             "label": "graham platner",
             "emerging_theme": true,
@@ -25778,62 +25817,62 @@
           },
           {
             "cluster_id": 14,
-            "x": -0.0597,
-            "y": -0.1813,
+            "x": -0.0602,
+            "y": -0.1745,
             "size": 11,
             "label": "jackson maga",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 27,
-            "x": 0.1166,
-            "y": 0.0172,
+            "cluster_id": 31,
+            "x": 0.117,
+            "y": 0.0255,
             "size": 11,
             "label": "similar rules",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 32,
-            "x": 0.0239,
-            "y": -0.0951,
-            "size": 11,
-            "label": "radical left",
-            "emerging_theme": true,
-            "is_noise": false
-          },
-          {
-            "cluster_id": 62,
-            "x": -0.1036,
-            "y": 0.0714,
+            "cluster_id": 63,
+            "x": -0.1064,
+            "y": 0.0763,
             "size": 10,
             "label": "millennials gen",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 22,
-            "x": -0.076,
-            "y": -0.0409,
+            "cluster_id": 24,
+            "x": -0.0798,
+            "y": -0.0358,
             "size": 10,
             "label": "mpuuga challenge",
             "emerging_theme": true,
             "is_noise": false
           },
           {
+            "cluster_id": 33,
+            "x": 0.0168,
+            "y": -0.0894,
+            "size": 10,
+            "label": "radical left",
+            "emerging_theme": true,
+            "is_noise": false
+          },
+          {
             "cluster_id": 13,
-            "x": 0.0245,
-            "y": -0.1949,
+            "x": 0.0213,
+            "y": -0.1943,
             "size": 10,
             "label": "humiliated global",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 21,
-            "x": 0.0066,
-            "y": -0.0428,
+            "cluster_id": 22,
+            "x": 0.0046,
+            "y": -0.0383,
             "size": 9,
             "label": "war powers",
             "emerging_theme": true,
@@ -25841,17 +25880,17 @@
           },
           {
             "cluster_id": 2,
-            "x": -0.0211,
-            "y": -0.0746,
+            "x": -0.0223,
+            "y": -0.0703,
             "size": 9,
             "label": "election pratt",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 6,
-            "x": -0.016,
-            "y": -0.0781,
+            "cluster_id": 5,
+            "x": -0.0154,
+            "y": -0.0774,
             "size": 9,
             "label": "accountability midterm",
             "emerging_theme": true,
@@ -25859,8 +25898,8 @@
           },
           {
             "cluster_id": 16,
-            "x": -0.1343,
-            "y": -0.1472,
+            "x": -0.1358,
+            "y": -0.1361,
             "size": 8,
             "label": "executive orders",
             "emerging_theme": true,
@@ -25868,26 +25907,26 @@
           },
           {
             "cluster_id": 0,
-            "x": -0.6171,
-            "y": 0.714,
+            "x": -0.6095,
+            "y": 0.7203,
             "size": 8,
             "label": "loves winners",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 20,
-            "x": 0.1312,
-            "y": -0.0181,
+            "cluster_id": 21,
+            "x": 0.1249,
+            "y": -0.0288,
             "size": 8,
             "label": "endorses rep",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 37,
-            "x": 0.2687,
-            "y": 0.2189,
+            "cluster_id": 38,
+            "x": 0.2758,
+            "y": 0.2276,
             "size": 7,
             "label": "breaking trump",
             "emerging_theme": true,
@@ -25895,17 +25934,17 @@
           },
           {
             "cluster_id": 12,
-            "x": 0.1086,
-            "y": -0.099,
+            "x": 0.1048,
+            "y": -0.1018,
             "size": 7,
-            "label": "purpose identify",
+            "label": "identify similarities",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 23,
-            "x": -0.0439,
-            "y": -0.1745,
+            "cluster_id": 25,
+            "x": -0.0454,
+            "y": -0.1744,
             "size": 7,
             "label": "liveprayer tuesday",
             "emerging_theme": true,
@@ -25913,8 +25952,8 @@
           },
           {
             "cluster_id": 30,
-            "x": 0.1402,
-            "y": -0.0235,
+            "x": 0.138,
+            "y": -0.0277,
             "size": 7,
             "label": "data centers",
             "emerging_theme": true,
@@ -25922,8 +25961,8 @@
           },
           {
             "cluster_id": 19,
-            "x": -0.0317,
-            "y": -0.2131,
+            "x": -0.0344,
+            "y": -0.2137,
             "size": 7,
             "label": "millions watching",
             "emerging_theme": true,
@@ -25931,62 +25970,44 @@
           },
           {
             "cluster_id": 3,
-            "x": 0.0053,
-            "y": -0.0455,
+            "x": 0.0028,
+            "y": -0.0416,
             "size": 6,
             "label": "sight crime",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 33,
-            "x": 0.1161,
-            "y": -0.0307,
+            "cluster_id": 34,
+            "x": 0.1104,
+            "y": -0.0327,
             "size": 6,
             "label": "laying groundwork",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 28,
-            "x": -0.1193,
-            "y": 0.0308,
+            "cluster_id": 29,
+            "x": -0.1221,
+            "y": 0.0269,
             "size": 6,
             "label": "cheat upcoming",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 8,
-            "x": 0.0184,
-            "y": -0.031,
-            "size": 6,
-            "label": "broke buried",
-            "emerging_theme": true,
-            "is_noise": false
-          },
-          {
-            "cluster_id": 39,
-            "x": 0.4455,
-            "y": 0.2698,
-            "size": 6,
-            "label": "racially drawn",
-            "emerging_theme": true,
-            "is_noise": false
-          },
-          {
-            "cluster_id": 53,
-            "x": 0.2901,
-            "y": -0.0027,
+            "cluster_id": 54,
+            "x": 0.2861,
+            "y": -0.011,
             "size": 6,
             "label": "total leaning",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 5,
-            "x": -0.0894,
-            "y": -0.107,
+            "cluster_id": 7,
+            "x": -0.0892,
+            "y": -0.1027,
             "size": 5,
             "label": "dissenting senator",
             "emerging_theme": true,
@@ -25994,17 +26015,17 @@
           },
           {
             "cluster_id": 9,
-            "x": -0.1245,
-            "y": 0.0387,
+            "x": -0.1267,
+            "y": 0.0453,
             "size": 5,
             "label": "awakening largest",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 24,
-            "x": 0.0044,
-            "y": -0.0742,
+            "cluster_id": 26,
+            "x": 0.0009,
+            "y": -0.0715,
             "size": 5,
             "label": "days presidential",
             "emerging_theme": true,
@@ -26012,62 +26033,89 @@
           },
           {
             "cluster_id": 1,
-            "x": -0.0213,
-            "y": -0.0607,
+            "x": -0.0243,
+            "y": -0.0584,
             "size": 5,
             "label": "beautiful delay",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 45,
-            "x": 0.0141,
-            "y": -0.0545,
+            "cluster_id": 46,
+            "x": 0.0116,
+            "y": -0.053,
             "size": 5,
             "label": "june prophetic",
             "emerging_theme": true,
             "is_noise": false
           },
           {
+            "cluster_id": 8,
+            "x": 0.0121,
+            "y": -0.0271,
+            "size": 5,
+            "label": "broke buried",
+            "emerging_theme": true,
+            "is_noise": false
+          },
+          {
             "cluster_id": 11,
-            "x": -0.0179,
-            "y": -0.1593,
+            "x": -0.0205,
+            "y": -0.1544,
             "size": 5,
             "label": "cash party",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 7,
-            "x": 0.1271,
-            "y": -0.0662,
+            "cluster_id": 6,
+            "x": 0.1234,
+            "y": -0.0646,
             "size": 5,
             "label": "musk stands",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 56,
-            "x": 0.4391,
-            "y": 0.3251,
+            "cluster_id": 57,
+            "x": 0.4485,
+            "y": 0.328,
             "size": 5,
             "label": "position steelmanned",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 29,
-            "x": 0.2394,
-            "y": 0.2058,
+            "cluster_id": 40,
+            "x": 0.4534,
+            "y": 0.2775,
+            "size": 5,
+            "label": "racially drawn",
+            "emerging_theme": true,
+            "is_noise": false
+          },
+          {
+            "cluster_id": 27,
+            "x": 0.2425,
+            "y": 0.208,
             "size": 5,
             "label": "gerrymandering map",
             "emerging_theme": true,
             "is_noise": false
           },
           {
+            "cluster_id": 39,
+            "x": 0.4246,
+            "y": 0.3325,
+            "size": 5,
+            "label": "louisiana likely",
+            "emerging_theme": true,
+            "is_noise": false
+          },
+          {
             "cluster_id": 17,
-            "x": -0.1109,
-            "y": -0.2518,
+            "x": -0.1139,
+            "y": -0.2436,
             "size": 5,
             "label": "republican senate",
             "emerging_theme": true,
@@ -26075,143 +26123,143 @@
           },
           {
             "cluster_id": 18,
-            "x": -0.0011,
-            "y": -0.1071,
+            "x": -0.0048,
+            "y": -0.1036,
             "size": 5,
             "label": "trump sign",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 34,
-            "x": 0.1953,
-            "y": -0.0428,
+            "cluster_id": 35,
+            "x": 0.1902,
+            "y": -0.0491,
             "size": 5,
             "label": "lose midterms",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 25,
-            "x": 0.0182,
-            "y": -0.0927,
+            "cluster_id": 20,
+            "x": 0.0004,
+            "y": -0.0992,
+            "size": 5,
+            "label": "overcome series",
+            "emerging_theme": true,
+            "is_noise": false
+          },
+          {
+            "cluster_id": 23,
+            "x": 0.008,
+            "y": -0.1062,
             "size": 5,
             "label": "underselling success",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 52,
-            "x": -0.0362,
-            "y": -0.0334,
+            "cluster_id": 53,
+            "x": -0.0397,
+            "y": -0.031,
             "size": 4,
             "label": "sanctuary cities",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 38,
-            "x": 0.386,
-            "y": 0.3351,
-            "size": 4,
-            "label": "louisiana likely",
-            "emerging_theme": true,
-            "is_noise": false
-          },
-          {
-            "cluster_id": 49,
-            "x": -0.0791,
-            "y": 0.0093,
+            "cluster_id": 50,
+            "x": -0.0805,
+            "y": 0.012,
             "size": 4,
             "label": "boom latino",
             "emerging_theme": true,
             "is_noise": false
           },
           {
+            "cluster_id": 52,
+            "x": 0.1099,
+            "y": -0.0622,
+            "size": 4,
+            "label": "west golden",
+            "emerging_theme": true,
+            "is_noise": false
+          },
+          {
             "cluster_id": 10,
-            "x": -0.0856,
-            "y": 0.0559,
+            "x": -0.0885,
+            "y": 0.0604,
             "size": 3,
             "label": "dream we're",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 59,
-            "x": -0.6099,
-            "y": 0.729,
+            "cluster_id": 60,
+            "x": -0.6024,
+            "y": 0.7351,
             "size": 3,
             "label": "ard facist",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 63,
-            "x": 0.2243,
-            "y": 0.1141,
+            "cluster_id": 64,
+            "x": 0.2315,
+            "y": 0.1194,
             "size": 3,
             "label": "ago ruled",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 48,
-            "x": -0.0832,
-            "y": 0.0331,
+            "cluster_id": 49,
+            "x": -0.0868,
+            "y": 0.0404,
             "size": 3,
             "label": "scraps command",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 55,
-            "x": 0.4024,
-            "y": 0.2864,
+            "cluster_id": 56,
+            "x": 0.4126,
+            "y": 0.2914,
             "size": 3,
             "label": "black district",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 51,
-            "x": 0.0925,
-            "y": -0.0452,
-            "size": 3,
-            "label": "west golden",
-            "emerging_theme": true,
-            "is_noise": false
-          },
-          {
-            "cluster_id": 46,
-            "x": -0.0759,
-            "y": 0.0118,
+            "cluster_id": 47,
+            "x": -0.0796,
+            "y": 0.0148,
             "size": 3,
             "label": "china expandiu",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 54,
-            "x": 0.2469,
-            "y": -0.0075,
+            "cluster_id": 55,
+            "x": 0.2412,
+            "y": -0.0184,
             "size": 3,
             "label": "ready happens",
             "emerging_theme": true,
             "is_noise": false
           },
           {
-            "cluster_id": 36,
-            "x": 0.3485,
-            "y": 0.018,
+            "cluster_id": 37,
+            "x": 0.3479,
+            "y": 0.0132,
             "size": 11,
             "label": "anchor babies",
             "emerging_theme": false,
             "is_noise": false
           },
           {
-            "cluster_id": 57,
-            "x": 0.1141,
-            "y": 0.0306,
+            "cluster_id": 58,
+            "x": 0.1069,
+            "y": 0.0205,
             "size": 10,
             "label": "chase block",
             "emerging_theme": false,
@@ -26219,104 +26267,104 @@
           },
           {
             "cluster_id": 4,
-            "x": -0.5098,
-            "y": -0.4411,
+            "x": -0.5065,
+            "y": -0.4278,
             "size": 5,
             "label": "john thune",
             "emerging_theme": false,
             "is_noise": false
           },
           {
-            "cluster_id": 60,
-            "x": -0.5213,
-            "y": -0.4392,
+            "cluster_id": 61,
+            "x": -0.5179,
+            "y": -0.4257,
             "size": 4,
             "label": "vote thune",
             "emerging_theme": false,
             "is_noise": false
           },
           {
-            "cluster_id": 61,
-            "x": -0.5197,
-            "y": -0.437,
+            "cluster_id": 62,
+            "x": -0.5163,
+            "y": -0.4235,
             "size": 3,
             "label": "mitchell post",
             "emerging_theme": false,
             "is_noise": false
           },
           {
-            "cluster_id": 50,
-            "x": 0.0482,
-            "y": -0.1135,
+            "cluster_id": 51,
+            "x": 0.0461,
+            "y": -0.1085,
             "size": 2,
             "label": "postal service",
             "emerging_theme": false,
             "is_noise": false
           }
         ],
-        "emerging_theme_count": 51,
+        "emerging_theme_count": 52,
         "market_chatter_count": 0,
         "market_chatter_post_count": 0,
-        "distinct_theme_count": 57,
+        "distinct_theme_count": 58,
         "cluster_similarity": [
           {
-            "a": 60,
-            "b": 61,
-            "similarity": 0.9918
+            "a": 61,
+            "b": 62,
+            "similarity": 0.9919
           },
           {
-            "a": 58,
-            "b": 59,
+            "a": 59,
+            "b": 60,
             "similarity": 0.9875
           },
           {
             "a": 0,
-            "b": 58,
+            "b": 59,
             "similarity": 0.9861
           },
           {
             "a": 4,
-            "b": 60,
+            "b": 61,
             "similarity": 0.9846
           },
           {
             "a": 4,
-            "b": 61,
+            "b": 62,
             "similarity": 0.9812
           },
           {
             "a": 0,
-            "b": 59,
+            "b": 60,
             "similarity": 0.9801
           },
           {
             "a": 10,
-            "b": 62,
+            "b": 63,
             "similarity": 0.9781
           },
           {
-            "a": 55,
-            "b": 56,
-            "similarity": 0.7376
+            "a": 39,
+            "b": 57,
+            "similarity": 0.7702
           },
           {
             "a": 2,
             "b": 3,
-            "similarity": 0.7287
+            "similarity": 0.7397
           },
           {
-            "a": 38,
-            "b": 56,
-            "similarity": 0.7138
+            "a": 56,
+            "b": 57,
+            "similarity": 0.7376
           },
           {
-            "a": 36,
-            "b": 53,
+            "a": 37,
+            "b": 54,
             "similarity": 0.699
           },
           {
             "a": 9,
-            "b": 62,
+            "b": 63,
             "similarity": 0.6804
           },
           {
@@ -26327,17 +26375,17 @@
           {
             "a": 39,
             "b": 56,
-            "similarity": 0.6636
+            "similarity": 0.6245
           },
           {
-            "a": 22,
-            "b": 48,
+            "a": 24,
+            "b": 49,
             "similarity": 0.6226
           },
           {
-            "a": 39,
-            "b": 55,
-            "similarity": 0.6218
+            "a": 40,
+            "b": 57,
+            "similarity": 0.6221
           },
           {
             "a": 17,
@@ -26345,44 +26393,49 @@
             "similarity": 0.6118
           },
           {
+            "a": 40,
+            "b": 56,
+            "similarity": 0.5969
+          },
+          {
             "a": 13,
             "b": 19,
             "similarity": 0.5905
           },
           {
-            "a": 38,
-            "b": 55,
-            "similarity": 0.5739
-          },
-          {
             "a": 32,
             "b": 52,
-            "similarity": 0.5588
+            "similarity": 0.5532
           },
           {
-            "a": 34,
+            "a": 33,
             "b": 53,
+            "similarity": 0.5515
+          },
+          {
+            "a": 39,
+            "b": 40,
+            "similarity": 0.5509
+          },
+          {
+            "a": 35,
+            "b": 54,
             "similarity": 0.5361
           },
           {
-            "a": 27,
-            "b": 50,
-            "similarity": 0.525
+            "a": 31,
+            "b": 51,
+            "similarity": 0.5219
           },
           {
-            "a": 53,
-            "b": 54,
+            "a": 54,
+            "b": 55,
             "similarity": 0.5191
           },
           {
-            "a": 36,
-            "b": 54,
+            "a": 37,
+            "b": 55,
             "similarity": 0.4976
-          },
-          {
-            "a": 38,
-            "b": 39,
-            "similarity": 0.4938
           },
           {
             "a": 16,
@@ -26390,68 +26443,68 @@
             "similarity": 0.4929
           },
           {
-            "a": 23,
-            "b": 24,
-            "similarity": 0.487
+            "a": 25,
+            "b": 26,
+            "similarity": 0.4867
           },
           {
-            "a": 31,
-            "b": 51,
-            "similarity": 0.4782
+            "a": 38,
+            "b": 40,
+            "similarity": 0.4477
           },
           {
-            "a": 29,
-            "b": 39,
-            "similarity": 0.4514
+            "a": 27,
+            "b": 40,
+            "similarity": 0.4403
+          },
+          {
+            "a": 40,
+            "b": 64,
+            "similarity": 0.4402
           },
           {
             "a": 11,
-            "b": 45,
+            "b": 46,
             "similarity": 0.4397
           },
           {
             "a": 37,
-            "b": 39,
-            "similarity": 0.434
-          },
-          {
-            "a": 36,
-            "b": 39,
-            "similarity": 0.4297
-          },
-          {
-            "a": 39,
-            "b": 63,
-            "similarity": 0.4272
+            "b": 40,
+            "similarity": 0.4327
           },
           {
             "a": 14,
             "b": 16,
-            "similarity": 0.425
+            "similarity": 0.4298
           },
           {
             "a": 14,
             "b": 18,
-            "similarity": 0.4145
+            "similarity": 0.4192
           },
           {
-            "a": 32,
-            "b": 57,
-            "similarity": 0.4139
+            "a": 33,
+            "b": 58,
+            "similarity": 0.4167
           },
           {
-            "a": 34,
-            "b": 36,
+            "a": 35,
+            "b": 37,
             "similarity": 0.4123
           },
           {
             "a": 14,
             "b": 17,
-            "similarity": 0.3976
+            "similarity": 0.4021
           },
           {
-            "a": 37,
-            "b": 56,
+            "a": 20,
+            "b": 23,
+            "similarity": 0.3906
+          },
+          {
+            "a": 38,
+            "b": 57,
             "similarity": 0.3903
           },
           {
@@ -26460,53 +26513,48 @@
             "similarity": 0.3902
           },
           {
-            "a": 20,
-            "b": 36,
+            "a": 21,
+            "b": 37,
             "similarity": 0.3867
           },
           {
-            "a": 53,
-            "b": 57,
+            "a": 54,
+            "b": 58,
             "similarity": 0.3841
           },
           {
-            "a": 34,
-            "b": 54,
+            "a": 5,
+            "b": 33,
+            "similarity": 0.3773
+          },
+          {
+            "a": 35,
+            "b": 55,
             "similarity": 0.3706
           },
           {
-            "a": 20,
-            "b": 51,
-            "similarity": 0.3636
+            "a": 27,
+            "b": 64,
+            "similarity": 0.359
           },
           {
-            "a": 29,
-            "b": 37,
-            "similarity": 0.3626
+            "a": 27,
+            "b": 38,
+            "similarity": 0.3589
           },
           {
-            "a": 6,
-            "b": 32,
-            "similarity": 0.3622
-          },
-          {
-            "a": 29,
-            "b": 63,
-            "similarity": 0.3613
-          },
-          {
-            "a": 36,
-            "b": 57,
+            "a": 37,
+            "b": 58,
             "similarity": 0.3578
           },
           {
             "a": 30,
-            "b": 36,
+            "b": 37,
             "similarity": 0.3575
           },
           {
             "a": 12,
-            "b": 36,
+            "b": 37,
             "similarity": 0.3569
           },
           {
@@ -26516,28 +26564,28 @@
           },
           {
             "a": 13,
-            "b": 36,
+            "b": 37,
             "similarity": 0.3547
           },
           {
-            "a": 20,
-            "b": 53,
+            "a": 21,
+            "b": 54,
             "similarity": 0.3546
           },
           {
             "a": 30,
-            "b": 53,
+            "b": 54,
             "similarity": 0.3536
           },
           {
-            "a": 25,
-            "b": 26,
-            "similarity": 0.3534
+            "a": 37,
+            "b": 38,
+            "similarity": 0.3521
           },
           {
-            "a": 36,
-            "b": 37,
-            "similarity": 0.3521
+            "a": 20,
+            "b": 58,
+            "similarity": 0.3503
           }
         ],
         "merge_tree": [
@@ -26589,15 +26637,6 @@
           {
             "id": "c5",
             "cluster_id": 5,
-            "label": "dissenting senator",
-            "children": [],
-            "similarity": 1.0,
-            "size": 5,
-            "leaf": true
-          },
-          {
-            "id": "c6",
-            "cluster_id": 6,
             "label": "accountability midterm",
             "children": [],
             "similarity": 1.0,
@@ -26605,9 +26644,18 @@
             "leaf": true
           },
           {
+            "id": "c6",
+            "cluster_id": 6,
+            "label": "musk stands",
+            "children": [],
+            "similarity": 1.0,
+            "size": 5,
+            "leaf": true
+          },
+          {
             "id": "c7",
             "cluster_id": 7,
-            "label": "musk stands",
+            "label": "dissenting senator",
             "children": [],
             "similarity": 1.0,
             "size": 5,
@@ -26619,7 +26667,7 @@
             "label": "broke buried",
             "children": [],
             "similarity": 1.0,
-            "size": 6,
+            "size": 5,
             "leaf": true
           },
           {
@@ -26652,7 +26700,7 @@
           {
             "id": "c12",
             "cluster_id": 12,
-            "label": "purpose identify",
+            "label": "identify similarities",
             "children": [],
             "similarity": 1.0,
             "size": 7,
@@ -26715,6 +26763,15 @@
           {
             "id": "c20",
             "cluster_id": 20,
+            "label": "overcome series",
+            "children": [],
+            "similarity": 1.0,
+            "size": 5,
+            "leaf": true
+          },
+          {
+            "id": "c21",
+            "cluster_id": 21,
             "label": "endorses rep",
             "children": [],
             "similarity": 1.0,
@@ -26722,8 +26779,8 @@
             "leaf": true
           },
           {
-            "id": "c21",
-            "cluster_id": 21,
+            "id": "c22",
+            "cluster_id": 22,
             "label": "war powers",
             "children": [],
             "similarity": 1.0,
@@ -26731,35 +26788,8 @@
             "leaf": true
           },
           {
-            "id": "c22",
-            "cluster_id": 22,
-            "label": "mpuuga challenge",
-            "children": [],
-            "similarity": 1.0,
-            "size": 10,
-            "leaf": true
-          },
-          {
             "id": "c23",
             "cluster_id": 23,
-            "label": "liveprayer tuesday",
-            "children": [],
-            "similarity": 1.0,
-            "size": 7,
-            "leaf": true
-          },
-          {
-            "id": "c24",
-            "cluster_id": 24,
-            "label": "days presidential",
-            "children": [],
-            "similarity": 1.0,
-            "size": 5,
-            "leaf": true
-          },
-          {
-            "id": "c25",
-            "cluster_id": 25,
             "label": "underselling success",
             "children": [],
             "similarity": 1.0,
@@ -26767,8 +26797,44 @@
             "leaf": true
           },
           {
+            "id": "c24",
+            "cluster_id": 24,
+            "label": "mpuuga challenge",
+            "children": [],
+            "similarity": 1.0,
+            "size": 10,
+            "leaf": true
+          },
+          {
+            "id": "c25",
+            "cluster_id": 25,
+            "label": "liveprayer tuesday",
+            "children": [],
+            "similarity": 1.0,
+            "size": 7,
+            "leaf": true
+          },
+          {
             "id": "c26",
             "cluster_id": 26,
+            "label": "days presidential",
+            "children": [],
+            "similarity": 1.0,
+            "size": 5,
+            "leaf": true
+          },
+          {
+            "id": "c27",
+            "cluster_id": 27,
+            "label": "gerrymandering map",
+            "children": [],
+            "similarity": 1.0,
+            "size": 5,
+            "leaf": true
+          },
+          {
+            "id": "c28",
+            "cluster_id": 28,
             "label": "graham platner",
             "children": [],
             "similarity": 1.0,
@@ -26776,30 +26842,12 @@
             "leaf": true
           },
           {
-            "id": "c27",
-            "cluster_id": 27,
-            "label": "similar rules",
-            "children": [],
-            "similarity": 1.0,
-            "size": 11,
-            "leaf": true
-          },
-          {
-            "id": "c28",
-            "cluster_id": 28,
+            "id": "c29",
+            "cluster_id": 29,
             "label": "cheat upcoming",
             "children": [],
             "similarity": 1.0,
             "size": 6,
-            "leaf": true
-          },
-          {
-            "id": "c29",
-            "cluster_id": 29,
-            "label": "gerrymandering map",
-            "children": [],
-            "similarity": 1.0,
-            "size": 5,
             "leaf": true
           },
           {
@@ -26814,6 +26862,15 @@
           {
             "id": "c31",
             "cluster_id": 31,
+            "label": "similar rules",
+            "children": [],
+            "similarity": 1.0,
+            "size": 11,
+            "leaf": true
+          },
+          {
+            "id": "c32",
+            "cluster_id": 32,
             "label": "federal judge",
             "children": [],
             "similarity": 1.0,
@@ -26821,17 +26878,17 @@
             "leaf": true
           },
           {
-            "id": "c32",
-            "cluster_id": 32,
+            "id": "c33",
+            "cluster_id": 33,
             "label": "radical left",
             "children": [],
             "similarity": 1.0,
-            "size": 11,
+            "size": 10,
             "leaf": true
           },
           {
-            "id": "c33",
-            "cluster_id": 33,
+            "id": "c34",
+            "cluster_id": 34,
             "label": "laying groundwork",
             "children": [],
             "similarity": 1.0,
@@ -26839,8 +26896,8 @@
             "leaf": true
           },
           {
-            "id": "c34",
-            "cluster_id": 34,
+            "id": "c35",
+            "cluster_id": 35,
             "label": "lose midterms",
             "children": [],
             "similarity": 1.0,
@@ -26848,17 +26905,17 @@
             "leaf": true
           },
           {
-            "id": "c35",
-            "cluster_id": 35,
+            "id": "c36",
+            "cluster_id": 36,
             "label": "red wave",
             "children": [],
             "similarity": 1.0,
-            "size": 36,
+            "size": 37,
             "leaf": true
           },
           {
-            "id": "c36",
-            "cluster_id": 36,
+            "id": "c37",
+            "cluster_id": 37,
             "label": "anchor babies",
             "children": [],
             "similarity": 1.0,
@@ -26866,8 +26923,8 @@
             "leaf": true
           },
           {
-            "id": "c37",
-            "cluster_id": 37,
+            "id": "c38",
+            "cluster_id": 38,
             "label": "breaking trump",
             "children": [],
             "similarity": 1.0,
@@ -26875,27 +26932,18 @@
             "leaf": true
           },
           {
-            "id": "c38",
-            "cluster_id": 38,
+            "id": "c39",
+            "cluster_id": 39,
             "label": "louisiana likely",
             "children": [],
             "similarity": 1.0,
-            "size": 4,
+            "size": 5,
             "leaf": true
           },
           {
-            "id": "c39",
-            "cluster_id": 39,
+            "id": "c40",
+            "cluster_id": 40,
             "label": "racially drawn",
-            "children": [],
-            "similarity": 1.0,
-            "size": 6,
-            "leaf": true
-          },
-          {
-            "id": "c45",
-            "cluster_id": 45,
-            "label": "june prophetic",
             "children": [],
             "similarity": 1.0,
             "size": 5,
@@ -26904,16 +26952,16 @@
           {
             "id": "c46",
             "cluster_id": 46,
-            "label": "china expandiu",
+            "label": "june prophetic",
             "children": [],
             "similarity": 1.0,
-            "size": 3,
+            "size": 5,
             "leaf": true
           },
           {
-            "id": "c48",
-            "cluster_id": 48,
-            "label": "scraps command",
+            "id": "c47",
+            "cluster_id": 47,
+            "label": "china expandiu",
             "children": [],
             "similarity": 1.0,
             "size": 3,
@@ -26922,6 +26970,15 @@
           {
             "id": "c49",
             "cluster_id": 49,
+            "label": "scraps command",
+            "children": [],
+            "similarity": 1.0,
+            "size": 3,
+            "leaf": true
+          },
+          {
+            "id": "c50",
+            "cluster_id": 50,
             "label": "boom latino",
             "children": [],
             "similarity": 1.0,
@@ -26929,8 +26986,8 @@
             "leaf": true
           },
           {
-            "id": "c50",
-            "cluster_id": 50,
+            "id": "c51",
+            "cluster_id": 51,
             "label": "postal service",
             "children": [],
             "similarity": 1.0,
@@ -26938,18 +26995,9 @@
             "leaf": true
           },
           {
-            "id": "c51",
-            "cluster_id": 51,
-            "label": "west golden",
-            "children": [],
-            "similarity": 1.0,
-            "size": 3,
-            "leaf": true
-          },
-          {
             "id": "c52",
             "cluster_id": 52,
-            "label": "sanctuary cities",
+            "label": "west golden",
             "children": [],
             "similarity": 1.0,
             "size": 4,
@@ -26958,6 +27006,15 @@
           {
             "id": "c53",
             "cluster_id": 53,
+            "label": "sanctuary cities",
+            "children": [],
+            "similarity": 1.0,
+            "size": 4,
+            "leaf": true
+          },
+          {
+            "id": "c54",
+            "cluster_id": 54,
             "label": "total leaning",
             "children": [],
             "similarity": 1.0,
@@ -26965,18 +27022,9 @@
             "leaf": true
           },
           {
-            "id": "c54",
-            "cluster_id": 54,
-            "label": "ready happens",
-            "children": [],
-            "similarity": 1.0,
-            "size": 3,
-            "leaf": true
-          },
-          {
             "id": "c55",
             "cluster_id": 55,
-            "label": "black district",
+            "label": "ready happens",
             "children": [],
             "similarity": 1.0,
             "size": 3,
@@ -26985,6 +27033,15 @@
           {
             "id": "c56",
             "cluster_id": 56,
+            "label": "black district",
+            "children": [],
+            "similarity": 1.0,
+            "size": 3,
+            "leaf": true
+          },
+          {
+            "id": "c57",
+            "cluster_id": 57,
             "label": "position steelmanned",
             "children": [],
             "similarity": 1.0,
@@ -26992,8 +27049,8 @@
             "leaf": true
           },
           {
-            "id": "c57",
-            "cluster_id": 57,
+            "id": "c58",
+            "cluster_id": 58,
             "label": "chase block",
             "children": [],
             "similarity": 1.0,
@@ -27001,8 +27058,8 @@
             "leaf": true
           },
           {
-            "id": "c58",
-            "cluster_id": 58,
+            "id": "c59",
+            "cluster_id": 59,
             "label": "ww2 destroy",
             "children": [],
             "similarity": 1.0,
@@ -27010,8 +27067,8 @@
             "leaf": true
           },
           {
-            "id": "c59",
-            "cluster_id": 59,
+            "id": "c60",
+            "cluster_id": 60,
             "label": "ard facist",
             "children": [],
             "similarity": 1.0,
@@ -27019,8 +27076,8 @@
             "leaf": true
           },
           {
-            "id": "c60",
-            "cluster_id": 60,
+            "id": "c61",
+            "cluster_id": 61,
             "label": "vote thune",
             "children": [],
             "similarity": 1.0,
@@ -27028,8 +27085,8 @@
             "leaf": true
           },
           {
-            "id": "c61",
-            "cluster_id": 61,
+            "id": "c62",
+            "cluster_id": 62,
             "label": "mitchell post",
             "children": [],
             "similarity": 1.0,
@@ -27037,8 +27094,8 @@
             "leaf": true
           },
           {
-            "id": "c62",
-            "cluster_id": 62,
+            "id": "c63",
+            "cluster_id": 63,
             "label": "millennials gen",
             "children": [],
             "similarity": 1.0,
@@ -27046,8 +27103,8 @@
             "leaf": true
           },
           {
-            "id": "c63",
-            "cluster_id": 63,
+            "id": "c64",
+            "cluster_id": 64,
             "label": "ago ruled",
             "children": [],
             "similarity": 1.0,
@@ -27059,10 +27116,10 @@
             "cluster_id": null,
             "label": "vote thune + mitchell post",
             "children": [
-              "c60",
-              "c61"
+              "c61",
+              "c62"
             ],
-            "similarity": 0.9918,
+            "similarity": 0.9919,
             "size": 7,
             "leaf": false
           },
@@ -27071,8 +27128,8 @@
             "cluster_id": null,
             "label": "ww2 destroy + ard facist",
             "children": [
-              "c58",
-              "c59"
+              "c59",
+              "c60"
             ],
             "similarity": 0.9875,
             "size": 17,
@@ -27108,7 +27165,7 @@
             "label": "dream we're + millennials gen",
             "children": [
               "c10",
-              "c62"
+              "c63"
             ],
             "similarity": 0.9781,
             "size": 13,
@@ -27117,13 +27174,13 @@
           {
             "id": "m5",
             "cluster_id": null,
-            "label": "black district + position steelmanned",
+            "label": "louisiana likely + position steelmanned",
             "children": [
-              "c55",
-              "c56"
+              "c39",
+              "c57"
             ],
-            "similarity": 0.7376,
-            "size": 8,
+            "similarity": 0.7702,
+            "size": 10,
             "leaf": false
           },
           {
@@ -27134,32 +27191,32 @@
               "c2",
               "c3"
             ],
-            "similarity": 0.7287,
+            "similarity": 0.7397,
             "size": 15,
             "leaf": false
           },
           {
             "id": "m7",
             "cluster_id": null,
-            "label": "anchor babies + total leaning",
+            "label": "black district + louisiana likely + position steelmanned",
             "children": [
-              "c36",
-              "c53"
+              "c56",
+              "m5"
             ],
-            "similarity": 0.699,
-            "size": 17,
+            "similarity": 0.7239,
+            "size": 13,
             "leaf": false
           },
           {
             "id": "m8",
             "cluster_id": null,
-            "label": "louisiana likely + black district + position steelmanned",
+            "label": "anchor babies + total leaning",
             "children": [
-              "c38",
-              "m5"
+              "c37",
+              "c54"
             ],
-            "similarity": 0.6907,
-            "size": 12,
+            "similarity": 0.699,
+            "size": 17,
             "leaf": false
           },
           {
@@ -27177,12 +27234,12 @@
           {
             "id": "m10",
             "cluster_id": null,
-            "label": "racially drawn + louisiana likely + black district + position steelmanned",
+            "label": "racially drawn + black district + louisiana likely + position steelmanned",
             "children": [
-              "c39",
-              "m8"
+              "c40",
+              "m7"
             ],
-            "similarity": 0.6435,
+            "similarity": 0.6572,
             "size": 18,
             "leaf": false
           },
@@ -27191,8 +27248,8 @@
             "cluster_id": null,
             "label": "mpuuga challenge + scraps command",
             "children": [
-              "c22",
-              "c48"
+              "c24",
+              "c49"
             ],
             "similarity": 0.6226,
             "size": 13,
@@ -27225,13 +27282,13 @@
           {
             "id": "m14",
             "cluster_id": null,
-            "label": "radical left + sanctuary cities",
+            "label": "federal judge + west golden",
             "children": [
               "c32",
               "c52"
             ],
-            "similarity": 0.5588,
-            "size": 15,
+            "similarity": 0.5532,
+            "size": 23,
             "leaf": false
           },
           {
@@ -27239,8 +27296,8 @@
             "cluster_id": null,
             "label": "ready happens + anchor babies + total leaning",
             "children": [
-              "c54",
-              "m7"
+              "c55",
+              "m8"
             ],
             "similarity": 0.5516,
             "size": 20,
@@ -27249,21 +27306,33 @@
           {
             "id": "m16",
             "cluster_id": null,
-            "label": "similar rules + postal service",
+            "label": "radical left + sanctuary cities",
             "children": [
-              "c27",
-              "c50"
+              "c33",
+              "c53"
             ],
-            "similarity": 0.525,
-            "size": 13,
+            "similarity": 0.5515,
+            "size": 14,
             "leaf": false
           },
           {
             "id": "m17",
             "cluster_id": null,
+            "label": "similar rules + postal service",
+            "children": [
+              "c31",
+              "c51"
+            ],
+            "similarity": 0.5219,
+            "size": 13,
+            "leaf": false
+          },
+          {
+            "id": "m18",
+            "cluster_id": null,
             "label": "lose midterms + ready happens + anchor babies + total leaning",
             "children": [
-              "c34",
+              "c35",
               "m15"
             ],
             "similarity": 0.5024,
@@ -27275,7 +27344,7 @@
         "reason": null,
         "timeline": [
           {
-            "cluster_id": 35,
+            "cluster_id": 36,
             "label_terms": [
               "red wave",
               "midwest democrat",
@@ -27294,12 +27363,12 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
-            "quality_score": 0.8731,
-            "author_entropy": 0.9944,
+            "quality_score": 0.8715,
+            "author_entropy": 0.9946,
             "is_noise": false,
             "is_market_chatter": false,
-            "market_chatter_rate": 0.0114,
-            "size": 36,
+            "market_chatter_rate": 0.0111,
+            "size": 37,
             "first_seen": "2025-08-13",
             "last_seen": "2026-06-02",
             "daily_counts": {
@@ -27326,6 +27395,7 @@
               "2026-04-29": 2,
               "2026-05-06": 1,
               "2026-05-11": 1,
+              "2026-05-20": 1,
               "2026-05-29": 1,
               "2026-05-30": 3,
               "2026-05-31": 1,
@@ -27361,6 +27431,7 @@
               398,
               394,
               392,
+              389,
               151,
               148,
               69,
@@ -27372,7 +27443,7 @@
             ]
           },
           {
-            "cluster_id": 22,
+            "cluster_id": 24,
             "label_terms": [
               "mpuuga challenge",
               "sweeping constitutional",
@@ -27422,7 +27493,7 @@
             ]
           },
           {
-            "cluster_id": 29,
+            "cluster_id": 27,
             "label_terms": [
               "gerrymandering map",
               "blue seats",
@@ -27437,7 +27508,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
-            "quality_score": 0.9251,
+            "quality_score": 0.9221,
             "author_entropy": 1.0,
             "is_noise": false,
             "is_market_chatter": false,
@@ -27457,7 +27528,7 @@
             ]
           },
           {
-            "cluster_id": 6,
+            "cluster_id": 5,
             "label_terms": [
               "accountability midterm",
               "corrupt doj",
@@ -27472,7 +27543,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
-            "quality_score": 0.9325,
+            "quality_score": 0.9326,
             "author_entropy": 0.5033,
             "is_noise": false,
             "is_market_chatter": false,
@@ -27501,7 +27572,7 @@
             ]
           },
           {
-            "cluster_id": 36,
+            "cluster_id": 37,
             "label_terms": [
               "anchor babies",
               "pre rigged",
@@ -27551,7 +27622,7 @@
             ]
           },
           {
-            "cluster_id": 32,
+            "cluster_id": 33,
             "label_terms": [
               "radical left",
               "voter fraud",
@@ -27564,19 +27635,19 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
-            "quality_score": 0.8493,
+            "quality_score": 0.8526,
             "author_entropy": 1.0,
             "is_noise": false,
             "is_market_chatter": false,
             "market_chatter_rate": 0.0372,
-            "size": 11,
+            "size": 10,
             "first_seen": "2026-05-24",
             "last_seen": "2026-06-02",
             "daily_counts": {
               "2026-05-24": 1,
               "2026-05-25": 1,
               "2026-05-26": 1,
-              "2026-05-31": 4,
+              "2026-05-31": 3,
               "2026-06-01": 1,
               "2026-06-02": 3
             },
@@ -27584,7 +27655,6 @@
               60,
               59,
               57,
-              47,
               44,
               43,
               42,
@@ -27595,7 +27665,7 @@
             ]
           },
           {
-            "cluster_id": 52,
+            "cluster_id": 53,
             "label_terms": [
               "sanctuary cities",
               "dem politicians",
@@ -27707,7 +27777,7 @@
             ]
           },
           {
-            "cluster_id": 58,
+            "cluster_id": 59,
             "label_terms": [
               "ww2 destroy",
               "pig bonespur draft",
@@ -27762,7 +27832,7 @@
             ]
           },
           {
-            "cluster_id": 26,
+            "cluster_id": 28,
             "label_terms": [
               "graham platner",
               "nearly points",
@@ -27775,7 +27845,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
-            "quality_score": 0.8546,
+            "quality_score": 0.8561,
             "author_entropy": 0.9881,
             "is_noise": false,
             "is_market_chatter": false,
@@ -27807,41 +27877,6 @@
               864,
               891,
               972
-            ]
-          },
-          {
-            "cluster_id": 8,
-            "label_terms": [
-              "broke buried",
-              "debt directionless"
-            ],
-            "label_phrases": [
-              "broke buried",
-              "debt directionless"
-            ],
-            "label_distinctiveness": 1.0,
-            "emerging_theme": true,
-            "quality_score": 0.8878,
-            "author_entropy": 0.7897,
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.051,
-            "size": 6,
-            "first_seen": "2026-05-29",
-            "last_seen": "2026-06-07",
-            "daily_counts": {
-              "2026-05-29": 3,
-              "2026-05-31": 1,
-              "2026-06-06": 1,
-              "2026-06-07": 1
-            },
-            "post_ids": [
-              459,
-              458,
-              457,
-              85,
-              779,
-              827
             ]
           },
           {
@@ -27879,7 +27914,7 @@
             ]
           },
           {
-            "cluster_id": 24,
+            "cluster_id": 26,
             "label_terms": [
               "days presidential",
               "election days",
@@ -27917,7 +27952,40 @@
             ]
           },
           {
-            "cluster_id": 34,
+            "cluster_id": 8,
+            "label_terms": [
+              "broke buried",
+              "debt directionless"
+            ],
+            "label_phrases": [
+              "broke buried",
+              "debt directionless"
+            ],
+            "label_distinctiveness": 1.0,
+            "emerging_theme": true,
+            "quality_score": 0.9196,
+            "author_entropy": 0.7219,
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0462,
+            "size": 5,
+            "first_seen": "2026-05-29",
+            "last_seen": "2026-06-07",
+            "daily_counts": {
+              "2026-05-29": 3,
+              "2026-06-06": 1,
+              "2026-06-07": 1
+            },
+            "post_ids": [
+              459,
+              458,
+              457,
+              779,
+              827
+            ]
+          },
+          {
+            "cluster_id": 35,
             "label_terms": [
               "lose midterms",
               "midterms send",
@@ -27996,6 +28064,93 @@
             ]
           },
           {
+            "cluster_id": 20,
+            "label_terms": [
+              "overcome series",
+              "redistricting hurdles"
+            ],
+            "label_phrases": [
+              "overcome series",
+              "redistricting hurdles"
+            ],
+            "label_distinctiveness": 1.0,
+            "emerging_theme": true,
+            "quality_score": 0.8801,
+            "author_entropy": 1.0,
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0037,
+            "size": 5,
+            "first_seen": "2026-05-30",
+            "last_seen": "2026-06-08",
+            "daily_counts": {
+              "2026-05-30": 1,
+              "2026-05-31": 1,
+              "2026-06-05": 1,
+              "2026-06-07": 1,
+              "2026-06-08": 1
+            },
+            "post_ids": [
+              94,
+              91,
+              694,
+              820,
+              899
+            ]
+          },
+          {
+            "cluster_id": 32,
+            "label_terms": [
+              "federal judge",
+              "verified lists"
+            ],
+            "label_phrases": [
+              "federal judge",
+              "verified lists"
+            ],
+            "label_distinctiveness": 1.0,
+            "emerging_theme": true,
+            "quality_score": 0.8027,
+            "author_entropy": 0.983,
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0101,
+            "size": 19,
+            "first_seen": "2026-05-31",
+            "last_seen": "2026-06-08",
+            "daily_counts": {
+              "2026-05-31": 1,
+              "2026-06-01": 4,
+              "2026-06-02": 3,
+              "2026-06-03": 1,
+              "2026-06-04": 4,
+              "2026-06-05": 1,
+              "2026-06-07": 4,
+              "2026-06-08": 1
+            },
+            "post_ids": [
+              47,
+              124,
+              119,
+              202,
+              735,
+              267,
+              264,
+              349,
+              421,
+              493,
+              491,
+              549,
+              571,
+              682,
+              832,
+              821,
+              894,
+              884,
+              924
+            ]
+          },
+          {
             "cluster_id": 13,
             "label_terms": [
               "humiliated global",
@@ -28040,7 +28195,7 @@
             ]
           },
           {
-            "cluster_id": 20,
+            "cluster_id": 21,
             "label_terms": [
               "endorses rep",
               "working tirelessly",
@@ -28083,7 +28238,7 @@
             ]
           },
           {
-            "cluster_id": 28,
+            "cluster_id": 29,
             "label_terms": [
               "cheat upcoming",
               "voteblue numbers",
@@ -28160,7 +28315,7 @@
             ]
           },
           {
-            "cluster_id": 49,
+            "cluster_id": 50,
             "label_terms": [
               "boom latino",
               "james talarico",
@@ -28196,7 +28351,7 @@
             ]
           },
           {
-            "cluster_id": 57,
+            "cluster_id": 58,
             "label_terms": [
               "chase block",
               "targeting midterm elections",
@@ -28210,7 +28365,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": false,
-            "quality_score": 0.7806,
+            "quality_score": 0.7807,
             "author_entropy": 1.0,
             "is_noise": false,
             "is_market_chatter": false,
@@ -28235,57 +28390,6 @@
               663,
               660,
               677
-            ]
-          },
-          {
-            "cluster_id": 31,
-            "label_terms": [
-              "federal judge",
-              "verified lists"
-            ],
-            "label_phrases": [
-              "federal judge",
-              "verified lists"
-            ],
-            "label_distinctiveness": 1.0,
-            "emerging_theme": true,
-            "quality_score": 0.8068,
-            "author_entropy": 0.983,
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.0081,
-            "size": 19,
-            "first_seen": "2026-06-01",
-            "last_seen": "2026-06-08",
-            "daily_counts": {
-              "2026-06-01": 4,
-              "2026-06-02": 3,
-              "2026-06-03": 2,
-              "2026-06-04": 4,
-              "2026-06-05": 1,
-              "2026-06-07": 4,
-              "2026-06-08": 1
-            },
-            "post_ids": [
-              124,
-              119,
-              202,
-              735,
-              267,
-              264,
-              349,
-              421,
-              417,
-              493,
-              491,
-              549,
-              571,
-              682,
-              832,
-              821,
-              894,
-              884,
-              924
             ]
           },
           {
@@ -28326,7 +28430,7 @@
             ]
           },
           {
-            "cluster_id": 37,
+            "cluster_id": 38,
             "label_terms": [
               "breaking trump",
               "court announcement",
@@ -28366,16 +28470,16 @@
           {
             "cluster_id": 12,
             "label_terms": [
-              "purpose identify",
-              "similarities united",
+              "identify similarities",
               "tina peters",
-              "elections clerk"
+              "elections clerk",
+              "convicted multiple"
             ],
             "label_phrases": [
-              "purpose identify",
-              "similarities united",
+              "identify similarities",
               "tina peters",
-              "elections clerk"
+              "elections clerk",
+              "convicted multiple"
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
@@ -28446,7 +28550,7 @@
             ]
           },
           {
-            "cluster_id": 33,
+            "cluster_id": 34,
             "label_terms": [
               "laying groundwork",
               "speaker mike",
@@ -28485,7 +28589,44 @@
             ]
           },
           {
-            "cluster_id": 59,
+            "cluster_id": 52,
+            "label_terms": [
+              "west golden",
+              "inflation economy",
+              "drive weak",
+              "national polls"
+            ],
+            "label_phrases": [
+              "west golden",
+              "inflation economy",
+              "drive weak",
+              "national polls"
+            ],
+            "label_distinctiveness": 1.0,
+            "emerging_theme": true,
+            "quality_score": 0.9064,
+            "author_entropy": 0.9464,
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0,
+            "size": 4,
+            "first_seen": "2026-06-01",
+            "last_seen": "2026-06-05",
+            "daily_counts": {
+              "2026-06-01": 1,
+              "2026-06-02": 1,
+              "2026-06-03": 1,
+              "2026-06-05": 1
+            },
+            "post_ids": [
+              164,
+              262,
+              417,
+              638
+            ]
+          },
+          {
+            "cluster_id": 60,
             "label_terms": [
               "ard facist",
               "ww2 wewill",
@@ -28517,7 +28658,7 @@
             ]
           },
           {
-            "cluster_id": 55,
+            "cluster_id": 56,
             "label_terms": [
               "black district",
               "legal standard",
@@ -28552,40 +28693,7 @@
             ]
           },
           {
-            "cluster_id": 51,
-            "label_terms": [
-              "west golden",
-              "max stafford",
-              "argues mayors"
-            ],
-            "label_phrases": [
-              "west golden",
-              "max stafford",
-              "argues mayors"
-            ],
-            "label_distinctiveness": 1.0,
-            "emerging_theme": true,
-            "quality_score": 0.9497,
-            "author_entropy": 0.9183,
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.0,
-            "size": 3,
-            "first_seen": "2026-06-01",
-            "last_seen": "2026-06-05",
-            "daily_counts": {
-              "2026-06-01": 1,
-              "2026-06-02": 1,
-              "2026-06-05": 1
-            },
-            "post_ids": [
-              164,
-              262,
-              638
-            ]
-          },
-          {
-            "cluster_id": 54,
+            "cluster_id": 55,
             "label_terms": [
               "ready happens",
               "perform poorly"
@@ -28616,7 +28724,7 @@
             ]
           },
           {
-            "cluster_id": 23,
+            "cluster_id": 25,
             "label_terms": [
               "liveprayer tuesday",
               "amnesty 20m"
@@ -28627,7 +28735,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
-            "quality_score": 0.8962,
+            "quality_score": 0.8953,
             "author_entropy": 0.7248,
             "is_noise": false,
             "is_market_chatter": false,
@@ -28651,7 +28759,7 @@
             ]
           },
           {
-            "cluster_id": 53,
+            "cluster_id": 54,
             "label_terms": [
               "total leaning",
               "respect white",
@@ -28720,7 +28828,7 @@
             ]
           },
           {
-            "cluster_id": 25,
+            "cluster_id": 23,
             "label_terms": [
               "underselling success",
               "winning record",
@@ -28733,7 +28841,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
-            "quality_score": 0.8653,
+            "quality_score": 0.864,
             "author_entropy": 1.0,
             "is_noise": false,
             "is_market_chatter": false,
@@ -28754,7 +28862,7 @@
             ]
           },
           {
-            "cluster_id": 46,
+            "cluster_id": 47,
             "label_terms": [
               "china expandiu",
               "investimentos brasil",
@@ -28788,39 +28896,7 @@
             ]
           },
           {
-            "cluster_id": 39,
-            "label_terms": [
-              "racially drawn",
-              "overturning lower"
-            ],
-            "label_phrases": [
-              "racially drawn",
-              "overturning lower"
-            ],
-            "label_distinctiveness": 1.0,
-            "emerging_theme": true,
-            "quality_score": 0.9188,
-            "author_entropy": 1.0,
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.0156,
-            "size": 6,
-            "first_seen": "2026-06-03",
-            "last_seen": "2026-06-03",
-            "daily_counts": {
-              "2026-06-03": 6
-            },
-            "post_ids": [
-              383,
-              377,
-              366,
-              430,
-              428,
-              427
-            ]
-          },
-          {
-            "cluster_id": 56,
+            "cluster_id": 57,
             "label_terms": [
               "position steelmanned",
               "rights democratic",
@@ -28851,6 +28927,72 @@
               455,
               438,
               636
+            ]
+          },
+          {
+            "cluster_id": 40,
+            "label_terms": [
+              "racially drawn",
+              "overturning lower"
+            ],
+            "label_phrases": [
+              "racially drawn",
+              "overturning lower"
+            ],
+            "label_distinctiveness": 1.0,
+            "emerging_theme": true,
+            "quality_score": 0.9333,
+            "author_entropy": 1.0,
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0187,
+            "size": 5,
+            "first_seen": "2026-06-03",
+            "last_seen": "2026-06-03",
+            "daily_counts": {
+              "2026-06-03": 5
+            },
+            "post_ids": [
+              377,
+              366,
+              430,
+              428,
+              427
+            ]
+          },
+          {
+            "cluster_id": 39,
+            "label_terms": [
+              "louisiana likely",
+              "order consequence",
+              "decision permits"
+            ],
+            "label_phrases": [
+              "louisiana likely",
+              "order consequence",
+              "decision permits"
+            ],
+            "label_distinctiveness": 1.0,
+            "emerging_theme": true,
+            "quality_score": 0.9194,
+            "author_entropy": 1.0,
+            "is_noise": false,
+            "is_market_chatter": false,
+            "market_chatter_rate": 0.0,
+            "size": 5,
+            "first_seen": "2026-06-03",
+            "last_seen": "2026-06-07",
+            "daily_counts": {
+              "2026-06-03": 1,
+              "2026-06-05": 3,
+              "2026-06-07": 1
+            },
+            "post_ids": [
+              383,
+              683,
+              711,
+              710,
+              845
             ]
           },
           {
@@ -28909,7 +29051,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": false,
-            "quality_score": 0.9207,
+            "quality_score": 0.9202,
             "author_entropy": -0.0,
             "is_noise": false,
             "is_market_chatter": false,
@@ -28931,7 +29073,7 @@
             ]
           },
           {
-            "cluster_id": 60,
+            "cluster_id": 61,
             "label_terms": [
               "vote thune",
               "vote thune mitchell",
@@ -28970,7 +29112,7 @@
             ]
           },
           {
-            "cluster_id": 61,
+            "cluster_id": 62,
             "label_terms": [
               "mitchell post",
               "you're wondering",
@@ -29001,7 +29143,7 @@
             ]
           },
           {
-            "cluster_id": 27,
+            "cluster_id": 31,
             "label_terms": [
               "similar rules",
               "arriving mail ballots",
@@ -29015,7 +29157,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
-            "quality_score": 0.937,
+            "quality_score": 0.9365,
             "author_entropy": 1.0,
             "is_noise": false,
             "is_market_chatter": false,
@@ -29046,7 +29188,7 @@
             ]
           },
           {
-            "cluster_id": 62,
+            "cluster_id": 63,
             "label_terms": [
               "millennials gen",
               "don't dream",
@@ -29107,7 +29249,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": true,
-            "quality_score": 0.9463,
+            "quality_score": 0.946,
             "author_entropy": -0.0,
             "is_noise": false,
             "is_market_chatter": false,
@@ -29168,7 +29310,7 @@
             ]
           },
           {
-            "cluster_id": 7,
+            "cluster_id": 6,
             "label_terms": [
               "musk stands",
               "away world's",
@@ -29249,38 +29391,7 @@
             ]
           },
           {
-            "cluster_id": 38,
-            "label_terms": [
-              "louisiana likely",
-              "politics source"
-            ],
-            "label_phrases": [
-              "louisiana likely",
-              "politics source"
-            ],
-            "label_distinctiveness": 1.0,
-            "emerging_theme": true,
-            "quality_score": 0.9514,
-            "author_entropy": 1.0,
-            "is_noise": false,
-            "is_market_chatter": false,
-            "market_chatter_rate": 0.0,
-            "size": 4,
-            "first_seen": "2026-06-05",
-            "last_seen": "2026-06-07",
-            "daily_counts": {
-              "2026-06-05": 3,
-              "2026-06-07": 1
-            },
-            "post_ids": [
-              683,
-              711,
-              710,
-              845
-            ]
-          },
-          {
-            "cluster_id": 50,
+            "cluster_id": 51,
             "label_terms": [
               "postal service",
               "naacp filing"
@@ -29291,7 +29402,7 @@
             ],
             "label_distinctiveness": 1.0,
             "emerging_theme": false,
-            "quality_score": 0.9461,
+            "quality_score": 0.9476,
             "author_entropy": -0.0,
             "is_noise": false,
             "is_market_chatter": false,
@@ -29309,7 +29420,7 @@
             ]
           },
           {
-            "cluster_id": 21,
+            "cluster_id": 22,
             "label_terms": [
               "war powers",
               "vote exposes",
@@ -29352,7 +29463,7 @@
             ]
           },
           {
-            "cluster_id": 63,
+            "cluster_id": 64,
             "label_terms": [
               "ago ruled",
               "reviving pro"
@@ -29382,7 +29493,7 @@
             ]
           },
           {
-            "cluster_id": 5,
+            "cluster_id": 7,
             "label_terms": [
               "dissenting senator",
               "votes senators"
@@ -29447,7 +29558,7 @@
             ]
           },
           {
-            "cluster_id": 45,
+            "cluster_id": 46,
             "label_terms": [
               "june prophetic",
               "message god",
@@ -29481,7 +29592,7 @@
             ]
           },
           {
-            "cluster_id": 48,
+            "cluster_id": 49,
             "label_terms": [
               "scraps command",
               "center help",
@@ -29513,10 +29624,10 @@
           }
         ],
         "sightings": {
-          "total_resightings": 2,
+          "total_resightings": 1,
           "total_net_new": 0,
           "daily_resightings": {
-            "2026-06-09": 2
+            "2026-06-09": 1
           },
           "daily_net_new": {}
         }
@@ -29535,9 +29646,9 @@
         "duplicate_cluster_count": 51,
         "fuzzy_cluster_count": 7,
         "coordination_signal_count": 58,
-        "distinct_theme_count": 57,
-        "theme_cluster_count": 57,
-        "graph_edge_count": 936,
+        "distinct_theme_count": 58,
+        "theme_cluster_count": 58,
+        "graph_edge_count": 937,
         "graph_author_count": 668,
         "graph_connected_author_count": 269,
         "graph_coverage_pct": 40.3,
@@ -29552,8 +29663,8 @@
       },
       "brief": {
         "version": 1,
-        "generated_at": "2026-06-09T05:51:15.704825+00:00",
-        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-09 05:51:15 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **937** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.00 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 930 / 364 |\n| Distinct themes | 57 |\n| Duplicate clusters (full DB) | 51 |\n| Fuzzy clusters (snapshot cohort) | 7 |\n| IU astroturf overlap | 0 bots / 668 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **2**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **169**\n- Net new: **1016** \u00b7 re-seen: **736**\n- Duplicate rate: **42.0%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 similar rules (11 posts \u00b7 10 authors \u00b7 1 exact \u00b7 1 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 breaking trump, court announcement, nears rulings, ele watch (7 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts \u00b7 1 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 federal judge, verified lists (19 posts \u00b7 6 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Near-copy campaign** \u00b7 graham platner, nearly points, winner odds (12 posts \u00b7 5 authors \u00b7 1 exact \u00b7 1 fuzzy subclusters)\n- **Shared frame** \u00b7 anchor babies, pre rigged, cornell law, professor explains (11 posts \u00b7 5 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 humiliated global, cowardly defense, skyrocketing domestic (10 posts \u00b7 3 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_5authors_5posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_3authors_4posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_2authors_3posts_j0.88\n- cross_author_fuzzy_2authors_2posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **10 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- **10 posts** \u00b7 1 author(s) \u2014 Millennials &amp; Gen Z We don't just want the dream back\u2014we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.\u2026\n- **9 posts** \u00b7 1 author(s) \u2014 War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc\u2026\n- **8 posts** \u00b7 1 author(s) \u2014 \ud83d\udea8The FBI and DOJ need to go to California now, while the fraud is going on\u2014it's a crime in progress\u2014and investigate and arrest now\u2014not three months from now, before they destroy the evidence.\ud83d\udea8 The Ca\u2026\n- **7 posts** \u00b7 1 author(s) \u2014 \ud83d\udca9 and RINOs \ud83d\udca9 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! \ud83d\udca5TERMINATE THE FILIBUSTER \u2014 NOW AND VOTE! \ud83d\udca5 \u2705Fully fund DHS \u2013 It\u2019s\u2026\n- _\u202643 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **6 posts** \u00b7 6 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8BREAKING: The Supreme Court is poised to strike down laws allowing late-arriving mail-in ballots (even if postmarked by Election Day) in Watson v. Republican National Committee. Justice Alito slamme\u2026\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 IT'S OFFICIAL, WE WIN! \"The US Supreme Court moments ago has ruled AGAINST Virginia Democrats when it comes to reviving their pro-Democrat redistricting map ahead of the 2026 midterms.\" WOULD'VE BE\u2026\n- **3 posts** \u00b7 2 authors \u00b7 ~88% Jaccard \u2014 DOJ quietly scraps \u2018command center\u2019 that would help monitor 2026 election integrity, report says - The Independent\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 SOME POLITICIANS WILL BACK OUT OF THE 2026 MIDTERMS\n- _\u20262 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, passed house, july stalled (10 posts)\n- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)\n- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)\n- radical left, voter fraud, sidney powell (11 posts)\n- sanctuary cities, dem politicians, trying shut (4 posts)\n- data centers, local communities, power grids, artificial intelligence, hackers preparing (7 posts)\n- cash party, level touch, country voters (5 posts)\n- _\u202643 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 937 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
+        "generated_at": "2026-06-09T06:32:15.694432+00:00",
+        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-09 06:32:15 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **937** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.00 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 930 / 364 |\n| Distinct themes | 58 |\n| Duplicate clusters (full DB) | 51 |\n| Fuzzy clusters (snapshot cohort) | 7 |\n| IU astroturf overlap | 0 bots / 668 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **1**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **170**\n- Net new: **1016** \u00b7 re-seen: **737**\n- Duplicate rate: **42.0%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 similar rules (11 posts \u00b7 10 authors \u00b7 1 exact \u00b7 1 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 breaking trump, court announcement, nears rulings, ele watch (7 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts \u00b7 1 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 federal judge, verified lists (19 posts \u00b7 6 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Near-copy campaign** \u00b7 graham platner, nearly points, winner odds (12 posts \u00b7 5 authors \u00b7 1 exact \u00b7 1 fuzzy subclusters)\n- **Shared frame** \u00b7 anchor babies, pre rigged, cornell law, professor explains (11 posts \u00b7 5 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame (emerging)** \u00b7 humiliated global, cowardly defense, skyrocketing domestic (10 posts \u00b7 3 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_5authors_5posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_3authors_4posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_2authors_3posts_j0.88\n- cross_author_fuzzy_2authors_2posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **10 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- **10 posts** \u00b7 1 author(s) \u2014 Millennials &amp; Gen Z We don't just want the dream back\u2014we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.\u2026\n- **9 posts** \u00b7 1 author(s) \u2014 War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc\u2026\n- **8 posts** \u00b7 1 author(s) \u2014 \ud83d\udea8The FBI and DOJ need to go to California now, while the fraud is going on\u2014it's a crime in progress\u2014and investigate and arrest now\u2014not three months from now, before they destroy the evidence.\ud83d\udea8 The Ca\u2026\n- **7 posts** \u00b7 1 author(s) \u2014 \ud83d\udca9 and RINOs \ud83d\udca9 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! \ud83d\udca5TERMINATE THE FILIBUSTER \u2014 NOW AND VOTE! \ud83d\udca5 \u2705Fully fund DHS \u2013 It\u2019s\u2026\n- _\u202643 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **6 posts** \u00b7 6 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8BREAKING: The Supreme Court is poised to strike down laws allowing late-arriving mail-in ballots (even if postmarked by Election Day) in Watson v. Republican National Committee. Justice Alito slamme\u2026\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 IT'S OFFICIAL, WE WIN! \"The US Supreme Court moments ago has ruled AGAINST Virginia Democrats when it comes to reviving their pro-Democrat redistricting map ahead of the 2026 midterms.\" WOULD'VE BE\u2026\n- **3 posts** \u00b7 2 authors \u00b7 ~88% Jaccard \u2014 DOJ quietly scraps \u2018command center\u2019 that would help monitor 2026 election integrity, report says - The Independent\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 SOME POLITICIANS WILL BACK OUT OF THE 2026 MIDTERMS\n- _\u20262 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (37 posts)\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, passed house, july stalled (10 posts)\n- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)\n- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)\n- radical left, voter fraud, sidney powell (10 posts)\n- sanctuary cities, dem politicians, trying shut (4 posts)\n- data centers, local communities, power grids, artificial intelligence, hackers preparing (7 posts)\n- cash party, level touch, country voters (5 posts)\n- _\u202644 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 937 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
         "meta": {
           "narrative_name": "midterms_2026",
           "posts_total_db": 937,
@@ -29571,7 +29682,7 @@
             "exact_duplicate_clusters": 51,
             "burst_clusters": 0,
             "fuzzy_clusters": 7,
-            "emerging_themes": 51,
+            "emerging_themes": 52,
             "coordination_frames": 7
           }
         },
@@ -29582,24 +29693,24 @@
             "posts_truncated": true,
             "cib_suspicion": 0.55,
             "text_coordination": 0.55,
-            "distinct_themes": 57
+            "distinct_themes": 58
           },
           "ingest_yield": {
             "available": true,
             "window_days": 14,
-            "runs": 169,
+            "runs": 170,
             "net_new": 1016,
-            "duplicates": 736,
+            "duplicates": 737,
             "filtered": 340,
-            "fetched": 2092,
+            "fetched": 2093,
             "duplicate_rate": 0.42,
-            "latest_run_at": "2026-06-09T05:51:14.388726+00:00"
+            "latest_run_at": "2026-06-09T06:32:14.238650+00:00"
           },
           "sightings": {
-            "total_resightings": 2,
+            "total_resightings": 1,
             "total_net_new": 0,
             "daily_resightings": {
-              "2026-06-09": 2
+              "2026-06-09": 1
             },
             "daily_net_new": {}
           },
@@ -29609,7 +29720,7 @@
           },
           "coordination_frames": [
             {
-              "cluster_id": 27,
+              "cluster_id": 31,
               "label": "similar rules",
               "tier": "high",
               "tier_label": "Exact duplicate campaign",
@@ -29619,7 +29730,7 @@
               "fuzzy_subclusters": 1
             },
             {
-              "cluster_id": 37,
+              "cluster_id": 38,
               "label": "breaking trump, court announcement, nears rulings, ele watch",
               "tier": "high",
               "tier_label": "Exact duplicate campaign",
@@ -29629,7 +29740,7 @@
               "fuzzy_subclusters": 0
             },
             {
-              "cluster_id": 33,
+              "cluster_id": 34,
               "label": "laying groundwork, speaker mike, johnson republicans, bullish chances",
               "tier": "high",
               "tier_label": "Exact duplicate campaign",
@@ -29639,7 +29750,7 @@
               "fuzzy_subclusters": 0
             },
             {
-              "cluster_id": 31,
+              "cluster_id": 32,
               "label": "federal judge, verified lists",
               "tier": "medium",
               "tier_label": "Shared frame (emerging)",
@@ -29649,7 +29760,7 @@
               "fuzzy_subclusters": 0
             },
             {
-              "cluster_id": 26,
+              "cluster_id": 28,
               "label": "graham platner, nearly points, winner odds",
               "tier": "medium",
               "tier_label": "Near-copy campaign",
@@ -29659,7 +29770,7 @@
               "fuzzy_subclusters": 1
             },
             {
-              "cluster_id": 36,
+              "cluster_id": 37,
               "label": "anchor babies, pre rigged, cornell law, professor explains",
               "tier": "medium",
               "tier_label": "Shared frame",
@@ -29969,7 +30080,7 @@
           ],
           "emerging_themes": [
             {
-              "cluster_id": 35,
+              "cluster_id": 36,
               "label_terms": [
                 "red wave",
                 "midwest democrat",
@@ -29988,12 +30099,12 @@
               ],
               "label_distinctiveness": 1.0,
               "emerging_theme": true,
-              "quality_score": 0.8731,
-              "author_entropy": 0.9944,
+              "quality_score": 0.8715,
+              "author_entropy": 0.9946,
               "is_noise": false,
               "is_market_chatter": false,
-              "market_chatter_rate": 0.0114,
-              "size": 36,
+              "market_chatter_rate": 0.0111,
+              "size": 37,
               "first_seen": "2025-08-13",
               "last_seen": "2026-06-02",
               "daily_counts": {
@@ -30020,6 +30131,7 @@
                 "2026-04-29": 2,
                 "2026-05-06": 1,
                 "2026-05-11": 1,
+                "2026-05-20": 1,
                 "2026-05-29": 1,
                 "2026-05-30": 3,
                 "2026-05-31": 1,
@@ -30055,6 +30167,7 @@
                 398,
                 394,
                 392,
+                389,
                 151,
                 148,
                 69,
@@ -30066,7 +30179,7 @@
               ]
             },
             {
-              "cluster_id": 22,
+              "cluster_id": 24,
               "label_terms": [
                 "mpuuga challenge",
                 "sweeping constitutional",
@@ -30116,7 +30229,7 @@
               ]
             },
             {
-              "cluster_id": 29,
+              "cluster_id": 27,
               "label_terms": [
                 "gerrymandering map",
                 "blue seats",
@@ -30131,7 +30244,7 @@
               ],
               "label_distinctiveness": 1.0,
               "emerging_theme": true,
-              "quality_score": 0.9251,
+              "quality_score": 0.9221,
               "author_entropy": 1.0,
               "is_noise": false,
               "is_market_chatter": false,
@@ -30151,7 +30264,7 @@
               ]
             },
             {
-              "cluster_id": 6,
+              "cluster_id": 5,
               "label_terms": [
                 "accountability midterm",
                 "corrupt doj",
@@ -30166,7 +30279,7 @@
               ],
               "label_distinctiveness": 1.0,
               "emerging_theme": true,
-              "quality_score": 0.9325,
+              "quality_score": 0.9326,
               "author_entropy": 0.5033,
               "is_noise": false,
               "is_market_chatter": false,
@@ -30195,7 +30308,7 @@
               ]
             },
             {
-              "cluster_id": 32,
+              "cluster_id": 33,
               "label_terms": [
                 "radical left",
                 "voter fraud",
@@ -30208,19 +30321,19 @@
               ],
               "label_distinctiveness": 1.0,
               "emerging_theme": true,
-              "quality_score": 0.8493,
+              "quality_score": 0.8526,
               "author_entropy": 1.0,
               "is_noise": false,
               "is_market_chatter": false,
               "market_chatter_rate": 0.0372,
-              "size": 11,
+              "size": 10,
               "first_seen": "2026-05-24",
               "last_seen": "2026-06-02",
               "daily_counts": {
                 "2026-05-24": 1,
                 "2026-05-25": 1,
                 "2026-05-26": 1,
-                "2026-05-31": 4,
+                "2026-05-31": 3,
                 "2026-06-01": 1,
                 "2026-06-02": 3
               },
@@ -30228,7 +30341,6 @@
                 60,
                 59,
                 57,
-                47,
                 44,
                 43,
                 42,
@@ -30239,7 +30351,7 @@
               ]
             },
             {
-              "cluster_id": 52,
+              "cluster_id": 53,
               "label_terms": [
                 "sanctuary cities",
                 "dem politicians",
@@ -30370,7 +30482,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-09",
-      "requests_used": 7
+      "requests_used": 9
     }
   }
 }

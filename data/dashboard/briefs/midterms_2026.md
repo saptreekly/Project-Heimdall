@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-09 05:51:15 UTC
+> Tactical snapshot · 2026-06-09 06:32:15 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 930 / 364 |
-| Distinct themes | 57 |
+| Distinct themes | 58 |
 | Duplicate clusters (full DB) | 51 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 0 bots / 668 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
+- Re-sightings (duplicate encounters): **1**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **169**
-- Net new: **1016** · re-seen: **736**
+- Runs: **170**
+- Net new: **1016** · re-seen: **737**
 - Duplicate rate: **42.0%**
 
 ## Sentiment drift
@@ -93,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (37 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, passed house, july stalled (10 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- radical left, voter fraud, sidney powell (11 posts)
+- radical left, voter fraud, sidney powell (10 posts)
 - sanctuary cities, dem politicians, trying shut (4 posts)
 - data centers, local communities, power grids, artificial intelligence, hackers preparing (7 posts)
 - cash party, level touch, country voters (5 posts)
-- _…43 more emerging theme(s)._
+- _…44 more emerging theme(s)._
 
 ## Scope note
 
