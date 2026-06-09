@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-09 11:27:01 UTC
+> Tactical snapshot · 2026-06-09 11:48:26 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **937** |
+| Posts in database | **953** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 930 / 364 |
-| Distinct themes | 58 |
+| Graph nodes / edges | 946 / 368 |
+| Distinct themes | 47 |
 | Duplicate clusters (full DB) | 51 |
-| Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 0 bots / 668 authors |
+| Fuzzy clusters (snapshot cohort) | 6 |
+| IU astroturf overlap | 0 bots / 681 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **16**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **173**
-- Net new: **1016** · re-seen: **768**
-- Duplicate rate: **43.0%**
+- Runs: **174**
+- Net new: **1032** · re-seen: **771**
+- Duplicate rate: **42.8%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · similar rules (11 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, verified lists (19 posts · 6 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · graham platner, nearly points, winner odds (12 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · anchor babies, pre rigged, cornell law, professor explains (11 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · humiliated global, cowardly defense, skyrocketing domestic (10 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (9 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · trump supreme, court announcement, ele watch, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · trump, red, wave, midterms (278 posts · 3 authors · 11 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · mail voting, federal elections, citizenship verification, executive order, absentee ballots (21 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · affordability set, migration trend, points continued, backed economic (14 posts · 5 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · nuke filibuster (12 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -81,7 +81,7 @@ _None (need ≥5 authors in 90s window)._
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 IT'S OFFICIAL, WE WIN! "The US Supreme Court moments ago has ruled AGAINST Virginia Democrats when it comes to reviving their pro-Democrat redistricting map ahead of the 2026 midterms." WOULD'VE BE…
 - **3 posts** · 2 authors · ~88% Jaccard — DOJ quietly scraps ‘command center’ that would help monitor 2026 election integrity, report says - The Independent
 - **2 posts** · 2 authors · ~100% Jaccard — SOME POLITICIANS WILL BACK OUT OF THE 2026 MIDTERMS
-- _…2 more fuzzy cluster(s) in snapshot cohort._
+- _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -93,19 +93,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (37 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, passed house, july stalled (10 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- radical left, voter fraud, sidney powell (10 posts)
-- sanctuary cities, dem politicians, trying shut (4 posts)
-- data centers, local communities, power grids, artificial intelligence, hackers preparing (7 posts)
+- nuke filibuster (12 posts)
 - cash party, level touch, country voters (5 posts)
-- _…44 more emerging theme(s)._
+- ww2 destroy, coward facist, sorry senile, losers america, loves winners (22 posts)
+- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
+- lose midterms, midterms send, send message, democrats lose, midterms send message (6 posts)
+- awakening largest, actually believe (5 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
+- broke buried, debt directionless (5 posts)
+- _…35 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 937 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 953 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
