@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-09 11:48:26 UTC
+> Tactical snapshot · 2026-06-09 12:24:46 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 946 / 368 |
-| Distinct themes | 47 |
+| Distinct themes | 55 |
 | Duplicate clusters (full DB) | 51 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 0 bots / 681 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **16**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **174**
-- Net new: **1032** · re-seen: **771**
+- Runs: **175**
+- Net new: **1032** · re-seen: **772**
 - Duplicate rate: **42.8%**
 
 ## Sentiment drift
@@ -36,13 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · similar rules (11 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · data centers, laying groundwork, local communities, hackers preparing, phishing credential (9 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · trump supreme, court announcement, ele watch, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · trump, red, wave, midterms (278 posts · 3 authors · 11 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · mail voting, federal elections, citizenship verification, executive order, absentee ballots (21 posts · 9 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · affordability set, migration trend, points continued, backed economic (14 posts · 5 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · nuke filibuster (12 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · graham platner, nearly points, winner odds (11 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · anchor babies, pre rigged, cornell law, professor explains (11 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · humiliated global, cowardly defense, skyrocketing domestic (10 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -93,15 +92,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- nuke filibuster (12 posts)
-- cash party, level touch, country voters (5 posts)
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (22 posts)
-- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
-- lose midterms, midterms send, send message, democrats lose, midterms send message (6 posts)
-- awakening largest, actually believe (5 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
-- broke buried, debt directionless (5 posts)
-- _…35 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, quietly dismantles (7 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- voter fraud, radical left, sidney powell (11 posts)
+- data centers, local communities, power grids, artificial intelligence, hackers preparing (7 posts)
+- cash party, level touch, country voters (6 posts)
+- ww2 destroy, pig bonespur draft, coward facist, dodger inbreeds, tolerate pathetic (14 posts)
+- _…41 more emerging theme(s)._
 
 ## Scope note
 
