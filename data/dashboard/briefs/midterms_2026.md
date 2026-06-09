@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-09 20:25:33 UTC
+> Tactical snapshot · 2026-06-09 21:09:19 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 983 / 379 |
-| Distinct themes | 50 |
+| Distinct themes | 58 |
 | Duplicate clusters (full DB) | 53 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 1 bots / 711 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **186**
-- Net new: **1070** · re-seen: **855**
-- Duplicate rate: **44.4%**
+- Runs: **187**
+- Net new: **1070** · re-seen: **857**
+- Duplicate rate: **44.5%**
 
 ## Sentiment drift
 
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · trump supreme, court announcement, ele watch, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (13 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · trump supreme, court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, favored win, final redistricting (5 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · trump, red, wave, midterms (278 posts · 2 authors · 11 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, verified lists, command center (22 posts · 9 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win (4 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame (emerging)** · federal judge, union marathon, greatest hits (13 posts · 6 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · anchor babies, cornell law, professor explains (13 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -89,15 +94,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senate gop, nuke filibuster (15 posts)
-- cash party, level touch, country voters (5 posts)
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (22 posts)
-- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
-- broke buried, debt directionless, results democrat (5 posts)
-- midterms send, send message, midterms send message, lose midterms, invalidate midterms (5 posts)
-- _…37 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (35 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, command center (9 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- anchor babies, cornell law, professor explains (13 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- voter fraud, radical left, sidney powell, breaking president (10 posts)
+- cash party, level touch, country voters (6 posts)
+- data centers, local communities, power grids, artificial intelligence, hackers preparing (6 posts)
+- _…46 more emerging theme(s)._
 
 ## Scope note
 
