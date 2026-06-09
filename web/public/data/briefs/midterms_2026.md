@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-09 23:04:41 UTC
+> Tactical snapshot · 2026-06-09 23:49:15 UTC
 
 ## Corpus
 
@@ -14,19 +14,14 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 989 / 380 |
-| Distinct themes | 57 |
+| Distinct themes | 52 |
 | Duplicate clusters (full DB) | 53 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 1 bots / 716 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **28**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **190**
+- Runs: **191**
 - Net new: **1076** · re-seen: **888**
 - Duplicate rate: **45.2%**
 
@@ -36,13 +31,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · trump supreme, court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win, fascist redneck, judges cut (11 posts · 6 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · trump supreme, court announcement, ele watch, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, favored win (4 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · federal judge, union marathon, greatest hits (13 posts · 6 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · hostile hearing, dismissed case, attorneys filed (13 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · senate gop (14 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -94,15 +88,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (37 posts)
+- red wave, radical left, midwest democrat, resigns electoral, disaster looms (45 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, command center (9 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- radical left, voter fraud, sidney powell, breaking president (11 posts)
-- data centers, local communities, hackers preparing, phishing credential, generated deception (7 posts)
+- senate gop (14 posts)
+- anchor babies, cornell law, professor explains, illegal aliens (10 posts)
 - cash party, level touch, country voters (5 posts)
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (22 posts)
-- _…45 more emerging theme(s)._
+- ww2 destroy, bonespur draft, dodger inbreeds, coward facist, tolerate pathetic (15 posts)
+- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
+- _…38 more emerging theme(s)._
 
 ## Scope note
 
