@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-09 00:16:52 UTC
+> Tactical snapshot · 2026-06-09 04:17:39 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 914 / 361 |
-| Distinct themes | 57 |
+| Distinct themes | 53 |
 | Duplicate clusters (full DB) | 49 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 0 bots / 653 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **28**
+- Re-sightings (duplicate encounters): **2**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **166**
-- Net new: **998** · re-seen: **732**
-- Duplicate rate: **42.3%**
+- Runs: **167**
+- Net new: **998** · re-seen: **734**
+- Duplicate rate: **42.4%**
 
 ## Sentiment drift
 
@@ -40,9 +40,8 @@
 - **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Shared frame (emerging)** · federal judge, verified lists (18 posts · 6 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · graham platner, nearly points, winner odds (10 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame (emerging)** · humiliated global, cowardly defense, skyrocketing domestic (10 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (10 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · graham platner, nearly points, winner odds, redistricting update (13 posts · 6 authors · 1 exact · 2 fuzzy subclusters)
+- **Near-copy campaign** · ago ruled, reviving pro (11 posts · 4 authors · 4 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -96,12 +95,12 @@ _None spanning multiple narratives._
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, passed house, july stalled (9 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- anchor babies, cornell law, professor explains (9 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- voter fraud, radical left, sidney powell (11 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- radical left, voter fraud, sidney powell (11 posts)
+- sanctuary cities, dem politicians, trying shut (4 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (7 posts)
 - cash party, level touch, country voters (6 posts)
-- data centers, local communities, power grids, artificial intelligence, hackers preparing (6 posts)
-- _…44 more emerging theme(s)._
+- _…39 more emerging theme(s)._
 
 ## Scope note
 
