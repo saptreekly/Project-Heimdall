@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-09 21:09:19 UTC
+> Tactical snapshot · 2026-06-09 21:57:51 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **991** |
+| Posts in database | **997** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 983 / 379 |
-| Distinct themes | 58 |
+| Graph nodes / edges | 989 / 380 |
+| Distinct themes | 57 |
 | Duplicate clusters (full DB) | 53 |
 | Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 1 bots / 711 authors |
+| IU astroturf overlap | 1 bots / 716 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **6**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **187**
-- Net new: **1070** · re-seen: **857**
-- Duplicate rate: **44.5%**
+- Runs: **188**
+- Net new: **1076** · re-seen: **858**
+- Duplicate rate: **44.4%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (13 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · trump supreme, court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning, favored win (4 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
 - **Shared frame (emerging)** · federal judge, union marathon, greatest hits (13 posts · 6 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · anchor babies, cornell law, professor explains (13 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · hostile hearing, dismissed case, attorneys filed (13 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -94,19 +94,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (35 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (37 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, command center (9 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- anchor babies, cornell law, professor explains (13 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- voter fraud, radical left, sidney powell, breaking president (10 posts)
-- cash party, level touch, country voters (6 posts)
-- data centers, local communities, power grids, artificial intelligence, hackers preparing (6 posts)
-- _…46 more emerging theme(s)._
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- radical left, voter fraud, sidney powell, breaking president (11 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (7 posts)
+- cash party, level touch, country voters (5 posts)
+- ww2 destroy, coward facist, sorry senile, losers america, loves winners (22 posts)
+- _…45 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 991 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 997 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
