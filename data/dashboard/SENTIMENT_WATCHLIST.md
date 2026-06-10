@@ -1,12 +1,12 @@
 # Sentiment watchlist
 
-_Updated from snapshot generated at 2026-06-09T17:30:50.519225+00:00_
+_Updated from snapshot generated at 2026-06-10T18:10:50.249780+00:00_
 
 ## Current narrative status
 
 | Narrative | Trend | WoW alert | Divergence days |
 | --- | --- | --- | ---: |
-| midterms_2026 | stable | — | 1 |
+| midterms_2026 | stable | — | 0 |
 
 ## Recent alerts
 
