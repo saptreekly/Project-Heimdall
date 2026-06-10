@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-10 11:47:11 UTC
+> Tactical snapshot · 2026-06-10 12:01:54 UTC
 
 ## Corpus
 
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1025 / 389 |
-| Distinct themes | 47 |
+| Distinct themes | 58 |
 | Duplicate clusters (full DB) | 55 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 1 bots / 744 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **198**
-- Net new: **1120** · re-seen: **924**
+- Runs: **199**
+- Net new: **1120** · re-seen: **925**
 - Duplicate rate: **45.2%**
 
 ## Sentiment drift
@@ -31,13 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, ele watch, nears rulings (8 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, bullish chances (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · election fraud, task force, looming midterm elections, breaking longtime, trump ally (6 posts · 6 authors · 1 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, voter fraud, looming midterm elections, breaking longtime, trump ally (6 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning (5 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · trump, red, wave, midterms (284 posts · 7 authors · 11 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -88,15 +92,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senate gop, nuke filibuster (16 posts)
-- level touch (8 posts)
-- ww2 destroy, won't tolerate, killed 10000's, senile coward, bonespur draft (15 posts)
-- awakening largest, actually believe (5 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
-- broke buried, debt directionless (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- humiliated global, cowardly defense, skyrocketing domestic (12 posts)
-- _…33 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (37 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, command center (9 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- mail voting, camera actual (6 posts)
+- anchor babies, cornell law, professor explains (14 posts)
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- radical left, sidney powell (13 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (7 posts)
+- _…47 more emerging theme(s)._
 
 ## Scope note
 
