@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-10 16:00:47 UTC
+> Tactical snapshot · 2026-06-10 16:28:34 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1042** |
+| Posts in database | **1061** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1026 / 390 |
-| Distinct themes | 60 |
-| Duplicate clusters (full DB) | 55 |
-| Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 1 bots / 744 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **1**
+| Graph nodes / edges | 1043 / 399 |
+| Distinct themes | 53 |
+| Duplicate clusters (full DB) | 57 |
+| Fuzzy clusters (snapshot cohort) | 8 |
+| IU astroturf overlap | 1 bots / 755 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **203**
-- Net new: **1121** · re-seen: **958**
-- Duplicate rate: **46.1%**
+- Runs: **204**
+- Net new: **1140** · re-seen: **958**
+- Duplicate rate: **45.7%**
 
 ## Sentiment drift
 
@@ -36,12 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · similar rules (11 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, ele watch, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (13 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, ele watch, nears rulings (8 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, bullish chances (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, voter fraud, looming midterm elections, breaking longtime, trump ally (6 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning (5 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · election fraud, task force, looming midterm elections, breaking longtime, trump ally (4 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · trump, red, wave, midterms (284 posts · 7 authors · 11 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -67,7 +63,7 @@
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
-- _…47 more exact-duplicate cluster(s) in database._
+- _…49 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -78,6 +74,7 @@ _None (need ≥5 authors in 90s window)._
 - **6 posts** · 6 authors · ~94% Jaccard — HOLY CRAP! Republicans are now favored to WIN THE US HOUSE in the 2026 midterms by the latest Inside Elections forecast They'd only need 7% — or ONE — of the 14 tossups to obtain a majority 🔴 Republi…
 - **5 posts** · 5 authors · ~100% Jaccard — BREAKING: Republicans are favored to NOW WIN the HOUSE in the 2026 MIDTERMS. THIS IS HUGE MAGA KEEPS ON WINNING BIG TIME TIME TO GET LOUD 🔥
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨BREAKING:🚨LONGTIME TRUMP ALLY KARI LAKE TO HEAD SPECIAL GOVERNMENT ELECTION FRAUD TASK FORCE WITH POWER TO MAKE CRIMINAL REFERRALS TO DOJ - Former Arizona Republican gubernatorial and US Senate cand…
+- **3 posts** · 3 authors · ~100% Jaccard — 2026 midterms poised to have less federal oversight as Trump admin defangs election watchdog Story by
 - **3 posts** · 3 authors · ~100% Jaccard — SOME POLITICIANS WILL BACK OUT OF THE 2026 MIDTERMS
 - **3 posts** · 2 authors · ~88% Jaccard — DOJ quietly scraps ‘command center’ that would help monitor 2026 election integrity, report says - The Independent
 - _…2 more fuzzy cluster(s) in snapshot cohort._
@@ -92,19 +89,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, quietly dismantles (7 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- anchor babies, cornell law, professor explains (15 posts)
-- corrupt doj, stop gaslighting, happy talk (9 posts)
-- radical left, sidney powell (11 posts)
-- cash party, level touch (7 posts)
-- data centers, local communities, hackers preparing, phishing credential, generated deception (7 posts)
-- _…47 more emerging theme(s)._
+- senate gop, nuke filibuster (15 posts)
+- level touch (8 posts)
+- ww2 destroy, bonespur draft, dodger inbreeds (13 posts)
+- awakening largest, actually believe (5 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
+- broke buried, debt directionless (5 posts)
+- midterms send, send message, midterms send message, invalidate midterms, lose midterms democrats (4 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- _…41 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1042 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1061 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
