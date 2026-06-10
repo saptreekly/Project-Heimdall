@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-10 05:08:17 UTC
+> Tactical snapshot · 2026-06-10 06:06:08 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1021** |
+| Posts in database | **1022** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1007 / 387 |
-| Distinct themes | 63 |
+| Distinct themes | 61 |
 | Duplicate clusters (full DB) | 54 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 1 bots / 728 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **194**
-- Net new: **1100** · re-seen: **893**
+- Runs: **195**
+- Net new: **1101** · re-seen: **895**
 - Duplicate rate: **44.8%**
 
 ## Sentiment drift
@@ -97,15 +97,15 @@ _None spanning multiple narratives._
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, quietly dismantles (7 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
 - anchor babies, cornell law, professor explains (15 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
-- voter fraud, radical left, sidney powell (11 posts)
-- level touch (8 posts)
-- data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts)
-- _…50 more emerging theme(s)._
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- radical left, voter fraud, sidney powell (12 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (7 posts)
+- cash party, level touch (6 posts)
+- _…49 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1021 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1022 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
