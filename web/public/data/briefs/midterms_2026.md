@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-10 01:32:01 UTC
+> Tactical snapshot · 2026-06-10 04:28:46 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1016** |
+| Posts in database | **1021** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1007 / 387 |
-| Distinct themes | 50 |
+| Distinct themes | 63 |
 | Duplicate clusters (full DB) | 54 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 1 bots / 728 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **4**
+- Net-new posts logged: **5**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **192**
-- Net new: **1095** · re-seen: **888**
+- Runs: **193**
+- Net new: **1100** · re-seen: **892**
 - Duplicate rate: **44.8%**
 
 ## Sentiment drift
@@ -32,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · trump supreme, court announcement, ele watch, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, nears rulings (8 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, speaker mike, johnson republicans, bullish chances (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning, favored win (4 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · trump, red, wave, midterms (284 posts · 7 authors · 11 exact · 1 fuzzy subclusters)
-- **Shared frame** · senate gop, nuke filibuster (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame (emerging)** · anchor babies, cornell law, professor explains (15 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · save america, america act, save america act, trump save, act saving (9 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -88,19 +93,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senate gop, nuke filibuster (15 posts)
-- cash party, level touch, country voters (6 posts)
-- ww2 destroy, killed 10000's, sorry senile, losers america, loves winners (21 posts)
-- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (5 posts)
-- broke buried, debt directionless (5 posts)
-- midterms send, midterms send message, send message, invalidate midterms, lose midterms democrats (4 posts)
-- _…38 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, quietly dismantles (7 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- anchor babies, cornell law, professor explains (15 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- voter fraud, radical left, sidney powell (11 posts)
+- level touch (8 posts)
+- data centers, local communities, hackers preparing, phishing credential, generated deception (8 posts)
+- _…50 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1016 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1021 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
