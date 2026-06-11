@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-11 12:33:34 UTC
+> Tactical snapshot · 2026-06-11 13:05:49 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1098 / 415 |
-| Distinct themes | 63 |
+| Distinct themes | 61 |
 | Duplicate clusters (full DB) | 61 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 1 bots / 798 authors |
@@ -26,9 +26,9 @@
 
 ## Ingest yield (last 14 days)
 
-- Runs: **223**
-- Net new: **1197** · re-seen: **1059**
-- Duplicate rate: **46.9%**
+- Runs: **224**
+- Net new: **1197** · re-seen: **1060**
+- Duplicate rate: **47.0%**
 
 ## Sentiment drift
 
@@ -36,10 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (9 posts · 7 authors · 2 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, ele watch, viral clip (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning, favored win (6 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · marjorie taylor, greene president, one's bite, basically handed (5 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
@@ -94,15 +94,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (36 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (37 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, quietly dismantles (7 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
 - anchor babies, cornell law, professor explains (13 posts)
 - corrupt doj, stop gaslighting, happy talk (8 posts)
-- radical left, sidney powell (12 posts)
+- radical left, sidney powell (11 posts)
 - cash party, level touch, country voters (6 posts)
-- civil rights, order consequence (11 posts)
-- _…51 more emerging theme(s)._
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, ww2 destroy (10 posts)
+- _…49 more emerging theme(s)._
 
 ## Scope note
 
