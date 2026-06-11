@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-11 22:10:23 UTC
+> Tactical snapshot · 2026-06-11 22:30:47 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1133 / 425 |
-| Distinct themes | 65 |
+| Distinct themes | 63 |
 | Duplicate clusters (full DB) | 62 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 1 bots / 826 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **8**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **236**
-- Net new: **1235** · re-seen: **1132**
+- Runs: **237**
+- Net new: **1235** · re-seen: **1133**
 - Duplicate rate: **47.8%**
 
 ## Sentiment drift
@@ -39,10 +39,10 @@
 - **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, report warning, hackers preparing, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, favored win, hold chance, placing near (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win (6 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, voter fraud, looming midterm elections, breaking longtime, trump ally (4 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · marjorie taylor, greene president, one's bite, basically handed (5 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -94,15 +94,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (38 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (37 posts)
 - gains failed (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, quietly dismantles (7 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- dismantling rigging (11 posts)
 - anchor babies, cornell law, professor explains (13 posts)
-- corrupt doj, stop gaslighting, happy talk (9 posts)
-- radical left, sidney powell (12 posts)
-- _…51 more emerging theme(s)._
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- radical left, sidney powell (11 posts)
+- level touch, country voters (6 posts)
+- _…49 more emerging theme(s)._
 
 ## Scope note
 
