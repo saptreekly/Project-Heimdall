@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-11 21:31:49 UTC
+> Tactical snapshot · 2026-06-11 22:10:23 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1155** |
+| Posts in database | **1156** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1131 / 424 |
+| Graph nodes / edges | 1133 / 425 |
 | Distinct themes | 65 |
 | Duplicate clusters (full DB) | 62 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 1 bots / 825 authors |
+| IU astroturf overlap | 1 bots / 826 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **235**
-- Net new: **1234** · re-seen: **1124**
-- Duplicate rate: **47.7%**
+- Runs: **236**
+- Net new: **1235** · re-seen: **1132**
+- Duplicate rate: **47.8%**
 
 ## Sentiment drift
 
@@ -36,9 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, report warning, hackers preparing, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning, favored win, hold chance, placing near (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
@@ -94,19 +94,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (37 posts)
-- gains failed (6 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (38 posts)
+- gains failed (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, quietly dismantles (7 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- republican senate, pass save america, act midterms, america act midterms, mail voting (6 posts)
+- dismantling rigging (11 posts)
 - anchor babies, cornell law, professor explains (13 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- radical left, sidney powell (11 posts)
-- _…52 more emerging theme(s)._
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- radical left, sidney powell (12 posts)
+- _…51 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1155 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1156 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
