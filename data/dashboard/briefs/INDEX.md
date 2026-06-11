@@ -1,7 +1,7 @@
 # Heimdall narrative briefings
 
-_Auto-generated · snapshot `2026-06-11T16:42:59.392256+00:00`_
+_Auto-generated · snapshot `2026-06-11T17:10:49.346855+00:00`_
 
 | Narrative | DB posts | Brief |
 | --- | ---: | --- |
-| midterms_2026 | 1118 | [midterms_2026.md](midterms_2026.md) |
+| midterms_2026 | 1137 | [midterms_2026.md](midterms_2026.md) |
