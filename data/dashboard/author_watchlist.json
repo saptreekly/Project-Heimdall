@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 237,
+      "run_counter": 238,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1932,16 +1932,16 @@
           "handle": "tropicalswell",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 1.05,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 16,
-          "polls": 0,
-          "inserts_from_polls": 0,
+          "priority": 1.0,
+          "last_polled_at": "2026-06-12T21:06:24.581387+00:00",
+          "last_tweet_at": "2026-06-12T19:15:47+00:00",
+          "inserted_total": 20,
+          "polls": 1,
+          "inserts_from_polls": 2,
           "status": "active"
         },
-        "278145569": {
-          "author_id": "278145569",
+        "2374042004": {
+          "author_id": "2374042004",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
