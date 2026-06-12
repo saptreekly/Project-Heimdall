@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-12 16:34:41 UTC
+> Tactical snapshot · 2026-06-12 17:44:39 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1207** |
+| Posts in database | **1212** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1178 / 446 |
-| Distinct themes | 66 |
+| Graph nodes / edges | 1182 / 446 |
+| Distinct themes | 64 |
 | Duplicate clusters (full DB) | 64 |
 | Fuzzy clusters (snapshot cohort) | 10 |
-| IU astroturf overlap | 1 bots / 862 authors |
+| IU astroturf overlap | 1 bots / 866 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **9**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **253**
-- Net new: **1286** · re-seen: **1227**
-- Duplicate rate: **48.8%**
+- Runs: **254**
+- Net new: **1291** · re-seen: **1236**
+- Duplicate rate: **48.9%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win, democrats hold, placing near (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, favored win (6 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · politicians midterms, june prophetic, message god, prophet julie (6 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · basically handed, democrats campaign, marjorie taylor, greene president (5 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · loves inflation, basically handed, marjorie taylor, greene president (5 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -54,8 +54,8 @@
 - cross_author_fuzzy_6authors_6posts_j1.00
 - cross_author_fuzzy_6authors_6posts_j0.94
 - cross_author_fuzzy_5authors_6posts_j1.00
+- cross_author_fuzzy_5authors_6posts_j1.00
 - cross_author_fuzzy_5authors_5posts_j1.00
-- cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
 
 ## Exact duplicate text (Layer 1 — copy coordination)
@@ -82,7 +82,7 @@ _None (need ≥5 authors in 90s window)._
 - **6 posts** · 5 authors · ~100% Jaccard — Kerri Lane DNC is Scrambling After This BOMBSHELL Hits 2026 Midterms via
 - **4 posts** · 4 authors · ~100% Jaccard — Marjorie Taylor Greene on President Trump saying he loves inflation: "That one's going to come back and bite him. He basically just handed the Democrats a great big campaign ad for the 2026 midterms."
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨BREAKING:🚨LONGTIME TRUMP ALLY KARI LAKE TO HEAD SPECIAL GOVERNMENT ELECTION FRAUD TASK FORCE WITH POWER TO MAKE CRIMINAL REFERRALS TO DOJ - Former Arizona Republican gubernatorial and US Senate cand…
-- **3 posts** · 3 authors · ~100% Jaccard — 2026 midterms poised to have less federal oversight as Trump admin defangs election watchdog Story by
+- **2 posts** · 2 authors · ~100% Jaccard — The Trump Administration’s Multiple Investigations of the 2020 Election May Have More to Do With the 2026 Midterms
 - _…4 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -95,19 +95,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (42 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (39 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews (6 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- sidney powell, radical left (11 posts)
+- stop gaslighting, happy talk (9 posts)
+- sidney powell, radical left (12 posts)
+- level touch, country voters (5 posts)
 - administration multiple, ruling potentially, plaintiffs renew, request block (5 posts)
-- level touch, maga rebuilding, country voters (4 posts)
-- ww2 destroy, coward facist, sorry senile, losers america, loves winners (25 posts)
-- _…51 more emerging theme(s)._
+- coward facist, tolerate pathetic, losers killed, ww2 destroy, pig bonespur draft (14 posts)
+- _…49 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1207 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1212 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
