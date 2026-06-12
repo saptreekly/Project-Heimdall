@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-12 21:07:24 UTC
+> Tactical snapshot · 2026-06-12 21:58:46 UTC
 
 ## Corpus
 
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **16**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **28**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **259**
-- Net new: **1321** · re-seen: **1275**
-- Duplicate rate: **49.1%**
+- Runs: **260**
+- Net new: **1321** · re-seen: **1303**
+- Duplicate rate: **49.7%**
 
 ## Sentiment drift
 
@@ -36,11 +36,11 @@
 
 ## Layered coordination (frames)
 
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, voter fraud, looming midterm elections, breaking longtime, trump ally (12 posts · 4 authors · 4 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, favored win, hold chance, control house (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win, democrats hold, control house (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
@@ -98,10 +98,10 @@ _None spanning multiple narratives._
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (41 posts)
-- radical left (7 posts)
+- deep state, executive order election, order election integrity, sign executive order, election integrity targeting (7 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
 - corrupt doj, stop gaslighting, happy talk (8 posts)
-- sidney powell (10 posts)
+- sidney powell, radical left (11 posts)
 - tina peters, charges related, security breaches (6 posts)
 - level touch, country voters (5 posts)
 - _…55 more emerging theme(s)._
