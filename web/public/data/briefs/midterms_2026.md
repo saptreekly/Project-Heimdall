@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-12 23:59:16 UTC
+> Tactical snapshot · 2026-06-13 01:36:27 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1242** |
+| Posts in database | **1260** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1206 / 469 |
-| Distinct themes | 67 |
-| Duplicate clusters (full DB) | 65 |
-| Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 1 bots / 878 authors |
+| Graph nodes / edges | 1221 / 475 |
+| Distinct themes | 60 |
+| Duplicate clusters (full DB) | 68 |
+| Fuzzy clusters (snapshot cohort) | 11 |
+| IU astroturf overlap | 1 bots / 890 authors |
 
 ## Ingest activity
 
 - Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Net-new posts logged: **18**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **263**
-- Net new: **1321** · re-seen: **1334**
-- Duplicate rate: **50.2%**
+- Runs: **264**
+- Net new: **1339** · re-seen: **1335**
+- Duplicate rate: **49.9%**
 
 ## Sentiment drift
 
@@ -36,12 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, voter fraud, looming midterm elections, breaking longtime, trump ally (12 posts · 4 authors · 4 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, favored win, democrats hold, control house (7 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · florida supreme (7 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win (6 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -70,7 +70,7 @@
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
-- _…56 more exact-duplicate cluster(s) in database._
+- _…59 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -78,13 +78,13 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **6 posts** · 6 authors · ~100% Jaccard — BREAKING: Republicans are favored to NOW WIN the HOUSE in the 2026 MIDTERMS. THIS IS HUGE MAGA KEEPS ON WINNING BIG TIME TIME TO GET LOUD 🔥
 - **6 posts** · 5 authors · ~100% Jaccard — Kerri Lane DNC is Scrambling After This BOMBSHELL Hits 2026 Midterms via
 - **4 posts** · 4 authors · ~100% Jaccard — Marjorie Taylor Greene on President Trump saying he loves inflation: "That one's going to come back and bite him. He basically just handed the Democrats a great big campaign ad for the 2026 midterms."
+- **4 posts** · 4 authors · ~100% Jaccard — BREAKING: Republicans are favored to NOW WIN the HOUSE in the 2026 MIDTERMS. THIS IS HUGE MAGA KEEPS ON WINNING BIG TIME TIME TO GET LOUD 🔥
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨BREAKING:🚨LONGTIME TRUMP ALLY KARI LAKE TO HEAD SPECIAL GOVERNMENT ELECTION FRAUD TASK FORCE WITH POWER TO MAKE CRIMINAL REFERRALS TO DOJ - Former Arizona Republican gubernatorial and US Senate cand…
-- **2 posts** · 2 authors · ~100% Jaccard — The Trump Administration’s Multiple Investigations of the 2020 Election May Have More to Do With the 2026 Midterms
-- **2 posts** · 2 authors · ~100% Jaccard — DNC Freaking Out After SCANDAL ROCKS 2026 Midterms via
-- _…2 more fuzzy cluster(s) in snapshot cohort._
+- **2 posts** · 2 authors · ~100% Jaccard — 🚨Breaking: just launched SpaceX on Nasdaq — a historic day and the largest IPO ever! Now the world’s first trillionaire, he vows to help Trump win the 2026 midterms. Stand with Elon? A. Yes B. No
+- **2 posts** · 2 authors · ~100% Jaccard — Alan Dershowitz is 87 years old, a Harvard Law professor emeritus, and one of the most recognized legal minds in America. He has been a registered Democrat since he was 14 years old — over 70 years.…
+- _…5 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -96,19 +96,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (41 posts)
-- deep state, executive order election, order election integrity, sign executive order, election integrity targeting (7 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- sidney powell, radical left (11 posts)
-- tina peters, charges related, security breaches (6 posts)
+- dismantling rigging (13 posts)
 - level touch, country voters (5 posts)
-- _…55 more emerging theme(s)._
+- ww2 destroy, bonespur draft, senile coward facist, tolerate pathetic, losers killed (18 posts)
+- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (6 posts)
+- awakening largest, actually believe (5 posts)
+- broke buried, debt directionless (5 posts)
+- lose midterms, midterms send, send message, midterms send message, invalidate midterms (5 posts)
+- _…48 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1242 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1260 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
