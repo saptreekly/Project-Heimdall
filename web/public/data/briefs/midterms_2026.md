@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-13 04:41:50 UTC
+> Tactical snapshot · 2026-06-13 05:11:22 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.00 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1221 / 475 |
-| Distinct themes | 68 |
+| Distinct themes | 70 |
 | Duplicate clusters (full DB) | 68 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 1 bots / 890 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
+- Re-sightings (duplicate encounters): **1**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **265**
-- Net new: **1339** · re-seen: **1337**
+- Runs: **266**
+- Net new: **1339** · re-seen: **1338**
 - Duplicate rate: **50.0%**
 
 ## Sentiment drift
@@ -97,14 +97,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (43 posts)
-- deep state, executive order election, order election integrity, sign executive order, election integrity targeting (7 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (41 posts)
+- radical left (7 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
 - corrupt doj, stop gaslighting, happy talk (9 posts)
-- sidney powell, radical left (13 posts)
+- sidney powell (10 posts)
 - level touch, country voters (5 posts)
 - data centers, power grids, artificial intelligence (5 posts)
-- _…56 more emerging theme(s)._
+- _…58 more emerging theme(s)._
 
 ## Scope note
 
