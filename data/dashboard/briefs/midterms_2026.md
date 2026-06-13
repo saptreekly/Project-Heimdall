@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-13 17:59:50 UTC
+> Tactical snapshot · 2026-06-13 18:55:40 UTC
 
 ## Corpus
 
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1267 / 489 |
-| Distinct themes | 66 |
+| Distinct themes | 73 |
 | Duplicate clusters (full DB) | 72 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 1 bots / 927 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **282**
-- Net new: **1394** · re-seen: **1469**
+- Runs: **283**
+- Net new: **1394** · re-seen: **1470**
 - Duplicate rate: **51.3%**
 
 ## Sentiment drift
@@ -31,12 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, ready happens, midterms hit (13 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, exposed globalists, fascist redneck (15 posts · 6 authors · 6 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, fascist redneck, judges cut (8 posts · 5 authors · 3 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, bravo pennlive, pennsylvania surveyed (9 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning, favored win (6 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -91,15 +96,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- dismantling rigging (13 posts)
-- level touch, country voters (5 posts)
-- bonespur draft, ww2 destroy, senile coward, tolerate pathetic, losers killed (18 posts)
-- cycle chaotic (8 posts)
-- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (6 posts)
-- awakening largest, actually believe (5 posts)
-- broke buried, debt directionless, results democrat (5 posts)
-- _…54 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (42 posts)
+- radical left (7 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- republican senate, pass save america, senate gop, act midterms, america act midterms (11 posts)
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- voter fraud, task force, sidney powell, looming midterm elections, breaking longtime (6 posts)
+- sanctuary cities, dem politicians, trying shut (4 posts)
+- _…61 more emerging theme(s)._
 
 ## Scope note
 
