@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 267,
+      "run_counter": 268,
       "authors": {
         "111": {
           "author_id": "111",
@@ -827,12 +827,12 @@
           "handle": "drogon_dracarys",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.6900000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 2,
-          "polls": 0,
-          "inserts_from_polls": 0,
+          "priority": 1.0,
+          "last_polled_at": "2026-06-13T23:38:42.158222+00:00",
+          "last_tweet_at": "2026-06-13T19:57:29+00:00",
+          "inserted_total": 12,
+          "polls": 1,
+          "inserts_from_polls": 5,
           "status": "active"
         },
         "1459718720952147968": {
