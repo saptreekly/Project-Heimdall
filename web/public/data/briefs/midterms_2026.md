@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-13 10:09:58 UTC
+> Tactical snapshot · 2026-06-13 10:37:01 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1237 / 480 |
-| Distinct themes | 63 |
+| Distinct themes | 68 |
 | Duplicate clusters (full DB) | 69 |
 | Fuzzy clusters (snapshot cohort) | 13 |
 | IU astroturf overlap | 1 bots / 902 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **5**
-- Net-new posts logged: **15**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **270**
-- Net new: **1355** · re-seen: **1373**
+- Runs: **271**
+- Net new: **1355** · re-seen: **1374**
 - Duplicate rate: **50.3%**
 
 ## Sentiment drift
@@ -36,11 +36,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (9 posts · 2 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, voter fraud, lose control, looming midterm elections, breaking longtime (18 posts · 8 authors · 6 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (10 posts · 2 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · florida supreme (7 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning, favored win (6 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
@@ -96,15 +96,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- act midterms, america act midterms, america act, save america act, senate gop (14 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (42 posts)
+- deep state, executive order election, order election integrity, sign executive order, election integrity targeting (7 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- sidney powell, radical left (12 posts)
+- data centers, power grids, liveprayer program (7 posts)
 - level touch, country voters (5 posts)
-- ww2 destroy, bonespur draft, senile coward facist, tolerate pathetic, losers killed (18 posts)
-- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (6 posts)
-- awakening largest, actually believe (5 posts)
-- broke buried, debt directionless, results democrat (5 posts)
-- lose midterms, midterms send, send message, midterms send message, invalidate midterms (5 posts)
-- _…50 more emerging theme(s)._
+- _…56 more emerging theme(s)._
 
 ## Scope note
 
