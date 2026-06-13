@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-13 21:24:18 UTC
+> Tactical snapshot · 2026-06-13 21:53:39 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1315** |
+| Posts in database | **1316** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -22,12 +22,12 @@
 ## Ingest activity
 
 - Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **286**
-- Net new: **1394** · re-seen: **1500**
+- Runs: **287**
+- Net new: **1395** · re-seen: **1501**
 - Duplicate rate: **51.8%**
 
 ## Sentiment drift
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, years old, exposed globalists, fascist redneck (15 posts · 6 authors · 6 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, fascist redneck (15 posts · 6 authors · 6 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, bravo pennlive, pennsylvania surveyed (9 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, favored win (6 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, breaking republicans, favored win (6 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -100,15 +100,15 @@ _None spanning multiple narratives._
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (42 posts)
 - radical left (7 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- republican senate, pass save america, senate gop, act midterms, america act midterms (11 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- voter fraud, task force, sidney powell, looming midterm elections, breaking longtime (6 posts)
-- sanctuary cities, dem politicians, trying shut (4 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
+- voter fraud, task force, sidney powell (6 posts)
+- sanctuary cities, dem politicians, trying shut (7 posts)
+- level touch, country voters (5 posts)
 - _…61 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1315 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1316 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
