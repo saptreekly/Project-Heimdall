@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-14 17:39:10 UTC
+> Tactical snapshot · 2026-06-14 18:04:19 UTC
 
 ## Corpus
 
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1295 / 498 |
-| Distinct themes | 74 |
+| Distinct themes | 72 |
 | Duplicate clusters (full DB) | 75 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 1 bots / 950 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **306**
-- Net new: **1430** · re-seen: **1547**
+- Runs: **307**
+- Net new: **1430** · re-seen: **1548**
 - Duplicate rate: **52.0%**
 
 ## Sentiment drift
@@ -98,8 +103,8 @@ _None spanning multiple narratives._
 - scott presler, officially planning (10 posts)
 - corrupt doj, stop gaslighting, happy talk (8 posts)
 - voter fraud, task force, sidney powell (6 posts)
-- sanctuary cities, dem politicians, trying shut (8 posts)
-- _…62 more emerging theme(s)._
+- sanctuary cities, dem politicians, trying shut (7 posts)
+- _…60 more emerging theme(s)._
 
 ## Scope note
 
