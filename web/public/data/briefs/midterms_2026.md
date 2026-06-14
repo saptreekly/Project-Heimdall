@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-14 22:46:58 UTC
+> Tactical snapshot · 2026-06-14 23:44:52 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1370** |
+| Posts in database | **1372** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1310 / 501 |
-| Distinct themes | 73 |
+| Graph nodes / edges | 1313 / 502 |
+| Distinct themes | 74 |
 | Duplicate clusters (full DB) | 75 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 1 bots / 964 authors |
+| IU astroturf overlap | 1 bots / 966 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **9**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **313**
-- Net new: **1449** · re-seen: **1601**
-- Duplicate rate: **52.5%**
+- Runs: **314**
+- Net new: **1451** · re-seen: **1610**
+- Duplicate rate: **52.6%**
 
 ## Sentiment drift
 
@@ -37,10 +37,10 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (18 posts · 17 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 2 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning, breaking republicans, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
@@ -80,10 +80,10 @@ _None (need ≥5 authors in 90s window)._
 
 - **8 posts** · 8 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms \| National \| Midterms
 - **3 posts** · 3 authors · ~100% Jaccard — Ken Paxton says he's No. 1 target for national Democrats in the 2026 midterms via
-- **3 posts** · 3 authors · ~100% Jaccard — Kerri Lane DNC is Scrambling After This BOMBSHELL Hits 2026 Midterms via
 - **2 posts** · 2 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms Source: The Center Square
 - **2 posts** · 2 authors · ~100% Jaccard — EXPOSED: Globalists Wargaming to STEAL THE 2026 MIDTERMS via
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨Breaking: just launched SpaceX on Nasdaq — a historic day and the largest IPO ever! Now the world’s first trillionaire, he vows to help Trump win the 2026 midterms. Stand with Elon? A. Yes B. No
+- **2 posts** · 2 authors · ~100% Jaccard — Alan Dershowitz is 87 years old, a Harvard Law professor emeritus, and one of the most recognized legal minds in America. He has been a registered Democrat since he was 14 years old — over 70 years.…
 - _…6 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -103,12 +103,12 @@ _None spanning multiple narratives._
 - scott presler, officially planning (10 posts)
 - corrupt doj, stop gaslighting, happy talk (8 posts)
 - voter fraud, task force, sidney powell (6 posts)
-- sanctuary cities, dem politicians, trying shut (7 posts)
-- _…60 more emerging theme(s)._
+- sanctuary cities, dem politicians, trying shut (8 posts)
+- _…61 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1370 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1372 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
