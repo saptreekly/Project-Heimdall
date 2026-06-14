@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-14 05:22:03 UTC
+> Tactical snapshot · 2026-06-14 06:20:07 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1281 / 492 |
-| Distinct themes | 72 |
+| Distinct themes | 73 |
 | Duplicate clusters (full DB) | 73 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 1 bots / 939 authors |
@@ -26,8 +26,8 @@
 
 ## Ingest yield (last 14 days)
 
-- Runs: **292**
-- Net new: **1415** · re-seen: **1537**
+- Runs: **293**
+- Net new: **1415** · re-seen: **1538**
 - Duplicate rate: **52.1%**
 
 ## Sentiment drift
@@ -37,7 +37,7 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, midterms source, months midterm elections (13 posts · 12 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -97,13 +97,13 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (42 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (41 posts)
 - radical left (8 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
 - republican senate, pass save america, senate gop, act midterms, america act midterms (11 posts)
 - corrupt doj, stop gaslighting, happy talk (8 posts)
 - voter fraud, task force, sidney powell (6 posts)
-- sanctuary cities, dem politicians, trying shut (7 posts)
+- sanctuary cities, dem politicians, trying shut (8 posts)
 - _…60 more emerging theme(s)._
 
 ## Scope note
