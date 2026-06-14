@@ -1,55 +1,55 @@
 {
-  "generated_at": "2026-06-07T08:26:07.826328+00:00",
+  "generated_at": "2026-06-14T08:43:03.709848+00:00",
   "window_days": 7,
   "dead_keywords": [
-    "2026 midwest democrat"
+    "2026 resigns electoral"
   ],
   "suggestions": [
     {
-      "query": "2026 save america midterms",
+      "query": "2026 win house midterms",
       "source": "corpus c-TF-IDF",
-      "score": 127.35,
+      "score": 86.69,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
     },
     {
-      "query": "2026 resigns electoral",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 35 posts)",
-      "score": 35.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
       "query": "2026 disaster looms",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 35 posts)",
-      "score": 35.0,
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 42 posts)",
+      "score": 42.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
       "query": "2026 state setting",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 35 posts)",
-      "score": 35.0,
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 42 posts)",
+      "score": 42.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
       "query": "2026 hulhumale phase",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 35 posts)",
-      "score": 35.0,
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 42 posts)",
+      "score": 42.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 ww2 destroy",
-      "source": "theme cluster (ww2 destroy \u00b7 coward facist \u00b7 sorry senile \u00b7 losers america, 19 posts)",
+      "query": "2026 taxes working",
+      "source": "theme cluster (taxes working \u00b7 million americans \u00b7 replaced end \u00b7 unregulated dirty, 19 posts)",
       "score": 19.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 coward facist",
-      "source": "theme cluster (ww2 destroy \u00b7 coward facist \u00b7 sorry senile \u00b7 losers america, 19 posts)",
+      "query": "2026 million americans",
+      "source": "theme cluster (taxes working \u00b7 million americans \u00b7 replaced end \u00b7 unregulated dirty, 19 posts)",
       "score": 19.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 sorry senile",
-      "source": "theme cluster (ww2 destroy \u00b7 coward facist \u00b7 sorry senile \u00b7 losers america, 19 posts)",
+      "query": "2026 replaced end",
+      "source": "theme cluster (taxes working \u00b7 million americans \u00b7 replaced end \u00b7 unregulated dirty, 19 posts)",
+      "score": 19.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 unregulated dirty",
+      "source": "theme cluster (taxes working \u00b7 million americans \u00b7 replaced end \u00b7 unregulated dirty, 19 posts)",
       "score": 19.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
