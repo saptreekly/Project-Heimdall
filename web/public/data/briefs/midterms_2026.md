@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-14 20:04:09 UTC
+> Tactical snapshot · 2026-06-14 20:42:47 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1351** |
+| Posts in database | **1370** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1295 / 498 |
-| Distinct themes | 74 |
+| Graph nodes / edges | 1310 / 501 |
+| Distinct themes | 70 |
 | Duplicate clusters (full DB) | 75 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 1 bots / 950 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| IU astroturf overlap | 1 bots / 964 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **309**
-- Net new: **1430** · re-seen: **1568**
-- Duplicate rate: **52.3%**
+- Runs: **310**
+- Net new: **1449** · re-seen: **1568**
+- Duplicate rate: **52.0%**
 
 ## Sentiment drift
 
@@ -36,12 +31,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, midterms source, months midterm elections (16 posts · 15 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, vote midterms (19 posts · 18 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, breaking republicans, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -79,11 +74,11 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **8 posts** · 8 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms \| National \| Midterms
-- **6 posts** · 5 authors · ~100% Jaccard — Kerri Lane DNC is Scrambling After This BOMBSHELL Hits 2026 Midterms via
-- **4 posts** · 4 authors · ~100% Jaccard — Marjorie Taylor Greene on President Trump saying he loves inflation: "That one's going to come back and bite him. He basically just handed the Democrats a great big campaign ad for the 2026 midterms."
 - **3 posts** · 3 authors · ~100% Jaccard — Ken Paxton says he's No. 1 target for national Democrats in the 2026 midterms via
-- **2 posts** · 2 authors · ~100% Jaccard — 🚨 WOW! Scott Presler is officially planning to PRIMARY CHALLENGE Senate Leader John Thune if the SAVE America Act does not take effect for the 2026 midterms “I promise to lead the charge to primary &…
+- **3 posts** · 3 authors · ~100% Jaccard — Kerri Lane DNC is Scrambling After This BOMBSHELL Hits 2026 Midterms via
 - **2 posts** · 2 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms Source: The Center Square
+- **2 posts** · 2 authors · ~100% Jaccard — EXPOSED: Globalists Wargaming to STEAL THE 2026 MIDTERMS via
+- **2 posts** · 2 authors · ~100% Jaccard — 🚨Breaking: just launched SpaceX on Nasdaq — a historic day and the largest IPO ever! Now the world’s first trillionaire, he vows to help Trump win the 2026 midterms. Stand with Elon? A. Yes B. No
 - _…6 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -96,19 +91,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (42 posts)
-- radical left (8 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- scott presler, officially planning (10 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- voter fraud, task force, sidney powell (6 posts)
-- sanctuary cities, dem politicians, trying shut (8 posts)
-- _…62 more emerging theme(s)._
+- act midterms, america act midterms, america act, save america act, senate gop (14 posts)
+- level touch, country voters (4 posts)
+- ww2 destroy, senile coward, dodger inbreeds, bonespur draft, tolerate pathetic (19 posts)
+- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (8 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (6 posts)
+- cycle chaotic, sec markwayne, mullin considering, sending ice (6 posts)
+- awakening largest, actually believe (5 posts)
+- broke buried, debt directionless, results democrat (5 posts)
+- _…56 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1351 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1370 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
