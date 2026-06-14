@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-14 06:20:07 UTC
+> Tactical snapshot · 2026-06-14 07:03:38 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1336** |
+| Posts in database | **1351** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.15 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1281 / 492 |
-| Distinct themes | 73 |
-| Duplicate clusters (full DB) | 73 |
+| Graph nodes / edges | 1295 / 498 |
+| Distinct themes | 69 |
+| Duplicate clusters (full DB) | 75 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 1 bots / 939 authors |
+| IU astroturf overlap | 1 bots / 950 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **5**
+- Net-new posts logged: **15**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **293**
-- Net new: **1415** · re-seen: **1538**
-- Duplicate rate: **52.1%**
+- Runs: **294**
+- Net new: **1430** · re-seen: **1543**
+- Duplicate rate: **51.9%**
 
 ## Sentiment drift
 
@@ -36,12 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, midterms source, months midterm elections (13 posts · 12 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, midterms source (16 posts · 14 authors · 3 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, breaking republicans, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -51,7 +51,7 @@
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
-- cross_author_fuzzy_6authors_6posts_j1.00
+- cross_author_fuzzy_8authors_8posts_j1.00
 - cross_author_fuzzy_6authors_6posts_j1.00
 - cross_author_fuzzy_6authors_6posts_j1.00
 - cross_author_fuzzy_6authors_6posts_j0.94
@@ -70,7 +70,7 @@
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
 - **7 posts** · 1 author(s) — 💩 and RINOs 💩 ENOUGH IS ENOUGH, NO MORE GAMES!!! STOP being spineless, gutless TDS RINOs!!! PUT AMERICA FIRST or GET THE HELL OUT!!! 💥TERMINATE THE FILIBUSTER — NOW AND VOTE! 💥 ✅Fully fund DHS – It’s…
-- _…64 more exact-duplicate cluster(s) in database._
+- _…66 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -78,12 +78,12 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **6 posts** · 6 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms \| National \| Midterms
+- **8 posts** · 8 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms \| National \| Midterms
 - **6 posts** · 5 authors · ~100% Jaccard — Kerri Lane DNC is Scrambling After This BOMBSHELL Hits 2026 Midterms via
 - **4 posts** · 4 authors · ~100% Jaccard — Marjorie Taylor Greene on President Trump saying he loves inflation: "That one's going to come back and bite him. He basically just handed the Democrats a great big campaign ad for the 2026 midterms."
 - **3 posts** · 3 authors · ~100% Jaccard — Ken Paxton says he's No. 1 target for national Democrats in the 2026 midterms via
+- **2 posts** · 2 authors · ~100% Jaccard — 🚨 WOW! Scott Presler is officially planning to PRIMARY CHALLENGE Senate Leader John Thune if the SAVE America Act does not take effect for the 2026 midterms “I promise to lead the charge to primary &…
 - **2 posts** · 2 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms Source: The Center Square
-- **2 posts** · 2 authors · ~100% Jaccard — EXPOSED: Globalists Wargaming to STEAL THE 2026 MIDTERMS via
 - _…6 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -96,19 +96,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (41 posts)
-- radical left (8 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- republican senate, pass save america, senate gop, act midterms, america act midterms (11 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- voter fraud, task force, sidney powell (6 posts)
-- sanctuary cities, dem politicians, trying shut (8 posts)
-- _…60 more emerging theme(s)._
+- dismantling rigging (14 posts)
+- level touch, country voters (4 posts)
+- bonespur draft, senile coward, tolerate pathetic, losers killed, dodger inbreeds (18 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (6 posts)
+- cycle chaotic (6 posts)
+- awakening largest, actually believe (5 posts)
+- broke buried, debt directionless, results democrat (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- _…57 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1336 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1351 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
