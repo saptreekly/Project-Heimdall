@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-15 16:09:23 UTC
+> Tactical snapshot · 2026-06-15 16:24:52 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1347 / 514 |
-| Distinct themes | 77 |
+| Distinct themes | 82 |
 | Duplicate clusters (full DB) | 77 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 1 bots / 993 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **18**
+- Re-sightings (duplicate encounters): **1**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **324**
-- Net new: **1489** · re-seen: **1681**
+- Runs: **325**
+- Net new: **1489** · re-seen: **1682**
 - Duplicate rate: **53.0%**
 
 ## Sentiment drift
@@ -39,7 +39,7 @@
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 18 authors · 3 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (9 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -99,12 +99,12 @@ _None spanning multiple narratives._
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (41 posts)
 - radical left (8 posts)
-- gains failed, gerrymanders possible (7 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
 - stop gaslighting, happy talk (8 posts)
 - voter fraud, task force, sidney powell, breaking longtime, trump ally (6 posts)
-- sanctuary cities, dem politicians, trying shut (5 posts)
-- _…64 more emerging theme(s)._
+- sanctuary cities, dem politicians, trying shut (4 posts)
+- cash party, level touch, country voters (5 posts)
+- _…69 more emerging theme(s)._
 
 ## Scope note
 
