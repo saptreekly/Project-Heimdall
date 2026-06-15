@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-15 19:54:41 UTC
+> Tactical snapshot · 2026-06-15 20:18:38 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1410** |
+| Posts in database | **1411** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -21,13 +21,13 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **19**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **326**
-- Net new: **1489** · re-seen: **1701**
+- Runs: **327**
+- Net new: **1490** · re-seen: **1702**
 - Duplicate rate: **53.3%**
 
 ## Sentiment drift
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 18 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 19 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, radical left, alan dershowitz, harvard law (15 posts · 6 authors · 6 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (9 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -81,9 +81,9 @@ _None (need ≥5 authors in 90s window)._
 - **9 posts** · 9 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms \| National \| Midterms
 - **3 posts** · 3 authors · ~100% Jaccard — Damn right. DHS Secretary Mullin defends citizenship checks ahead of 2026 midterms \| Fox News
 - **3 posts** · 3 authors · ~100% Jaccard — Ken Paxton says he's No. 1 target for national Democrats in the 2026 midterms via
+- **3 posts** · 3 authors · ~100% Jaccard — Alan Dershowitz is 87 years old, a Harvard Law professor emeritus, and one of the most recognized legal minds in America. He has been a registered Democrat since he was 14 years old — over 70 years.…
 - **2 posts** · 2 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms Source: The Center Square
 - **2 posts** · 2 authors · ~100% Jaccard — EXPOSED: Globalists Wargaming to STEAL THE 2026 MIDTERMS via
-- **2 posts** · 2 authors · ~100% Jaccard — 🚨Breaking: just launched SpaceX on Nasdaq — a historic day and the largest IPO ever! Now the world’s first trillionaire, he vows to help Trump win the 2026 midterms. Stand with Elon? A. Yes B. No
 - _…5 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -97,18 +97,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (41 posts)
-- radical left (8 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (43 posts)
+- voting machines, verified lists (6 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- stop gaslighting, happy talk (8 posts)
-- voter fraud, task force, sidney powell, breaking longtime, trump ally (6 posts)
-- sanctuary cities, dem politicians, trying shut (4 posts)
-- cash party, level touch, country voters (5 posts)
+- scott presler, officially planning (9 posts)
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- sidney powell (9 posts)
+- level touch, country voters (6 posts)
 - _…69 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1410 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1411 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
