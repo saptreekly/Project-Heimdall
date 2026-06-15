@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-15 21:50:26 UTC
+> Tactical snapshot · 2026-06-15 22:25:51 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1365 / 523 |
-| Distinct themes | 78 |
+| Distinct themes | 81 |
 | Duplicate clusters (full DB) | 77 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 1 bots / 1004 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **19**
+- Re-sightings (duplicate encounters): **2**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **330**
-- Net new: **1509** · re-seen: **1723**
+- Runs: **331**
+- Net new: **1509** · re-seen: **1725**
 - Duplicate rate: **53.3%**
 
 ## Sentiment drift
@@ -37,8 +37,8 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 19 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, alan dershowitz, harvard law, professor emeritus (15 posts · 7 authors · 5 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, alan dershowitz, harvard law, professor emeritus (13 posts · 5 authors · 5 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -100,11 +100,11 @@ _None spanning multiple narratives._
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (43 posts)
 - voting machines, verified lists (6 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- scott presler, officially planning (10 posts)
 - stop gaslighting, happy talk (8 posts)
 - voter fraud, task force, sidney powell, breaking longtime, trump ally (6 posts)
 - level touch, country voters (5 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (16 posts)
-- _…64 more emerging theme(s)._
+- _…67 more emerging theme(s)._
 
 ## Scope note
 
