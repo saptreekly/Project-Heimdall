@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-15 06:10:12 UTC
+> Tactical snapshot · 2026-06-15 07:01:17 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1333 / 511 |
-| Distinct themes | 79 |
+| Distinct themes | 78 |
 | Duplicate clusters (full DB) | 77 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 1 bots / 982 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
+- Re-sightings (duplicate encounters): **29**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **317**
-- Net new: **1471** · re-seen: **1613**
-- Duplicate rate: **52.3%**
+- Runs: **318**
+- Net new: **1471** · re-seen: **1642**
+- Duplicate rate: **52.7%**
 
 ## Sentiment drift
 
@@ -37,7 +37,7 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 18 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, hackers preparing, local governments, phishing credential (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -103,8 +103,8 @@ _None spanning multiple narratives._
 - scott presler, officially planning (10 posts)
 - corrupt doj, stop gaslighting, happy talk (8 posts)
 - voter fraud, task force, sidney powell (6 posts)
-- sanctuary cities, dem politicians, trying shut (7 posts)
-- _…66 more emerging theme(s)._
+- sanctuary cities, dem politicians, trying shut (8 posts)
+- _…65 more emerging theme(s)._
 
 ## Scope note
 
