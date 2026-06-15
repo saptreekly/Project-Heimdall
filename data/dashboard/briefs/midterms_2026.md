@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-15 20:41:39 UTC
+> Tactical snapshot · 2026-06-15 21:31:39 UTC
 
 ## Corpus
 
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1365 / 523 |
-| Distinct themes | 76 |
+| Distinct themes | 78 |
 | Duplicate clusters (full DB) | 77 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 1 bots / 1004 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **328**
-- Net new: **1509** · re-seen: **1702**
+- Runs: **329**
+- Net new: **1509** · re-seen: **1704**
 - Duplicate rate: **53.0%**
 
 ## Sentiment drift
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, vote midterms (20 posts · 19 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 19 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, alan dershowitz, harvard law, professor emeritus (15 posts · 7 authors · 5 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · florida supreme, allowing effect (7 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -91,15 +96,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- reconciliation package, i'll updated (16 posts)
-- cash party, level touch, country voters (4 posts)
-- coward facist, nazi pig bonespur, draft dodger, ww2 destroy (16 posts)
-- rating given (9 posts)
-- throw donald, costa rica, job approval, unfortunate reality, inadvertently joined (8 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (6 posts)
-- broke buried, debt directionless, results democrat (6 posts)
-- awakening largest, actually believe (5 posts)
-- _…63 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, reid sounds, insane assume (9 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (43 posts)
+- voting machines, verified lists (6 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- stop gaslighting, happy talk (8 posts)
+- voter fraud, task force, sidney powell, breaking longtime, trump ally (6 posts)
+- level touch, country voters (5 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (16 posts)
+- _…64 more emerging theme(s)._
 
 ## Scope note
 
