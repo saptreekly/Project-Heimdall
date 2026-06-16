@@ -1,11 +1,11 @@
 {
   "version": 5,
-  "generated_at": "2026-06-16T14:33:47.300387+00:00",
+  "generated_at": "2026-06-16T15:26:19.352860+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
-      "keywords": "author:Dr_Stephen1",
+      "keywords": "2026 election integrity",
       "post_count": 1459
     }
   ],
@@ -6194,9 +6194,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "399178595",
+              "38108253",
               "3085410827",
-              "38108253"
+              "399178595"
             ]
           },
           {
@@ -30337,15 +30337,63 @@
             "source_post_id": 753,
             "target_post_id": null,
             "occurred_at": "2025-10-15T16:18:52"
+          },
+          {
+            "source": "1387876697341575174",
+            "target": "1520136057928486920",
+            "type": "reply",
+            "source_post_id": 721,
+            "target_post_id": null,
+            "occurred_at": "2026-03-12T03:10:48"
+          },
+          {
+            "source": "1825378011606380544",
+            "target": "44196397",
+            "type": "reply",
+            "source_post_id": 723,
+            "target_post_id": null,
+            "occurred_at": "2026-02-19T16:04:18"
+          },
+          {
+            "source": "36679390",
+            "target": "1499556521457303555",
+            "type": "reply",
+            "source_post_id": 724,
+            "target_post_id": null,
+            "occurred_at": "2026-02-10T13:09:41"
+          },
+          {
+            "source": "1431073121289768960",
+            "target": "30235016",
+            "type": "reply",
+            "source_post_id": 1253,
+            "target_post_id": null,
+            "occurred_at": "2026-01-30T01:59:09"
+          },
+          {
+            "source": "1589633240046120961",
+            "target": "18584875",
+            "type": "reply",
+            "source_post_id": 1255,
+            "target_post_id": null,
+            "occurred_at": "2025-12-09T02:34:28"
+          },
+          {
+            "source": "1466471983001055239",
+            "target": "1474502684312932354",
+            "type": "reply",
+            "source_post_id": 1259,
+            "target_post_id": null,
+            "occurred_at": "2025-07-29T17:21:38"
           }
         ],
         "stats": {
-          "edge_count": 1739,
+          "edge_count": 1745,
           "author_count": 1023,
           "connected_author_count": 393,
           "isolated_author_count": 630,
           "by_type": {
-            "reply": 1739
+            "reply": 1745
           }
         }
       },
@@ -30386,15 +30434,14 @@
             "cluster_count": 1,
             "clusters": [
               {
-                "cluster_id": 0,
+                "cluster_id": 1,
                 "label": "election integrity",
-                "size": 3,
+                "size": 2,
                 "post_ids": [
                   1258,
-                  1257,
                   1256
                 ],
-                "emerging_theme": true
+                "emerging_theme": false
               }
             ],
             "continues_from": []
@@ -43817,10 +43864,10 @@
           }
         ],
         "sightings": {
-          "total_resightings": 1,
+          "total_resightings": 27,
           "total_net_new": 0,
           "daily_resightings": {
-            "2026-06-16": 1
+            "2026-06-16": 27
           },
           "daily_net_new": {}
         }
@@ -43841,7 +43888,7 @@
         "coordination_signal_count": 89,
         "distinct_theme_count": 83,
         "theme_cluster_count": 83,
-        "graph_edge_count": 1739,
+        "graph_edge_count": 1745,
         "graph_author_count": 1023,
         "graph_connected_author_count": 393,
         "graph_coverage_pct": 38.4,
@@ -43856,8 +43903,8 @@
       },
       "brief": {
         "version": 1,
-        "generated_at": "2026-06-16T14:33:47.300387+00:00",
-        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-16 14:33:47 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **1459** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.30 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 1388 / 528 |\n| Distinct themes | 83 |\n| Duplicate clusters (full DB) | 78 |\n| Fuzzy clusters (snapshot cohort) | 11 |\n| IU astroturf overlap | 1 bots / 1023 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **1**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **334**\n- Net new: **1358** \u00b7 re-seen: **1833**\n- Duplicate rate: **57.4%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts \u00b7 18 authors \u00b7 3 exact \u00b7 2 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 similar rules (11 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 illinois gop, chair bob, grogan talks (11 posts \u00b7 5 authors \u00b7 4 exact \u00b7 2 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 task force, voter fraud, breaking longtime, trump ally, special government (8 posts \u00b7 2 authors \u00b7 2 exact \u00b7 1 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 court announcement, nears rulings, ele watch (7 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 loves inflation, basically handed, marjorie taylor, greene president (7 posts \u00b7 1 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_15_size_3\n- dense_cluster_489_size_3\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_9authors_9posts_j1.00\n- cross_author_fuzzy_7authors_7posts_j0.95\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_5authors_6posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **17 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- **17 posts** \u00b7 1 author(s) \u2014 Republican \u201c BIG BEAUTIFUL BILL\u201d Republicans planned to DELAY what was in the Bill on purpose with the help of project 2025 H.R.1 (The \"Big Beautiful Bill\") was designed to delay the damage until aft\u2026\n- **10 posts** \u00b7 1 author(s) \u2014 Millennials &amp; Gen Z We don't just want the dream back\u2014we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.\u2026\n- **9 posts** \u00b7 1 author(s) \u2014 War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc\u2026\n- **8 posts** \u00b7 1 author(s) \u2014 \ud83d\udea8The FBI and DOJ need to go to California now, while the fraud is going on\u2014it's a crime in progress\u2014and investigate and arrest now\u2014not three months from now, before they destroy the evidence.\ud83d\udea8 The Ca\u2026\n- _\u202669 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **9 posts** \u00b7 9 authors \u00b7 ~100% Jaccard \u2014 Poll spells disaster for Republicans in 2026 midterms \\| National \\| Midterms\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Damn right. DHS Secretary Mullin defends citizenship checks ahead of 2026 midterms \\| Fox News\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Ken Paxton says he's No. 1 target for national Democrats in the 2026 midterms via\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Alan Dershowitz is 87 years old, a Harvard Law professor emeritus, and one of the most recognized legal minds in America. He has been a registered Democrat since he was 14 years old \u2014 over 70 years.\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Poll spells disaster for Republicans in 2026 midterms Source: The Center Square\n- _\u20265 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (43 posts)\n- voting machines, verified lists (6 posts)\n- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)\n- corrupt doj, stop gaslighting, happy talk (8 posts)\n- sidney powell, radical left, sanctuary cities (10 posts)\n- level touch, country voters (5 posts)\n- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (17 posts)\n- _\u202669 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 1459 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
+        "generated_at": "2026-06-16T15:26:19.352860+00:00",
+        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-16 15:26:19 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **1459** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.30 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 1388 / 528 |\n| Distinct themes | 83 |\n| Duplicate clusters (full DB) | 78 |\n| Fuzzy clusters (snapshot cohort) | 11 |\n| IU astroturf overlap | 1 bots / 1023 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **27**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **334**\n- Net new: **1338** \u00b7 re-seen: **1860**\n- Duplicate rate: **58.2%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts \u00b7 18 authors \u00b7 3 exact \u00b7 2 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 similar rules (11 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 illinois gop, chair bob, grogan talks (11 posts \u00b7 5 authors \u00b7 4 exact \u00b7 2 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 task force, voter fraud, breaking longtime, trump ally, special government (8 posts \u00b7 2 authors \u00b7 2 exact \u00b7 1 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 court announcement, nears rulings, ele watch (7 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 loves inflation, basically handed, marjorie taylor, greene president (7 posts \u00b7 1 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_15_size_3\n- dense_cluster_489_size_3\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_9authors_9posts_j1.00\n- cross_author_fuzzy_7authors_7posts_j0.95\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_5authors_6posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **17 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- **17 posts** \u00b7 1 author(s) \u2014 Republican \u201c BIG BEAUTIFUL BILL\u201d Republicans planned to DELAY what was in the Bill on purpose with the help of project 2025 H.R.1 (The \"Big Beautiful Bill\") was designed to delay the damage until aft\u2026\n- **10 posts** \u00b7 1 author(s) \u2014 Millennials &amp; Gen Z We don't just want the dream back\u2014we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.\u2026\n- **9 posts** \u00b7 1 author(s) \u2014 War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc\u2026\n- **8 posts** \u00b7 1 author(s) \u2014 \ud83d\udea8The FBI and DOJ need to go to California now, while the fraud is going on\u2014it's a crime in progress\u2014and investigate and arrest now\u2014not three months from now, before they destroy the evidence.\ud83d\udea8 The Ca\u2026\n- _\u202669 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **9 posts** \u00b7 9 authors \u00b7 ~100% Jaccard \u2014 Poll spells disaster for Republicans in 2026 midterms \\| National \\| Midterms\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Damn right. DHS Secretary Mullin defends citizenship checks ahead of 2026 midterms \\| Fox News\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Ken Paxton says he's No. 1 target for national Democrats in the 2026 midterms via\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Alan Dershowitz is 87 years old, a Harvard Law professor emeritus, and one of the most recognized legal minds in America. He has been a registered Democrat since he was 14 years old \u2014 over 70 years.\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Poll spells disaster for Republicans in 2026 midterms Source: The Center Square\n- _\u20265 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (43 posts)\n- voting machines, verified lists (6 posts)\n- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)\n- corrupt doj, stop gaslighting, happy talk (8 posts)\n- sidney powell, radical left, sanctuary cities (10 posts)\n- level touch, country voters (5 posts)\n- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (17 posts)\n- _\u202669 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 1459 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
         "meta": {
           "narrative_name": "midterms_2026",
           "posts_total_db": 1459,
@@ -43892,18 +43939,18 @@
             "available": true,
             "window_days": 14,
             "runs": 334,
-            "net_new": 1358,
-            "duplicates": 1833,
-            "filtered": 905,
-            "fetched": 4096,
-            "duplicate_rate": 0.574,
-            "latest_run_at": "2026-06-16T14:33:45.896446+00:00"
+            "net_new": 1338,
+            "duplicates": 1860,
+            "filtered": 918,
+            "fetched": 4116,
+            "duplicate_rate": 0.582,
+            "latest_run_at": "2026-06-16T15:26:17.829314+00:00"
           },
           "sightings": {
-            "total_resightings": 1,
+            "total_resightings": 27,
             "total_net_new": 0,
             "daily_resightings": {
-              "2026-06-16": 1
+              "2026-06-16": 27
             },
             "daily_net_new": {}
           },
@@ -44762,7 +44809,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-16",
-      "requests_used": 18
+      "requests_used": 20
     }
   }
 }
