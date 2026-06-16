@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-16 19:46:42 UTC
+> Tactical snapshot · 2026-06-16 20:00:22 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1405 / 536 |
-| Distinct themes | 83 |
+| Distinct themes | 91 |
 | Duplicate clusters (full DB) | 81 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 1 bots / 1033 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **333**
-- Net new: **1298** · re-seen: **1861**
-- Duplicate rate: **58.9%**
+- Net new: **1278** · re-seen: **1863**
+- Duplicate rate: **59.3%**
 
 ## Sentiment drift
 
@@ -31,14 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, vote midterms (20 posts · 19 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · map allowing (8 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · basically handed, marjorie taylor, greene president (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 18 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · illinois gop, chair bob, grogan talks (11 posts · 4 authors · 4 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · loves inflation, basically handed, marjorie taylor, greene president (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, ele watch, viral clip (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -92,15 +96,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- act midterms, america act midterms, save america, america act, save america act (15 posts)
-- level touch, country voters (4 posts)
-- coward facist, nazi pig bonespur, draft dodger, ww2 destroy (17 posts)
-- rating given, absolute bloodbath (10 posts)
-- map allowing (8 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (7 posts)
-- broke buried, debt directionless, results democrat (6 posts)
-- costa rica, job approval, unfortunate reality, inadvertently joined (6 posts)
-- _…69 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (44 posts)
+- voting machines, verified lists (6 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- stop gaslighting, happy talk (8 posts)
+- voter fraud, task force, sidney powell, breaking longtime, trump ally (6 posts)
+- level touch, country voters (6 posts)
+- solution architect's, local communities, power grids (6 posts)
+- _…77 more emerging theme(s)._
 
 ## Scope note
 
