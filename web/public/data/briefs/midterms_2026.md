@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-16 16:04:32 UTC
+> Tactical snapshot · 2026-06-16 19:46:42 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1459** |
+| Posts in database | **1479** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1388 / 528 |
+| Graph nodes / edges | 1405 / 536 |
 | Distinct themes | 83 |
-| Duplicate clusters (full DB) | 78 |
+| Duplicate clusters (full DB) | 81 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 1 bots / 1023 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| IU astroturf overlap | 1 bots / 1033 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **335**
-- Net new: **1338** · re-seen: **1861**
-- Duplicate rate: **58.2%**
+- Runs: **333**
+- Net new: **1298** · re-seen: **1861**
+- Duplicate rate: **58.9%**
 
 ## Sentiment drift
 
@@ -36,13 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 18 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · illinois gop, chair bob, grogan talks (11 posts · 5 authors · 4 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, vote midterms (20 posts · 19 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, voter fraud, breaking longtime, trump ally, special government (8 posts · 2 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · loves inflation, basically handed, marjorie taylor, greene president (7 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · map allowing (8 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · basically handed, marjorie taylor, greene president (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -70,7 +66,7 @@
 - **10 posts** · 1 author(s) — Millennials &amp; Gen Z We don't just want the dream back—we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.…
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
-- _…69 more exact-duplicate cluster(s) in database._
+- _…72 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -82,7 +78,7 @@ _None (need ≥5 authors in 90s window)._
 - **9 posts** · 9 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms \| National \| Midterms
 - **3 posts** · 3 authors · ~100% Jaccard — Damn right. DHS Secretary Mullin defends citizenship checks ahead of 2026 midterms \| Fox News
 - **3 posts** · 3 authors · ~100% Jaccard — Ken Paxton says he's No. 1 target for national Democrats in the 2026 midterms via
-- **3 posts** · 3 authors · ~100% Jaccard — Alan Dershowitz is 87 years old, a Harvard Law professor emeritus, and one of the most recognized legal minds in America. He has been a registered Democrat since he was 14 years old — over 70 years.…
+- **2 posts** · 2 authors · ~100% Jaccard — Data Analyst: New Numbers Give Clear 'Warning Sign' for Dems Ahead of 2026 Midterms
 - **2 posts** · 2 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms Source: The Center Square
 - _…5 more fuzzy cluster(s) in snapshot cohort._
 
@@ -96,19 +92,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (43 posts)
-- voting machines, verified lists (6 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- sidney powell, radical left, sanctuary cities (10 posts)
-- level touch, country voters (5 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (17 posts)
+- act midterms, america act midterms, save america, america act, save america act (15 posts)
+- level touch, country voters (4 posts)
+- coward facist, nazi pig bonespur, draft dodger, ww2 destroy (17 posts)
+- rating given, absolute bloodbath (10 posts)
+- map allowing (8 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (7 posts)
+- broke buried, debt directionless, results democrat (6 posts)
+- costa rica, job approval, unfortunate reality, inadvertently joined (6 posts)
 - _…69 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1459 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1479 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
