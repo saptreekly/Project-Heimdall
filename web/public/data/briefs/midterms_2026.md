@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-16 08:25:33 UTC
+> Tactical snapshot · 2026-06-16 09:05:04 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1440** |
+| Posts in database | **1459** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1373 / 525 |
-| Distinct themes | 82 |
+| Graph nodes / edges | 1388 / 528 |
+| Distinct themes | 79 |
 | Duplicate clusters (full DB) | 78 |
-| Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 1 bots / 1011 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| Fuzzy clusters (snapshot cohort) | 11 |
+| IU astroturf overlap | 1 bots / 1023 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **333**
-- Net new: **1399** · re-seen: **1810**
-- Duplicate rate: **56.4%**
+- Runs: **334**
+- Net new: **1418** · re-seen: **1810**
+- Duplicate rate: **56.1%**
 
 ## Sentiment drift
 
@@ -36,12 +31,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 19 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, vote midterms (20 posts · 19 authors · 3 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · illinois gop, chair bob, grogan talks (11 posts · 5 authors · 4 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, voter fraud, breaking longtime, trump ally, special government (8 posts · 2 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · map allowing (9 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · loves inflation, basically handed, marjorie taylor, greene president (7 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -84,7 +79,7 @@ _None (need ≥5 authors in 90s window)._
 - **3 posts** · 3 authors · ~100% Jaccard — Ken Paxton says he's No. 1 target for national Democrats in the 2026 midterms via
 - **3 posts** · 3 authors · ~100% Jaccard — Alan Dershowitz is 87 years old, a Harvard Law professor emeritus, and one of the most recognized legal minds in America. He has been a registered Democrat since he was 14 years old — over 70 years.…
 - **2 posts** · 2 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms Source: The Center Square
-- _…6 more fuzzy cluster(s) in snapshot cohort._
+- _…5 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -96,19 +91,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (44 posts)
-- voting machines, verified lists (6 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- sidney powell, radical left (8 posts)
-- cash party, level touch, country voters (5 posts)
-- data centers, local communities, power grids (5 posts)
-- _…68 more emerging theme(s)._
+- nuke filibuster, games stop, fully fund (11 posts)
+- level touch, country voters (4 posts)
+- coward facist, nazi pig bonespur, tolerate pathetic, losers killed, draft dodger (17 posts)
+- approval rating (9 posts)
+- map allowing (9 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (7 posts)
+- throw donald, costa rica, unfortunate reality, inadvertently joined, ranks attempting (7 posts)
+- broke buried, debt directionless, results democrat (6 posts)
+- _…66 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1440 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1459 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
