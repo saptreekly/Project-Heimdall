@@ -20,7 +20,11 @@ from scripts.keyword_audit import (
     KeywordStats,
     SuggestedKeyword,
     build_report,
+    is_lifetime_protected,
+    lifetime_keyword_stats,
     load_ingest_runs,
+    semantic_keyword_tokens,
+    validate_keyword_query,
     _recent_post_texts,
 )
 
@@ -32,8 +36,8 @@ MIN_KEYWORDS = 3
 MAX_KEYWORDS = 8
 MIN_RUNS_BEFORE_SWAP = 5
 MIN_RUNS_STALE = 3
-STALE_MAX_INSERTED = 2
-STALE_MAX_YIELD = 0.15
+STALE_MAX_INSERTED = 0
+STALE_MAX_YIELD = 0.10
 DEFAULT_PINNED = ("2026 midterms",)
 
 
@@ -52,12 +56,8 @@ class RotationPlan:
         return self.before != self.after
 
 
-DEFAULT_PINNED = ("2026 midterms",)
-_YEAR_TOKENS = frozenset({"2024", "2025", "2026", "2027"})
-
-
 def _semantic_tokens(text: str) -> set[str]:
-    return {t for t in text.lower().split() if t not in _YEAR_TOKENS and len(t) >= 3}
+    return semantic_keyword_tokens(text)
 
 
 def _too_similar_to_existing(query: str, keywords: list[str]) -> bool:
@@ -84,24 +84,29 @@ def _too_similar_to_existing(query: str, keywords: list[str]) -> bool:
 def identify_stale(
     stats: list[KeywordStats],
     *,
+    lifetime_stats: dict[str, KeywordStats] | None = None,
     pinned: set[str],
     current_keywords: list[str],
     min_keywords: int,
 ) -> list[str]:
-    """Keywords to remove, worst yield first, respecting pins and floor."""
+    """Keywords to remove, worst yield first, respecting pins, lifetime yield, and floor."""
+    lifetime_stats = lifetime_stats or {}
     candidates: list[tuple[str, str]] = []
 
     for stat in stats:
         if stat.keyword not in current_keywords or stat.keyword in pinned:
             continue
+        lifetime = lifetime_stats.get(stat.keyword)
+        if lifetime and is_lifetime_protected(lifetime):
+            continue
         if stat.runs >= MIN_RUNS_STALE and stat.inserted == 0 and stat.fetched == 0:
-            candidates.append((stat.keyword, "dead (0 fetched/inserted)"))
+            candidates.append((stat.keyword, "dead (0 fetched/inserted in window)"))
         elif (
             stat.runs >= MIN_RUNS_STALE
             and stat.inserted <= STALE_MAX_INSERTED
             and stat.yield_rate <= STALE_MAX_YIELD
         ):
-            candidates.append((stat.keyword, f"low yield ({stat.yield_rate:.2f} ins/run)"))
+            candidates.append((stat.keyword, f"low window yield ({stat.yield_rate:.2f} ins/run)"))
 
     candidates.sort(
         key=lambda item: next(
@@ -126,22 +131,28 @@ def pick_additions(
     *,
     current_after_removals: list[str],
     max_keywords: int,
-) -> list[str]:
+) -> tuple[list[str], list[str]]:
     slots = max(0, max_keywords - len(current_after_removals))
     if slots <= 0:
-        return []
+        return [], []
 
     added: list[str] = []
+    rejected: list[str] = []
     for sug in suggestions:
         query = sug.query.strip()
+        ok, reason = validate_keyword_query(query)
+        if not ok:
+            rejected.append(f"{query} ({reason})")
+            continue
         if not query or len(query) < 4:
             continue
         if _too_similar_to_existing(query, current_after_removals + added):
+            rejected.append(f"{query} (too similar)")
             continue
         added.append(query)
         if len(added) >= slots:
             break
-    return added
+    return added, rejected
 
 
 def build_rotation_plan(
@@ -154,6 +165,7 @@ def build_rotation_plan(
     max_keywords: int,
     min_runs_before_swap: int,
     ingest_run_count: int,
+    lifetime_stats: dict[str, KeywordStats] | None = None,
 ) -> RotationPlan:
     pinned_set = {p.lower() for p in pinned}
     pinned_present = [k for k in current_keywords if k.lower() in pinned_set]
@@ -174,16 +186,19 @@ def build_rotation_plan(
 
     removed = identify_stale(
         report.stats,
+        lifetime_stats=lifetime_stats,
         pinned=set(pinned_present),
         current_keywords=current_keywords,
         min_keywords=min_keywords,
     )
     interim = [k for k in current_keywords if k not in removed]
-    added = pick_additions(
+    added, rejected = pick_additions(
         report.suggestions,
         current_after_removals=interim,
         max_keywords=max_keywords,
     )
+    if rejected:
+        plan.notes.append(f"Rejected {len(rejected)} suggestion(s) (validation/similarity).")
 
     if not removed and not added:
         plan.after = list(current_keywords)
@@ -307,6 +322,7 @@ async def plan_rotation(args: argparse.Namespace) -> RotationPlan:
     )
     current = load_scheduled_keywords(args.config, args.narrative)
     pinned = tuple(args.pin) if args.pin else DEFAULT_PINNED
+    lifetime = lifetime_keyword_stats(args.runs, current)
 
     return build_rotation_plan(
         report,
@@ -317,6 +333,7 @@ async def plan_rotation(args: argparse.Namespace) -> RotationPlan:
         max_keywords=args.max_keywords,
         min_runs_before_swap=args.min_runs,
         ingest_run_count=len(runs),
+        lifetime_stats=lifetime,
     )
 
 

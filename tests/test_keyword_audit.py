@@ -1,10 +1,13 @@
 """Tests for keyword audit and gap discovery."""
 
 from scripts.keyword_audit import (
+    KeywordStats,
     aggregate_keyword_stats,
     discover_gaps,
+    is_lifetime_protected,
     keyword_covers,
     keyword_covers_any,
+    validate_keyword_query,
 )
 
 
@@ -38,3 +41,17 @@ def test_discover_gaps_suggests_uncovered_terms() -> None:
     assert suggestions
     assert any("deportations" in s.query for s in suggestions)
     assert not keyword_covers_any(configured, "deportations")
+
+
+def test_validate_keyword_query_rejects_theme_junk() -> None:
+    assert validate_keyword_query("2026 disaster looms") == (False, "blocked token")
+    assert validate_keyword_query("2026 hulhumale phase") == (False, "blocked token")
+    assert validate_keyword_query("2026 state setting") == (False, "blocked token")
+    assert validate_keyword_query("2026 red wave") == (True, "")
+    assert validate_keyword_query("2026 election integrity") == (True, "")
+
+
+def test_is_lifetime_protected() -> None:
+    assert is_lifetime_protected(KeywordStats("k", runs=44, inserted=174))
+    assert is_lifetime_protected(KeywordStats("k", runs=10, inserted=3))
+    assert not is_lifetime_protected(KeywordStats("k", runs=4, inserted=0))

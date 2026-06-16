@@ -24,6 +24,116 @@ DEFAULT_SNAPSHOT = ROOT / "web" / "public" / "data" / "snapshot.json"
 DEFAULT_DB = ROOT / "data" / "dashboard" / "heimdall.db"
 
 _TOKEN_RE = re.compile(r"[a-z0-9]{3,}")
+_YEAR_TOKENS = frozenset({"2024", "2025", "2026", "2027"})
+
+# Tokens that anchor a query to domestic electoral / polarization tracking.
+_POLITICAL_ANCHOR_TOKENS = frozenset(
+    {
+        "midterm",
+        "midterms",
+        "election",
+        "fraud",
+        "integrity",
+        "gerrymandering",
+        "gerrymander",
+        "democrat",
+        "democrats",
+        "republican",
+        "republicans",
+        "gop",
+        "ballot",
+        "ballots",
+        "vote",
+        "voting",
+        "voter",
+        "voters",
+        "senate",
+        "congress",
+        "congressional",
+        "house",
+        "primary",
+        "caucus",
+        "swing",
+        "district",
+        "poll",
+        "polls",
+        "turnout",
+        "impeach",
+        "resign",
+        "resigns",
+        "electoral",
+        "supreme",
+        "court",
+        "scotus",
+        "immigration",
+        "border",
+        "deportation",
+        "deportations",
+        "suburban",
+        "rural",
+    }
+)
+
+# Theme-cluster fragments and PMI noise — not useful as X search queries.
+_BLOCKED_TOKENS = frozenset(
+    {
+        "hulhumale",
+        "looms",
+        "phase",
+        "disaster",
+        "setting",
+        "taxes",
+        "working",
+        "million",
+        "americans",
+        "replaced",
+        "unregulated",
+        "dirty",
+    }
+)
+
+_KNOWN_PHRASES = (
+    "red wave",
+    "blue wave",
+    "midterm fraud",
+    "election fraud",
+    "election integrity",
+    "supreme court",
+    "midwest democrat",
+    "swing state",
+    "house midterms",
+)
+
+
+def semantic_keyword_tokens(text: str) -> set[str]:
+    return {t for t in text.lower().split() if t not in _YEAR_TOKENS and len(t) >= 3}
+
+
+def validate_keyword_query(query: str) -> tuple[bool, str]:
+    """Return (ok, reject_reason). Filters theme-cluster junk from gap suggestions."""
+    q = query.strip().lower()
+    if len(q) < 8:
+        return False, "too short"
+    if q.startswith("author:"):
+        return False, "author poll pseudo-keyword"
+
+    tokens = semantic_keyword_tokens(q)
+    if not tokens:
+        return False, "no semantic tokens"
+
+    if tokens & _BLOCKED_TOKENS:
+        return False, "blocked token"
+
+    for phrase in _KNOWN_PHRASES:
+        if phrase in q:
+            return True, ""
+
+    if tokens & _POLITICAL_ANCHOR_TOKENS:
+        if len(tokens) >= 2 or len(q) >= 12:
+            return True, ""
+        return False, "single-token query too short"
+
+    return False, "no political anchor"
 
 
 @dataclass
@@ -75,10 +185,10 @@ def keyword_covers_any(keywords: list[str], term: str) -> bool:
     return any(keyword_covers(kw, term) for kw in keywords)
 
 
-def load_ingest_runs(path: Path, *, days: int) -> list[dict]:
+def load_ingest_runs(path: Path, *, days: int | None = 7) -> list[dict]:
     if not path.is_file():
         return []
-    cutoff = datetime.now(UTC) - timedelta(days=days)
+    cutoff = None if days is None else datetime.now(UTC) - timedelta(days=days)
     rows: list[dict] = []
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
@@ -95,22 +205,26 @@ def load_ingest_runs(path: Path, *, days: int) -> list[dict]:
             at = datetime.fromisoformat(str(at_raw).replace("Z", "+00:00"))
         except ValueError:
             continue
-        if at.astimezone(UTC) >= cutoff:
-            rows.append(row)
+        if cutoff is not None and at.astimezone(UTC) < cutoff:
+            continue
+        rows.append(row)
     return rows
 
 
 def aggregate_keyword_stats(runs: list[dict], configured: list[str]) -> list[KeywordStats]:
     by_kw: dict[str, KeywordStats] = {k: KeywordStats(keyword=k) for k in configured}
     for row in runs:
+        keywords = row.get("keywords") or row.get("planned_keywords") or []
+        keywords = [k for k in keywords if k and not str(k).startswith("author:")]
+        if not keywords:
+            continue
         if row.get("skipped"):
-            for kw in row.get("keywords") or []:
+            for kw in keywords:
                 if kw in by_kw:
                     by_kw[kw].skipped_runs += 1
             continue
-        keywords = row.get("keywords") or row.get("planned_keywords") or []
         fetched = int(row.get("fetched") or 0)
-        inserted = int(row.get("inserted") or 0)
+        inserted = int(row.get("inserted") or row.get("net_new") or 0)
         if len(keywords) == 1:
             kw = keywords[0]
             if kw not in by_kw:
@@ -130,6 +244,21 @@ def aggregate_keyword_stats(runs: list[dict], configured: list[str]) -> list[Key
     return [by_kw[k] for k in configured if k in by_kw] + [
         s for k, s in by_kw.items() if k not in configured
     ]
+
+
+def lifetime_keyword_stats(runs_path: Path, configured: list[str]) -> dict[str, KeywordStats]:
+    runs = load_ingest_runs(runs_path, days=None)
+    stats = aggregate_keyword_stats(runs, configured)
+    return {s.keyword: s for s in stats}
+
+
+def is_lifetime_protected(stat: KeywordStats) -> bool:
+    """Do not auto-remove keywords with proven historical yield."""
+    if stat.inserted >= 15:
+        return True
+    if stat.runs >= 5 and stat.yield_rate >= 0.25:
+        return True
+    return False
 
 
 def _distinct_terms(texts: list[str], *, top_n: int = 40) -> list[tuple[str, float]]:
@@ -203,6 +332,9 @@ def discover_gaps(
         if keyword_covers_any(configured, term):
             continue
         query = f"2026 {term}" if midterms_context else term
+        ok, reason = validate_keyword_query(query)
+        if not ok:
+            continue
         if query in seen_queries:
             continue
         seen_queries.add(query)
@@ -219,6 +351,9 @@ def discover_gaps(
         if keyword_covers_any(configured, term):
             continue
         query = f"2026 {term} midterms" if midterms_context else term
+        ok, _reason = validate_keyword_query(query)
+        if not ok:
+            continue
         if query in seen_queries:
             continue
         seen_queries.add(query)
