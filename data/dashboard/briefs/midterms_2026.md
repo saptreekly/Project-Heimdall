@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-16 20:00:22 UTC
+> Tactical snapshot · 2026-06-16 20:28:56 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1405 / 536 |
-| Distinct themes | 91 |
+| Distinct themes | 85 |
 | Duplicate clusters (full DB) | 81 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 1 bots / 1033 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
+- Re-sightings (duplicate encounters): **15**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **333**
-- Net new: **1278** · re-seen: **1863**
-- Duplicate rate: **59.3%**
+- Runs: **334**
+- Net new: **1278** · re-seen: **1878**
+- Duplicate rate: **59.5%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 18 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · illinois gop, chair bob, grogan talks (11 posts · 4 authors · 4 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old (21 posts · 7 authors · 8 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 18 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · loves inflation, basically handed, marjorie taylor, greene president (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, ele watch, viral clip (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -96,15 +96,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (44 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (43 posts)
 - voting machines, verified lists (6 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- stop gaslighting, happy talk (8 posts)
-- voter fraud, task force, sidney powell, breaking longtime, trump ally (6 posts)
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- sidney powell, radical left, sanctuary cities (9 posts)
 - level touch, country voters (6 posts)
 - solution architect's, local communities, power grids (6 posts)
-- _…77 more emerging theme(s)._
+- _…72 more emerging theme(s)._
 
 ## Scope note
 
