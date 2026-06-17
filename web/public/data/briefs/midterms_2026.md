@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-17 18:29:04 UTC
+> Tactical snapshot · 2026-06-17 19:15:30 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1536** |
+| Posts in database | **1554** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1453 / 556 |
-| Distinct themes | 93 |
-| Duplicate clusters (full DB) | 86 |
+| Graph nodes / edges | 1468 / 562 |
+| Distinct themes | 81 |
+| Duplicate clusters (full DB) | 88 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1066 authors |
+| IU astroturf overlap | 2 bots / 1077 authors |
 
 ## Ingest activity
 
 - Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Net-new posts logged: **18**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **338**
-- Net new: **1140** · re-seen: **1996**
-- Duplicate rate: **63.6%**
+- Runs: **339**
+- Net new: **1158** · re-seen: **1997**
+- Duplicate rate: **63.3%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 14 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · chair bob, grogan talks (13 posts · 3 authors · 4 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, vote midterms (19 posts · 12 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · scotus stayed, ilhan omar (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (7 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -70,7 +70,7 @@
 - **10 posts** · 1 author(s) — Millennials &amp; Gen Z We don't just want the dream back—we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.…
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
-- _…77 more exact-duplicate cluster(s) in database._
+- _…79 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -79,8 +79,8 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **3 posts** · 3 authors · ~100% Jaccard — Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \| FULL INTERVIEW
-- **7 posts** · 7 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms \| National \| Midterms
-- **4 posts** · 4 authors · ~100% Jaccard — Data Analyst: New Numbers Give Clear 'Warning Sign' for Dems Ahead of 2026 Midterms – RedState
+- **5 posts** · 5 authors · ~100% Jaccard — Data Analyst: New Numbers Give Clear 'Warning Sign' for Dems Ahead of 2026 Midterms – RedState
+- **4 posts** · 4 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms via @
 - **3 posts** · 3 authors · ~100% Jaccard — Damn right. DHS Secretary Mullin defends citizenship checks ahead of 2026 midterms \| Fox News
 - **2 posts** · 2 authors · ~100% Jaccard — *THAT* Is Not a Good Sign for Dems Regarding the 2026 Midterms
 - **2 posts** · 2 authors · ~100% Jaccard — Poll spells disaster for Republicans in 2026 midterms Source: The Center Square
@@ -96,19 +96,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (45 posts)
-- usps create (6 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- republican senate, senate gop, act midterms, america act midterms, pass save america (9 posts)
-- stop gaslighting, happy talk (8 posts)
-- voter fraud, task force, sidney powell, breaking longtime, trump ally (6 posts)
-- solution architect's, local communities, power grids (5 posts)
-- _…79 more emerging theme(s)._
+- needs occur (17 posts)
+- cash party, level touch, country voters (5 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (19 posts)
+- scotus stayed, ilhan omar (14 posts)
+- strait hormuz, stays closed, period economic, wreckage easy, adams lays (11 posts)
+- presidential election (8 posts)
+- broke buried, debt directionless, results democrat (6 posts)
+- awakening largest, actually believe (5 posts)
+- _…67 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1536 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1554 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
