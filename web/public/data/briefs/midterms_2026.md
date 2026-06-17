@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-17 05:03:02 UTC
+> Tactical snapshot · 2026-06-17 05:32:55 UTC
 
 ## Corpus
 
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
+- Re-sightings (duplicate encounters): **27**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **333**
-- Net new: **1155** · re-seen: **1933**
-- Duplicate rate: **62.6%**
+- Net new: **1152** · re-seen: **1943**
+- Duplicate rate: **62.8%**
 
 ## Sentiment drift
 
@@ -40,8 +40,8 @@
 - **Exact duplicate campaign** · lose control, years old, musk stands, away world's, seizing milestone (18 posts · 6 authors · 7 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, ele watch, viral clip (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
