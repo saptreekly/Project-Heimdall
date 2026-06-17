@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-17 19:40:05 UTC
+> Tactical snapshot · 2026-06-17 20:34:49 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1468 / 562 |
-| Distinct themes | 90 |
+| Distinct themes | 83 |
 | Duplicate clusters (full DB) | 88 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1077 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
+- Re-sightings (duplicate encounters): **27**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **340**
-- Net new: **1158** · re-seen: **2000**
-- Duplicate rate: **63.3%**
+- Runs: **339**
+- Net new: **1133** · re-seen: **2025**
+- Duplicate rate: **64.1%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 11 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, alan dershowitz, harvard law, professor emeritus (20 posts · 6 authors · 7 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (13 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · chair bob, grogan talks (11 posts · 3 authors · 4 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst, vote screaming (7 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, breaking republicans, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, ele watch, viral clip (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (7 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, breaking republicans (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -103,8 +103,8 @@ _None spanning multiple narratives._
 - stop gaslighting, happy talk (8 posts)
 - voter fraud, task force, sidney powell (6 posts)
 - sanctuary cities, writes foreign, policy difference (6 posts)
-- solution architect's, local communities, power grids (6 posts)
-- _…76 more emerging theme(s)._
+- cash party, level touch, country voters (5 posts)
+- _…69 more emerging theme(s)._
 
 ## Scope note
 
