@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-18 01:40:48 UTC
+> Tactical snapshot · 2026-06-18 04:53:14 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1563** |
+| Posts in database | **1565** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1477 / 565 |
-| Distinct themes | 88 |
+| Distinct themes | 91 |
 | Duplicate clusters (full DB) | 88 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1083 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **19**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **338**
-- Net new: **1125** · re-seen: **2010**
+- Net new: **1127** · re-seen: **2011**
 - Duplicate rate: **64.1%**
 
 ## Sentiment drift
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 9 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (13 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 9 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · chair bob, grogan talks (9 posts · 3 authors · 3 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (7 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning, breaking republicans, favored win (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, ele watch, viral clip (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · june prophetic, message god, prophet julie (6 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · loves inflation, marjorie taylor, greene president (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · keeps winning, breaking republicans (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -104,11 +104,11 @@ _None spanning multiple narratives._
 - voter fraud, task force, sidney powell (6 posts)
 - sanctuary cities, dem politicians, trying shut (4 posts)
 - administration multiple, ruling potentially, renew request (7 posts)
-- _…74 more emerging theme(s)._
+- _…77 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1563 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1565 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
