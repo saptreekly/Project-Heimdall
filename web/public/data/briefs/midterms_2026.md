@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-18 07:17:13 UTC
+> Tactical snapshot · 2026-06-18 08:19:27 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1484 / 567 |
-| Distinct themes | 83 |
+| Distinct themes | 90 |
 | Duplicate clusters (full DB) | 89 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 1089 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **6**
-- Net-new posts logged: **12**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **337**
-- Net new: **1109** · re-seen: **2005**
+- Net new: **1109** · re-seen: **2004**
 - Duplicate rate: **64.4%**
 
 ## Sentiment drift
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, vote midterms (19 posts · 8 authors · 3 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, house midterm elections (20 posts · 7 authors · 3 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · chair bob, grogan talks (11 posts · 3 authors · 4 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (7 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · map allowing (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · marjorie taylor, greene president (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -96,15 +96,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- needs occur (17 posts)
-- administration multiple, tina peters, charges related, security breaches (9 posts)
-- cash party, level touch, country voters (5 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (20 posts)
-- hormuz stays, period economic, wreckage easy, adams lays (12 posts)
-- presidential election (9 posts)
-- map allowing (7 posts)
-- broke buried, debt directionless (6 posts)
-- _…69 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (45 posts)
+- usps create (6 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- stop gaslighting, happy talk (8 posts)
+- sanctuary cities, writes foreign, policy difference, open border (8 posts)
+- sidney powell, donating republicans, party registration, plummets key, radical left (10 posts)
+- administration multiple, ruling potentially, renew request (7 posts)
+- _…76 more emerging theme(s)._
 
 ## Scope note
 
