@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-19 22:35:26 UTC
+> Tactical snapshot · 2026-06-19 23:35:04 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1594 / 626 |
-| Distinct themes | 87 |
+| Distinct themes | 86 |
 | Duplicate clusters (full DB) | 97 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 1162 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **8**
-- Net-new posts logged: **11**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **1035** · re-seen: **2058**
+- Net new: **1035** · re-seen: **2059**
 - Duplicate rate: **66.5%**
 
 ## Sentiment drift
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · radical left, red wave (742 posts · 112 authors · 21 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans midterms, democrats ninepercent, center square, trump congress (26 posts · 3 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules, weeks later (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, ken paxton, target national, report warning, hackers preparing (12 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, vote screaming (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, watch cheating (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · chair bob, grogan talks (14 posts · 1 authors · 5 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (9 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · graham platner, sitting governor (7 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -94,15 +94,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (22 posts)
-- don't dream, rewriting gen, millennials turning, housing future, works barriers (13 posts)
-- days presidential (9 posts)
-- broke buried, debt directionless, results democrat (6 posts)
-- cycle chaotic, check groypers (6 posts)
-- awakening largest, actually believe (5 posts)
-- ruling week, nichols necessarily (5 posts)
-- success failures (10 posts)
-- _…54 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (48 posts)
+- verified lists (6 posts)
+- boom latino, james talarico, ken paxton, initial success, texas trump's (5 posts)
+- gerrymandering map, blue seats, upholds california's (5 posts)
+- republican senate, senate gop, act midterms, america act midterms, pass save america (11 posts)
+- stop gaslighting, happy talk (8 posts)
+- sanctuary cities, writes foreign, policy difference, cabinet meeting (10 posts)
+- _…72 more emerging theme(s)._
 
 ## Scope note
 
