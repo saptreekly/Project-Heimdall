@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-19 01:53:15 UTC
+> Tactical snapshot · 2026-06-19 05:14:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1630** |
+| Posts in database | **1631** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1526 / 586 |
-| Distinct themes | 91 |
+| Distinct themes | 92 |
 | Duplicate clusters (full DB) | 93 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 1120 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **22**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **336**
-- Net new: **1053** · re-seen: **2050**
-- Duplicate rate: **66.1%**
+- Runs: **335**
+- Net new: **1039** · re-seen: **2044**
+- Duplicate rate: **66.3%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, vote midterms, center square, months midterm elections (23 posts · 2 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, vote midterms, months midterm elections (23 posts · 2 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · chair bob, grogan talks, fascist redneck (15 posts · 7 authors · 4 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · graham platner, funding anti (10 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (9 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (7 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -57,7 +57,7 @@
 - cross_author_fuzzy_7authors_7posts_j0.95
 - cross_author_fuzzy_6authors_6posts_j1.00
 - cross_author_fuzzy_6authors_6posts_j1.00
-- cross_author_fuzzy_5authors_6posts_j1.00
+- cross_author_fuzzy_6authors_6posts_j1.00
 
 ## Exact duplicate text (Layer 1 — copy coordination)
 
@@ -79,7 +79,7 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **3 posts** · 3 authors · ~100% Jaccard — Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \| FULL INTERVIEW
-- **5 posts** · 5 authors · ~100% Jaccard — Data Analyst: New Numbers Give Clear 'Warning Sign' for Dems Ahead of 2026 Midterms – RedState
+- **6 posts** · 6 authors · ~100% Jaccard — Data Analyst: New Numbers Give Clear 'Warning Sign' for Dems Ahead of 2026 Midterms – RedState
 - **3 posts** · 3 authors · ~100% Jaccard — *THAT* Is Not a Good Sign for Dems Regarding the 2026 Midterms
 - **2 posts** · 2 authors · ~94% Jaccard — Knave or Fool? Traitorous or Demented? Trump's Strategy for the 2026 Midterms requires us to prepare now, by
 - **2 posts** · 2 authors · ~92% Jaccard — Will The Democrats Launch Investigations Into Acts Of Treason By US Lawmakers Who Approved Sharing US Military / Intelligence With Israel? Mike Adams Predicts That If Dems Win The 2026 Midterms, They…
@@ -103,11 +103,11 @@ _None spanning multiple narratives._
 - stop gaslighting, happy talk (8 posts)
 - sanctuary cities, writes foreign, policy difference, cabinet meeting (12 posts)
 - sidney powell, donating republicans, party registration, plummets key, radical left (10 posts)
-- _…77 more emerging theme(s)._
+- _…78 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1630 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1631 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
