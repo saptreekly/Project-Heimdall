@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-19 06:51:38 UTC
+> Tactical snapshot · 2026-06-19 07:37:40 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1631** |
+| Posts in database | **1648** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1526 / 586 |
-| Distinct themes | 92 |
+| Graph nodes / edges | 1545 / 597 |
+| Distinct themes | 70 |
 | Duplicate clusters (full DB) | 93 |
-| Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 1120 authors |
+| Fuzzy clusters (snapshot cohort) | 6 |
+| IU astroturf overlap | 2 bots / 1130 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **17**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **335**
-- Net new: **1036** · re-seen: **2044**
-- Duplicate rate: **66.4%**
+- Net new: **1053** · re-seen: **2040**
+- Duplicate rate: **66.0%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, vote midterms, months midterm elections (23 posts · 2 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · chair bob, grogan talks, fascist redneck (15 posts · 7 authors · 4 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · graham platner, funding anti (10 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (9 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, vote midterms, center square (23 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · deep state, radical left, years old (23 posts · 8 authors · 6 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · voter fraud, task force, breaking longtime, trump ally, special government (11 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, ele watch, viral clip (7 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -65,7 +65,7 @@
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
-- **20 posts** · 1 author(s) — I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes…
+- **22 posts** · 1 author(s) — I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes…
 - **17 posts** · 1 author(s) — Republican “ BIG BEAUTIFUL BILL” Republicans planned to DELAY what was in the Bill on purpose with the help of project 2025 H.R.1 (The "Big Beautiful Bill") was designed to delay the damage until aft…
 - **10 posts** · 1 author(s) — Millennials &amp; Gen Z We don't just want the dream back—we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.…
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
@@ -83,7 +83,7 @@ _None (need ≥5 authors in 90s window)._
 - **3 posts** · 3 authors · ~100% Jaccard — *THAT* Is Not a Good Sign for Dems Regarding the 2026 Midterms
 - **2 posts** · 2 authors · ~94% Jaccard — Knave or Fool? Traitorous or Demented? Trump's Strategy for the 2026 Midterms requires us to prepare now, by
 - **2 posts** · 2 authors · ~92% Jaccard — Will The Democrats Launch Investigations Into Acts Of Treason By US Lawmakers Who Approved Sharing US Military / Intelligence With Israel? Mike Adams Predicts That If Dems Win The 2026 Midterms, They…
-- _…2 more fuzzy cluster(s) in snapshot cohort._
+- _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -95,19 +95,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (46 posts)
-- usps create (6 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- scott presler, officially planning (11 posts)
-- stop gaslighting, happy talk (8 posts)
-- sanctuary cities, writes foreign, policy difference, cabinet meeting (12 posts)
-- sidney powell, donating republicans, party registration, plummets key, radical left (10 posts)
-- _…78 more emerging theme(s)._
+- cash party, level touch, country voters (5 posts)
+- coward facist, tolerate pathetic, losers killed, pig bonespur draft, dodger inbreeds (22 posts)
+- presidential election (9 posts)
+- cycle chaotic, fact check, groypers endorsed (7 posts)
+- broke buried, debt directionless (6 posts)
+- awakening largest, actually believe (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- undisclosed illness, kean praising, missing floor (9 posts)
+- _…57 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1631 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1648 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
