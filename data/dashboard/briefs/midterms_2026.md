@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-19 21:51:05 UTC
+> Tactical snapshot · 2026-06-19 22:35:26 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1695** |
+| Posts in database | **1706** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1584 / 621 |
-| Distinct themes | 105 |
+| Graph nodes / edges | 1594 / 626 |
+| Distinct themes | 87 |
 | Duplicate clusters (full DB) | 97 |
 | Fuzzy clusters (snapshot cohort) | 5 |
-| IU astroturf overlap | 2 bots / 1155 authors |
+| IU astroturf overlap | 2 bots / 1162 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **11**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **1035** · re-seen: **2059**
+- Net new: **1035** · re-seen: **2058**
 - Duplicate rate: **66.5%**
 
 ## Sentiment drift
@@ -36,12 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, live forever, radical left (578 posts · 73 authors · 20 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · mid decade (329 posts · 53 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans midterms, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules, weeks later (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · cash party, level touch, country voters (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · radical left, red wave (742 posts · 112 authors · 21 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans midterms, democrats ninepercent, center square, trump congress (26 posts · 3 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules, weeks later (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, ken paxton, target national, report warning, hackers preparing (12 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, vote screaming (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, watch cheating (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -94,19 +94,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- laughing stock, dem marxists (6 posts)
-- red wave, midwest democrat, resigns electoral, state setting, hulhumale phase (47 posts)
-- verified lists, federal judge (9 posts)
-- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- blue seats, gerrymandering map, upholds california's, upheld texas (5 posts)
-- camera actual (5 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- _…72 more emerging theme(s)._
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (22 posts)
+- don't dream, rewriting gen, millennials turning, housing future, works barriers (13 posts)
+- days presidential (9 posts)
+- broke buried, debt directionless, results democrat (6 posts)
+- cycle chaotic, check groypers (6 posts)
+- awakening largest, actually believe (5 posts)
+- ruling week, nichols necessarily (5 posts)
+- success failures (10 posts)
+- _…54 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1695 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1706 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
