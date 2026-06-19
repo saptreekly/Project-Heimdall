@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 388,
+      "run_counter": 389,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1095,19 +1095,6 @@
           "inserts_from_polls": 3,
           "status": "active"
         },
-        "1587574471627608064": {
-          "author_id": "1587574471627608064",
-          "handle": "CSalcedoShow",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-19T12:37:30.247452+00:00",
-          "last_tweet_at": "2026-06-17T14:48:37+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1816943017544110080": {
           "author_id": "1816943017544110080",
           "handle": "PressClips",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1474502684312932354": {
-          "author_id": "1474502684312932354",
+        "1070264819973021697": {
+          "author_id": "1070264819973021697",
+          "handle": "NDMJ_NCDHR",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "771152516": {
+          "author_id": "771152516",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
