@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-19 13:53:58 UTC
+> Tactical snapshot · 2026-06-19 14:23:25 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1649** |
+| Posts in database | **1668** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1546 / 597 |
-| Distinct themes | 85 |
-| Duplicate clusters (full DB) | 93 |
+| Graph nodes / edges | 1563 / 604 |
+| Distinct themes | 68 |
+| Duplicate clusters (full DB) | 95 |
 | Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 1131 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| IU astroturf overlap | 2 bots / 1144 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **1039** · re-seen: **2038**
-- Duplicate rate: **66.2%**
+- Net new: **1058** · re-seen: **2036**
+- Duplicate rate: **65.8%**
 
 ## Sentiment drift
 
@@ -36,13 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · chair bob, grogan talks, fascist redneck (15 posts · 7 authors · 5 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (9 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · deep state, radical left, years old (23 posts · 8 authors · 6 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, vote midterms (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · voter fraud, task force, breaking longtime, trump ally, head special (11 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · graham platner, traitors wasting (10 posts · 4 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · keeps winning (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -70,7 +65,7 @@
 - **10 posts** · 1 author(s) — Millennials &amp; Gen Z We don't just want the dream back—we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.…
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
 - **8 posts** · 1 author(s) — 🚨The FBI and DOJ need to go to California now, while the fraud is going on—it's a crime in progress—and investigate and arrest now—not three months from now, before they destroy the evidence.🚨 The Ca…
-- _…84 more exact-duplicate cluster(s) in database._
+- _…86 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -95,19 +90,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (46 posts)
-- usps create (6 posts)
-- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- scott presler, officially planning (11 posts)
-- stop gaslighting, happy talk (8 posts)
-- sanctuary cities, writes foreign, policy difference, cabinet meeting (12 posts)
-- sidney powell, donating republicans, party registration, plummets key, radical left (10 posts)
-- _…71 more emerging theme(s)._
+- needs occur (16 posts)
+- cash party, level touch, country voters (5 posts)
+- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (22 posts)
+- presidential election (9 posts)
+- cycle chaotic, fact check, groypers endorsed (7 posts)
+- broke buried, debt directionless, results democrat (6 posts)
+- awakening largest, actually believe (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- _…55 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1649 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1668 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
