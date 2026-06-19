@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 397,
+      "run_counter": 398,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1776,12 +1776,12 @@
           "handle": "costakonti1",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 1.05,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 6,
-          "polls": 0,
-          "inserts_from_polls": 0,
+          "priority": 1.0,
+          "last_polled_at": "2026-06-19T19:17:33.048371+00:00",
+          "last_tweet_at": "2026-06-19T18:45:49+00:00",
+          "inserted_total": 14,
+          "polls": 1,
+          "inserts_from_polls": 4,
           "status": "active"
         },
         "2024226708103077888": {
@@ -1940,8 +1940,8 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "23281108": {
-          "author_id": "23281108",
+        "34082620": {
+          "author_id": "34082620",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
