@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 398,
+      "run_counter": 399,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1095,19 +1095,6 @@
           "inserts_from_polls": 3,
           "status": "active"
         },
-        "14868145": {
-          "author_id": "14868145",
-          "handle": "PplsAction",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1695129127882211328": {
           "author_id": "1695129127882211328",
           "handle": "ImaGator1981",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "34082620": {
-          "author_id": "34082620",
+        "1824789665162891264": {
+          "author_id": "1824789665162891264",
+          "handle": "SpeakFreely1789",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "817158775610179584": {
+          "author_id": "817158775610179584",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

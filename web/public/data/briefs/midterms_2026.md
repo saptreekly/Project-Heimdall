@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-19 19:19:05 UTC
+> Tactical snapshot · 2026-06-19 20:12:57 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1692** |
+| Posts in database | **1693** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1583 / 620 |
-| Distinct themes | 88 |
+| Graph nodes / edges | 1584 / 621 |
+| Distinct themes | 87 |
 | Duplicate clusters (full DB) | 97 |
 | Fuzzy clusters (snapshot cohort) | 5 |
-| IU astroturf overlap | 2 bots / 1154 authors |
+| IU astroturf overlap | 2 bots / 1155 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **6**
-- Net-new posts logged: **4**
+- Re-sightings (duplicate encounters): **10**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **1048** · re-seen: **2043**
-- Duplicate rate: **66.1%**
+- Net new: **1041** · re-seen: **2047**
+- Duplicate rate: **66.3%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, musk stands, away world's, seizing milestone (15 posts · 1 authors · 6 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · chair bob, grogan talks (14 posts · 1 authors · 5 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (9 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · graham platner, israel crowd, traitors wasting (8 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · graham platner, sitting governor (7 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,14 +99,14 @@ _None spanning multiple narratives._
 - verified lists (6 posts)
 - boom latino, james talarico, ken paxton, initial success, texas trump's (5 posts)
 - gerrymandering map, blue seats, upholds california's (5 posts)
-- scott presler, officially planning, promise lead (7 posts)
+- republican senate, senate gop, act midterms, america act midterms, pass save america (8 posts)
 - stop gaslighting, happy talk (8 posts)
 - sanctuary cities, writes foreign, policy difference, cabinet meeting (10 posts)
-- _…74 more emerging theme(s)._
+- _…73 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1692 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1693 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
