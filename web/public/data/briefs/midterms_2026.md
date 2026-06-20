@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-20 20:04:32 UTC
+> Tactical snapshot · 2026-06-20 20:42:28 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1638 / 639 |
-| Distinct themes | 71 |
+| Distinct themes | 53 |
 | Duplicate clusters (full DB) | 103 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 1197 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **4**
-- Net-new posts logged: **14**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **999** · re-seen: **2139**
+- Net new: **999** · re-seen: **2140**
 - Duplicate rate: **68.2%**
 
 ## Sentiment drift
@@ -36,14 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · deep state, radical left, years old (24 posts · 4 authors · 6 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (22 posts · 2 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · freedom democrat, decide america, future american, renew spirit, exceptional watch (12 posts · 12 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · voter fraud, task force, looming midterm elections, breaking longtime, trump ally (11 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead (8 posts · 2 authors · 2 exact · 1 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, executive order, proof citizenship, white house, save america (1414 posts · 154 authors · 75 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime (10 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -95,15 +89,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- needs occur (18 posts)
-- cash party, level touch (5 posts)
-- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (24 posts)
-- presidential election (9 posts)
-- broke buried, debt directionless (7 posts)
-- cycle chaotic, fact check, groypers endorsed (7 posts)
-- position steelmanned (6 posts)
-- awakening largest, actually believe (5 posts)
-- _…58 more emerging theme(s)._
+- breaking longtime (10 posts)
+- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
+- senile coward facist, nazi pig bonespur, tolerate pathetic, losers killed, draft dodger (26 posts)
+- awakening largest, voting force, actually believe (5 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- republicans hates, lost unless, cheat riseup, toobigtorig stoptrump, voteblue numbers (4 posts)
+- fulfilled accomplished, simply cake (3 posts)
+- _…14 more emerging theme(s)._
 
 ## Scope note
 
