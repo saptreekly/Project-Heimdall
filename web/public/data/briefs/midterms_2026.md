@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-20 10:39:50 UTC
+> Tactical snapshot · 2026-06-20 11:04:48 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1608 / 630 |
-| Distinct themes | 104 |
+| Distinct themes | 53 |
 | Duplicate clusters (full DB) | 98 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 1173 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **11**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **331**
-- Net new: **1010** · re-seen: **2092**
-- Duplicate rate: **67.4%**
+- Net new: **1010** · re-seen: **2102**
+- Duplicate rate: **67.5%**
 
 ## Sentiment drift
 
@@ -36,14 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · radical left, held accountable, super pacs (921 posts · 120 authors · 22 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans midterms, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules, weeks later (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · cash party, level touch, country voters (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, watch cheating (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt (8 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, proof citizenship, executive order, save america, supreme court (1413 posts · 155 authors · 73 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, election fraud, looming midterm elections, breaking longtime, trump ally (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -95,15 +89,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, state setting, hulhumale phase (47 posts)
-- verified lists, federal judge (10 posts)
-- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- camera actual (21 posts)
-- politicians trying, sanctuary cities (16 posts)
-- cash party, level touch, country voters (10 posts)
-- solution architect's, local communities, power grids, artificial intelligence (7 posts)
-- _…63 more emerging theme(s)._
+- senile coward facist, nazi pig bonespur, tolerate pathetic, losers killed, draft dodger (25 posts)
+- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (7 posts)
+- republicans hates, lost unless, cheat riseup, toobigtorig stoptrump, voteblue numbers (4 posts)
+- fulfilled accomplished, simply cake (3 posts)
+- 10000's fascist, inbreeds cuz, loves winners (12 posts)
+- younger voters, policy survival, short term (4 posts)
+- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
+- _…10 more emerging theme(s)._
 
 ## Scope note
 
