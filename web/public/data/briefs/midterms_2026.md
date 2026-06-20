@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-20 22:47:01 UTC
+> Tactical snapshot · 2026-06-20 23:42:12 UTC
 
 ## Corpus
 
@@ -14,20 +14,15 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1638 / 639 |
-| Distinct themes | 53 |
+| Distinct themes | 79 |
 | Duplicate clusters (full DB) | 103 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 1197 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **22**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **979** · re-seen: **2165**
+- Net new: **979** · re-seen: **2164**
 - Duplicate rate: **68.9%**
 
 ## Sentiment drift
@@ -36,8 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, executive order, proof citizenship, white house, save america (1414 posts · 154 authors · 75 exact · 7 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking longtime (10 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, vote midterms, newest voters (21 posts · 2 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · radical left, years old (21 posts · 3 authors · 7 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · future american, renew spirit, exceptional watch (12 posts · 12 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots postmarked, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 2 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -89,14 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- breaking longtime (10 posts)
-- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
-- senile coward facist, nazi pig bonespur, tolerate pathetic, losers killed, draft dodger (26 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- republicans hates, lost unless, cheat riseup, toobigtorig stoptrump, voteblue numbers (4 posts)
-- fulfilled accomplished, simply cake (3 posts)
-- _…14 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (44 posts)
+- usps create (8 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- needs occur (18 posts)
+- level touch (6 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (24 posts)
+- position steelmanned (11 posts)
+- _…66 more emerging theme(s)._
 
 ## Scope note
 
