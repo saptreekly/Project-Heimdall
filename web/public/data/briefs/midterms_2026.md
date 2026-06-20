@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-20 06:48:42 UTC
+> Tactical snapshot · 2026-06-20 07:09:00 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1608 / 630 |
-| Distinct themes | 41 |
+| Distinct themes | 53 |
 | Duplicate clusters (full DB) | 98 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 1173 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **17**
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **334**
-- Net new: **1034** · re-seen: **2090**
+- Runs: **335**
+- Net new: **1034** · re-seen: **2093**
 - Duplicate rate: **66.9%**
 
 ## Sentiment drift
@@ -36,12 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · donald trump, save america, white house, mail ballots (1152 posts · 151 authors · 63 exact · 6 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, alan dershowitz, harvard law, professor emeritus (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, red, wave, midterms (310 posts · 2 authors · 11 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · super pacs, lobbying firms, insider access, biden harris, ultra maga (7 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame (emerging)** · dems leftists, add puerto, rico states, believe they're, republicans war (4 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, proof citizenship, executive order, save america, supreme court (1413 posts · 155 authors · 73 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, election fraud, looming midterm elections, breaking longtime, trump ally (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -93,14 +89,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (23 posts)
-- democrats freefall, broke buried, debt directionless, results democrat (6 posts)
-- won't tolerate, losers america, 10000's fascist, fascist nazi, 10000's fascist nazi (8 posts)
-- pig bonespur draft, bonespur draft, bonespur draft dodger, draft dodger inbreeds, dodger inbreeds (7 posts)
-- super pacs, lobbying firms, insider access, biden harris, ultra maga (7 posts)
-- ww2 wewill, wewill destroy, pigs ww2 wewill, ww2 wewill destroy, wewill destroy midterms (5 posts)
-- absolutely crazy, voters fooled, government pushing, lie succeed (3 posts)
-- _…11 more emerging theme(s)._
+- senile coward facist, nazi pig bonespur, tolerate pathetic, losers killed, draft dodger (25 posts)
+- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (7 posts)
+- republicans hates, lost unless, cheat riseup, toobigtorig stoptrump, voteblue numbers (4 posts)
+- fulfilled accomplished, simply cake (3 posts)
+- 10000's fascist, inbreeds cuz, loves winners (12 posts)
+- younger voters, policy survival, short term (4 posts)
+- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
+- _…10 more emerging theme(s)._
 
 ## Scope note
 
