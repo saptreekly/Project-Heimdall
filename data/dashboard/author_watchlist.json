@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 452,
+      "run_counter": 453,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1181,7 +1181,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-19T20:47:04.131432+00:00",
           "last_tweet_at": "2026-06-19T20:43:00+00:00",
-          "inserted_total": 9,
+          "inserted_total": 12,
           "polls": 1,
           "inserts_from_polls": 2,
           "status": "active"
@@ -1209,84 +1209,6 @@
           "last_tweet_at": "2026-06-20T03:49:21+00:00",
           "inserted_total": 3,
           "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1665196625231482881": {
-          "author_id": "1665196625231482881",
-          "handle": "Fowle85195Tammy",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-21T18:10:55.977608+00:00",
-          "last_tweet_at": "2026-06-20T13:21:17+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1594310438858153984": {
-          "author_id": "1594310438858153984",
-          "handle": "saveamerica64",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-21T20:10:47.312591+00:00",
-          "last_tweet_at": "2026-06-20T13:13:58+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2004465953476939777": {
-          "author_id": "2004465953476939777",
-          "handle": "tegufy_news",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-21T21:24:36.296382+00:00",
-          "last_tweet_at": "2026-06-20T13:07:53+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1524905988859613193": {
-          "author_id": "1524905988859613193",
-          "handle": "john56681675",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1721318510012321793": {
-          "author_id": "1721318510012321793",
-          "handle": "HX1MAN",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2059490381751001088": {
-          "author_id": "2059490381751001088",
-          "handle": "amandasue_e4",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
@@ -1940,8 +1862,86 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1474502684312932354": {
-          "author_id": "1474502684312932354",
+        "1102251565929455616": {
+          "author_id": "1102251565929455616",
+          "handle": "Lying_For_Jesus",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1668016234615668736": {
+          "author_id": "1668016234615668736",
+          "handle": "Lexi8983",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1663352564241543171": {
+          "author_id": "1663352564241543171",
+          "handle": "Drago4026824567",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1953661742": {
+          "author_id": "1953661742",
+          "handle": "polypredictionx",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "856991644134068224": {
+          "author_id": "856991644134068224",
+          "handle": "bigleaguepol",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1431152091494436868": {
+          "author_id": "1431152091494436868",
+          "handle": "Susan_Dupres",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "358545917": {
+          "author_id": "358545917",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
