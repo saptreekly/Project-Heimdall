@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-21 12:02:04 UTC
+> Tactical snapshot · 2026-06-21 12:24:42 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1652 / 645 |
-| Distinct themes | 102 |
+| Distinct themes | 89 |
 | Duplicate clusters (full DB) | 103 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 1207 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **22**
+- Re-sightings (duplicate encounters): **1**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **972** · re-seen: **2174**
+- Net new: **972** · re-seen: **2175**
 - Duplicate rate: **69.1%**
 
 ## Sentiment drift
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, presiding officer (619 posts · 64 authors · 23 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · super pacs, lobbying firms, years old, insider access, biden harris (351 posts · 45 authors · 5 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans midterms, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules, weeks later (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, alan dershowitz, harvard law, professor emeritus (23 posts · 5 authors · 7 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots postmarked, similar rules (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (9 posts · 6 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, watch cheating (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · freedom democrat, democrat control, control midterms, midterms decide, decide america (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -95,15 +95,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, state setting, hulhumale phase (47 posts)
-- verified lists (10 posts)
-- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- camera actual (11 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, policy difference, cabinet meeting (10 posts)
-- solution architect's, local communities, power grids, artificial intelligence (7 posts)
-- _…72 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (47 posts)
+- verified lists (6 posts)
+- boom latino, james talarico, ken paxton, initial success, texas trump's (5 posts)
+- pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts)
+- republican senate, senate gop, act midterms, america act midterms, pass save america (11 posts)
+- stop gaslighting, happy talk (8 posts)
+- sanctuary cities, writes foreign, policy difference, open border (8 posts)
+- _…75 more emerging theme(s)._
 
 ## Scope note
 
