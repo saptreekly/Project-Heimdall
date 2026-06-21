@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 454,
+      "run_counter": 455,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1212,19 +1212,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1994050223463862272": {
-          "author_id": "1994050223463862272",
-          "handle": "SGTnewsNetworks",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1320179219670786049": {
           "author_id": "1320179219670786049",
           "handle": "Donaldo11865283",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "358545917": {
-          "author_id": "358545917",
+        "1538734252589780992": {
+          "author_id": "1538734252589780992",
+          "handle": "BananaRep405",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "771152516": {
+          "author_id": "771152516",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
