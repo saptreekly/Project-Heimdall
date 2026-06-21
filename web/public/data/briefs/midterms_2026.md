@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-21 14:29:05 UTC
+> Tactical snapshot · 2026-06-21 15:05:09 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1672 / 653 |
-| Distinct themes | 94 |
+| Distinct themes | 90 |
 | Duplicate clusters (full DB) | 106 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 1221 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
+- Re-sightings (duplicate encounters): **10**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **992** · re-seen: **2150**
-- Duplicate rate: **68.4%**
+- Net new: **972** · re-seen: **2160**
+- Duplicate rate: **69.0%**
 
 ## Sentiment drift
 
@@ -37,12 +37,12 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, alan dershowitz, harvard law, professor emeritus (19 posts · 0 authors · 7 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots postmarked, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · freedom democrat, democrat control, control midterms, midterms decide, decide america (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, ele watch, viral clip (7 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · june prophetic, message god, prophet julie, til sentencing, comes holding (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -101,8 +101,8 @@ _None spanning multiple narratives._
 - republican senate, senate gop, act midterms, america act midterms, pass save america (11 posts)
 - stop gaslighting, happy talk (8 posts)
 - sanctuary cities, writes foreign, policy difference, cabinet meeting (10 posts)
-- solution architect's, local communities, liveprayer program (5 posts)
-- _…79 more emerging theme(s)._
+- solution architect's, local communities, power grids, liveprayer program (5 posts)
+- _…76 more emerging theme(s)._
 
 ## Scope note
 
