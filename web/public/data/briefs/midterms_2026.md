@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-21 20:10:52 UTC
+> Tactical snapshot · 2026-06-21 20:48:15 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1684 / 658 |
-| Distinct themes | 88 |
+| Distinct themes | 95 |
 | Duplicate clusters (full DB) | 106 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 1229 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **22**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **962** · re-seen: **2175**
-- Duplicate rate: **69.3%**
+- Net new: **962** · re-seen: **2196**
+- Duplicate rate: **69.5%**
 
 ## Sentiment drift
 
@@ -36,13 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, years old, musk stands, away world's (26 posts · 5 authors · 9 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots postmarked, similar rules (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · freedom democrat, democrat control, control midterms, midterms decide, decide america (8 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · winning loud (7 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · june prophetic, message god, prophet julie, til sentencing, comes holding (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,11 +100,11 @@ _None spanning multiple narratives._
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (47 posts)
 - verified lists (6 posts)
 - boom latino, james talarico, initial success (5 posts)
-- pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts)
-- republican senate, senate gop, act midterms, america act midterms, pass save america (11 posts)
+- scott presler, officially planning (9 posts)
 - stop gaslighting, happy talk (8 posts)
 - sanctuary cities, writes foreign, policy difference, cabinet meeting (10 posts)
-- _…74 more emerging theme(s)._
+- solution architect's, local communities, power grids, liveprayer program (5 posts)
+- _…81 more emerging theme(s)._
 
 ## Scope note
 
