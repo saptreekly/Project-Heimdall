@@ -1,48 +1,43 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-22 06:14:20 UTC
+> Tactical snapshot · 2026-06-22 07:05:04 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1812** |
+| Posts in database | **1831** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1692 / 661 |
-| Distinct themes | 95 |
-| Duplicate clusters (full DB) | 107 |
-| Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 1234 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| Graph nodes / edges | 1709 / 668 |
+| Distinct themes | 80 |
+| Duplicate clusters (full DB) | 110 |
+| Fuzzy clusters (snapshot cohort) | 7 |
+| IU astroturf overlap | 2 bots / 1247 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **954** · re-seen: **2204**
-- Duplicate rate: **69.8%**
+- Net new: **973** · re-seen: **2175**
+- Duplicate rate: **69.1%**
 
 ## Sentiment drift
 
-- Trend: **declining**
+- Trend: **stable**
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, years old, alan dershowitz, harvard law, professor emeritus (23 posts · 2 authors · 8 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · decide america, threat parent (9 posts · 9 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · graham platner, sitting governor (8 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, vote midterms (23 posts · 2 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · away world's, seizing milestone, fresh rallying (17 posts · 4 authors · 6 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · deep state, radical left, years old (16 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, freedom democrat, decide america, american thinker, pay attention (13 posts · 11 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -70,7 +65,7 @@
 - **12 posts** · 1 author(s) — He’s buying time. The 14-point framework is deliberately loose and explicitly extendable beyond the first 60 days. It gives Iran oil exports, sanctions waivers, asset access, and a Hormuz reopening —…
 - **10 posts** · 1 author(s) — Millennials &amp; Gen Z We don't just want the dream back—we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.…
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
-- _…98 more exact-duplicate cluster(s) in database._
+- _…101 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -80,10 +75,10 @@ _None (need ≥5 authors in 90s window)._
 
 - **8 posts** · 8 authors · ~100% Jaccard — Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America’s Future - American Thinker
 - **4 posts** · 4 authors · ~100% Jaccard — Joseph Ford Cotto - Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America’s Future...We can either renew the spirit of liberty that made America exceptional, or watch her collapse…
+- **3 posts** · 3 authors · ~100% Jaccard — 🚨BREAKING: In an incredible development, Elon Musk has begun funding REPUBLICANS in the 2026 midterms, to help President Trump secure the second half of his term - Axios Musk reportedly had dinner wi…
+- **3 posts** · 3 authors · ~100% Jaccard — Lack Of Intellectual Diversity! Close To 100% of Dartmouth Faculty Donations Went to the Political Left During 2026 Midterms gatewaypundit via
 - **3 posts** · 3 authors · ~100% Jaccard — Stephen Miller Says Trump Will Drive GOP Turnout Ahead of 2026 Midterms Stephen Miller said President Donald Trump plans to take an active role in the 2026 midterm elections, arguing that Republican…
-- **3 posts** · 3 authors · ~100% Jaccard — 🚨 NOW: Stephen Miller reveals President Trump is going FULL 2024 MODE on the 2026 midterms to surge GOP turnout LFG! 🔥 "When Donald Trump is on the ballot, what happens? Republicans WIN up and down t…
-- **2 posts** · 2 authors · ~94% Jaccard — Knave or Fool? Traitorous or Demented? Trump's Strategy for the 2026 Midterms requires us to prepare now, by
-- _…1 more fuzzy cluster(s) in snapshot cohort._
+- _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -95,19 +90,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (47 posts)
-- usps create (8 posts)
-- boom latino, james talarico, initial success (5 posts)
-- republican senate, senate gop, act midterms, america act midterms, pass save america (11 posts)
-- stop gaslighting, happy talk (8 posts)
-- sanctuary cities, writes foreign, policy difference, cabinet meeting (10 posts)
-- solution architect's, local communities, liveprayer program (7 posts)
-- _…80 more emerging theme(s)._
+- dismantling rigging (17 posts)
+- level touch (6 posts)
+- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (27 posts)
+- presidential election (9 posts)
+- cycle chaotic, fact check, groypers endorsed (7 posts)
+- broke buried, debt directionless (6 posts)
+- awakening largest, actually believe (5 posts)
+- position steelmanned (5 posts)
+- _…67 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1812 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1831 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
