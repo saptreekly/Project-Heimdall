@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-22 22:27:10 UTC
+> Tactical snapshot · 2026-06-22 23:06:13 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1739 / 679 |
-| Distinct themes | 97 |
+| Distinct themes | 98 |
 | Duplicate clusters (full DB) | 112 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 1272 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **22**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **330**
-- Net new: **953** · re-seen: **2167**
-- Duplicate rate: **69.5%**
+- Net new: **953** · re-seen: **2188**
+- Duplicate rate: **69.7%**
 
 ## Sentiment drift
 
@@ -36,12 +36,12 @@
 
 ## Layered coordination (frames)
 
+- **Exact duplicate campaign** · lose control, years old (26 posts · 3 authors · 9 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, alan dershowitz, harvard law, professor emeritus (19 posts · 3 authors · 5 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (12 posts · 10 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · mail ballots postmarked, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (10 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, radical left, sidney powell (9 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -95,15 +95,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (47 posts)
 - usps create (8 posts)
-- boom latino, james talarico, ken paxton, initial success, texas trump's (5 posts)
-- pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (10 posts)
+- boom latino, james talarico, initial success (5 posts)
 - reconciliation package, turn notifications (10 posts)
-- stop gaslighting, happy talk (8 posts)
-- sanctuary cities, took venezuelan, dictatorship block (8 posts)
-- _…82 more emerging theme(s)._
+- accountability midterm, stop gaslighting, happy talk (8 posts)
+- sanctuary cities, writes foreign, policy difference, cabinet meeting (10 posts)
+- solution architect's, local communities, liveprayer program (6 posts)
+- _…83 more emerging theme(s)._
 
 ## Scope note
 
