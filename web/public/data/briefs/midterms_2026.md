@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-23 22:51:10 UTC
+> Tactical snapshot · 2026-06-23 23:35:31 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1790 / 701 |
-| Distinct themes | 88 |
+| Distinct themes | 89 |
 | Duplicate clusters (full DB) | 114 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 1316 authors |
@@ -22,8 +22,8 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **942** · re-seen: **2212**
-- Duplicate rate: **70.1%**
+- Net new: **942** · re-seen: **2184**
+- Duplicate rate: **69.9%**
 
 ## Sentiment drift
 
@@ -31,8 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · radical left (36 posts · 6 authors · 10 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, radical left (36 posts · 6 authors · 10 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · mail ballots postmarked, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -95,10 +95,10 @@ _None spanning multiple narratives._
 - executive order election, order election integrity, mail voting, mail ballot, sign executive order (11 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
 - reuters reported, fake news, unity haven, public health, normal atlantic (5 posts)
-- scott presler, officially planning, leader john (7 posts)
-- coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)
+- scott presler, officially planning (7 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (27 posts)
 - presidential election (10 posts)
-- _…74 more emerging theme(s)._
+- _…75 more emerging theme(s)._
 
 ## Scope note
 
