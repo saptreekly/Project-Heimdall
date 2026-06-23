@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-23 21:07:44 UTC
+> Tactical snapshot · 2026-06-23 21:48:52 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1790 / 701 |
-| Distinct themes | 99 |
+| Distinct themes | 97 |
 | Duplicate clusters (full DB) | 114 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 1316 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **22**
+- Re-sightings (duplicate encounters): **1**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **331**
-- Net new: **948** · re-seen: **2214**
+- Runs: **332**
+- Net new: **948** · re-seen: **2215**
 - Duplicate rate: **70.0%**
 
 ## Sentiment drift
@@ -40,9 +40,9 @@
 - **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, radical left, sidney powell (14 posts · 2 authors · 5 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots postmarked, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -103,7 +103,7 @@ _None spanning multiple narratives._
 - sanctuary cities, took venezuelan, dictatorship block (7 posts)
 - task force, radical left, sidney powell (14 posts)
 - solution architect's, local communities (6 posts)
-- _…84 more emerging theme(s)._
+- _…83 more emerging theme(s)._
 
 ## Scope note
 
