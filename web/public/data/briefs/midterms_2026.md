@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-23 13:21:28 UTC
+> Tactical snapshot · 2026-06-23 13:48:06 UTC
 
 ## Corpus
 
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **16**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **331**
-- Net new: **948** · re-seen: **2212**
-- Duplicate rate: **70.0%**
+- Net new: **948** · re-seen: **2226**
+- Duplicate rate: **70.1%**
 
 ## Sentiment drift
 
@@ -40,9 +40,9 @@
 - **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · mail ballots postmarked, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, radical left, sidney powell (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · voter fraud, task force, radical left, sidney powell (9 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -95,15 +95,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
 - usps create (8 posts)
 - boom latino, james talarico, initial success (5 posts)
+- reuters reported, fake news, unity haven, public health, normal atlantic (5 posts)
 - scott presler, officially planning (9 posts)
 - accountability midterm, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, writes foreign, policy difference (8 posts)
-- solution architect's, local communities, liveprayer program (7 posts)
-- _…85 more emerging theme(s)._
+- sanctuary cities, took venezuelan, dictatorship block (7 posts)
+- _…86 more emerging theme(s)._
 
 ## Scope note
 
