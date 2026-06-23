@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-23 04:14:48 UTC
+> Tactical snapshot · 2026-06-23 04:49:42 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1872** |
+| Posts in database | **1892** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1739 / 679 |
-| Distinct themes | 98 |
+| Graph nodes / edges | 1757 / 686 |
+| Distinct themes | 79 |
 | Duplicate clusters (full DB) | 112 |
 | Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 1272 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| IU astroturf overlap | 2 bots / 1287 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **331**
-- Net new: **953** · re-seen: **2176**
-- Duplicate rate: **69.5%**
+- Net new: **973** · re-seen: **2174**
+- Duplicate rate: **69.1%**
 
 ## Sentiment drift
 
@@ -36,13 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, years old (26 posts · 3 authors · 9 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (12 posts · 10 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, radical left, sidney powell (9 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · years old (35 posts · 3 authors · 9 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, vote midterms, center square, democrats ninepercent (28 posts · 5 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, freedom democrat, decide america, american thinker, pay attention (15 posts · 13 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, nears rulings, ele watch (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -54,7 +49,7 @@
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_10authors_10posts_j1.00
-- cross_author_fuzzy_8authors_8posts_j1.00
+- cross_author_fuzzy_9authors_9posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j0.95
 - cross_author_fuzzy_6authors_6posts_j1.00
 - cross_author_fuzzy_6authors_6posts_j1.00
@@ -78,7 +73,7 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **8 posts** · 8 authors · ~100% Jaccard — Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America’s Future - American Thinker
+- **9 posts** · 9 authors · ~100% Jaccard — Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America’s Future - American Thinker
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨BREAKING: In an incredible development, Elon Musk has begun funding REPUBLICANS in the 2026 midterms, to help President Trump secure the second half of his term - Axios Musk reportedly had dinner wi…
 - **4 posts** · 4 authors · ~100% Jaccard — Joseph Ford Cotto - Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America’s Future...We can either renew the spirit of liberty that made America exceptional, or watch her collapse…
 - **3 posts** · 3 authors · ~100% Jaccard — Lack Of Intellectual Diversity! Close To 100% of Dartmouth Faculty Donations Went to the Political Left During 2026 Midterms gatewaypundit via
@@ -95,19 +90,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (47 posts)
-- usps create (8 posts)
-- boom latino, james talarico, initial success (5 posts)
-- reconciliation package, turn notifications (10 posts)
-- accountability midterm, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, writes foreign, policy difference, cabinet meeting (10 posts)
-- solution architect's, local communities, liveprayer program (6 posts)
-- _…83 more emerging theme(s)._
+- reconciliation package (20 posts)
+- level touch (4 posts)
+- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (27 posts)
+- presidential election (10 posts)
+- broke buried, debt directionless (6 posts)
+- cycle chaotic, fact check, groypers endorsed (6 posts)
+- awakening largest, actually believe (5 posts)
+- position steelmanned (5 posts)
+- _…63 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1872 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1892 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
