@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-23 19:32:38 UTC
+> Tactical snapshot · 2026-06-23 20:30:28 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1790 / 701 |
-| Distinct themes | 85 |
+| Distinct themes | 99 |
 | Duplicate clusters (full DB) | 114 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 1316 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **332**
-- Net new: **967** · re-seen: **2194**
-- Duplicate rate: **69.4%**
+- Runs: **331**
+- Net new: **948** · re-seen: **2194**
+- Duplicate rate: **69.8%**
 
 ## Sentiment drift
 
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, radical left, years old, deep state (24 posts · 0 authors · 6 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, vote midterms (23 posts · 2 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, freedom democrat, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · arriving mail ballots, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old (28 posts · 3 authors · 10 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, radical left, sidney powell (14 posts · 2 authors · 5 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots postmarked, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · special government (9 posts · 2 authors · 3 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · mike adams, stephen miller, plans active (9 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -90,15 +95,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- scott presler, primary challenge, officially planning, leader john (6 posts)
-- level touch (6 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (27 posts)
-- presidential election (10 posts)
-- approval rating, given results (8 posts)
-- broke buried, debt directionless (6 posts)
-- position steelmanned (6 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- _…71 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
+- usps create (8 posts)
+- boom latino, james talarico, initial success (5 posts)
+- accountability midterm, stop gaslighting, happy talk (8 posts)
+- sanctuary cities, took venezuelan, dictatorship block (7 posts)
+- task force, radical left, sidney powell (14 posts)
+- solution architect's, local communities (6 posts)
+- _…84 more emerging theme(s)._
 
 ## Scope note
 
