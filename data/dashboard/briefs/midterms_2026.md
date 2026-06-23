@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-23 10:44:45 UTC
+> Tactical snapshot · 2026-06-23 11:28:41 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1892** |
+| Posts in database | **1901** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1757 / 686 |
-| Distinct themes | 98 |
-| Duplicate clusters (full DB) | 112 |
+| Graph nodes / edges | 1764 / 689 |
+| Distinct themes | 80 |
+| Duplicate clusters (full DB) | 113 |
 | Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 1287 authors |
+| IU astroturf overlap | 2 bots / 1292 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **11**
+- Net-new posts logged: **9**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **331**
-- Net new: **955** · re-seen: **2182**
-- Duplicate rate: **69.6%**
+- Net new: **964** · re-seen: **2192**
+- Duplicate rate: **69.5%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, vote midterms, center square, democrats ninepercent, newest voters (29 posts · 5 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old (26 posts · 3 authors · 9 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, radical left, sidney powell (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · deep state, years old (29 posts · 3 authors · 8 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, vote midterms, center square, democrats ninepercent (28 posts · 5 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, freedom democrat, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · arriving mail ballots, similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, viral clip (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -70,7 +70,7 @@
 - **12 posts** · 1 author(s) — He’s buying time. The 14-point framework is deliberately loose and explicitly extendable beyond the first 60 days. It gives Iran oil exports, sanctions waivers, asset access, and a Hormuz reopening —…
 - **10 posts** · 1 author(s) — Millennials &amp; Gen Z We don't just want the dream back—we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.…
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
-- _…103 more exact-duplicate cluster(s) in database._
+- _…104 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -95,19 +95,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (49 posts)
-- usps create (8 posts)
-- boom latino, james talarico, initial success (5 posts)
-- scott presler, officially planning, promise lead (10 posts)
-- accountability midterm, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, took venezuelan, dictatorship block (8 posts)
-- task force, radical left, sidney powell (10 posts)
-- _…83 more emerging theme(s)._
+- needs occur (18 posts)
+- level touch (5 posts)
+- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (27 posts)
+- presidential election (10 posts)
+- broke buried, debt directionless (6 posts)
+- position steelmanned (6 posts)
+- cycle chaotic, fact check, groypers endorsed (6 posts)
+- awakening largest, actually believe (5 posts)
+- _…64 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1892 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1901 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
