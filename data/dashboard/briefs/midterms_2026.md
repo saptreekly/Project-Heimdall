@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-23 21:48:52 UTC
+> Tactical snapshot · 2026-06-23 22:06:22 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1790 / 701 |
-| Distinct themes | 97 |
+| Distinct themes | 88 |
 | Duplicate clusters (full DB) | 114 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 1316 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **12**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **948** · re-seen: **2215**
-- Duplicate rate: **70.0%**
+- Net new: **942** · re-seen: **2214**
+- Duplicate rate: **70.2%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, years old (28 posts · 3 authors · 10 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · radical left (36 posts · 6 authors · 10 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, radical left, sidney powell (14 posts · 2 authors · 5 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · mail ballots postmarked, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, viral clip (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -96,14 +96,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
-- usps create (8 posts)
-- boom latino, james talarico, initial success (5 posts)
-- accountability midterm, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, took venezuelan, dictatorship block (7 posts)
-- task force, radical left, sidney powell (14 posts)
-- solution architect's, local communities (6 posts)
-- _…83 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (34 posts)
+- executive order election, order election integrity, mail voting, mail ballot, sign executive order (11 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- reuters reported, fake news, unity haven, public health, normal atlantic (5 posts)
+- scott presler, officially planning, leader john (7 posts)
+- coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)
+- presidential election (10 posts)
+- _…74 more emerging theme(s)._
 
 ## Scope note
 
