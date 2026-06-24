@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-24 06:59:19 UTC
+> Tactical snapshot · 2026-06-24 10:29:18 UTC
 
 ## Corpus
 
@@ -14,10 +14,15 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1809 / 709 |
-| Distinct themes | 45 |
+| Distinct themes | 102 |
 | Duplicate clusters (full DB) | 115 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 1330 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
@@ -31,10 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · america act, proof citizenship, president donald, white house, mail ballots (1331 posts · 172 authors · 77 exact · 7 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking incredible, development elon, musk begun, trump secure, second half (5 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
-- **Shared frame** · trump, red, wave, midterms (316 posts · 2 authors · 11 exact · 0 fuzzy subclusters)
-- **Shared frame** · montana democratic, support public, autopsy beginning, air grievances (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, rick scott (28 posts · 5 authors · 10 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots postmarked, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, radical left, sidney powell (11 posts · 2 authors · 4 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -87,14 +96,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (27 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
-- awakening largest, actually believe (6 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- 10000's fascist, inbreeds cuz, loves winners (16 posts)
-- absolutely crazy, voters fooled, rigged government, pushing lie (3 posts)
-- endorsed candidate, robert smullen, money used, russia doesn't, research institutions (3 posts)
-- _…12 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (49 posts)
+- usps create (8 posts)
+- boom latino, james talarico, initial success (5 posts)
+- accountability midterm, stop gaslighting, happy talk (8 posts)
+- sanctuary cities, took venezuelan, dictatorship block (7 posts)
+- solution architect's, local communities (6 posts)
+- coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)
+- _…87 more emerging theme(s)._
 
 ## Scope note
 
