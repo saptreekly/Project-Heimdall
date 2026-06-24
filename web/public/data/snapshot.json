@@ -1,11 +1,11 @@
 {
   "version": 5,
-  "generated_at": "2026-06-24T16:37:48.777275+00:00",
+  "generated_at": "2026-06-24T17:18:42.346214+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
-      "keywords": "2026 supreme court",
+      "keywords": "author:GarfieldCoGOP",
       "post_count": 1977
     }
   ],
@@ -6222,9 +6222,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "3085410827",
               "38108253",
-              "399178595"
+              "399178595",
+              "3085410827"
             ]
           },
           {
@@ -6232,9 +6232,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
+              "16513335",
               "1746263545648680960",
-              "26424178",
-              "16513335"
+              "26424178"
             ]
           }
         ],
@@ -38581,24 +38581,33 @@
             "cluster_count": 2,
             "clusters": [
               {
-                "cluster_id": 0,
-                "label": "black president",
-                "size": 3,
+                "cluster_id": 1,
+                "label": "setup election fraud",
+                "size": 5,
                 "post_ids": [
-                  760,
-                  759,
-                  758
+                  144,
+                  143,
+                  140,
+                  139,
+                  101
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 1,
-                "label": "ecobank",
-                "size": 3,
+                "cluster_id": 0,
+                "label": "mail ballots",
+                "size": 10,
                 "post_ids": [
                   762,
-                  761,
-                  757
+                  389,
+                  387,
+                  305,
+                  145,
+                  142,
+                  141,
+                  138,
+                  102,
+                  60
                 ],
                 "emerging_theme": false
               }
@@ -54964,10 +54973,10 @@
           }
         ],
         "sightings": {
-          "total_resightings": 16,
+          "total_resightings": 1,
           "total_net_new": 0,
           "daily_resightings": {
-            "2026-06-24": 16
+            "2026-06-24": 1
           },
           "daily_net_new": {}
         }
@@ -55003,8 +55012,8 @@
       },
       "brief": {
         "version": 1,
-        "generated_at": "2026-06-24T16:37:48.777275+00:00",
-        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-24 16:37:48 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **1977** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.30 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 1819 / 713 |\n| Distinct themes | 101 |\n| Duplicate clusters (full DB) | 116 |\n| Fuzzy clusters (snapshot cohort) | 7 |\n| IU astroturf overlap | 2 bots / 1340 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **16**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **334**\n- Net new: **916** \u00b7 re-seen: **2225**\n- Duplicate rate: **70.8%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 rick scott (32 posts \u00b7 6 authors \u00b7 12 exact \u00b7 3 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 magna carta, decide america, american thinker, pay attention (14 posts \u00b7 9 authors \u00b7 2 exact \u00b7 1 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 mail ballots postmarked, similar rules (11 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 data analyst, numbers clear, 'warning sign', dems ahead (7 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 court announcement, ele watch, viral clip (7 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_15_size_3\n- dense_cluster_483_size_3\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_10authors_10posts_j1.00\n- cross_author_fuzzy_9authors_9posts_j1.00\n- cross_author_fuzzy_7authors_7posts_j0.95\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_6authors_6posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **27 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- **17 posts** \u00b7 1 author(s) \u2014 Republican \u201c BIG BEAUTIFUL BILL\u201d Republicans planned to DELAY what was in the Bill on purpose with the help of project 2025 H.R.1 (The \"Big Beautiful Bill\") was designed to delay the damage until aft\u2026\n- **12 posts** \u00b7 1 author(s) \u2014 He\u2019s buying time. The 14-point framework is deliberately loose and explicitly extendable beyond the first 60 days. It gives Iran oil exports, sanctions waivers, asset access, and a Hormuz reopening \u2014\u2026\n- **10 posts** \u00b7 1 author(s) \u2014 Millennials &amp; Gen Z We don't just want the dream back\u2014we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.\u2026\n- **9 posts** \u00b7 1 author(s) \u2014 War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc\u2026\n- _\u2026107 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **6 posts** \u00b7 6 authors \u00b7 ~100% Jaccard \u2014 Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America\u2019s Future - American Thinker\n- **5 posts** \u00b7 5 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8BREAKING: In an incredible development, Elon Musk has begun funding REPUBLICANS in the 2026 midterms, to help President Trump secure the second half of his term - Axios Musk reportedly had dinner wi\u2026\n- **4 posts** \u00b7 4 authors \u00b7 ~100% Jaccard \u2014 Joseph Ford Cotto - Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America\u2019s Future...We can either renew the spirit of liberty that made America exceptional, or watch her collapse\u2026\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Lack Of Intellectual Diversity! Close To 100% of Dartmouth Faculty Donations Went to the Political Left During 2026 Midterms gatewaypundit via\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 RICK SCOTT\u2019S DAILY VOTE STRATEGY: MAKE DEMOCRATS VOTE AGAINST ELECTION SECURITY EVERY DAY UNTIL NOVEMBER Sen. Rick Scott (R-FL) is pushing Senate Republicans to force a floor vote on the SAVE Act \u2014 o\u2026\n- _\u20262 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (48 posts)\n- usps create (8 posts)\n- boom latino, james talarico, initial success (5 posts)\n- stop gaslighting, happy talk (8 posts)\n- sanctuary cities, took venezuelan, dictatorship block (8 posts)\n- solution architect's, local communities, fleet scale (7 posts)\n- coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)\n- _\u202684 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 1977 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
+        "generated_at": "2026-06-24T17:18:42.346214+00:00",
+        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-24 17:18:42 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **1977** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.30 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 1819 / 713 |\n| Distinct themes | 101 |\n| Duplicate clusters (full DB) | 116 |\n| Fuzzy clusters (snapshot cohort) | 7 |\n| IU astroturf overlap | 2 bots / 1340 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **1**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **334**\n- Net new: **916** \u00b7 re-seen: **2224**\n- Duplicate rate: **70.8%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 rick scott (32 posts \u00b7 6 authors \u00b7 12 exact \u00b7 3 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 magna carta, decide america, american thinker, pay attention (14 posts \u00b7 9 authors \u00b7 2 exact \u00b7 1 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 mail ballots postmarked, similar rules (11 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 data analyst, numbers clear, 'warning sign', dems ahead (7 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 court announcement, ele watch, viral clip (7 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_15_size_3\n- dense_cluster_483_size_3\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_10authors_10posts_j1.00\n- cross_author_fuzzy_9authors_9posts_j1.00\n- cross_author_fuzzy_7authors_7posts_j0.95\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_6authors_6posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **27 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- **17 posts** \u00b7 1 author(s) \u2014 Republican \u201c BIG BEAUTIFUL BILL\u201d Republicans planned to DELAY what was in the Bill on purpose with the help of project 2025 H.R.1 (The \"Big Beautiful Bill\") was designed to delay the damage until aft\u2026\n- **12 posts** \u00b7 1 author(s) \u2014 He\u2019s buying time. The 14-point framework is deliberately loose and explicitly extendable beyond the first 60 days. It gives Iran oil exports, sanctions waivers, asset access, and a Hormuz reopening \u2014\u2026\n- **10 posts** \u00b7 1 author(s) \u2014 Millennials &amp; Gen Z We don't just want the dream back\u2014we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.\u2026\n- **9 posts** \u00b7 1 author(s) \u2014 War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc\u2026\n- _\u2026107 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **6 posts** \u00b7 6 authors \u00b7 ~100% Jaccard \u2014 Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America\u2019s Future - American Thinker\n- **5 posts** \u00b7 5 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8BREAKING: In an incredible development, Elon Musk has begun funding REPUBLICANS in the 2026 midterms, to help President Trump secure the second half of his term - Axios Musk reportedly had dinner wi\u2026\n- **4 posts** \u00b7 4 authors \u00b7 ~100% Jaccard \u2014 Joseph Ford Cotto - Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America\u2019s Future...We can either renew the spirit of liberty that made America exceptional, or watch her collapse\u2026\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Lack Of Intellectual Diversity! Close To 100% of Dartmouth Faculty Donations Went to the Political Left During 2026 Midterms gatewaypundit via\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 RICK SCOTT\u2019S DAILY VOTE STRATEGY: MAKE DEMOCRATS VOTE AGAINST ELECTION SECURITY EVERY DAY UNTIL NOVEMBER Sen. Rick Scott (R-FL) is pushing Senate Republicans to force a floor vote on the SAVE Act \u2014 o\u2026\n- _\u20262 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (48 posts)\n- usps create (8 posts)\n- boom latino, james talarico, initial success (5 posts)\n- stop gaslighting, happy talk (8 posts)\n- sanctuary cities, took venezuelan, dictatorship block (8 posts)\n- solution architect's, local communities, fleet scale (7 posts)\n- coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)\n- _\u202684 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 1977 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
         "meta": {
           "narrative_name": "midterms_2026",
           "posts_total_db": 1977,
@@ -55040,17 +55049,17 @@
             "window_days": 14,
             "runs": 334,
             "net_new": 916,
-            "duplicates": 2225,
+            "duplicates": 2224,
             "filtered": 1720,
-            "fetched": 4861,
+            "fetched": 4860,
             "duplicate_rate": 0.708,
-            "latest_run_at": "2026-06-24T16:37:47.276600+00:00"
+            "latest_run_at": "2026-06-24T17:18:40.815883+00:00"
           },
           "sightings": {
-            "total_resightings": 16,
+            "total_resightings": 1,
             "total_net_new": 0,
             "daily_resightings": {
-              "2026-06-24": 16
+              "2026-06-24": 1
             },
             "daily_net_new": {}
           },
@@ -55937,7 +55946,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-24",
-      "requests_used": 28
+      "requests_used": 30
     }
   }
 }
