@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-24 14:51:09 UTC
+> Tactical snapshot · 2026-06-24 15:28:30 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1976** |
+| Posts in database | **1977** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1818 / 713 |
-| Distinct themes | 100 |
+| Graph nodes / edges | 1819 / 713 |
+| Distinct themes | 101 |
 | Duplicate clusters (full DB) | 116 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 1339 authors |
+| IU astroturf overlap | 2 bots / 1340 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **333**
-- Net new: **935** · re-seen: **2204**
-- Duplicate rate: **70.2%**
+- Runs: **334**
+- Net new: **936** · re-seen: **2211**
+- Duplicate rate: **70.3%**
 
 ## Sentiment drift
 
@@ -95,19 +95,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (48 posts)
-- voting machines, usps create (8 posts)
+- usps create (8 posts)
 - boom latino, james talarico, initial success (5 posts)
-- sanctuary cities, took venezuelan, dictatorship block (9 posts)
 - stop gaslighting, happy talk (8 posts)
+- sanctuary cities, took venezuelan, dictatorship block (8 posts)
 - solution architect's, local communities, fleet scale (7 posts)
 - coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)
-- _…83 more emerging theme(s)._
+- _…84 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1976 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1977 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
