@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-24 11:13:34 UTC
+> Tactical snapshot · 2026-06-24 11:33:07 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1959** |
+| Posts in database | **1960** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1809 / 709 |
-| Distinct themes | 102 |
+| Distinct themes | 97 |
 | Duplicate clusters (full DB) | 115 |
-| Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 2 bots / 1330 authors |
+| Fuzzy clusters (snapshot cohort) | 7 |
+| IU astroturf overlap | 2 bots / 1331 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **16**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **333**
-- Net new: **937** · re-seen: **2206**
+- Runs: **334**
+- Net new: **938** · re-seen: **2207**
 - Duplicate rate: **70.2%**
 
 ## Sentiment drift
@@ -36,8 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, rick scott (28 posts · 5 authors · 10 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, rick scott (30 posts · 5 authors · 11 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · mail ballots postmarked, similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, radical left, sidney powell (11 posts · 2 authors · 4 exact · 1 fuzzy subclusters)
@@ -83,7 +83,6 @@ _None (need ≥5 authors in 90s window)._
 - **4 posts** · 4 authors · ~100% Jaccard — Joseph Ford Cotto - Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America’s Future...We can either renew the spirit of liberty that made America exceptional, or watch her collapse…
 - **3 posts** · 3 authors · ~100% Jaccard — Lack Of Intellectual Diversity! Close To 100% of Dartmouth Faculty Donations Went to the Political Left During 2026 Midterms gatewaypundit via
 - **3 posts** · 3 authors · ~100% Jaccard — Stephen Miller Says Trump Will Drive GOP Turnout Ahead of 2026 Midterms Stephen Miller said President Donald Trump plans to take an active role in the 2026 midterm elections, arguing that Republican…
-- **2 posts** · 2 authors · ~100% Jaccard — RICK SCOTT’S DAILY VOTE STRATEGY: MAKE DEMOCRATS VOTE AGAINST ELECTION SECURITY EVERY DAY UNTIL NOVEMBER Sen. Rick Scott (R-FL) is pushing Senate Republicans to force a floor vote on the SAVE Act — o…
 - _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -97,18 +96,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (49 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
 - usps create (8 posts)
 - boom latino, james talarico, initial success (5 posts)
-- accountability midterm, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, took venezuelan, dictatorship block (7 posts)
+- stop gaslighting, happy talk (8 posts)
+- sanctuary cities, took venezuelan, dictatorship block (8 posts)
 - solution architect's, local communities (6 posts)
 - coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)
-- _…87 more emerging theme(s)._
+- _…82 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1959 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1960 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
