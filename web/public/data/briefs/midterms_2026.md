@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-24 06:28:49 UTC
+> Tactical snapshot · 2026-06-24 06:59:19 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **1939** |
+| Posts in database | **1959** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1790 / 701 |
-| Distinct themes | 99 |
-| Duplicate clusters (full DB) | 114 |
-| Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 1316 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| Graph nodes / edges | 1809 / 709 |
+| Distinct themes | 45 |
+| Duplicate clusters (full DB) | 115 |
+| Fuzzy clusters (snapshot cohort) | 8 |
+| IU astroturf overlap | 2 bots / 1330 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **917** · re-seen: **2218**
-- Duplicate rate: **70.7%**
+- Net new: **937** · re-seen: **2190**
+- Duplicate rate: **70.0%**
 
 ## Sentiment drift
 
@@ -36,14 +31,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, years old (28 posts · 3 authors · 10 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, center square, democrats ninepercent, newest voters, midterms source (21 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, radical left, sidney powell (14 posts · 2 authors · 5 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · mail ballots postmarked, similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · america act, proof citizenship, president donald, white house, mail ballots (1331 posts · 172 authors · 77 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking incredible, development elon, musk begun, trump secure, second half (5 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · trump, red, wave, midterms (316 posts · 2 authors · 11 exact · 0 fuzzy subclusters)
+- **Shared frame** · montana democratic, support public, autopsy beginning, air grievances (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -70,7 +61,7 @@
 - **12 posts** · 1 author(s) — He’s buying time. The 14-point framework is deliberately loose and explicitly extendable beyond the first 60 days. It gives Iran oil exports, sanctions waivers, asset access, and a Hormuz reopening —…
 - **10 posts** · 1 author(s) — Millennials &amp; Gen Z We don't just want the dream back—we're rewriting it. Gen Z &amp; Millennials are turning up for the 2026 midterms to demand affordable housing and a future that works for us.…
 - **9 posts** · 1 author(s) — War Powers Vote Exposes Growing Divide Over U.S. Involvement in Iran The congressional vote on the War Powers Act has exposed emerging cracks within the Republican Party as questions grow over the sc…
-- _…105 more exact-duplicate cluster(s) in database._
+- _…106 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -83,6 +74,7 @@ _None (need ≥5 authors in 90s window)._
 - **4 posts** · 4 authors · ~100% Jaccard — Joseph Ford Cotto - Your Freedom Vs. Democrat Control: The 2026 Midterms Will Decide America’s Future...We can either renew the spirit of liberty that made America exceptional, or watch her collapse…
 - **3 posts** · 3 authors · ~100% Jaccard — Lack Of Intellectual Diversity! Close To 100% of Dartmouth Faculty Donations Went to the Political Left During 2026 Midterms gatewaypundit via
 - **3 posts** · 3 authors · ~100% Jaccard — Stephen Miller Says Trump Will Drive GOP Turnout Ahead of 2026 Midterms Stephen Miller said President Donald Trump plans to take an active role in the 2026 midterm elections, arguing that Republican…
+- **2 posts** · 2 authors · ~100% Jaccard — RICK SCOTT’S DAILY VOTE STRATEGY: MAKE DEMOCRATS VOTE AGAINST ELECTION SECURITY EVERY DAY UNTIL NOVEMBER Sen. Rick Scott (R-FL) is pushing Senate Republicans to force a floor vote on the SAVE Act — o…
 - _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -95,19 +87,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department, maga depends (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
-- usps create (8 posts)
-- boom latino, james talarico, initial success (5 posts)
-- accountability midterm, stop gaslighting, happy talk (8 posts)
-- sanctuary cities, took venezuelan, dictatorship block (7 posts)
-- task force, radical left, sidney powell (14 posts)
-- solution architect's, local communities (6 posts)
-- _…84 more emerging theme(s)._
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (27 posts)
+- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
+- awakening largest, actually believe (6 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- 10000's fascist, inbreeds cuz, loves winners (16 posts)
+- absolutely crazy, voters fooled, rigged government, pushing lie (3 posts)
+- endorsed candidate, robert smullen, money used, russia doesn't, research institutions (3 posts)
+- _…12 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 1939 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 1959 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
