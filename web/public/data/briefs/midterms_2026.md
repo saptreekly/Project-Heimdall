@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-25 17:26:54 UTC
+> Tactical snapshot · 2026-06-25 18:21:36 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1911 / 759 |
-| Distinct themes | 52 |
+| Distinct themes | 47 |
 | Duplicate clusters (full DB) | 117 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 1417 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **22**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **337**
-- Net new: **969** · re-seen: **2245**
-- Duplicate rate: **69.9%**
+- Net new: **969** · re-seen: **2266**
+- Duplicate rate: **70.0%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · executive order, red wave, supreme court, proof citizenship, save america (1765 posts · 166 authors · 96 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · executive order, red wave, supreme court, proof citizenship, america act (1778 posts · 171 authors · 96 exact · 7 fuzzy subclusters)
 - **Shared frame** · disinformation campaigns, authentic american, foreign interference, russian operations, fake accounts (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -93,10 +93,9 @@ _None spanning multiple narratives._
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
 - cowardfacist nazi, senile cowardfacist nazi, cowardfacist nazi pig, tolerate patheticlosers, patheticlosers killed (8 posts)
-- lobbying firms, super pacs, insider access, biden harris, ultra maga (7 posts)
-- felony charges, invasion real (5 posts)
-- beautiful delay, planned project, rules dec (4 posts)
-- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (3 posts)
+- felony charges, harris installed, invasion real (5 posts)
+- robert smullen, russia doesn't, research institutions, state media (3 posts)
+- control congress, underway sean, spicer teddy, daniels chris, wilson discuss (3 posts)
 - _…9 more emerging theme(s)._
 
 ## Scope note
