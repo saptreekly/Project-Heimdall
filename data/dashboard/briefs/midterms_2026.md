@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-25 16:06:12 UTC
+> Tactical snapshot · 2026-06-25 16:43:55 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2085** |
+| Posts in database | **2104** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1893 / 753 |
-| Distinct themes | 96 |
+| Graph nodes / edges | 1911 / 759 |
+| Distinct themes | 88 |
 | Duplicate clusters (full DB) | 117 |
-| Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 2 bots / 1401 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| Fuzzy clusters (snapshot cohort) | 7 |
+| IU astroturf overlap | 2 bots / 1417 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **337**
-- Net new: **967** · re-seen: **2243**
-- Duplicate rate: **69.9%**
+- Net new: **986** · re-seen: **2242**
+- Duplicate rate: **69.5%**
 
 ## Sentiment drift
 
@@ -36,13 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, rick scott (36 posts · 6 authors · 11 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, radical left, sidney powell (25 posts · 3 authors · 7 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, radical left, years old (31 posts · 2 authors · 8 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, freedom democrat, decide america, american thinker, pay attention (15 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, icymi hackers, governments experience, theft artificial (9 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · special government (9 posts · 2 authors · 3 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -81,10 +76,9 @@ _None (need ≥5 authors in 90s window)._
 
 - **3 posts** · 3 authors · ~90% Jaccard — 🚨 HUGE WIN FOR ELECTION INTEGRITY! US Postmaster General just dropped the hammer on Congress: The Post Office WILL NOT deliver mail-in ballots for the 2026 midterms to any states that refuse to compl…
 - **30 posts** · 3 authors · ~100% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
+- **3 posts** · 3 authors · ~97% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - **2 posts** · 2 authors · ~100% Jaccard — RICK SCOTT’S DAILY VOTE STRATEGY: MAKE DEMOCRATS VOTE AGAINST ELECTION SECURITY EVERY DAY UNTIL NOVEMBER Sen. Rick Scott (R-FL) is pushing Senate Republicans to force a floor vote on the SAVE Act — o…
 - **2 posts** · 2 authors · ~100% Jaccard — 🧵 The Fraud Fighter Summit exposed the deep state fraud, election theft, and cultural takeover. Cliff Notes Day 1: 1/ Juan O’Savin opened and ran the summit. The event functioned as a strategic war b…
-- **2 posts** · 2 authors · ~100% Jaccard — 🚨BREAKING: In an incredible development, Elon Musk has begun funding REPUBLICANS in the 2026 midterms, to help President Trump secure the second half of his term - Axios Musk reportedly had dinner wi…
-- **2 posts** · 2 authors · ~92% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -97,19 +91,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (46 posts)
-- verified lists (7 posts)
-- position steelmanned (7 posts)
-- stop gaslighting, happy talk (9 posts)
-- policy difference, took venezuelan, dictatorship block (10 posts)
-- local communities, fleet scale (6 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- _…80 more emerging theme(s)._
+- coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)
+- midterms days, days presidential, election days, midterms days presidential, days presidential election (11 posts)
+- broke buried, debt directionless (7 posts)
+- position steelmanned (6 posts)
+- cycle chaotic, fact check, groypers endorsed (6 posts)
+- awakening largest, voting force, actually believe (5 posts)
+- ruling week, nichols necessarily (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- _…74 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2085 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2104 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
