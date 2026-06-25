@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-25 12:11:11 UTC
+> Tactical snapshot · 2026-06-25 12:44:06 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2081** |
+| Posts in database | **2083** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1891 / 753 |
-| Distinct themes | 87 |
+| Distinct themes | 118 |
 | Duplicate clusters (full DB) | 117 |
 | Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 2 bots / 1398 authors |
+| IU astroturf overlap | 2 bots / 1399 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **16**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **983** · re-seen: **2254**
-- Duplicate rate: **69.6%**
+- Runs: **336**
+- Net new: **965** · re-seen: **2254**
+- Duplicate rate: **70.0%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · rick scott (23 posts · 6 authors · 7 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, freedom democrat, decide america, american thinker, pay attention (14 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, radical left, years old, deep state (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · florida supreme, reuters reported, seeking reelection (688 posts · 80 authors · 24 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, renew spirit, liberty america, exceptional watch, collapse policies (9 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · freedom democrat, democrat control, decide america, freedom democrat control, democrat control midterms (7 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -97,19 +97,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (11 posts)
-- cycle chaotic, fact check, groypers endorsed (7 posts)
-- broke buried, debt directionless (6 posts)
-- position steelmanned (6 posts)
-- awakening largest, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- poll spells, disaster republicans, center square, democrats ninepercent, newest voters (21 posts)
-- _…72 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (46 posts)
+- verified lists (7 posts)
+- confidence medium (7 posts)
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- policy difference, took venezuelan, dictatorship block (9 posts)
+- local communities, fleet scale (5 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- _…83 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2081 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2083 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
