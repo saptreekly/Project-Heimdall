@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 546,
+      "run_counter": 547,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1446,19 +1446,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "701251993": {
-          "author_id": "701251993",
-          "handle": "laurieTXwest",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "837969884": {
           "author_id": "837969884",
           "handle": "AnneTankersley",
@@ -1949,6 +1936,19 @@
           "last_polled_at": null,
           "last_tweet_at": null,
           "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "771152516": {
+          "author_id": "771152516",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
