@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-25 18:21:36 UTC
+> Tactical snapshot · 2026-06-25 19:04:52 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2106** |
+| Posts in database | **2107** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1911 / 759 |
-| Distinct themes | 47 |
+| Distinct themes | 111 |
 | Duplicate clusters (full DB) | 117 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 1417 authors |
+| IU astroturf overlap | 2 bots / 1418 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **22**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **969** · re-seen: **2266**
+- Runs: **336**
+- Net new: **970** · re-seen: **2265**
 - Duplicate rate: **70.0%**
 
 ## Sentiment drift
@@ -36,8 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · executive order, red wave, supreme court, proof citizenship, america act (1778 posts · 171 authors · 96 exact · 7 fuzzy subclusters)
-- **Shared frame** · disinformation campaigns, authentic american, foreign interference, russian operations, fake accounts (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · deep state, rights act, task force, voting rights act, election security (1155 posts · 134 authors · 32 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (19 posts · 2 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -90,17 +96,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (51 posts)
+- verified lists (11 posts)
+- scott presler, primary challenge (29 posts)
+- confidence medium (7 posts)
+- policy difference, took venezuelan (9 posts)
+- local communities, fleet scale, power grids (6 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- cowardfacist nazi, senile cowardfacist nazi, cowardfacist nazi pig, tolerate patheticlosers, patheticlosers killed (8 posts)
-- felony charges, harris installed, invasion real (5 posts)
-- robert smullen, russia doesn't, research institutions, state media (3 posts)
-- control congress, underway sean, spicer teddy, daniels chris, wilson discuss (3 posts)
-- _…9 more emerging theme(s)._
+- _…69 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2106 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2107 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
