@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-25 21:10:13 UTC
+> Tactical snapshot · 2026-06-25 21:51:04 UTC
 
 ## Corpus
 
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1925 / 766 |
-| Distinct themes | 91 |
+| Distinct themes | 119 |
 | Duplicate clusters (full DB) | 117 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 1432 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **972** · re-seen: **2253**
+- Net new: **972** · re-seen: **2252**
 - Duplicate rate: **69.9%**
 
 ## Sentiment drift
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · away world's, seizing milestone, fresh rallying (23 posts · 2 authors · 7 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, vote midterms (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, freedom democrat, decide america, american thinker, pay attention (15 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, radical left, years old, deep state (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, icymi hackers, governments experience, theft artificial (9 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · rights act, voting rights act, election security, upcoming midterms, senate republicans (1163 posts · 131 authors · 33 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, renew spirit, liberty america, exceptional watch, collapse policies (9 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · freedom democrat, democrat control, freedom democrat control, democrat control midterms, control midterms decide (7 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -91,15 +96,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (12 posts)
-- cycle chaotic, fact check, groypers endorsed (7 posts)
-- broke buried, debt directionless (6 posts)
-- position steelmanned (6 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- ruling week, nichols necessarily (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- _…77 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (51 posts)
+- verified lists (10 posts)
+- confidence medium (7 posts)
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- policy difference, took venezuelan, dictatorship block (9 posts)
+- local communities, fleet scale, power grids (7 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- _…83 more emerging theme(s)._
 
 ## Scope note
 
