@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-25 12:44:06 UTC
+> Tactical snapshot · 2026-06-25 13:33:00 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2083** |
+| Posts in database | **2084** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1891 / 753 |
+| Graph nodes / edges | 1892 / 753 |
 | Distinct themes | 118 |
 | Duplicate clusters (full DB) | 117 |
 | Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 2 bots / 1399 authors |
+| IU astroturf overlap | 2 bots / 1400 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **965** · re-seen: **2254**
-- Duplicate rate: **70.0%**
+- Net new: **966** · re-seen: **2261**
+- Duplicate rate: **70.1%**
 
 ## Sentiment drift
 
@@ -36,8 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · florida supreme, reuters reported, seeking reelection (688 posts · 80 authors · 24 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · florida supreme, reuters reported, seeking reelection (694 posts · 79 authors · 23 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules, strike laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, renew spirit, liberty america, exceptional watch, collapse policies (9 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
@@ -98,18 +98,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (46 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (47 posts)
 - verified lists (7 posts)
 - confidence medium (7 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- policy difference, took venezuelan, dictatorship block (9 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- policy difference, took venezuelan, dictatorship block (10 posts)
 - local communities, fleet scale (5 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
 - _…83 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2083 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2084 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

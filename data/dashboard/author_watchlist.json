@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 538,
+      "run_counter": 539,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1433,32 +1433,6 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "1141463004254474240": {
-          "author_id": "1141463004254474240",
-          "handle": "sharpe_way",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1618228456676024320": {
-          "author_id": "1618228456676024320",
-          "handle": "TheDrowseyChapo",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "441389311": {
           "author_id": "441389311",
           "handle": "TND",
@@ -1949,6 +1923,32 @@
           "last_polled_at": null,
           "last_tweet_at": null,
           "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1242375206565486592": {
+          "author_id": "1242375206565486592",
+          "handle": "lukas_ohl",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1255669197977288704": {
+          "author_id": "1255669197977288704",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
