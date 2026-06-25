@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-25 22:12:17 UTC
+> Tactical snapshot · 2026-06-25 23:00:35 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1925 / 766 |
-| Distinct themes | 119 |
+| Distinct themes | 104 |
 | Duplicate clusters (full DB) | 117 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 1432 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **22**
+- Re-sightings (duplicate encounters): **1**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · rights act, voting rights act, election security, upcoming midterms, senate republicans (1163 posts · 131 authors · 33 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · rick scott (28 posts · 8 authors · 8 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (14 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, renew spirit, liberty america, exceptional watch, collapse policies (9 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · freedom democrat, democrat control, freedom democrat control, democrat control midterms, control midterms decide (7 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -97,14 +97,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (51 posts)
-- verified lists (10 posts)
-- confidence medium (7 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
+- verified lists (7 posts)
+- pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts)
+- position steelmanned (7 posts)
+- stop gaslighting, happy talk (9 posts)
 - policy difference, took venezuelan, dictatorship block (9 posts)
-- local communities, fleet scale, power grids (7 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- _…83 more emerging theme(s)._
+- local communities, fleet scale (6 posts)
+- _…87 more emerging theme(s)._
 
 ## Scope note
 
