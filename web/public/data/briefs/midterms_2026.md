@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-25 05:50:06 UTC
+> Tactical snapshot · 2026-06-25 06:31:33 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 1878 / 748 |
-| Distinct themes | 89 |
+| Distinct themes | 96 |
 | Duplicate clusters (full DB) | 117 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 1388 authors |
@@ -22,7 +22,7 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **334**
-- Net new: **967** · re-seen: **2243**
+- Net new: **967** · re-seen: **2241**
 - Duplicate rate: **69.9%**
 
 ## Sentiment drift
@@ -31,13 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · rick scott, campaign weapon (15 posts · 2 authors · 5 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, freedom democrat, decide america, american thinker, pay attention (14 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · rick scott, campaign weapon (31 posts · 4 authors · 11 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, pay attention (14 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · special government (9 posts · 2 authors · 3 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court announcement, ele watch, viral clip (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -91,15 +91,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- coward facist, dodger inbreeds, tolerate pathetic, losers killed, bonespur draft (32 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (48 posts)
+- verified lists (11 posts)
+- position steelmanned (8 posts)
+- stop gaslighting, happy talk (9 posts)
+- local communities, power grids, fleet scale (5 posts)
+- pathetic losers, 10000's fascist, sorry senile, inbreeds cuz, america loves (54 posts)
 - midterms days, days presidential, election days, midterms days presidential, days presidential election (11 posts)
-- cycle chaotic, fact check, groypers endorsed (7 posts)
-- broke buried, debt directionless (6 posts)
-- position steelmanned (6 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- ruling week (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- _…74 more emerging theme(s)._
+- _…81 more emerging theme(s)._
 
 ## Scope note
 
