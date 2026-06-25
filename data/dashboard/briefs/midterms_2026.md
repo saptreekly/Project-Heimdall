@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-25 04:17:46 UTC
+> Tactical snapshot · 2026-06-25 04:54:30 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2044** |
+| Posts in database | **2046** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1860 / 743 |
-| Distinct themes | 94 |
+| Graph nodes / edges | 1860 / 744 |
+| Distinct themes | 96 |
 | Duplicate clusters (full DB) | 117 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 1372 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **22**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **334**
-- Net new: **946** · re-seen: **2244**
+- Net new: **948** · re-seen: **2244**
 - Duplicate rate: **70.3%**
 
 ## Sentiment drift
@@ -36,10 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · rick scott (30 posts · 4 authors · 11 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · campaign weapon (27 posts · 4 authors · 10 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, pay attention (14 posts · 3 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · court announcement, ele watch, viral clip (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -100,15 +100,15 @@ _None spanning multiple narratives._
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (47 posts)
 - verified lists (11 posts)
 - needs occur (10 posts)
-- stop gaslighting, happy talk (8 posts)
+- stop gaslighting, happy talk (9 posts)
 - policy difference, took venezuelan, dictatorship block (7 posts)
 - solution architect's, local communities, power grids, fleet scale (7 posts)
 - pathetic losers, 10000's fascist, sorry senile, inbreeds cuz, america loves (54 posts)
-- _…78 more emerging theme(s)._
+- _…80 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2044 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2046 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
