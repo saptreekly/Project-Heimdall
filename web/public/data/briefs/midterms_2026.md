@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-26 18:18:24 UTC
+> Tactical snapshot · 2026-06-26 19:29:08 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2191** |
+| Posts in database | **2193** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1977 / 789 |
-| Distinct themes | 115 |
+| Graph nodes / edges | 1977 / 790 |
+| Distinct themes | 114 |
 | Duplicate clusters (full DB) | 120 |
 | Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 2 bots / 1480 authors |
+| IU astroturf overlap | 2 bots / 1482 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **18**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **979** · re-seen: **2299**
+- Runs: **336**
+- Net new: **973** · re-seen: **2278**
 - Duplicate rate: **70.1%**
 
 ## Sentiment drift
@@ -36,12 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · task force, super pacs (1207 posts · 133 authors · 37 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · deep state, heading midterms, rights act, majority leader, voting rights act (1227 posts · 138 authors · 40 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules, strike laws (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · republicans president, elon musk reportedly, dollars help, rich patriot (11 posts · 11 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, renew spirit, liberty america, exceptional watch, collapse policies (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -98,18 +98,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (48 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (49 posts)
 - verified lists (9 posts)
-- scott presler (34 posts)
+- scott presler (10 posts)
 - confidence medium (7 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
 - solution architect's, local communities, fleet scale, power grids (7 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- _…71 more emerging theme(s)._
+- _…80 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2191 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2193 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
