@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 563,
+      "run_counter": 564,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1477,25 +1477,12 @@
           "handle": "DataDiscovered",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1967813101237018624": {
-          "author_id": "1967813101237018624",
-          "handle": "PAddis92731",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
+          "priority": 0.9900000000000001,
+          "last_polled_at": "2026-06-26T13:20:40.979578+00:00",
+          "last_tweet_at": "2026-06-25T21:23:27+00:00",
+          "inserted_total": 5,
+          "polls": 1,
+          "inserts_from_polls": 3,
           "status": "active"
         },
         "2032161368632340480": {
@@ -1940,15 +1927,28 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1474502684312932354": {
-          "author_id": "1474502684312932354",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
+        "1389913567671975937": {
+          "author_id": "1389913567671975937",
+          "handle": "cb_doge",
+          "discovered_via": "author_poll",
+          "depth": 0,
+          "priority": 0.5700000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 0,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "44196397": {
+          "author_id": "44196397",
+          "handle": "elonmusk",
+          "discovered_via": "author_poll",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
