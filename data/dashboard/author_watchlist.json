@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 558,
+      "run_counter": 559,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1282,10 +1282,10 @@
           "handle": "Susan_Dupres",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.93,
+          "priority": 1.0,
           "last_polled_at": "2026-06-22T07:47:13.697964+00:00",
           "last_tweet_at": "2026-06-22T04:45:25+00:00",
-          "inserted_total": 4,
+          "inserted_total": 5,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1457,19 +1457,6 @@
           "inserted_total": 7,
           "polls": 1,
           "inserts_from_polls": 2,
-          "status": "active"
-        },
-        "1312114490373267457": {
-          "author_id": "1312114490373267457",
-          "handle": "statesunited",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-26T05:00:27.980366+00:00",
-          "last_tweet_at": "2026-06-25T20:59:01+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1815119552222769152": {
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1474502684312932354": {
-          "author_id": "1474502684312932354",
+        "757349836110770176": {
+          "author_id": "757349836110770176",
+          "handle": "tenn_rich",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "4478393661": {
+          "author_id": "4478393661",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
