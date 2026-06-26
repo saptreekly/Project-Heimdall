@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-26 13:22:44 UTC
+> Tactical snapshot · 2026-06-26 14:42:19 UTC
 
 ## Corpus
 
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **18**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **982** · re-seen: **2280**
-- Duplicate rate: **69.9%**
+- Runs: **336**
+- Net new: **982** · re-seen: **2269**
+- Duplicate rate: **69.8%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · rick scott (30 posts · 6 authors · 9 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, voter fraud, radical left, sidney powell (25 posts · 2 authors · 7 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · rick scott (32 posts · 6 authors · 10 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, radical left, sidney powell (25 posts · 2 authors · 7 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (15 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · data analyst, numbers clear, 'warning sign', dems ahead (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -97,10 +97,10 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (49 posts)
 - verified lists (9 posts)
-- pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts)
-- act november, november election, america act november, act november election, late implement (10 posts)
+- ago ruled (5 posts)
+- act november, late implement, november election, america act november, act november election (10 posts)
 - position steelmanned (7 posts)
 - stop gaslighting, happy talk (9 posts)
 - solution architect's, local communities, fleet scale (8 posts)
