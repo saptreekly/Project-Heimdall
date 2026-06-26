@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-26 21:26:39 UTC
+> Tactical snapshot · 2026-06-26 21:55:18 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2215** |
+| Posts in database | **2217** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 1991 / 798 |
-| Distinct themes | 104 |
+| Graph nodes / edges | 1991 / 799 |
+| Distinct themes | 103 |
 | Duplicate clusters (full DB) | 122 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 1494 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **22**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **973** · re-seen: **2287**
-- Duplicate rate: **70.2%**
+- Runs: **338**
+- Net new: **975** · re-seen: **2289**
+- Duplicate rate: **70.1%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
+- **Exact duplicate campaign** · rick scott (22 posts · 3 authors · 6 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · rick scott (18 posts · 3 authors · 6 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · laying groundwork, icymi hackers, governments experience, theft artificial (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -101,15 +101,15 @@ _None spanning multiple narratives._
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (48 posts)
 - verified lists (9 posts)
 - pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts)
-- house passed (28 posts)
-- stop gaslighting, happy talk (8 posts)
-- radical left, sidney powell (9 posts)
+- house passed (29 posts)
+- position steelmanned (7 posts)
+- stop gaslighting, happy talk (9 posts)
 - solution architect's, local communities, fleet scale (8 posts)
-- _…89 more emerging theme(s)._
+- _…86 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2215 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2217 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
