@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 585,
+      "run_counter": 586,
       "authors": {
         "111": {
           "author_id": "111",
@@ -801,10 +801,10 @@
           "handle": "WHLeavitt",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.79,
+          "priority": 0.91,
           "last_polled_at": "2026-06-13T21:52:33.352896+00:00",
           "last_tweet_at": "2026-06-12T15:39:38+00:00",
-          "inserted_total": 3,
+          "inserted_total": 4,
           "polls": 1,
           "inserts_from_polls": 1,
           "status": "active"
@@ -1550,32 +1550,6 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "49755718": {
-          "author_id": "49755718",
-          "handle": "ShawnCP92",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "408139396": {
-          "author_id": "408139396",
-          "handle": "sheraa10",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1850549025524842496": {
           "author_id": "1850549025524842496",
           "handle": "BlessedMom_7",
@@ -1776,12 +1750,12 @@
           "handle": "uggar29",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 2,
-          "polls": 0,
-          "inserts_from_polls": 0,
+          "priority": 1.0,
+          "last_polled_at": "2026-06-27T08:13:43.991368+00:00",
+          "last_tweet_at": "2026-06-27T06:05:33+00:00",
+          "inserted_total": 12,
+          "polls": 1,
+          "inserts_from_polls": 7,
           "status": "active"
         },
         "887847250340315136": {
@@ -1942,6 +1916,32 @@
         },
         "374712154": {
           "author_id": "374712154",
+          "handle": "TRobinsonNewEra",
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1121375429884039175": {
+          "author_id": "1121375429884039175",
+          "handle": "RupertLowe10",
+          "discovered_via": "author_poll",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "116579971": {
+          "author_id": "116579971",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
