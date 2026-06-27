@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-27 11:53:28 UTC
+> Tactical snapshot · 2026-06-27 12:18:25 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2031 / 817 |
-| Distinct themes | 96 |
+| Distinct themes | 102 |
 | Duplicate clusters (full DB) | 124 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 1527 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **7**
-- Net-new posts logged: **13**
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **339**
-- Net new: **1002** · re-seen: **2265**
-- Duplicate rate: **69.3%**
+- Net new: **1002** · re-seen: **2239**
+- Duplicate rate: **69.1%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, years old, radical left (36 posts · 1 authors · 11 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (22 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, radical left, sidney powell (32 posts · 1 authors · 10 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · reportedly surged, dollars help, rich patriot, contributes humanity (12 posts · 11 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · laying groundwork, hackers preparing, report warning, local governments, phishing credential (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, rick scott (16 posts · 1 authors · 6 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reportedly surged, dollars help, rich patriot, maga republicans, contributes humanity (12 posts · 11 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, initial success (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -98,15 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- rick scott, photo polls (14 posts)
-- tolerate pathetic, losers killed, bonespur draft, coward facist, dodger inbreeds (31 posts)
-- midterms days, days presidential, election days, midterms days presidential, days presidential election (12 posts)
-- cycle chaotic, fact check, groypers endorsed (7 posts)
-- broke buried, debt directionless (6 posts)
-- position steelmanned, civil rights (6 posts)
-- voting force, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- _…81 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (49 posts)
+- verified lists, postal service (5 posts)
+- dnc scrambling, bombshell hits, freaking scandal, initial success (11 posts)
+- pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts)
+- officially planning (21 posts)
+- position steelmanned (7 posts)
+- stop gaslighting, happy talk (8 posts)
+- _…85 more emerging theme(s)._
 
 ## Scope note
 
