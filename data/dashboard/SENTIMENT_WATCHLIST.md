@@ -1,13 +1,13 @@
 # Sentiment watchlist
 
-_Updated from snapshot generated at 2026-06-26T17:08:52.911253+00:00_
+_Updated from snapshot generated at 2026-06-27T16:20:26.638430+00:00_
 
 ## Current narrative status
 
 | Narrative | Trend | WoW alert | Divergence days |
 | --- | --- | --- | ---: |
-| midterms_2026 | stable | — | 0 |
+| midterms_2026 | stable | — | 1 |
 
 ## Recent alerts
 
-_No new sentiment alerts this run._
+- **midterms_2026** — volume_outrage_divergence: 2026-06-26: 103 posts, mean outrage 0.040
