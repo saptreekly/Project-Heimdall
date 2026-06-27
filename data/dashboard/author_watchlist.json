@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 589,
+      "run_counter": 590,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1550,32 +1550,6 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "1850549025524842496": {
-          "author_id": "1850549025524842496",
-          "handle": "BlessedMom_7",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1991565896738086912": {
-          "author_id": "1991565896738086912",
-          "handle": "Chartsoriginals",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "2998864022": {
           "author_id": "2998864022",
           "handle": "essenviews",
@@ -1940,17 +1914,43 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "771152516": {
-          "author_id": "771152516",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
+        "832978972602429440": {
+          "author_id": "832978972602429440",
+          "handle": "GrahamAllen",
+          "discovered_via": "author_poll",
+          "depth": 0,
+          "priority": 0.5700000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 0,
+          "inserted_total": 1,
           "polls": 0,
           "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "19204195": {
+          "author_id": "19204195",
+          "handle": "Addicted2Decor",
+          "discovered_via": "author_poll",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1850549025524842496": {
+          "author_id": "1850549025524842496",
+          "handle": "BlessedMom_7",
+          "discovered_via": "author_poll",
+          "depth": 0,
+          "priority": 0.65,
+          "last_polled_at": null,
+          "last_tweet_at": "2026-06-26T22:37:05+00:00",
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 2,
           "status": "active"
         }
       }
