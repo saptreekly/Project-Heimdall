@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-27 21:53:10 UTC
+> Tactical snapshot · 2026-06-27 22:40:59 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2073 / 828 |
-| Distinct themes | 95 |
+| Distinct themes | 122 |
 | Duplicate clusters (full DB) | 125 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 1565 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **337**
-- Net new: **1004** · re-seen: **2234**
-- Duplicate rate: **69.0%**
+- Net new: **989** · re-seen: **2231**
+- Duplicate rate: **69.3%**
 
 ## Sentiment drift
 
@@ -31,14 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, years old, rick scott (40 posts · 4 authors · 12 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, vote midterms (24 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · reportedly surged, dollars help, rich patriot, contributes humanity (12 posts · 12 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · court announcement, nears rulings, ele watch (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · strait hormuz (1271 posts · 134 authors · 40 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reportedly surged, dollars help, rich patriot, contributes humanity (12 posts · 11 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, icymi hackers, governments experience, theft artificial (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -93,15 +97,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- tolerate pathetic, losers killed, bonespur draft, coward facist, dodger inbreeds (31 posts)
-- held alabama, california georgia, hours minutes, primary elections (13 posts)
-- hormuz stays, period economic, wreckage easy, adams lays (9 posts)
-- broke buried, debt directionless (6 posts)
-- actually believe (5 posts)
-- position steelmanned (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- officially planning (25 posts)
-- _…78 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
+- verified lists (9 posts)
+- dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts)
+- confidence medium (7 posts)
+- corrupt doj, stop gaslighting, happy talk (8 posts)
+- voters pushing, backing candidates, hard silicon, crypto's cycle, massive money (24 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- _…82 more emerging theme(s)._
 
 ## Scope note
 
