@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-27 15:11:40 UTC
+> Tactical snapshot · 2026-06-27 15:52:52 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2280** |
+| Posts in database | **2281** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2032 / 818 |
-| Distinct themes | 115 |
+| Graph nodes / edges | 2034 / 819 |
+| Distinct themes | 113 |
 | Duplicate clusters (full DB) | 124 |
 | Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 1529 authors |
+| IU astroturf overlap | 2 bots / 1530 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **338**
-- Net new: **985** · re-seen: **2257**
-- Duplicate rate: **69.6%**
+- Runs: **337**
+- Net new: **986** · re-seen: **2234**
+- Duplicate rate: **69.4%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, radical left (571 posts · 67 authors · 27 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · radical left, reuters reported, seeking reelection (826 posts · 92 authors · 34 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · reportedly surged, dollars help, rich patriot, contributes humanity (12 posts · 11 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, icymi hackers, governments experience, theft artificial (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -82,7 +82,7 @@ _None (need ≥5 authors in 90s window)._
 - **6 posts** · 6 authors · ~100% Jaccard — 🚨 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms — WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY…
 - **2 posts** · 2 authors · ~100% Jaccard — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **2 posts** · 2 authors · ~100% Jaccard — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
-- **9 posts** · 9 authors · ~100% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
+- **8 posts** · 8 authors · ~100% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - **4 posts** · 4 authors · ~93% Jaccard — Senate Democrats Launch Program to Train Staff as Election Observers for 2026 Midterms via teach how to cheat!!
 - **3 posts** · 3 authors · ~100% Jaccard — Mike Johnson vows to protect Republicans from investigations if the GOP loses the 2026 midterms: "I run the protection program. I’ll take care of you. We're going to win the midterms."
 - _…3 more fuzzy cluster(s) in snapshot cohort._
@@ -98,18 +98,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (49 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
 - verified lists (9 posts)
 - dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts)
-- republicans head, technical recession (7 posts)
-- officially planning, promise lead (24 posts)
+- scott presler, officially planning, promise lead (23 posts)
 - confidence medium (7 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- _…79 more emerging theme(s)._
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- solution architect's, local communities, fleet scale, power grids (7 posts)
+- _…78 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2280 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2281 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

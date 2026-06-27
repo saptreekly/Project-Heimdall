@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 594,
+      "run_counter": 595,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1563,19 +1563,6 @@
           "inserts_from_polls": 7,
           "status": "active"
         },
-        "887847250340315136": {
-          "author_id": "887847250340315136",
-          "handle": "TheRealSantino",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "2244210248": {
           "author_id": "2244210248",
           "handle": "RichardRcccabo",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "829935516246159362": {
-          "author_id": "829935516246159362",
+        "1492240842538598405": {
+          "author_id": "1492240842538598405",
+          "handle": "WildKraken1",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "4478393661": {
+          "author_id": "4478393661",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
