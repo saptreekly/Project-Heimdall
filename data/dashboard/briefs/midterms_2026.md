@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-27 16:20:26 UTC
+> Tactical snapshot · 2026-06-27 17:22:38 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2281** |
+| Posts in database | **2301** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2034 / 819 |
-| Distinct themes | 113 |
+| Graph nodes / edges | 2053 / 820 |
+| Distinct themes | 93 |
 | Duplicate clusters (full DB) | 124 |
 | Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 1530 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+| IU astroturf overlap | 2 bots / 1549 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **338**
-- Net new: **986** · re-seen: **2235**
-- Duplicate rate: **69.4%**
+- Net new: **1006** · re-seen: **2234**
+- Duplicate rate: **69.0%**
 
 ## Sentiment drift
 
@@ -36,13 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · radical left, reuters reported, seeking reelection (826 posts · 92 authors · 34 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · reportedly surged, dollars help, rich patriot, contributes humanity (12 posts · 11 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, rick scott (41 posts · 1 authors · 13 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (22 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reportedly surged, dollars help, rich patriot, contributes humanity (12 posts · 12 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking trump, court announcement, ele watch, viral clip (7 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -82,7 +78,7 @@ _None (need ≥5 authors in 90s window)._
 - **6 posts** · 6 authors · ~100% Jaccard — 🚨 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms — WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY…
 - **2 posts** · 2 authors · ~100% Jaccard — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **2 posts** · 2 authors · ~100% Jaccard — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
-- **8 posts** · 8 authors · ~100% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
+- **7 posts** · 7 authors · ~100% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - **4 posts** · 4 authors · ~93% Jaccard — Senate Democrats Launch Program to Train Staff as Election Observers for 2026 Midterms via teach how to cheat!!
 - **3 posts** · 3 authors · ~100% Jaccard — Mike Johnson vows to protect Republicans from investigations if the GOP loses the 2026 midterms: "I run the protection program. I’ll take care of you. We're going to win the midterms."
 - _…3 more fuzzy cluster(s) in snapshot cohort._
@@ -97,19 +93,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
-- verified lists (9 posts)
-- dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts)
-- scott presler, officially planning, promise lead (23 posts)
-- confidence medium (7 posts)
-- corrupt doj, stop gaslighting, happy talk (9 posts)
-- solution architect's, local communities, fleet scale, power grids (7 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- primary elections, held alabama, california georgia, hours minutes (13 posts)
+- fact check, groypers endorsed (7 posts)
+- broke buried, debt directionless (6 posts)
+- position steelmanned (6 posts)
+- voting force (5 posts)
+- ruling week, nichols necessarily (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
 - _…78 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2281 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2301 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
