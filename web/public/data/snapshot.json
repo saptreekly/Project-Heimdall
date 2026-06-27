@@ -1,11 +1,11 @@
 {
   "version": 5,
-  "generated_at": "2026-06-27T18:48:19.247340+00:00",
+  "generated_at": "2026-06-27T19:51:03.994631+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
-      "keywords": "2026 election integrity",
+      "keywords": "author:warDaniel47",
       "post_count": 2301
     }
   ],
@@ -6246,9 +6246,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
+              "399178595",
               "38108253",
-              "3085410827",
-              "399178595"
+              "3085410827"
             ]
           },
           {
@@ -6256,9 +6256,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
+              "16513335",
               "1746263545648680960",
-              "26424178",
-              "16513335"
+              "26424178"
             ]
           }
         ],
@@ -42182,14 +42182,15 @@
             "cluster_count": 1,
             "clusters": [
               {
-                "cluster_id": 1,
+                "cluster_id": 0,
                 "label": "election integrity",
-                "size": 2,
+                "size": 3,
                 "post_ids": [
                   1258,
+                  1257,
                   1256
                 ],
-                "emerging_theme": false
+                "emerging_theme": true
               }
             ],
             "continues_from": []
@@ -59914,10 +59915,10 @@
           }
         ],
         "sightings": {
-          "total_resightings": 22,
+          "total_resightings": 1,
           "total_net_new": 0,
           "daily_resightings": {
-            "2026-06-27": 22
+            "2026-06-27": 1
           },
           "daily_net_new": {}
         }
@@ -59953,8 +59954,8 @@
       },
       "brief": {
         "version": 1,
-        "generated_at": "2026-06-27T18:48:19.247340+00:00",
-        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-27 18:48:19 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **2301** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.30 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 2053 / 820 |\n| Distinct themes | 104 |\n| Duplicate clusters (full DB) | 124 |\n| Fuzzy clusters (snapshot cohort) | 9 |\n| IU astroturf overlap | 2 bots / 1549 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **22**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **338**\n- Net new: **986** \u00b7 re-seen: **2256**\n- Duplicate rate: **69.6%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 radical left, sidney powell (32 posts \u00b7 1 authors \u00b7 10 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, center square, months midterm elections (20 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 magna carta, american thinker, pay attention (16 posts \u00b7 1 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 rick scott, away world's, seizing milestone (16 posts \u00b7 1 authors \u00b7 6 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 maga republicans, reportedly surged, dollars help, rich patriot, contributes humanity (12 posts \u00b7 12 authors \u00b7 1 exact \u00b7 1 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 similar rules (11 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_14_size_3\n- dense_cluster_478_size_3\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j0.90\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_10authors_37posts_j1.00\n- cross_author_fuzzy_10authors_10posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **5 posts** \u00b7 5 author(s) \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **2 posts** \u00b7 2 author(s) \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 \ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8 Analysis: Socialist Wins Raise Questions for Democrats \ud83e\udd14\ud83d\udcca This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove\u2026\n- **28 posts** \u00b7 1 author(s) \u2014 \ud83d\udea8 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election\u2026\n- **27 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- _\u2026115 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **6 posts** \u00b7 6 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8 Analysis: Socialist Wins Raise Questions for Democrats \ud83e\udd14\ud83d\udcca This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **7 posts** \u00b7 7 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election\u2026\n- **4 posts** \u00b7 4 authors \u00b7 ~93% Jaccard \u2014 Senate Democrats Launch Program to Train Staff as Election Observers for 2026 Midterms via teach how to cheat!!\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Mike Johnson vows to protect Republicans from investigations if the GOP loses the 2026 midterms: \"I run the protection program. I\u2019ll take care of you. We're going to win the midterms.\"\n- _\u20263 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)\n- verified lists (5 posts)\n- pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts)\n- officially planning (20 posts)\n- position steelmanned (7 posts)\n- stop gaslighting, happy talk (8 posts)\n- local communities, fleet scale (7 posts)\n- _\u202686 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 2301 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
+        "generated_at": "2026-06-27T19:51:03.994631+00:00",
+        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-06-27 19:51:03 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **2301** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.30 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 2053 / 820 |\n| Distinct themes | 104 |\n| Duplicate clusters (full DB) | 124 |\n| Fuzzy clusters (snapshot cohort) | 9 |\n| IU astroturf overlap | 2 bots / 1549 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **1**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **338**\n- Net new: **986** \u00b7 re-seen: **2256**\n- Duplicate rate: **69.6%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 radical left, sidney powell (32 posts \u00b7 1 authors \u00b7 10 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, center square, months midterm elections (20 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 magna carta, american thinker, pay attention (16 posts \u00b7 1 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 rick scott, away world's, seizing milestone (16 posts \u00b7 1 authors \u00b7 6 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 maga republicans, reportedly surged, dollars help, rich patriot, contributes humanity (12 posts \u00b7 12 authors \u00b7 1 exact \u00b7 1 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 similar rules (11 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_14_size_3\n- dense_cluster_478_size_3\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_6authors_6posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j0.90\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_10authors_37posts_j1.00\n- cross_author_fuzzy_10authors_10posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **5 posts** \u00b7 5 author(s) \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **2 posts** \u00b7 2 author(s) \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 \ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8 Analysis: Socialist Wins Raise Questions for Democrats \ud83e\udd14\ud83d\udcca This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove\u2026\n- **28 posts** \u00b7 1 author(s) \u2014 \ud83d\udea8 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election\u2026\n- **27 posts** \u00b7 1 author(s) \u2014 I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes\u2026\n- _\u2026115 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **6 posts** \u00b7 6 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8 Analysis: Socialist Wins Raise Questions for Democrats \ud83e\udd14\ud83d\udcca This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **7 posts** \u00b7 7 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election\u2026\n- **4 posts** \u00b7 4 authors \u00b7 ~93% Jaccard \u2014 Senate Democrats Launch Program to Train Staff as Election Observers for 2026 Midterms via teach how to cheat!!\n- **3 posts** \u00b7 3 authors \u00b7 ~100% Jaccard \u2014 Mike Johnson vows to protect Republicans from investigations if the GOP loses the 2026 midterms: \"I run the protection program. I\u2019ll take care of you. We're going to win the midterms.\"\n- _\u20263 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)\n- verified lists (5 posts)\n- pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts)\n- officially planning (20 posts)\n- position steelmanned (7 posts)\n- stop gaslighting, happy talk (8 posts)\n- local communities, fleet scale (7 posts)\n- _\u202686 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 2301 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
         "meta": {
           "narrative_name": "midterms_2026",
           "posts_total_db": 2301,
@@ -59994,13 +59995,13 @@
             "filtered": 1964,
             "fetched": 5206,
             "duplicate_rate": 0.696,
-            "latest_run_at": "2026-06-27T18:48:17.807443+00:00"
+            "latest_run_at": "2026-06-27T19:51:02.446243+00:00"
           },
           "sightings": {
-            "total_resightings": 22,
+            "total_resightings": 1,
             "total_net_new": 0,
             "daily_resightings": {
-              "2026-06-27": 22
+              "2026-06-27": 1
             },
             "daily_net_new": {}
           },
@@ -60906,7 +60907,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-06-27",
-      "requests_used": 30
+      "requests_used": 32
     }
   }
 }
