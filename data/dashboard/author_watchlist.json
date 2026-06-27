@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 582,
+      "run_counter": 583,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1524,32 +1524,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "586707638": {
-          "author_id": "586707638",
-          "handle": "SidneyPowell1",
-          "discovered_via": "author_poll",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-27T04:10:52.535889+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1875591626430803968": {
-          "author_id": "1875591626430803968",
-          "handle": "GO_MAGA_2025",
-          "discovered_via": "author_poll",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-27T05:33:57.078449+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1452469700911370242": {
           "author_id": "1452469700911370242",
           "handle": "MayorEdPig",
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1474502684312932354": {
-          "author_id": "1474502684312932354",
+        "1521012403991113728": {
+          "author_id": "1521012403991113728",
+          "handle": "gourabconnect",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1907186817910071296": {
+          "author_id": "1907186817910071296",
+          "handle": "inthe307",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "4478393661": {
+          "author_id": "4478393661",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
