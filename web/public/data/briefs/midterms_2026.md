@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-27 06:14:35 UTC
+> Tactical snapshot · 2026-06-27 06:37:12 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2011 / 807 |
-| Distinct themes | 117 |
+| Distinct themes | 121 |
 | Duplicate clusters (full DB) | 123 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1509 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **6**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **337**
-- Net new: **975** · re-seen: **2276**
-- Duplicate rate: **70.0%**
+- Net new: **975** · re-seen: **2249**
+- Duplicate rate: **69.8%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · federal government (1227 posts · 125 authors · 37 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · federal government, intelligence community (1238 posts · 129 authors · 35 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, fest heart, race gmmtv, live house (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, paxton he's, target national, lose presidency (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · republicans president, elon musk reportedly, dollars help, rich patriot (12 posts · 12 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, icymi hackers, governments experience, theft artificial (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -98,14 +98,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (47 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (48 posts)
 - verified lists (9 posts)
-- scott presler (35 posts)
+- needs occur (12 posts)
 - confidence medium (7 posts)
 - corrupt doj, stop gaslighting, happy talk (9 posts)
+- dem politicians, trying shut, sanctuary cities (4 posts)
 - solution architect's, local communities, fleet scale, power grids (7 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- _…72 more emerging theme(s)._
+- _…82 more emerging theme(s)._
 
 ## Scope note
 
