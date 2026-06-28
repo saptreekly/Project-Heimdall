@@ -2,11 +2,11 @@
 
 Auto-maintained when `text_coordination_score` crosses **0.38 (watch)**, **0.55 (elevated)**, or **0.65 (critical)**.
 
-_Updated 2026-06-27 16:40 UTC · snapshot `2026-06-27T16:20:26.638430+00:00`_
+_Updated 2026-06-28 16:43 UTC · snapshot `2026-06-28T16:23:51.281550+00:00`_
 
 | Narrative | Tier | Text coord | Combined | Last change |
 | --- | --- | ---: | ---: | --- |
-| midterms_2026 | **elevated** | 0.55 | 0.55 | 2026-06-27T16:40:21.265739+00:00 |
+| midterms_2026 | **elevated** | 0.55 | 0.55 | 2026-06-28T16:43:56.971347+00:00 |
 
 ## Recent crossings
 
