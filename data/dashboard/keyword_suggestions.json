@@ -1,59 +1,60 @@
 {
-  "generated_at": "2026-06-21T08:59:48.180939+00:00",
+  "generated_at": "2026-06-28T08:24:14.120315+00:00",
   "window_days": 7,
   "dead_keywords": [
+    "2026 midterm fraud",
+    "2026 red wave",
+    "2026 gerrymandering",
     "2026 midwest democrat",
-    "2026 disaster looms",
-    "2026 hulhumale phase",
-    "2026 state setting"
+    "2026 resigns electoral"
   ],
   "suggestions": [
     {
-      "query": "2026 poll spells midterms",
+      "query": "2026 executive order midterms",
       "source": "corpus c-TF-IDF",
-      "score": 94.332,
+      "score": 257.745,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
     },
     {
-      "query": "2026 resigns electoral",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 47 posts)",
-      "score": 47.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 republican beautiful",
-      "source": "theme cluster (taxes working \u00b7 million americans \u00b7 replaced end \u00b7 unregulated dirty, 19 posts)",
-      "score": 19.0,
+      "query": "2026 congress post",
+      "source": "theme cluster (executive order erik \u00b7 trump's election integrity \u00b7 mail ballots midterms \u00b7 general told, 33 posts)",
+      "score": 33.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
       "query": "2026 poll spells",
-      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 center square \u00b7 midterms source, 19 posts)",
-      "score": 19.0,
+      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 center square \u00b7 months midterm elections, 20 posts)",
+      "score": 20.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
       "query": "2026 democrats ninepercent",
-      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 center square \u00b7 midterms source, 19 posts)",
-      "score": 19.0,
+      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 center square \u00b7 months midterm elections, 20 posts)",
+      "score": 20.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 mail ballots postmarked",
-      "source": "theme cluster (mail ballots postmarked \u00b7 similar rules, 13 posts)",
+      "query": "2026 voters pushing",
+      "source": "theme cluster (voters pushing \u00b7 backing candidates \u00b7 hard silicon \u00b7 crypto's cycle, 20 posts)",
+      "score": 20.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 republicans president",
+      "source": "theme cluster (republicans president \u00b7 reportedly surged \u00b7 dollars help \u00b7 rich patriot, 16 posts)",
+      "score": 16.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 live house",
+      "source": "theme cluster (dnc scrambling \u00b7 bombshell hits \u00b7 fest heart \u00b7 race gmmtv, 14 posts)",
+      "score": 14.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 vote pedos",
+      "source": "theme cluster (days presidential \u00b7 vote pedos, 13 posts)",
       "score": 13.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 republican senate",
-      "source": "theme cluster (republican senate \u00b7 senate gop \u00b7 act midterms \u00b7 america act midterms, 11 posts)",
-      "score": 11.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 senate gop",
-      "source": "theme cluster (republican senate \u00b7 senate gop \u00b7 act midterms \u00b7 america act midterms, 11 posts)",
-      "score": 11.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
   ]
