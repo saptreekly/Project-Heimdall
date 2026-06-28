@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-28 20:37:43 UTC
+> Tactical snapshot · 2026-06-28 21:21:09 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2351** |
+| Posts in database | **2358** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2095 / 836 |
-| Distinct themes | 58 |
+| Graph nodes / edges | 2102 / 843 |
+| Distinct themes | 122 |
 | Duplicate clusters (full DB) | 128 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1584 authors |
+| IU astroturf overlap | 2 bots / 1585 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **18**
+- Net-new posts logged: **7**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **336**
-- Net new: **1000** · re-seen: **2254**
-- Duplicate rate: **69.3%**
+- Runs: **335**
+- Net new: **988** · re-seen: **2270**
+- Duplicate rate: **69.7%**
 
 ## Sentiment drift
 
@@ -36,11 +36,18 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, america act, voter fraud, election integrity executive (1944 posts · 203 authors · 102 exact · 12 fuzzy subclusters)
+- **Exact duplicate campaign** · task force (1269 posts · 133 authors · 40 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, paxton he's, target national (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, fest heart, race gmmtv, live house (14 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (10 posts · 10 authors · 2 exact · 2 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
-- dense_cluster_14_size_3
+- dense_cluster_15_size_3
 - dense_cluster_479_size_3
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_6authors_6posts_j1.00
@@ -91,18 +98,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (51 posts)
+- verified lists (9 posts)
+- dnc scrambling, bombshell hits, fest heart, race gmmtv, live house (14 posts)
+- confidence medium (7 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- local communities, fleet scale, power grids (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (7 posts)
-- trump corruptgop, republicans hates, lost unless, cheat riseup, toobigtorig stoptrump (4 posts)
-- 10000's fascist, inbreeds cuz, loves winners (11 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- felony charges, harris installed, invasion real (5 posts)
-- beautiful delay, planned project, rules dec (4 posts)
-- _…11 more emerging theme(s)._
+- _…77 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2351 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2358 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
