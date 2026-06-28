@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 626,
+      "run_counter": 627,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1602,45 +1602,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1945947587837870080": {
-          "author_id": "1945947587837870080",
-          "handle": "drhilllaw42",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1249753619978686470": {
-          "author_id": "1249753619978686470",
-          "handle": "derrickp23",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1995957999253553156": {
-          "author_id": "1995957999253553156",
-          "handle": "JFKrevelation",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "61221158": {
           "author_id": "61221158",
           "handle": "williamjames",
@@ -1940,8 +1901,47 @@
           "inserts_from_polls": 19,
           "status": "active"
         },
-        "1574322876676804615": {
-          "author_id": "1574322876676804615",
+        "1430605174674964480": {
+          "author_id": "1430605174674964480",
+          "handle": "JDunlap1974",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1255161552": {
+          "author_id": "1255161552",
+          "handle": "LiveLawIndia",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1096625734817366016": {
+          "author_id": "1096625734817366016",
+          "handle": "IamQA1",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1089552260819009537": {
+          "author_id": "1089552260819009537",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
