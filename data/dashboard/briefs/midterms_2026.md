@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-28 00:15:37 UTC
+> Tactical snapshot · 2026-06-28 04:43:50 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2073 / 828 |
-| Distinct themes | 122 |
+| Distinct themes | 107 |
 | Duplicate clusters (full DB) | 125 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 1565 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **19**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **984** · re-seen: **2224**
-- Duplicate rate: **69.3%**
+- Runs: **338**
+- Net new: **984** · re-seen: **2243**
+- Duplicate rate: **69.5%**
 
 ## Sentiment drift
 
@@ -36,13 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · strait hormuz (1271 posts · 134 authors · 40 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · reportedly surged, dollars help, rich patriot, contributes humanity (12 posts · 11 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, icymi hackers, governments experience, theft artificial (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · away world's (34 posts · 2 authors · 13 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reportedly surged, dollars help, rich patriot, maga republicans, contributes humanity (12 posts · 11 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, initial success (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · laying groundwork, icymi hackers, governments experience, theft artificial (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,13 +100,13 @@ _None spanning multiple narratives._
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, ready department (10 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (50 posts)
-- verified lists (9 posts)
-- dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (11 posts)
-- confidence medium (7 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- voters pushing, backing candidates, hard silicon, crypto's cycle, massive money (24 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- _…82 more emerging theme(s)._
+- verified lists (5 posts)
+- dnc scrambling, bombshell hits, freaking scandal, initial success (11 posts)
+- pro democrat, breaking missouri, missouri supreme, court upheld, upheld state (8 posts)
+- position steelmanned (7 posts)
+- stop gaslighting, happy talk (9 posts)
+- local communities, fleet scale (7 posts)
+- _…90 more emerging theme(s)._
 
 ## Scope note
 
