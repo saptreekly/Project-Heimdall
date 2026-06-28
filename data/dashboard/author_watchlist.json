@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 620,
+      "run_counter": 621,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1589,32 +1589,6 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "1957770224": {
-          "author_id": "1957770224",
-          "handle": "HamRadioJoe",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-28T11:24:10.766307+00:00",
-          "last_tweet_at": "2026-06-27T20:24:42+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1628158010731433985": {
-          "author_id": "1628158010731433985",
-          "handle": "NewsNew97351204",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-28T14:07:55.142009+00:00",
-          "last_tweet_at": "2026-06-27T20:24:31+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1775363023449829376": {
           "author_id": "1775363023449829376",
           "handle": "Michael17452024",
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1158501781447593984": {
-          "author_id": "1158501781447593984",
+        "2040924886890123264": {
+          "author_id": "2040924886890123264",
+          "handle": "VetsSvs35393",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "17180761": {
+          "author_id": "17180761",
+          "handle": "SkylineReport",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1222979306": {
+          "author_id": "1222979306",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

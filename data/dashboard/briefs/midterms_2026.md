@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-28 17:22:56 UTC
+> Tactical snapshot · 2026-06-28 17:58:44 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2340** |
+| Posts in database | **2342** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2090 / 835 |
-| Distinct themes | 129 |
+| Graph nodes / edges | 2092 / 836 |
+| Distinct themes | 123 |
 | Duplicate clusters (full DB) | 127 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1577 authors |
+| IU astroturf overlap | 2 bots / 1579 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **336**
-- Net new: **989** · re-seen: **2262**
+- Runs: **335**
+- Net new: **991** · re-seen: **2264**
 - Duplicate rate: **69.6%**
 
 ## Sentiment drift
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · strait hormuz, sanctuary cities, held accountable, intelligence community (1247 posts · 129 authors · 37 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · deep state, rights act, voting rights act, voter fraud, task force (1273 posts · 129 authors · 38 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, paxton he's, target national (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -48,7 +48,7 @@
 ## CIB warning signals
 
 - dense_cluster_14_size_3
-- dense_cluster_477_size_3
+- dense_cluster_478_size_3
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_6authors_6posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j0.90
@@ -98,18 +98,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (51 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (49 posts)
 - verified lists (9 posts)
 - dnc scrambling, bombshell hits, fest heart, race gmmtv, live house (14 posts)
 - confidence medium (7 posts)
 - local communities, fleet scale, power grids (7 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
 - don't dream, rewriting gen, millennials turning, housing future, works barriers (13 posts)
-- _…80 more emerging theme(s)._
+- _…76 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2340 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2342 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
