@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-28 22:42:08 UTC
+> Tactical snapshot · 2026-06-28 23:37:00 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2124 / 862 |
-| Distinct themes | 54 |
+| Distinct themes | 58 |
 | Duplicate clusters (full DB) | 128 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1588 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **1010** · re-seen: **2243**
-- Duplicate rate: **69.0%**
+- Net new: **1010** · re-seen: **2242**
+- Duplicate rate: **68.9%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · executive order, red wave, mail ballots, save america, voter fraud (1976 posts · 193 authors · 104 exact · 12 fuzzy subclusters)
+- **Exact duplicate campaign** · election integrity, executive order, red wave, mail ballots, save america (1978 posts · 191 authors · 105 exact · 12 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -96,8 +96,8 @@ _None spanning multiple narratives._
 - collins closely, platner won, primary tuesday, setting high (4 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- felony charges, harris installed (4 posts)
 - beautiful delay, planned project, rules dec (4 posts)
+- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (3 posts)
 - _…10 more emerging theme(s)._
 
 ## Scope note
