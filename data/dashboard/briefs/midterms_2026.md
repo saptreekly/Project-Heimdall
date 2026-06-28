@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-28 08:25:44 UTC
+> Tactical snapshot · 2026-06-28 10:17:59 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2339** |
+| Posts in database | **2340** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2089 / 834 |
-| Distinct themes | 121 |
+| Graph nodes / edges | 2090 / 835 |
+| Distinct themes | 129 |
 | Duplicate clusters (full DB) | 127 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1577 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **1**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **988** · re-seen: **2260**
+- Runs: **338**
+- Net new: **989** · re-seen: **2262**
 - Duplicate rate: **69.6%**
 
 ## Sentiment drift
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · strait hormuz (1273 posts · 132 authors · 39 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · strait hormuz, sanctuary cities, held accountable, intelligence community (1247 posts · 129 authors · 37 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, paxton he's, target national (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · republicans president, reportedly surged, dollars help, rich patriot, contributes humanity (16 posts · 16 authors · 2 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, fest heart, race gmmtv, live house (14 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -97,14 +102,14 @@ _None spanning multiple narratives._
 - verified lists (9 posts)
 - dnc scrambling, bombshell hits, fest heart, race gmmtv, live house (14 posts)
 - confidence medium (7 posts)
-- corrupt doj, stop gaslighting, happy talk (9 posts)
 - local communities, fleet scale, power grids (7 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- _…73 more emerging theme(s)._
+- don't dream, rewriting gen, millennials turning, housing future, works barriers (13 posts)
+- _…80 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2339 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2340 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
