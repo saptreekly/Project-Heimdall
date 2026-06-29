@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 638,
+      "run_counter": 639,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1615,19 +1615,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1299776558354366465": {
-          "author_id": "1299776558354366465",
-          "handle": "ForgiatoBlow47",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-29T18:18:35.323862+00:00",
-          "last_tweet_at": "2026-06-27T16:02:10+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "763094579491008512": {
           "author_id": "763094579491008512",
           "handle": "EricLDaugh",
@@ -1641,19 +1628,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1976684560760098816": {
-          "author_id": "1976684560760098816",
-          "handle": "rabindraX238",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1720665183188922368": {
           "author_id": "1720665183188922368",
           "handle": "grok",
@@ -1665,45 +1639,6 @@
           "inserted_total": 47,
           "polls": 1,
           "inserts_from_polls": 19,
-          "status": "active"
-        },
-        "1430605174674964480": {
-          "author_id": "1430605174674964480",
-          "handle": "JDunlap1974",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1255161552": {
-          "author_id": "1255161552",
-          "handle": "LiveLawIndia",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1096625734817366016": {
-          "author_id": "1096625734817366016",
-          "handle": "IamQA1",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1775971649835216896": {
@@ -1940,8 +1875,73 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1904184016946831360": {
-          "author_id": "1904184016946831360",
+        "1231939125365952519": {
+          "author_id": "1231939125365952519",
+          "handle": "ArinzeOkpala2",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1403106972443021312": {
+          "author_id": "1403106972443021312",
+          "handle": "SaveSJarrah",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1591508661385453568": {
+          "author_id": "1591508661385453568",
+          "handle": "ron_not_bot",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1045276034": {
+          "author_id": "1045276034",
+          "handle": "pamelagg01",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1800203876404011009": {
+          "author_id": "1800203876404011009",
+          "handle": "IndianInfoGuid",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1089552260819009537": {
+          "author_id": "1089552260819009537",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

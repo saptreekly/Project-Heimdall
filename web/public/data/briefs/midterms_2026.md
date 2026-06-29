@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-29 18:18:40 UTC
+> Tactical snapshot · 2026-06-29 19:29:42 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2410** |
+| Posts in database | **2416** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2141 / 867 |
-| Distinct themes | 126 |
+| Graph nodes / edges | 2146 / 871 |
+| Distinct themes | 67 |
 | Duplicate clusters (full DB) | 131 |
 | Fuzzy clusters (snapshot cohort) | 13 |
-| IU astroturf overlap | 2 bots / 1602 authors |
+| IU astroturf overlap | 2 bots / 1607 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **6**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **334**
-- Net new: **1000** · re-seen: **2233**
-- Duplicate rate: **69.1%**
+- Runs: **335**
+- Net new: **1006** · re-seen: **2240**
+- Duplicate rate: **69.0%**
 
 ## Sentiment drift
 
@@ -36,21 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mike johnson, federal government (1358 posts · 123 authors · 41 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt (10 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, renew spirit, liberty america, exceptional watch, collapse policies (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · freedom democrat, democrat control, freedom democrat control, democrat control midterms, control midterms decide (8 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · election integrity, executive order, red wave, mail ballots, supreme court (2021 posts · 182 authors · 105 exact · 11 fuzzy subclusters)
+- **Near-copy campaign** · running congress, party's push, showcase patriotic (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · raised fist, american patriots (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
 - dense_cluster_15_size_3
-- dense_cluster_483_size_3
-- dense_cluster_1348_size_3
+- dense_cluster_484_size_3
+- dense_cluster_1350_size_3
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j0.90
@@ -99,19 +93,17 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, heat waves, resigns electoral, disaster looms, state setting (48 posts)
-- verified lists (9 posts)
-- confidence medium (7 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
-- primary challenge, wow scott, presler officially, act effect, promise lead (7 posts)
-- solution architect's, local communities, tech quarterly (8 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- _…82 more emerging theme(s)._
+- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (7 posts)
+- trump corruptgop, republicans hates, lost unless, cheat riseup, toobigtorig stoptrump (4 posts)
+- collins closely, platner won, primary tuesday, setting high (4 posts)
+- targeting midterm elections, malicious domains, spotted live, phishing worse, governor race (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- _…9 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2410 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2416 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
