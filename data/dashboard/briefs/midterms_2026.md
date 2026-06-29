@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-29 08:25:47 UTC
+> Tactical snapshot · 2026-06-29 12:50:12 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2395** |
+| Posts in database | **2408** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2131 / 865 |
-| Distinct themes | 60 |
-| Duplicate clusters (full DB) | 130 |
-| Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1593 authors |
+| Graph nodes / edges | 2139 / 865 |
+| Distinct themes | 95 |
+| Duplicate clusters (full DB) | 131 |
+| Fuzzy clusters (snapshot cohort) | 13 |
+| IU astroturf overlap | 2 bots / 1602 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **4**
+- Net-new posts logged: **13**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **1003** · re-seen: **2246**
-- Duplicate rate: **69.1%**
+- Net new: **1016** · re-seen: **2232**
+- Duplicate rate: **68.7%**
 
 ## Sentiment drift
 
@@ -36,13 +36,21 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (1969 posts · 187 authors · 106 exact · 12 fuzzy subclusters)
+- **Exact duplicate campaign** · away world's (29 posts · 7 authors · 10 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, radical left, years old, deep state (27 posts · 7 authors · 7 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, vote midterms (23 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, pay attention (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (8 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
 - dense_cluster_15_size_3
 - dense_cluster_483_size_3
-- dense_cluster_1344_size_3
+- dense_cluster_1348_size_3
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j0.90
@@ -65,7 +73,7 @@
 - **28 posts** · 1 author(s) — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - **27 posts** · 1 author(s) — I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes…
 - **23 posts** · 1 author(s) — Republican “ BIG BEAUTIFUL BILL” Republicans planned to DELAY what was in the Bill on purpose with the help of project 2025 H.R.1 (The "Big Beautiful Bill") was designed to delay the damage until aft…
-- _…120 more exact-duplicate cluster(s) in database._
+- _…121 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -76,10 +84,10 @@ _None (need ≥5 authors in 90s window)._
 - **6 posts** · 6 authors · ~100% Jaccard — 🚨 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms — WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY…
 - **2 posts** · 2 authors · ~100% Jaccard — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **2 posts** · 2 authors · ~100% Jaccard — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
-- **4 posts** · 4 authors · ~100% Jaccard — 🚨 HUGE NEWS🚨: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's electio…
 - **4 posts** · 4 authors · ~93% Jaccard — Senate Democrats Launch Program to Train Staff as Election Observers for 2026 Midterms via teach how to cheat!!
-- **3 posts** · 3 authors · ~100% Jaccard — 🚨 WOW! Scott Presler is officially planning to PRIMARY CHALLENGE Senate Leader John Thune if the SAVE America Act does not take effect for the 2026 midterms “I promise to lead the charge to primary &…
-- _…6 more fuzzy cluster(s) in snapshot cohort._
+- **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
+- **3 posts** · 3 authors · ~100% Jaccard — 🚨 HUGE NEWS🚨: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's electio…
+- _…7 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -91,18 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (7 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- felony charges, harris installed (5 posts)
-- beautiful delay, planned project, rules dec (4 posts)
-- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (3 posts)
-- _…13 more emerging theme(s)._
+- scott presler, primary challenge, officially planning (7 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- days presidential, major elections (13 posts)
+- position steelmanned (9 posts)
+- hormuz stays, period economic, wreckage easy, adams lays (8 posts)
+- broke buried, debt directionless (6 posts)
+- actually believe (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- _…80 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2395 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2408 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
