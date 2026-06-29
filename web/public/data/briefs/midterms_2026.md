@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-29 06:22:00 UTC
+> Tactical snapshot · 2026-06-29 07:15:45 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2391** |
+| Posts in database | **2395** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
-| Graph suspicion | 0.30 |
+| Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2127 / 862 |
-| Distinct themes | 58 |
+| Graph nodes / edges | 2131 / 865 |
+| Distinct themes | 60 |
 | Duplicate clusters (full DB) | 130 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1591 authors |
+| IU astroturf overlap | 2 bots / 1593 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **4**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **999** · re-seen: **2266**
-- Duplicate rate: **69.4%**
+- Net new: **1003** · re-seen: **2244**
+- Duplicate rate: **69.1%**
 
 ## Sentiment drift
 
@@ -36,12 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (1970 posts · 189 authors · 106 exact · 12 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (1969 posts · 187 authors · 106 exact · 12 fuzzy subclusters)
 
 ## CIB warning signals
 
 - dense_cluster_15_size_3
-- dense_cluster_482_size_3
+- dense_cluster_483_size_3
+- dense_cluster_1344_size_3
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j0.90
@@ -51,7 +52,6 @@
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_12authors_39posts_j1.00
-- cross_author_fuzzy_10authors_10posts_j1.00
 
 ## Exact duplicate text (Layer 1 — copy coordination)
 
@@ -98,11 +98,11 @@ _None spanning multiple narratives._
 - felony charges, harris installed (5 posts)
 - beautiful delay, planned project, rules dec (4 posts)
 - facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (3 posts)
-- _…12 more emerging theme(s)._
+- _…13 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2391 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2395 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
