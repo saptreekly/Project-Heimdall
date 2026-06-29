@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-29 21:49:53 UTC
+> Tactical snapshot · 2026-06-29 22:01:28 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2153 / 871 |
-| Distinct themes | 95 |
+| Distinct themes | 129 |
 | Duplicate clusters (full DB) | 133 |
 | Fuzzy clusters (snapshot cohort) | 14 |
 | IU astroturf overlap | 2 bots / 1614 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **6**
-- Net-new posts logged: **11**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **332**
-- Net new: **997** · re-seen: **2207**
+- Runs: **333**
+- Net new: **997** · re-seen: **2208**
 - Duplicate rate: **68.9%**
 
 ## Sentiment drift
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · away world's (30 posts · 5 authors · 10 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, radical left, years old, deep state (24 posts · 7 authors · 6 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (22 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (13 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (8 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst, vote screaming (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · clean energy, student loan (1356 posts · 113 authors · 40 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (18 posts · 10 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (13 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt (10 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +99,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- scott presler, primary challenge, officially planning (7 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- carville prediction, tracker january, win minimum (16 posts)
-- legal standard, racial discrimination (12 posts)
-- hormuz stays, period economic, wreckage easy, adams lays (9 posts)
-- broke buried, debt directionless (6 posts)
-- actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- _…79 more emerging theme(s)._
+- sweeping constitutional, petition nilepostnews, ready department (10 posts)
+- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (48 posts)
+- verified lists (9 posts)
+- doe completely, protections haitians, denied asylum, claim routes, individual directly (10 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- primary challenge, wow scott, presler officially, act effect, promise lead (7 posts)
+- local communities, water supplies, tech quarterly, edition sit (7 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- _…78 more emerging theme(s)._
 
 ## Scope note
 
