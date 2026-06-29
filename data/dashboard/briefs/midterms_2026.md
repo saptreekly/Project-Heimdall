@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-29 00:24:34 UTC
+> Tactical snapshot · 2026-06-29 04:55:33 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2390** |
+| Posts in database | **2391** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.30 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2127 / 862 |
-| Distinct themes | 95 |
+| Distinct themes | 58 |
 | Duplicate clusters (full DB) | 130 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1591 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **8**
-- Net-new posts logged: **10**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **335**
-- Net new: **1018** · re-seen: **2240**
+- Runs: **336**
+- Net new: **1019** · re-seen: **2242**
 - Duplicate rate: **68.8%**
 
 ## Sentiment drift
@@ -36,15 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · away world's, seizing milestone, fresh rallying (27 posts · 4 authors · 10 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, radical left, years old, deep state (24 posts · 7 authors · 6 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (22 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (8 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (1970 posts · 189 authors · 106 exact · 12 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -58,7 +50,7 @@
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
-- cross_author_fuzzy_11authors_38posts_j1.00
+- cross_author_fuzzy_12authors_39posts_j1.00
 - cross_author_fuzzy_10authors_10posts_j1.00
 
 ## Exact duplicate text (Layer 1 — copy coordination)
@@ -99,19 +91,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- carville prediction, tracker january, win minimum (15 posts)
-- legal standard, racial discrimination (12 posts)
-- hormuz stays, period economic, wreckage easy, adams lays (8 posts)
-- broke buried, debt directionless (6 posts)
-- actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- poll spells, disaster republicans, center square, democrats ninepercent, newest voters (22 posts)
-- _…78 more emerging theme(s)._
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (7 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- felony charges, harris installed (5 posts)
+- beautiful delay, planned project, rules dec (4 posts)
+- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (3 posts)
+- _…12 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2390 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2391 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
