@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-30 21:05:42 UTC
+> Tactical snapshot · 2026-06-30 21:53:26 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2461** |
+| Posts in database | **2466** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2175 / 876 |
-| Distinct themes | 127 |
+| Graph nodes / edges | 2179 / 876 |
+| Distinct themes | 100 |
 | Duplicate clusters (full DB) | 133 |
 | Fuzzy clusters (snapshot cohort) | 13 |
-| IU astroturf overlap | 2 bots / 1634 authors |
+| IU astroturf overlap | 2 bots / 1638 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **13**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **982** · re-seen: **2203**
-- Duplicate rate: **69.2%**
+- Runs: **336**
+- Net new: **987** · re-seen: **2187**
+- Duplicate rate: **68.9%**
 
 ## Sentiment drift
 
@@ -36,21 +36,21 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · civil rights, mike johnson (1387 posts · 110 authors · 40 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (11 posts · 6 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, secure vote, nationwide voter (10 posts · 10 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, renew spirit, collapse policies, pull perdition (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · effect midterms, breaking missouri, upheld state, map allowing, allowing effect (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · away world's, seizing milestone (29 posts · 3 authors · 10 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (22 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, radical left, years old, deep state (22 posts · 6 authors · 5 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (13 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (8 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
 - dense_cluster_19_size_3
 - dense_cluster_492_size_3
-- dense_cluster_1359_size_3
+- dense_cluster_1360_size_3
 - cross_author_fuzzy_8authors_8posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j1.00
@@ -85,8 +85,8 @@ _None (need ≥5 authors in 90s window)._
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms — WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY…
 - **2 posts** · 2 authors · ~100% Jaccard — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **2 posts** · 2 authors · ~100% Jaccard — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
+- **4 posts** · 4 authors · ~100% Jaccard — 🚨 WOW! Scott Presler is officially planning to PRIMARY CHALLENGE Senate Leader John Thune if the SAVE America Act does not take effect for the 2026 midterms “I promise to lead the charge to primary &…
 - **4 posts** · 4 authors · ~93% Jaccard — Senate Democrats Launch Program to Train Staff as Election Observers for 2026 Midterms via teach how to cheat!!
-- **4 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
 - _…7 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -99,19 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (12 posts)
-- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (47 posts)
-- citizenship lists (8 posts)
-- blue seats, gerrymandering map, upholds california's, upheld texas (5 posts)
-- anchor babies, electricity rates, delhi set (11 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- primary challenge, wow scott, presler officially, act effect, promise lead (7 posts)
-- effect midterms, breaking missouri, upheld state, map allowing, allowing effect (9 posts)
+- scott presler, primary challenge, officially planning (8 posts)
+- map allowing (4 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- carville prediction, tracker january, win minimum (15 posts)
+- legal standard, racial discrimination (12 posts)
+- hormuz stays, period economic, wreckage easy, adams lays (10 posts)
+- broke buried, debt directionless (6 posts)
+- actually believe (5 posts)
 - _…84 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2461 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2466 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
