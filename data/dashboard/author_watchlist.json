@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 644,
+      "run_counter": 645,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1654,19 +1654,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1486069441259397125": {
-          "author_id": "1486069441259397125",
-          "handle": "DemocraticWins",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-29T23:32:34.160252+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "2048514368778768384": {
           "author_id": "2048514368778768384",
           "handle": "XEthan_Carter",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1499556521457303555": {
-          "author_id": "1499556521457303555",
+        "2061104082916397058": {
+          "author_id": "2061104082916397058",
+          "handle": "zaintanju",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "4914384040": {
+          "author_id": "4914384040",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
