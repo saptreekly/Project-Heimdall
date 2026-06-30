@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 652,
+      "run_counter": 653,
       "authors": {
         "111": {
           "author_id": "111",
@@ -853,10 +853,10 @@
           "handle": "carolmswain",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.6900000000000001,
+          "priority": 0.81,
           "last_polled_at": "2026-06-14T21:24:03.199488+00:00",
           "last_tweet_at": "2026-06-14T17:56:18+00:00",
-          "inserted_total": 2,
+          "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1680,71 +1680,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1800203876404011009": {
-          "author_id": "1800203876404011009",
-          "handle": "IndianInfoGuid",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-30T11:17:59.476667+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2742028695": {
-          "author_id": "2742028695",
-          "handle": "Jf_kennedy1",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2233977510": {
-          "author_id": "2233977510",
-          "handle": "praying_medic1",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1074457475485712384": {
-          "author_id": "1074457475485712384",
-          "handle": "QuiverQuant",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1816371568814985216": {
-          "author_id": "1816371568814985216",
-          "handle": "Summertc6",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "2038625978243555329": {
           "author_id": "2038625978243555329",
           "handle": "MAGANEWS_X",
@@ -1940,11 +1875,76 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "14291684": {
-          "author_id": "14291684",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "2053070370605772800": {
+          "author_id": "2053070370605772800",
+          "handle": "LaratrumpRV",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2049665205102112768": {
+          "author_id": "2049665205102112768",
+          "handle": "Olivia1995X",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1484032475814899718": {
+          "author_id": "1484032475814899718",
+          "handle": "Christo12919382",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1787070764858142720": {
+          "author_id": "1787070764858142720",
+          "handle": "WakeUpPatriott",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1731773353915039744": {
+          "author_id": "1731773353915039744",
+          "handle": "jackunheard",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1274695868793458689": {
+          "author_id": "1274695868793458689",
+          "handle": "Mollyploofkins",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
