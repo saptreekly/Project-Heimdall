@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-30 04:27:03 UTC
+> Tactical snapshot · 2026-06-30 05:00:34 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2430** |
+| Posts in database | **2435** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2155 / 871 |
-| Distinct themes | 129 |
+| Graph nodes / edges | 2158 / 871 |
+| Distinct themes | 98 |
 | Duplicate clusters (full DB) | 133 |
 | Fuzzy clusters (snapshot cohort) | 14 |
-| IU astroturf overlap | 2 bots / 1616 authors |
+| IU astroturf overlap | 2 bots / 1619 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **14**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **332**
-- Net new: **991** · re-seen: **2191**
+- Runs: **333**
+- Net new: **996** · re-seen: **2205**
 - Duplicate rate: **68.9%**
 
 ## Sentiment drift
@@ -36,21 +36,22 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mike johnson, federal government (1345 posts · 112 authors · 41 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (18 posts · 9 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, radical left, years old, deep state (24 posts · 7 authors · 6 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · away world's, seizing milestone (24 posts · 2 authors · 8 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (13 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (8 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · numbers clear, 'warning sign', dems ahead, data analyst, vote screaming (8 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
 - dense_cluster_16_size_3
 - dense_cluster_486_size_3
-- dense_cluster_1351_size_3
-- cross_author_fuzzy_5authors_5posts_j1.00
+- dense_cluster_1352_size_3
+- cross_author_fuzzy_6authors_6posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j0.90
@@ -62,7 +63,7 @@
 
 ## Exact duplicate text (Layer 1 — copy coordination)
 
-- **5 posts** · 5 author(s) — 🚨SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No
+- **6 posts** · 6 author(s) — 🚨SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No
 - **3 posts** · 3 author(s) — Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \| FULL INTERVIEW
 - **6 posts** · 6 author(s) — 🚨 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms — WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
@@ -80,7 +81,7 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **5 posts** · 5 authors · ~100% Jaccard — 🚨SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No
+- **6 posts** · 6 authors · ~100% Jaccard — 🚨SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms — WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY…
 - **2 posts** · 2 authors · ~100% Jaccard — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **2 posts** · 2 authors · ~100% Jaccard — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
@@ -98,19 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- sweeping constitutional, petition nilepostnews, ready department (11 posts)
-- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (47 posts)
-- verified lists (9 posts)
-- doe completely, protections haitians, denied asylum, claim routes, individual directly (10 posts)
-- primary challenge, wow scott, presler officially, act effect, promise lead (7 posts)
-- local communities, water supplies, tech quarterly, edition sit (7 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- don't dream, rewriting gen, millennials turning, housing future, works barriers (13 posts)
-- _…78 more emerging theme(s)._
+- scott presler, primary challenge, officially planning (7 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- carville prediction, tracker january, win minimum (15 posts)
+- legal standard, racial discrimination (12 posts)
+- hormuz stays, period economic, wreckage easy, adams lays (8 posts)
+- broke buried, debt directionless (6 posts)
+- actually believe (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- _…81 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2430 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2435 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
