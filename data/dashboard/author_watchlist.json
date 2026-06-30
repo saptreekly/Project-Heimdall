@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 650,
+      "run_counter": 651,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1636,7 +1636,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-28T21:47:10.727978+00:00",
           "last_tweet_at": "2026-06-28T20:34:07+00:00",
-          "inserted_total": 47,
+          "inserted_total": 49,
           "polls": 1,
           "inserts_from_polls": 19,
           "status": "active"
@@ -1667,32 +1667,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "2038391248239665153": {
-          "author_id": "2038391248239665153",
-          "handle": "AmericaPulseNew",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-30T05:51:22.331714+00:00",
-          "last_tweet_at": "2026-06-25T22:35:33+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1231939125365952519": {
-          "author_id": "1231939125365952519",
-          "handle": "ArinzeOkpala2",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-06-30T07:03:32.475561+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1403106972443021312": {
           "author_id": "1403106972443021312",
           "handle": "SaveSJarrah",
@@ -1703,32 +1677,6 @@
           "last_tweet_at": "2026-06-29T16:46:16+00:00",
           "inserted_total": 2,
           "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1591508661385453568": {
-          "author_id": "1591508661385453568",
-          "handle": "ron_not_bot",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1045276034": {
-          "author_id": "1045276034",
-          "handle": "pamelagg01",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
@@ -1940,8 +1888,60 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1909187297553121281": {
-          "author_id": "1909187297553121281",
+        "1507503639358750720": {
+          "author_id": "1507503639358750720",
+          "handle": "CoinCrafty",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1762279566285148160": {
+          "author_id": "1762279566285148160",
+          "handle": "MiaGarcia202",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1848811289214058496": {
+          "author_id": "1848811289214058496",
+          "handle": "AezzieUwU",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "600045683": {
+          "author_id": "600045683",
+          "handle": "PaulTaylorIeng",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "14291684": {
+          "author_id": "14291684",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
