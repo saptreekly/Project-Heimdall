@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-30 16:36:36 UTC
+> Tactical snapshot · 2026-06-30 18:15:40 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2454** |
+| Posts in database | **2455** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2170 / 875 |
-| Distinct themes | 132 |
+| Distinct themes | 128 |
 | Duplicate clusters (full DB) | 133 |
 | Fuzzy clusters (snapshot cohort) | 13 |
 | IU astroturf overlap | 2 bots / 1630 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **9**
+- Net-new posts logged: **1**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **336**
-- Net new: **995** · re-seen: **2201**
+- Runs: **337**
+- Net new: **996** · re-seen: **2210**
 - Duplicate rate: **68.9%**
 
 ## Sentiment drift
@@ -31,10 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mike johnson, federal government (1357 posts · 111 authors · 41 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · mike johnson, federal government (1357 posts · 110 authors · 40 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · stephen miller, gop turnout (14 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (11 posts · 6 authors · 2 exact · 1 fuzzy subclusters)
@@ -93,19 +98,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- sweeping constitutional, petition nilepostnews, ready department (11 posts)
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (12 posts)
 - red wave, resigns electoral, disaster looms, state setting, hulhumale phase (49 posts)
 - citizenship lists (12 posts)
-- doe completely, protections haitians, denied asylum, claim routes, individual directly (13 posts)
+- doe completely, stripped away, protections haitians, denied asylum, claim routes (12 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - primary challenge, wow scott, presler officially, act effect, promise lead (7 posts)
 - map allowing (9 posts)
-- solution architect's, local communities, saline township, treat communications (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- _…78 more emerging theme(s)._
+- solution architect's, local communities, fleet scale, water supplies (9 posts)
+- _…76 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2454 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2455 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
