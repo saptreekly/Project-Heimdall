@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-30 21:53:26 UTC
+> Tactical snapshot · 2026-06-30 22:05:34 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2179 / 876 |
-| Distinct themes | 100 |
+| Distinct themes | 133 |
 | Duplicate clusters (full DB) | 133 |
 | Fuzzy clusters (snapshot cohort) | 13 |
 | IU astroturf overlap | 2 bots / 1638 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **13**
-- Net-new posts logged: **5**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **336**
-- Net new: **987** · re-seen: **2187**
+- Runs: **337**
+- Net new: **987** · re-seen: **2188**
 - Duplicate rate: **68.9%**
 
 ## Sentiment drift
@@ -36,14 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · away world's, seizing milestone (29 posts · 3 authors · 10 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (22 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, radical left, years old, deep state (22 posts · 6 authors · 5 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (13 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (8 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (8 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · mike johnson, federal government (1343 posts · 111 authors · 42 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (11 posts · 6 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, secure vote, nationwide voter (11 posts · 11 authors · 2 exact · 2 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- scott presler, primary challenge, officially planning (8 posts)
-- map allowing (4 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- carville prediction, tracker january, win minimum (15 posts)
-- legal standard, racial discrimination (12 posts)
-- hormuz stays, period economic, wreckage easy, adams lays (10 posts)
-- broke buried, debt directionless (6 posts)
-- actually believe (5 posts)
-- _…84 more emerging theme(s)._
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (12 posts)
+- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (48 posts)
+- verified lists (9 posts)
+- doe completely, protections haitians, denied asylum, claim routes, individual directly (14 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- primary challenge, wow scott, presler officially, act effect, promise lead (8 posts)
+- map allowing (9 posts)
+- solution architect's, local communities, fleet scale, water supplies (9 posts)
+- _…79 more emerging theme(s)._
 
 ## Scope note
 
