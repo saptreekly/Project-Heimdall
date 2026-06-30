@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-30 14:42:16 UTC
+> Tactical snapshot · 2026-06-30 15:20:26 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2169 / 875 |
-| Distinct themes | 62 |
+| Distinct themes | 127 |
 | Duplicate clusters (full DB) | 133 |
 | Fuzzy clusters (snapshot cohort) | 13 |
 | IU astroturf overlap | 2 bots / 1627 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **7**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **335**
-- Net new: **989** · re-seen: **2217**
-- Duplicate rate: **69.2%**
+- Net new: **989** · re-seen: **2191**
+- Duplicate rate: **68.9%**
 
 ## Sentiment drift
 
@@ -36,7 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, proof citizenship, save america, election integrity executive (2054 posts · 184 authors · 108 exact · 13 fuzzy subclusters)
+- **Exact duplicate campaign** · mike johnson (1376 posts · 116 authors · 42 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 6 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, secure vote, nationwide voter (10 posts · 10 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, renew spirit, collapse policies, pull perdition (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -91,14 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- sweeping constitutional, petition nilepostnews, ready department (11 posts)
+- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (48 posts)
+- verified lists (9 posts)
+- anchor babies, justice narasimha, electricity rates, delhi set (10 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- primary challenge, wow scott, presler officially, act effect, promise lead (7 posts)
+- solution architect's, local communities, fleet scale (10 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (7 posts)
-- republicans hates, lost unless, cheat riseup, toobigtorig stoptrump, voteblue numbers (4 posts)
-- malicious domains, spotted live, phishing worse, governor race (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…10 more emerging theme(s)._
+- _…81 more emerging theme(s)._
 
 ## Scope note
 
