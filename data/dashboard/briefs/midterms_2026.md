@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-01 06:50:52 UTC
+> Tactical snapshot · 2026-07-01 07:21:11 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2188 / 881 |
-| Distinct themes | 129 |
+| Distinct themes | 132 |
 | Duplicate clusters (full DB) | 133 |
 | Fuzzy clusters (snapshot cohort) | 13 |
 | IU astroturf overlap | 2 bots / 1646 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **24**
+- Re-sightings (duplicate encounters): **1**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **982** · re-seen: **2202**
+- Runs: **338**
+- Net new: **982** · re-seen: **2203**
 - Duplicate rate: **69.2%**
 
 ## Sentiment drift
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · federal government (1363 posts · 110 authors · 38 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules, strike laws (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · stephen miller, gop turnout (14 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (11 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, secure vote, nationwide voter (11 posts · 11 authors · 2 exact · 2 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,14 +99,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (12 posts)
-- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (48 posts)
-- citizenship lists (14 posts)
+- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (47 posts)
+- citizenship lists (13 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
-- republicans planned, project beautiful, designed delay, coming higher, medicaid work (30 posts)
 - doe completely, protections haitians, denied asylum, claim routes, individual directly (14 posts)
 - primary challenge, wow scott, presler officially, act effect, promise lead (8 posts)
 - breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts)
-- _…77 more emerging theme(s)._
+- solution architect's, local communities, water supplies, tech quarterly (8 posts)
+- _…78 more emerging theme(s)._
 
 ## Scope note
 
