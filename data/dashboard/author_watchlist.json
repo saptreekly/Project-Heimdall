@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 686,
+      "run_counter": 687,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1719,19 +1719,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1893616802535780352": {
-          "author_id": "1893616802535780352",
-          "handle": "realmagaJohnQ",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-01T18:32:43.167913+00:00",
-          "last_tweet_at": "2026-06-30T00:00:34+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "2041524050430672896": {
           "author_id": "2041524050430672896",
           "handle": "magicLgge",
@@ -1940,11 +1927,24 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1909187297553121281": {
-          "author_id": "1909187297553121281",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "38836300": {
+          "author_id": "38836300",
+          "handle": "FIULaw",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1854571479427694593": {
+          "author_id": "1854571479427694593",
+          "handle": "RobbinsSr14628",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
