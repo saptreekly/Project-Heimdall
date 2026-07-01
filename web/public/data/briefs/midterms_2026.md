@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-01 22:13:56 UTC
+> Tactical snapshot · 2026-07-01 22:51:17 UTC
 
 ## Corpus
 
@@ -14,15 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2211 / 884 |
-| Distinct themes | 104 |
+| Distinct themes | 65 |
 | Duplicate clusters (full DB) | 135 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1672 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **8**
-- Net-new posts logged: **11**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
@@ -36,15 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · years old (47 posts · 3 authors · 15 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (22 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (9 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · primary challenge, scott presler, officially planning, act effect (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (8 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · election integrity, red wave, mail ballots, executive order, proof citizenship (2102 posts · 184 authors · 109 exact · 10 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -99,15 +91,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- primary challenge, scott presler, officially planning, act effect (9 posts)
-- map allowing (4 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- days presidential, major elections (13 posts)
-- position steelmanned, civil rights (9 posts)
-- broke buried, debt directionless (6 posts)
-- actually believe (5 posts)
-- check groypers (5 posts)
-- _…87 more emerging theme(s)._
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (7 posts)
+- awakening largest, voting force, actually believe (6 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- collins closely, platner won, primary tuesday, setting high (4 posts)
+- malicious domains, phishing worse, governor race (3 posts)
+- _…13 more emerging theme(s)._
 
 ## Scope note
 
