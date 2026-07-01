@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-06-30 23:43:31 UTC
+> Tactical snapshot · 2026-07-01 00:29:46 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2466** |
+| Posts in database | **2471** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2179 / 876 |
-| Distinct themes | 133 |
+| Graph nodes / edges | 2185 / 881 |
+| Distinct themes | 131 |
 | Duplicate clusters (full DB) | 133 |
 | Fuzzy clusters (snapshot cohort) | 13 |
-| IU astroturf overlap | 2 bots / 1638 authors |
+| IU astroturf overlap | 2 bots / 1641 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **337**
-- Net new: **968** · re-seen: **2212**
-- Duplicate rate: **69.6%**
+- Net new: **973** · re-seen: **2217**
+- Duplicate rate: **69.5%**
 
 ## Sentiment drift
 
@@ -31,19 +36,20 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mike johnson, federal government (1343 posts · 111 authors · 42 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (11 posts · 6 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · federal government (1383 posts · 110 authors · 38 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 6 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, secure vote, nationwide voter (11 posts · 11 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, renew spirit, collapse policies, pull perdition (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
 - dense_cluster_19_size_3
-- dense_cluster_492_size_3
+- dense_cluster_493_size_3
 - dense_cluster_1360_size_3
 - cross_author_fuzzy_8authors_8posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
@@ -95,17 +101,17 @@ _None spanning multiple narratives._
 
 - sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (12 posts)
 - red wave, resigns electoral, disaster looms, state setting, hulhumale phase (48 posts)
-- verified lists (9 posts)
-- doe completely, protections haitians, denied asylum, claim routes, individual directly (14 posts)
-- corrupt doj, stop gaslighting, happy talk (9 posts)
+- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
+- blue seats, gerrymandering map, upholds california's, upheld texas (5 posts)
+- anchor babies, electricity rates, delhi set (11 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
 - primary challenge, wow scott, presler officially, act effect, promise lead (8 posts)
-- map allowing (9 posts)
-- solution architect's, local communities, fleet scale, water supplies (9 posts)
-- _…79 more emerging theme(s)._
+- breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts)
+- _…87 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2466 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2471 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
