@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-02 15:09:07 UTC
+> Tactical snapshot · 2026-07-02 15:56:15 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2236 / 892 |
-| Distinct themes | 101 |
+| Distinct themes | 136 |
 | Duplicate clusters (full DB) | 137 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1692 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **14**
-- Net-new posts logged: **6**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **340**
-- Net new: **955** · re-seen: **2211**
-- Duplicate rate: **69.8%**
+- Net new: **952** · re-seen: **2210**
+- Duplicate rate: **69.9%**
 
 ## Sentiment drift
 
@@ -36,14 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · years old (49 posts · 5 authors · 16 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (10 posts · 10 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · primary challenge, scott presler, officially planning, act effect (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · federal government (1389 posts · 107 authors · 39 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stephen miller, gop turnout (14 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- primary challenge, scott presler, officially planning, act effect (9 posts)
-- map allowing (4 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- days presidential, major elections (13 posts)
-- position steelmanned, civil rights (9 posts)
-- broke buried, debt directionless (6 posts)
-- actually believe (5 posts)
-- check groypers (5 posts)
-- _…84 more emerging theme(s)._
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- red wave, dem sweep, projected likely, resigns electoral (47 posts)
+- citizenship lists (12 posts)
+- gerrymandering map, upholds california's, scotus upheld (5 posts)
+- potus potus, doe completely, protections haitians, denied asylum (19 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
+- breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts)
+- _…81 more emerging theme(s)._
 
 ## Scope note
 
