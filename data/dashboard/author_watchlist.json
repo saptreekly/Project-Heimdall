@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 700,
+      "run_counter": 701,
       "authors": {
         "111": {
           "author_id": "111",
@@ -219,7 +219,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-06T09:06:46.758852+00:00",
           "last_tweet_at": "2026-06-04T11:08:01+00:00",
-          "inserted_total": 24,
+          "inserted_total": 25,
           "polls": 1,
           "inserts_from_polls": 4,
           "status": "active"
@@ -1719,84 +1719,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1875023808202977280": {
-          "author_id": "1875023808202977280",
-          "handle": "NoChildAbuse67",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-02T10:16:08.557367+00:00",
-          "last_tweet_at": "2026-07-01T21:21:58+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "944910312": {
-          "author_id": "944910312",
-          "handle": "dmbkparker",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1596053910581551104": {
-          "author_id": "1596053910581551104",
-          "handle": "Claire_RN1",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2053070370605772800": {
-          "author_id": "2053070370605772800",
-          "handle": "LaratrumpRV",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1884930840423239680": {
-          "author_id": "1884930840423239680",
-          "handle": "RealTrumpGesara",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2033468613529833472": {
-          "author_id": "2033468613529833472",
-          "handle": "Ustroopss",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1354560479725826054": {
           "author_id": "1354560479725826054",
           "handle": "thecountryfirst",
@@ -1940,8 +1862,86 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1255669197977288704": {
-          "author_id": "1255669197977288704",
+        "2047162930840453120": {
+          "author_id": "2047162930840453120",
+          "handle": "ShanonLee_A",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2053669582401867776": {
+          "author_id": "2053669582401867776",
+          "handle": "LibertyLaney",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2064810849697497089": {
+          "author_id": "2064810849697497089",
+          "handle": "RealPatriotsRVQ",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1682383253347397633": {
+          "author_id": "1682383253347397633",
+          "handle": "Bri4Change2026",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "899688162": {
+          "author_id": "899688162",
+          "handle": "NessKathy",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1239757330037669888": {
+          "author_id": "1239757330037669888",
+          "handle": "commons96055467",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1546214764203982849": {
+          "author_id": "1546214764203982849",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
