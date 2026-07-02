@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-02 22:42:09 UTC
+> Tactical snapshot · 2026-07-02 23:44:32 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2553** |
+| Posts in database | **2554** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -15,19 +15,19 @@
 | Organic score | 0.45 |
 | Graph nodes / edges | 2238 / 893 |
 | Distinct themes | 132 |
-| Duplicate clusters (full DB) | 137 |
+| Duplicate clusters (full DB) | 138 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1694 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **28**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **336**
-- Net new: **923** · re-seen: **2208**
+- Runs: **337**
+- Net new: **924** · re-seen: **2209**
 - Duplicate rate: **70.5%**
 
 ## Sentiment drift
@@ -36,8 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · federal government, mike johnson (1434 posts · 106 authors · 41 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · federal government, mike johnson (1433 posts · 105 authors · 42 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (12 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
@@ -73,7 +73,7 @@
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **28 posts** · 1 author(s) — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - **27 posts** · 1 author(s) — I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes…
-- _…127 more exact-duplicate cluster(s) in database._
+- _…128 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -101,17 +101,17 @@ _None spanning multiple narratives._
 
 - sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - red wave, dem sweep, projected likely, resigns electoral (48 posts)
-- abortion ended, non important, immediate reaction, envision followed (3 posts)
 - executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
+- beautiful delay, planned project (5 posts)
 - potus potus, anchor babies, liberty conspiracy (17 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (8 posts)
 - primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
 - _…87 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2553 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2554 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
