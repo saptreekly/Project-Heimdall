@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 698,
+      "run_counter": 699,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1719,32 +1719,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "83668232": {
-          "author_id": "83668232",
-          "handle": "JesseFFerguson",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-02T07:58:50.430267+00:00",
-          "last_tweet_at": "2026-06-30T14:41:39+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "140060120": {
-          "author_id": "140060120",
-          "handle": "davidpakmanshow",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1875023808202977280": {
           "author_id": "1875023808202977280",
           "handle": "NoChildAbuse67",
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1520136057928486920": {
-          "author_id": "1520136057928486920",
+        "1671420907456192513": {
+          "author_id": "1671420907456192513",
+          "handle": "sweetsreadings",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1889037750520651776": {
+          "author_id": "1889037750520651776",
+          "handle": "PA_Supremacist",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1255669197977288704": {
+          "author_id": "1255669197977288704",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-02 07:58:55 UTC
+> Tactical snapshot · 2026-07-02 09:50:12 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2530** |
+| Posts in database | **2532** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2221 / 889 |
+| Graph nodes / edges | 2223 / 889 |
 | Distinct themes | 132 |
 | Duplicate clusters (full DB) | 136 |
 | Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 1679 authors |
+| IU astroturf overlap | 2 bots / 1681 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **337**
-- Net new: **953** · re-seen: **2172**
-- Duplicate rate: **69.5%**
+- Net new: **955** · re-seen: **2183**
+- Duplicate rate: **69.6%**
 
 ## Sentiment drift
 
@@ -36,21 +36,20 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mike johnson (1427 posts · 107 authors · 40 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · stephen miller, gop turnout (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (9 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
 - dense_cluster_19_size_3
-- dense_cluster_495_size_3
-- dense_cluster_1365_size_3
+- dense_cluster_496_size_3
+- dense_cluster_1366_size_3
 - cross_author_fuzzy_14authors_16posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j1.00
@@ -100,18 +99,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
-- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (8 posts)
+- red wave, dem sweep, projected likely, resigns electoral (47 posts)
+- citizenship lists (13 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
-- beautiful delay, planned project (5 posts)
-- anchor babies, cause removal, humphrey's executor (14 posts)
-- corrupt doj, stop gaslighting, happy talk (8 posts)
+- potus potus, doe completely, protections haitians, denied asylum (19 posts)
 - primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
-- _…88 more emerging theme(s)._
+- breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts)
+- solution architect's, local communities, water supplies, tech quarterly (8 posts)
+- _…81 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2530 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2532 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
