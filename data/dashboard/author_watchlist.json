@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 712,
+      "run_counter": 713,
       "authors": {
         "111": {
           "author_id": "111",
@@ -63,7 +63,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-04T05:29:18.297256+00:00",
           "last_tweet_at": "2026-06-04T02:30:01+00:00",
-          "inserted_total": 32,
+          "inserted_total": 33,
           "polls": 1,
           "inserts_from_polls": 9,
           "status": "active"
@@ -1745,45 +1745,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1889037750520651776": {
-          "author_id": "1889037750520651776",
-          "handle": "PA_Supremacist",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-02T19:59:43.568753+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2047162930840453120": {
-          "author_id": "2047162930840453120",
-          "handle": "ShanonLee_A",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2053669582401867776": {
-          "author_id": "2053669582401867776",
-          "handle": "LibertyLaney",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "2064810849697497089": {
           "author_id": "2064810849697497089",
           "handle": "RealPatriotsRVQ",
@@ -1940,11 +1901,50 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "14291684": {
-          "author_id": "14291684",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "1598022080490049543": {
+          "author_id": "1598022080490049543",
+          "handle": "JD_Vance_RV_Q",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2024529687435730944": {
+          "author_id": "2024529687435730944",
+          "handle": "BTUPDATES10",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1886472368316399616": {
+          "author_id": "1886472368316399616",
+          "handle": "America47X",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "891580645297856512": {
+          "author_id": "891580645297856512",
+          "handle": "MeLive007",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
