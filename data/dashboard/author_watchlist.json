@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 696,
+      "run_counter": 697,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1719,32 +1719,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1791833953717846016": {
-          "author_id": "1791833953717846016",
-          "handle": "RandyGoat",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-02T06:14:46.063147+00:00",
-          "last_tweet_at": "2026-07-01T19:29:32+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1653800539698737173": {
-          "author_id": "1653800539698737173",
-          "handle": "overton_news",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "83668232": {
           "author_id": "83668232",
           "handle": "JesseFFerguson",
@@ -1949,6 +1923,32 @@
           "last_polled_at": null,
           "last_tweet_at": null,
           "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1620189996232888320": {
+          "author_id": "1620189996232888320",
+          "handle": "quark4511",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1520136057928486920": {
+          "author_id": "1520136057928486920",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
