@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-02 00:21:57 UTC
+> Tactical snapshot · 2026-07-02 04:23:23 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2513** |
+| Posts in database | **2518** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2211 / 884 |
-| Distinct themes | 65 |
+| Graph nodes / edges | 2217 / 889 |
+| Distinct themes | 130 |
 | Duplicate clusters (full DB) | 135 |
-| Fuzzy clusters (snapshot cohort) | 10 |
-| IU astroturf overlap | 2 bots / 1672 authors |
+| Fuzzy clusters (snapshot cohort) | 9 |
+| IU astroturf overlap | 2 bots / 1673 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **950** · re-seen: **2182**
-- Duplicate rate: **69.7%**
+- Net new: **955** · re-seen: **2171**
+- Duplicate rate: **69.4%**
 
 ## Sentiment drift
 
@@ -31,7 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · election integrity, red wave, mail ballots, executive order, proof citizenship (2102 posts · 184 authors · 109 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · mike johnson, task force, federal government (1425 posts · 109 authors · 38 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · possibly track, break record (10 posts · 6 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (9 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -69,12 +82,12 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **12 posts** · 11 authors · ~100% Jaccard — 🚨SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No
-- **2 posts** · 2 authors · ~100% Jaccard — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 WOW! Scott Presler is officially planning to PRIMARY CHALLENGE Senate Leader John Thune if the SAVE America Act does not take effect for the 2026 midterms “I promise to lead the charge to primary &…
 - **4 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 Democrats laundered our tax money to George Soros so he could send it back as campaign donations - Before leaving office Democrats sent $260 MILLION DOLLARS TO GEORGE SOROS - Now George Soros has s…
 - **3 posts** · 3 authors · ~100% Jaccard — Mike Johnson vows to protect Republicans from investigations if the GOP loses the 2026 midterms: "I run the protection program. I’ll take care of you. We're going to win the midterms."
-- _…4 more fuzzy cluster(s) in snapshot cohort._
+- **3 posts** · 2 authors · ~90% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
+- _…3 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -86,18 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (7 posts)
-- awakening largest, voting force, actually believe (6 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- collins closely, platner won, primary tuesday, setting high (4 posts)
-- malicious domains, phishing worse, governor race (3 posts)
-- _…13 more emerging theme(s)._
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (12 posts)
+- red wave, heat waves, resigns electoral, disaster looms, state setting (48 posts)
+- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
+- gerrymandering map, upholds california's, scotus upheld (5 posts)
+- anchor babies, cause removal, humphrey's executor (14 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
+- breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts)
+- _…89 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2513 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2518 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
