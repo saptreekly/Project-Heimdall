@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-02 18:09:05 UTC
+> Tactical snapshot · 2026-07-02 19:11:05 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2548** |
+| Posts in database | **2549** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2236 / 892 |
-| Distinct themes | 135 |
+| Graph nodes / edges | 2237 / 893 |
+| Distinct themes | 134 |
 | Duplicate clusters (full DB) | 137 |
 | Fuzzy clusters (snapshot cohort) | 10 |
-| IU astroturf overlap | 2 bots / 1692 authors |
+| IU astroturf overlap | 2 bots / 1693 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **10**
 - Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **338**
-- Net new: **953** · re-seen: **2192**
-- Duplicate rate: **69.7%**
+- Runs: **337**
+- Net new: **935** · re-seen: **2200**
+- Duplicate rate: **70.2%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · federal government, mike johnson (1402 posts · 109 authors · 40 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · stephen miller, gop turnout (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stephen miller, gop turnout (12 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · possibly track, break record (11 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,18 +99,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- red wave, dem sweep, projected likely, resigns electoral (47 posts)
-- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (12 posts)
+- red wave, dem sweep, projected likely, resigns electoral (50 posts)
+- citizenship lists (12 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
 - republicans planned, project beautiful, designed delay, coming higher, medicaid work (30 posts)
 - potus potus, doe completely, protections haitians, denied asylum (20 posts)
-- primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
+- primary challenge, wow scott, presler officially, act effect, promise lead (9 posts)
 - breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts)
-- _…82 more emerging theme(s)._
+- _…81 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2548 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2549 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
