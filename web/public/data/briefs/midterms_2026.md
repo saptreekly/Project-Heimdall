@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-03 06:42:11 UTC
+> Tactical snapshot · 2026-07-03 07:43:10 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2559** |
+| Posts in database | **2560** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2242 / 894 |
-| Distinct themes | 138 |
+| Distinct themes | 136 |
 | Duplicate clusters (full DB) | 138 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 1698 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **338**
-- Net new: **928** · re-seen: **2211**
-- Duplicate rate: **70.4%**
+- Net new: **912** · re-seen: **2216**
+- Duplicate rate: **70.8%**
 
 ## Sentiment drift
 
@@ -36,10 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · federal government (1395 posts · 107 authors · 40 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · federal government (1397 posts · 106 authors · 41 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · stephen miller, gop turnout (14 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (12 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
@@ -102,15 +102,15 @@ _None spanning multiple narratives._
 - red wave, dem sweep, projected likely, resigns electoral (48 posts)
 - citizenship lists (12 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
+- republicans planned, project beautiful, designed delay, coming higher, medicaid work (30 posts)
 - potus potus, doe completely, protections haitians, denied asylum (21 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
 - primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
-- breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts)
-- solution architect's, local communities, water supplies, tech quarterly (8 posts)
-- _…84 more emerging theme(s)._
+- _…82 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2559 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2560 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
