@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-03 04:36:39 UTC
+> Tactical snapshot · 2026-07-03 05:34:10 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2242 / 894 |
-| Distinct themes | 102 |
+| Distinct themes | 138 |
 | Duplicate clusters (full DB) | 138 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 1698 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **14**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **338**
-- Net new: **929** · re-seen: **2207**
+- Net new: **928** · re-seen: **2207**
 - Duplicate rate: **70.4%**
 
 ## Sentiment drift
@@ -36,14 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · years old (45 posts · 5 authors · 15 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (12 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · primary challenge, scott presler, officially planning, act effect (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · federal government (1395 posts · 107 authors · 40 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stephen miller, gop turnout (14 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (12 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- primary challenge, scott presler, officially planning, act effect (9 posts)
-- map allowing (4 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- days presidential, major elections (13 posts)
-- position steelmanned, civil rights (9 posts)
-- broke buried, debt directionless (6 posts)
-- actually believe (5 posts)
-- check groypers (5 posts)
-- _…87 more emerging theme(s)._
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- red wave, dem sweep, projected likely, resigns electoral (48 posts)
+- citizenship lists (12 posts)
+- gerrymandering map, upholds california's, scotus upheld (5 posts)
+- potus potus, doe completely, protections haitians, denied asylum (21 posts)
+- primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
+- breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts)
+- solution architect's, local communities, water supplies, tech quarterly (8 posts)
+- _…84 more emerging theme(s)._
 
 ## Scope note
 
