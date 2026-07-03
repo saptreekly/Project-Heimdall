@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-03 08:38:57 UTC
+> Tactical snapshot · 2026-07-03 09:49:55 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2560** |
+| Posts in database | **2565** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2242 / 894 |
-| Distinct themes | 130 |
+| Graph nodes / edges | 2244 / 894 |
+| Distinct themes | 103 |
 | Duplicate clusters (full DB) | 138 |
 | Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 1698 authors |
+| IU astroturf overlap | 2 bots / 1700 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **338**
-- Net new: **912** · re-seen: **2214**
-- Duplicate rate: **70.8%**
+- Runs: **339**
+- Net new: **917** · re-seen: **2229**
+- Duplicate rate: **70.9%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · federal government, mike johnson, task force (1448 posts · 109 authors · 43 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (12 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old (43 posts · 3 authors · 14 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, center square, democrats ninepercent, newest voters (21 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (13 posts · 13 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · scott presler, senate leader, officially planning, act effect (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -51,7 +51,7 @@
 - dense_cluster_19_size_3
 - dense_cluster_497_size_3
 - dense_cluster_1368_size_3
-- cross_author_fuzzy_20authors_22posts_j1.00
+- cross_author_fuzzy_21authors_23posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j0.90
@@ -81,7 +81,7 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **22 posts** · 20 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
+- **23 posts** · 21 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
 - **5 posts** · 4 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 WOW! Scott Presler is officially planning to PRIMARY CHALLENGE Senate Leader John Thune if the SAVE America Act does not take effect for the 2026 midterms “I promise to lead the charge to primary &…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 Democrats laundered our tax money to George Soros so he could send it back as campaign donations - Before leaving office Democrats sent $260 MILLION DOLLARS TO GEORGE SOROS - Now George Soros has s…
@@ -99,19 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- red wave, dem sweep, projected likely, resigns electoral (48 posts)
-- abortion ended, non important, immediate reaction, envision followed (3 posts)
-- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
-- gerrymandering map, upholds california's, scotus upheld (5 posts)
-- potus potus, anchor babies, liberty conspiracy (18 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
-- _…86 more emerging theme(s)._
+- scott presler, senate leader, officially planning, act effect (9 posts)
+- map allowing (4 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- primary elections, held alabama, california georgia, hours minutes (14 posts)
+- position steelmanned, civil rights (9 posts)
+- broke buried, debt directionless (6 posts)
+- actually believe (5 posts)
+- check groypers (5 posts)
+- _…88 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2560 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2565 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
