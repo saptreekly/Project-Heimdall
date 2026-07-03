@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-03 11:18:52 UTC
+> Tactical snapshot · 2026-07-03 12:03:31 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2565** |
+| Posts in database | **2568** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2244 / 894 |
-| Distinct themes | 132 |
+| Graph nodes / edges | 2247 / 895 |
+| Distinct themes | 137 |
 | Duplicate clusters (full DB) | 138 |
 | Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 1700 authors |
+| IU astroturf overlap | 2 bots / 1702 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **342**
-- Net new: **917** · re-seen: **2254**
-- Duplicate rate: **71.1%**
+- Runs: **343**
+- Net new: **920** · re-seen: **2269**
+- Duplicate rate: **71.2%**
 
 ## Sentiment drift
 
@@ -36,21 +36,20 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · federal government, mike johnson (1438 posts · 103 authors · 41 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (16 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · federal government (1408 posts · 107 authors · 40 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stephen miller, gop turnout (14 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (13 posts · 13 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
 - dense_cluster_19_size_3
-- dense_cluster_497_size_3
-- dense_cluster_1368_size_3
+- dense_cluster_498_size_3
+- dense_cluster_1369_size_3
 - cross_author_fuzzy_21authors_23posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j1.00
@@ -101,17 +100,17 @@ _None spanning multiple narratives._
 
 - sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - red wave, dem sweep, projected likely, resigns electoral (48 posts)
-- abortion ended, non important, immediate reaction, envision followed (3 posts)
-- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
+- citizenship lists (12 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
-- potus potus, anchor babies, liberty conspiracy (18 posts)
-- corrupt doj, stop gaslighting, happy talk (9 posts)
+- republicans planned, project beautiful, designed delay, coming higher, medicaid work (30 posts)
+- potus potus, doe completely, stripped away, protections haitians, denied asylum (21 posts)
 - primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
-- _…89 more emerging theme(s)._
+- breaking missouri, upheld state, map allowing, allowing effect, midterms seat (9 posts)
+- _…82 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2565 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2568 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 728,
+      "run_counter": 729,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1636,7 +1636,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-28T21:47:10.727978+00:00",
           "last_tweet_at": "2026-06-28T20:34:07+00:00",
-          "inserted_total": 55,
+          "inserted_total": 56,
           "polls": 1,
           "inserts_from_polls": 19,
           "status": "active"
@@ -1756,32 +1756,6 @@
           "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 1,
-          "status": "active"
-        },
-        "1511140603093913603": {
-          "author_id": "1511140603093913603",
-          "handle": "23wjohnston",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-03T11:18:47.302688+00:00",
-          "last_tweet_at": "2026-07-02T17:26:46+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1598022080490049543": {
-          "author_id": "1598022080490049543",
-          "handle": "JD_Vance_RV_Q",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "2024529687435730944": {
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "3530404094": {
-          "author_id": "3530404094",
+        "1677836142836609026": {
+          "author_id": "1677836142836609026",
+          "handle": "VirginaRay57067",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1714119347990618112": {
+          "author_id": "1714119347990618112",
+          "handle": "kunsha51",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1043078185825460224": {
+          "author_id": "1043078185825460224",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
