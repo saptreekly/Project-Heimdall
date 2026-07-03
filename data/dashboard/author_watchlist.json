@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 734,
+      "run_counter": 735,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1758,32 +1758,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1823144778038435840": {
-          "author_id": "1823144778038435840",
-          "handle": "IStandWKamala",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-03T14:59:20.017876+00:00",
-          "last_tweet_at": "2026-06-30T13:35:13+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1815733680335450113": {
-          "author_id": "1815733680335450113",
-          "handle": "Bannons_WarRoom",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-03T16:04:21.212347+00:00",
-          "last_tweet_at": "2026-06-30T23:51:44+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1666566452881629184": {
           "author_id": "1666566452881629184",
           "handle": "TaylorChar83070",
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "219344912": {
-          "author_id": "219344912",
+        "1861460408072065024": {
+          "author_id": "1861460408072065024",
+          "handle": "FlipChicagoRed",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1781143071364657152": {
+          "author_id": "1781143071364657152",
+          "handle": "Dannic44",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1517052974190706688": {
+          "author_id": "1517052974190706688",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
