@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-03 10:12:29 UTC
+> Tactical snapshot · 2026-07-03 10:47:57 UTC
 
 ## Corpus
 
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **23**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **340**
-- Net new: **917** · re-seen: **2230**
-- Duplicate rate: **70.9%**
+- Runs: **341**
+- Net new: **917** · re-seen: **2253**
+- Duplicate rate: **71.1%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · federal government, mike johnson (1442 posts · 103 authors · 41 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · federal government, mike johnson (1438 posts · 103 authors · 41 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules, strike laws (16 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (13 posts · 13 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, classic demonrats, kerri lane (9 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · primary challenge, wow scott, presler officially, act effect, promise lead (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -106,7 +106,7 @@ _None spanning multiple narratives._
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
 - potus potus, anchor babies, liberty conspiracy (18 posts)
 - corrupt doj, stop gaslighting, happy talk (9 posts)
-- primary challenge, wow scott, presler officially, act effect, promise lead (9 posts)
+- primary challenge, senate leader john, wow scott, presler officially, act effect (9 posts)
 - _…89 more emerging theme(s)._
 
 ## Scope note
