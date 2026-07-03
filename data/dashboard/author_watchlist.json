@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 739,
+      "run_counter": 740,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1776,12 +1776,12 @@
           "handle": "KimberlyXnews",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
+          "priority": 0.79,
+          "last_polled_at": "2026-07-03T21:46:47.768064+00:00",
+          "last_tweet_at": "2026-07-01T11:30:50+00:00",
+          "inserted_total": 3,
+          "polls": 1,
+          "inserts_from_polls": 1,
           "status": "active"
         },
         "1677836142836609026": {

@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-03 21:18:03 UTC
+> Tactical snapshot · 2026-07-03 21:50:37 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2583** |
+| Posts in database | **2584** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2255 / 895 |
-| Distinct themes | 68 |
-| Duplicate clusters (full DB) | 138 |
+| Distinct themes | 69 |
+| Duplicate clusters (full DB) | 139 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1710 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **25**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **338**
-- Net new: **888** · re-seen: **2254**
+- Net new: **889** · re-seen: **2254**
 - Duplicate rate: **71.7%**
 
 ## Sentiment drift
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, proof citizenship, election integrity executive (2168 posts · 184 authors · 113 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, proof citizenship, save america, election integrity executive (2160 posts · 183 authors · 113 exact · 10 fuzzy subclusters)
 - **Shared frame (emerging)** · ohio voters, epstein files (6 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -66,7 +66,7 @@
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **28 posts** · 1 author(s) — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - **27 posts** · 1 author(s) — I feel sorry for that SENILE COWARD FACIST NAZI PIG BONESPUR DRAFT DODGER&amp;his INBREEDS cuz they're losers. America loves WINNERS&amp;WON'T tolerate these PATHETIC LOSERS. I killed 10000'S of thes…
-- _…128 more exact-duplicate cluster(s) in database._
+- _…129 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -78,8 +78,8 @@ _None (need ≥5 authors in 90s window)._
 - **5 posts** · 4 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 WOW! Scott Presler is officially planning to PRIMARY CHALLENGE Senate Leader John Thune if the SAVE America Act does not take effect for the 2026 midterms “I promise to lead the charge to primary &…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 Democrats laundered our tax money to George Soros so he could send it back as campaign donations - Before leaving office Democrats sent $260 MILLION DOLLARS TO GEORGE SOROS - Now George Soros has s…
+- **3 posts** · 2 authors · ~86% Jaccard — 🚨 VOTER ID NOW OR NEVER Should Congress pass a national voter ID law before the 2026 midterms? A. Yes B. No W.H.G
 - **2 posts** · 2 authors · ~100% Jaccard — 🔥🇺🇸 Raised fist for the Republic! I’m voting REPUBLICAN on ALL ballots in November 2026 midterms and beyond! Straight MAGA America First American Patriots &amp; Trump Supporters who LOVE our country!…
-- **2 posts** · 2 authors · ~100% Jaccard — SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS BEFORE THE 2026 MIDTERMS?
 - _…4 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -92,18 +92,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
 - democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
 - awakening largest, actually believe (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - collins closely, platner won, primary tuesday, stakes fall (4 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…14 more emerging theme(s)._
+- _…15 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2583 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2584 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
