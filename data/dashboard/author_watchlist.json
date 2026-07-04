@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 754,
+      "run_counter": 755,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1784,45 +1784,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1781143071364657152": {
-          "author_id": "1781143071364657152",
-          "handle": "Dannic44",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-04T07:31:03.454447+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1833867535407538176": {
-          "author_id": "1833867535407538176",
-          "handle": "IvankaTrump0179",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-04T09:05:11.273162+00:00",
-          "last_tweet_at": "2026-07-03T00:09:19+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1586033668371484673": {
-          "author_id": "1586033668371484673",
-          "handle": "Andreafreedom76",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-04T10:21:46.241265+00:00",
-          "last_tweet_at": "2026-07-03T13:47:39+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1319287761048723458": {
           "author_id": "1319287761048723458",
           "handle": "MarioNawfal",
@@ -1940,8 +1901,47 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "449723469": {
-          "author_id": "449723469",
+        "3419210573": {
+          "author_id": "3419210573",
+          "handle": "FFT1776",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1594164637829926915": {
+          "author_id": "1594164637829926915",
+          "handle": "Becky__BT",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2053780202686230528": {
+          "author_id": "2053780202686230528",
+          "handle": "TheNews47",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "19553409": {
+          "author_id": "19553409",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
