@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-04 12:18:13 UTC
+> Tactical snapshot · 2026-07-04 13:57:54 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2596** |
+| Posts in database | **2597** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -21,13 +21,13 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **343**
-- Net new: **873** · re-seen: **2346**
+- Net new: **874** · re-seen: **2347**
 - Duplicate rate: **72.9%**
 
 ## Sentiment drift
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, supreme court, proof citizenship (2181 posts · 186 authors · 114 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, supreme court, proof citizenship, save america (2167 posts · 187 authors · 112 exact · 11 fuzzy subclusters)
 - **Shared frame** · ohio voters, epstein files (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -92,18 +92,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- gen millennials, register rally, vote legends, don't dream, turning midterms (19 posts)
 - democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
-- awakening largest, actually believe (6 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - collins closely, platner won, primary tuesday, stakes fall (4 posts)
+- malicious domains, phishing worse, governor race (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
 - _…14 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2596 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2597 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
