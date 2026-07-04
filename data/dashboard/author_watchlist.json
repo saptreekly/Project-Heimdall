@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 766,
+      "run_counter": 767,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1048,10 +1048,10 @@
           "handle": "PollTracker2024",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.6900000000000001,
+          "priority": 0.81,
           "last_polled_at": "2026-06-17T19:40:00.076879+00:00",
           "last_tweet_at": "2026-06-17T15:42:39+00:00",
-          "inserted_total": 2,
+          "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1467,7 +1467,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-26T12:02:12.994766+00:00",
           "last_tweet_at": "2026-06-25T20:12:56+00:00",
-          "inserted_total": 9,
+          "inserted_total": 10,
           "polls": 1,
           "inserts_from_polls": 3,
           "status": "active"
@@ -1797,45 +1797,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1571174195370803201": {
-          "author_id": "1571174195370803201",
-          "handle": "Tironianae",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-04T18:36:21.243811+00:00",
-          "last_tweet_at": "2026-07-02T12:27:19+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "344094094": {
-          "author_id": "344094094",
-          "handle": "StreetLawInc",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "744115300497399808": {
-          "author_id": "744115300497399808",
-          "handle": "Shuonod",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "3830061": {
           "author_id": "3830061",
           "handle": "jpelzer",
@@ -1854,10 +1815,10 @@
           "handle": "FFT1776",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.5700000000000001,
+          "priority": 0.6900000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 1,
+          "inserted_total": 2,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,15 +1901,54 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1255669197977288704": {
-          "author_id": "1255669197977288704",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
+        "1787180979540635648": {
+          "author_id": "1787180979540635648",
+          "handle": "RightScopee",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 0,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1836181201062653952": {
+          "author_id": "1836181201062653952",
+          "handle": "onetexgal9",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2159758118": {
+          "author_id": "2159758118",
+          "handle": "Pardony_Conway",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2240745937": {
+          "author_id": "2240745937",
+          "handle": "warDaniel47",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
