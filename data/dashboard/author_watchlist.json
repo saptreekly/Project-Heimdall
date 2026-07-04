@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 760,
+      "run_counter": 761,
       "authors": {
         "111": {
           "author_id": "111",
@@ -801,10 +801,10 @@
           "handle": "WHLeavitt",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.91,
+          "priority": 1.0,
           "last_polled_at": "2026-06-13T21:52:33.352896+00:00",
           "last_tweet_at": "2026-06-12T15:39:38+00:00",
-          "inserted_total": 4,
+          "inserted_total": 5,
           "polls": 1,
           "inserts_from_polls": 1,
           "status": "active"
@@ -1784,32 +1784,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "121574367": {
-          "author_id": "121574367",
-          "handle": "LisaMarieBoothe",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-04T12:18:08.417874+00:00",
-          "last_tweet_at": "2026-07-02T21:00:01+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "491577854": {
-          "author_id": "491577854",
-          "handle": "HISGLORYME",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-04T14:16:10.042564+00:00",
-          "last_tweet_at": "2026-07-02T22:10:53+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1716838183483183104": {
           "author_id": "1716838183483183104",
           "handle": "StephenGardnerX",
@@ -1940,11 +1914,37 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1043078185825460224": {
-          "author_id": "1043078185825460224",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "783366980": {
+          "author_id": "783366980",
+          "handle": "Dr_Stephen1",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1931849043463770112": {
+          "author_id": "1931849043463770112",
+          "handle": "Real_Turley",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1828542359614914560": {
+          "author_id": "1828542359614914560",
+          "handle": "ShilohMarxfmnr",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
