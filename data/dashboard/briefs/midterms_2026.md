@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-04 17:16:35 UTC
+> Tactical snapshot · 2026-07-04 17:51:58 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2601** |
+| Posts in database | **2602** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2262 / 897 |
-| Distinct themes | 69 |
+| Graph nodes / edges | 2263 / 898 |
+| Distinct themes | 71 |
 | Duplicate clusters (full DB) | 139 |
-| Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1716 authors |
+| Fuzzy clusters (snapshot cohort) | 10 |
+| IU astroturf overlap | 2 bots / 1717 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **343**
-- Net new: **859** · re-seen: **2357**
-- Duplicate rate: **73.3%**
+- Net new: **860** · re-seen: **2368**
+- Duplicate rate: **73.4%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (2171 posts · 185 authors · 112 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (2165 posts · 184 authors · 111 exact · 10 fuzzy subclusters)
 - **Shared frame** · ohio voters, epstein files (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -80,7 +80,7 @@ _None (need ≥5 authors in 90s window)._
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 Democrats laundered our tax money to George Soros so he could send it back as campaign donations - Before leaving office Democrats sent $260 MILLION DOLLARS TO GEORGE SOROS - Now George Soros has s…
 - **3 posts** · 2 authors · ~100% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - **3 posts** · 2 authors · ~86% Jaccard — 🚨 VOTER ID NOW OR NEVER Should Congress pass a national voter ID law before the 2026 midterms? A. Yes B. No W.H.G
-- _…5 more fuzzy cluster(s) in snapshot cohort._
+- _…4 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -103,7 +103,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2601 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2602 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
