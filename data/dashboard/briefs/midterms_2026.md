@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-04 15:44:00 UTC
+> Tactical snapshot · 2026-07-04 16:16:20 UTC
 
 ## Corpus
 
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **25**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **343**
-- Net new: **859** · re-seen: **2343**
-- Duplicate rate: **73.2%**
+- Net new: **859** · re-seen: **2367**
+- Duplicate rate: **73.4%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (2171 posts · 185 authors · 112 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, supreme court, proof citizenship, save america (2171 posts · 184 authors · 112 exact · 11 fuzzy subclusters)
 - **Shared frame** · ohio voters, epstein files (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -99,7 +99,7 @@ _None spanning multiple narratives._
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - collins closely, platner won, primary tuesday, stakes fall (4 posts)
 - malicious domains, phishing worse, governor race (3 posts)
-- _…15 more emerging theme(s)._
+- _…16 more emerging theme(s)._
 
 ## Scope note
 

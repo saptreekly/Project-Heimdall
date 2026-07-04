@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 762,
+      "run_counter": 763,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,11 +1940,11 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1828542359614914560": {
-          "author_id": "1828542359614914560",
-          "handle": "ShilohMarxfmnr",
-          "discovered_via": "keyword",
-          "depth": 0,
+        "2012382971160825856": {
+          "author_id": "2012382971160825856",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
