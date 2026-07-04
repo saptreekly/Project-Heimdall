@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 752,
+      "run_counter": 753,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1636,7 +1636,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-28T21:47:10.727978+00:00",
           "last_tweet_at": "2026-06-28T20:34:07+00:00",
-          "inserted_total": 56,
+          "inserted_total": 57,
           "polls": 1,
           "inserts_from_polls": 19,
           "status": "active"
@@ -1769,32 +1769,6 @@
           "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 1,
-          "status": "active"
-        },
-        "2016464341613309952": {
-          "author_id": "2016464341613309952",
-          "handle": "TheDreamyCity",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-04T05:27:59.626176+00:00",
-          "last_tweet_at": "2026-07-03T09:40:41+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1752815992302968832": {
-          "author_id": "1752815992302968832",
-          "handle": "CharlieWard709",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-04T06:28:59.213246+00:00",
-          "last_tweet_at": "2026-07-03T00:07:15+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1861460408072065024": {
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1909187297553121281": {
-          "author_id": "1909187297553121281",
+        "744115300497399808": {
+          "author_id": "744115300497399808",
+          "handle": "Shuonod",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "3830061": {
+          "author_id": "3830061",
+          "handle": "jpelzer",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "449723469": {
+          "author_id": "449723469",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

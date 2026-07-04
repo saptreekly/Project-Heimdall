@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-04 09:05:16 UTC
+> Tactical snapshot · 2026-07-04 09:36:35 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2590** |
+| Posts in database | **2593** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2256 / 895 |
-| Distinct themes | 126 |
+| Graph nodes / edges | 2259 / 896 |
+| Distinct themes | 70 |
 | Duplicate clusters (full DB) | 139 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1711 authors |
+| IU astroturf overlap | 2 bots / 1713 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **16**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **342**
-- Net new: **867** · re-seen: **2318**
+- Runs: **343**
+- Net new: **870** · re-seen: **2334**
 - Duplicate rate: **72.8%**
 
 ## Sentiment drift
@@ -36,21 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mike johnson (1466 posts · 96 authors · 45 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (16 posts · 16 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules, strike laws (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, republicans president, contributes humanity (11 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · turnout lfg, deep purple (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, proof citizenship, save america, election integrity executive (2163 posts · 183 authors · 112 exact · 11 fuzzy subclusters)
+- **Shared frame** · ohio voters, epstein files (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
 - dense_cluster_20_size_3
-- dense_cluster_501_size_3
-- dense_cluster_1371_size_3
+- dense_cluster_502_size_3
+- dense_cluster_1372_size_3
 - cross_author_fuzzy_24authors_26posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_7posts_j1.00
@@ -99,19 +92,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- red wave, dem sweep, projected likely, resigns electoral (48 posts)
-- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
-- gerrymandering map, upholds california's, scotus upheld (5 posts)
-- potus potus, liberty conspiracy, cause removal (18 posts)
-- accountability midterm, corrupt doj, happy talk (9 posts)
-- primary challenge, wow scott, presler officially, act effect, promise lead (9 posts)
-- breaking missouri, upheld state, map allowing, allowing effect, midterms seat (8 posts)
-- _…87 more emerging theme(s)._
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
+- awakening largest, actually believe (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- collins closely, platner won, primary tuesday, stakes fall (4 posts)
+- malicious domains, phishing worse, governor race (3 posts)
+- _…16 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2590 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2593 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
