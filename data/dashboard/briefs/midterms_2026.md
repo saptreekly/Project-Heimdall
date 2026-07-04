@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-04 05:28:05 UTC
+> Tactical snapshot · 2026-07-04 06:03:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2588** |
+| Posts in database | **2589** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2256 / 895 |
-| Distinct themes | 70 |
+| Distinct themes | 69 |
 | Duplicate clusters (full DB) | 139 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1711 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **13**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **339**
-- Net new: **882** · re-seen: **2264**
-- Duplicate rate: **72.0%**
+- Net new: **883** · re-seen: **2277**
+- Duplicate rate: **72.1%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, proof citizenship, save america, election integrity executive (2160 posts · 184 authors · 112 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, proof citizenship, save america, election integrity executive (2165 posts · 184 authors · 113 exact · 11 fuzzy subclusters)
 - **Shared frame** · ohio voters, epstein files (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
-- dense_cluster_19_size_3
-- dense_cluster_500_size_3
+- dense_cluster_20_size_3
+- dense_cluster_501_size_3
 - dense_cluster_1371_size_3
 - cross_author_fuzzy_24authors_26posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
@@ -95,15 +95,15 @@ _None spanning multiple narratives._
 - accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
 - democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
-- awakening largest, actually believe (5 posts)
+- awakening largest, actually believe (6 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - collins closely, platner won, primary tuesday, stakes fall (4 posts)
-- malicious domains, phishing worse, governor race (3 posts)
-- _…16 more emerging theme(s)._
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- _…15 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2588 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2589 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
