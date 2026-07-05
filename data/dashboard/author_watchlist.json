@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 782,
+      "run_counter": 783,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1836,19 +1836,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "2159758118": {
-          "author_id": "2159758118",
-          "handle": "Pardony_Conway",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "2240745937": {
           "author_id": "2240745937",
           "handle": "warDaniel47",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "3056746427": {
-          "author_id": "3056746427",
+        "1854364632351203335": {
+          "author_id": "1854364632351203335",
+          "handle": "IAintYourBlack",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1566499424192368641": {
+          "author_id": "1566499424192368641",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
