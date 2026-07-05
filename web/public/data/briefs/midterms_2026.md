@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-05 16:19:07 UTC
+> Tactical snapshot · 2026-07-05 17:32:40 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2631** |
+| Posts in database | **2632** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2280 / 903 |
-| Distinct themes | 66 |
+| Distinct themes | 103 |
 | Duplicate clusters (full DB) | 140 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1731 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **19**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **345**
-- Net new: **840** · re-seen: **2391**
-- Duplicate rate: **74.0%**
+- Net new: **841** · re-seen: **2409**
+- Duplicate rate: **74.1%**
 
 ## Sentiment drift
 
@@ -36,8 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (2169 posts · 150 authors · 108 exact · 10 fuzzy subclusters)
-- **Exact duplicate campaign** · pass nationwide, laws midterms, fraud cold, excuses games, secure vote congress (37 posts · 32 authors · 5 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · years old (44 posts · 2 authors · 12 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -92,18 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
-- awakening largest, actually believe (6 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- malicious domains, phishing worse, governor race (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…16 more emerging theme(s)._
+- primary challenge, scott presler, officially planning, act effect, promise lead (9 posts)
+- breaking missouri, missouri supreme, court upheld, upheld state, map allowing (7 posts)
+- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (28 posts)
+- held alabama, california georgia, hours minutes (14 posts)
+- position steelmanned, civil rights (9 posts)
+- broke buried, debt directionless (6 posts)
+- actually believe (5 posts)
+- check groypers (5 posts)
+- _…88 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2631 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2632 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
