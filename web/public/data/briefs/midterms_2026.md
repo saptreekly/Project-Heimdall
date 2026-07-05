@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-05 05:46:54 UTC
+> Tactical snapshot · 2026-07-05 06:28:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2614** |
+| Posts in database | **2615** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2268 / 898 |
-| Distinct themes | 73 |
+| Graph nodes / edges | 2270 / 899 |
+| Distinct themes | 68 |
 | Duplicate clusters (full DB) | 139 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1722 authors |
+| IU astroturf overlap | 2 bots / 1723 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **343**
-- Net new: **843** · re-seen: **2372**
-- Duplicate rate: **73.8%**
+- Net new: **844** · re-seen: **2386**
+- Duplicate rate: **73.9%**
 
 ## Sentiment drift
 
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (2170 posts · 182 authors · 111 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (2187 posts · 183 authors · 112 exact · 11 fuzzy subclusters)
 - **Shared frame** · ohio voters, epstein files (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -87,18 +92,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- gen millennials, register rally, vote legends, don't dream, turning midterms (19 posts)
 - democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
+- awakening largest, actually believe (6 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - collins closely, platner won, primary tuesday, stakes fall (4 posts)
 - malicious domains, phishing worse, governor race (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…15 more emerging theme(s)._
+- _…16 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2614 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2615 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
