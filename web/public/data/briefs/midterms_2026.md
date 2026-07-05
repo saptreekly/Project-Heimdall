@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-04 23:29:05 UTC
+> Tactical snapshot · 2026-07-05 00:18:26 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2610** |
+| Posts in database | **2611** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2267 / 898 |
-| Distinct themes | 124 |
+| Graph nodes / edges | 2268 / 898 |
+| Distinct themes | 101 |
 | Duplicate clusters (full DB) | 139 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1721 authors |
+| IU astroturf overlap | 2 bots / 1722 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **343**
-- Net new: **854** · re-seen: **2346**
-- Duplicate rate: **73.3%**
+- Net new: **855** · re-seen: **2361**
+- Duplicate rate: **73.4%**
 
 ## Sentiment drift
 
@@ -36,12 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mike johnson (1321 posts · 96 authors · 43 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (20 posts · 20 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · years old (47 posts · 2 authors · 13 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (20 posts · 20 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -98,19 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- sweeping constitutional, petition nilepostnews, ready department (10 posts)
-- red wave, dem sweep, projected likely, resigns electoral (32 posts)
-- verified lists (11 posts)
-- initial success, facing roadblocks (3 posts)
-- potus potus, anchor babies (18 posts)
-- beautiful delay, planned project (5 posts)
-- campaign weapon (5 posts)
-- shut government, marxist wing, party demands, republicans reveal (12 posts)
-- _…85 more emerging theme(s)._
+- primary challenge, scott presler, officially planning, act effect, promise lead (9 posts)
+- breaking missouri, missouri supreme, court upheld, upheld state, map allowing (7 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- held alabama, california georgia, hours minutes (15 posts)
+- position steelmanned, civil rights (9 posts)
+- broke buried, debt directionless (6 posts)
+- check groypers, sec markwayne, sending ice (6 posts)
+- actually believe (5 posts)
+- _…86 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2610 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2611 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

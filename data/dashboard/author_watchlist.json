@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 772,
+      "run_counter": 773,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1810,19 +1810,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1594164637829926915": {
-          "author_id": "1594164637829926915",
-          "handle": "Becky__BT",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-04T21:42:37.848770+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "2053780202686230528": {
           "author_id": "2053780202686230528",
           "handle": "TheNews47",
@@ -1940,11 +1927,24 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "44196397": {
-          "author_id": "44196397",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "44111669": {
+          "author_id": "44111669",
+          "handle": "andweknow",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2053453749889220609": {
+          "author_id": "2053453749889220609",
+          "handle": "Abigail_M2050",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
