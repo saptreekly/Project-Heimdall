@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-05 06:50:41 UTC
+> Tactical snapshot · 2026-07-05 07:56:10 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2615** |
+| Posts in database | **2620** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2270 / 899 |
-| Distinct themes | 68 |
-| Duplicate clusters (full DB) | 139 |
-| Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1723 authors |
+| Graph nodes / edges | 2272 / 899 |
+| Distinct themes | 106 |
+| Duplicate clusters (full DB) | 140 |
+| Fuzzy clusters (snapshot cohort) | 12 |
+| IU astroturf overlap | 2 bots / 1725 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **344**
-- Net new: **844** · re-seen: **2386**
-- Duplicate rate: **73.9%**
+- Net new: **849** · re-seen: **2376**
+- Duplicate rate: **73.7%**
 
 ## Sentiment drift
 
@@ -31,8 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (2187 posts · 183 authors · 112 exact · 11 fuzzy subclusters)
-- **Shared frame** · ohio voters, epstein files (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · radical left, years old (44 posts · 2 authors · 12 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (20 posts · 20 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -61,7 +73,7 @@
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **28 posts** · 1 author(s) — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
-- _…129 more exact-duplicate cluster(s) in database._
+- _…130 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -72,10 +84,10 @@ _None (need ≥5 authors in 90s window)._
 - **30 posts** · 28 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
 - **5 posts** · 4 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 WOW! Scott Presler is officially planning to PRIMARY CHALLENGE Senate Leader John Thune if the SAVE America Act does not take effect for the 2026 midterms “I promise to lead the charge to primary &…
+- **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SENATE GOP: "Senate Democrats are preparing to shut down the gov…
+- **3 posts** · 3 authors · ~100% Jaccard — 🚨 Democrats laundered our tax money to George Soros so he could send it back as campaign donations - Before leaving office Democrats sent $260 MILLION DOLLARS TO GEORGE SOROS - Now George Soros has s…
 - **3 posts** · 2 authors · ~100% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
-- **3 posts** · 2 authors · ~86% Jaccard — 🚨 VOTER ID NOW OR NEVER Should Congress pass a national voter ID law before the 2026 midterms? A. Yes B. No W.H.G
-- **2 posts** · 2 authors · ~100% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SENATE GOP: "Senate Democrats are preparing to shut down the gov…
-- _…5 more fuzzy cluster(s) in snapshot cohort._
+- _…6 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -87,18 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
-- awakening largest, actually believe (6 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- collins closely, platner won, primary tuesday, stakes fall (4 posts)
-- malicious domains, phishing worse, governor race (3 posts)
-- _…16 more emerging theme(s)._
+- primary challenge, scott presler, officially planning, act effect, promise lead (9 posts)
+- breaking missouri, missouri supreme, court upheld, upheld state, map allowing (7 posts)
+- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- days presidential (13 posts)
+- position steelmanned, civil rights (9 posts)
+- broke buried, debt directionless (6 posts)
+- check groypers, sec markwayne, sending ice (6 posts)
+- actually believe (5 posts)
+- _…91 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2615 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2620 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
