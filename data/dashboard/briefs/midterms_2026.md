@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-05 09:47:37 UTC
+> Tactical snapshot · 2026-07-05 10:30:51 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2620** |
+| Posts in database | **2621** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2272 / 899 |
-| Distinct themes | 71 |
+| Graph nodes / edges | 2272 / 900 |
+| Distinct themes | 70 |
 | Duplicate clusters (full DB) | 140 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1725 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **23**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **345**
-- Net new: **849** · re-seen: **2400**
+- Runs: **346**
+- Net new: **850** · re-seen: **2401**
 - Duplicate rate: **73.9%**
 
 ## Sentiment drift
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (2186 posts · 183 authors · 113 exact · 12 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, supreme court, proof citizenship (2192 posts · 182 authors · 114 exact · 12 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -91,18 +91,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
 - democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
 - awakening largest, actually believe (6 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - collins closely, platner won, primary tuesday, stakes fall (4 posts)
-- malicious domains, phishing worse, governor race (3 posts)
-- _…17 more emerging theme(s)._
+- targeting midterm elections, malicious domains, phishing worse, governor race (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- _…16 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2620 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2621 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
