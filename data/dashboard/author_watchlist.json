@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 784,
+      "run_counter": 785,
       "authors": {
         "111": {
           "author_id": "111",
@@ -531,7 +531,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-08T07:12:38.661586+00:00",
           "last_tweet_at": "2026-06-07T20:46:52+00:00",
-          "inserted_total": 15,
+          "inserted_total": 16,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1836,19 +1836,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "2240745937": {
-          "author_id": "2240745937",
-          "handle": "warDaniel47",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-05T11:19:49.699509+00:00",
-          "last_tweet_at": "2026-06-30T16:22:15+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "44111669": {
           "author_id": "44111669",
           "handle": "andweknow",
@@ -1859,58 +1846,6 @@
           "last_tweet_at": "2026-07-03T16:50:02+00:00",
           "inserted_total": 2,
           "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1868749597792768001": {
-          "author_id": "1868749597792768001",
-          "handle": "AZDevils95",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1573284594115223558": {
-          "author_id": "1573284594115223558",
-          "handle": "vanhoa2272",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2052842463316922368": {
-          "author_id": "2052842463316922368",
-          "handle": "RCJdpoctner",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1409332387": {
-          "author_id": "1409332387",
-          "handle": "ultrapepemqtter",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
@@ -1940,11 +1875,76 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1566499424192368641": {
-          "author_id": "1566499424192368641",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "935942321756966912": {
+          "author_id": "935942321756966912",
+          "handle": "RealAmVoice",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1690397268589817856": {
+          "author_id": "1690397268589817856",
+          "handle": "MaziEzike_Nedu",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2021356133815025671": {
+          "author_id": "2021356133815025671",
+          "handle": "Sophiasolution",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2053044875063328773": {
+          "author_id": "2053044875063328773",
+          "handle": "Ryan_Parkerrr",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "3260179734": {
+          "author_id": "3260179734",
+          "handle": "SHORTLY__NEWS",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "26775504": {
+          "author_id": "26775504",
+          "handle": "DemsAbroad",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
