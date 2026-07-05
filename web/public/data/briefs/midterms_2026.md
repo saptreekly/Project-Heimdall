@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-05 00:18:26 UTC
+> Tactical snapshot · 2026-07-05 04:18:39 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2611** |
+| Posts in database | **2614** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2268 / 898 |
-| Distinct themes | 101 |
+| Distinct themes | 73 |
 | Duplicate clusters (full DB) | 139 |
-| Fuzzy clusters (snapshot cohort) | 12 |
+| Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1722 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **15**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **343**
-- Net new: **855** · re-seen: **2361**
-- Duplicate rate: **73.4%**
+- Net new: **843** · re-seen: **2358**
+- Duplicate rate: **73.7%**
 
 ## Sentiment drift
 
@@ -36,15 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · years old (47 posts · 2 authors · 13 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (20 posts · 20 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, supreme court, save america, proof citizenship (2170 posts · 182 authors · 111 exact · 11 fuzzy subclusters)
+- **Shared frame** · ohio voters, epstein files (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -87,7 +80,7 @@ _None (need ≥5 authors in 90s window)._
 - **3 posts** · 2 authors · ~100% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - **3 posts** · 2 authors · ~86% Jaccard — 🚨 VOTER ID NOW OR NEVER Should Congress pass a national voter ID law before the 2026 midterms? A. Yes B. No W.H.G
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SENATE GOP: "Senate Democrats are preparing to shut down the gov…
-- _…6 more fuzzy cluster(s) in snapshot cohort._
+- _…5 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -99,19 +92,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- primary challenge, scott presler, officially planning, act effect, promise lead (9 posts)
-- breaking missouri, missouri supreme, court upheld, upheld state, map allowing (7 posts)
-- coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- held alabama, california georgia, hours minutes (15 posts)
-- position steelmanned, civil rights (9 posts)
-- broke buried, debt directionless (6 posts)
-- check groypers, sec markwayne, sending ice (6 posts)
-- actually believe (5 posts)
-- _…86 more emerging theme(s)._
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
+- gen millennials, register rally, vote legends, don't dream, turning midterms (19 posts)
+- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
+- collins closely, platner won, primary tuesday, stakes fall (4 posts)
+- malicious domains, phishing worse, governor race (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- _…15 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2611 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2614 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
