@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-05 22:34:47 UTC
+> Tactical snapshot · 2026-07-05 23:34:46 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2283 / 904 |
-| Distinct themes | 63 |
+| Distinct themes | 129 |
 | Duplicate clusters (full DB) | 140 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1735 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **26**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **345**
-- Net new: **827** · re-seen: **2404**
-- Duplicate rate: **74.4%**
+- Net new: **827** · re-seen: **2428**
+- Duplicate rate: **74.6%**
 
 ## Sentiment drift
 
@@ -36,8 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, proof citizenship, election integrity executive (2181 posts · 147 authors · 108 exact · 10 fuzzy subclusters)
-- **Exact duplicate campaign** · pass nationwide, laws midterms, fraud cold, excuses games, secure vote congress (37 posts · 32 authors · 5 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, mike johnson (1488 posts · 100 authors · 46 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · turnout lfg, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -92,14 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (28 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
-- awakening largest, actually believe (6 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- malicious domains, phishing worse, governor race (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…15 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
+- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
+- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
+- potus potus, cause removal (20 posts)
+- gerrymandering map, upholds california's, scotus upheld (5 posts)
+- accountability midterm, corrupt doj, happy talk (9 posts)
+- wow scott, presler officially, planning primary, act effect, promise lead (9 posts)
+- _…92 more emerging theme(s)._
 
 ## Scope note
 
