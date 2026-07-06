@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 818,
+      "run_counter": 819,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1862,19 +1862,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1157928938955579393": {
-          "author_id": "1157928938955579393",
-          "handle": "CivicConscious_",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-06T21:00:56.235320+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1586787421894709249": {
           "author_id": "1586787421894709249",
           "handle": "techingote",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1904184016946831360": {
-          "author_id": "1904184016946831360",
+        "19113094": {
+          "author_id": "19113094",
+          "handle": "SVVSD",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "131546062": {
+          "author_id": "131546062",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
