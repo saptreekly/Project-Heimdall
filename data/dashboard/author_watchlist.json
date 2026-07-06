@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 814,
+      "run_counter": 815,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1862,71 +1862,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "124439683": {
-          "author_id": "124439683",
-          "handle": "ThinkingAtheist",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-06T17:20:06.241401+00:00",
-          "last_tweet_at": "2026-07-04T17:13:00+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "19211550": {
-          "author_id": "19211550",
-          "handle": "gatewaypundit",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-06T19:20:45.127460+00:00",
-          "last_tweet_at": "2026-07-06T13:18:31+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "260036406": {
-          "author_id": "260036406",
-          "handle": "Politics1com",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "602615359": {
-          "author_id": "602615359",
-          "handle": "micyoung75",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "2309371201": {
-          "author_id": "2309371201",
-          "handle": "lelenoble12_lea",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1157928938955579393": {
           "author_id": "1157928938955579393",
           "handle": "CivicConscious_",
@@ -1949,6 +1884,71 @@
           "last_polled_at": null,
           "last_tweet_at": null,
           "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1945947587837870080": {
+          "author_id": "1945947587837870080",
+          "handle": "drhilllaw42",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2038978712943636481": {
+          "author_id": "2038978712943636481",
+          "handle": "Shapiromentum2",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1644734071": {
+          "author_id": "1644734071",
+          "handle": "MatthewFoldi",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1491105211544440838": {
+          "author_id": "1491105211544440838",
+          "handle": "FpotusTruth",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1355721251180961792": {
+          "author_id": "1355721251180961792",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
