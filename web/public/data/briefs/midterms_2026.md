@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-06 21:00:58 UTC
+> Tactical snapshot · 2026-07-06 21:44:25 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2295 / 908 |
-| Distinct themes | 133 |
+| Distinct themes | 129 |
 | Duplicate clusters (full DB) | 142 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1745 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **25**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **348**
-- Net new: **811** · re-seen: **2458**
-- Duplicate rate: **75.2%**
+- Runs: **347**
+- Net new: **806** · re-seen: **2475**
+- Duplicate rate: **75.4%**
 
 ## Sentiment drift
 
@@ -31,9 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mike johnson, reuters reported (1493 posts · 106 authors · 46 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, mike johnson (1504 posts · 103 authors · 47 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -95,13 +100,13 @@ _None spanning multiple narratives._
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - potus potus, women advocates (28 posts)
-- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
-- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
+- red wave, dem sweep, projected likely, resigns electoral (48 posts)
+- verified lists, federal judge (11 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
 - beautiful delay, planned project (5 posts)
-- accountability midterm, corrupt doj, happy talk (9 posts)
-- _…90 more emerging theme(s)._
+- corrupt doj, happy talk (9 posts)
+- _…88 more emerging theme(s)._
 
 ## Scope note
 
