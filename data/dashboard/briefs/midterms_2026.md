@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-06 13:10:32 UTC
+> Tactical snapshot · 2026-07-06 14:05:24 UTC
 
 ## Corpus
 
@@ -14,15 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2288 / 906 |
-| Distinct themes | 69 |
+| Distinct themes | 67 |
 | Duplicate clusters (full DB) | 141 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1739 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **10**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, proof citizenship, election integrity executive (2176 posts · 144 authors · 110 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, proof citizenship, election integrity executive (2179 posts · 143 authors · 110 exact · 10 fuzzy subclusters)
 - **Exact duplicate campaign** · pass nationwide, laws midterms, fraud cold, excuses games, secure vote congress (37 posts · 32 authors · 5 exact · 2 fuzzy subclusters)
 
 ## CIB warning signals
@@ -99,7 +99,7 @@ _None spanning multiple narratives._
 - collins closely, platner won, primary tuesday, stakes fall (4 posts)
 - targeting midterm elections, malicious domains, phishing worse, governor race (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…16 more emerging theme(s)._
+- _…17 more emerging theme(s)._
 
 ## Scope note
 
