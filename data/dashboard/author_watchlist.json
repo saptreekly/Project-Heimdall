@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 838,
+      "run_counter": 839,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1888,32 +1888,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "54248457": {
-          "author_id": "54248457",
-          "handle": "SassySouthBlond",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "375756580": {
-          "author_id": "375756580",
-          "handle": "BrianAcity",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1586741164086009860": {
           "author_id": "1586741164086009860",
           "handle": "NRNexxus",
@@ -1927,9 +1901,9 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "3121969575": {
-          "author_id": "3121969575",
-          "handle": "1AntDavis",
+        "1408202350037114880": {
+          "author_id": "1408202350037114880",
+          "handle": "AmericasWomenhq",
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.5700000000000001,
@@ -1940,15 +1914,41 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "2067918826000539648": {
-          "author_id": "2067918826000539648",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
+        "2714847813": {
+          "author_id": "2714847813",
+          "handle": "JoshHall2024",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 0,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2038391248239665153": {
+          "author_id": "2038391248239665153",
+          "handle": "AmericaPulseNew",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1772604626615070720": {
+          "author_id": "1772604626615070720",
+          "handle": "YCCMacro",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
