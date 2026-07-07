@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 832,
+      "run_counter": 833,
       "authors": {
         "111": {
           "author_id": "111",
@@ -206,7 +206,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-04T12:32:24.112236+00:00",
           "last_tweet_at": "2026-06-04T11:51:47+00:00",
-          "inserted_total": 24,
+          "inserted_total": 25,
           "polls": 1,
           "inserts_from_polls": 3,
           "status": "active"
@@ -1875,35 +1875,9 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "2047665175696691200": {
-          "author_id": "2047665175696691200",
-          "handle": "Ed_Bradley",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-07T13:27:51.301035+00:00",
-          "last_tweet_at": "2026-07-07T03:41:32+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1787160912077451264": {
-          "author_id": "1787160912077451264",
-          "handle": "SaveAmericaNew",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-07T15:36:28.086591+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "18956073": {
-          "author_id": "18956073",
-          "handle": "dcexaminer",
+        "1436547362873249795": {
+          "author_id": "1436547362873249795",
+          "handle": "t95764151",
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.5700000000000001,
@@ -1914,9 +1888,22 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1923272799721869312": {
-          "author_id": "1923272799721869312",
-          "handle": "Pastor_Bob_",
+        "1355721251180961792": {
+          "author_id": "1355721251180961792",
+          "handle": "GuntherEagleman",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1727006565587148805": {
+          "author_id": "1727006565587148805",
+          "handle": "TPPFelections",
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.5700000000000001,
@@ -1927,9 +1914,9 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1720040520": {
-          "author_id": "1720040520",
-          "handle": "infovikaspandey",
+        "191438732": {
+          "author_id": "191438732",
+          "handle": "geomc63",
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.5700000000000001,
@@ -1940,11 +1927,24 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1666566452881629184": {
-          "author_id": "1666566452881629184",
-          "handle": "TaylorChar83070",
+        "225468091": {
+          "author_id": "225468091",
+          "handle": "_Schwenzfeier",
           "discovered_via": "keyword",
           "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "18986695": {
+          "author_id": "18986695",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,

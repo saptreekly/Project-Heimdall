@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-07 15:36:29 UTC
+> Tactical snapshot · 2026-07-07 16:17:14 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2668** |
+| Posts in database | **2676** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2300 / 908 |
-| Distinct themes | 130 |
-| Duplicate clusters (full DB) | 143 |
+| Graph nodes / edges | 2305 / 910 |
+| Distinct themes | 100 |
+| Duplicate clusters (full DB) | 146 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1750 authors |
+| IU astroturf overlap | 2 bots / 1754 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **8**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **343**
-- Net new: **749** · re-seen: **2454**
-- Duplicate rate: **76.6%**
+- Net new: **757** · re-seen: **2460**
+- Duplicate rate: **76.5%**
 
 ## Sentiment drift
 
@@ -31,13 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, mike johnson (1502 posts · 104 authors · 48 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · turnout lfg, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · years old (51 posts · 4 authors · 17 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, attention washington (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · vote congress, stop fraud, cold excuses, games yes, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -48,7 +54,7 @@
 - cross_author_fuzzy_29authors_31posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
-- cross_author_fuzzy_3authors_3posts_j0.90
+- cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_2authors_3posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
 - cross_author_fuzzy_2authors_2posts_j1.00
@@ -67,7 +73,7 @@
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
 - **28 posts** · 1 author(s) — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
-- _…133 more exact-duplicate cluster(s) in database._
+- _…136 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -93,19 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, women advocates (33 posts)
-- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
-- verified lists, federal judge (11 posts)
-- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- gerrymandering map, upholds california's, scotus upheld (5 posts)
-- corrupt doj, happy talk (9 posts)
-- wow scott, presler officially, planning primary, act effect, promise lead (9 posts)
-- _…88 more emerging theme(s)._
+- primary challenge, scott presler, officially planning, act effect (9 posts)
+- breaking missouri, missouri supreme, court upheld, upheld state, map allowing (7 posts)
+- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (28 posts)
+- held alabama, california georgia, hours minutes (14 posts)
+- position steelmanned, civil rights (9 posts)
+- broke buried, debt directionless (6 posts)
+- check groypers, sec markwayne, sending ice (6 posts)
+- actually believe (5 posts)
+- _…85 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2668 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2676 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
