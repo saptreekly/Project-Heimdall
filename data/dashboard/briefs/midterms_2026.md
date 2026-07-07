@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-07 22:47:04 UTC
+> Tactical snapshot · 2026-07-07 23:28:07 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2314 / 915 |
-| Distinct themes | 134 |
+| Distinct themes | 130 |
 | Duplicate clusters (full DB) | 146 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1760 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **11**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **341**
-- Net new: **748** · re-seen: **2450**
+- Net new: **748** · re-seen: **2451**
 - Duplicate rate: **76.6%**
 
 ## Sentiment drift
@@ -36,10 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (1508 posts · 101 authors · 46 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, task force (1516 posts · 101 authors · 48 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · turnout lfg, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -104,9 +104,9 @@ _None spanning multiple narratives._
 - executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
+- beautiful delay, planned project (5 posts)
 - corrupt doj, happy talk (9 posts)
-- wow scott, presler officially, planning primary, act effect, promise lead (9 posts)
-- _…92 more emerging theme(s)._
+- _…90 more emerging theme(s)._
 
 ## Scope note
 
