@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-07 12:18:18 UTC
+> Tactical snapshot · 2026-07-07 13:27:56 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2299 / 908 |
-| Distinct themes | 133 |
+| Distinct themes | 131 |
 | Duplicate clusters (full DB) | 143 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1749 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **26**
+- Re-sightings (duplicate encounters): **1**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, mike johnson (1502 posts · 104 authors · 48 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, mike johnson (1503 posts · 103 authors · 47 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · conservative nature (11 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · turnout lfg, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,14 +99,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, women advocates (32 posts)
+- potus potus, women advocates (31 posts)
 - red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
 - executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
-- beautiful delay, planned project (5 posts)
 - accountability midterm, corrupt doj, happy talk (9 posts)
-- _…89 more emerging theme(s)._
+- wow scott, presler officially, planning primary, act effect, promise lead (9 posts)
+- _…90 more emerging theme(s)._
 
 ## Scope note
 
