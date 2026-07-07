@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-07 21:37:40 UTC
+> Tactical snapshot · 2026-07-07 22:47:04 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2686** |
+| Posts in database | **2687** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2313 / 914 |
-| Distinct themes | 130 |
+| Graph nodes / edges | 2314 / 915 |
+| Distinct themes | 134 |
 | Duplicate clusters (full DB) | 146 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1760 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **11**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **343**
-- Net new: **747** · re-seen: **2440**
+- Runs: **341**
+- Net new: **748** · re-seen: **2450**
 - Duplicate rate: **76.6%**
 
 ## Sentiment drift
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1520 posts · 101 authors · 47 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (1508 posts · 101 authors · 46 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
@@ -99,9 +99,9 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, women advocates, board trustees (30 posts)
+- potus potus, women advocates, board trustees (33 posts)
 - red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
-- executive order, executive order election, order election integrity, election integrity targeting, sign executive order (9 posts)
+- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
 - corrupt doj, happy talk (9 posts)
@@ -110,7 +110,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2686 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2687 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
