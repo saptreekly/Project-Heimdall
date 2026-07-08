@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-08 20:48:28 UTC
+> Tactical snapshot · 2026-07-08 21:18:52 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2338 / 919 |
-| Distinct themes | 134 |
+| Distinct themes | 116 |
 | Duplicate clusters (full DB) | 149 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1783 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **8**
-- Net-new posts logged: **6**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **338**
-- Net new: **694** · re-seen: **2427**
+- Runs: **339**
+- Net new: **694** · re-seen: **2428**
 - Duplicate rate: **77.8%**
 
 ## Sentiment drift
@@ -36,13 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · strait hormuz, reuters reported (1514 posts · 104 authors · 48 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · potus potus, doe completely, stripped away, protections haitians (45 posts · 20 authors · 1 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · birthright citizenship, potus potus, ruling mullin, doe completely, stripped away (61 posts · 23 authors · 1 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · rick scott, floor vote, election security, role midterm elections, midterm elections arguing (51 posts · 7 authors · 15 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, radical left, sidney powell (20 posts · 0 authors · 7 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · national committee (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stop fraud, cold excuses, games yes, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -98,15 +99,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, doe completely, stripped away, protections haitians (45 posts)
-- breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
-- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
-- verified lists (11 posts)
-- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- gerrymandering map, upholds california's, scotus upheld (5 posts)
-- beautiful delay, planned project (5 posts)
-- _…96 more emerging theme(s)._
+- sweeping constitutional, petition nilepostnews, congressman hamadeh (13 posts)
+- birthright citizenship, potus potus, ruling mullin, doe completely, stripped away (61 posts)
+- union historically (5 posts)
+- paxton he's, plans census (7 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (44 posts)
+- verified lists (7 posts)
+- boom latino, james talarico, initial success (5 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- _…101 more emerging theme(s)._
 
 ## Scope note
 
