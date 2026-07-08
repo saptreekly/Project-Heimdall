@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-08 12:01:05 UTC
+> Tactical snapshot · 2026-07-08 13:02:03 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2705** |
+| Posts in database | **2710** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2327 / 918 |
+| Graph nodes / edges | 2329 / 918 |
 | Distinct themes | 132 |
-| Duplicate clusters (full DB) | 147 |
-| Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1771 authors |
+| Duplicate clusters (full DB) | 148 |
+| Fuzzy clusters (snapshot cohort) | 13 |
+| IU astroturf overlap | 2 bots / 1774 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **11**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **343**
-- Net new: **745** · re-seen: **2449**
-- Duplicate rate: **76.7%**
+- Net new: **750** · re-seen: **2459**
+- Duplicate rate: **76.6%**
 
 ## Sentiment drift
 
@@ -31,10 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1511 posts · 105 authors · 46 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (1490 posts · 99 authors · 46 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · turnout lfg, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -67,7 +72,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…137 more exact-duplicate cluster(s) in database._
+- _…138 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -77,11 +82,11 @@ _None (need ≥5 authors in 90s window)._
 
 - **31 posts** · 29 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
-- **5 posts** · 4 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
+- **4 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SENATE GOP: "Senate Democrats are preparing to shut down the gov…
 - **3 posts** · 3 authors · ~85% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SO NUKE THE FILIBUSTER THEN! SENATE GOP: "Senate Democrats are p…
 - **3 posts** · 2 authors · ~86% Jaccard — 🚨 VOTER ID NOW OR NEVER Should Congress pass a national voter ID law before the 2026 midterms? A. Yes B. No W.H.G
-- _…6 more fuzzy cluster(s) in snapshot cohort._
+- _…7 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -94,18 +99,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, women advocates, board trustees (33 posts)
+- potus potus, doe completely, stripped away, protections haitians (68 posts)
 - red wave, dem sweep, projected likely, resigns electoral (47 posts)
 - verified lists (11 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
 - beautiful delay, planned project (5 posts)
 - corrupt doj, happy talk (9 posts)
-- _…95 more emerging theme(s)._
+- _…92 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2705 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2710 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
