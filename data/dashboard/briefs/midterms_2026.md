@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-08 16:04:00 UTC
+> Tactical snapshot · 2026-07-08 17:48:30 UTC
 
 ## Corpus
 
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2332 / 919 |
-| Distinct themes | 107 |
+| Distinct themes | 133 |
 | Duplicate clusters (full DB) | 149 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1777 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **11**
-- Net-new posts logged: **4**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **341**
-- Net new: **737** · re-seen: **2459**
-- Duplicate rate: **76.9%**
+- Runs: **340**
+- Net new: **737** · re-seen: **2442**
+- Duplicate rate: **76.8%**
 
 ## Sentiment drift
 
@@ -36,14 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · lose control, years old (35 posts · 3 authors · 11 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · vote congress, fraud cold, excuses games, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, super pacs (1501 posts · 107 authors · 45 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · turnout lfg, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- union historically (5 posts)
-- stephen miller, removing illegals (6 posts)
-- primary challenge, wow scott, presler officially, act effect (9 posts)
-- breaking missouri, missouri supreme, court upheld, upheld state, map allowing (7 posts)
-- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (28 posts)
-- held alabama, california georgia, hours minutes (15 posts)
-- position steelmanned, civil rights (9 posts)
-- check groypers (7 posts)
-- _…91 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- potus potus, women advocates, board trustees (41 posts)
+- breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
+- red wave, dem sweep, projected likely, resigns electoral (47 posts)
+- verified lists (9 posts)
+- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
+- gerrymandering map, upholds california's, scotus upheld (5 posts)
+- beautiful delay, planned project (5 posts)
+- _…94 more emerging theme(s)._
 
 ## Scope note
 
