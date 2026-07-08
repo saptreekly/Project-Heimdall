@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-07 23:28:07 UTC
+> Tactical snapshot · 2026-07-08 00:21:42 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2687** |
+| Posts in database | **2688** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2314 / 915 |
-| Distinct themes | 130 |
+| Graph nodes / edges | 2315 / 915 |
+| Distinct themes | 131 |
 | Duplicate clusters (full DB) | 146 |
-| Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1760 authors |
+| Fuzzy clusters (snapshot cohort) | 11 |
+| IU astroturf overlap | 2 bots / 1761 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **9**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **341**
-- Net new: **748** · re-seen: **2451**
-- Duplicate rate: **76.6%**
+- Net new: **749** · re-seen: **2459**
+- Duplicate rate: **76.7%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, task force (1516 posts · 101 authors · 48 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · strait hormuz, task force, reuters reported (1511 posts · 103 authors · 47 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
@@ -86,7 +86,7 @@ _None (need ≥5 authors in 90s window)._
 - **3 posts** · 3 authors · ~85% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SO NUKE THE FILIBUSTER THEN! SENATE GOP: "Senate Democrats are p…
 - **3 posts** · 2 authors · ~100% Jaccard — 🚨 HUGE NEWS: The US Postmaster General has just told Congress that the Post Office WILL NOT deliver mail-in ballots in the 2026 midterms to states who refuse to comply with President Trump's election…
 - **3 posts** · 2 authors · ~86% Jaccard — 🚨 VOTER ID NOW OR NEVER Should Congress pass a national voter ID law before the 2026 midterms? A. Yes B. No W.H.G
-- _…6 more fuzzy cluster(s) in snapshot cohort._
+- _…5 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -99,18 +99,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, women advocates, board trustees (33 posts)
+- potus potus, women advocates, board trustees (30 posts)
 - red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
-- executive order election, order election integrity, election integrity targeting, sign executive order, targeting mail ballots (7 posts)
+- executive order, executive order election, order election integrity, election integrity targeting, sign executive order (9 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
 - beautiful delay, planned project (5 posts)
 - corrupt doj, happy talk (9 posts)
-- _…90 more emerging theme(s)._
+- _…93 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2687 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2688 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
