@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-08 20:01:33 UTC
+> Tactical snapshot · 2026-07-08 20:48:28 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2714** |
+| Posts in database | **2720** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2332 / 919 |
-| Distinct themes | 133 |
+| Graph nodes / edges | 2338 / 919 |
+| Distinct themes | 134 |
 | Duplicate clusters (full DB) | 149 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1777 authors |
+| IU astroturf overlap | 2 bots / 1783 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **6**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **339**
-- Net new: **688** · re-seen: **2441**
-- Duplicate rate: **78.0%**
+- Runs: **338**
+- Net new: **694** · re-seen: **2427**
+- Duplicate rate: **77.8%**
 
 ## Sentiment drift
 
@@ -36,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, super pacs (1501 posts · 107 authors · 45 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · strait hormuz, reuters reported (1514 posts · 104 authors · 48 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · potus potus, doe completely, stripped away, protections haitians (45 posts · 20 authors · 1 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · turnout lfg, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -82,10 +82,10 @@ _None (need ≥5 authors in 90s window)._
 
 - **31 posts** · 29 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
+- **5 posts** · 5 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SENATE GOP: "Senate Democrats are preparing to shut down the gov…
 - **3 posts** · 3 authors · ~85% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SO NUKE THE FILIBUSTER THEN! SENATE GOP: "Senate Democrats are p…
 - **3 posts** · 2 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
-- **3 posts** · 2 authors · ~86% Jaccard — 🚨 VOTER ID NOW OR NEVER Should Congress pass a national voter ID law before the 2026 midterms? A. Yes B. No W.H.G
 - _…6 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -99,18 +99,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, women advocates, board trustees (41 posts)
+- potus potus, doe completely, stripped away, protections haitians (45 posts)
 - breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
-- red wave, dem sweep, projected likely, resigns electoral (47 posts)
-- verified lists (9 posts)
+- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
+- verified lists (11 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
 - beautiful delay, planned project (5 posts)
-- _…94 more emerging theme(s)._
+- _…96 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2714 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2720 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
