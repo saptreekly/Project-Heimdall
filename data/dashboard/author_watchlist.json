@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 852,
+      "run_counter": 853,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1914,19 +1914,6 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "558176786": {
-          "author_id": "558176786",
-          "handle": "LarsHano",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-08T10:28:56.418783+00:00",
-          "last_tweet_at": "2026-07-03T00:57:10+00:00",
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1486069441259397125": {
           "author_id": "1486069441259397125",
           "handle": "DemocraticWins",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "818893114979061761": {
-          "author_id": "818893114979061761",
+        "2903321922": {
+          "author_id": "2903321922",
+          "handle": "alexandrade368",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "18578484": {
+          "author_id": "18578484",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
