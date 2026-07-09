@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-09 21:47:13 UTC
+> Tactical snapshot · 2026-07-09 22:55:18 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2747** |
+| Posts in database | **2750** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2353 / 921 |
-| Distinct themes | 133 |
+| Graph nodes / edges | 2356 / 921 |
+| Distinct themes | 115 |
 | Duplicate clusters (full DB) | 151 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1799 authors |
+| IU astroturf overlap | 2 bots / 1802 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **11**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **334**
-- Net new: **620** · re-seen: **2421**
-- Duplicate rate: **79.6%**
+- Net new: **623** · re-seen: **2410**
+- Duplicate rate: **79.5%**
 
 ## Sentiment drift
 
@@ -36,13 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, super pacs (1502 posts · 109 authors · 46 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · alabama congressional, potus potus (79 posts · 27 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · birthright citizenship, civil discourse, potus potus (68 posts · 27 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · mike adams (21 posts · 2 authors · 4 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · deep state, task force, radical left, sidney powell (20 posts · 0 authors · 7 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · national committee (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stop fraud, cold excuses, games yes, pass nationwide (10 posts · 7 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -80,9 +81,9 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **29 posts** · 28 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
+- **28 posts** · 27 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
-- **7 posts** · 7 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
+- **8 posts** · 8 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
 - **3 posts** · 3 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SENATE GOP: "Senate Democrats are preparing to shut down the gov…
 - **3 posts** · 3 authors · ~85% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SO NUKE THE FILIBUSTER THEN! SENATE GOP: "Senate Democrats are p…
@@ -98,19 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- alabama congressional, potus potus (79 posts)
-- breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
-- red wave, dem sweep, projected likely, resigns electoral (48 posts)
-- verified lists, federal judge (11 posts)
-- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- gerrymandering map, upholds california's, scotus upheld (5 posts)
-- beautiful delay, planned project (5 posts)
-- _…95 more emerging theme(s)._
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, voter trust (13 posts)
+- birthright citizenship, civil discourse, potus potus (68 posts)
+- union historically (5 posts)
+- plans census (12 posts)
+- red wave, dem sweep, projected likely, outcome midterms, midwest democrat (48 posts)
+- verified lists (9 posts)
+- boom latino, james talarico, ken paxton, initial success (5 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- _…99 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2747 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2750 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
