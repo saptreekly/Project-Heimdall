@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 876,
+      "run_counter": 877,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1927,19 +1927,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "2065618413092016128": {
-          "author_id": "2065618413092016128",
-          "handle": "abbydphillik2o6",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-09T15:29:59.933986+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1864273746464292864": {
           "author_id": "1864273746464292864",
           "handle": "TheDeepsouthDem",
@@ -1949,6 +1936,19 @@
           "last_polled_at": null,
           "last_tweet_at": null,
           "inserted_total": 1,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1563782868": {
+          "author_id": "1563782868",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"

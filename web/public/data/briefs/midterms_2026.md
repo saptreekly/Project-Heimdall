@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-09 15:30:01 UTC
+> Tactical snapshot · 2026-07-09 15:49:01 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2348 / 920 |
-| Distinct themes | 137 |
+| Distinct themes | 116 |
 | Duplicate clusters (full DB) | 150 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1793 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **16**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **654** · re-seen: **2418**
-- Duplicate rate: **78.7%**
+- Net new: **653** · re-seen: **2425**
+- Duplicate rate: **78.8%**
 
 ## Sentiment drift
 
@@ -31,13 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1493 posts · 108 authors · 47 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · potus potus, despite looming (78 posts · 26 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · civil discourse, birthright citizenship (78 posts · 26 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · mike adams (21 posts · 2 authors · 4 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, radical left, sidney powell (20 posts · 0 authors · 7 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, attention washington (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · national committee (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stop fraud, cold excuses, games yes, pass nationwide (10 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -93,15 +99,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, despite looming (78 posts)
-- breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
-- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
-- verified lists, federal judge (11 posts)
-- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- gerrymandering map, upholds california's, scotus upheld (5 posts)
-- beautiful delay, planned project (5 posts)
-- _…94 more emerging theme(s)._
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, voter trust (13 posts)
+- civil discourse, birthright citizenship (78 posts)
+- union historically (5 posts)
+- plans census (12 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (44 posts)
+- verified lists (9 posts)
+- boom latino, james talarico, ken paxton, initial success (5 posts)
+- gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
+- _…100 more emerging theme(s)._
 
 ## Scope note
 
