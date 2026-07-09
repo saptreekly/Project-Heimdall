@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 874,
+      "run_counter": 875,
       "authors": {
         "111": {
           "author_id": "111",
@@ -180,7 +180,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-06-05T06:04:48.024365+00:00",
           "last_tweet_at": "2026-06-05T02:51:01+00:00",
-          "inserted_total": 10,
+          "inserted_total": 11,
           "polls": 1,
           "inserts_from_polls": 1,
           "status": "active"
@@ -1927,28 +1927,28 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1789747762793242625": {
-          "author_id": "1789747762793242625",
-          "handle": "VishhalSJain",
+        "2065618413092016128": {
+          "author_id": "2065618413092016128",
+          "handle": "abbydphillik2o6",
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-09T12:22:14.021368+00:00",
-          "last_tweet_at": "2026-07-02T10:49:54+00:00",
+          "last_polled_at": null,
+          "last_tweet_at": null,
           "inserted_total": 1,
-          "polls": 1,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1566499424192368641": {
-          "author_id": "1566499424192368641",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
+        "1864273746464292864": {
+          "author_id": "1864273746464292864",
+          "handle": "TheDeepsouthDem",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 0,
+          "inserted_total": 1,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
