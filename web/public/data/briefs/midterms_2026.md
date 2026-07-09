@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-09 18:06:07 UTC
+> Tactical snapshot · 2026-07-09 19:20:46 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2741** |
+| Posts in database | **2746** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2351 / 921 |
-| Distinct themes | 134 |
+| Graph nodes / edges | 2353 / 921 |
+| Distinct themes | 105 |
 | Duplicate clusters (full DB) | 151 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1796 authors |
+| IU astroturf overlap | 2 bots / 1799 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **336**
-- Net new: **635** · re-seen: **2431**
-- Duplicate rate: **79.3%**
+- Runs: **335**
+- Net new: **639** · re-seen: **2420**
+- Duplicate rate: **79.1%**
 
 ## Sentiment drift
 
@@ -36,13 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1498 posts · 108 authors · 47 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · alabama congressional, potus potus (79 posts · 27 authors · 3 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (481 posts · 57 authors · 14 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · years old (46 posts · 3 authors · 16 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · vote congress, fraud cold, excuses games, pass nationwide, voter laws (10 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -98,19 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- alabama congressional, potus potus (79 posts)
-- breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
-- red wave, dem sweep, projected likely, resigns electoral (47 posts)
-- verified lists, federal judge (11 posts)
-- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- gerrymandering map, upholds california's, scotus upheld (5 posts)
-- beautiful delay, planned project (5 posts)
-- _…94 more emerging theme(s)._
+- union historically (5 posts)
+- stephen miller, removing illegals (6 posts)
+- primary challenge, wow scott, presler officially, act effect (9 posts)
+- map allowing (9 posts)
+- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (28 posts)
+- held alabama, california georgia, hours minutes (16 posts)
+- position steelmanned, civil rights (9 posts)
+- check groypers (7 posts)
+- _…90 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2741 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2746 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

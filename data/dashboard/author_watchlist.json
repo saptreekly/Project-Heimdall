@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 880,
+      "run_counter": 881,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1789,10 +1789,10 @@
           "handle": "StephenGardnerX",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.79,
+          "priority": 0.91,
           "last_polled_at": "2026-07-04T15:38:45.360952+00:00",
           "last_tweet_at": "2026-07-02T20:03:14+00:00",
-          "inserted_total": 3,
+          "inserted_total": 4,
           "polls": 1,
           "inserts_from_polls": 1,
           "status": "active"
@@ -1927,28 +1927,28 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1804176306541858821": {
-          "author_id": "1804176306541858821",
-          "handle": "TamiKelly377187",
+        "1239630272": {
+          "author_id": "1239630272",
+          "handle": "Marian199009",
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-09T18:06:02.236731+00:00",
-          "last_tweet_at": "2026-07-09T16:24:24+00:00",
+          "last_polled_at": null,
+          "last_tweet_at": null,
           "inserted_total": 1,
-          "polls": 1,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1566499424192368641": {
-          "author_id": "1566499424192368641",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
+        "1438157928": {
+          "author_id": "1438157928",
+          "handle": "Clh1992Hahn",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 0,
+          "inserted_total": 1,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
