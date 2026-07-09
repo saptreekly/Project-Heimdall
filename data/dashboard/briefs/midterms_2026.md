@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-09 00:21:49 UTC
+> Tactical snapshot · 2026-07-09 04:16:35 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2723** |
+| Posts in database | **2726** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2338 / 919 |
-| Distinct themes | 118 |
+| Graph nodes / edges | 2339 / 919 |
+| Distinct themes | 115 |
 | Duplicate clusters (full DB) | 149 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1783 authors |
+| IU astroturf overlap | 2 bots / 1784 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **338**
-- Net new: **679** · re-seen: **2440**
-- Duplicate rate: **78.2%**
+- Net new: **682** · re-seen: **2425**
+- Duplicate rate: **78.0%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · birthright citizenship, potus potus, ruling mullin, doe completely, stripped away (61 posts · 23 authors · 1 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · rick scott, floor vote, election security, role midterm elections, midterm elections arguing (55 posts · 7 authors · 16 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · civil discourse, birthright citizenship, potus potus, ruling mullin (64 posts · 26 authors · 1 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · away world's (49 posts · 7 authors · 14 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · deep state, radical left, sidney powell (20 posts · 0 authors · 7 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, attention washington (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · national committee (15 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · stop fraud, cold excuses, games yes, pass nationwide, voter laws (10 posts · 10 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -83,10 +83,10 @@ _None (need ≥5 authors in 90s window)._
 
 - **31 posts** · 29 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
-- **5 posts** · 5 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
+- **6 posts** · 6 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
+- **3 posts** · 3 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SENATE GOP: "Senate Democrats are preparing to shut down the gov…
 - **3 posts** · 3 authors · ~85% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SO NUKE THE FILIBUSTER THEN! SENATE GOP: "Senate Democrats are p…
-- **3 posts** · 2 authors · ~100% Jaccard — 🚨 JUST IN: George and Alex Soros have reportedly surged over $100 MILLION into the 2026 midterms to thrust Democrats into power, possibly on track to break the RECORD — NYP This comes as Elon Musk du…
 - _…6 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -100,18 +100,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - sweeping constitutional, petition nilepostnews, congressman hamadeh (13 posts)
-- birthright citizenship, potus potus, ruling mullin, doe completely, stripped away (61 posts)
+- civil discourse, birthright citizenship, potus potus, ruling mullin (64 posts)
 - union historically (5 posts)
-- paxton he's, plans census (7 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (44 posts)
+- paxton he's, plans census (9 posts)
+- red wave, dem sweep, projected likely, outcome midterms, midwest democrat (47 posts)
 - verified lists (7 posts)
 - boom latino, james talarico, initial success (5 posts)
 - gerrymandering map, blue seats, upholds california's, upheld texas (5 posts)
-- _…102 more emerging theme(s)._
+- _…100 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2723 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2726 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

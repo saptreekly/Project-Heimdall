@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 866,
+      "run_counter": 867,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1217,10 +1217,10 @@
           "handle": "ashlanddog",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.6900000000000001,
+          "priority": 0.81,
           "last_polled_at": "2026-06-21T14:28:59.978857+00:00",
           "last_tweet_at": "2026-06-21T01:20:34+00:00",
-          "inserted_total": 2,
+          "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1927,21 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1072069110413037569": {
-          "author_id": "1072069110413037569",
-          "handle": "Maat93489673",
+        "703959508079480833": {
+          "author_id": "703959508079480833",
+          "handle": "pverbeeck2",
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-08T21:18:47.058238+00:00",
-          "last_tweet_at": "2026-07-08T11:59:58+00:00",
+          "last_polled_at": null,
+          "last_tweet_at": null,
           "inserted_total": 1,
-          "polls": 1,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "3044993235": {
-          "author_id": "3044993235",
+        "2067918826000539648": {
+          "author_id": "2067918826000539648",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
