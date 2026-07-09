@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-09 06:01:15 UTC
+> Tactical snapshot · 2026-07-09 06:26:18 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2343 / 920 |
-| Distinct themes | 105 |
+| Distinct themes | 129 |
 | Duplicate clusters (full DB) | 149 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1788 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **8**
-- Net-new posts logged: **6**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **338**
-- Net new: **667** · re-seen: **2433**
+- Net new: **667** · re-seen: **2434**
 - Duplicate rate: **78.5%**
 
 ## Sentiment drift
@@ -36,14 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, election (476 posts · 55 authors · 13 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · years old (47 posts · 3 authors · 16 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · vote congress, fraud cold, excuses games, pass nationwide, voter laws (10 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, mike johnson (1520 posts · 108 authors · 47 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · potus potus, review key (51 posts · 23 authors · 1 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 9 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- union historically (5 posts)
-- stephen miller, removing illegals (6 posts)
-- primary challenge, wow scott, presler officially, act effect (9 posts)
-- map allowing (9 posts)
-- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (28 posts)
-- held alabama, california georgia, hours minutes (14 posts)
-- position steelmanned, civil rights (9 posts)
-- broke buried, debt directionless (6 posts)
-- _…90 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- potus potus, review key (51 posts)
+- breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
+- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (44 posts)
+- verified lists, federal judge (11 posts)
+- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
+- gerrymandering map, upholds california's, scotus upheld (5 posts)
+- beautiful delay, planned project (5 posts)
+- _…92 more emerging theme(s)._
 
 ## Scope note
 
