@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 04:50:46 UTC
+> Tactical snapshot · 2026-07-10 05:55:20 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2760** |
+| Posts in database | **2762** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2359 / 925 |
-| Distinct themes | 129 |
-| Duplicate clusters (full DB) | 152 |
+| Distinct themes | 134 |
+| Duplicate clusters (full DB) | 153 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1804 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **14**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **333**
-- Net new: **614** · re-seen: **2416**
-- Duplicate rate: **79.7%**
+- Net new: **616** · re-seen: **2408**
+- Duplicate rate: **79.6%**
 
 ## Sentiment drift
 
@@ -36,11 +36,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (1541 posts · 111 authors · 50 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · potus potus (84 posts · 26 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, intelligence community (1535 posts · 111 authors · 48 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · alabama congressional, potus potus (81 posts · 27 authors · 3 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
@@ -72,7 +72,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…142 more exact-duplicate cluster(s) in database._
+- _…143 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -99,18 +99,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus (84 posts)
+- alabama congressional, potus potus (81 posts)
 - breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
-- red wave, dem sweep, projected likely, resigns electoral (48 posts)
+- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (45 posts)
 - verified lists (11 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- gerrymandering map, upholds california's, scotus upheld (5 posts)
-- wow scott, presler officially, planning primary, act effect, promise lead (9 posts)
-- _…89 more emerging theme(s)._
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- beautiful delay, planned project (5 posts)
+- _…91 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2760 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2762 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
