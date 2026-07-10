@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 05:55:20 UTC
+> Tactical snapshot · 2026-07-10 06:35:13 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2762** |
+| Posts in database | **2764** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -21,13 +21,13 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **14**
+- Re-sightings (duplicate encounters): **7**
 - Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **333**
-- Net new: **616** · re-seen: **2408**
+- Net new: **618** · re-seen: **2411**
 - Duplicate rate: **79.6%**
 
 ## Sentiment drift
@@ -36,11 +36,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1535 posts · 111 authors · 48 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · alabama congressional, potus potus (81 posts · 27 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, intelligence community, super pacs (1529 posts · 112 authors · 48 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · congressional map place, potus potus (84 posts · 26 authors · 3 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
@@ -99,18 +99,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- alabama congressional, potus potus (81 posts)
+- congressional map place, potus potus (84 posts)
 - breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
-- red wave, resigns electoral, disaster looms, state setting, hulhumale phase (45 posts)
-- verified lists (11 posts)
+- red wave, dem sweep, projected likely, resigns electoral (48 posts)
+- verified lists, federal judge (11 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - upholds california's, scotus upheld, states redistrict (5 posts)
 - beautiful delay, planned project (5 posts)
-- _…91 more emerging theme(s)._
+- _…92 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2762 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2764 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
