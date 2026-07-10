@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 10:01:57 UTC
+> Tactical snapshot · 2026-07-10 10:31:12 UTC
 
 ## Corpus
 
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2365 / 926 |
-| Distinct themes | 138 |
+| Distinct themes | 132 |
 | Duplicate clusters (full DB) | 153 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1810 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **336**
-- Net new: **628** · re-seen: **2423**
+- Net new: **626** · re-seen: **2418**
 - Duplicate rate: **79.4%**
 
 ## Sentiment drift
@@ -31,10 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (1562 posts · 114 authors · 50 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · potus potus, doe completely, stripped away, protections haitians (50 posts · 22 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (1541 posts · 115 authors · 51 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · congressional map place, potus potus (84 posts · 26 authors · 3 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (15 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -95,13 +100,13 @@ _None spanning multiple narratives._
 
 - union historically (7 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, doe completely, stripped away, protections haitians (50 posts)
+- congressional map place, potus potus (84 posts)
 - red wave, dem sweep, projected likely, resigns electoral (48 posts)
 - verified lists (8 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - upholds california's, scotus upheld, states redistrict (5 posts)
 - des lections, les publicains, ouvert apr, millions watching, question isn (7 posts)
-- _…96 more emerging theme(s)._
+- _…92 more emerging theme(s)._
 
 ## Scope note
 
