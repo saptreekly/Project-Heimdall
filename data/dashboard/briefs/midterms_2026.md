@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 00:29:05 UTC
+> Tactical snapshot · 2026-07-10 04:03:53 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2358 / 924 |
-| Distinct themes | 105 |
+| Distinct themes | 132 |
 | Duplicate clusters (full DB) | 152 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1804 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **12**
-- Net-new posts logged: **6**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **333**
-- Net new: **632** · re-seen: **2414**
+- Runs: **334**
+- Net new: **632** · re-seen: **2416**
 - Duplicate rate: **79.3%**
 
 ## Sentiment drift
@@ -36,14 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, election (484 posts · 58 authors · 14 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · years old (49 posts · 3 authors · 17 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · vote congress, fraud cold, excuses games, pass nationwide, voter laws (10 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, intelligence community (1525 posts · 111 authors · 48 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · potus potus (84 posts · 26 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 5 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- union historically (5 posts)
-- stephen miller, removing illegals (6 posts)
-- primary challenge, wow scott, presler officially, act effect (9 posts)
-- map allowing (9 posts)
-- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (28 posts)
-- held alabama, california georgia, hours minutes (16 posts)
-- position steelmanned, civil rights (9 posts)
-- check groypers (7 posts)
-- _…89 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- potus potus (84 posts)
+- breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
+- red wave, dem sweep, projected likely, resigns electoral (48 posts)
+- verified lists, federal judge (11 posts)
+- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
+- gerrymandering map, upholds california's, scotus upheld (5 posts)
+- accountability midterm, happy talk (9 posts)
+- _…92 more emerging theme(s)._
 
 ## Scope note
 
