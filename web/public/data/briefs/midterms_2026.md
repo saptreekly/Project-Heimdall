@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 17:54:46 UTC
+> Tactical snapshot · 2026-07-10 19:18:05 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2802** |
+| Posts in database | **2806** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2380 / 929 |
+| Graph nodes / edges | 2384 / 930 |
 | Distinct themes | 140 |
 | Duplicate clusters (full DB) | 156 |
 | Fuzzy clusters (snapshot cohort) | 10 |
-| IU astroturf overlap | 2 bots / 1823 authors |
+| IU astroturf overlap | 2 bots / 1826 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **4**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **332**
-- Net new: **611** · re-seen: **2371**
-- Duplicate rate: **79.5%**
+- Runs: **331**
+- Net new: **613** · re-seen: **2360**
+- Duplicate rate: **79.4%**
 
 ## Sentiment drift
 
@@ -36,11 +36,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · super pacs (1555 posts · 117 authors · 47 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · potus potus, doe completely, stripped away, protections haitians (48 posts · 19 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · super pacs (1530 posts · 117 authors · 44 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · concluded term, produced important (82 posts · 25 authors · 3 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 1 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
@@ -82,9 +82,9 @@ _None (need ≥5 authors in 90s window)._
 
 - **22 posts** · 22 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
-- **8 posts** · 8 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
+- **9 posts** · 9 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
+- **4 posts** · 4 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
 - **4 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Sen. Mike Lee warns that TIME IS ALMOST OUT to pass the SAVE America Act for the 2026 midterms LEE: "It's still not too late — but it WILL be soon." Leader Thune should act swiftly, nuke t…
-- **3 posts** · 3 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Senate Republicans reveal Congressional Democrats are plotting to SHUT DOWN THE GOVERNMENT AGAIN ahead of the 2026 midterms SENATE GOP: "Senate Democrats are preparing to shut down the gov…
 - _…4 more fuzzy cluster(s) in snapshot cohort._
 
@@ -100,17 +100,17 @@ _None spanning multiple narratives._
 
 - union historically (7 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- potus potus, doe completely, stripped away, protections haitians (48 posts)
-- red wave, dem sweep, projected likely, resigns electoral (48 posts)
+- concluded term, produced important (82 posts)
+- red wave, dem sweep, projected likely, resigns electoral (49 posts)
 - federal judge, verified lists (8 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - upholds california's, scotus upheld, states redistrict (5 posts)
-- des lections, les publicains, ouvert apr, millions watching, question isn (7 posts)
-- _…100 more emerging theme(s)._
+- beautiful delay, planned project (5 posts)
+- _…98 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2802 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2806 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
