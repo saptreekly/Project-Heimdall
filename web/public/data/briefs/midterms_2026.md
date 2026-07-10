@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 22:41:23 UTC
+> Tactical snapshot · 2026-07-10 23:33:27 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2816** |
+| Posts in database | **2820** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2392 / 934 |
-| Distinct themes | 68 |
+| Graph nodes / edges | 2397 / 936 |
+| Distinct themes | 72 |
 | Duplicate clusters (full DB) | 156 |
 | Fuzzy clusters (snapshot cohort) | 10 |
-| IU astroturf overlap | 2 bots / 1830 authors |
+| IU astroturf overlap | 2 bots / 1833 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **17**
+- Net-new posts logged: **4**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **599** · re-seen: **2349**
-- Duplicate rate: **79.7%**
+- Net new: **603** · re-seen: **2348**
+- Duplicate rate: **79.6%**
 
 ## Sentiment drift
 
@@ -36,8 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2289 posts · 168 authors · 120 exact · 9 fuzzy subclusters)
-- **Exact duplicate campaign** · pass nationwide, laws midterms, fraud cold, excuses games, secure vote congress (38 posts · 25 authors · 5 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2292 posts · 170 authors · 119 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · pass nationwide, laws midterms, fraud cold, excuses games, secure vote congress (38 posts · 24 authors · 5 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -74,7 +74,7 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **22 posts** · 22 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
+- **21 posts** · 21 authors · ~100% Jaccard — 🚨 SECURE THE VOTE: Should Congress pass nationwide Voter ID laws before the 2026 midterms to stop fraud cold? No more excuses. No more games. A. Yes B. No
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **9 posts** · 9 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
 - **4 posts** · 4 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
@@ -103,7 +103,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2816 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2820 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
