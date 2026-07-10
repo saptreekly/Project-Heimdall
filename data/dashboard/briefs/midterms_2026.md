@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 15:31:52 UTC
+> Tactical snapshot · 2026-07-10 15:59:38 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2380 / 929 |
-| Distinct themes | 110 |
+| Distinct themes | 136 |
 | Duplicate clusters (full DB) | 156 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1823 authors |
@@ -22,13 +22,13 @@
 ## Ingest activity
 
 - Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **17**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **333**
-- Net new: **631** · re-seen: **2389**
-- Duplicate rate: **79.1%**
+- Net new: **612** · re-seen: **2390**
+- Duplicate rate: **79.6%**
 
 ## Sentiment drift
 
@@ -36,14 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, election (490 posts · 50 authors · 14 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, radical left (54 posts · 5 authors · 16 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, midterms source (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, attention washington (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, harmeet dhillon (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · vote congress, stop fraud, cold excuses, games yes, pass nationwide (10 posts · 1 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · super pacs (1545 posts · 119 authors · 47 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · alabama congressional, potus potus (80 posts · 24 authors · 3 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 1 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -100,14 +99,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - union historically (7 posts)
-- ken paxton, target national, stephen miller (10 posts)
-- liveprayer tuesday, amnesty 20m (12 posts)
-- primary challenge, wow scott, presler officially, act effect (9 posts)
-- map allowing (9 posts)
-- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (28 posts)
-- days presidential (14 posts)
-- position steelmanned, civil rights (9 posts)
-- _…94 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- alabama congressional, potus potus (80 posts)
+- red wave, dem sweep, projected likely, resigns electoral (49 posts)
+- verified lists (8 posts)
+- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- beautiful delay, planned project (5 posts)
+- _…96 more emerging theme(s)._
 
 ## Scope note
 
