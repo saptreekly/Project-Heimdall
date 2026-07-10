@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 20:48:53 UTC
+> Tactical snapshot · 2026-07-10 21:15:19 UTC
 
 ## Corpus
 
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2391 / 933 |
-| Distinct themes | 112 |
+| Distinct themes | 69 |
 | Duplicate clusters (full DB) | 156 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1830 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **11**
-- Net-new posts logged: **6**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **603** · re-seen: **2373**
-- Duplicate rate: **79.7%**
+- Net new: **600** · re-seen: **2370**
+- Duplicate rate: **79.8%**
 
 ## Sentiment drift
 
@@ -36,15 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, election (494 posts · 49 authors · 14 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · radical left, years old (45 posts · 5 authors · 14 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, attention washington (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, harmeet dhillon (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · vote congress, stop fraud, cold excuses, games yes, pass nationwide (10 posts · 1 authors · 1 exact · 1 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2288 posts · 169 authors · 119 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · pass nationwide, laws midterms, fraud cold, excuses games, secure vote congress (38 posts · 25 authors · 5 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -99,15 +87,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- union historically (7 posts)
-- ken paxton, target national, stephen miller (10 posts)
-- liveprayer tuesday, amnesty 20m (12 posts)
-- primary challenge, wow scott, presler officially, act effect (9 posts)
-- map allowing (9 posts)
-- tolerate pathetic, losers killed, coward facist, bonespur draft, dodger inbreeds (34 posts)
-- days presidential (14 posts)
-- position steelmanned (9 posts)
-- _…98 more emerging theme(s)._
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
+- awakening largest, actually believe (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- cabinet meeting, era donald (3 posts)
+- malicious domains, phishing worse, governor race (3 posts)
+- love country, raised fist (3 posts)
+- _…15 more emerging theme(s)._
 
 ## Scope note
 
