@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 04:03:53 UTC
+> Tactical snapshot · 2026-07-10 04:50:46 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2759** |
+| Posts in database | **2760** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2358 / 924 |
-| Distinct themes | 132 |
+| Graph nodes / edges | 2359 / 925 |
+| Distinct themes | 129 |
 | Duplicate clusters (full DB) | 152 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1804 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **334**
-- Net new: **632** · re-seen: **2416**
-- Duplicate rate: **79.3%**
+- Runs: **333**
+- Net new: **614** · re-seen: **2416**
+- Duplicate rate: **79.7%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1525 posts · 111 authors · 48 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (1541 posts · 111 authors · 50 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · potus potus (84 posts · 26 authors · 3 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -102,15 +102,15 @@ _None spanning multiple narratives._
 - potus potus (84 posts)
 - breaking teamsters, teamsters union, union historically, historically pro, democrat start (5 posts)
 - red wave, dem sweep, projected likely, resigns electoral (48 posts)
-- verified lists, federal judge (11 posts)
+- verified lists (11 posts)
 - boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
 - gerrymandering map, upholds california's, scotus upheld (5 posts)
-- accountability midterm, happy talk (9 posts)
-- _…92 more emerging theme(s)._
+- wow scott, presler officially, planning primary, act effect, promise lead (9 posts)
+- _…89 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2759 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2760 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
