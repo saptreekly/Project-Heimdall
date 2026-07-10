@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-10 08:15:48 UTC
+> Tactical snapshot · 2026-07-10 10:01:57 UTC
 
 ## Corpus
 
@@ -14,19 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2365 / 926 |
-| Distinct themes | 106 |
+| Distinct themes | 138 |
 | Duplicate clusters (full DB) | 153 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1810 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **11**
-- Net-new posts logged: **9**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **335**
+- Runs: **336**
 - Net new: **628** · re-seen: **2423**
 - Duplicate rate: **79.4%**
 
@@ -36,14 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, election (487 posts · 58 authors · 14 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · years old (46 posts · 3 authors · 16 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · midterms stop, stop fraud, cold excuses, games yes, laws midterms stop (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, midterms source (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · vote congress, fraud cold, excuses games, pass nationwide, voter laws (10 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, freaking scandal, victor davis, episode electio (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (1562 posts · 114 authors · 50 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · potus potus, doe completely, stripped away, protections haitians (50 posts · 22 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 21 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 3 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, exposed globalists (10 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -100,14 +94,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - union historically (7 posts)
-- stephen miller, removing illegals (6 posts)
-- primary challenge, wow scott, presler officially, act effect (9 posts)
-- map allowing (9 posts)
-- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (28 posts)
-- carville prediction, tracker january, win minimum (17 posts)
-- position steelmanned, civil rights (9 posts)
-- check groypers (7 posts)
-- _…91 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- potus potus, doe completely, stripped away, protections haitians (50 posts)
+- red wave, dem sweep, projected likely, resigns electoral (48 posts)
+- verified lists (8 posts)
+- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- des lections, les publicains, ouvert apr, millions watching, question isn (7 posts)
+- _…96 more emerging theme(s)._
 
 ## Scope note
 
