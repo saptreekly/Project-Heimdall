@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-11 08:23:51 UTC
+> Tactical snapshot · 2026-07-11 09:04:46 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2845** |
+| Posts in database | **2846** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2417 / 941 |
-| Distinct themes | 67 |
+| Graph nodes / edges | 2418 / 941 |
+| Distinct themes | 68 |
 | Duplicate clusters (full DB) | 157 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1851 authors |
+| IU astroturf overlap | 2 bots / 1852 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **8**
 - Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **332**
-- Net new: **582** · re-seen: **2355**
-- Duplicate rate: **80.2%**
+- Net new: **583** · re-seen: **2341**
+- Duplicate rate: **80.1%**
 
 ## Sentiment drift
 
@@ -36,7 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2347 posts · 191 authors · 124 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2299 posts · 169 authors · 119 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · pass nationwide, laws midterms, fraud cold, excuses games, secure vote congress (38 posts · 22 authors · 5 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
@@ -93,17 +94,17 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- malicious domains, phishing worse, governor race (4 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
 - awakening largest, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
 - cabinet meeting, era donald (3 posts)
-- love country, raised fist (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…15 more emerging theme(s)._
+- _…16 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2845 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2846 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
