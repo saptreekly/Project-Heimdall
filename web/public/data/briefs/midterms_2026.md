@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-11 12:04:30 UTC
+> Tactical snapshot · 2026-07-11 13:50:46 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2853** |
+| Posts in database | **2854** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2426 / 945 |
-| Distinct themes | 67 |
+| Graph nodes / edges | 2428 / 946 |
+| Distinct themes | 70 |
 | Duplicate clusters (full DB) | 157 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1856 authors |
+| IU astroturf overlap | 2 bots / 1857 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **9**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **333**
-- Net new: **575** · re-seen: **2344**
+- Net new: **576** · re-seen: **2350**
 - Duplicate rate: **80.3%**
 
 ## Sentiment drift
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, election integrity executive (2356 posts · 191 authors · 125 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2349 posts · 192 authors · 124 exact · 11 fuzzy subclusters)
 - **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
@@ -99,11 +99,11 @@ _None spanning multiple narratives._
 - cabinet meeting, era donald (3 posts)
 - love country, raised fist (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…17 more emerging theme(s)._
+- _…15 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2853 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2854 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
