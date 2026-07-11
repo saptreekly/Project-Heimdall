@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-11 19:39:09 UTC
+> Tactical snapshot · 2026-07-11 20:17:34 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2872** |
+| Posts in database | **2873** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2436 / 949 |
-| Distinct themes | 73 |
+| Graph nodes / edges | 2438 / 950 |
+| Distinct themes | 72 |
 | Duplicate clusters (full DB) | 160 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1864 authors |
+| IU astroturf overlap | 2 bots / 1865 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **333**
-- Net new: **571** · re-seen: **2336**
+- Runs: **332**
+- Net new: **571** · re-seen: **2342**
 - Duplicate rate: **80.4%**
 
 ## Sentiment drift
@@ -36,16 +36,16 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2330 posts · 168 authors · 122 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2332 posts · 168 authors · 122 exact · 10 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, midterms stop fraud, stop fraud cold, fraud cold excuses (21 posts · 16 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · secure vote congress, fraud cold, excuses games, laws midterms stop, pass nationwide (10 posts · 1 authors · 1 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
-- dense_cluster_41_size_3
-- dense_cluster_522_size_3
-- dense_cluster_1394_size_3
+- dense_cluster_42_size_3
+- dense_cluster_523_size_3
+- dense_cluster_1395_size_3
 - cross_author_fuzzy_29authors_31posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -101,11 +101,11 @@ _None spanning multiple narratives._
 - love country, raised fist (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…17 more emerging theme(s)._
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2872 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2873 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
