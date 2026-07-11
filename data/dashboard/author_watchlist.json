@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 930,
+      "run_counter": 931,
       "authors": {
         "111": {
           "author_id": "111",
@@ -12,19 +12,6 @@
           "last_polled_at": "2026-06-03T07:20:29.914213+00:00",
           "last_tweet_at": null,
           "inserted_total": 0,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1629921587183996930": {
-          "author_id": "1629921587183996930",
-          "handle": "Mr_Penworth",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-03T14:16:19.915794+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 2,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,16 +1927,29 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1532239030540455938": {
-          "author_id": "1532239030540455938",
-          "handle": "FelixFan03",
+        "907393975": {
+          "author_id": "907393975",
+          "handle": "honeyybomb",
           "discovered_via": "keyword",
           "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "829839403757555713": {
+          "author_id": "829839403757555713",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
           "priority": 0.45,
-          "last_polled_at": "2026-07-11T17:42:06.688027+00:00",
-          "last_tweet_at": "2026-07-10T06:50:54+00:00",
+          "last_polled_at": null,
+          "last_tweet_at": null,
           "inserted_total": 0,
-          "polls": 1,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         }
