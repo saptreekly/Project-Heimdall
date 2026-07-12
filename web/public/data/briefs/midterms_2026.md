@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-12 11:04:14 UTC
+> Tactical snapshot · 2026-07-12 11:36:54 UTC
 
 ## Corpus
 
@@ -14,20 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2472 / 963 |
-| Distinct themes | 68 |
+| Distinct themes | 73 |
 | Duplicate clusters (full DB) | 161 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1890 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **10**
-- Net-new posts logged: **4**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **338**
-- Net new: **584** · re-seen: **2397**
+- Net new: **584** · re-seen: **2396**
 - Duplicate rate: **80.4%**
 
 ## Sentiment drift
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2386 posts · 166 authors · 123 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2371 posts · 166 authors · 123 exact · 9 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, midterms stop fraud, stop fraud cold, fraud cold excuses (21 posts · 9 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · secure vote congress, fraud cold, excuses games, laws midterms stop, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -102,7 +97,7 @@ _None spanning multiple narratives._
 - love country, raised fist (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…19 more emerging theme(s)._
+- _…21 more emerging theme(s)._
 
 ## Scope note
 
