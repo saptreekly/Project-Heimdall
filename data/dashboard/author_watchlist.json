@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 950,
+      "run_counter": 951,
       "authors": {
         "111": {
           "author_id": "111",
@@ -115,19 +115,6 @@
           "priority": 0.6900000000000001,
           "last_polled_at": "2026-06-04T18:27:26.636485+00:00",
           "last_tweet_at": "2026-06-04T13:52:26+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "142775388": {
-          "author_id": "142775388",
-          "handle": "4EMAssociates",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-04T11:24:24.278624+00:00",
-          "last_tweet_at": "2026-06-04T03:00:49+00:00",
           "inserted_total": 2,
           "polls": 1,
           "inserts_from_polls": 0,
@@ -1940,16 +1927,29 @@
           "inserts_from_polls": 3,
           "status": "active"
         },
-        "1935435168": {
-          "author_id": "1935435168",
-          "handle": "Merkalto",
+        "478185930": {
+          "author_id": "478185930",
+          "handle": "RenoCiccotta",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-07-12T10:15:55.563937+00:00",
+          "priority": 0.69,
+          "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "846819862102114304": {
+          "author_id": "846819862102114304",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         }
