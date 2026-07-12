@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-12 09:21:40 UTC
+> Tactical snapshot · 2026-07-12 10:06:36 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2919** |
+| Posts in database | **2920** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2465 / 959 |
-| Distinct themes | 72 |
+| Graph nodes / edges | 2466 / 959 |
+| Distinct themes | 74 |
 | Duplicate clusters (full DB) | 161 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1886 authors |
+| IU astroturf overlap | 2 bots / 1887 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **6**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **337**
-- Net new: **580** · re-seen: **2383**
+- Runs: **338**
+- Net new: **581** · re-seen: **2389**
 - Duplicate rate: **80.4%**
 
 ## Sentiment drift
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, election integrity executive (2376 posts · 169 authors · 124 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, election integrity executive (2372 posts · 168 authors · 124 exact · 9 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, midterms stop fraud, stop fraud cold, fraud cold excuses (21 posts · 9 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · secure vote congress, fraud cold, excuses games, laws midterms stop, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
@@ -39,8 +44,8 @@
 ## CIB warning signals
 
 - dense_cluster_45_size_3
-- dense_cluster_528_size_3
-- dense_cluster_1399_size_3
+- dense_cluster_529_size_3
+- dense_cluster_1400_size_3
 - cross_author_fuzzy_29authors_31posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -100,7 +105,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2919 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2920 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
