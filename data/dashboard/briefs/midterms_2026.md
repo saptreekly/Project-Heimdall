@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-12 12:13:35 UTC
+> Tactical snapshot · 2026-07-12 13:52:22 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2928** |
+| Posts in database | **2929** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2473 / 964 |
-| Distinct themes | 122 |
+| Distinct themes | 68 |
 | Duplicate clusters (full DB) | 162 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1891 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **12**
-- Net-new posts logged: **4**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **338**
-- Net new: **588** · re-seen: **2408**
+- Runs: **339**
+- Net new: **589** · re-seen: **2410**
 - Duplicate rate: **80.4%**
 
 ## Sentiment drift
@@ -36,15 +36,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community, super pacs (1329 posts · 102 authors · 43 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (533 posts · 46 authors · 15 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (21 posts · 7 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, dhillon warpath, breaking doj (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2391 posts · 169 authors · 124 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, midterms stop fraud, stop fraud cold, fraud cold excuses (21 posts · 6 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · secure vote congress, fraud cold, excuses games, laws midterms stop, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -81,7 +77,7 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **7 posts** · 7 authors · ~100% Jaccard — !!️ SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games 🅰️. Yes 🅱️. No
+- **6 posts** · 6 authors · ~100% Jaccard — !!️ SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games 🅰️. Yes 🅱️. No
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **9 posts** · 9 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
 - **4 posts** · 4 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
@@ -99,19 +95,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- breaking teamsters, teamsters union, union historically, historically pro, democrat start (7 posts)
-- wow scott, presler officially, planning primary, promise lead (9 posts)
+- accountability midterm, issue trump, corrupt doj, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- days presidential, major elections (15 posts)
-- confidence medium (12 posts)
-- mullin considering, check groypers (8 posts)
-- broke buried, debt directionless (6 posts)
+- awakening largest, voting force, actually believe (5 posts)
 - dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- _…85 more emerging theme(s)._
+- love country, raised fist (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2928 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2929 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
