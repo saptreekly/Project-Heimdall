@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-12 18:36:14 UTC
+> Tactical snapshot · 2026-07-12 19:43:06 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2940** |
+| Posts in database | **2942** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2481 / 968 |
-| Distinct themes | 65 |
+| Distinct themes | 68 |
 | Duplicate clusters (full DB) | 162 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1897 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **20**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **340**
-- Net new: **598** · re-seen: **2470**
+- Net new: **600** · re-seen: **2476**
 - Duplicate rate: **80.5%**
 
 ## Sentiment drift
@@ -36,10 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2399 posts · 168 authors · 124 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, president donald (2399 posts · 170 authors · 125 exact · 10 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, midterms stop fraud, stop fraud cold, fraud cold excuses (21 posts · 4 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · secure vote congress, fraud cold, excuses games, laws midterms stop, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
@@ -106,7 +105,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2940 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2942 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
