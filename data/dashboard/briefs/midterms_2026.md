@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-12 06:43:27 UTC
+> Tactical snapshot · 2026-07-12 07:23:40 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2903** |
+| Posts in database | **2905** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2456 / 957 |
-| Distinct themes | 69 |
+| Graph nodes / edges | 2458 / 958 |
+| Distinct themes | 70 |
 | Duplicate clusters (full DB) | 161 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1878 authors |
+| IU astroturf overlap | 2 bots / 1880 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **25**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **334**
-- Net new: **564** · re-seen: **2365**
+- Net new: **566** · re-seen: **2368**
 - Duplicate rate: **80.7%**
 
 ## Sentiment drift
@@ -43,9 +43,9 @@
 
 ## CIB warning signals
 
-- dense_cluster_43_size_3
-- dense_cluster_526_size_3
-- dense_cluster_1398_size_3
+- dense_cluster_45_size_3
+- dense_cluster_528_size_3
+- dense_cluster_1399_size_3
 - cross_author_fuzzy_29authors_31posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -105,7 +105,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2903 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2905 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
