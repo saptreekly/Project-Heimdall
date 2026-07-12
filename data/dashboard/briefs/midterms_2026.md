@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-12 21:39:35 UTC
+> Tactical snapshot · 2026-07-12 22:28:53 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2483 / 969 |
-| Distinct themes | 53 |
+| Distinct themes | 63 |
 | Duplicate clusters (full DB) | 162 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1899 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **15**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **340**
-- Net new: **588** · re-seen: **2491**
-- Duplicate rate: **80.9%**
+- Net new: **569** · re-seen: **2492**
+- Duplicate rate: **81.4%**
 
 ## Sentiment drift
 
@@ -36,10 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, donald trump, election integrity executive, white house, george soros (1987 posts · 128 authors · 116 exact · 8 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (540 posts · 48 authors · 15 exact · 2 fuzzy subclusters)
-- **Shared frame** · fauci biden, threat reduction, funded overseas, biosafety labs, nunn lugar (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · report swing, asked policies (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2444 posts · 175 authors · 129 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -94,14 +93,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- newsom signs, gavin promised (4 posts)
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
 - awakening largest, voting force, actually believe (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- love country, raised fist (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…15 more emerging theme(s)._
+- _…16 more emerging theme(s)._
 
 ## Scope note
 
