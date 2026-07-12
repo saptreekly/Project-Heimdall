@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-12 06:17:57 UTC
+> Tactical snapshot · 2026-07-12 06:43:27 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2456 / 957 |
-| Distinct themes | 70 |
+| Distinct themes | 69 |
 | Duplicate clusters (full DB) | 161 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1878 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **6**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **334**
-- Net new: **564** · re-seen: **2366**
-- Duplicate rate: **80.8%**
+- Net new: **564** · re-seen: **2365**
+- Duplicate rate: **80.7%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, election integrity executive (2367 posts · 168 authors · 124 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, election integrity executive (2369 posts · 168 authors · 124 exact · 10 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, midterms stop fraud, stop fraud cold, fraud cold excuses (21 posts · 9 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · secure vote congress, fraud cold, excuses games, laws midterms stop, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
