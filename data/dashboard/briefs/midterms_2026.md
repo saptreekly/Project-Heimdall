@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-13 21:07:39 UTC
+> Tactical snapshot · 2026-07-13 21:37:22 UTC
 
 ## Corpus
 
@@ -14,19 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2504 / 974 |
-| Distinct themes | 65 |
+| Distinct themes | 64 |
 | Duplicate clusters (full DB) | 165 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1916 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **25**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **351**
+- Runs: **352**
 - Net new: **569** · re-seen: **2642**
 - Duplicate rate: **82.3%**
 
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, donald trump, deep state (2465 posts · 173 authors · 131 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2510 posts · 174 authors · 137 exact · 11 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
@@ -93,14 +88,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- setup election fraud, accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- awakening largest, voting force, actually believe (6 posts)
+- awakening largest, voting force, actually believe (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- love country, raised fist, straight maga (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…17 more emerging theme(s)._
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- facistnazi pig bonespur, won't tolerate pathetic, tolerate pathetic losers, pathetic losers killed, losers killed 10000's (5 posts)
+- _…16 more emerging theme(s)._
 
 ## Scope note
 
