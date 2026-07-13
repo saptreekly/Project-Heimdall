@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-13 20:02:20 UTC
+> Tactical snapshot · 2026-07-13 20:35:46 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2504 / 974 |
-| Distinct themes | 58 |
+| Distinct themes | 65 |
 | Duplicate clusters (full DB) | 165 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1916 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **10**
-- Net-new posts logged: **7**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **350**
-- Net new: **569** · re-seen: **2618**
+- Net new: **569** · re-seen: **2617**
 - Duplicate rate: **82.1%**
 
 ## Sentiment drift
@@ -36,9 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, donald trump, proof citizenship, election integrity executive, george soros (2006 posts · 129 authors · 117 exact · 9 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (548 posts · 45 authors · 16 exact · 2 fuzzy subclusters)
-- **Near-copy campaign** · asked policies (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, donald trump, deep state (2465 posts · 173 authors · 131 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -93,14 +93,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- newsom signs, gavin promised (4 posts)
+- setup election fraud, accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
-- awakening largest, voting force, actually believe (5 posts)
+- awakening largest, voting force, actually believe (6 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- love country, raised fist, straight maga (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…16 more emerging theme(s)._
+- _…17 more emerging theme(s)._
 
 ## Scope note
 
