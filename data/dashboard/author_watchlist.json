@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 976,
+      "run_counter": 977,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1776,10 +1776,10 @@
           "handle": "GuntherEagleman",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.69,
+          "priority": 0.8099999999999999,
           "last_polled_at": "2026-07-07T16:45:05.820158+00:00",
           "last_tweet_at": null,
-          "inserted_total": 2,
+          "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,8 +1940,8 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1652541": {
-          "author_id": "1652541",
+        "1735777835451572224": {
+          "author_id": "1735777835451572224",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
