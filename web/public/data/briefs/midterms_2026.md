@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-13 11:24:03 UTC
+> Tactical snapshot · 2026-07-13 11:50:41 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2968** |
+| Posts in database | **2969** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2493 / 971 |
-| Distinct themes | 64 |
+| Graph nodes / edges | 2494 / 972 |
+| Distinct themes | 67 |
 | Duplicate clusters (full DB) | 163 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1907 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **26**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **345**
-- Net new: **573** · re-seen: **2560**
+- Runs: **346**
+- Net new: **574** · re-seen: **2561**
 - Duplicate rate: **81.7%**
 
 ## Sentiment drift
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2461 posts · 171 authors · 129 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, president donald (2458 posts · 173 authors · 129 exact · 11 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
@@ -93,18 +93,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
 - awakening largest, voting force, actually believe (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - love country, raised fist (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
 - _…17 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2968 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2969 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
