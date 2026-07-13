@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-13 12:27:41 UTC
+> Tactical snapshot · 2026-07-13 13:33:27 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2495 / 973 |
-| Distinct themes | 67 |
+| Distinct themes | 143 |
 | Duplicate clusters (full DB) | 163 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1907 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **18**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **11**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **347**
-- Net new: **575** · re-seen: **2579**
-- Duplicate rate: **81.8%**
+- Net new: **562** · re-seen: **2586**
+- Duplicate rate: **82.1%**
 
 ## Sentiment drift
 
@@ -36,9 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, donald trump, deep state (2463 posts · 173 authors · 129 exact · 11 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, intelligence community (1670 posts · 126 authors · 44 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · american thinker (10 posts · 10 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · surge gop, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -93,14 +99,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- setup election fraud, accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- love country, raised fist (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…16 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (54 posts)
+- union historically (7 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- concluded term, produced important, principles unfortunately, catastrophic failures (33 posts)
+- plans census, gaining seats (6 posts)
+- verified lists (8 posts)
+- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- _…105 more emerging theme(s)._
 
 ## Scope note
 
