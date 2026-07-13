@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-13 04:23:13 UTC
+> Tactical snapshot · 2026-07-13 05:11:34 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2947** |
+| Posts in database | **2957** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2484 / 970 |
-| Distinct themes | 64 |
-| Duplicate clusters (full DB) | 162 |
-| Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1899 authors |
+| Graph nodes / edges | 2488 / 970 |
+| Distinct themes | 130 |
+| Duplicate clusters (full DB) | 163 |
+| Fuzzy clusters (snapshot cohort) | 13 |
+| IU astroturf overlap | 2 bots / 1903 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **6**
+- Net-new posts logged: **10**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **341**
-- Net new: **557** · re-seen: **2530**
-- Duplicate rate: **82.0%**
+- Runs: **340**
+- Net new: **566** · re-seen: **2509**
+- Duplicate rate: **81.6%**
 
 ## Sentiment drift
 
@@ -36,9 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, president donald (2440 posts · 175 authors · 129 exact · 10 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, super pacs, ice agents (1335 posts · 102 authors · 43 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (541 posts · 47 authors · 15 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -67,7 +73,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…152 more exact-duplicate cluster(s) in database._
+- _…153 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -78,10 +84,10 @@ _None (need ≥5 authors in 90s window)._
 - **5 posts** · 5 authors · ~100% Jaccard — !!️ SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games 1️⃣. Yes 2️⃣. No
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **9 posts** · 9 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
+- **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX INCREDIBLE news! Republicans *CAN NOT* win 2026 without MAGA. That's the tr…
 - **4 posts** · 4 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
 - **4 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Sen. Mike Lee warns that TIME IS ALMOST OUT to pass the SAVE America Act for the 2026 midterms LEE: "It's still not too late — but it WILL be soon." Leader Thune should act swiftly, nuke t…
-- **3 posts** · 3 authors · ~100% Jaccard — Trump's Deranged Authoritarian Coup: Firing the FEC to Annihilate Democracy and Rig the 2026 Midterms In a psychotic escalation straight out of a dictator's playbook, Donald Trump has now fired the t…
-- _…5 more fuzzy cluster(s) in snapshot cohort._
+- _…7 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -93,18 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
+- breaking teamsters, teamsters union, union historically, historically pro, democrat start (7 posts)
+- wow scott, presler officially, planning primary, promise lead (11 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- awakening largest, voting force, actually believe (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- love country, raised fist (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…17 more emerging theme(s)._
+- days presidential, major elections (15 posts)
+- confidence medium (12 posts)
+- check groypers (7 posts)
+- broke buried, debt directionless (6 posts)
+- millennials ghosted, ghosted awakening, awakening largest, largest voting, voting force (5 posts)
+- _…90 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2947 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2957 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
