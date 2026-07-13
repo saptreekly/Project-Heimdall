@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-13 09:57:58 UTC
+> Tactical snapshot · 2026-07-13 10:42:07 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2964** |
+| Posts in database | **2968** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2493 / 971 |
-| Distinct themes | 126 |
+| Distinct themes | 64 |
 | Duplicate clusters (full DB) | 163 |
-| Fuzzy clusters (snapshot cohort) | 13 |
+| Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1907 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **13**
+- Re-sightings (duplicate encounters): **1**
 - Net-new posts logged: **4**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **343**
-- Net new: **569** · re-seen: **2533**
-- Duplicate rate: **81.7%**
+- Runs: **344**
+- Net new: **573** · re-seen: **2534**
+- Duplicate rate: **81.6%**
 
 ## Sentiment drift
 
@@ -36,15 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community, super pacs (1336 posts · 99 authors · 43 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (543 posts · 48 authors · 15 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, dhillon warpath, breaking doj (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2461 posts · 171 authors · 129 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -82,12 +76,12 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
-- **3 posts** · 3 authors · ~100% Jaccard — !!️ SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games 1️⃣. Yes 2️⃣. No
 - **9 posts** · 9 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX INCREDIBLE news! Republicans *CAN NOT* win 2026 without MAGA. That's the tr…
 - **4 posts** · 4 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
 - **4 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Sen. Mike Lee warns that TIME IS ALMOST OUT to pass the SAVE America Act for the 2026 midterms LEE: "It's still not too late — but it WILL be soon." Leader Thune should act swiftly, nuke t…
-- _…7 more fuzzy cluster(s) in snapshot cohort._
+- **3 posts** · 3 authors · ~100% Jaccard — Trump's Deranged Authoritarian Coup: Firing the FEC to Annihilate Democracy and Rig the 2026 Midterms In a psychotic escalation straight out of a dictator's playbook, Donald Trump has now fired the t…
+- _…6 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -99,19 +93,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- breaking teamsters, teamsters union, union historically, historically pro, democrat start (7 posts)
-- wow scott, presler officially, planning primary, promise lead (11 posts)
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- days presidential, major elections (15 posts)
-- confidence medium (12 posts)
-- mullin considering, check groypers (8 posts)
-- broke buried, debt directionless (6 posts)
-- millennials ghosted, ghosted awakening, awakening largest, largest voting, voting force (5 posts)
-- _…87 more emerging theme(s)._
+- awakening largest, voting force, actually believe (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- love country, raised fist (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- _…17 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2964 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2968 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
