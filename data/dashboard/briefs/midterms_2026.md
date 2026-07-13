@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-13 05:11:34 UTC
+> Tactical snapshot · 2026-07-13 05:52:34 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2488 / 970 |
-| Distinct themes | 130 |
+| Distinct themes | 64 |
 | Duplicate clusters (full DB) | 163 |
 | Fuzzy clusters (snapshot cohort) | 13 |
 | IU astroturf overlap | 2 bots / 1903 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **6**
-- Net-new posts logged: **10**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **340**
-- Net new: **566** · re-seen: **2509**
+- Runs: **341**
+- Net new: **566** · re-seen: **2510**
 - Duplicate rate: **81.6%**
 
 ## Sentiment drift
@@ -36,15 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, super pacs, ice agents (1335 posts · 102 authors · 43 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (541 posts · 47 authors · 15 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 5 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, president donald (2450 posts · 174 authors · 129 exact · 12 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -99,15 +93,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- breaking teamsters, teamsters union, union historically, historically pro, democrat start (7 posts)
-- wow scott, presler officially, planning primary, promise lead (11 posts)
+- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- days presidential, major elections (15 posts)
-- confidence medium (12 posts)
-- check groypers (7 posts)
-- broke buried, debt directionless (6 posts)
-- millennials ghosted, ghosted awakening, awakening largest, largest voting, voting force (5 posts)
-- _…90 more emerging theme(s)._
+- awakening largest, voting force, actually believe (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- love country, raised fist (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- _…17 more emerging theme(s)._
 
 ## Scope note
 
