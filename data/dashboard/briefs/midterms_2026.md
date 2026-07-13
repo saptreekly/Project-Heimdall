@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-13 13:33:27 UTC
+> Tactical snapshot · 2026-07-13 14:59:21 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2970** |
+| Posts in database | **2974** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2495 / 973 |
-| Distinct themes | 143 |
+| Graph nodes / edges | 2497 / 973 |
+| Distinct themes | 125 |
 | Duplicate clusters (full DB) | 163 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1907 authors |
+| IU astroturf overlap | 2 bots / 1909 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **11**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **13**
+- Net-new posts logged: **4**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **347**
-- Net new: **562** · re-seen: **2586**
-- Duplicate rate: **82.1%**
+- Runs: **346**
+- Net new: **564** · re-seen: **2578**
+- Duplicate rate: **82.0%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1670 posts · 126 authors · 44 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, intelligence community, super pacs (1368 posts · 100 authors · 46 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (544 posts · 45 authors · 15 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · american thinker (10 posts · 10 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · surge gop, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,19 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (54 posts)
-- union historically (7 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- concluded term, produced important, principles unfortunately, catastrophic failures (33 posts)
-- plans census, gaining seats (6 posts)
-- verified lists (8 posts)
-- boom latino, james talarico, ken paxton, texas' migration, backlash jolts (5 posts)
-- upholds california's, scotus upheld, states redistrict (5 posts)
-- _…105 more emerging theme(s)._
+- breaking teamsters, teamsters union, union historically, historically pro, democrat start (7 posts)
+- wow scott, presler officially, planning primary, promise lead (11 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
+- days presidential, major elections (15 posts)
+- confidence medium (12 posts)
+- mullin considering, check groypers (8 posts)
+- millennials ghosted, ghosted awakening, awakening largest, largest voting, voting force (5 posts)
+- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
+- _…87 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2970 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2974 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
