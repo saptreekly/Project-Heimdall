@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-13 05:52:34 UTC
+> Tactical snapshot · 2026-07-13 06:35:41 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **2957** |
+| Posts in database | **2958** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2488 / 970 |
-| Distinct themes | 64 |
+| Graph nodes / edges | 2489 / 970 |
+| Distinct themes | 68 |
 | Duplicate clusters (full DB) | 163 |
 | Fuzzy clusters (snapshot cohort) | 13 |
-| IU astroturf overlap | 2 bots / 1903 authors |
+| IU astroturf overlap | 2 bots / 1904 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **14**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **341**
-- Net new: **566** · re-seen: **2510**
-- Duplicate rate: **81.6%**
+- Net new: **567** · re-seen: **2523**
+- Duplicate rate: **81.7%**
 
 ## Sentiment drift
 
@@ -36,15 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, president donald (2450 posts · 174 authors · 129 exact · 12 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, election integrity executive (2442 posts · 175 authors · 129 exact · 12 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
-- dense_cluster_50_size_3
-- dense_cluster_534_size_3
-- dense_cluster_1404_size_3
+- dense_cluster_51_size_3
+- dense_cluster_535_size_3
+- dense_cluster_1405_size_3
 - cross_author_fuzzy_30authors_32posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -93,18 +93,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
 - awakening largest, voting force, actually believe (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - love country, raised fist (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- inbreeds cuz, 10000's fascist, loves winners (8 posts)
-- _…17 more emerging theme(s)._
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- _…19 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 2957 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 2958 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
