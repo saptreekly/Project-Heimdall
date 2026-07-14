@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-14 15:16:33 UTC
+> Tactical snapshot · 2026-07-14 16:05:57 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3020** |
+| Posts in database | **3024** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2511 / 976 |
-| Distinct themes | 65 |
+| Graph nodes / edges | 2517 / 980 |
+| Distinct themes | 143 |
 | Duplicate clusters (full DB) | 168 |
 | Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1923 authors |
+| IU astroturf overlap | 2 bots / 1925 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **5**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **13**
+- Net-new posts logged: **4**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **352**
-- Net new: **572** · re-seen: **2692**
-- Duplicate rate: **82.5%**
+- Runs: **353**
+- Net new: **576** · re-seen: **2705**
+- Duplicate rate: **82.4%**
 
 ## Sentiment drift
 
@@ -36,10 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2496 posts · 163 authors · 133 exact · 11 fuzzy subclusters)
-- **Exact duplicate campaign** · plans census, illegals count, gaining seats, breaking president donald (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, mike johnson (1702 posts · 117 authors · 48 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · unsuccessfully ohio (20 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (11 posts · 11 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (10 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -94,18 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- plans census, illegals count, gaining seats, breaking president donald (6 posts)
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- love country, raised fist (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…20 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (56 posts)
+- focus flipping, union historically (8 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- board trustees, potus potus, women advocates, press statement (24 posts)
+- verified lists (8 posts)
+- unsuccessfully ohio (20 posts)
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- corrupt doj, happy talk (9 posts)
+- _…106 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3020 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3024 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
