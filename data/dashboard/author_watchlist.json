@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1002,
+      "run_counter": 1003,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,16 +1940,16 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "166751745": {
-          "author_id": "166751745",
-          "handle": "RyanAFournier",
-          "discovered_via": "keyword",
-          "depth": 0,
+        "1830302921789259776": {
+          "author_id": "1830302921789259776",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
           "priority": 0.45,
-          "last_polled_at": "2026-07-14T08:33:36.245739+00:00",
-          "last_tweet_at": "2026-07-13T15:16:20+00:00",
+          "last_polled_at": null,
+          "last_tweet_at": null,
           "inserted_total": 0,
-          "polls": 1,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         }
