@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-14 07:10:21 UTC
+> Tactical snapshot · 2026-07-14 08:33:41 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2509 / 974 |
-| Distinct themes | 122 |
+| Distinct themes | 144 |
 | Duplicate clusters (full DB) | 166 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1922 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **16**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **351**
-- Net new: **575** · re-seen: **2652**
+- Runs: **352**
+- Net new: **575** · re-seen: **2653**
 - Duplicate rate: **82.2%**
 
 ## Sentiment drift
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1379 posts · 96 authors · 46 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (551 posts · 44 authors · 17 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, mike johnson (1685 posts · 121 authors · 46 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · ugc equity, case details, eric peters (15 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · patriot contributes, thank appreciate, dollars help (9 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · surge gop, turnout lfg, deep purple (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +99,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- support scott, presler plan, plan focus, focus flipping, flipping jersey (8 posts)
-- wow scott, presler officially, planning primary, promise lead (11 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- days presidential, major elections (15 posts)
-- confidence medium (12 posts)
-- check groypers (7 posts)
-- millennials ghosted, ghosted awakening, awakening largest, largest voting, force barriers (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- _…87 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (57 posts)
+- focus flipping, union historically (8 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- board trustees, potus potus, women advocates, press statement (30 posts)
+- plans census, gaining seats (5 posts)
+- sign executive order, election integrity targeting, targeting mail ballots, mail ballots voting, executive order (9 posts)
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- ugc equity, case details, eric peters (15 posts)
+- _…106 more emerging theme(s)._
 
 ## Scope note
 
