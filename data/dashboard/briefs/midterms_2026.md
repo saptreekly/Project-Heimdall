@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-14 12:29:23 UTC
+> Tactical snapshot · 2026-07-14 14:10:41 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3017** |
+| Posts in database | **3019** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2511 / 976 |
-| Distinct themes | 115 |
+| Distinct themes | 67 |
 | Duplicate clusters (full DB) | 167 |
-| Fuzzy clusters (snapshot cohort) | 11 |
+| Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1923 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **13**
-- Net-new posts logged: **5**
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **352**
-- Net new: **570** · re-seen: **2665**
-- Duplicate rate: **82.4%**
+- Net new: **572** · re-seen: **2667**
+- Duplicate rate: **82.3%**
 
 ## Sentiment drift
 
@@ -36,15 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, red (551 posts · 44 authors · 17 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · away world's, seizing milestone, fresh rallying, extreme wealth (48 posts · 5 authors · 15 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · primary challenge, wow scott, presler officially (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · vote congress, stop fraud, cold excuses, games yes, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2494 posts · 165 authors · 132 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · plans census, illegals count, gaining seats, breaking president donald (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · task force (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -83,11 +78,11 @@ _None (need ≥5 authors in 90s window)._
 
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **9 posts** · 9 authors · ~100% Jaccard — "At best", indeed!! The 2026 Supreme Court -- a ‘C Minus’ at Best
-- **6 posts** · 6 authors · ~100% Jaccard — 🚨 JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX INCREDIBLE news! Republicans *CAN NOT* win 2026 without MAGA. That's the tr…
+- **7 posts** · 7 authors · ~100% Jaccard — 🚨 JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX INCREDIBLE news! Republicans *CAN NOT* win 2026 without MAGA. That's the tr…
 - **4 posts** · 4 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
 - **4 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Sen. Mike Lee warns that TIME IS ALMOST OUT to pass the SAVE America Act for the 2026 midterms LEE: "It's still not too late — but it WILL be soon." Leader Thune should act swiftly, nuke t…
 - **3 posts** · 3 authors · ~100% Jaccard — Trump's Deranged Authoritarian Coup: Firing the FEC to Annihilate Democracy and Rig the 2026 Midterms In a psychotic escalation straight out of a dictator's playbook, Donald Trump has now fired the t…
-- _…5 more fuzzy cluster(s) in snapshot cohort._
+- _…6 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -99,19 +94,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- support scott, presler plan, plan focus, focus flipping, flipping jersey (4 posts)
-- polling stations, agents posted, mullin stands (5 posts)
-- plans census, illegals count, gaining seats (5 posts)
-- union historically (4 posts)
-- primary challenge, wow scott, presler officially (11 posts)
-- breaking missouri, missouri supreme, court upheld, upheld state, map allowing (9 posts)
-- tolerate pathetic, losers killed, coward facist, nazi pig bonespur, draft dodger (31 posts)
-- days presidential (15 posts)
-- _…101 more emerging theme(s)._
+- plans census, illegals count, gaining seats, breaking president donald (6 posts)
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- love country, raised fist (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- _…19 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3017 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3019 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
