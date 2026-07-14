@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-14 22:35:11 UTC
+> Tactical snapshot · 2026-07-14 23:35:50 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3029** |
+| Posts in database | **3032** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2520 / 980 |
-| Distinct themes | 67 |
+| Graph nodes / edges | 2521 / 980 |
+| Distinct themes | 128 |
 | Duplicate clusters (full DB) | 168 |
-| Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1928 authors |
+| Fuzzy clusters (snapshot cohort) | 10 |
+| IU astroturf overlap | 2 bots / 1930 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **13**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **352**
-- Net new: **563** · re-seen: **2722**
-- Duplicate rate: **82.9%**
+- Runs: **351**
+- Net new: **566** · re-seen: **2709**
+- Duplicate rate: **82.7%**
 
 ## Sentiment drift
 
@@ -36,10 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2512 posts · 166 authors · 133 exact · 10 fuzzy subclusters)
-- **Exact duplicate campaign** · plans census, illegals count, gaining seats, breaking president donald (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, intelligence community, super pacs (1379 posts · 94 authors · 44 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (556 posts · 44 authors · 17 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (11 posts · 11 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath, breaking doj (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -82,7 +87,7 @@ _None (need ≥5 authors in 90s window)._
 - **4 posts** · 4 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
 - **4 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: Sen. Mike Lee warns that TIME IS ALMOST OUT to pass the SAVE America Act for the 2026 midterms LEE: "It's still not too late — but it WILL be soon." Leader Thune should act swiftly, nuke t…
 - **3 posts** · 3 authors · ~100% Jaccard — Trump's Deranged Authoritarian Coup: Firing the FEC to Annihilate Democracy and Rig the 2026 Midterms In a psychotic escalation straight out of a dictator's playbook, Donald Trump has now fired the t…
-- _…5 more fuzzy cluster(s) in snapshot cohort._
+- _…4 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -94,18 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- plans census, illegals count, gaining seats, breaking president donald (6 posts)
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- focus flipping (8 posts)
+- plans census, gaining seats (5 posts)
+- wow scott, presler officially, planning primary, promise lead (11 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- awakening largest, power register (6 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- love country, raised fist (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…19 more emerging theme(s)._
+- days presidential, major elections (15 posts)
+- confidence medium (12 posts)
+- mullin considering, check groypers (8 posts)
+- millennials ghosted, ghosted awakening, awakening largest, largest voting, force barriers (5 posts)
+- _…91 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3029 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3032 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
