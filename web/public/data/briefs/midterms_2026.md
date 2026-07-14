@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-14 00:12:13 UTC
+> Tactical snapshot · 2026-07-14 03:19:53 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2509 / 974 |
-| Distinct themes | 126 |
+| Distinct themes | 67 |
 | Duplicate clusters (full DB) | 165 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1921 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **10**
-- Net-new posts logged: **9**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **351**
-- Net new: **567** · re-seen: **2644**
+- Net new: **566** · re-seen: **2632**
 - Duplicate rate: **82.3%**
 
 ## Sentiment drift
@@ -36,15 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1373 posts · 101 authors · 45 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (549 posts · 45 authors · 16 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, dhillon warpath, breaking doj (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, save america, election integrity executive, george soros (2478 posts · 174 authors · 132 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · report swing, asked policies, democrat selected (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -99,15 +93,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping (8 posts)
-- wow scott, presler officially, planning primary, promise lead (11 posts)
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- days presidential, major elections (15 posts)
-- confidence medium (12 posts)
-- mullin considering, check groypers (8 posts)
-- millennials ghosted, ghosted awakening, awakening largest, largest voting, force barriers (5 posts)
-- dream we're, rewriting gen, millennials turning, turning midterms, midterms demand (3 posts)
-- _…87 more emerging theme(s)._
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- beautiful delay, planned project, rules dec (4 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
