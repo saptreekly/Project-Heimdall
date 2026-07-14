@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-14 18:56:23 UTC
+> Tactical snapshot · 2026-07-14 19:50:52 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2519 / 980 |
-| Distinct themes | 124 |
+| Distinct themes | 143 |
 | Duplicate clusters (full DB) | 168 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1927 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **15**
-- Net-new posts logged: **4**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **352**
-- Net new: **573** · re-seen: **2701**
+- Net new: **573** · re-seen: **2700**
 - Duplicate rate: **82.5%**
 
 ## Sentiment drift
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1390 posts · 95 authors · 43 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (555 posts · 43 authors · 17 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, mike johnson (1703 posts · 117 authors · 48 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · unsuccessfully ohio (20 posts · 12 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (11 posts · 11 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, dhillon warpath, breaking doj (11 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (10 posts · 8 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +99,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- support scott, presler plan, plan focus, focus flipping, flipping jersey (8 posts)
-- plans census, gaining seats (5 posts)
-- wow scott, presler officially, planning primary, promise lead (11 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- days presidential, major elections (15 posts)
-- mullin considering, check groypers (8 posts)
-- broke buried, debt directionless (6 posts)
-- millennials ghosted, ghosted awakening, awakening largest, largest voting, force barriers (5 posts)
-- _…88 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (57 posts)
+- focus flipping, union historically (8 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- board trustees, potus potus, women advocates, press statement (24 posts)
+- election integrity targeting, sign executive order, targeting mail ballots, mail ballots voting, executive order (9 posts)
+- unsuccessfully ohio (20 posts)
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- des lections, les publicains, ouvert apr, millions watching, question isn (7 posts)
+- _…105 more emerging theme(s)._
 
 ## Scope note
 
