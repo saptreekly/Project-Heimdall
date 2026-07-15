@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-15 04:39:57 UTC
+> Tactical snapshot · 2026-07-15 05:19:48 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3049** |
+| Posts in database | **3051** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2535 / 994 |
-| Distinct themes | 66 |
+| Graph nodes / edges | 2537 / 996 |
+| Distinct themes | 64 |
 | Duplicate clusters (full DB) | 168 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1931 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **16**
+- Re-sightings (duplicate encounters): **24**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **352**
-- Net new: **578** · re-seen: **2721**
-- Duplicate rate: **82.5%**
+- Net new: **571** · re-seen: **2735**
+- Duplicate rate: **82.7%**
 
 ## Sentiment drift
 
@@ -36,10 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, white house (2560 posts · 159 authors · 139 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, win house, election integrity executive (2569 posts · 158 authors · 139 exact · 9 fuzzy subclusters)
 - **Exact duplicate campaign** · plans census, illegals count, gaining seats, breaking president donald (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · task force (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · report swing, asked policies, democrat selected, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · asked policies, democrat selected, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -100,12 +100,12 @@ _None spanning multiple narratives._
 - awakening largest, power register (6 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
 - _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3049 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3051 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
