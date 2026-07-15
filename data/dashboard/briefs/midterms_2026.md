@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-15 08:41:10 UTC
+> Tactical snapshot · 2026-07-15 09:28:07 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3059** |
+| Posts in database | **3060** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2543 / 997 |
-| Distinct themes | 64 |
+| Graph nodes / edges | 2544 / 998 |
+| Distinct themes | 66 |
 | Duplicate clusters (full DB) | 169 |
-| Fuzzy clusters (snapshot cohort) | 12 |
-| IU astroturf overlap | 2 bots / 1936 authors |
+| Fuzzy clusters (snapshot cohort) | 11 |
+| IU astroturf overlap | 2 bots / 1937 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **18**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **354**
-- Net new: **579** · re-seen: **2747**
-- Duplicate rate: **82.6%**
+- Runs: **355**
+- Net new: **580** · re-seen: **2765**
+- Duplicate rate: **82.7%**
 
 ## Sentiment drift
 
@@ -31,10 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, win house, election integrity executive (2577 posts · 160 authors · 140 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, white house (2572 posts · 161 authors · 140 exact · 10 fuzzy subclusters)
 - **Exact duplicate campaign** · plans census, illegals count, gaining seats, breaking president donald (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · task force (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · asked policies, democrat selected, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · report swing, asked policies, democrat selected, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -77,7 +82,7 @@ _None (need ≥5 authors in 90s window)._
 - **4 posts** · 4 authors · ~100% Jaccard — Don Brown - The 2026 Supreme Court -- a ‘C Minus’ at Best...The Supreme Court’s just-concluded term produced several important victories for constitutional principles. Unfortunately, two catastrophic…
 - **3 posts** · 3 authors · ~100% Jaccard — Trump's Deranged Authoritarian Coup: Firing the FEC to Annihilate Democracy and Rig the 2026 Midterms In a psychotic escalation straight out of a dictator's playbook, Donald Trump has now fired the t…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 JUST IN: Senate Majority Leader John Thune has amassed a whopping $238 MILLION dollars into his Senate super PAC heading into the 2026 midterms — Axios That's more than DOUBLE the last midterms $23…
-- _…6 more fuzzy cluster(s) in snapshot cohort._
+- _…5 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -96,11 +101,11 @@ _None spanning multiple narratives._
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - inbreeds cuz, 10000's fascist, loves winners (8 posts)
-- _…18 more emerging theme(s)._
+- _…17 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3059 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3060 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
