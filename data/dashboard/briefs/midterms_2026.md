@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-15 06:30:44 UTC
+> Tactical snapshot · 2026-07-15 07:01:11 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2542 / 997 |
-| Distinct themes | 133 |
+| Distinct themes | 70 |
 | Duplicate clusters (full DB) | 169 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1935 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **13**
-- Net-new posts logged: **4**
+- Re-sightings (duplicate encounters): **3**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **353**
-- Net new: **578** · re-seen: **2754**
-- Duplicate rate: **82.7%**
+- Net new: **578** · re-seen: **2733**
+- Duplicate rate: **82.5%**
 
 ## Sentiment drift
 
@@ -36,15 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community, super pacs, birthright citizenship (1366 posts · 90 authors · 44 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (560 posts · 40 authors · 17 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, lack intellectual, diversity close (17 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (12 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (12 posts · 12 authors · 2 exact · 2 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, white house (2562 posts · 159 authors · 140 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · plans census, illegals count, gaining seats, breaking president donald (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · task force (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · report swing, asked policies, democrat selected, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -99,15 +94,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- support scott, presler plan, plan focus, focus flipping, flipping jersey (8 posts)
-- plans census, gaining seats (5 posts)
-- wow scott, presler officially, planning primary, promise lead (11 posts)
+- plans census, illegals count, gaining seats, breaking president donald (6 posts)
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- days presidential, major elections (15 posts)
-- check groypers (7 posts)
-- broke buried, debt directionless (6 posts)
-- millennials ghosted, ghosted awakening, awakening largest, largest voting, force barriers (5 posts)
-- _…88 more emerging theme(s)._
+- awakening largest, power register (6 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
