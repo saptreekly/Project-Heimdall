@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-15 10:17:30 UTC
+> Tactical snapshot · 2026-07-15 11:19:15 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3061** |
+| Posts in database | **3064** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2544 / 998 |
-| Distinct themes | 66 |
+| Graph nodes / edges | 2545 / 998 |
+| Distinct themes | 58 |
 | Duplicate clusters (full DB) | 169 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1937 authors |
+| IU astroturf overlap | 2 bots / 1938 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **356**
-- Net new: **581** · re-seen: **2767**
-- Duplicate rate: **82.6%**
+- Runs: **357**
+- Net new: **584** · re-seen: **2782**
+- Duplicate rate: **82.7%**
 
 ## Sentiment drift
 
@@ -36,10 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, save america, deep state, white house (2574 posts · 161 authors · 140 exact · 10 fuzzy subclusters)
-- **Exact duplicate campaign** · plans census, illegals count, gaining seats, breaking president donald (6 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · report swing, asked policies, democrat selected, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, donald trump, win house, george soros, postmaster general (2085 posts · 121 authors · 122 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (562 posts · 41 authors · 17 exact · 2 fuzzy subclusters)
+- **Near-copy campaign** · asked policies, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -94,18 +93,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- plans census, illegals count, gaining seats, breaking president donald (6 posts)
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- awakening largest, power register (6 posts)
+- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
+- awakening largest (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- dissenting senator, votes senators, party rule, rebranded internally, unity coalition (9 posts)
 - _…17 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3061 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3064 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
