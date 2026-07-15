@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1038,
+      "run_counter": 1039,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,11 +1940,11 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1665107911243071488": {
-          "author_id": "1665107911243071488",
-          "handle": "GOP_is_Gutless",
-          "discovered_via": "keyword",
-          "depth": 0,
+        "91882544": {
+          "author_id": "91882544",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,

@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-15 17:26:59 UTC
+> Tactical snapshot · 2026-07-15 18:45:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3074** |
+| Posts in database | **3075** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2549 / 999 |
-| Distinct themes | 142 |
+| Graph nodes / edges | 2551 / 1000 |
+| Distinct themes | 54 |
 | Duplicate clusters (full DB) | 170 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1942 authors |
+| IU astroturf overlap | 2 bots / 1943 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **16**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **356**
-- Net new: **580** · re-seen: **2770**
-- Duplicate rate: **82.7%**
+- Runs: **355**
+- Net new: **574** · re-seen: **2773**
+- Duplicate rate: **82.9%**
 
 ## Sentiment drift
 
@@ -36,21 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · working class, reuters reported, student loan, retirement age (1774 posts · 117 authors · 48 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 13 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · american thinker (10 posts · 8 authors · 2 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (10 posts · 3 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, mail ballots, save america, win house, election integrity executive (2621 posts · 164 authors · 142 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · asked policies, democrat selected, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
-- dense_cluster_55_size_3
-- dense_cluster_541_size_3
-- dense_cluster_1408_size_3
+- dense_cluster_56_size_3
+- dense_cluster_542_size_3
+- dense_cluster_1409_size_3
 - cross_author_fuzzy_30authors_32posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -99,19 +93,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (57 posts)
-- focus flipping, union historically (8 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- board trustees, potus potus, press statement, continuity leadership (29 posts)
-- plans census, gaining seats (6 posts)
-- sign executive order, election integrity targeting, executive order, targeting mail ballots, mail ballots voting (9 posts)
-- upholds california's, scotus upheld, states redistrict (5 posts)
-- des lections, les publicains, ouvert apr, millions watching, question isn (7 posts)
-- _…106 more emerging theme(s)._
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
+- awakening largest, power register (6 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- facistnazi pig bonespur, won't tolerate pathetic, tolerate pathetic losers, pathetic losers killed, losers killed 10000's (5 posts)
+- _…12 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3074 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3075 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
