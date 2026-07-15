@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1042,
+      "run_counter": 1043,
       "authors": {
         "111": {
           "author_id": "111",
@@ -390,19 +390,6 @@
           "last_tweet_at": "2026-06-06T21:11:52+00:00",
           "inserted_total": 9,
           "polls": 2,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1806457336523038720": {
-          "author_id": "1806457336523038720",
-          "handle": "KoxLevi",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-07T10:58:00.648262+00:00",
-          "last_tweet_at": "2026-06-07T04:36:50+00:00",
-          "inserted_total": 2,
-          "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
         },
@@ -1940,11 +1927,24 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1901366607802183681": {
-          "author_id": "1901366607802183681",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "2038625978243555329": {
+          "author_id": "2038625978243555329",
+          "handle": "MAGANEWS_X",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "16012783": {
+          "author_id": "16012783",
+          "handle": "thedailybeast",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
