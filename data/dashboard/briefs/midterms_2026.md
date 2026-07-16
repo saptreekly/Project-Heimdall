@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-16 15:20:29 UTC
+> Tactical snapshot · 2026-07-16 15:59:25 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3111** |
+| Posts in database | **3113** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **28**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **356**
-- Net new: **564** · re-seen: **2793**
-- Duplicate rate: **83.2%**
+- Net new: **566** · re-seen: **2793**
+- Duplicate rate: **83.1%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2581 posts · 150 authors · 135 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2583 posts · 149 authors · 135 exact · 9 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · asked policies, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
@@ -105,7 +105,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3111 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3113 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
