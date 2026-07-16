@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1056,
+      "run_counter": 1057,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,16 +1940,16 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1961658686763667459": {
-          "author_id": "1961658686763667459",
-          "handle": "LunaForTruth",
-          "discovered_via": "keyword",
-          "depth": 0,
+        "1260246164856811520": {
+          "author_id": "1260246164856811520",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
           "priority": 0.45,
-          "last_polled_at": "2026-07-16T09:27:57.657072+00:00",
-          "last_tweet_at": "2026-07-15T08:58:41+00:00",
+          "last_polled_at": null,
+          "last_tweet_at": null,
           "inserted_total": 0,
-          "polls": 1,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         }

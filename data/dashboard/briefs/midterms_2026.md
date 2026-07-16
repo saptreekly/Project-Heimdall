@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-16 09:28:02 UTC
+> Tactical snapshot · 2026-07-16 10:26:32 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3105** |
+| Posts in database | **3106** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2568 / 1011 |
+| Graph nodes / edges | 2570 / 1012 |
 | Distinct themes | 73 |
 | Duplicate clusters (full DB) | 172 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1952 authors |
+| IU astroturf overlap | 2 bots / 1953 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **14**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **358**
-- Net new: **575** · re-seen: **2805**
+- Runs: **357**
+- Net new: **574** · re-seen: **2806**
 - Duplicate rate: **83.0%**
 
 ## Sentiment drift
@@ -36,16 +36,16 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, white house, president donald, george soros (2571 posts · 151 authors · 135 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2575 posts · 151 authors · 135 exact · 9 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · asked policies, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
-- dense_cluster_58_size_3
-- dense_cluster_543_size_3
-- dense_cluster_1410_size_3
+- dense_cluster_59_size_3
+- dense_cluster_544_size_3
+- dense_cluster_1411_size_3
 - cross_author_fuzzy_30authors_32posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -99,13 +99,13 @@ _None spanning multiple narratives._
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - cabinet meeting (3 posts)
-- democrat graham, collins closely, platner won, primary tuesday, stakes fall (4 posts)
 - malicious domains, phishing worse, governor race (3 posts)
-- _…19 more emerging theme(s)._
+- 10000's fascist, inbreeds cuz, loves winners (11 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3105 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3106 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
