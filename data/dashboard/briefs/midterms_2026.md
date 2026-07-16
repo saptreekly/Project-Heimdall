@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-16 04:48:45 UTC
+> Tactical snapshot · 2026-07-16 05:24:14 UTC
 
 ## Corpus
 
@@ -14,19 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2560 / 1002 |
-| Distinct themes | 57 |
+| Distinct themes | 55 |
 | Duplicate clusters (full DB) | 171 |
 | Fuzzy clusters (snapshot cohort) | 12 |
 | IU astroturf overlap | 2 bots / 1951 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **10**
-- Net-new posts logged: **8**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **355**
+- Runs: **356**
 - Net new: **574** · re-seen: **2766**
 - Duplicate rate: **82.8%**
 
@@ -36,9 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, save america, donald trump, george soros (2110 posts · 131 authors · 123 exact · 9 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (566 posts · 30 authors · 17 exact · 2 fuzzy subclusters)
-- **Near-copy campaign** · asked policies, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, save america, win house, election integrity executive (2624 posts · 160 authors · 143 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · asked policies, democrat selected, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -93,14 +88,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (31 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
-- awakening largest (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- gen millennials, register rally, vote legends, don't dream, turning midterms (18 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- monumental defeat, steve hilton, looking overly (5 posts)
-- _…12 more emerging theme(s)._
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- facistnazi pig bonespur, won't tolerate pathetic, tolerate pathetic losers, pathetic losers killed, losers killed 10000's (5 posts)
+- beautiful delay, planned project, rules dec (4 posts)
+- _…13 more emerging theme(s)._
 
 ## Scope note
 
