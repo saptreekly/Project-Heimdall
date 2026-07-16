@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-16 06:34:12 UTC
+> Tactical snapshot · 2026-07-16 07:16:59 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3101** |
+| Posts in database | **3102** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2567 / 1011 |
-| Distinct themes | 71 |
-| Duplicate clusters (full DB) | 171 |
+| Graph nodes / edges | 2568 / 1011 |
+| Distinct themes | 73 |
+| Duplicate clusters (full DB) | 172 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 1951 authors |
+| IU astroturf overlap | 2 bots / 1952 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **14**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **356**
-- Net new: **572** · re-seen: **2784**
+- Net new: **572** · re-seen: **2790**
 - Duplicate rate: **83.0%**
 
 ## Sentiment drift
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, white house, george soros (2572 posts · 150 authors · 134 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, white house, president donald, george soros (2566 posts · 150 authors · 135 exact · 9 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · asked policies, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
@@ -63,7 +68,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…161 more exact-duplicate cluster(s) in database._
+- _…162 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -94,13 +99,13 @@ _None spanning multiple narratives._
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- cabinet meeting (3 posts)
 - 10000's fascist, inbreeds cuz, loves winners (11 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…17 more emerging theme(s)._
+- _…19 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3101 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3102 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
