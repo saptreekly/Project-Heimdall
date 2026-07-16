@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-16 15:59:25 UTC
+> Tactical snapshot · 2026-07-16 17:28:10 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2572 / 1013 |
-| Distinct themes | 73 |
+| Distinct themes | 71 |
 | Duplicate clusters (full DB) | 172 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1955 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **14**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **356**
-- Net new: **566** · re-seen: **2793**
+- Net new: **566** · re-seen: **2782**
 - Duplicate rate: **83.1%**
 
 ## Sentiment drift
@@ -36,9 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2583 posts · 149 authors · 135 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2590 posts · 152 authors · 136 exact · 10 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · asked policies, wealthy followed (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
@@ -101,7 +100,7 @@ _None spanning multiple narratives._
 - cabinet meeting (3 posts)
 - malicious domains, phishing worse, governor race (3 posts)
 - 10000's fascist, inbreeds cuz, loves winners (11 posts)
-- _…18 more emerging theme(s)._
+- _…17 more emerging theme(s)._
 
 ## Scope note
 
