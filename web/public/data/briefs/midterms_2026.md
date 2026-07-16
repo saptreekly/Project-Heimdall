@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-16 21:12:10 UTC
+> Tactical snapshot · 2026-07-16 21:54:11 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3121** |
+| Posts in database | **3122** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2574 / 1013 |
+| Graph nodes / edges | 2575 / 1013 |
 | Distinct themes | 72 |
 | Duplicate clusters (full DB) | 172 |
 | Fuzzy clusters (snapshot cohort) | 10 |
-| IU astroturf overlap | 2 bots / 1958 authors |
+| IU astroturf overlap | 2 bots / 1959 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **356**
-- Net new: **568** · re-seen: **2798**
+- Runs: **357**
+- Net new: **569** · re-seen: **2805**
 - Duplicate rate: **83.1%**
 
 ## Sentiment drift
@@ -31,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2596 posts · 152 authors · 136 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2597 posts · 152 authors · 136 exact · 10 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
-- dense_cluster_60_size_3
-- dense_cluster_545_size_3
-- dense_cluster_1412_size_3
+- dense_cluster_61_size_3
+- dense_cluster_546_size_3
+- dense_cluster_1413_size_3
 - cross_author_fuzzy_30authors_32posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -98,7 +103,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3121 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3122 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
