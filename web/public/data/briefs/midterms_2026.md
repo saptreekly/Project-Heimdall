@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-17 05:26:30 UTC
+> Tactical snapshot · 2026-07-17 05:57:20 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3134** |
+| Posts in database | **3142** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2584 / 1015 |
-| Distinct themes | 74 |
-| Duplicate clusters (full DB) | 172 |
-| Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 1967 authors |
+| Graph nodes / edges | 2590 / 1017 |
+| Distinct themes | 137 |
+| Duplicate clusters (full DB) | 174 |
+| Fuzzy clusters (snapshot cohort) | 10 |
+| IU astroturf overlap | 2 bots / 1973 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **8**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **358**
-- Net new: **575** · re-seen: **2811**
-- Duplicate rate: **83.0%**
+- Net new: **583** · re-seen: **2799**
+- Duplicate rate: **82.8%**
 
 ## Sentiment drift
 
@@ -31,8 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2599 posts · 156 authors · 136 exact · 9 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, intelligence community (1421 posts · 98 authors · 46 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (572 posts · 24 authors · 18 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 13 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -61,7 +73,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…162 more exact-duplicate cluster(s) in database._
+- _…164 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -71,11 +83,11 @@ _None (need ≥5 authors in 90s window)._
 
 - **8 posts** · 8 authors · ~100% Jaccard — 🚨 JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX INCREDIBLE news! Republicans *CAN NOT* win 2026 without MAGA. That's the tr…
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: Senate Majority Leader John Thune has amassed a whopping $238 MILLION dollars into his Senate super PAC heading into the 2026 midterms — Axios That's more than DOUBLE the last midterms $23…
+- **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: President Trump just dropped this chilling line that if Republicans LOSE the 2026 midterms and next election, Democrats will DESTROY THE NATION "What they WILL do to the country if we don'…
 - **3 posts** · 3 authors · ~100% Jaccard — Trump's Deranged Authoritarian Coup: Firing the FEC to Annihilate Democracy and Rig the 2026 Midterms In a psychotic escalation straight out of a dictator's playbook, Donald Trump has now fired the t…
+- **2 posts** · 2 authors · ~100% Jaccard — 🚨 JUST IN: The government shutdown battle might start NEXT WEEK — House Republicans are preparing to ram through a government funding bill THROUGH THE 2026 MIDTERMS and might bring it to the floor in…
 - **2 posts** · 2 authors · ~100% Jaccard — Billionaire Ken Griffin dropping $40 MILLION to defend GOP House &amp; Senate majorities in 2026 midterms! Big money entering the arena as Republicans fight to keep control. Do you support billionair…
-- **2 posts** · 2 authors · ~100% Jaccard — 🚨 HOLY CRAP! In a stunning admission, Sen. Elissa Slotkin (D-Michigan) announced that if the SAVE America Act becomes law — "It would be hard for ANY Democrat, in ANY state, to win ANY election." Pre…
-- **2 posts** · 2 authors · ~100% Jaccard — 🚨 JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX INCREDIBLE news! Republicans *CAN NOT* win 2026 without MAGA. That's the tr…
-- _…3 more fuzzy cluster(s) in snapshot cohort._
+- _…4 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -87,18 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
+- support scott, presler plan, plan focus, focus flipping, flipping jersey (9 posts)
+- illegals count, seats support (7 posts)
+- verified lists, ensuring citizenship (11 posts)
+- plan impeach, impeach remove, remove trump, plan impeach remove, impeach remove trump (6 posts)
+- wow scott, presler officially, planning primary, promise lead (11 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- cabinet meeting (3 posts)
-- malicious domains, phishing worse, governor race (3 posts)
-- 10000's fascist, inbreeds cuz, loves winners (11 posts)
-- _…19 more emerging theme(s)._
+- days presidential, major elections (19 posts)
+- lower approval, rating given, results conservatives (13 posts)
+- _…95 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3134 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3142 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
