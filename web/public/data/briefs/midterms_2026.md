@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-16 23:23:33 UTC
+> Tactical snapshot · 2026-07-17 00:12:17 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2581 / 1013 |
-| Distinct themes | 65 |
+| Distinct themes | 75 |
 | Duplicate clusters (full DB) | 172 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 1966 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **12**
-- Net-new posts logged: **8**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **358**
-- Net new: **577** · re-seen: **2789**
+- Net new: **576** · re-seen: **2789**
 - Duplicate rate: **82.9%**
 
 ## Sentiment drift
@@ -36,9 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, george soros, voter fraud, postmaster general, states refuse (2098 posts · 133 authors · 119 exact · 10 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (570 posts · 24 authors · 18 exact · 1 fuzzy subclusters)
-- **Shared frame** · radical left, profit companies, leads congressional, caucus rep (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2592 posts · 158 authors · 135 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -93,13 +92,13 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest (8 posts)
-- democrats freefall, broke buried, debt directionless, maga delivers, results democrat (6 posts)
+- awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- 10000's fascist, inbreeds cuz, loves winners (10 posts)
-- dissenting senator, votes senators, party rule, rebranded internally, unity coalition (9 posts)
-- cowardfacist nazi, senile cowardfacist nazi, cowardfacist nazi pig, tolerate patheticlosers, patheticlosers killed (8 posts)
+- cabinet meeting (3 posts)
+- malicious domains, phishing worse, governor race (3 posts)
+- 10000's fascist, inbreeds cuz, loves winners (11 posts)
 - _…19 more emerging theme(s)._
 
 ## Scope note
