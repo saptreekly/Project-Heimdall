@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-17 07:05:07 UTC
+> Tactical snapshot · 2026-07-17 07:35:48 UTC
 
 ## Corpus
 
@@ -19,14 +19,9 @@
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1973 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **31**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **359**
+- Runs: **360**
 - Net new: **583** · re-seen: **2829**
 - Duplicate rate: **82.9%**
 
@@ -98,7 +93,7 @@ _None spanning multiple narratives._
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - cabinet meeting (3 posts)
 - malicious domains, phishing worse, governor race (3 posts)
-- 10000's fascist, inbreeds cuz, loves winners (11 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - _…19 more emerging theme(s)._
 
 ## Scope note
