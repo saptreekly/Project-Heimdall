@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-17 22:27:38 UTC
+> Tactical snapshot · 2026-07-17 23:21:17 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3162** |
+| Posts in database | **3164** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2599 / 1018 |
-| Distinct themes | 79 |
+| Distinct themes | 80 |
 | Duplicate clusters (full DB) | 174 |
-| Fuzzy clusters (snapshot cohort) | 9 |
+| Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 1984 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **27**
-- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **359**
-- Net new: **578** · re-seen: **2840**
-- Duplicate rate: **83.1%**
+- Net new: **580** · re-seen: **2831**
+- Duplicate rate: **83.0%**
 
 ## Sentiment drift
 
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, save america, president donald, george soros (2606 posts · 155 authors · 136 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, save america, president donald, george soros (2603 posts · 153 authors · 136 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
@@ -81,7 +76,7 @@ _None (need ≥5 authors in 90s window)._
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: President Trump just dropped this chilling line that if Republicans LOSE the 2026 midterms and next election, Democrats will DESTROY THE NATION "What they WILL do to the country if we don'…
 - **2 posts** · 2 authors · ~100% Jaccard — Billionaire Ken Griffin dropping $40 MILLION to defend GOP House &amp; Senate majorities in 2026 midterms! Big money entering the arena as Republicans fight to keep control. Do you support billionair…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 HOLY CRAP! In a stunning admission, Sen. Elissa Slotkin (D-Michigan) announced that if the SAVE America Act becomes law — "It would be hard for ANY Democrat, in ANY state, to win ANY election." Pre…
-- _…3 more fuzzy cluster(s) in snapshot cohort._
+- _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -100,11 +95,11 @@ _None spanning multiple narratives._
 - cabinet meeting (3 posts)
 - malicious domains, phishing worse, governor race (3 posts)
 - 10000's fascist, inbreeds cuz, loves winners (11 posts)
-- _…19 more emerging theme(s)._
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3162 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3164 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
