@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-17 11:49:07 UTC
+> Tactical snapshot · 2026-07-17 12:21:27 UTC
 
 ## Corpus
 
@@ -14,20 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2594 / 1017 |
-| Distinct themes | 76 |
+| Distinct themes | 84 |
 | Duplicate clusters (full DB) | 174 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1978 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **27**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **359**
-- Net new: **584** · re-seen: **2838**
+- Net new: **581** · re-seen: **2823**
 - Duplicate rate: **82.9%**
 
 ## Sentiment drift
@@ -36,8 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2607 posts · 158 authors · 137 exact · 10 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, save america, president donald, george soros (2584 posts · 155 authors · 136 exact · 9 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -98,8 +94,8 @@ _None spanning multiple narratives._
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - cabinet meeting (3 posts)
 - malicious domains, phishing worse, governor race (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…18 more emerging theme(s)._
+- 10000's fascist, inbreeds cuz, loves winners (11 posts)
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
