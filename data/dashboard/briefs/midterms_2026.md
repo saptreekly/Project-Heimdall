@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-17 03:29:02 UTC
+> Tactical snapshot · 2026-07-17 03:59:32 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3130** |
+| Posts in database | **3132** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -16,18 +16,18 @@
 | Graph nodes / edges | 2581 / 1013 |
 | Distinct themes | 75 |
 | Duplicate clusters (full DB) | 172 |
-| Fuzzy clusters (snapshot cohort) | 11 |
+| Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1966 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **27**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **358**
-- Net new: **574** · re-seen: **2806**
+- Net new: **576** · re-seen: **2808**
 - Duplicate rate: **83.0%**
 
 ## Sentiment drift
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2592 posts · 158 authors · 135 exact · 11 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2595 posts · 157 authors · 135 exact · 10 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -80,7 +80,7 @@ _None (need ≥5 authors in 90s window)._
 - **2 posts** · 2 authors · ~100% Jaccard — Billionaire Ken Griffin dropping $40 MILLION to defend GOP House &amp; Senate majorities in 2026 midterms! Big money entering the arena as Republicans fight to keep control. Do you support billionair…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 HOLY CRAP! In a stunning admission, Sen. Elissa Slotkin (D-Michigan) announced that if the SAVE America Act becomes law — "It would be hard for ANY Democrat, in ANY state, to win ANY election." Pre…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX INCREDIBLE news! Republicans *CAN NOT* win 2026 without MAGA. That's the tr…
-- _…5 more fuzzy cluster(s) in snapshot cohort._
+- _…4 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -103,7 +103,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3130 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3132 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
