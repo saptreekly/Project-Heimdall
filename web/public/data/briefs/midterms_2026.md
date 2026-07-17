@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-17 10:15:59 UTC
+> Tactical snapshot · 2026-07-17 11:09:27 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2594 / 1017 |
-| Distinct themes | 135 |
+| Distinct themes | 84 |
 | Duplicate clusters (full DB) | 174 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 1978 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **13**
-- Net-new posts logged: **7**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **359**
-- Net new: **584** · re-seen: **2834**
-- Duplicate rate: **82.9%**
+- Net new: **584** · re-seen: **2812**
+- Duplicate rate: **82.8%**
 
 ## Sentiment drift
 
@@ -36,15 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community (1422 posts · 98 authors · 46 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (572 posts · 23 authors · 18 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · cold excuses, games yes, laws midterms stop, midterms stop fraud, stop fraud cold (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, bravo pennlive (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 13 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · wow scott, presler officially, planning primary, promise lead (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · mail ballots, red wave, save america, president donald, george soros (2584 posts · 155 authors · 136 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -99,15 +93,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- support scott, presler plan, plan focus, focus flipping, flipping jersey (9 posts)
-- illegals count, seats support (7 posts)
-- verified lists (12 posts)
-- plan impeach, impeach remove, remove trump, plan impeach remove, impeach remove trump (6 posts)
-- wow scott, presler officially, planning primary, promise lead (11 posts)
+- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- days presidential, major elections (19 posts)
-- lower approval, rating given, results conservatives (14 posts)
-- _…94 more emerging theme(s)._
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- cabinet meeting (3 posts)
+- malicious domains, phishing worse, governor race (3 posts)
+- 10000's fascist, inbreeds cuz, loves winners (11 posts)
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
