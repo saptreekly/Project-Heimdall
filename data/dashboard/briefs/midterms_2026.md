@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-17 20:15:39 UTC
+> Tactical snapshot · 2026-07-17 21:11:57 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3157** |
+| Posts in database | **3162** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2597 / 1017 |
-| Distinct themes | 75 |
+| Graph nodes / edges | 2599 / 1018 |
+| Distinct themes | 65 |
 | Duplicate clusters (full DB) | 174 |
-| Fuzzy clusters (snapshot cohort) | 10 |
-| IU astroturf overlap | 2 bots / 1982 authors |
+| Fuzzy clusters (snapshot cohort) | 9 |
+| IU astroturf overlap | 2 bots / 1984 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **358**
-- Net new: **574** · re-seen: **2826**
-- Duplicate rate: **83.1%**
+- Net new: **579** · re-seen: **2813**
+- Duplicate rate: **82.9%**
 
 ## Sentiment drift
 
@@ -31,8 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, white house, save america, president donald (2615 posts · 159 authors · 137 exact · 10 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, george soros, voter fraud, postmaster general, states refuse (2127 posts · 133 authors · 123 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (573 posts · 24 authors · 18 exact · 0 fuzzy subclusters)
+- **Shared frame** · radical left, profit companies, leads congressional, caucus rep (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -73,9 +79,9 @@ _None (need ≥5 authors in 90s window)._
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: Senate Majority Leader John Thune has amassed a whopping $238 MILLION dollars into his Senate super PAC heading into the 2026 midterms — Axios That's more than DOUBLE the last midterms $23…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: The government shutdown battle might start NEXT WEEK — House Republicans are preparing to ram through a government funding bill THROUGH THE 2026 MIDTERMS and might bring it to the floor in…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: President Trump just dropped this chilling line that if Republicans LOSE the 2026 midterms and next election, Democrats will DESTROY THE NATION "What they WILL do to the country if we don'…
-- **3 posts** · 3 authors · ~100% Jaccard — Trump's Deranged Authoritarian Coup: Firing the FEC to Annihilate Democracy and Rig the 2026 Midterms In a psychotic escalation straight out of a dictator's playbook, Donald Trump has now fired the t…
 - **2 posts** · 2 authors · ~100% Jaccard — Billionaire Ken Griffin dropping $40 MILLION to defend GOP House &amp; Senate majorities in 2026 midterms! Big money entering the arena as Republicans fight to keep control. Do you support billionair…
-- _…4 more fuzzy cluster(s) in snapshot cohort._
+- **2 posts** · 2 authors · ~100% Jaccard — 🚨 HOLY CRAP! In a stunning admission, Sen. Elissa Slotkin (D-Michigan) announced that if the SAVE America Act becomes law — "It would be hard for ANY Democrat, in ANY state, to win ANY election." Pre…
+- _…3 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -87,18 +93,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest, power register (5 posts)
+- awakening largest (8 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- cabinet meeting (3 posts)
-- malicious domains, phishing worse, governor race (3 posts)
-- 10000's fascist, inbreeds cuz, loves winners (11 posts)
-- _…19 more emerging theme(s)._
+- 10000's fascist, inbreeds cuz, loves winners (10 posts)
+- dissenting senator, votes senators, party rule, rebranded internally, unity coalition (9 posts)
+- cowardfacist nazi, senile cowardfacist nazi, cowardfacist nazi pig, tolerate patheticlosers, patheticlosers killed (8 posts)
+- looking overly, senior weeks, massive course (4 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3157 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3162 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

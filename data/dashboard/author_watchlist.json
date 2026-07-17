@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1096,
+      "run_counter": 1097,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1467,7 +1467,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-07-15T05:42:03.841390+00:00",
           "last_tweet_at": "2026-07-14T21:47:25+00:00",
-          "inserted_total": 24,
+          "inserted_total": 25,
           "polls": 2,
           "inserts_from_polls": 4,
           "status": "active"
@@ -1940,16 +1940,16 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "865934401267531776": {
-          "author_id": "865934401267531776",
-          "handle": "xspectDS",
+        "282695161": {
+          "author_id": "282695161",
+          "handle": "RealWayneDupree",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.45,
-          "last_polled_at": "2026-07-17T20:15:37.179153+00:00",
+          "priority": 0.5700000000000001,
+          "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 0,
-          "polls": 1,
+          "inserted_total": 1,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         }
