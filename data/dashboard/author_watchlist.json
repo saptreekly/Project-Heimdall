@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1120,
+      "run_counter": 1121,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,11 +1940,11 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1243560408025198593": {
-          "author_id": "1243560408025198593",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "965694944567611394": {
+          "author_id": "965694944567611394",
+          "handle": "BeingJWood",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
