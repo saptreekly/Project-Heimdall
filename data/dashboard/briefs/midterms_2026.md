@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-18 17:42:20 UTC
+> Tactical snapshot · 2026-07-18 18:33:42 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2623 / 1024 |
-| Distinct themes | 80 |
+| Distinct themes | 81 |
 | Duplicate clusters (full DB) | 175 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2005 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **25**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **358**
-- Net new: **595** · re-seen: **2827**
-- Duplicate rate: **82.6%**
+- Runs: **357**
+- Net new: **594** · re-seen: **2839**
+- Duplicate rate: **82.7%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, president donald, america act, election integrity executive (2632 posts · 156 authors · 137 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, president donald, america act, election integrity executive (2629 posts · 156 authors · 137 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, trump ally, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
@@ -100,7 +100,7 @@ _None spanning multiple narratives._
 - cabinet meeting (3 posts)
 - malicious domains, phishing worse, governor race (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…19 more emerging theme(s)._
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
