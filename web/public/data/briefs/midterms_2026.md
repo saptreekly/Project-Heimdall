@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-18 15:32:45 UTC
+> Tactical snapshot · 2026-07-18 16:10:03 UTC
 
 ## Corpus
 
@@ -19,16 +19,11 @@
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2003 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **21**
-- Net-new posts logged: **3**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **358**
-- Net new: **592** · re-seen: **2839**
-- Duplicate rate: **82.7%**
+- Runs: **357**
+- Net new: **591** · re-seen: **2813**
+- Duplicate rate: **82.6%**
 
 ## Sentiment drift
 
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, president donald, america act, election integrity executive (2640 posts · 156 authors · 137 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, president donald, america act, election integrity executive (2638 posts · 156 authors · 137 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, trump ally, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
