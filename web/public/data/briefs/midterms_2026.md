@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-18 21:07:56 UTC
+> Tactical snapshot · 2026-07-18 21:42:33 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3201** |
+| Posts in database | **3204** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2624 / 1024 |
-| Distinct themes | 76 |
+| Graph nodes / edges | 2625 / 1024 |
+| Distinct themes | 62 |
 | Duplicate clusters (full DB) | 175 |
 | Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 2 bots / 2006 authors |
+| IU astroturf overlap | 2 bots / 2008 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **4**
+- Re-sightings (duplicate encounters): **17**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **357**
-- Net new: **592** · re-seen: **2815**
-- Duplicate rate: **82.6%**
+- Net new: **594** · re-seen: **2832**
+- Duplicate rate: **82.7%**
 
 ## Sentiment drift
 
@@ -36,15 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, white house, president donald, america act (2649 posts · 153 authors · 137 exact · 7 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, trump ally, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, president donald, george soros, postmaster general (2169 posts · 133 authors · 124 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (578 posts · 22 authors · 18 exact · 0 fuzzy subclusters)
+- **Shared frame** · radical left, profit companies, leads congressional, caucus rep (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
-- dense_cluster_64_size_3
-- dense_cluster_550_size_3
-- dense_cluster_1416_size_3
+- dense_cluster_65_size_3
+- dense_cluster_551_size_3
+- dense_cluster_1417_size_3
 - cross_author_fuzzy_30authors_32posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -93,18 +93,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest, power register (5 posts)
+- awakening largest (8 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- malicious domains, phishing worse, governor race (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- 10000's fascist, inbreeds cuz, loves winners (11 posts)
+- dissenting senator, votes senators, party rule, rebranded internally, unity coalition (9 posts)
+- cowardfacist nazi, senile cowardfacist nazi, cowardfacist nazi pig, tolerate patheticlosers, patheticlosers killed (8 posts)
+- monumental defeat, looking overly (6 posts)
 - _…17 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3201 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3204 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
