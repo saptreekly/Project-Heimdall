@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-19 04:55:17 UTC
+> Tactical snapshot · 2026-07-19 05:40:14 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3204** |
+| Posts in database | **3206** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,15 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2625 / 1024 |
-| Distinct themes | 77 |
+| Distinct themes | 76 |
 | Duplicate clusters (full DB) | 175 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2008 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **358**
-- Net new: **590** · re-seen: **2789**
+- Runs: **359**
+- Net new: **592** · re-seen: **2789**
 - Duplicate rate: **82.5%**
 
 ## Sentiment drift
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, red wave, america act, george soros (2643 posts · 152 authors · 137 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, white house, america act (2648 posts · 150 authors · 137 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, election fraud, looming midterm elections, breaking longtime, trump ally (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
@@ -99,7 +99,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3204 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3206 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
