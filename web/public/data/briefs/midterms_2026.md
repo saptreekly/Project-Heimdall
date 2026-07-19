@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-19 10:00:22 UTC
+> Tactical snapshot · 2026-07-19 11:04:36 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3211** |
+| Posts in database | **3222** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2627 / 1024 |
-| Distinct themes | 81 |
+| Distinct themes | 76 |
 | Duplicate clusters (full DB) | 175 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2010 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **15**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **360**
-- Net new: **591** · re-seen: **2791**
-- Duplicate rate: **82.5%**
+- Runs: **359**
+- Net new: **600** · re-seen: **2787**
+- Duplicate rate: **82.3%**
 
 ## Sentiment drift
 
@@ -36,9 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, white house, america act, president donald (2646 posts · 149 authors · 137 exact · 7 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, trump ally, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, america act, george soros (2664 posts · 143 authors · 137 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, election fraud, looming midterm elections, breaking longtime, trump ally (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -97,14 +92,14 @@ _None spanning multiple narratives._
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- cabinet meeting (3 posts)
 - malicious domains, phishing worse, governor race (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…20 more emerging theme(s)._
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- _…17 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3211 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3222 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
