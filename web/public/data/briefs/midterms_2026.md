@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-19 11:43:49 UTC
+> Tactical snapshot · 2026-07-19 12:07:07 UTC
 
 ## Corpus
 
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2633 / 1024 |
-| Distinct themes | 61 |
+| Distinct themes | 80 |
 | Duplicate clusters (full DB) | 175 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2016 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **11**
-- Net-new posts logged: **9**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **359**
-- Net new: **609** · re-seen: **2794**
-- Duplicate rate: **82.1%**
+- Net new: **603** · re-seen: **2781**
+- Duplicate rate: **82.2%**
 
 ## Sentiment drift
 
@@ -36,9 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, president donald, george soros, voter fraud, postmaster general (2203 posts · 132 authors · 123 exact · 8 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (578 posts · 18 authors · 18 exact · 0 fuzzy subclusters)
-- **Shared frame** · radical left, profit companies, leads congressional, caucus rep (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, red wave, america act, george soros (2664 posts · 143 authors · 137 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, election fraud, looming midterm elections, breaking longtime, trump ally (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · billionaire ken, griffin dropping, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -93,14 +88,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest (8 posts)
+- awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- 10000's fascist, inbreeds cuz, loves winners (11 posts)
-- dissenting senator, votes senators, party rule, rebranded internally, unity coalition (9 posts)
-- cowardfacist nazi, senile cowardfacist nazi, cowardfacist nazi pig, tolerate patheticlosers, patheticlosers killed (8 posts)
-- monumental defeat, steve hilton, looking overly (6 posts)
-- _…17 more emerging theme(s)._
+- malicious domains, phishing worse, governor race (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
