@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-19 17:43:26 UTC
+> Tactical snapshot · 2026-07-19 18:33:23 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2636 / 1024 |
-| Distinct themes | 81 |
+| Distinct themes | 80 |
 | Duplicate clusters (full DB) | 176 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2019 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **4**
+- Re-sightings (duplicate encounters): **23**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **358**
-- Net new: **607** · re-seen: **2795**
-- Duplicate rate: **82.2%**
+- Runs: **359**
+- Net new: **607** · re-seen: **2818**
+- Duplicate rate: **82.3%**
 
 ## Sentiment drift
 
@@ -36,8 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, america act, president donald, election integrity executive (2678 posts · 147 authors · 139 exact · 8 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, mail ballots, america act, president donald, election integrity executive (2667 posts · 144 authors · 138 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, trump ally, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -92,14 +93,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - cabinet meeting (3 posts)
 - malicious domains, phishing worse, governor race (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…21 more emerging theme(s)._
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
