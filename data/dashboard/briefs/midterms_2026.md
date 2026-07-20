@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-20 16:44:08 UTC
+> Tactical snapshot · 2026-07-20 18:26:32 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3284** |
+| Posts in database | **3285** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2661 / 1040 |
-| Distinct themes | 155 |
+| Graph nodes / edges | 2662 / 1040 |
+| Distinct themes | 156 |
 | Duplicate clusters (full DB) | 177 |
 | Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 2029 authors |
+| IU astroturf overlap | 2 bots / 2030 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **365**
-- Net new: **630** · re-seen: **2819**
+- Runs: **364**
+- Net new: **629** · re-seen: **2815**
 - Duplicate rate: **81.7%**
 
 ## Sentiment drift
@@ -31,13 +36,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, lobbying firms, seeking reelection (1320 posts · 87 authors · 46 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · dissenting senator, rebranded internally, unity coalition (517 posts · 30 authors · 10 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, lobbying firms (1317 posts · 86 authors · 45 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · seeking reelection, dissenting senator, rebranded internally (509 posts · 31 authors · 10 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · ugc equity, regulation supreme, case details, eric peters (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 9 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -102,11 +107,11 @@ _None spanning multiple narratives._
 - illegals count, seats support (6 posts)
 - crimes urgently (9 posts)
 - upholds california's, scotus upheld, states redistrict (5 posts)
-- _…113 more emerging theme(s)._
+- _…114 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3284 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3285 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

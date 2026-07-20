@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1176,
+      "run_counter": 1177,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,11 +1940,11 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1601633666551128068": {
-          "author_id": "1601633666551128068",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "90323207": {
+          "author_id": "90323207",
+          "handle": "vifindia",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
