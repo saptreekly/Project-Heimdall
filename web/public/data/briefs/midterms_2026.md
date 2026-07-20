@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-20 20:10:03 UTC
+> Tactical snapshot · 2026-07-20 20:40:39 UTC
 
 ## Corpus
 
@@ -14,20 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2663 / 1040 |
-| Distinct themes | 126 |
+| Distinct themes | 76 |
 | Duplicate clusters (full DB) | 177 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 2031 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **15**
-- Net-new posts logged: **2**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **365**
-- Net new: **631** · re-seen: **2830**
+- Net new: **627** · re-seen: **2816**
 - Duplicate rate: **81.8%**
 
 ## Sentiment drift
@@ -36,15 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, red (591 posts · 15 authors · 18 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · away world's, seizing milestone, fresh rallying, extreme wealth (37 posts · 6 authors · 12 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, act juice, pressure secure (13 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · years old, professor emeritus, recognized legal (12 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, america act, mail ballots, election integrity executive, court ruling (2712 posts · 142 authors · 138 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, trump ally, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -99,15 +88,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping (5 posts)
-- polling stations, agents posted, mullin stands (5 posts)
-- illegals count, seats support (7 posts)
-- avoid impeachment, crimes urgently, lower approval (15 posts)
-- union historically (4 posts)
-- federal judge (9 posts)
-- according polymarket, currently chance (6 posts)
-- primary challenge, wow scott, presler officially, lead charge (8 posts)
-- _…112 more emerging theme(s)._
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- cabinet meeting, era donald (3 posts)
+- malicious domains, spotted live, phishing worse, governor race (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
