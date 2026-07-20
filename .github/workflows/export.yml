@@ -13,8 +13,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: export-dashboard
-  cancel-in-progress: true
+  group: heimdall-repo-data
+  cancel-in-progress: false
 
 env:
   HF_HOME: ${{ github.workspace }}/.cache/huggingface

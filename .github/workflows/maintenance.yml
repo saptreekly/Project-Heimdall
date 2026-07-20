@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: maintenance
+  group: heimdall-repo-data
   cancel-in-progress: false
 
 env:

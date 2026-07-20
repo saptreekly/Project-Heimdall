@@ -36,8 +36,9 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  # Share the data-writer lock so metrics commits don't race ingest/maintenance.
+  group: heimdall-repo-data
+  cancel-in-progress: false
 
 env:
   HF_HOME: ${{ github.workspace }}/.cache/huggingface

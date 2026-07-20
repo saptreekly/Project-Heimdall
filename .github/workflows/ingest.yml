@@ -21,7 +21,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: ingest-data
+  # Serialize all workflows that commit generated data to main.
+  group: heimdall-repo-data
   cancel-in-progress: false
 
 env:
