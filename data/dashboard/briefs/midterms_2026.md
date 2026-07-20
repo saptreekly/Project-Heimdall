@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-20 21:50:15 UTC
+> Tactical snapshot · 2026-07-20 22:40:40 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3287** |
+| Posts in database | **3290** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2663 / 1040 |
-| Distinct themes | 76 |
+| Graph nodes / edges | 2667 / 1042 |
+| Distinct themes | 77 |
 | Duplicate clusters (full DB) | 177 |
-| Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 2031 authors |
+| Fuzzy clusters (snapshot cohort) | 8 |
+| IU astroturf overlap | 2 bots / 2034 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **17**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **365**
-- Net new: **627** · re-seen: **2821**
+- Net new: **630** · re-seen: **2837**
 - Duplicate rate: **81.8%**
 
 ## Sentiment drift
@@ -31,8 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, america act, mail ballots, election integrity executive, court ruling (2712 posts · 142 authors · 138 exact · 8 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, trump ally, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, america act, mail ballots, election integrity executive, george soros (2717 posts · 141 authors · 138 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
@@ -72,11 +77,11 @@ _None (need ≥5 authors in 90s window)._
 
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: President Trump just dropped this chilling line that if Republicans LOSE the 2026 midterms and next election, Democrats will DESTROY THE NATION "What they WILL do to the country if we don'…
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: Senate Majority Leader John Thune has amassed a whopping $238 MILLION dollars into his Senate super PAC heading into the 2026 midterms — Axios That's more than DOUBLE the last midterms $23…
-- **5 posts** · 5 authors · ~100% Jaccard — JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX Republicans *CAN NOT* win 2026 without MAGA. That's the truth. Passing the SA…
+- **4 posts** · 4 authors · ~100% Jaccard — JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX Republicans *CAN NOT* win 2026 without MAGA. That's the truth. Passing the SA…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: The government shutdown battle might start NEXT WEEK — House Republicans are preparing to ram through a government funding bill THROUGH THE 2026 MIDTERMS and might bring it to the floor in…
 - **2 posts** · 2 authors · ~100% Jaccard — JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms "It's doubtful that Trump's speech moved the needle w…
 - **2 posts** · 2 authors · ~100% Jaccard — Billionaire Ken Griffin dropping $40 MILLION to defend GOP House &amp; Senate majorities in 2026 midterms! Big money entering the arena as Republicans fight to keep control. Do you support billionair…
-- _…3 more fuzzy cluster(s) in snapshot cohort._
+- _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -88,18 +93,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- corrupt doj, stop gaslighting, happy talk (9 posts)
+- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - cabinet meeting, era donald (3 posts)
 - malicious domains, spotted live, phishing worse, governor race (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…18 more emerging theme(s)._
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3287 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3290 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
