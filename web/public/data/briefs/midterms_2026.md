@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-20 19:16:34 UTC
+> Tactical snapshot · 2026-07-20 20:10:03 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3285** |
+| Posts in database | **3287** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2662 / 1040 |
-| Distinct themes | 156 |
+| Graph nodes / edges | 2663 / 1040 |
+| Distinct themes | 126 |
 | Duplicate clusters (full DB) | 177 |
 | Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 2030 authors |
+| IU astroturf overlap | 2 bots / 2031 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **364**
-- Net new: **629** · re-seen: **2815**
-- Duplicate rate: **81.7%**
+- Runs: **365**
+- Net new: **631** · re-seen: **2830**
+- Duplicate rate: **81.8%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, lobbying firms (1317 posts · 86 authors · 45 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · seeking reelection, dissenting senator, rebranded internally (509 posts · 31 authors · 10 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · ugc equity, regulation supreme, case details, eric peters (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (591 posts · 15 authors · 18 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · away world's, seizing milestone, fresh rallying, extreme wealth (37 posts · 6 authors · 12 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · points enthusiastic, truth passing, act juice, pressure secure (13 posts · 8 authors · 2 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · years old, professor emeritus, recognized legal (12 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,19 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, individual directly, final removal (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (58 posts)
-- focus flipping, union historically (9 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- board trustees, potus potus, women advocates, press statement (35 posts)
-- illegals count, seats support (6 posts)
-- crimes urgently (9 posts)
-- upholds california's, scotus upheld, states redistrict (5 posts)
-- _…114 more emerging theme(s)._
+- focus flipping (5 posts)
+- polling stations, agents posted, mullin stands (5 posts)
+- illegals count, seats support (7 posts)
+- avoid impeachment, crimes urgently, lower approval (15 posts)
+- union historically (4 posts)
+- federal judge (9 posts)
+- according polymarket, currently chance (6 posts)
+- primary challenge, wow scott, presler officially, lead charge (8 posts)
+- _…112 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3285 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3287 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
