@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-20 08:38:34 UTC
+> Tactical snapshot · 2026-07-20 09:52:20 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3270** |
+| Posts in database | **3271** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2653 / 1038 |
-| Distinct themes | 153 |
+| Graph nodes / edges | 2654 / 1038 |
+| Distinct themes | 152 |
 | Duplicate clusters (full DB) | 177 |
 | Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 2 bots / 2022 authors |
+| IU astroturf overlap | 2 bots / 2023 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **14**
+- Re-sightings (duplicate encounters): **16**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **359**
-- Net new: **625** · re-seen: **2758**
-- Duplicate rate: **81.5%**
+- Runs: **360**
+- Net new: **626** · re-seen: **2774**
+- Duplicate rate: **81.6%**
 
 ## Sentiment drift
 
@@ -36,21 +36,21 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, lobbying firms (1328 posts · 85 authors · 47 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · seeking reelection, grok render, citation argument, sidney powell, acting odni (499 posts · 29 authors · 10 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, super pacs (1338 posts · 87 authors · 48 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · seeking reelection, dissenting senator, rebranded internally (495 posts · 26 authors · 10 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections, bravo pennlive (20 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · ugc equity, regulation supreme, case details, eric peters (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 13 authors · 2 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
-- dense_cluster_67_size_3
-- dense_cluster_553_size_3
-- dense_cluster_1418_size_3
+- dense_cluster_68_size_3
+- dense_cluster_554_size_3
+- dense_cluster_1419_size_3
 - cross_author_fuzzy_31authors_33posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -100,18 +100,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (59 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (58 posts)
 - focus flipping, union historically (9 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- board trustees, potus potus, women advocates, press statement (34 posts)
-- seats support (6 posts)
-- avoid impeachment, crimes urgently (10 posts)
-- currently chance (5 posts)
-- _…111 more emerging theme(s)._
+- board trustees, potus potus, women advocates, press statement (33 posts)
+- illegals count, seats support (7 posts)
+- crimes urgently (10 posts)
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- _…110 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3270 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3271 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
