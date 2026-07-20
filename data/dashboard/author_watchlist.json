@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1168,
+      "run_counter": 1169,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,16 +1940,16 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "18137749": {
-          "author_id": "18137749",
-          "handle": "ChrisVanHollen",
-          "discovered_via": "keyword",
-          "depth": 0,
+        "1708324186240741376": {
+          "author_id": "1708324186240741376",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
           "priority": 0.45,
-          "last_polled_at": "2026-07-20T11:30:07.325989+00:00",
-          "last_tweet_at": "2026-07-16T23:43:28+00:00",
+          "last_polled_at": null,
+          "last_tweet_at": null,
           "inserted_total": 0,
-          "polls": 1,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         }
