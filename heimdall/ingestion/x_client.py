@@ -27,6 +27,12 @@ OPENAPI_PLACEHOLDER_URL = (
     "https://raw.githubusercontent.com/fa0311/twitter-openapi/"
     "refs/heads/main/src/config/placeholder.json"
 )
+
+
+class XGraphQLRequestError(RuntimeError):
+    """X GraphQL returned an error payload (may be transient)."""
+
+
 # SearchTimeline expects the newer web feature bundle (GET often returns 401).
 SEARCH_FEATURES = {
     "rweb_video_screen_enabled": False,
@@ -457,7 +463,7 @@ class XGraphQLClient:
             messages = "; ".join(
                 str(error.get("message", error)) for error in payload["errors"] if error
             )
-            raise RuntimeError(messages or "X GraphQL request failed")
+            raise XGraphQLRequestError(messages or "X GraphQL request failed")
         return payload
 
     async def search(

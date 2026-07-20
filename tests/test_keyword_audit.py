@@ -47,8 +47,11 @@ def test_validate_keyword_query_rejects_theme_junk() -> None:
     assert validate_keyword_query("2026 disaster looms") == (False, "blocked token")
     assert validate_keyword_query("2026 hulhumale phase") == (False, "blocked token")
     assert validate_keyword_query("2026 state setting") == (False, "blocked token")
+    assert validate_keyword_query("2026 congress post") == (False, "blocked token")
+    assert validate_keyword_query("2026 poll spells") == (False, "blocked token")
     assert validate_keyword_query("2026 red wave") == (True, "")
     assert validate_keyword_query("2026 election integrity") == (True, "")
+    assert validate_keyword_query("2026 midwest democrat") == (True, "")
 
 
 def test_is_lifetime_protected() -> None:

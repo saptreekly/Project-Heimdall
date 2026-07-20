@@ -90,15 +90,18 @@ jobs:
 
       - name: Commit maintenance outputs
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dashboard/heimdall.db data/dashboard/theme_baseline.json data/dashboard/keyword_suggestions.json data/dashboard/x_keyword_rotation.json data/dashboard/author_watchlist.json data/scheduled_ingest.json web/public/data/snapshot.json data/dashboard/briefs web/public/data/briefs reports/
-          for f in data/dashboard/keyword_rotation_log.jsonl; do
-            [ -f "$f" ] && git add "$f"
-          done
-          if git diff --staged --quiet; then
-            echo "No maintenance changes to commit."
-          else
-            git commit -m "chore: weekly maintenance, theme drift, keyword audit [skip ci]"
-            git push
-          fi
+          bash scripts/ci_git_push.sh \
+            --message "chore: weekly maintenance, theme drift, keyword audit [skip ci]" \
+            --add-if-exists \
+              data/dashboard/keyword_rotation_log.jsonl \
+            -- \
+              data/dashboard/heimdall.db \
+              data/dashboard/theme_baseline.json \
+              data/dashboard/keyword_suggestions.json \
+              data/dashboard/x_keyword_rotation.json \
+              data/dashboard/author_watchlist.json \
+              data/scheduled_ingest.json \
+              web/public/data/snapshot.json \
+              data/dashboard/briefs \
+              web/public/data/briefs \
+              reports/

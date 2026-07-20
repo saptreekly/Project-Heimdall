@@ -46,16 +46,13 @@ jobs:
 
       - name: Commit watchlists
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dashboard/WATCHLIST.md data/dashboard/watchlist_state.json
-          git add data/dashboard/SENTIMENT_WATCHLIST.md data/dashboard/sentiment_watchlist_state.json
-          if git diff --staged --quiet; then
-            echo "Watchlists unchanged."
-          else
-            git commit -m "chore: daily coordination and sentiment watchlist update [skip ci]"
-            git push
-          fi
+          bash scripts/ci_git_push.sh \
+            --message "chore: daily coordination and sentiment watchlist update [skip ci]" \
+            -- \
+              data/dashboard/WATCHLIST.md \
+              data/dashboard/watchlist_state.json \
+              data/dashboard/SENTIMENT_WATCHLIST.md \
+              data/dashboard/sentiment_watchlist_state.json
 
       - name: Open issues for coordination tier crossings
         env:

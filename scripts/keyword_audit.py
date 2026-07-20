@@ -89,6 +89,12 @@ _BLOCKED_TOKENS = frozenset(
         "replaced",
         "unregulated",
         "dirty",
+        "post",
+        "posts",
+        "spells",
+        "spell",
+        "phase",
+        "setting",
     }
 )
 
@@ -129,6 +135,11 @@ def validate_keyword_query(query: str) -> tuple[bool, str]:
             return True, ""
 
     if tokens & _POLITICAL_ANCHOR_TOKENS:
+        # Reject weak pairings like "congress post" / "poll spells" where an
+        # anchor is glued to a filler/noise token.
+        fillers = tokens - _POLITICAL_ANCHOR_TOKENS
+        if fillers and fillers <= _BLOCKED_TOKENS:
+            return False, "anchor with blocked filler"
         if len(tokens) >= 2 or len(q) >= 12:
             return True, ""
         return False, "single-token query too short"

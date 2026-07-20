@@ -1,4 +1,5 @@
 import json
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import pytest
@@ -12,6 +13,11 @@ from scripts.scheduled_ingest import (
     select_keywords_explore_yield,
     select_keywords_for_run,
 )
+
+
+def _recent_iso(hours_ago: int = 1) -> str:
+    return (datetime.now(UTC) - timedelta(hours=hours_ago)).isoformat()
+
 
 
 def test_load_scheduled_jobs() -> None:
@@ -46,8 +52,8 @@ def test_explore_yield_prefers_under_sampled(tmp_path, monkeypatch) -> None:
     log.write_text(
         "\n".join(
             [
-                json.dumps({"at": "2026-06-05T12:00:00+00:00", "keywords": ["alpha"], "inserted": 5}),
-                json.dumps({"at": "2026-06-05T13:00:00+00:00", "keywords": ["alpha"], "inserted": 3}),
+                json.dumps({"at": _recent_iso(3), "keywords": ["alpha"], "inserted": 5}),
+                json.dumps({"at": _recent_iso(2), "keywords": ["alpha"], "inserted": 3}),
             ]
         )
         + "\n",
@@ -65,7 +71,7 @@ def test_explore_yield_rotates_top_yield_pool(tmp_path, monkeypatch) -> None:
         lines.append(
             json.dumps(
                 {
-                    "at": f"2026-06-0{i + 1}T12:00:00+00:00",
+                    "at": _recent_iso(10 + i),
                     "keywords": ["alpha"],
                     "inserted": 10,
                 }
@@ -74,7 +80,7 @@ def test_explore_yield_rotates_top_yield_pool(tmp_path, monkeypatch) -> None:
         lines.append(
             json.dumps(
                 {
-                    "at": f"2026-06-0{i + 1}T13:00:00+00:00",
+                    "at": _recent_iso(20 + i),
                     "keywords": ["beta"],
                     "inserted": 1,
                 }
@@ -83,7 +89,7 @@ def test_explore_yield_rotates_top_yield_pool(tmp_path, monkeypatch) -> None:
         lines.append(
             json.dumps(
                 {
-                    "at": f"2026-06-0{i + 1}T14:00:00+00:00",
+                    "at": _recent_iso(30 + i),
                     "keywords": ["gamma"],
                     "inserted": 0,
                 }
@@ -157,3 +163,11 @@ async def test_x_job_skipped_without_credentials(monkeypatch, tmp_path) -> None:
     job = load_jobs(cfg)[0]
     result = await run_job(job)
     assert result.get("skipped") is True
+
+
+def test_is_skippable_x_error_accepts_graphql_dependency() -> None:
+    from heimdall.ingestion.x_client import XGraphQLRequestError
+    from scripts.scheduled_ingest import _is_skippable_x_error
+
+    assert _is_skippable_x_error(XGraphQLRequestError("Dependency: Unspecified"))
+    assert not _is_skippable_x_error(ValueError("unrelated"))

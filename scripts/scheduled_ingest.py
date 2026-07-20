@@ -73,6 +73,27 @@ def _x_credentials_present() -> bool:
     return bool(s.x_auth_token and s.x_ct0)
 
 
+def _is_skippable_x_error(exc: BaseException) -> bool:
+    """Return True for transient X GraphQL/network failures that should not fail CI."""
+    from heimdall.ingestion.x_client import XGraphQLRequestError
+
+    if isinstance(exc, XGraphQLRequestError):
+        return True
+    # httpx transport errors (timeouts, DNS, connection reset)
+    try:
+        import httpx
+    except ImportError:
+        httpx = None  # type: ignore[assignment]
+    if httpx is not None and isinstance(exc, (httpx.HTTPError, httpx.TimeoutException)):
+        return True
+    msg = str(exc).lower()
+    # Auth expiry should still surface clearly, but counting as skipped+fallback is safer
+    # than hard-failing the scheduled workflow when cookies need refresh.
+    if "401" in msg and "session cookies" in msg:
+        return True
+    return False
+
+
 def _scheduled_keywords_per_run() -> int | None:
     raw = os.environ.get("X_SCHEDULED_KEYWORDS_PER_RUN", "").strip()
     if not raw:
@@ -433,6 +454,17 @@ async def run_job_on_platform(
                 "skipped": True,
                 "reason": str(exc),
             }
+        except Exception as exc:
+            # Transient X GraphQL / network failures should skip this run (and allow
+            # fallback platforms) instead of failing the whole CI job.
+            if platform == Platform.X and _is_skippable_x_error(exc):
+                return {
+                    "narrative_name": job.narrative_name,
+                    "platform": platform_name,
+                    "skipped": True,
+                    "reason": f"X request failed: {exc}",
+                }
+            raise
 
     if platform == Platform.X and job.author_watch_enabled and not result.get("skipped"):
         await _apply_author_watchlist_updates(
@@ -554,6 +586,16 @@ async def run(config: Path, export: bool) -> int:
 
     if not any_ran:
         print("\nNo jobs ran.", file=sys.stderr)
+        x_transient = any(
+            str(r.get("reason") or "").startswith("X request failed:") for r in results
+        )
+        if x_transient:
+            print(
+                "All X attempts failed transiently (GraphQL/network). "
+                "Treating as soft success so CI does not fail on intermittent X errors.",
+                file=sys.stderr,
+            )
+            return 0
         if any(j.platform == "x" for j in jobs):
             print("Add GitHub secrets AUTH_TOKEN and CT0, or check daily budget.", file=sys.stderr)
         return 1

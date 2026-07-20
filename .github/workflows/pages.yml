@@ -126,15 +126,10 @@ jobs:
 
       - name: Commit metrics history
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dashboard/metrics_history.jsonl
-          if git diff --staged --quiet; then
-            echo "Metrics history unchanged."
-          else
-            git commit -m "chore: append daily snapshot metrics [skip ci]"
-            git push
-          fi
+          bash scripts/ci_git_push.sh \
+            --message "chore: append daily snapshot metrics [skip ci]" \
+            -- \
+              data/dashboard/metrics_history.jsonl
 
       - uses: actions/setup-node@v4
         with:

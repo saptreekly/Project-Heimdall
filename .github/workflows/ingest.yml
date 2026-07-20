@@ -95,23 +95,20 @@ jobs:
       - name: Commit ingest data to repo
         id: commit
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/dashboard/heimdall.db data/dashboard/x_rate_state.json data/dashboard/x_keyword_rotation.json data/dashboard/author_watchlist.json web/public/data/snapshot.json data/dashboard/briefs web/public/data/briefs
-          if [ -f data/dashboard/SENTIMENT_WATCHLIST.md ]; then
-            git add data/dashboard/SENTIMENT_WATCHLIST.md data/dashboard/sentiment_watchlist_state.json
-          fi
-          if [ -f data/dashboard/ingest_runs.jsonl ]; then
-            git add data/dashboard/ingest_runs.jsonl
-          fi
-          if git diff --staged --quiet; then
-            echo "committed=false" >> "$GITHUB_OUTPUT"
-            echo "No data changes to commit."
-          else
-            git commit -m "chore: scheduled ingest data and dashboard snapshot [skip ci]"
-            git push
-            echo "committed=true" >> "$GITHUB_OUTPUT"
-          fi
+          bash scripts/ci_git_push.sh \
+            --message "chore: scheduled ingest data and dashboard snapshot [skip ci]" \
+            --add-if-exists \
+              data/dashboard/SENTIMENT_WATCHLIST.md \
+              data/dashboard/sentiment_watchlist_state.json \
+              data/dashboard/ingest_runs.jsonl \
+            -- \
+              data/dashboard/heimdall.db \
+              data/dashboard/x_rate_state.json \
+              data/dashboard/x_keyword_rotation.json \
+              data/dashboard/author_watchlist.json \
+              web/public/data/snapshot.json \
+              data/dashboard/briefs \
+              web/public/data/briefs
 
       - name: Ingest summary
         if: always()
