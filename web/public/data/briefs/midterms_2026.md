@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-20 12:29:58 UTC
+> Tactical snapshot · 2026-07-20 13:24:36 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3279** |
+| Posts in database | **3280** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2657 / 1038 |
+| Graph nodes / edges | 2658 / 1039 |
 | Distinct themes | 78 |
 | Duplicate clusters (full DB) | 177 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 2026 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **4**
+- Net-new posts logged: **1**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **364**
-- Net new: **634** · re-seen: **2819**
+- Net new: **634** · re-seen: **2813**
 - Duplicate rate: **81.6%**
 
 ## Sentiment drift
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, america act, mail ballots, election integrity executive, george soros (2696 posts · 142 authors · 138 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, america act, mail ballots, election integrity executive, court ruling (2702 posts · 140 authors · 138 exact · 8 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, trump ally, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
@@ -70,7 +75,7 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **7 posts** · 7 authors · ~100% Jaccard — 🚨 JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX INCREDIBLE news! Republicans *CAN NOT* win 2026 without MAGA. That's the tr…
+- **6 posts** · 6 authors · ~100% Jaccard — 🚨 JUST IN: A poll has just found MAGA is +12 POINTS more enthusiastic to vote in the 2026 midterms than Democrats — HarrisX INCREDIBLE news! Republicans *CAN NOT* win 2026 without MAGA. That's the tr…
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: President Trump just dropped this chilling line that if Republicans LOSE the 2026 midterms and next election, Democrats will DESTROY THE NATION "What they WILL do to the country if we don'…
 - **5 posts** · 5 authors · ~100% Jaccard — 🚨 JUST IN: Senate Majority Leader John Thune has amassed a whopping $238 MILLION dollars into his Senate super PAC heading into the 2026 midterms — Axios That's more than DOUBLE the last midterms $23…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: The government shutdown battle might start NEXT WEEK — House Republicans are preparing to ram through a government funding bill THROUGH THE 2026 MIDTERMS and might bring it to the floor in…
@@ -99,7 +104,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3279 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3280 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
