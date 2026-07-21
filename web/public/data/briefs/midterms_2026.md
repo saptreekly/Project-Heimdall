@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-21 11:08:07 UTC
+> Tactical snapshot · 2026-07-21 11:44:50 UTC
 
 ## Corpus
 
@@ -19,16 +19,11 @@
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2045 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **17**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **368**
-- Net new: **662** · re-seen: **2860**
-- Duplicate rate: **81.2%**
+- Runs: **370**
+- Net new: **662** · re-seen: **2875**
+- Duplicate rate: **81.3%**
 
 ## Sentiment drift
 
@@ -36,8 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, lobbying firms (1336 posts · 89 authors · 44 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · seeking reelection, grok render, citation argument, sidney powell, acting odni (523 posts · 29 authors · 9 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, proposed rule (1336 posts · 88 authors · 45 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · seeking reelection, dissenting senator, rebranded internally (517 posts · 30 authors · 9 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · ugc equity, regulation supreme, case details, electricity rates, delhi set (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -100,13 +95,13 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - doe completely, denied asylum, claim routes, individual directly, final removal (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (59 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (58 posts)
 - focus flipping, union historically (9 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- board trustees, potus potus, women advocates, press statement (34 posts)
+- board trustees, potus potus, women advocates, press statement (33 posts)
+- isn reflecting (11 posts)
 - illegals count, seats support (6 posts)
-- avoid impeachment, crimes urgently, lower approval (10 posts)
-- upholds california's, scotus upheld, states redistrict (5 posts)
+- impeachment crimes, urgently warranted (3 posts)
 - _…116 more emerging theme(s)._
 
 ## Scope note
