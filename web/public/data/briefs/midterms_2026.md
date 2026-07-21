@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-21 06:13:01 UTC
+> Tactical snapshot · 2026-07-21 06:45:00 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3306** |
+| Posts in database | **3313** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2675 / 1043 |
-| Distinct themes | 76 |
+| Graph nodes / edges | 2679 / 1043 |
+| Distinct themes | 122 |
 | Duplicate clusters (full DB) | 177 |
-| Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 2041 authors |
+| Fuzzy clusters (snapshot cohort) | 8 |
+| IU astroturf overlap | 2 bots / 2045 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **7**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **367**
-- Net new: **641** · re-seen: **2833**
-- Duplicate rate: **81.5%**
+- Net new: **648** · re-seen: **2844**
+- Duplicate rate: **81.4%**
 
 ## Sentiment drift
 
@@ -36,10 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, america act, mail ballots, election integrity executive, george soros (2728 posts · 141 authors · 138 exact · 6 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, trump ally, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (596 posts · 17 authors · 18 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · years old (96 posts · 8 authors · 28 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, midterms source (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · rights act, district court, voting rights act, redraw state, redraw state congressional (19 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · points enthusiastic, truth passing, act juice, pressure secure (13 posts · 2 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -81,6 +86,7 @@ _None (need ≥5 authors in 90s window)._
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: The government shutdown battle might start NEXT WEEK — House Republicans are preparing to ram through a government funding bill THROUGH THE 2026 MIDTERMS and might bring it to the floor in…
 - **2 posts** · 2 authors · ~100% Jaccard — JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms "It's doubtful that Trump's speech moved the needle w…
 - **2 posts** · 2 authors · ~100% Jaccard — Billionaire Ken Griffin dropping $40 MILLION to defend GOP House &amp; Senate majorities in 2026 midterms! Big money entering the arena as Republicans fight to keep control. Do you support billionair…
+- **2 posts** · 2 authors · ~100% Jaccard — 🚨 HOLY CRAP! In a stunning admission, Sen. Elissa Slotkin (D-Michigan) announced that if the SAVE America Act becomes law — "It would be hard for ANY Democrat, in ANY state, to win ANY election." Pre…
 - _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -93,18 +99,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- cabinet meeting, era donald (3 posts)
-- malicious domains, spotted live, phishing worse, governor race (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…19 more emerging theme(s)._
+- focus flipping (5 posts)
+- illegals count, seats support (7 posts)
+- union historically (4 posts)
+- mail ballot, federal judge, trump executive order, mail absentee, mail voting (9 posts)
+- according polymarket, currently chance (8 posts)
+- primary challenge, wow scott, presler officially, lead charge (8 posts)
+- rights act, district court, voting rights act, redraw state, redraw state congressional (19 posts)
+- level touch (5 posts)
+- _…108 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3306 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3313 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
