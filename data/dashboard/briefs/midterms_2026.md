@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-21 16:56:11 UTC
+> Tactical snapshot · 2026-07-21 17:39:11 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2680 / 1046 |
-| Distinct themes | 127 |
+| Distinct themes | 158 |
 | Duplicate clusters (full DB) | 181 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2047 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **14**
-- Net-new posts logged: **5**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **371**
-- Net new: **660** · re-seen: **2900**
+- Runs: **372**
+- Net new: **660** · re-seen: **2901**
 - Duplicate rate: **81.5%**
 
 ## Sentiment drift
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, red (597 posts · 16 authors · 18 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · years old, away world's, seizing milestone (48 posts · 5 authors · 16 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · save republic (24 posts · 5 authors · 6 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enacted map (19 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, lobbying firms, seeking reelection (1342 posts · 89 authors · 47 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · grok render, citation argument, sidney powell, acting odni, tucker's father (516 posts · 28 authors · 7 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · ugc equity, regulation supreme, case details, electricity rates, delhi set (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -99,15 +99,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping, jersey red (5 posts)
-- polling stations, agents posted, mullin stands (5 posts)
-- lower approval, results conservatives (14 posts)
+- doe completely, denied asylum, claim routes, individual directly, final removal (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (58 posts)
+- focus flipping, union historically (9 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- board trustees, potus potus, women advocates, press statement (34 posts)
+- crimes urgently, lower approval (11 posts)
 - illegals count, seats support (6 posts)
-- union historically (4 posts)
-- federal judge (9 posts)
-- according polymarket, currently chance (7 posts)
-- wow scott, presler officially, planning primary (7 posts)
-- _…113 more emerging theme(s)._
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- _…117 more emerging theme(s)._
 
 ## Scope note
 
