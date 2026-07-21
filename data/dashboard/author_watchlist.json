@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1206,
+      "run_counter": 1207,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,11 +1940,11 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "219344912": {
-          "author_id": "219344912",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "17918065": {
+          "author_id": "17918065",
+          "handle": "sbaprolife",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
