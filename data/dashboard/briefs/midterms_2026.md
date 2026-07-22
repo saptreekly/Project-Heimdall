@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-22 18:45:05 UTC
+> Tactical snapshot · 2026-07-22 20:04:14 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3362** |
+| Posts in database | **3364** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2699 / 1055 |
-| Distinct themes | 168 |
+| Graph nodes / edges | 2701 / 1056 |
+| Distinct themes | 164 |
 | Duplicate clusters (full DB) | 182 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 2061 authors |
+| IU astroturf overlap | 2 bots / 2063 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **378**
-- Net new: **662** · re-seen: **2965**
-- Duplicate rate: **81.7%**
+- Net new: **664** · re-seen: **2978**
+- Duplicate rate: **81.8%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, voter eligibility (1859 posts · 112 authors · 52 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, homeland security (1873 posts · 113 authors · 54 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -103,14 +103,14 @@ _None spanning multiple narratives._
 - focus flipping, union historically (9 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - board trustees, potus potus, women advocates (37 posts)
+- lower approval, results conservatives, check groypers (10 posts)
 - illegals count, seats support (7 posts)
-- crimes urgently (7 posts)
-- upholds california's, scotus upheld, states redistrict (5 posts)
-- _…120 more emerging theme(s)._
+- urgently warranted (3 posts)
+- _…118 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3362 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3364 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
