@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-22 04:52:27 UTC
+> Tactical snapshot · 2026-07-22 05:39:45 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3349** |
+| Posts in database | **3351** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2697 / 1054 |
-| Distinct themes | 80 |
+| Distinct themes | 81 |
 | Duplicate clusters (full DB) | 181 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2060 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **21**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **374**
-- Net new: **670** · re-seen: **2932**
-- Duplicate rate: **81.4%**
+- Runs: **373**
+- Net new: **665** · re-seen: **2922**
+- Duplicate rate: **81.5%**
 
 ## Sentiment drift
 
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2757 posts · 140 authors · 141 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2754 posts · 138 authors · 141 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
@@ -100,11 +95,11 @@ _None spanning multiple narratives._
 - cabinet meeting, era donald (3 posts)
 - malicious domains, spotted live, phishing worse, governor race (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…20 more emerging theme(s)._
+- _…21 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3349 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3351 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
