@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-22 04:02:52 UTC
+> Tactical snapshot · 2026-07-22 04:52:27 UTC
 
 ## Corpus
 
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
+- Re-sightings (duplicate encounters): **21**
 - Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **373**
-- Net new: **670** · re-seen: **2911**
-- Duplicate rate: **81.3%**
+- Runs: **374**
+- Net new: **670** · re-seen: **2932**
+- Duplicate rate: **81.4%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2756 posts · 140 authors · 141 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2757 posts · 140 authors · 141 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
