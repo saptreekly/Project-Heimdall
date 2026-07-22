@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-22 07:52:43 UTC
+> Tactical snapshot · 2026-07-22 08:13:25 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3356** |
+| Posts in database | **3354** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2699 / 1054 |
-| Distinct themes | 128 |
+| Graph nodes / edges | 2697 / 1054 |
+| Distinct themes | 127 |
 | Duplicate clusters (full DB) | 181 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 2062 authors |
+| IU astroturf overlap | 2 bots / 2060 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **14**
-- Net-new posts logged: **4**
+- Re-sightings (duplicate encounters): **17**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **374**
-- Net new: **667** · re-seen: **2946**
-- Duplicate rate: **81.5%**
+- Runs: **373**
+- Net new: **663** · re-seen: **2932**
+- Duplicate rate: **81.6%**
 
 ## Sentiment drift
 
@@ -37,7 +37,7 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · court, supreme, trump, red (605 posts · 20 authors · 18 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · years old, away world's, seizing milestone (48 posts · 5 authors · 16 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · years old, away world's (43 posts · 5 authors · 14 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, midterms source (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · rights act, district court, voting rights act, redraw state, redraw state congressional (19 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -103,14 +103,14 @@ _None spanning multiple narratives._
 - illegals count, seats support (6 posts)
 - union historically (4 posts)
 - federal judge (9 posts)
-- according polymarket, currently chance (8 posts)
-- primary challenge, wow scott, presler officially (9 posts)
+- according polymarket, currently chance (7 posts)
+- primary challenge, wow scott, presler officially (8 posts)
 - rights act, district court, voting rights act, redraw state, redraw state congressional (19 posts)
-- _…113 more emerging theme(s)._
+- _…112 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3356 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3354 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
