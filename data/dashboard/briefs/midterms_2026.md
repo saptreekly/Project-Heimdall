@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-22 14:48:48 UTC
+> Tactical snapshot · 2026-07-22 15:26:11 UTC
 
 ## Corpus
 
@@ -14,19 +14,19 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2699 / 1055 |
-| Distinct themes | 169 |
+| Distinct themes | 155 |
 | Duplicate clusters (full DB) | 181 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2061 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **14**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **375**
+- Runs: **376**
 - Net new: **661** · re-seen: **2956**
 - Duplicate rate: **81.7%**
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, homeland security (1856 posts · 112 authors · 52 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, ice agents, markwayne mullin (1701 posts · 109 authors · 49 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dems defeat, making mail, makes sure (10 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · american thinker (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -98,15 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, individual directly, final removal (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (59 posts)
+- human elements, thaler perlmutter, owner public (9 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (51 posts)
 - focus flipping, union historically (9 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- board trustees, potus potus, women advocates (38 posts)
-- lower approval, results conservatives, check groypers (10 posts)
-- illegals count, seats support (7 posts)
-- urgently warranted (3 posts)
-- _…120 more emerging theme(s)._
+- board trustees, potus potus, women advocates, press statement (37 posts)
+- illegals count, seats support (6 posts)
+- sign executive order, election integrity targeting, mail ballots voting, targeting mail ballots, executive order (9 posts)
+- currently chance (5 posts)
+- _…115 more emerging theme(s)._
 
 ## Scope note
 
