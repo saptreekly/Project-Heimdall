@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-22 03:38:41 UTC
+> Tactical snapshot · 2026-07-22 04:02:52 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2697 / 1054 |
-| Distinct themes | 125 |
+| Distinct themes | 80 |
 | Duplicate clusters (full DB) | 181 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2060 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **17**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **372**
-- Net new: **670** · re-seen: **2910**
+- Runs: **373**
+- Net new: **670** · re-seen: **2911**
 - Duplicate rate: **81.3%**
 
 ## Sentiment drift
@@ -36,15 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, red (605 posts · 20 authors · 18 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · away world's, seizing milestone, fresh rallying, extreme wealth (36 posts · 5 authors · 12 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · rights act, district court, voting rights act, redraw state, redraw state congressional (19 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2756 posts · 140 authors · 141 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · billionaire ken, griffin dropping, senate majorities, money entering (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -98,15 +93,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping, jersey red (5 posts)
-- polling stations, agents posted, immigrants voting, mullin stands (5 posts)
-- illegals count, seats support (6 posts)
-- union historically (4 posts)
-- mail ballot, federal elections, federal judge, mail absentee, trump executive order (10 posts)
-- according polymarket, currently chance (8 posts)
-- primary challenge, wow scott, presler officially (9 posts)
-- rights act, district court, voting rights act, redraw state, redraw state congressional (19 posts)
-- _…110 more emerging theme(s)._
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- cabinet meeting, era donald (3 posts)
+- malicious domains, spotted live, phishing worse, governor race (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
