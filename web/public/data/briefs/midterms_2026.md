@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-22 00:19:11 UTC
+> Tactical snapshot · 2026-07-22 03:38:41 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3346** |
+| Posts in database | **3349** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2696 / 1054 |
-| Distinct themes | 169 |
+| Graph nodes / edges | 2697 / 1054 |
+| Distinct themes | 125 |
 | Duplicate clusters (full DB) | 181 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 2059 authors |
+| IU astroturf overlap | 2 bots / 2060 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **17**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **372**
-- Net new: **667** · re-seen: **2894**
+- Net new: **670** · re-seen: **2910**
 - Duplicate rate: **81.3%**
 
 ## Sentiment drift
@@ -31,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, voter eligibility (1851 posts · 114 authors · 51 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dems defeat, makes sure (10 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · american thinker (10 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (605 posts · 20 authors · 18 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · away world's, seizing milestone, fresh rallying, extreme wealth (36 posts · 5 authors · 12 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · rights act, district court, voting rights act, redraw state, redraw state congressional (19 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · points enthusiastic, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -93,19 +98,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, individual directly, final removal (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (57 posts)
-- focus flipping, union historically (9 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- board trustees, potus potus, women advocates (38 posts)
-- lower approval, results conservatives, check groypers (10 posts)
+- focus flipping, jersey red (5 posts)
+- polling stations, agents posted, immigrants voting, mullin stands (5 posts)
 - illegals count, seats support (6 posts)
-- urgently warranted (3 posts)
-- _…120 more emerging theme(s)._
+- union historically (4 posts)
+- mail ballot, federal elections, federal judge, mail absentee, trump executive order (10 posts)
+- according polymarket, currently chance (8 posts)
+- primary challenge, wow scott, presler officially (9 posts)
+- rights act, district court, voting rights act, redraw state, redraw state congressional (19 posts)
+- _…110 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3346 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3349 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
