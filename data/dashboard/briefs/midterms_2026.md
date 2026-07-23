@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-23 08:08:07 UTC
+> Tactical snapshot · 2026-07-23 09:13:20 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3378** |
+| Posts in database | **3379** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2710 / 1059 |
+| Graph nodes / edges | 2712 / 1060 |
 | Distinct themes | 79 |
 | Duplicate clusters (full DB) | 182 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 2071 authors |
+| IU astroturf overlap | 2 bots / 2072 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **381**
-- Net new: **661** · re-seen: **3050**
+- Runs: **382**
+- Net new: **662** · re-seen: **3058**
 - Duplicate rate: **82.2%**
 
 ## Sentiment drift
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2792 posts · 140 authors · 144 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2793 posts · 140 authors · 144 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, looming midterm elections, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
@@ -98,7 +103,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3378 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3379 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
