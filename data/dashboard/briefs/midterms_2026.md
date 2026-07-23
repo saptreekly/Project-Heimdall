@@ -1,34 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-23 21:53:37 UTC
+> Tactical snapshot · 2026-07-23 22:42:06 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3400** |
+| Posts in database | **3402** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2718 / 1062 |
+| Graph nodes / edges | 2718 / 1063 |
 | Distinct themes | 79 |
-| Duplicate clusters (full DB) | 182 |
-| Fuzzy clusters (snapshot cohort) | 7 |
+| Duplicate clusters (full DB) | 183 |
+| Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2079 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **10**
-- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **387**
-- Net new: **668** · re-seen: **3140**
-- Duplicate rate: **82.5%**
+- Runs: **388**
+- Net new: **670** · re-seen: **3140**
+- Duplicate rate: **82.4%**
 
 ## Sentiment drift
 
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2810 posts · 137 authors · 144 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2813 posts · 137 authors · 145 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
@@ -67,7 +62,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…172 more exact-duplicate cluster(s) in database._
+- _…173 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -79,8 +74,8 @@ _None (need ≥5 authors in 90s window)._
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: The government shutdown battle might start NEXT WEEK — House Republicans are preparing to ram through a government funding bill THROUGH THE 2026 MIDTERMS and might bring it to the floor in…
 - **2 posts** · 2 authors · ~100% Jaccard — JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms "It's doubtful that Trump's speech moved the needle w…
 - **2 posts** · 2 authors · ~100% Jaccard — My guess as to what happens: Trump will use this Declassification to pressure the Senate to pass the SAVE America Act, the Senate will still not pass it, and after Trump proves that he exercised ever…
-- **2 posts** · 2 authors · ~95% Jaccard — 🚨 JUST IN: President Trump just dropped this chilling line that if Republicans LOSE the 2026 midterms and next election, Democrats will DESTROY THE NATION "What they WILL do to the country if we don'…
-- _…2 more fuzzy cluster(s) in snapshot cohort._
+- **2 posts** · 2 authors · ~91% Jaccard — 🔥🚨 JUST NOW — President Trump highlights massive victories heading into the 2026 midterms. TRUMP: “America is back!” - Zero illegal aliens admitted in 14 months - Crime plummeting - Strongest Militar…
+- _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -99,11 +94,11 @@ _None spanning multiple narratives._
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
 - beautiful delay, planned project, rules dec (4 posts)
-- _…19 more emerging theme(s)._
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3400 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3402 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
