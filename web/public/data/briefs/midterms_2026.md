@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-23 20:28:41 UTC
+> Tactical snapshot · 2026-07-23 21:23:38 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3397** |
+| Posts in database | **3398** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -19,16 +19,11 @@
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2077 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **16**
-- Net-new posts logged: **1**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **387**
-- Net new: **666** · re-seen: **3148**
-- Duplicate rate: **82.5%**
+- Net new: **667** · re-seen: **3131**
+- Duplicate rate: **82.4%**
 
 ## Sentiment drift
 
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2809 posts · 137 authors · 144 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2810 posts · 137 authors · 144 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
@@ -77,9 +72,9 @@ _None (need ≥5 authors in 90s window)._
 
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST NOW: President Trump is announcing to America the massive VICTORIES he's personally carried out ahead of the 2026 midterms "AMERICA IS BACK!" "ZERO ILLEGAL ALIENS being admitted in the past 14…
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 JUST IN: The government shutdown battle might start NEXT WEEK — House Republicans are preparing to ram through a government funding bill THROUGH THE 2026 MIDTERMS and might bring it to the floor in…
-- **3 posts** · 3 authors · ~95% Jaccard — 🚨 JUST IN: President Trump just dropped this chilling line that if Republicans LOSE the 2026 midterms and next election, Democrats will DESTROY THE NATION "What they WILL do to the country if we don'…
 - **2 posts** · 2 authors · ~100% Jaccard — JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms "It's doubtful that Trump's speech moved the needle w…
 - **2 posts** · 2 authors · ~100% Jaccard — My guess as to what happens: Trump will use this Declassification to pressure the Senate to pass the SAVE America Act, the Senate will still not pass it, and after Trump proves that he exercised ever…
+- **2 posts** · 2 authors · ~95% Jaccard — 🚨 JUST IN: President Trump just dropped this chilling line that if Republicans LOSE the 2026 midterms and next election, Democrats will DESTROY THE NATION "What they WILL do to the country if we don'…
 - _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -99,11 +94,11 @@ _None spanning multiple narratives._
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
 - beautiful delay, planned project, rules dec (4 posts)
-- _…19 more emerging theme(s)._
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3397 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3398 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
