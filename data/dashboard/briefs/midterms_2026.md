@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-23 21:23:38 UTC
+> Tactical snapshot · 2026-07-23 21:53:37 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3398** |
+| Posts in database | **3400** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2717 / 1061 |
+| Graph nodes / edges | 2718 / 1062 |
 | Distinct themes | 79 |
 | Duplicate clusters (full DB) | 182 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 2077 authors |
+| IU astroturf overlap | 2 bots / 2079 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **10**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **387**
-- Net new: **667** · re-seen: **3131**
-- Duplicate rate: **82.4%**
+- Net new: **668** · re-seen: **3140**
+- Duplicate rate: **82.5%**
 
 ## Sentiment drift
 
@@ -94,11 +99,11 @@ _None spanning multiple narratives._
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
 - beautiful delay, planned project, rules dec (4 posts)
-- _…18 more emerging theme(s)._
+- _…19 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3398 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3400 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
