@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-23 12:09:24 UTC
+> Tactical snapshot · 2026-07-23 12:56:42 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3386** |
+| Posts in database | **3387** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -17,12 +17,17 @@
 | Distinct themes | 82 |
 | Duplicate clusters (full DB) | 182 |
 | Fuzzy clusters (snapshot cohort) | 7 |
-| IU astroturf overlap | 2 bots / 2072 authors |
+| IU astroturf overlap | 2 bots / 2073 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **20**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **385**
-- Net new: **667** · re-seen: **3093**
+- Net new: **668** · re-seen: **3112**
 - Duplicate rate: **82.3%**
 
 ## Sentiment drift
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2790 posts · 136 authors · 143 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2792 posts · 137 authors · 143 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
@@ -98,7 +103,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3386 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3387 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
