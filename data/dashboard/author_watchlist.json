@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1292,
+      "run_counter": 1293,
       "authors": {
         "111": {
           "author_id": "111",
@@ -390,19 +390,6 @@
           "last_tweet_at": "2026-06-06T21:11:52+00:00",
           "inserted_total": 9,
           "polls": 4,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1518730818583240705": {
-          "author_id": "1518730818583240705",
-          "handle": "PalmettoHawk",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-07T15:14:01.589601+00:00",
-          "last_tweet_at": "2026-06-07T12:34:22+00:00",
-          "inserted_total": 2,
-          "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
         },
@@ -1951,6 +1938,19 @@
           "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 1,
+          "status": "active"
+        },
+        "1728152627068780544": {
+          "author_id": "1728152627068780544",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
+          "inserts_from_polls": 0,
           "status": "active"
         }
       }
