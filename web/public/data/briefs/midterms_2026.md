@@ -1,28 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-24 21:14:38 UTC
+> Tactical snapshot · 2026-07-24 21:54:27 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3427** |
+| Posts in database | **3428** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2725 / 1063 |
+| Graph nodes / edges | 2726 / 1063 |
 | Distinct themes | 79 |
 | Duplicate clusters (full DB) | 187 |
 | Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 2086 authors |
+| IU astroturf overlap | 2 bots / 2087 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **9**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **394**
-- Net new: **627** · re-seen: **3313**
+- Net new: **628** · re-seen: **3320**
 - Duplicate rate: **84.1%**
 
 ## Sentiment drift
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2834 posts · 135 authors · 149 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2835 posts · 136 authors · 149 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
@@ -98,7 +103,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3427 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3428 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
