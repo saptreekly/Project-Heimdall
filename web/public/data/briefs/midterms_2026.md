@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-24 20:41:49 UTC
+> Tactical snapshot · 2026-07-24 21:14:38 UTC
 
 ## Corpus
 
@@ -14,15 +14,10 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2725 / 1063 |
-| Distinct themes | 80 |
+| Distinct themes | 79 |
 | Duplicate clusters (full DB) | 187 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2086 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **27**
-- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
@@ -97,8 +92,8 @@ _None spanning multiple narratives._
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- inbreeds cuz, 10000's fascist, loves winners (8 posts)
-- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- beautiful delay, planned project, rules dec (4 posts)
 - _…18 more emerging theme(s)._
 
 ## Scope note
