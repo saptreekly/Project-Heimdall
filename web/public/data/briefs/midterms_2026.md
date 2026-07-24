@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-24 03:59:32 UTC
+> Tactical snapshot · 2026-07-24 05:01:10 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3402** |
+| Posts in database | **3404** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2718 / 1063 |
+| Graph nodes / edges | 2719 / 1063 |
 | Distinct themes | 79 |
 | Duplicate clusters (full DB) | 183 |
 | Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 2079 authors |
+| IU astroturf overlap | 2 bots / 2080 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **19**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **388**
-- Net new: **658** · re-seen: **3173**
-- Duplicate rate: **82.8%**
+- Net new: **659** · re-seen: **3191**
+- Duplicate rate: **82.9%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2813 posts · 137 authors · 145 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2813 posts · 138 authors · 145 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
@@ -99,11 +99,11 @@ _None spanning multiple narratives._
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
 - beautiful delay, planned project, rules dec (4 posts)
-- _…18 more emerging theme(s)._
+- _…19 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3402 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3404 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
