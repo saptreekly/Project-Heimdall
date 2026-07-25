@@ -1,11 +1,11 @@
 {
   "version": 5,
-  "generated_at": "2026-07-25T12:33:13.508852+00:00",
+  "generated_at": "2026-07-25T13:54:38.422966+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
-      "keywords": "2026 election integrity",
+      "keywords": "author:politvidchannel",
       "post_count": 3454
     }
   ],
@@ -6352,8 +6352,8 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "1746263545648680960",
               "26424178",
+              "1746263545648680960",
               "16513335"
             ]
           },
@@ -65258,15 +65258,23 @@
             "source_post_id": 3370,
             "target_post_id": null,
             "occurred_at": "2026-07-18T13:11:20"
+          },
+          {
+            "source": "4878610324",
+            "target": "4878610324",
+            "type": "reply",
+            "source_post_id": 3488,
+            "target_post_id": 3409,
+            "occurred_at": "2026-07-22T17:04:50"
           }
         ],
         "stats": {
-          "edge_count": 4736,
+          "edge_count": 4737,
           "author_count": 2097,
           "connected_author_count": 783,
           "isolated_author_count": 1314,
           "by_type": {
-            "reply": 4736
+            "reply": 4737
           }
         }
       },
@@ -65460,17 +65468,30 @@
           },
           {
             "week": "2025-W34",
-            "cluster_count": 1,
+            "cluster_count": 2,
             "clusters": [
               {
-                "cluster_id": 1,
+                "cluster_id": 0,
                 "label": "election integrity",
-                "size": 2,
+                "size": 3,
                 "post_ids": [
                   1258,
+                  1257,
                   1256
                 ],
-                "emerging_theme": false
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 1,
+                "label": "red wave",
+                "size": 4,
+                "post_ids": [
+                  3143,
+                  3341,
+                  795,
+                  2475
+                ],
+                "emerging_theme": true
               }
             ],
             "continues_from": []
@@ -98244,14 +98265,12 @@
           }
         ],
         "sightings": {
-          "total_resightings": 11,
-          "total_net_new": 1,
+          "total_resightings": 4,
+          "total_net_new": 0,
           "daily_resightings": {
-            "2026-07-25": 11
+            "2026-07-25": 4
           },
-          "daily_net_new": {
-            "2026-07-25": 1
-          }
+          "daily_net_new": {}
         }
       },
       "benchmark": null,
@@ -98270,7 +98289,7 @@
         "coordination_signal_count": 194,
         "distinct_theme_count": 170,
         "theme_cluster_count": 170,
-        "graph_edge_count": 4736,
+        "graph_edge_count": 4737,
         "graph_author_count": 2097,
         "graph_connected_author_count": 783,
         "graph_coverage_pct": 37.3,
@@ -98285,8 +98304,8 @@
       },
       "brief": {
         "version": 1,
-        "generated_at": "2026-07-25T12:33:13.508852+00:00",
-        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-07-25 12:33:13 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **3454** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.40 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 2738 / 1065 |\n| Distinct themes | 170 |\n| Duplicate clusters (full DB) | 189 |\n| Fuzzy clusters (snapshot cohort) | 5 |\n| IU astroturf overlap | 2 bots / 2097 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **11**\n- Net-new posts logged: **1**\n\n## Ingest yield (last 14 days)\n\n- Runs: **394**\n- Net new: **618** \u00b7 re-seen: **3394**\n- Duplicate rate: **84.6%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 reuters reported (1914 posts \u00b7 107 authors \u00b7 59 exact \u00b7 3 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 similar rules (14 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 fraud cold, excuses games, pass nationwide (11 posts \u00b7 1 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 dems defeat, making mail, makes sure (10 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 american thinker (10 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_69_size_3\n- dense_cluster_555_size_3\n- dense_cluster_1416_size_3\n- cross_author_fuzzy_31authors_33posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_7authors_8posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_2authors_3posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **10 posts** \u00b7 10 author(s) \u2014 !!\ufe0f SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games \ud83c\udd70\ufe0f. Yes \ud83c\udd71\ufe0f. No\n- **9 posts** \u00b7 9 author(s) \u2014 \ud83d\udea8SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **7 posts** \u00b7 6 author(s) \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **3 posts** \u00b7 3 author(s) \u2014 \ud83d\udea8 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms \u2014 NYT AAG Harmeet Dhillon is on a WARPATH for sec\u2026\n- **3 posts** \u00b7 2 author(s) \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **2 posts** \u00b7 2 author(s) \u2014 \ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8 Analysis: Socialist Wins Raise Questions for Democrats \ud83e\udd14\ud83d\udcca This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove\u2026\n- _\u2026179 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election \"There's a whole lot of p\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms \"It's doubtful that Trump's speech moved the needle w\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 My guess as to what happens: Trump will use this Declassification to pressure the Senate to pass the SAVE America Act, the Senate will still not pass it, and after Trump proves that he exercised ever\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~97% Jaccard \u2014 \ud83d\udea8 JUST NOW: President Trump is announcing to America the massive VICTORIES he's personally carried out ahead of the 2026 midterms \"AMERICA IS BACK!\" \"ZERO ILLEGAL ALIENS being admitted in the past 14\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~88% Jaccard \u2014 \ud83d\udea8 IT'S OFFICIAL: Scott Presler has now asked Senate Majority Leader John Thune to PASS the SAVE America Act for **200 DAYS STRAIGHT* Time is now RUNNING OUT for voter ID and proof of citizenship to t\u2026\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- piie analysis, expires july (6 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms (62 posts)\n- focus flipping, union historically (9 posts)\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)\n- forced labor, board trustees, potus potus, tariff tariff (40 posts)\n- crimes urgently, lower approval (11 posts)\n- illegals count, seats support (6 posts)\n- economic concerns, buyer's remorse (19 posts)\n- _\u2026121 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 3454 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
+        "generated_at": "2026-07-25T13:54:38.422966+00:00",
+        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-07-25 13:54:38 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **3454** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.40 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 2738 / 1065 |\n| Distinct themes | 170 |\n| Duplicate clusters (full DB) | 189 |\n| Fuzzy clusters (snapshot cohort) | 5 |\n| IU astroturf overlap | 2 bots / 2097 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **4**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **395**\n- Net new: **620** \u00b7 re-seen: **3399**\n- Duplicate rate: **84.6%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 reuters reported (1914 posts \u00b7 107 authors \u00b7 59 exact \u00b7 3 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 similar rules (14 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 fraud cold, excuses games, pass nationwide (11 posts \u00b7 1 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 dems defeat, making mail, makes sure (10 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 american thinker (10 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_69_size_3\n- dense_cluster_555_size_3\n- dense_cluster_1416_size_3\n- cross_author_fuzzy_31authors_33posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_7authors_8posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_2authors_3posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **10 posts** \u00b7 10 author(s) \u2014 !!\ufe0f SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games \ud83c\udd70\ufe0f. Yes \ud83c\udd71\ufe0f. No\n- **9 posts** \u00b7 9 author(s) \u2014 \ud83d\udea8SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **7 posts** \u00b7 6 author(s) \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **3 posts** \u00b7 3 author(s) \u2014 \ud83d\udea8 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms \u2014 NYT AAG Harmeet Dhillon is on a WARPATH for sec\u2026\n- **3 posts** \u00b7 2 author(s) \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **2 posts** \u00b7 2 author(s) \u2014 \ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8 Analysis: Socialist Wins Raise Questions for Democrats \ud83e\udd14\ud83d\udcca This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove\u2026\n- _\u2026179 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election \"There's a whole lot of p\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms \"It's doubtful that Trump's speech moved the needle w\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 My guess as to what happens: Trump will use this Declassification to pressure the Senate to pass the SAVE America Act, the Senate will still not pass it, and after Trump proves that he exercised ever\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~97% Jaccard \u2014 \ud83d\udea8 JUST NOW: President Trump is announcing to America the massive VICTORIES he's personally carried out ahead of the 2026 midterms \"AMERICA IS BACK!\" \"ZERO ILLEGAL ALIENS being admitted in the past 14\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~88% Jaccard \u2014 \ud83d\udea8 IT'S OFFICIAL: Scott Presler has now asked Senate Majority Leader John Thune to PASS the SAVE America Act for **200 DAYS STRAIGHT* Time is now RUNNING OUT for voter ID and proof of citizenship to t\u2026\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- piie analysis, expires july (6 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms (62 posts)\n- focus flipping, union historically (9 posts)\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)\n- forced labor, board trustees, potus potus, tariff tariff (40 posts)\n- crimes urgently, lower approval (11 posts)\n- illegals count, seats support (6 posts)\n- economic concerns, buyer's remorse (19 posts)\n- _\u2026121 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 3454 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
         "meta": {
           "narrative_name": "midterms_2026",
           "posts_total_db": 3454,
@@ -98320,23 +98339,21 @@
           "ingest_yield": {
             "available": true,
             "window_days": 14,
-            "runs": 394,
-            "net_new": 618,
-            "duplicates": 3394,
+            "runs": 395,
+            "net_new": 620,
+            "duplicates": 3399,
             "filtered": 3886,
-            "fetched": 7893,
+            "fetched": 7899,
             "duplicate_rate": 0.846,
-            "latest_run_at": "2026-07-25T12:33:06.783793+00:00"
+            "latest_run_at": "2026-07-25T13:54:36.925343+00:00"
           },
           "sightings": {
-            "total_resightings": 11,
-            "total_net_new": 1,
+            "total_resightings": 4,
+            "total_net_new": 0,
             "daily_resightings": {
-              "2026-07-25": 11
+              "2026-07-25": 4
             },
-            "daily_net_new": {
-              "2026-07-25": 1
-            }
+            "daily_net_new": {}
           },
           "sentiment": {
             "trend": "stable",
@@ -99284,7 +99301,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-07-25",
-      "requests_used": 20
+      "requests_used": 22
     }
   }
 }
