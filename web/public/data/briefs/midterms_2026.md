@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-25 10:13:39 UTC
+> Tactical snapshot · 2026-07-25 10:32:47 UTC
 
 ## Corpus
 
@@ -13,22 +13,22 @@
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2736 / 1065 |
-| Distinct themes | 124 |
+| Graph nodes / edges | 2737 / 1065 |
+| Distinct themes | 147 |
 | Duplicate clusters (full DB) | 189 |
-| Fuzzy clusters (snapshot cohort) | 6 |
+| Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2096 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **16**
+- Re-sightings (duplicate encounters): **35**
 - Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **394**
-- Net new: **617** · re-seen: **3367**
-- Duplicate rate: **84.5%**
+- Net new: **617** · re-seen: **3386**
+- Duplicate rate: **84.6%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
+- **Exact duplicate campaign** · reuters reported, congressional maps (1553 posts · 85 authors · 49 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · court, supreme, trump, red (627 posts · 34 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, ken paxton, immediate impeachment (46 posts · 2 authors · 14 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · save republic (27 posts · 5 authors · 7 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, midterms source (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dems defeat, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -85,8 +85,7 @@ _None (need ≥5 authors in 90s window)._
 - **2 posts** · 2 authors · ~100% Jaccard — JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms "It's doubtful that Trump's speech moved the needle w…
 - **2 posts** · 2 authors · ~100% Jaccard — My guess as to what happens: Trump will use this Declassification to pressure the Senate to pass the SAVE America Act, the Senate will still not pass it, and after Trump proves that he exercised ever…
 - **2 posts** · 2 authors · ~97% Jaccard — 🚨 JUST NOW: President Trump is announcing to America the massive VICTORIES he's personally carried out ahead of the 2026 midterms "AMERICA IS BACK!" "ZERO ILLEGAL ALIENS being admitted in the past 14…
-- **2 posts** · 2 authors · ~91% Jaccard — 🔥🚨 JUST NOW — President Trump highlights massive victories heading into the 2026 midterms. TRUMP: “America is back!” - Zero illegal aliens admitted in 14 months - Crime plummeting - Strongest Militar…
-- _…1 more fuzzy cluster(s) in snapshot cohort._
+- **2 posts** · 2 authors · ~88% Jaccard — 🚨 IT'S OFFICIAL: Scott Presler has now asked Senate Majority Leader John Thune to PASS the SAVE America Act for **200 DAYS STRAIGHT* Time is now RUNNING OUT for voter ID and proof of citizenship to t…
 
 ## Cross-narrative actors (this narrative)
 
@@ -98,15 +97,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping, jersey red (5 posts)
-- polling stations, mullin stands (5 posts)
-- crimes urgently (15 posts)
-- illegals count (6 posts)
-- attorney central, economic concerns (26 posts)
-- union historically (4 posts)
-- federal judge (10 posts)
-- plan impeach (9 posts)
-- _…109 more emerging theme(s)._
+- focus flipping, jersey red, union historically (9 posts)
+- illegals count, seats support (6 posts)
+- crimes urgently (16 posts)
+- judge nichols, titled ensuring (10 posts)
+- alex pretti, immunity ice, sued jailed, agents allowing (6 posts)
+- wow scott, presler officially, planning primary, playing hardball (8 posts)
+- pro life, level touch (5 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
+- _…101 more emerging theme(s)._
 
 ## Scope note
 
