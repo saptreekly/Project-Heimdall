@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-25 05:59:39 UTC
+> Tactical snapshot · 2026-07-25 06:26:32 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2732 / 1064 |
-| Distinct themes | 126 |
+| Distinct themes | 79 |
 | Duplicate clusters (full DB) | 189 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2092 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **18**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **395**
-- Net new: **628** · re-seen: **3342**
+- Net new: **624** · re-seen: **3333**
 - Duplicate rate: **84.2%**
 
 ## Sentiment drift
@@ -36,15 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, red (625 posts · 33 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, ken paxton (45 posts · 2 authors · 13 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2846 posts · 129 authors · 153 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -98,15 +92,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping (5 posts)
-- polling stations, mullin stands (5 posts)
-- avoid impeachment, crimes urgently (15 posts)
-- illegals count (6 posts)
-- attorney central, economic concerns (26 posts)
-- union historically (4 posts)
-- federal judge (10 posts)
-- plan impeach, impeach remove, remove trump, plan impeach remove, impeach remove trump (8 posts)
-- _…112 more emerging theme(s)._
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
