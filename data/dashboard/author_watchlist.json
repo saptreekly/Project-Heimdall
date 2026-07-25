@@ -414,7 +414,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-07-23T04:00:33.249684+00:00",
           "last_tweet_at": "2026-07-20T01:09:12+00:00",
-          "inserted_total": 48,
+          "inserted_total": 49,
           "polls": 4,
           "inserts_from_polls": 14,
           "status": "active"
@@ -1940,9 +1940,9 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "874006150399877120": {
-          "author_id": "874006150399877120",
-          "handle": "FeistyLibLady",
+        "600663729": {
+          "author_id": "600663729",
+          "handle": "magagirl00",
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.45,
