@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-25 17:18:51 UTC
+> Tactical snapshot · 2026-07-25 17:58:17 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3456** |
+| Posts in database | **3459** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2738 / 1065 |
-| Distinct themes | 86 |
+| Graph nodes / edges | 2740 / 1066 |
+| Distinct themes | 85 |
 | Duplicate clusters (full DB) | 189 |
-| Fuzzy clusters (snapshot cohort) | 5 |
-| IU astroturf overlap | 2 bots / 2097 authors |
+| Fuzzy clusters (snapshot cohort) | 4 |
+| IU astroturf overlap | 2 bots / 2100 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **3**
+- Re-sightings (duplicate encounters): **23**
 - Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **396**
-- Net new: **608** · re-seen: **3401**
-- Duplicate rate: **84.8%**
+- Net new: **611** · re-seen: **3423**
+- Duplicate rate: **84.9%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2839 posts · 128 authors · 152 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, election integrity executive, george soros, postmaster general (2848 posts · 130 authors · 152 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
@@ -77,7 +77,6 @@ _None (need ≥5 authors in 90s window)._
 
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election "There's a whole lot of p…
 - **2 posts** · 2 authors · ~100% Jaccard — JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms "It's doubtful that Trump's speech moved the needle w…
-- **2 posts** · 2 authors · ~100% Jaccard — My guess as to what happens: Trump will use this Declassification to pressure the Senate to pass the SAVE America Act, the Senate will still not pass it, and after Trump proves that he exercised ever…
 - **2 posts** · 2 authors · ~92% Jaccard — 🚨 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election.
 - **2 posts** · 2 authors · ~88% Jaccard — 🚨 IT'S OFFICIAL: Scott Presler has now asked Senate Majority Leader John Thune to PASS the SAVE America Act for **200 DAYS STRAIGHT* Time is now RUNNING OUT for voter ID and proof of citizenship to t…
 
@@ -95,14 +94,14 @@ _None spanning multiple narratives._
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- cabinet meeting (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…19 more emerging theme(s)._
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3456 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3459 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
