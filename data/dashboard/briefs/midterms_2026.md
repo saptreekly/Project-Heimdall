@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-26 08:44:00 UTC
+> Tactical snapshot · 2026-07-26 09:24:13 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2765 / 1085 |
-| Distinct themes | 80 |
+| Distinct themes | 82 |
 | Duplicate clusters (full DB) | 189 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2110 authors |
@@ -22,8 +22,8 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **396**
-- Net new: **604** · re-seen: **3404**
-- Duplicate rate: **84.9%**
+- Net new: **599** · re-seen: **3404**
+- Duplicate rate: **85.0%**
 
 ## Sentiment drift
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, integrity executive order, george soros, postmaster general (2872 posts · 124 authors · 151 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, integrity executive order, george soros, postmaster general (2878 posts · 124 authors · 151 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
@@ -90,10 +90,10 @@ _None spanning multiple narratives._
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- cabinet meeting (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - 10000's fascist, inbreeds cuz, loves winners (9 posts)
-- _…21 more emerging theme(s)._
+- beautiful delay, planned project, rules dec (4 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
