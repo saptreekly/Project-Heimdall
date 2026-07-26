@@ -1,60 +1,58 @@
 {
-  "generated_at": "2026-06-28T08:24:14.120315+00:00",
+  "generated_at": "2026-07-26T07:46:27.553597+00:00",
   "window_days": 7,
   "dead_keywords": [
     "2026 midterm fraud",
-    "2026 red wave",
     "2026 gerrymandering",
-    "2026 midwest democrat",
-    "2026 resigns electoral"
+    "2026 midwest democrat"
   ],
   "suggestions": [
     {
-      "query": "2026 executive order midterms",
+      "query": "2026 deliver mail ballots",
+      "source": "theme cluster (red wave \u00b7 deliver mail ballots \u00b7 integrity executive order \u00b7 george soros, 2872 posts)",
+      "score": 2872.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 save america midterms",
       "source": "corpus c-TF-IDF",
-      "score": 257.745,
+      "score": 194.632,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
     },
     {
-      "query": "2026 congress post",
-      "source": "theme cluster (executive order erik \u00b7 trump's election integrity \u00b7 mail ballots midterms \u00b7 general told, 33 posts)",
-      "score": 33.0,
+      "query": "2026 friends senate",
+      "source": "theme cluster (eliminate filibuster \u00b7 mitchell post \u00b7 you're wondering \u00b7 thune doesn't, 35 posts)",
+      "score": 35.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 poll spells",
-      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 center square \u00b7 months midterm elections, 20 posts)",
-      "score": 20.0,
+      "query": "2026 ineligible voting",
+      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 ineligible voting \u00b7 vote dilution, 4 posts)",
+      "score": 4.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 democrats ninepercent",
-      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 center square \u00b7 months midterm elections, 20 posts)",
-      "score": 20.0,
+      "query": "2026 vote dilution",
+      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 ineligible voting \u00b7 vote dilution, 4 posts)",
+      "score": 4.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 voters pushing",
-      "source": "theme cluster (voters pushing \u00b7 backing candidates \u00b7 hard silicon \u00b7 crypto's cycle, 20 posts)",
-      "score": 20.0,
+      "query": "2026 extremist scotus",
+      "source": "theme cluster (survive conservative \u00b7 extremist scotus \u00b7 court volunteer, 4 posts)",
+      "score": 4.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 republicans president",
-      "source": "theme cluster (republicans president \u00b7 reportedly surged \u00b7 dollars help \u00b7 rich patriot, 16 posts)",
-      "score": 16.0,
+      "query": "2026 republicans plan",
+      "source": "theme cluster (entitlement programs \u00b7 federal spending \u00b7 adjusted fixed \u00b7 medicare medicaid, 3 posts)",
+      "score": 3.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 live house",
-      "source": "theme cluster (dnc scrambling \u00b7 bombshell hits \u00b7 fest heart \u00b7 race gmmtv, 14 posts)",
-      "score": 14.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 vote pedos",
-      "source": "theme cluster (days presidential \u00b7 vote pedos, 13 posts)",
-      "score": 13.0,
+      "query": "2026 voter paper",
+      "source": "theme cluster (security legitimate \u00b7 voter paper, 3 posts)",
+      "score": 3.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
   ]
