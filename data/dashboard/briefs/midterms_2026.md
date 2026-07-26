@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-26 15:44:19 UTC
+> Tactical snapshot · 2026-07-26 16:14:23 UTC
 
 ## Corpus
 
@@ -14,20 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2769 / 1085 |
-| Distinct themes | 146 |
+| Distinct themes | 81 |
 | Duplicate clusters (full DB) | 189 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2114 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **14**
-- Net-new posts logged: **5**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **396**
-- Net new: **592** · re-seen: **3376**
+- Net new: **592** · re-seen: **3375**
 - Duplicate rate: **85.1%**
 
 ## Sentiment drift
@@ -36,15 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, democratic socialists, intelligence community (1584 posts · 84 authors · 50 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, red (639 posts · 39 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dems defeat, making mail, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, deliver mail ballots, america act, integrity executive order, george soros (2877 posts · 124 authors · 152 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · major arrests, covid vaccine, stakes democrat, takeover unleash, chaos failing (4 posts · 2 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -97,15 +86,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping, jersey red, union historically (9 posts)
-- crimes urgently (16 posts)
-- illegals count, seats support (6 posts)
-- attorney central, economic concerns, buyer's remorse (23 posts)
-- executive order, order ahead, order ahead midterms, federal judge, trump executive order (7 posts)
-- alex pretti, immunity ice, sued jailed, agents allowing (6 posts)
-- wow scott, presler officially, planning primary, playing hardball (8 posts)
-- pro life, level touch (5 posts)
-- _…104 more emerging theme(s)._
+- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- cabinet meeting (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
