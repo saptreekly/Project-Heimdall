@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-27 13:42:49 UTC
+> Tactical snapshot · 2026-07-27 14:14:26 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3519** |
+| Posts in database | **3521** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2772 / 1087 |
-| Distinct themes | 141 |
+| Distinct themes | 139 |
 | Duplicate clusters (full DB) | 191 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2120 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **17**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **396**
-- Net new: **575** · re-seen: **3358**
-- Duplicate rate: **85.4%**
+- Net new: **577** · re-seen: **3356**
+- Duplicate rate: **85.3%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, intelligence community, super pacs (1582 posts · 78 authors · 50 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, super pacs (1626 posts · 78 authors · 49 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · court, supreme, trump, red (642 posts · 41 authors · 19 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -98,18 +98,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - focus flipping, union historically (9 posts)
-- avoid impeachment, crimes urgently (17 posts)
-- illegals count (6 posts)
-- attorney central, economic concerns (23 posts)
-- verified lists, ensuring citizenship (13 posts)
+- avoid impeachment, crimes urgently (16 posts)
+- illegals count (7 posts)
+- verified lists (13 posts)
 - alex pretti, immunity ice, sued jailed, agents allowing (6 posts)
-- wow scott, presler officially, planning primary, playing hardball (9 posts)
+- wow scott, presler officially, planning primary, playing hardball (8 posts)
 - pro life, level touch (5 posts)
-- _…105 more emerging theme(s)._
+- senile coward facist, tolerate pathetic, nazi pig bonespur, draft dodger, ww2 destroy (40 posts)
+- _…99 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3519 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3521 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
