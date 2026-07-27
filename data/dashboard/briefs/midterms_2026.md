@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-27 10:14:34 UTC
+> Tactical snapshot · 2026-07-27 11:09:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3516** |
+| Posts in database | **3518** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2772 / 1087 |
-| Distinct themes | 167 |
-| Duplicate clusters (full DB) | 190 |
+| Distinct themes | 171 |
+| Duplicate clusters (full DB) | 191 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2120 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **22**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **396**
-- Net new: **576** · re-seen: **3373**
+- Runs: **395**
+- Net new: **574** · re-seen: **3346**
 - Duplicate rate: **85.4%**
 
 ## Sentiment drift
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, department homeland (1947 posts · 97 authors · 58 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, super pacs, proposed rule (1929 posts · 97 authors · 56 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, forced labor, board trustees, concluded term (58 posts · 7 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -73,7 +68,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…180 more exact-duplicate cluster(s) in database._
+- _…181 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -102,14 +97,14 @@ _None spanning multiple narratives._
 - focus flipping, union historically (9 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - judgment supreme, forced labor, board trustees, concluded term (58 posts)
+- agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
+- lower approval, rating given, results conservatives, check groypers (10 posts)
 - illegals count (6 posts)
-- urgently warranted (4 posts)
-- economic concerns, buyer's remorse (17 posts)
-- _…116 more emerging theme(s)._
+- _…118 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3516 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3518 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
