@@ -1940,11 +1940,11 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "1451348302214148096": {
-          "author_id": "1451348302214148096",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "64674441": {
+          "author_id": "64674441",
+          "handle": "MrMessenger",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
