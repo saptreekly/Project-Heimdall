@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-27 20:18:24 UTC
+> Tactical snapshot · 2026-07-27 20:58:34 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2775 / 1088 |
-| Distinct themes | 172 |
+| Distinct themes | 166 |
 | Duplicate clusters (full DB) | 192 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2124 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **23**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **397**
-- Net new: **575** · re-seen: **3329**
-- Duplicate rate: **85.3%**
+- Net new: **575** · re-seen: **3304**
+- Duplicate rate: **85.2%**
 
 ## Sentiment drift
 
@@ -31,9 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (1923 posts · 94 authors · 54 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, forced labor, board trustees, concluded term (58 posts · 7 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, super pacs (1792 posts · 92 authors · 52 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, renew spirit, exceptional watch (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -92,15 +97,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, final removal (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (63 posts)
-- focus flipping, union historically (11 posts)
+- doe completely, denied asylum, claim routes, individual directly (17 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (58 posts)
+- focus flipping, union historically (9 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- judgment supreme, forced labor, board trustees, concluded term (58 posts)
-- liveprayer tuesday (12 posts)
-- illegals count, seats support (6 posts)
+- illegals count (6 posts)
 - crimes urgently, lower approval (12 posts)
-- _…113 more emerging theme(s)._
+- attorney central (33 posts)
+- sign executive order, election integrity targeting, mail ballots voting, targeting mail ballots, executive order (9 posts)
+- _…111 more emerging theme(s)._
 
 ## Scope note
 
