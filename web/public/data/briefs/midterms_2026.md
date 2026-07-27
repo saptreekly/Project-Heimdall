@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-27 12:46:33 UTC
+> Tactical snapshot · 2026-07-27 13:42:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3518** |
+| Posts in database | **3519** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2772 / 1087 |
-| Distinct themes | 171 |
+| Distinct themes | 141 |
 | Duplicate clusters (full DB) | 191 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2120 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **17**
+- Net-new posts logged: **1**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **395**
-- Net new: **572** · re-seen: **3344**
+- Runs: **396**
+- Net new: **575** · re-seen: **3358**
 - Duplicate rate: **85.4%**
 
 ## Sentiment drift
@@ -31,12 +36,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, super pacs, proposed rule (1929 posts · 97 authors · 56 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, forced labor, board trustees, concluded term (58 posts · 7 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, intelligence community, super pacs (1582 posts · 78 authors · 50 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (642 posts · 41 authors · 19 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dems defeat, making mail, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
@@ -92,19 +97,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (63 posts)
 - focus flipping, union historically (9 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- judgment supreme, forced labor, board trustees, concluded term (58 posts)
-- agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
-- lower approval, rating given, results conservatives, check groypers (10 posts)
+- avoid impeachment, crimes urgently (17 posts)
 - illegals count (6 posts)
-- _…118 more emerging theme(s)._
+- attorney central, economic concerns (23 posts)
+- verified lists, ensuring citizenship (13 posts)
+- alex pretti, immunity ice, sued jailed, agents allowing (6 posts)
+- wow scott, presler officially, planning primary, playing hardball (9 posts)
+- pro life, level touch (5 posts)
+- _…105 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3518 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3519 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
