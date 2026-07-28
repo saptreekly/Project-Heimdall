@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-28 10:08:47 UTC
+> Tactical snapshot · 2026-07-28 10:56:41 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3540** |
+| Posts in database | **3543** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2780 / 1091 |
-| Distinct themes | 166 |
+| Distinct themes | 160 |
 | Duplicate clusters (full DB) | 192 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2127 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **8**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **399**
-- Net new: **560** · re-seen: **3321**
-- Duplicate rate: **85.6%**
+- Runs: **400**
+- Net new: **563** · re-seen: **3323**
+- Duplicate rate: **85.5%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, homeland security, district judge, voter eligibility (1957 posts · 89 authors · 54 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, homeland security, district judge (1975 posts · 87 authors · 57 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -102,14 +102,14 @@ _None spanning multiple narratives._
 - focus flipping, union historically (11 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (70 posts)
-- agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
 - lower approval, rating given, results conservatives, check groypers (10 posts)
 - illegals count, seats support (6 posts)
-- _…113 more emerging theme(s)._
+- urgently warranted (3 posts)
+- _…112 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3540 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3543 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
