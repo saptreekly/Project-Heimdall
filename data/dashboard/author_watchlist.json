@@ -414,7 +414,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-07-23T04:00:33.249684+00:00",
           "last_tweet_at": "2026-07-20T01:09:12+00:00",
-          "inserted_total": 50,
+          "inserted_total": 49,
           "polls": 4,
           "inserts_from_polls": 14,
           "status": "active"
@@ -1940,15 +1940,15 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "14466538": {
-          "author_id": "14466538",
-          "handle": "dscc",
+        "1528943647185678336": {
+          "author_id": "1528943647185678336",
+          "handle": "LeadingReport",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.5700000000000001,
+          "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 1,
+          "inserted_total": 0,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
