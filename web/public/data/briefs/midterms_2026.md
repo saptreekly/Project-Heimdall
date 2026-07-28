@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-28 16:44:51 UTC
+> Tactical snapshot · 2026-07-28 17:09:01 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3551** |
+| Posts in database | **3554** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2783 / 1091 |
+| Graph nodes / edges | 2786 / 1091 |
 | Distinct themes | 129 |
 | Duplicate clusters (full DB) | 193 |
 | Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 2131 authors |
+| IU astroturf overlap | 2 bots / 2133 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **16**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **13**
+- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **401**
-- Net new: **562** · re-seen: **3317**
-- Duplicate rate: **85.5%**
+- Net new: **565** · re-seen: **3314**
+- Duplicate rate: **85.4%**
 
 ## Sentiment drift
 
@@ -37,7 +37,7 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · court, supreme, trump, red (646 posts · 42 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · years old, polling stations, mike adams (46 posts · 4 authors · 13 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old (49 posts · 4 authors · 13 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -99,18 +99,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - support scott, presler plan, plan focus, focus flipping, flipping jersey (5 posts)
+- polling stations, mullin stands (5 posts)
 - results conservatives, check groypers (12 posts)
-- illegals count (7 posts)
+- illegals count, seats support (6 posts)
+- plummets key, source spotlight (12 posts)
 - union historically (4 posts)
 - federal judge, citizenship verification, verified lists (13 posts)
 - plan impeach, impeach remove, remove trump, plan impeach remove, impeach remove trump (5 posts)
-- alex pretti, immunity ice, sued jailed, agents allowing (6 posts)
-- primary challenge, wow scott, presler officially (9 posts)
 - _…115 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3551 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3554 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
