@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-28 21:46:47 UTC
+> Tactical snapshot · 2026-07-28 22:05:30 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3562** |
+| Posts in database | **3565** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2788 / 1091 |
-| Distinct themes | 135 |
+| Distinct themes | 132 |
 | Duplicate clusters (full DB) | 193 |
 | Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 2135 authors |
+| IU astroturf overlap | 2 bots / 2136 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **16**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **6**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **402**
-- Net new: **570** · re-seen: **3322**
-- Duplicate rate: **85.4%**
+- Net new: **573** · re-seen: **3318**
+- Duplicate rate: **85.3%**
 
 ## Sentiment drift
 
@@ -37,10 +37,10 @@
 ## Layered coordination (frames)
 
 - **Exact duplicate campaign** · court, supreme, trump, red (647 posts · 43 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old (50 posts · 4 authors · 13 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old (42 posts · 4 authors · 12 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · rick scott, floor vote, election security, mass voter fraud, voter fraud scale (12 posts · 3 authors · 3 exact · 1 fuzzy subclusters)
@@ -99,18 +99,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - support scott, presler plan, plan focus, focus flipping, flipping jersey (5 posts)
-- polling stations, mullin stands (5 posts)
+- polling stations, agents posted, mullin stands (5 posts)
 - results conservatives, check groypers (12 posts)
-- illegals count, seats support (6 posts)
-- attorney central, economic concerns (20 posts)
+- illegals count, seats support (7 posts)
+- attorney central, economic concerns, buyer's remorse (20 posts)
 - union historically (4 posts)
 - federal judge, citizenship verification, verified lists (13 posts)
-- plan impeach, impeach remove, remove trump, plan impeach remove, impeach remove trump (7 posts)
-- _…118 more emerging theme(s)._
+- alex pretti, immunity ice, sued jailed (6 posts)
+- _…117 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3562 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3565 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
