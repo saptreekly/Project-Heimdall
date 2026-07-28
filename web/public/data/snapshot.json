@@ -1,11 +1,11 @@
 {
   "version": 5,
-  "generated_at": "2026-07-28T14:28:49.420488+00:00",
+  "generated_at": "2026-07-28T15:10:38.547792+00:00",
   "narratives": [
     {
       "id": 3,
       "name": "midterms_2026",
-      "keywords": "author:AmericanAlphaX",
+      "keywords": "2026 supreme court",
       "post_count": 3549
     }
   ],
@@ -6349,8 +6349,8 @@
             "internal_density": 0.5,
             "members": [
               "38108253",
-              "3085410827",
-              "399178595"
+              "399178595",
+              "3085410827"
             ]
           },
           {
@@ -6368,9 +6368,9 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
+              "1796948479794692097",
               "31047836",
-              "1514818433342337039",
-              "1796948479794692097"
+              "1514818433342337039"
             ]
           }
         ],
@@ -66699,15 +66699,47 @@
             "source_post_id": 2397,
             "target_post_id": null,
             "occurred_at": "2025-10-24T16:29:03"
+          },
+          {
+            "source": "161843844",
+            "target": "161843844",
+            "type": "reply",
+            "source_post_id": 754,
+            "target_post_id": null,
+            "occurred_at": "2026-05-30T18:16:07"
+          },
+          {
+            "source": "1720665183188922368",
+            "target": "1525899335984111622",
+            "type": "reply",
+            "source_post_id": 3579,
+            "target_post_id": null,
+            "occurred_at": "2026-07-27T18:14:20"
+          },
+          {
+            "source": "1720665183188922368",
+            "target": "1884724316119670785",
+            "type": "reply",
+            "source_post_id": 3382,
+            "target_post_id": null,
+            "occurred_at": "2026-07-21T06:15:59"
+          },
+          {
+            "source": "1551950536445870080",
+            "target": "1043078185825460224",
+            "type": "reply",
+            "source_post_id": 2510,
+            "target_post_id": null,
+            "occurred_at": "2026-05-10T05:47:05"
           }
         ],
         "stats": {
-          "edge_count": 4867,
+          "edge_count": 4871,
           "author_count": 2129,
           "connected_author_count": 797,
           "isolated_author_count": 1332,
           "by_type": {
-            "reply": 4867
+            "reply": 4871
           }
         }
       },
@@ -67262,26 +67294,16 @@
           },
           {
             "week": "2026-W14",
-            "cluster_count": 2,
+            "cluster_count": 1,
             "clusters": [
               {
                 "cluster_id": 1,
-                "label": "freedmen stand",
-                "size": 2,
-                "post_ids": [
-                  2616,
-                  2615
-                ],
-                "emerging_theme": false
-              },
-              {
-                "cluster_id": 0,
-                "label": "military allegiance",
+                "label": "chicago flips",
                 "size": 3,
                 "post_ids": [
                   2614,
-                  718,
-                  2418
+                  2616,
+                  2615
                 ],
                 "emerging_theme": true
               }
@@ -67290,19 +67312,27 @@
           },
           {
             "week": "2026-W15",
-            "cluster_count": 1,
+            "cluster_count": 2,
             "clusters": [
               {
                 "cluster_id": 1,
-                "label": "supreme court",
-                "size": 7,
+                "label": "court india",
+                "size": 2,
                 "post_ids": [
                   2608,
+                  2960
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 0,
+                "label": "potus potus",
+                "size": 5,
+                "post_ids": [
                   2572,
                   2943,
                   3232,
                   2478,
-                  2960,
                   2481
                 ],
                 "emerging_theme": false
@@ -67329,27 +67359,15 @@
           },
           {
             "week": "2026-W17",
-            "cluster_count": 2,
+            "cluster_count": 1,
             "clusters": [
               {
                 "cluster_id": 1,
-                "label": "supreme court",
+                "label": "official statement",
                 "size": 2,
                 "post_ids": [
                   2925,
                   2595
-                ],
-                "emerging_theme": false
-              },
-              {
-                "cluster_id": 0,
-                "label": "red wave",
-                "size": 4,
-                "post_ids": [
-                  2532,
-                  400,
-                  2388,
-                  729
                 ],
                 "emerging_theme": false
               }
@@ -67361,22 +67379,21 @@
             "cluster_count": 2,
             "clusters": [
               {
-                "cluster_id": 0,
-                "label": "red wave",
-                "size": 4,
+                "cluster_id": 1,
+                "label": "court ruling",
+                "size": 2,
                 "post_ids": [
-                  2515,
-                  398,
-                  397,
-                  396
+                  2382,
+                  2477
                 ],
-                "emerging_theme": true
+                "emerging_theme": false
               },
               {
-                "cluster_id": 1,
-                "label": "board trustees",
-                "size": 4,
+                "cluster_id": 0,
+                "label": "judgment supreme",
+                "size": 5,
                 "post_ids": [
+                  2419,
                   2534,
                   3026,
                   2432,
@@ -67437,48 +67454,27 @@
           },
           {
             "week": "2026-W21",
-            "cluster_count": 3,
+            "cluster_count": 2,
             "clusters": [
               {
-                "cluster_id": 1,
-                "label": "election fraud",
-                "size": 5,
-                "post_ids": [
-                  144,
-                  143,
-                  140,
-                  139,
-                  101
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 2,
-                "label": "john thune",
+                "cluster_id": 0,
+                "label": "black president",
                 "size": 3,
                 "post_ids": [
-                  145,
-                  2446,
-                  2531
+                  760,
+                  759,
+                  758
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 0,
-                "label": "red wave",
-                "size": 11,
+                "cluster_id": 1,
+                "label": "ecobank",
+                "size": 3,
                 "post_ids": [
                   762,
-                  389,
-                  760,
-                  388,
-                  387,
-                  305,
-                  142,
-                  141,
-                  138,
-                  102,
-                  60
+                  761,
+                  757
                 ],
                 "emerging_theme": false
               }
@@ -70866,11 +70862,11 @@
           },
           {
             "week": "2026-W31",
-            "cluster_count": 2,
+            "cluster_count": 1,
             "clusters": [
               {
-                "cluster_id": 1,
-                "label": "supreme court",
+                "cluster_id": 0,
+                "label": "court ruling",
                 "size": 3,
                 "post_ids": [
                   3573,
@@ -70878,19 +70874,6 @@
                   3577
                 ],
                 "emerging_theme": true
-              },
-              {
-                "cluster_id": 0,
-                "label": "closest senate",
-                "size": 5,
-                "post_ids": [
-                  3551,
-                  3566,
-                  3563,
-                  3567,
-                  3575
-                ],
-                "emerging_theme": false
               }
             ],
             "continues_from": []
@@ -99978,9 +99961,11 @@
           }
         ],
         "sightings": {
-          "total_resightings": 0,
+          "total_resightings": 17,
           "total_net_new": 0,
-          "daily_resightings": {},
+          "daily_resightings": {
+            "2026-07-28": 17
+          },
           "daily_net_new": {}
         }
       },
@@ -100000,7 +99985,7 @@
         "coordination_signal_count": 199,
         "distinct_theme_count": 172,
         "theme_cluster_count": 172,
-        "graph_edge_count": 4867,
+        "graph_edge_count": 4871,
         "graph_author_count": 2129,
         "graph_connected_author_count": 797,
         "graph_coverage_pct": 37.4,
@@ -100015,8 +100000,8 @@
       },
       "brief": {
         "version": 1,
-        "generated_at": "2026-07-28T14:28:49.420488+00:00",
-        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-07-28 14:28:49 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **3549** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.40 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 2782 / 1091 |\n| Distinct themes | 172 |\n| Duplicate clusters (full DB) | 193 |\n| Fuzzy clusters (snapshot cohort) | 6 |\n| IU astroturf overlap | 2 bots / 2129 authors |\n\n## Ingest yield (last 14 days)\n\n- Runs: **400**\n- Net new: **565** \u00b7 re-seen: **3301**\n- Duplicate rate: **85.4%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 reuters reported, homeland security, district judge (1953 posts \u00b7 92 authors \u00b7 58 exact \u00b7 5 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 judgment supreme, civil discourse, forced labor, board trustees (70 posts \u00b7 8 authors \u00b7 4 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 similar rules (14 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 fraud cold, excuses games, pass nationwide (11 posts \u00b7 1 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 thune amassed, pac heading, axios that's (11 posts \u00b7 1 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_69_size_3\n- dense_cluster_555_size_3\n- dense_cluster_1416_size_3\n- cross_author_fuzzy_31authors_33posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_7authors_8posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_2authors_3posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **10 posts** \u00b7 10 author(s) \u2014 !!\ufe0f SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games \ud83c\udd70\ufe0f. Yes \ud83c\udd71\ufe0f. No\n- **9 posts** \u00b7 9 author(s) \u2014 \ud83d\udea8SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **7 posts** \u00b7 6 author(s) \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **3 posts** \u00b7 3 author(s) \u2014 \ud83d\udea8 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms \u2014 NYT AAG Harmeet Dhillon is on a WARPATH for sec\u2026\n- **3 posts** \u00b7 2 author(s) \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **2 posts** \u00b7 2 author(s) \u2014 \ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8 Analysis: Socialist Wins Raise Questions for Democrats \ud83e\udd14\ud83d\udcca This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove\u2026\n- _\u2026183 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 NOW: An activist court has just temporarily BLOCKED President Trump's administration from requiring proof of citizenship and mail-in voting tracking for the 2026 midterms, across a swath of blue st\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election \"There's a whole lot of p\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Trump Orders FBI to Reopen 2020 Michigan Voter Fraud Probe The case stems from October 2020, when city clerk Ann Meisch spotted red flags on 6,000 to 10,000 applications from GBI Strategies, includin\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms \"It's doubtful that Trump's speech moved the needle w\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~92% Jaccard \u2014 \ud83d\udea8 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election.\n- _\u20261 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms (62 posts)\n- focus flipping, union historically (9 posts)\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)\n- judgment supreme, civil discourse, forced labor, board trustees (70 posts)\n- illegals count (6 posts)\n- urgently warranted (4 posts)\n- primaries cracks, remove cheating (10 posts)\n- _\u2026117 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 3549 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
+        "generated_at": "2026-07-28T15:10:38.547792+00:00",
+        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-07-28 15:10:38 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **3549** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.40 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 2782 / 1091 |\n| Distinct themes | 172 |\n| Duplicate clusters (full DB) | 193 |\n| Fuzzy clusters (snapshot cohort) | 6 |\n| IU astroturf overlap | 2 bots / 2129 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **17**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **400**\n- Net new: **564** \u00b7 re-seen: **3313**\n- Duplicate rate: **85.5%**\n\n## Sentiment drift\n\n- Trend: **stable**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 reuters reported, homeland security, district judge (1953 posts \u00b7 92 authors \u00b7 58 exact \u00b7 5 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 judgment supreme, civil discourse, forced labor, board trustees (70 posts \u00b7 8 authors \u00b7 4 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts \u00b7 0 authors \u00b7 3 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 similar rules (14 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts \u00b7 0 authors \u00b7 2 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 fraud cold, excuses games, pass nationwide (11 posts \u00b7 1 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 thune amassed, pac heading, axios that's (11 posts \u00b7 1 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- _\u2026and more frames in dashboard._\n\n## CIB warning signals\n\n- dense_cluster_69_size_3\n- dense_cluster_555_size_3\n- dense_cluster_1416_size_3\n- cross_author_fuzzy_31authors_33posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_7authors_8posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_2authors_3posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n- cross_author_fuzzy_2authors_2posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **10 posts** \u00b7 10 author(s) \u2014 !!\ufe0f SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games \ud83c\udd70\ufe0f. Yes \ud83c\udd71\ufe0f. No\n- **9 posts** \u00b7 9 author(s) \u2014 \ud83d\udea8SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **7 posts** \u00b7 6 author(s) \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **3 posts** \u00b7 3 author(s) \u2014 \ud83d\udea8 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms \u2014 NYT AAG Harmeet Dhillon is on a WARPATH for sec\u2026\n- **3 posts** \u00b7 2 author(s) \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- **2 posts** \u00b7 2 author(s) \u2014 Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge\n- **2 posts** \u00b7 2 author(s) \u2014 \ud83d\uddf3\ufe0f\ud83c\uddfa\ud83c\uddf8 Analysis: Socialist Wins Raise Questions for Democrats \ud83e\udd14\ud83d\udcca This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove\u2026\n- _\u2026183 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 NOW: An activist court has just temporarily BLOCKED President Trump's administration from requiring proof of citizenship and mail-in voting tracking for the 2026 midterms, across a swath of blue st\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83d\udea8 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election \"There's a whole lot of p\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Trump Orders FBI to Reopen 2020 Michigan Voter Fraud Probe The case stems from October 2020, when city clerk Ann Meisch spotted red flags on 6,000 to 10,000 applications from GBI Strategies, includin\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms \"It's doubtful that Trump's speech moved the needle w\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~92% Jaccard \u2014 \ud83d\udea8 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election.\n- _\u20261 more fuzzy cluster(s) in snapshot cohort._\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)\n- red wave, midwest democrat, resigns electoral, disaster looms (62 posts)\n- focus flipping, union historically (9 posts)\n- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)\n- judgment supreme, civil discourse, forced labor, board trustees (70 posts)\n- illegals count (6 posts)\n- urgently warranted (4 posts)\n- primaries cracks, remove cheating (10 posts)\n- _\u2026117 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 3549 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
         "meta": {
           "narrative_name": "midterms_2026",
           "posts_total_db": 3549,
@@ -100051,17 +100036,19 @@
             "available": true,
             "window_days": 14,
             "runs": 400,
-            "net_new": 565,
-            "duplicates": 3301,
-            "filtered": 3709,
-            "fetched": 7559,
-            "duplicate_rate": 0.854,
-            "latest_run_at": "2026-07-28T14:28:47.807343+00:00"
+            "net_new": 564,
+            "duplicates": 3313,
+            "filtered": 3739,
+            "fetched": 7600,
+            "duplicate_rate": 0.855,
+            "latest_run_at": "2026-07-28T15:10:37.076251+00:00"
           },
           "sightings": {
-            "total_resightings": 0,
+            "total_resightings": 17,
             "total_net_new": 0,
-            "daily_resightings": {},
+            "daily_resightings": {
+              "2026-07-28": 17
+            },
             "daily_net_new": {}
           },
           "sentiment": {
@@ -101039,7 +101026,7 @@
     "pages_workflow_url": "https://github.com/saptreekly/Project-Heimdall/actions/workflows/pages.yml",
     "x_rate": {
       "date": "2026-07-28",
-      "requests_used": 20
+      "requests_used": 22
     }
   }
 }
