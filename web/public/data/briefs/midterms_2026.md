@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-28 11:28:11 UTC
+> Tactical snapshot · 2026-07-28 12:04:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3543** |
+| Posts in database | **3549** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2780 / 1091 |
-| Distinct themes | 175 |
-| Duplicate clusters (full DB) | 192 |
-| Fuzzy clusters (snapshot cohort) | 5 |
-| IU astroturf overlap | 2 bots / 2127 authors |
+| Graph nodes / edges | 2782 / 1091 |
+| Distinct themes | 129 |
+| Duplicate clusters (full DB) | 193 |
+| Fuzzy clusters (snapshot cohort) | 6 |
+| IU astroturf overlap | 2 bots / 2129 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **13**
+- Net-new posts logged: **6**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **399**
-- Net new: **563** · re-seen: **3306**
+- Net new: **569** · re-seen: **3319**
 - Duplicate rate: **85.4%**
 
 ## Sentiment drift
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge, super pacs (1914 posts · 88 authors · 53 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, tariff section, forced labor, board trustees (72 posts · 9 authors · 5 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (12 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (646 posts · 42 authors · 19 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old (48 posts · 4 authors · 13 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · rick scott, floor vote, mass voter fraud, voter fraud scale, trump deep state (12 posts · 3 authors · 3 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -73,7 +73,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…182 more exact-duplicate cluster(s) in database._
+- _…183 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -81,11 +81,12 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
+- **2 posts** · 2 authors · ~100% Jaccard — 🚨 NOW: An activist court has just temporarily BLOCKED President Trump's administration from requiring proof of citizenship and mail-in voting tracking for the 2026 midterms, across a swath of blue st…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election "There's a whole lot of p…
 - **2 posts** · 2 authors · ~100% Jaccard — Trump Orders FBI to Reopen 2020 Michigan Voter Fraud Probe The case stems from October 2020, when city clerk Ann Meisch spotted red flags on 6,000 to 10,000 applications from GBI Strategies, includin…
 - **2 posts** · 2 authors · ~100% Jaccard — JUST IN: Congress is about to go on SUMMER RECESS and time is nearly out to pass the SAVE America Act for it to take effect for the 2026 midterms "It's doubtful that Trump's speech moved the needle w…
 - **2 posts** · 2 authors · ~92% Jaccard — 🚨 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election.
-- **2 posts** · 2 authors · ~88% Jaccard — 🚨 IT'S OFFICIAL: Scott Presler has now asked Senate Majority Leader John Thune to PASS the SAVE America Act for **200 DAYS STRAIGHT* Time is now RUNNING OUT for voter ID and proof of citizenship to t…
+- _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -97,19 +98,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, final removal (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (63 posts)
-- focus flipping, union historically (11 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- judgment supreme, civil discourse, tariff section, forced labor, board trustees (72 posts)
-- liveprayer tuesday (13 posts)
-- illegals count, seats support (6 posts)
-- crimes urgently, lower approval (12 posts)
-- _…114 more emerging theme(s)._
+- support scott, presler plan, plan focus, focus flipping, flipping jersey (5 posts)
+- polling stations, mullin stands (5 posts)
+- results conservatives, check groypers (12 posts)
+- illegals count (7 posts)
+- plummets key, source spotlight (12 posts)
+- union historically (4 posts)
+- federal judge, citizenship verification, verified lists (13 posts)
+- plan impeach, impeach remove, remove trump, plan impeach remove, impeach remove trump (5 posts)
+- _…115 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3543 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3549 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
