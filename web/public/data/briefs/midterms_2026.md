@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-28 20:12:02 UTC
+> Tactical snapshot · 2026-07-28 20:48:39 UTC
 
 ## Corpus
 
@@ -19,14 +19,9 @@
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2133 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **9**
-- Net-new posts logged: **1**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **402**
+- Runs: **403**
 - Net new: **568** · re-seen: **3323**
 - Duplicate rate: **85.4%**
 
@@ -36,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge, voter eligibility, super pacs (1960 posts · 94 authors · 56 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge, voter eligibility, super pacs (1967 posts · 95 authors · 55 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dems defeat, making mail, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · american thinker, bleak existence (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -100,12 +95,12 @@ _None spanning multiple narratives._
 
 - doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms (63 posts)
-- focus flipping, union historically (9 posts)
+- focus flipping, union historically (11 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (70 posts)
 - agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
+- lower approval, results conservatives, check groypers (10 posts)
 - illegals count (6 posts)
-- urgently warranted (4 posts)
 - _…115 more emerging theme(s)._
 
 ## Scope note
