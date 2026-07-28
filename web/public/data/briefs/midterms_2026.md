@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-27 22:46:30 UTC
+> Tactical snapshot · 2026-07-27 23:48:19 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3533** |
+| Posts in database | **3536** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2775 / 1088 |
-| Distinct themes | 169 |
+| Graph nodes / edges | 2776 / 1088 |
+| Distinct themes | 142 |
 | Duplicate clusters (full DB) | 192 |
 | Fuzzy clusters (snapshot cohort) | 5 |
-| IU astroturf overlap | 2 bots / 2124 authors |
+| IU astroturf overlap | 2 bots / 2125 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **15**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **398**
-- Net new: **575** · re-seen: **3303**
+- Net new: **578** · re-seen: **3318**
 - Duplicate rate: **85.2%**
 
 ## Sentiment drift
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (1927 posts · 92 authors · 54 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, tariff section, forced labor, board trustees (72 posts · 9 authors · 5 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, super pacs (1597 posts · 78 authors · 47 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, red (643 posts · 41 authors · 19 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (12 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dems defeat, making mail, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -97,19 +97,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, final removal (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (63 posts)
-- focus flipping, union historically (11 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- judgment supreme, civil discourse, tariff section, forced labor, board trustees (72 posts)
+- focus flipping, union historically (9 posts)
+- avoid impeachment, crimes urgently (16 posts)
 - illegals count (6 posts)
-- crimes urgently, lower approval (12 posts)
-- primaries cracks, remove cheating, lse united (9 posts)
-- _…109 more emerging theme(s)._
+- plummets key, source spotlight (12 posts)
+- verified lists, ensuring citizenship (13 posts)
+- plan impeach, currently chance (5 posts)
+- alex pretti, immunity ice, sued jailed, agents allowing (6 posts)
+- wow scott, presler officially, planning primary, playing hardball (9 posts)
+- _…105 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3533 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3536 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
