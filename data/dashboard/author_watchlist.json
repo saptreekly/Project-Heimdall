@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1400,
+      "run_counter": 1401,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,11 +1940,11 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1587037210133647360": {
-          "author_id": "1587037210133647360",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "561310591": {
+          "author_id": "561310591",
+          "handle": "realMAG1775",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
