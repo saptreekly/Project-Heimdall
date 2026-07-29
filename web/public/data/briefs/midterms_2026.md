@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-29 10:23:01 UTC
+> Tactical snapshot · 2026-07-29 10:48:34 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2792 / 1093 |
-| Distinct themes | 131 |
+| Distinct themes | 174 |
 | Duplicate clusters (full DB) | 193 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2138 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **18**
-- Net-new posts logged: **2**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **403**
-- Net new: **555** · re-seen: **3338**
-- Duplicate rate: **85.7%**
+- Runs: **404**
+- Net new: **555** · re-seen: **3340**
+- Duplicate rate: **85.8%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, election (650 posts · 41 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · years old (52 posts · 4 authors · 15 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square, midterms source (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · rick scott, floor vote, mass voter fraud, voter fraud scale, trump deep state (12 posts · 3 authors · 3 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge, voter eligibility, super pacs (1969 posts · 96 authors · 50 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -97,15 +97,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping (5 posts)
-- polling stations, mullin stands (5 posts)
-- results conservatives, check groypers (12 posts)
+- doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (63 posts)
+- focus flipping, union historically (9 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (70 posts)
+- agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
 - illegals count (6 posts)
-- attorney central, economic concerns (20 posts)
-- union historically (4 posts)
-- federal judge, citizenship verification, verified lists (13 posts)
-- plan impeach, impeach remove, remove trump, plan impeach remove, impeach remove trump (5 posts)
-- _…117 more emerging theme(s)._
+- primaries cracks, remove cheating, lse united (9 posts)
+- _…118 more emerging theme(s)._
 
 ## Scope note
 
