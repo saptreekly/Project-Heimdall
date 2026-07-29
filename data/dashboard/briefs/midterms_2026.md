@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-29 14:28:00 UTC
+> Tactical snapshot · 2026-07-29 15:15:48 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3575** |
+| Posts in database | **3576** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,20 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2792 / 1093 |
-| Distinct themes | 134 |
+| Distinct themes | 170 |
 | Duplicate clusters (full DB) | 193 |
-| Fuzzy clusters (snapshot cohort) | 5 |
+| Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 2 bots / 2138 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **16**
-- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **405**
-- Net new: **552** · re-seen: **3348**
+- Runs: **404**
+- Net new: **552** · re-seen: **3343**
 - Duplicate rate: **85.8%**
 
 ## Sentiment drift
@@ -36,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court minus, forced labor, judgment supreme, civil discourse, board trustees (71 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, away world's, seizing milestone (38 posts · 2 authors · 12 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · national committee (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, homeland security, district judge (1988 posts · 95 authors · 53 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · american thinker, bleak existence (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -85,7 +80,6 @@ _None (need ≥5 authors in 90s window)._
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election "There's a whole lot of p…
 - **2 posts** · 2 authors · ~100% Jaccard — Trump Orders FBI to Reopen 2020 Michigan Voter Fraud Probe The case stems from October 2020, when city clerk Ann Meisch spotted red flags on 6,000 to 10,000 applications from GBI Strategies, includin…
 - **2 posts** · 2 authors · ~92% Jaccard — 🚨 WTF?! Minnesota AG Keith Ellison (D) just announced Democrats' plan in the 2026 midterms is to have foreigners VOTE, including people NOT NATURALIZED in the prior election.
-- **2 posts** · 2 authors · ~88% Jaccard — 🚨 IT'S OFFICIAL: Scott Presler has now asked Senate Majority Leader John Thune to PASS the SAVE America Act for **200 DAYS STRAIGHT* Time is now RUNNING OUT for voter ID and proof of citizenship to t…
 
 ## Cross-narrative actors (this narrative)
 
@@ -97,19 +91,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes (10 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (56 posts)
-- focus flipping (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (13 posts)
-- court minus, forced labor, judgment supreme, civil discourse, board trustees (71 posts)
-- polling stations (7 posts)
+- doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (62 posts)
+- focus flipping, union historically (11 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (70 posts)
 - lower approval, results conservatives, check groypers (12 posts)
-- census midterms, illegals count, seats support, breaking president, plans census (6 posts)
+- illegals count (6 posts)
+- primaries cracks, remove cheating (10 posts)
 - _…115 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3575 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3576 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
