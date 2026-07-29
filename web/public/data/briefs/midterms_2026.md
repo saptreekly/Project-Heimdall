@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-29 13:32:08 UTC
+> Tactical snapshot · 2026-07-29 14:28:00 UTC
 
 ## Corpus
 
@@ -14,20 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2792 / 1093 |
-| Distinct themes | 170 |
+| Distinct themes | 134 |
 | Duplicate clusters (full DB) | 193 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2138 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **16**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **404**
-- Net new: **553** · re-seen: **3346**
+- Runs: **405**
+- Net new: **552** · re-seen: **3348**
 - Duplicate rate: **85.8%**
 
 ## Sentiment drift
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, homeland security, district judge (1987 posts · 94 authors · 50 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · american thinker, bleak existence (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court minus, forced labor, judgment supreme, civil discourse, board trustees (71 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, away world's, seizing milestone (38 posts · 2 authors · 12 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · national committee (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -97,14 +97,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (63 posts)
-- focus flipping, union historically (11 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (70 posts)
-- illegals count (6 posts)
-- primaries cracks, remove cheating, lse united (10 posts)
-- boom latino, james talarico, texas' migration, backlash jolts (5 posts)
+- doe completely, denied asylum, claim routes (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (56 posts)
+- focus flipping (5 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (13 posts)
+- court minus, forced labor, judgment supreme, civil discourse, board trustees (71 posts)
+- polling stations (7 posts)
+- lower approval, results conservatives, check groypers (12 posts)
+- census midterms, illegals count, seats support, breaking president, plans census (6 posts)
 - _…115 more emerging theme(s)._
 
 ## Scope note
