@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-29 11:43:42 UTC
+> Tactical snapshot · 2026-07-29 13:01:40 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3574** |
+| Posts in database | **3575** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **25**
-- Net-new posts logged: **0**
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **403**
-- Net new: **552** · re-seen: **3350**
-- Duplicate rate: **85.9%**
+- Runs: **404**
+- Net new: **553** · re-seen: **3346**
+- Duplicate rate: **85.8%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (1955 posts · 98 authors · 47 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, tariff section, forced labor, board trustees (72 posts · 9 authors · 5 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge, voter eligibility (1961 posts · 98 authors · 55 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, paxton he's, target national (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · american thinker, bleak existence (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -97,19 +97,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, final removal (9 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (62 posts)
+- doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (79 posts)
 - focus flipping, union historically (11 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
-- judgment supreme, civil discourse, tariff section, forced labor, board trustees (72 posts)
-- liveprayer tuesday (13 posts)
-- illegals count, seats support (6 posts)
-- primaries cracks, remove cheating, lse united (10 posts)
-- _…112 more emerging theme(s)._
+- judgment supreme, civil discourse, forced labor, board trustees (69 posts)
+- illegals count (6 posts)
+- primaries cracks, remove cheating (10 posts)
+- verified lists (8 posts)
+- _…117 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3574 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3575 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
