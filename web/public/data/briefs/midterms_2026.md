@@ -1,19 +1,19 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-29 07:54:10 UTC
+> Tactical snapshot · 2026-07-29 08:31:31 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3571** |
+| Posts in database | **3572** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2790 / 1092 |
+| Graph nodes / edges | 2791 / 1093 |
 | Distinct themes | 172 |
 | Duplicate clusters (full DB) | 193 |
 | Fuzzy clusters (snapshot cohort) | 5 |
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **13**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **9**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **403**
-- Net new: **552** · re-seen: **3331**
-- Duplicate rate: **85.8%**
+- Runs: **402**
+- Net new: **553** · re-seen: **3327**
+- Duplicate rate: **85.7%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (1978 posts · 98 authors · 56 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, homeland security, district judge (1977 posts · 95 authors · 54 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -97,19 +97,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, individual directly, final removal (10 posts)
+- doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms (62 posts)
 - focus flipping, union historically (9 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (70 posts)
-- lower approval, results conservatives, check groypers (12 posts)
-- illegals count, seats support (6 posts)
-- primaries cracks, remove cheating, lse united (9 posts)
-- _…114 more emerging theme(s)._
+- illegals count (6 posts)
+- primaries cracks, remove cheating, lse united (10 posts)
+- boom latino, james talarico, texas' migration, backlash jolts (5 posts)
+- _…116 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3571 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3572 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
