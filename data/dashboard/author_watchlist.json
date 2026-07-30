@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1432,
+      "run_counter": 1433,
       "authors": {
         "111": {
           "author_id": "111",
@@ -549,19 +549,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1844776655681667076": {
-          "author_id": "1844776655681667076",
-          "handle": "WordleBaconNYC",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-10T18:10:44.140253+00:00",
-          "last_tweet_at": "2026-06-10T13:42:52+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "34497461": {
           "author_id": "34497461",
           "handle": "robertd903",
@@ -570,19 +557,6 @@
           "priority": 0.6900000000000001,
           "last_polled_at": "2026-06-11T21:31:42.800081+00:00",
           "last_tweet_at": "2026-06-11T19:01:47+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1837549239209283586": {
-          "author_id": "1837549239209283586",
-          "handle": "NightCityTimes",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-10T21:29:31.812675+00:00",
-          "last_tweet_at": "2026-06-10T19:27:33+00:00",
           "inserted_total": 2,
           "polls": 1,
           "inserts_from_polls": 0,
@@ -1321,10 +1295,10 @@
           "handle": "cb_doge",
           "discovered_via": "author_poll",
           "depth": 0,
-          "priority": 0.6900000000000001,
+          "priority": 0.81,
           "last_polled_at": "2026-06-26T17:59:57.218972+00:00",
           "last_tweet_at": null,
-          "inserted_total": 2,
+          "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,11 +1914,37 @@
           "inserts_from_polls": 3,
           "status": "active"
         },
-        "18584875": {
-          "author_id": "18584875",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "875856268056969216": {
+          "author_id": "875856268056969216",
+          "handle": "DC_Draino",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.9299999999999999,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 4,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "537709549": {
+          "author_id": "537709549",
+          "handle": "LauraLoomer",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "94132483": {
+          "author_id": "94132483",
+          "handle": "OcrazioCornPop",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
