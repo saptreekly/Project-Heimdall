@@ -128,7 +128,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-07-27T10:53:39.621355+00:00",
           "last_tweet_at": "2026-07-24T04:51:01+00:00",
-          "inserted_total": 26,
+          "inserted_total": 27,
           "polls": 5,
           "inserts_from_polls": 8,
           "status": "active"
@@ -167,7 +167,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-07-27T20:02:20.737201+00:00",
           "last_tweet_at": "2026-07-26T01:20:01+00:00",
-          "inserted_total": 64,
+          "inserted_total": 63,
           "polls": 5,
           "inserts_from_polls": 22,
           "status": "active"
@@ -1940,9 +1940,9 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "4849654052": {
-          "author_id": "4849654052",
-          "handle": "MikeJohnson",
+        "574807922": {
+          "author_id": "574807922",
+          "handle": "AllSidesNow",
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.45,
