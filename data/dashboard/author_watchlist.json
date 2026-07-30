@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1446,
+      "run_counter": 1447,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,16 +1940,16 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1138080841618329600": {
-          "author_id": "1138080841618329600",
-          "handle": "WhatleyNC",
-          "discovered_via": "keyword",
-          "depth": 0,
+        "846107330144079872": {
+          "author_id": "846107330144079872",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
           "priority": 0.45,
-          "last_polled_at": "2026-07-30T16:47:38.817740+00:00",
+          "last_polled_at": null,
           "last_tweet_at": null,
           "inserted_total": 0,
-          "polls": 1,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         }
