@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-30 18:05:08 UTC
+> Tactical snapshot · 2026-07-30 19:08:05 UTC
 
 ## Corpus
 
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2802 / 1096 |
-| Distinct themes | 170 |
+| Distinct themes | 172 |
 | Duplicate clusters (full DB) | 194 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 2 bots / 2150 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **22**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **408**
-- Net new: **553** · re-seen: **3377**
-- Duplicate rate: **85.9%**
+- Runs: **409**
+- Net new: **547** · re-seen: **3387**
+- Duplicate rate: **86.1%**
 
 ## Sentiment drift
 
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, homeland security, district judge (2002 posts · 99 authors · 56 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, homeland security, district judge (2001 posts · 98 authors · 55 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (68 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -104,7 +99,7 @@ _None spanning multiple narratives._
 - lower approval, results conservatives, check groypers (12 posts)
 - illegals count, seats support (6 posts)
 - texas primaries, remove cheating, lse united (9 posts)
-- _…114 more emerging theme(s)._
+- _…117 more emerging theme(s)._
 
 ## Scope note
 
