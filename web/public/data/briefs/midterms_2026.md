@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-29 23:36:49 UTC
+> Tactical snapshot · 2026-07-30 00:10:38 UTC
 
 ## Corpus
 
@@ -21,14 +21,14 @@
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **4**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **25**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **407**
-- Net new: **559** · re-seen: **3381**
-- Duplicate rate: **85.8%**
+- Net new: **559** · re-seen: **3406**
+- Duplicate rate: **85.9%**
 
 ## Sentiment drift
 
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballots, win house, america act, election integrity executive (3039 posts · 132 authors · 163 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, save america, win house, integrity executive order (3030 posts · 132 authors · 163 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -89,14 +89,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, issue trump, corrupt doj, stop gaslighting, happy talk (9 posts)
+- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - inbreeds cuz, 10000's fascist, loves winners (8 posts)
 - facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
-- _…16 more emerging theme(s)._
+- _…15 more emerging theme(s)._
 
 ## Scope note
 
