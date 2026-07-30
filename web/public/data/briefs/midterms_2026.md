@@ -1,33 +1,33 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-30 20:16:21 UTC
+> Tactical snapshot · 2026-07-30 20:54:08 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3614** |
+| Posts in database | **3616** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2803 / 1097 |
-| Distinct themes | 173 |
+| Graph nodes / edges | 2805 / 1098 |
+| Distinct themes | 174 |
 | Duplicate clusters (full DB) | 194 |
 | Fuzzy clusters (snapshot cohort) | 4 |
-| IU astroturf overlap | 2 bots / 2150 authors |
+| IU astroturf overlap | 2 bots / 2151 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **7**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **8**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **408**
-- Net new: **548** · re-seen: **3364**
+- Runs: **407**
+- Net new: **550** · re-seen: **3365**
 - Duplicate rate: **86.0%**
 
 ## Sentiment drift
@@ -36,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, homeland security, district judge (2005 posts · 100 authors · 57 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (1990 posts · 99 authors · 55 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -96,19 +96,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes, individual directly, final removal (9 posts)
-- biden holds, maine unless, collins retires (6 posts)
+- doe completely, denied asylum, claim routes, individual directly, final removal (10 posts)
+- biden holds, collins retires (6 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms (79 posts)
 - focus flipping, union historically (11 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (69 posts)
 - lower approval, results conservatives, check groypers (12 posts)
 - illegals count, seats support (6 posts)
-- _…117 more emerging theme(s)._
+- _…119 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3614 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3616 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
