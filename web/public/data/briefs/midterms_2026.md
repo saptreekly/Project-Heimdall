@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-30 15:58:27 UTC
+> Tactical snapshot · 2026-07-30 16:22:55 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3615** |
+| Posts in database | **3613** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2802 / 1096 |
-| Distinct themes | 134 |
-| Duplicate clusters (full DB) | 195 |
+| Distinct themes | 136 |
+| Duplicate clusters (full DB) | 194 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 2 bots / 2150 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **14**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **17**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **407**
-- Net new: **554** · re-seen: **3352**
-- Duplicate rate: **85.8%**
+- Net new: **552** · re-seen: **3355**
+- Duplicate rate: **85.9%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, election (655 posts · 41 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · years old, polling stations, agents posted (41 posts · 2 authors · 12 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (655 posts · 42 authors · 19 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, polling stations, dhs secretary, agents posted (46 posts · 2 authors · 14 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · excuses games yes, fraud cold, excuses games, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · points enthusiastic, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stop fraud, cold excuses, pass nationwide, voter laws, games yes (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -73,7 +73,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…185 more exact-duplicate cluster(s) in database._
+- _…184 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -98,17 +98,17 @@ _None spanning multiple narratives._
 
 - focus flipping (8 posts)
 - lower approval, results conservatives, check groypers (12 posts)
-- illegals count (6 posts)
-- attorney central, economic concerns (20 posts)
+- illegals count (7 posts)
+- attorney central, economic concerns, buyer's remorse (20 posts)
 - union historically (4 posts)
 - citizenship verification, verified lists (14 posts)
 - alex pretti, immunity ice, sued jailed (6 posts)
-- primary challenge, wow scott, presler officially (9 posts)
-- _…119 more emerging theme(s)._
+- primary challenge, wow scott, presler officially (8 posts)
+- _…122 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3615 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3613 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
