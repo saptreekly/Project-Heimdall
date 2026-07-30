@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-30 05:39:46 UTC
+> Tactical snapshot · 2026-07-30 05:54:17 UTC
 
 ## Corpus
 
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2800 / 1095 |
-| Distinct themes | 134 |
+| Distinct themes | 170 |
 | Duplicate clusters (full DB) | 194 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 2 bots / 2148 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **8**
-- Net-new posts logged: **11**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **407**
-- Net new: **561** · re-seen: **3398**
-- Duplicate rate: **85.8%**
+- Net new: **561** · re-seen: **3371**
+- Duplicate rate: **85.7%**
 
 ## Sentiment drift
 
@@ -36,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, election (653 posts · 43 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · years old, polling stations, agents posted (40 posts · 2 authors · 12 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · rick scott, election security, floor vote, mass voter fraud, voter fraud scale (12 posts · 1 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (1984 posts · 101 authors · 53 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · groundwork disrupt, paxton he's, target national (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -96,15 +91,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping (8 posts)
+- doe completely, denied asylum, claim routes, final removal (10 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (65 posts)
+- focus flipping, union historically (11 posts)
+- claimed china (5 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (69 posts)
 - lower approval, results conservatives, check groypers (12 posts)
-- illegals count (7 posts)
-- attorney central, economic concerns (20 posts)
-- union historically (4 posts)
-- federal judge, citizenship verification, verified lists (14 posts)
-- alex pretti, immunity ice, sued jailed (6 posts)
-- primary challenge, wow scott, presler officially (9 posts)
-- _…118 more emerging theme(s)._
+- illegals count, seats support (6 posts)
+- _…111 more emerging theme(s)._
 
 ## Scope note
 
