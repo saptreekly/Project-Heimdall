@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-30 00:10:38 UTC
+> Tactical snapshot · 2026-07-30 02:58:36 UTC
 
 ## Corpus
 
@@ -14,19 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2798 / 1095 |
-| Distinct themes | 73 |
+| Distinct themes | 142 |
 | Duplicate clusters (full DB) | 194 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 2 bots / 2143 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **25**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **407**
+- Runs: **408**
 - Net new: **559** · re-seen: **3406**
 - Duplicate rate: **85.9%**
 
@@ -36,8 +31,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, save america, win house, integrity executive order (3030 posts · 132 authors · 163 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court minus, forced labor, judgment supreme, civil discourse, board trustees (71 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, away world's, seizing milestone (40 posts · 2 authors · 13 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, decide america, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · national committee (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -89,14 +91,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- setup election fraud, accountability midterm, issue trump, corrupt doj, stop gaslighting (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- inbreeds cuz, 10000's fascist, loves winners (8 posts)
-- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
-- _…15 more emerging theme(s)._
+- doe completely, denied asylum, claim routes (11 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (55 posts)
+- focus flipping (5 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (13 posts)
+- court minus, forced labor, judgment supreme, civil discourse, board trustees (71 posts)
+- polling stations, secretary markwayne (5 posts)
+- lower approval, results conservatives, check groypers (12 posts)
+- census midterms, illegals count, seats support, breaking president, plans census (6 posts)
+- _…122 more emerging theme(s)._
 
 ## Scope note
 
