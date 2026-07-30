@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1444,
+      "run_counter": 1445,
       "authors": {
         "111": {
           "author_id": "111",
@@ -167,7 +167,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-07-27T20:02:20.737201+00:00",
           "last_tweet_at": "2026-07-26T01:20:01+00:00",
-          "inserted_total": 63,
+          "inserted_total": 64,
           "polls": 5,
           "inserts_from_polls": 22,
           "status": "active"
@@ -1854,10 +1854,10 @@
           "handle": "BrennanCenter",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.91,
+          "priority": 1.0,
           "last_polled_at": "2026-07-24T19:53:57.656022+00:00",
           "last_tweet_at": "2026-07-23T21:23:14+00:00",
-          "inserted_total": 4,
+          "inserted_total": 5,
           "polls": 1,
           "inserts_from_polls": 1,
           "status": "active"
@@ -1940,11 +1940,11 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1499556521457303555": {
-          "author_id": "1499556521457303555",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "30354991": {
+          "author_id": "30354991",
+          "handle": "KamalaHarris",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
