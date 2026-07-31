@@ -1259,7 +1259,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-07-25T09:12:04.480595+00:00",
           "last_tweet_at": "2026-07-23T16:48:20+00:00",
-          "inserted_total": 26,
+          "inserted_total": 25,
           "polls": 4,
           "inserts_from_polls": 10,
           "status": "active"
@@ -1464,10 +1464,10 @@
           "handle": "nicksortor",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.6900000000000001,
+          "priority": 0.81,
           "last_polled_at": "2026-07-01T06:09:12.601167+00:00",
           "last_tweet_at": null,
-          "inserted_total": 2,
+          "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,15 +1940,15 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "63697178": {
-          "author_id": "63697178",
-          "handle": "17thletter01",
+        "41634520": {
+          "author_id": "41634520",
+          "handle": "seanhannity",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.5700000000000001,
+          "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 1,
+          "inserted_total": 0,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
