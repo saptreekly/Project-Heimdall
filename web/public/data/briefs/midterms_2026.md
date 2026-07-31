@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-07-31 00:16:10 UTC
+> Tactical snapshot · 2026-07-31 03:41:54 UTC
 
 ## Corpus
 
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2805 / 1098 |
-| Distinct themes | 172 |
+| Distinct themes | 173 |
 | Duplicate clusters (full DB) | 195 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2151 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **23**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **409**
-- Net new: **545** · re-seen: **3394**
-- Duplicate rate: **86.2%**
+- Net new: **545** · re-seen: **3367**
+- Duplicate rate: **86.1%**
 
 ## Sentiment drift
 
@@ -36,10 +31,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2015 posts · 100 authors · 56 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2014 posts · 100 authors · 58 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 8 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -96,14 +91,14 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - doe completely, denied asylum, claim routes, individual directly, final removal (10 posts)
-- biden holds, collins retires (6 posts)
+- biden holds, win unlikely, maine unless, collins retires (6 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (79 posts)
 - focus flipping, union historically (11 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (13 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (69 posts)
 - illegals count, seats support (6 posts)
 - initial success, gerrymandering strategy, facing roadblocks, boom latino (6 posts)
-- _…118 more emerging theme(s)._
+- _…117 more emerging theme(s)._
 
 ## Scope note
 
