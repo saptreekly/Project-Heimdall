@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1474,
+      "run_counter": 1475,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,11 +1940,11 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "2007593461818560512": {
-          "author_id": "2007593461818560512",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
+        "1099579684981944320": {
+          "author_id": "1099579684981944320",
+          "handle": "WallStreetApes",
+          "discovered_via": "keyword",
+          "depth": 0,
           "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
