@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1482,
+      "run_counter": 1483,
       "authors": {
         "111": {
           "author_id": "111",
@@ -649,19 +649,6 @@
           "last_polled_at": "2026-06-14T21:24:03.199488+00:00",
           "last_tweet_at": "2026-06-14T17:56:18+00:00",
           "inserted_total": 3,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1652304166927192067": {
-          "author_id": "1652304166927192067",
-          "handle": "DebZ6063",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-13T15:55:43.603687+00:00",
-          "last_tweet_at": "2026-06-13T12:25:08+00:00",
-          "inserted_total": 2,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1946,11 +1933,24 @@
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.79,
-          "last_polled_at": "2026-08-01T07:17:53.020745+00:00",
+          "last_polled_at": "2026-08-01T06:37:56.264537+00:00",
           "last_tweet_at": "2026-07-31T11:20:27+00:00",
           "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 1,
+          "status": "active"
+        },
+        "1904184016946831360": {
+          "author_id": "1904184016946831360",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 0,
+          "polls": 0,
+          "inserts_from_polls": 0,
           "status": "active"
         }
       }
