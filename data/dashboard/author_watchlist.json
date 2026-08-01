@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1480,
+      "run_counter": 1481,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1940,15 +1940,15 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "2037813850251108352": {
-          "author_id": "2037813850251108352",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
+        "593853709": {
+          "author_id": "593853709",
+          "handle": "Mayra_FloresTx",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 0,
+          "inserted_total": 1,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
