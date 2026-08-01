@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-01 21:27:59 UTC
+> Tactical snapshot · 2026-08-01 21:50:24 UTC
 
 ## Corpus
 
@@ -14,20 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2850 / 1118 |
-| Distinct themes | 183 |
+| Distinct themes | 186 |
 | Duplicate clusters (full DB) | 197 |
 | Fuzzy clusters (snapshot cohort) | 2 |
 | IU astroturf overlap | 2 bots / 2183 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **20**
-- Net-new posts logged: **1**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **408**
-- Net new: **602** · re-seen: **3254**
+- Runs: **409**
+- Net new: **602** · re-seen: **3246**
 - Duplicate rate: **84.4%**
 
 ## Sentiment drift
@@ -36,13 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2022 posts · 93 authors · 49 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2005 posts · 93 authors · 50 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (67 posts · 5 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · groundwork disrupt, paxton he's, target national, lose presidency (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · california hit, similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -94,15 +89,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms (66 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (67 posts)
 - focus flipping (5 posts)
 - claimed china (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (67 posts)
-- liveprayer tuesday (12 posts)
+- liveprayer tuesday (13 posts)
 - illegals count, seats support, breaking president donald (7 posts)
-- union historically (5 posts)
-- _…119 more emerging theme(s)._
+- union historically (7 posts)
+- _…120 more emerging theme(s)._
 
 ## Scope note
 
