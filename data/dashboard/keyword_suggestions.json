@@ -1,58 +1,60 @@
 {
-  "generated_at": "2026-07-26T07:46:27.553597+00:00",
+  "generated_at": "2026-08-02T07:43:51.916360+00:00",
   "window_days": 7,
   "dead_keywords": [
     "2026 midterm fraud",
+    "2026 red wave",
     "2026 gerrymandering",
-    "2026 midwest democrat"
+    "2026 deliver mail ballots",
+    "2026 friends senate"
   ],
   "suggestions": [
     {
-      "query": "2026 deliver mail ballots",
-      "source": "theme cluster (red wave \u00b7 deliver mail ballots \u00b7 integrity executive order \u00b7 george soros, 2872 posts)",
-      "score": 2872.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
       "query": "2026 save america midterms",
       "source": "corpus c-TF-IDF",
-      "score": 194.632,
+      "score": 171.324,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
     },
     {
-      "query": "2026 friends senate",
-      "source": "theme cluster (eliminate filibuster \u00b7 mitchell post \u00b7 you're wondering \u00b7 thune doesn't, 35 posts)",
-      "score": 35.0,
+      "query": "2026 midwest democrat",
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 57 posts)",
+      "score": 57.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 ineligible voting",
-      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 ineligible voting \u00b7 vote dilution, 4 posts)",
-      "score": 4.0,
+      "query": "2026 resigns electoral",
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 57 posts)",
+      "score": 57.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 vote dilution",
-      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 ineligible voting \u00b7 vote dilution, 4 posts)",
-      "score": 4.0,
+      "query": "2026 republican beautiful",
+      "source": "theme cluster (taxes working \u00b7 million americans \u00b7 replaced end \u00b7 unregulated dirty, 25 posts)",
+      "score": 25.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 extremist scotus",
-      "source": "theme cluster (survive conservative \u00b7 extremist scotus \u00b7 court volunteer, 4 posts)",
-      "score": 4.0,
+      "query": "2026 decide house",
+      "source": "theme cluster (days presidential \u00b7 election november \u00b7 elections midterms \u00b7 decide house, 25 posts)",
+      "score": 25.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 republicans plan",
-      "source": "theme cluster (entitlement programs \u00b7 federal spending \u00b7 adjusted fixed \u00b7 medicare medicaid, 3 posts)",
-      "score": 3.0,
+      "query": "2026 voters pushing",
+      "source": "theme cluster (voters pushing \u00b7 backing candidates \u00b7 hard silicon \u00b7 crypto's cycle, 23 posts)",
+      "score": 23.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 voter paper",
-      "source": "theme cluster (security legitimate \u00b7 voter paper, 3 posts)",
-      "score": 3.0,
+      "query": "2026 democrats ninepercent",
+      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 source center \u00b7 bastards anyways, 18 posts)",
+      "score": 18.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 voter laws",
+      "source": "theme cluster (fraud cold \u00b7 excuses games \u00b7 pass nationwide \u00b7 voter laws, 11 posts)",
+      "score": 11.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
   ]
