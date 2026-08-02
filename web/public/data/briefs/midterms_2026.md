@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-02 10:12:15 UTC
+> Tactical snapshot · 2026-08-02 10:34:01 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2852 / 1118 |
-| Distinct themes | 180 |
+| Distinct themes | 183 |
 | Duplicate clusters (full DB) | 199 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2186 authors |
@@ -36,8 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2052 posts · 97 authors · 60 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 6 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2038 posts · 95 authors · 61 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (67 posts · 5 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -95,15 +95,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (64 posts)
+- biden holds, win unlikely, maine unless (6 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (79 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (70 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (67 posts)
+- lower approval, results conservatives, check groypers (10 posts)
 - illegals count, seats support, breaking president donald (7 posts)
-- urgently warranted (4 posts)
-- union historically (5 posts)
-- initial success, gerrymandering strategy, facing roadblocks, boom latino (6 posts)
-- _…125 more emerging theme(s)._
+- urgently warranted (3 posts)
+- _…127 more emerging theme(s)._
 
 ## Scope note
 
