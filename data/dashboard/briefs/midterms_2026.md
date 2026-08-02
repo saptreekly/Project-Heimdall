@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-02 18:04:25 UTC
+> Tactical snapshot · 2026-08-02 18:34:51 UTC
 
 ## Corpus
 
@@ -14,21 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2859 / 1122 |
-| Distinct themes | 136 |
+| Distinct themes | 179 |
 | Duplicate clusters (full DB) | 200 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2191 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **16**
-- Net-new posts logged: **3**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **412**
-- Net new: **588** · re-seen: **3244**
-- Duplicate rate: **84.7%**
+- Net new: **588** · re-seen: **3222**
+- Duplicate rate: **84.6%**
 
 ## Sentiment drift
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, ruling (694 posts · 37 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, polling stations, agents posted (45 posts · 4 authors · 12 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · rick scott, floor vote, election security, mass voter fraud, voter fraud scale (12 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2047 posts · 103 authors · 56 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (63 posts · 5 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · american thinker, bleak existence (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -98,15 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- red wave, midwest democrat, resigns electoral, disaster looms (64 posts)
 - focus flipping (5 posts)
-- lower approval, results conservatives, check groypers (14 posts)
-- illegals count (8 posts)
-- attorney central, economic concerns, buyer's remorse (20 posts)
-- union historically (5 posts)
-- federal judge, citizenship verification, verified lists (14 posts)
-- alex pretti, immunity ice, sued jailed (6 posts)
-- primary challenge, wow scott, presler officially (8 posts)
-- _…122 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (63 posts)
+- agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
+- lower approval, results conservatives, check groypers (10 posts)
+- illegals count, seats support, breaking president donald (7 posts)
+- union historically (7 posts)
+- _…127 more emerging theme(s)._
 
 ## Scope note
 
