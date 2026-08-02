@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1507,
+      "run_counter": 1509,
       "authors": {
         "111": {
           "author_id": "111",
@@ -144,7 +144,7 @@
           "inserted_total": 7,
           "polls": 5,
           "inserts_from_polls": 0,
-          "status": "pruned"
+          "status": "active"
         },
         "1681339677494722572": {
           "author_id": "1681339677494722572",
@@ -183,7 +183,7 @@
           "inserted_total": 15,
           "polls": 5,
           "inserts_from_polls": 0,
-          "status": "pruned"
+          "status": "active"
         },
         "1855095207450066944": {
           "author_id": "1855095207450066944",
@@ -391,7 +391,7 @@
           "inserted_total": 9,
           "polls": 5,
           "inserts_from_polls": 0,
-          "status": "pruned"
+          "status": "active"
         },
         "197006870": {
           "author_id": "197006870",
@@ -547,7 +547,7 @@
           "inserted_total": 5,
           "polls": 5,
           "inserts_from_polls": 0,
-          "status": "pruned"
+          "status": "active"
         },
         "34497461": {
           "author_id": "34497461",
@@ -1080,7 +1080,7 @@
           "inserted_total": 5,
           "polls": 5,
           "inserts_from_polls": 0,
-          "status": "pruned"
+          "status": "active"
         },
         "1824789665162891264": {
           "author_id": "1824789665162891264",
@@ -1608,10 +1608,10 @@
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 1.0,
-          "last_polled_at": "2026-07-26T13:47:11.589145+00:00",
+          "last_polled_at": "2026-08-02T07:19:50.740690+00:00",
           "last_tweet_at": "2026-07-19T17:45:07+00:00",
           "inserted_total": 11,
-          "polls": 3,
+          "polls": 4,
           "inserts_from_polls": 1,
           "status": "active"
         },
