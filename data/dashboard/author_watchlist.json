@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1511,
+      "run_counter": 1512,
       "authors": {
         "111": {
           "author_id": "111",
@@ -152,10 +152,10 @@
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 1.0,
-          "last_polled_at": "2026-07-26T17:44:58.272963+00:00",
+          "last_polled_at": "2026-08-02T10:12:09.438677+00:00",
           "last_tweet_at": "2026-07-26T15:12:15+00:00",
           "inserted_total": 64,
-          "polls": 5,
+          "polls": 6,
           "inserts_from_polls": 23,
           "status": "active"
         },
@@ -1940,16 +1940,16 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "11347122": {
-          "author_id": "11347122",
-          "handle": "GavinNewsom",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
-          "last_polled_at": "2026-08-02T06:16:20.775215+00:00",
+        "1108472017144201216": {
+          "author_id": "1108472017144201216",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
+          "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 1,
-          "polls": 1,
+          "inserted_total": 0,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         }
