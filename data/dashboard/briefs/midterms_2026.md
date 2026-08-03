@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-03 11:12:40 UTC
+> Tactical snapshot · 2026-08-03 11:37:34 UTC
 
 ## Corpus
 
@@ -14,15 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2869 / 1127 |
-| Distinct themes | 136 |
+| Distinct themes | 177 |
 | Duplicate clusters (full DB) | 200 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2198 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **14**
-- Net-new posts logged: **5**
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
@@ -36,14 +36,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, ruling (702 posts · 33 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, polling stations, agents posted (46 posts · 5 authors · 12 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · rick scott, floor vote, election security, mass voter fraud, voter fraud scale (12 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, graham platner, federal judge (2042 posts · 103 authors · 59 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, tariff section, forced labor, board trustees (66 posts · 4 authors · 5 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · california hit, similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, wargaming steal, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -98,15 +98,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- red wave, midwest democrat, resigns electoral, disaster looms, harris president (93 posts)
 - focus flipping (5 posts)
-- lower approval, results conservatives, check groypers (12 posts)
-- illegals count (7 posts)
-- attorney central, economic concerns (20 posts)
-- union historically (5 posts)
-- federal judge, titled ensuring (10 posts)
-- alex pretti, immunity ice, sued jailed (6 posts)
-- primary challenge, wow scott, presler officially (8 posts)
-- _…122 more emerging theme(s)._
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
+- judgment supreme, civil discourse, tariff section, forced labor, board trustees (66 posts)
+- illegals count, seats support (7 posts)
+- crimes urgently, lower approval (13 posts)
+- union historically (7 posts)
+- heavenly father, floated indiana (4 posts)
+- _…116 more emerging theme(s)._
 
 ## Scope note
 
