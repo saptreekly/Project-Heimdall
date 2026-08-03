@@ -427,7 +427,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-07-28T15:53:57.455483+00:00",
           "last_tweet_at": "2026-07-26T09:23:52+00:00",
-          "inserted_total": 20,
+          "inserted_total": 19,
           "polls": 5,
           "inserts_from_polls": 5,
           "status": "active"
@@ -1940,15 +1940,15 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1479750234939011074": {
-          "author_id": "1479750234939011074",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
+        "2069888714709331968": {
+          "author_id": "2069888714709331968",
+          "handle": "RT_on_X",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.5700000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 0,
+          "inserted_total": 1,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
