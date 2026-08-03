@@ -1,34 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-03 05:18:40 UTC
+> Tactical snapshot · 2026-08-03 06:05:37 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3727** |
+| Posts in database | **3735** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 2862 / 1123 |
-| Distinct themes | 90 |
+| Graph nodes / edges | 2863 / 1124 |
+| Distinct themes | 135 |
 | Duplicate clusters (full DB) | 200 |
-| Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 2193 authors |
+| Fuzzy clusters (snapshot cohort) | 7 |
+| IU astroturf overlap | 2 bots / 2194 authors |
 
 ## Ingest activity
 
-- Re-sightings (duplicate encounters): **2**
-- Net-new posts logged: **1**
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **6**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **414**
-- Net new: **581** · re-seen: **3248**
-- Duplicate rate: **84.8%**
+- Net new: **589** · re-seen: **3260**
+- Duplicate rate: **84.7%**
 
 ## Sentiment drift
 
@@ -36,8 +36,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, win house, election integrity executive, postmaster general (3091 posts · 128 authors · 162 exact · 6 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, ruling (698 posts · 36 authors · 19 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, polling stations, agents posted (45 posts · 4 authors · 12 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -79,7 +86,7 @@ _None (need ≥5 authors in 90s window)._
 - **2 posts** · 2 authors · ~100% Jaccard — Elon donating $100M to the 2026 midterms for Republicans! While the Dumocrats had to put up one of their D buildings up for collateral to get a $15M loan🤣! Dems are broke!
 - **2 posts** · 2 authors · ~100% Jaccard — 🔥 LET'S GO! Elon Musk is RE-LAUNCHING his America PAC, investing over $100 MILLION into the 2026 midterms funding voter turnout efforts for conservatives Elon is COUNTERING George Soros, and has a LO…
 - **2 posts** · 2 authors · ~97% Jaccard — Elon Musk plans to help President Trump &amp; Republicans DOMINATE the 2026 Midterms by injecting over $100 million dollars. "Get in, it's time to Make America Great Again &amp; Pass The SAVE America…
-- _…1 more fuzzy cluster(s) in snapshot cohort._
+- _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -91,19 +98,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (6 posts)
-- heavenly father, floated indiana (4 posts)
-- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- _…26 more emerging theme(s)._
+- focus flipping (5 posts)
+- lower approval, results conservatives, check groypers (13 posts)
+- illegals count (8 posts)
+- attorney central, economic concerns (23 posts)
+- union historically (5 posts)
+- citizenship verification, verified lists (14 posts)
+- alex pretti, immunity ice, sued jailed (6 posts)
+- primary challenge, wow scott, presler officially (8 posts)
+- _…121 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3727 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3735 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
