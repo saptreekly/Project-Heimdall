@@ -1940,15 +1940,15 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "2038065073424355328": {
-          "author_id": "2038065073424355328",
-          "handle": "GhostmintO71217",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.5700000000000001,
+        "1604400618906521600": {
+          "author_id": "1604400618906521600",
+          "handle": null,
+          "discovered_via": "reply",
+          "depth": 1,
+          "priority": 0.45,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 1,
+          "inserted_total": 0,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
