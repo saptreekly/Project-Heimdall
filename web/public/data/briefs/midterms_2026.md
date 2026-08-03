@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-03 23:00:49 UTC
+> Tactical snapshot · 2026-08-03 23:33:52 UTC
 
 ## Corpus
 
@@ -14,15 +14,10 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2883 / 1130 |
-| Distinct themes | 137 |
+| Distinct themes | 182 |
 | Duplicate clusters (full DB) | 201 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2210 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **9**
-- Net-new posts logged: **5**
 
 ## Ingest yield (last 14 days)
 
@@ -36,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, ruling (707 posts · 33 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, polling stations, agents posted (43 posts · 5 authors · 11 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · excuses games yes, fraud cold, excuses games, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · stop fraud, cold excuses, pass nationwide, voter laws, games yes (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2051 posts · 103 authors · 54 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, tariff section, forced labor, board trustees (67 posts · 4 authors · 5 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · california hit, similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, wargaming steal, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -98,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- red wave, midwest democrat, resigns electoral, disaster looms (64 posts)
 - focus flipping (5 posts)
-- lower approval, results conservatives, check groypers (13 posts)
-- illegals count (8 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
+- judgment supreme, civil discourse, tariff section, forced labor, board trustees (67 posts)
+- liveprayer tuesday (12 posts)
+- lower approval, check groypers (10 posts)
+- illegals count, seats support, breaking president donald (7 posts)
 - union historically (7 posts)
-- attorney central, economic concerns (24 posts)
-- trump executive order, executive order, trump mail, order ahead, order ahead midterms (7 posts)
-- alex pretti, immunity ice, sued jailed (6 posts)
-- primary challenge, wow scott, presler officially (8 posts)
-- _…123 more emerging theme(s)._
+- _…120 more emerging theme(s)._
 
 ## Scope note
 
