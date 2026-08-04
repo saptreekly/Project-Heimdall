@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-04 19:11:38 UTC
+> Tactical snapshot · 2026-08-04 20:06:24 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2884 / 1132 |
-| Distinct themes | 136 |
+| Distinct themes | 78 |
 | Duplicate clusters (full DB) | 202 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2210 authors |
@@ -22,8 +22,8 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **414**
-- Net new: **567** · re-seen: **3058**
-- Duplicate rate: **84.4%**
+- Net new: **557** · re-seen: **3048**
+- Duplicate rate: **84.5%**
 
 ## Sentiment drift
 
@@ -31,15 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · court, supreme, trump, ruling (707 posts · 31 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, years old, polling stations, agents posted (46 posts · 5 authors · 12 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, midterms stop, stop fraud, cold excuses (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, center square (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games, pass nationwide, voter laws (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, deliver mail ballots, win house, election integrity executive, postmaster general (3170 posts · 123 authors · 166 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -93,15 +86,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping (5 posts)
-- lower approval, results conservatives, check groypers (13 posts)
-- illegals count (8 posts)
-- union historically (7 posts)
-- remove cheating, lse united (10 posts)
-- attorney central, economic concerns (20 posts)
-- titled ensuring (10 posts)
-- alex pretti, immunity ice, sued jailed (6 posts)
-- _…121 more emerging theme(s)._
+- heavenly father, floated indiana (4 posts)
+- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- winners won't (10 posts)
+- _…23 more emerging theme(s)._
 
 ## Scope note
 
