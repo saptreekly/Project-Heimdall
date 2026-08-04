@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-04 07:39:57 UTC
+> Tactical snapshot · 2026-08-04 08:42:15 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3769** |
+| Posts in database | **3770** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,15 +14,20 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2884 / 1131 |
-| Distinct themes | 175 |
+| Distinct themes | 177 |
 | Duplicate clusters (full DB) | 201 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2210 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **2**
+- Net-new posts logged: **1**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **413**
-- Net new: **574** · re-seen: **3174**
+- Runs: **414**
+- Net new: **575** · re-seen: **3176**
 - Duplicate rate: **84.7%**
 
 ## Sentiment drift
@@ -31,8 +36,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2091 posts · 102 authors · 64 exact · 6 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (64 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2093 posts · 104 authors · 65 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (63 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -78,7 +83,7 @@ _None (need ≥5 authors in 90s window)._
 
 - **3 posts** · 3 authors · ~100% Jaccard — 🚨 NOW: An activist court has just temporarily BLOCKED President Trump's administration from requiring proof of citizenship and mail-in voting tracking for the 2026 midterms, across a swath of blue st…
 - **3 posts** · 3 authors · ~97% Jaccard — Elon Musk plans to help President Trump &amp; Republicans DOMINATE the 2026 Midterms by injecting over $100 million dollars. "Get in, it's time to Make America Great Again &amp; Pass The SAVE America…
-- **3 posts** · 2 authors · ~100% Jaccard — 🚨🚨 EXPLOSIVE BREAKING 🚨🚨 ELON MUSK GOES ALL IN FOR TRUMP!!! The world’s richest man just declared TOTAL WAR. Fox News confirms Musk is dumping HUNDREDS OF MILLIONS into the battlefield to CRUSH the D…
+- **4 posts** · 2 authors · ~100% Jaccard — 🚨🚨 EXPLOSIVE BREAKING 🚨🚨 ELON MUSK GOES ALL IN FOR TRUMP!!! The world’s richest man just declared TOTAL WAR. Fox News confirms Musk is dumping HUNDREDS OF MILLIONS into the battlefield to CRUSH the D…
 - **2 posts** · 2 authors · ~100% Jaccard — Elon donating $100M to the 2026 midterms for Republicans! While the Dumocrats had to put up one of their D buildings up for collateral to get a $15M loan🤣! Dems are broke!
 - **2 posts** · 2 authors · ~100% Jaccard — 🔥 LET'S GO! Elon Musk is RE-LAUNCHING his America PAC, investing over $100 MILLION into the 2026 midterms funding voter turnout efforts for conservatives Elon is COUNTERING George Soros, and has a LO…
 - _…2 more fuzzy cluster(s) in snapshot cohort._
@@ -93,19 +98,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- biden holds, win unlikely, collins retires (7 posts)
+- biden holds, collins retires (7 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms (82 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (64 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (63 posts)
 - illegals count, seats support, breaking president donald (7 posts)
-- union historically (7 posts)
-- urgently warranted (4 posts)
+- urgently warranted (5 posts)
+- union historically (5 posts)
 - _…130 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3769 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3770 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
