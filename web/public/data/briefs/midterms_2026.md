@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-04 16:39:13 UTC
+> Tactical snapshot · 2026-08-04 17:13:51 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3782** |
+| Posts in database | **3783** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2884 / 1132 |
-| Distinct themes | 83 |
+| Distinct themes | 79 |
 | Duplicate clusters (full DB) | 201 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2210 authors |
@@ -22,7 +22,7 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **414**
-- Net new: **569** · re-seen: **3092**
+- Net new: **565** · re-seen: **3078**
 - Duplicate rate: **84.5%**
 
 ## Sentiment drift
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, win house, election integrity executive, postmaster general (3153 posts · 123 authors · 164 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, win house, election integrity executive, postmaster general (3165 posts · 123 authors · 165 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -86,7 +86,6 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (6 posts)
 - heavenly father, floated indiana (4 posts)
 - orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
@@ -94,11 +93,11 @@ _None spanning multiple narratives._
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - winners won't (10 posts)
-- _…24 more emerging theme(s)._
+- _…22 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3782 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3783 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
