@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-04 20:44:06 UTC
+> Tactical snapshot · 2026-08-04 21:29:56 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3787** |
+| Posts in database | **3789** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2884 / 1132 |
-| Distinct themes | 78 |
+| Distinct themes | 80 |
 | Duplicate clusters (full DB) | 202 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2210 authors |
@@ -22,7 +22,7 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **414**
-- Net new: **557** · re-seen: **3048**
+- Net new: **558** · re-seen: **3038**
 - Duplicate rate: **84.5%**
 
 ## Sentiment drift
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, win house, election integrity executive, postmaster general (3170 posts · 123 authors · 166 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, win house, election integrity executive, postmaster general (3165 posts · 122 authors · 166 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -69,11 +69,11 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **3 posts** · 3 authors · ~100% Jaccard — 🚨 NOW: An activist court has just temporarily BLOCKED President Trump's administration from requiring proof of citizenship and mail-in voting tracking for the 2026 midterms, across a swath of blue st…
 - **3 posts** · 3 authors · ~97% Jaccard — Elon Musk plans to help President Trump &amp; Republicans DOMINATE the 2026 Midterms by injecting over $100 million dollars. "Get in, it's time to Make America Great Again &amp; Pass The SAVE America…
 - **4 posts** · 2 authors · ~100% Jaccard — 🚨🚨 EXPLOSIVE BREAKING 🚨🚨 ELON MUSK GOES ALL IN FOR TRUMP!!! The world’s richest man just declared TOTAL WAR. Fox News confirms Musk is dumping HUNDREDS OF MILLIONS into the battlefield to CRUSH the D…
 - **2 posts** · 2 authors · ~100% Jaccard — Elon donating $100M to the 2026 midterms for Republicans! While the Dumocrats had to put up one of their D buildings up for collateral to get a $15M loan🤣! Dems are broke!
 - **2 posts** · 2 authors · ~100% Jaccard — 🔥 LET'S GO! Elon Musk is RE-LAUNCHING his America PAC, investing over $100 MILLION into the 2026 midterms funding voter turnout efforts for conservatives Elon is COUNTERING George Soros, and has a LO…
+- **2 posts** · 2 authors · ~96% Jaccard — He swore off getting involved in politics but now he's back, less than a year later. On the same day SpaceX scored a $1.6 billion Space Force contract for 18 rocket launches, reports came out that he…
 - _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -97,7 +97,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3787 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3789 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
