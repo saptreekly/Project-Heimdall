@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-05 09:53:56 UTC
+> Tactical snapshot · 2026-08-05 10:48:26 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2884 / 1132 |
-| Distinct themes | 176 |
+| Distinct themes | 163 |
 | Duplicate clusters (full DB) | 202 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2210 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **413**
+- Runs: **414**
 - Net new: **547** · re-seen: **2929**
 - Duplicate rate: **84.3%**
 
@@ -31,11 +31,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2105 posts · 100 authors · 64 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 4 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (1959 posts · 96 authors · 57 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (64 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · american thinker, bleak existence (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -93,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- biden holds, maine unless (8 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (82 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (57 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (69 posts)
-- agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (64 posts)
 - illegals count, seats support, breaking president donald (7 posts)
-- urgently warranted (4 posts)
-- _…127 more emerging theme(s)._
+- union historically (5 posts)
+- making democratic (5 posts)
+- upholds california's, scotus upheld, states redistrict (5 posts)
+- _…115 more emerging theme(s)._
 
 ## Scope note
 
