@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-06 06:27:38 UTC
+> Tactical snapshot · 2026-08-06 06:48:53 UTC
 
 ## Corpus
 
@@ -14,19 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2884 / 1132 |
-| Distinct themes | 171 |
+| Distinct themes | 158 |
 | Duplicate clusters (full DB) | 202 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2210 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **5**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **412**
+- Runs: **413**
 - Net new: **538** · re-seen: **2706**
 - Duplicate rate: **83.4%**
 
@@ -36,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2109 posts · 97 authors · 57 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (68 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, super pacs (1713 posts · 86 authors · 51 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, ruling (707 posts · 30 authors · 19 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (13 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · american thinker, bleak existence (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -98,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- biden holds (7 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (78 posts)
 - focus flipping (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (68 posts)
-- agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
-- illegals count, seats support, breaking president donald (7 posts)
-- union historically (7 posts)
-- _…125 more emerging theme(s)._
+- lower approval, results conservatives, check groypers (13 posts)
+- illegals count, seats support, breaking president donald (8 posts)
+- expected discuss (16 posts)
+- union historically (5 posts)
+- federal judge (7 posts)
+- alex pretti, immunity ice, sued jailed, agents allowing (8 posts)
+- wow scott, presler officially, planning primary, playing hardball (8 posts)
+- _…112 more emerging theme(s)._
 
 ## Scope note
 
