@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-06 04:19:34 UTC
+> Tactical snapshot · 2026-08-06 04:48:34 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2884 / 1132 |
-| Distinct themes | 81 |
+| Distinct themes | 80 |
 | Duplicate clusters (full DB) | 202 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2210 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **414**
+- Runs: **415**
 - Net new: **537** · re-seen: **2745**
 - Duplicate rate: **83.6%**
 
@@ -31,9 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, postmaster general (3173 posts · 117 authors · 165 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, election integrity executive, postmaster general (3176 posts · 120 authors · 166 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · dumocrats buildings, collateral 15m, dems broke (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -87,14 +86,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- claimed china, bigger majorities (5 posts)
 - heavenly father, floated indiana (4 posts)
 - orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- setup election fraud, accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest, power register (6 posts)
+- awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- winners won't (10 posts)
-- _…23 more emerging theme(s)._
+- _…24 more emerging theme(s)._
 
 ## Scope note
 
