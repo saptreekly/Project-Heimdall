@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-06 08:07:08 UTC
+> Tactical snapshot · 2026-08-06 09:19:24 UTC
 
 ## Corpus
 
@@ -14,15 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2884 / 1132 |
-| Distinct themes | 82 |
+| Distinct themes | 171 |
 | Duplicate clusters (full DB) | 202 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2210 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **413**
-- Net new: **541** · re-seen: **2679**
+- Runs: **414**
+- Net new: **540** · re-seen: **2671**
 - Duplicate rate: **83.2%**
 
 ## Sentiment drift
@@ -31,8 +31,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, election integrity executive, postmaster general (3172 posts · 117 authors · 165 exact · 6 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2109 posts · 97 authors · 57 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (68 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, act juice, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · american thinker, bleak existence (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -86,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- heavenly father, floated indiana (4 posts)
-- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (40 posts)
-- awakening largest, power register (6 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- inbreeds cuz, 10000's fascist, loves winners (8 posts)
-- _…24 more emerging theme(s)._
+- biden holds (7 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (78 posts)
+- focus flipping (5 posts)
+- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (68 posts)
+- agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
+- illegals count, seats support, breaking president donald (7 posts)
+- union historically (7 posts)
+- _…125 more emerging theme(s)._
 
 ## Scope note
 
