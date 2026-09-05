@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-08-06 15:50:22 UTC
+> Tactical snapshot · 2026-09-05 16:15:31 UTC
 
 ## Corpus
 
@@ -19,16 +19,11 @@
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2210 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **1**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **412**
-- Net new: **570** · re-seen: **2597**
-- Duplicate rate: **82.0%**
+- Runs: **1**
+- Net new: **0** · re-seen: **0**
+- Duplicate rate: **0.0%**
 
 ## Sentiment drift
 
