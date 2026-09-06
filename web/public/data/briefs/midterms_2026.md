@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-06 00:55:33 UTC
+> Tactical snapshot · 2026-09-06 04:19:46 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2898 / 1147 |
-| Distinct themes | 181 |
+| Distinct themes | 175 |
 | Duplicate clusters (full DB) | 202 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2210 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **10**
+- Runs: **11**
 - Net new: **8** · re-seen: **0**
 - Duplicate rate: **0.0%**
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2115 posts · 93 authors · 59 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2101 posts · 92 authors · 60 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -93,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- biden holds, maine unless (8 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (81 posts)
+- biden holds, maine unless, collins retires (8 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (82 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (69 posts)
 - agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
 - illegals count, seats support, breaking president donald (7 posts)
 - union historically (7 posts)
-- _…127 more emerging theme(s)._
+- _…128 more emerging theme(s)._
 
 ## Scope note
 
