@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-06 19:10:09 UTC
+> Tactical snapshot · 2026-09-06 19:50:57 UTC
 
 ## Corpus
 
@@ -14,15 +14,15 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2898 / 1148 |
-| Distinct themes | 183 |
+| Distinct themes | 182 |
 | Duplicate clusters (full DB) | 203 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2211 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **24**
-- Net new: **26** · re-seen: **0**
+- Runs: **26**
+- Net new: **32** · re-seen: **0**
 - Duplicate rate: **0.0%**
 
 ## Sentiment drift
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2111 posts · 91 authors · 57 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2127 posts · 92 authors · 59 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (67 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -93,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms (79 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (78 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (67 posts)
 - agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
 - illegals count, seats support, breaking president donald (7 posts)
 - union historically (7 posts)
-- urgently warranted (4 posts)
-- _…131 more emerging theme(s)._
+- urgently warranted (5 posts)
+- _…129 more emerging theme(s)._
 
 ## Scope note
 
