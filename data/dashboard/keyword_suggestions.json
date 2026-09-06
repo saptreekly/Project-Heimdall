@@ -1,48 +1,26 @@
 {
-  "generated_at": "2026-08-02T07:43:51.916360+00:00",
+  "generated_at": "2026-09-06T09:14:46.557167+00:00",
   "window_days": 7,
   "dead_keywords": [
-    "2026 midterm fraud",
-    "2026 red wave",
-    "2026 gerrymandering",
-    "2026 deliver mail ballots",
-    "2026 friends senate"
+    "2026 midterm fraud"
   ],
   "suggestions": [
     {
       "query": "2026 save america midterms",
       "source": "corpus c-TF-IDF",
-      "score": 171.324,
+      "score": 153.636,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
     },
     {
-      "query": "2026 midwest democrat",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 57 posts)",
-      "score": 57.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 resigns electoral",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 57 posts)",
-      "score": 57.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 republican beautiful",
-      "source": "theme cluster (taxes working \u00b7 million americans \u00b7 replaced end \u00b7 unregulated dirty, 25 posts)",
-      "score": 25.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 decide house",
-      "source": "theme cluster (days presidential \u00b7 election november \u00b7 elections midterms \u00b7 decide house, 25 posts)",
-      "score": 25.0,
+      "query": "2026 party win house",
+      "source": "theme cluster (party win house \u00b7 parentforderivative unitedstates \u00b7 uselection politics \u00b7 slight edge, 22 posts)",
+      "score": 22.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
       "query": "2026 voters pushing",
-      "source": "theme cluster (voters pushing \u00b7 backing candidates \u00b7 hard silicon \u00b7 crypto's cycle, 23 posts)",
-      "score": 23.0,
+      "source": "theme cluster (voters pushing \u00b7 hard silicon \u00b7 backing candidates \u00b7 crypto's cycle, 21 posts)",
+      "score": 21.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
@@ -52,9 +30,27 @@
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 voter laws",
-      "source": "theme cluster (fraud cold \u00b7 excuses games \u00b7 pass nationwide \u00b7 voter laws, 11 posts)",
+      "query": "2026 enthusiastic vote",
+      "source": "theme cluster (enthusiastic vote \u00b7 maga points \u00b7 truth passing \u00b7 act juice, 13 posts)",
+      "score": 13.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 remember vote",
+      "source": "theme cluster (3rd midterm elections \u00b7 midterm elections dem \u00b7 watch share \u00b7 midterm election, 11 posts)",
       "score": 11.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 bare ballot harvesting",
+      "source": "theme cluster (bare ballot harvesting \u00b7 california communists \u00b7 poised steal \u00b7 hilton aren, 9 posts)",
+      "score": 9.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 update republican",
+      "source": "theme cluster (update republican \u00b7 gains failed \u00b7 gerrymanders possible, 9 posts)",
+      "score": 9.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
   ]
