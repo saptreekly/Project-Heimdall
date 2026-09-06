@@ -87,11 +87,11 @@
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 1.0,
-          "last_polled_at": "2026-09-06T07:13:27.250125+00:00",
+          "last_polled_at": "2026-09-06T07:54:17.879532+00:00",
           "last_tweet_at": "2026-08-28T17:30:12+00:00",
-          "inserted_total": 22,
+          "inserted_total": 19,
           "polls": 7,
-          "inserts_from_polls": 10,
+          "inserts_from_polls": 8,
           "status": "active"
         },
         "1766224121128435712": {
@@ -1940,8 +1940,8 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "2051394320897359872": {
-          "author_id": "2051394320897359872",
+        "1742454883528155136": {
+          "author_id": "1742454883528155136",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
