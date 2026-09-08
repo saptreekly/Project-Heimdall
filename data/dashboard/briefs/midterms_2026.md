@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-08 19:44:48 UTC
+> Tactical snapshot · 2026-09-08 20:26:32 UTC
 
 ## Corpus
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2156 posts · 70 authors · 60 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2142 posts · 71 authors · 59 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -93,7 +93,7 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- biden holds, maine unless (6 posts)
+- biden holds, maine unless (7 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms (81 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
@@ -101,7 +101,7 @@ _None spanning multiple narratives._
 - agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
 - illegals count, seats support, breaking president donald (7 posts)
 - union historically (7 posts)
-- _…128 more emerging theme(s)._
+- _…129 more emerging theme(s)._
 
 ## Scope note
 
