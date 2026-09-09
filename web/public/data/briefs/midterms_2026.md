@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-09 21:25:59 UTC
+> Tactical snapshot · 2026-09-09 22:08:48 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2899 / 1151 |
-| Distinct themes | 184 |
+| Distinct themes | 187 |
 | Duplicate clusters (full DB) | 204 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2211 authors |
@@ -32,7 +32,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2137 posts · 60 authors · 57 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2151 posts · 61 authors · 58 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -93,8 +93,8 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- biden holds (8 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (82 posts)
+- biden holds (7 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms (81 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (69 posts)
