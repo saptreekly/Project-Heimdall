@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-11 15:23:50 UTC
+> Tactical snapshot · 2026-09-11 18:51:32 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3950** |
+| Posts in database | **3957** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2900 / 1152 |
-| Distinct themes | 184 |
-| Duplicate clusters (full DB) | 204 |
-| Fuzzy clusters (snapshot cohort) | 4 |
+| Distinct themes | 187 |
+| Duplicate clusters (full DB) | 205 |
+| Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2211 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **125**
-- Net new: **203** · re-seen: **2**
-- Duplicate rate: **1.0%**
+- Runs: **127**
+- Net new: **222** · re-seen: **2**
+- Duplicate rate: **0.9%**
 
 ## Sentiment drift
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2172 posts · 54 authors · 61 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2165 posts · 53 authors · 55 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -68,7 +68,7 @@
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
 - **2 posts** · 2 author(s) — 🗳️🇺🇸 Analysis: Socialist Wins Raise Questions for Democrats 🤔📊 This News India Times analysis explores how recent victories by Democratic Socialist-backed candidates have sparked a broader debate ove…
-- _…194 more exact-duplicate cluster(s) in database._
+- _…195 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -76,10 +76,9 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **4 posts** · 2 authors · ~100% Jaccard — 🚨🚨 EXPLOSIVE BREAKING 🚨🚨 ELON MUSK GOES ALL IN FOR TRUMP!!! The world’s richest man just declared TOTAL WAR. Fox News confirms Musk is dumping HUNDREDS OF MILLIONS into the battlefield to CRUSH the D…
+- **3 posts** · 2 authors · ~100% Jaccard — 🚨🚨 EXPLOSIVE BREAKING 🚨🚨 ELON MUSK GOES ALL IN FOR TRUMP!!! The world’s richest man just declared TOTAL WAR. Fox News confirms Musk is dumping HUNDREDS OF MILLIONS into the battlefield to CRUSH the D…
 - **2 posts** · 2 authors · ~96% Jaccard — He swore off getting involved in politics but now he's back, less than a year later. On the same day SpaceX scored a $1.6 billion Space Force contract for 18 rocket launches, reports came out that he…
 - **2 posts** · 2 authors · ~94% Jaccard — Elon Musk plans to help President Trump &amp; Republicans DOMINATE the 2026 Midterms by injecting over $100 million dollars. "Get in, it's time to Make America Great Again &amp; Pass The SAVE America…
-- **2 posts** · 2 authors · ~86% Jaccard — 🚨 LMFAO! CNN is PANICKING after learning Elon Musk is plotting a $100M+ spending surge into MAGA and Republicans during the 2026 midterms
 
 ## Cross-narrative actors (this narrative)
 
@@ -99,11 +98,11 @@ _None spanning multiple narratives._
 - agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
 - illegals count, seats support, breaking president donald (7 posts)
 - union historically (7 posts)
-- _…131 more emerging theme(s)._
+- _…133 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3950 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3957 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
