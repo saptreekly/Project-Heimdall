@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-12 21:35:52 UTC
+> Tactical snapshot · 2026-09-12 22:26:21 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2918 / 1170 |
-| Distinct themes | 188 |
+| Distinct themes | 184 |
 | Duplicate clusters (full DB) | 206 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2211 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **155**
+- Runs: **156**
 - Net new: **269** · re-seen: **2**
 - Duplicate rate: **0.7%**
 
@@ -31,8 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2189 posts · 42 authors · 55 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (67 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge, graham platner (2206 posts · 42 authors · 57 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (68 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -90,15 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- judgment supreme, civil discourse, forced labor, board trustees (68 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, speech republican (77 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (67 posts)
 - agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
 - illegals count, seats support, breaking president donald (7 posts)
 - union historically (7 posts)
-- urgently warranted (4 posts)
-- _…136 more emerging theme(s)._
+- urgently warranted, mullin considering, dhs sec markwayne (5 posts)
+- _…132 more emerging theme(s)._
 
 ## Scope note
 
