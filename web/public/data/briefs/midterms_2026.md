@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-12 04:20:51 UTC
+> Tactical snapshot · 2026-09-12 05:27:38 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **3977** |
+| Posts in database | **3997** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2918 / 1170 |
-| Distinct themes | 184 |
+| Distinct themes | 188 |
 | Duplicate clusters (full DB) | 206 |
-| Fuzzy clusters (snapshot cohort) | 2 |
+| Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2211 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **138**
-- Net new: **249** · re-seen: **2**
-- Duplicate rate: **0.8%**
+- Runs: **139**
+- Net new: **269** · re-seen: **2**
+- Duplicate rate: **0.7%**
 
 ## Sentiment drift
 
@@ -31,8 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2186 posts · 48 authors · 59 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (68 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2189 posts · 42 authors · 55 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (67 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -76,8 +76,9 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **3 posts** · 2 authors · ~100% Jaccard — 🚨🚨 EXPLOSIVE BREAKING 🚨🚨 ELON MUSK GOES ALL IN FOR TRUMP!!! The world’s richest man just declared TOTAL WAR. Fox News confirms Musk is dumping HUNDREDS OF MILLIONS into the battlefield to CRUSH the D…
-- **2 posts** · 2 authors · ~96% Jaccard — He swore off getting involved in politics but now he's back, less than a year later. On the same day SpaceX scored a $1.6 billion Space Force contract for 18 rocket launches, reports came out that he…
+- **2 posts** · 2 authors · ~95% Jaccard — 🚨 NOW: President Trump announces the war in Iran will end immediately AFTER the 2026 midterms, saying Iran's whole game plan was to use the election as leverage "The war's gonna end immediately after…
+- **2 posts** · 2 authors · ~90% Jaccard — 🔥 President Trump just DROPPED this chilling line on the Democrats when he was asked if he'll declare a "NATIONAL EMERGENCY" to secure the 2026 midterms until the SAVE America Act is law: "Stranger t…
+- **2 posts** · 2 authors · ~85% Jaccard — 🚨 BREAKING — REDISTRICTING WIN: The 8th Circuit Federal Court has just BLOCKED the Democrat-led effort to reinstate Missouri's 6R-2D map for the 2026 midterms, upholding the 7R-1D map LET'S GO! 🔥 The…
 
 ## Cross-narrative actors (this narrative)
 
@@ -89,19 +90,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- biden holds, maine unless (7 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms (82 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, speech republican (77 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (68 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (67 posts)
 - agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
 - illegals count, seats support, breaking president donald (7 posts)
 - union historically (7 posts)
-- _…134 more emerging theme(s)._
+- urgently warranted (4 posts)
+- _…136 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 3977 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 3997 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
