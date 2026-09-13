@@ -1,15 +1,31 @@
 {
-  "generated_at": "2026-09-06T09:14:46.557167+00:00",
+  "generated_at": "2026-09-13T10:03:43.080057+00:00",
   "window_days": 7,
   "dead_keywords": [
-    "2026 midterm fraud"
+    "2026 midterm fraud",
+    "2026 supreme court",
+    "2026 election integrity",
+    "2026 gerrymandering",
+    "2026 resigns electoral"
   ],
   "suggestions": [
     {
+      "query": "2026 district judge",
+      "source": "theme cluster (reuters reported \u00b7 district judge \u00b7 graham platner, 2215 posts)",
+      "score": 2215.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
       "query": "2026 save america midterms",
       "source": "corpus c-TF-IDF",
-      "score": 153.636,
+      "score": 154.702,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
+    },
+    {
+      "query": "2026 speech republican",
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 81 posts)",
+      "score": 81.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
       "query": "2026 party win house",
@@ -19,38 +35,26 @@
     },
     {
       "query": "2026 voters pushing",
-      "source": "theme cluster (voters pushing \u00b7 hard silicon \u00b7 backing candidates \u00b7 crypto's cycle, 21 posts)",
-      "score": 21.0,
+      "source": "theme cluster (voters pushing \u00b7 hard silicon \u00b7 backing candidates \u00b7 crypto's cycle, 20 posts)",
+      "score": 20.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
       "query": "2026 democrats ninepercent",
-      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 source center \u00b7 bastards anyways, 18 posts)",
-      "score": 18.0,
+      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 source center \u00b7 months midterm elections, 19 posts)",
+      "score": 19.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
       "query": "2026 enthusiastic vote",
-      "source": "theme cluster (enthusiastic vote \u00b7 maga points \u00b7 truth passing \u00b7 act juice, 13 posts)",
+      "source": "theme cluster (enthusiastic vote \u00b7 maga points \u00b7 truth passing \u00b7 pressure secure, 13 posts)",
       "score": 13.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 remember vote",
-      "source": "theme cluster (3rd midterm elections \u00b7 midterm elections dem \u00b7 watch share \u00b7 midterm election, 11 posts)",
-      "score": 11.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 bare ballot harvesting",
-      "source": "theme cluster (bare ballot harvesting \u00b7 california communists \u00b7 poised steal \u00b7 hilton aren, 9 posts)",
-      "score": 9.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 update republican",
-      "source": "theme cluster (update republican \u00b7 gains failed \u00b7 gerrymanders possible, 9 posts)",
-      "score": 9.0,
+      "query": "2026 turnout lfg",
+      "source": "theme cluster (turnout lfg, 10 posts)",
+      "score": 10.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
   ]
