@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-13 13:42:19 UTC
+> Tactical snapshot · 2026-09-13 14:02:45 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2921 / 1174 |
-| Distinct themes | 187 |
+| Distinct themes | 186 |
 | Duplicate clusters (full DB) | 206 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2213 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **166**
+- Runs: **167**
 - Net new: **283** · re-seen: **2**
 - Duplicate rate: **0.7%**
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2202 posts · 41 authors · 56 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge, graham platner (2215 posts · 42 authors · 56 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -90,15 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- biden holds (7 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, speech republican (82 posts)
+- biden holds, maine unless (7 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, speech republican (81 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (69 posts)
 - agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
 - illegals count, seats support, breaking president donald (7 posts)
 - union historically (7 posts)
-- _…137 more emerging theme(s)._
+- _…132 more emerging theme(s)._
 
 ## Scope note
 
