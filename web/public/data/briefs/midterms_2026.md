@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-15 20:01:23 UTC
+> Tactical snapshot · 2026-09-15 21:09:22 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4025** |
+| Posts in database | **4035** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2921 / 1174 |
-| Distinct themes | 185 |
+| Distinct themes | 188 |
 | Duplicate clusters (full DB) | 207 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2213 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **10**
+
 ## Ingest yield (last 14 days)
 
-- Runs: **207**
-- Net new: **320** · re-seen: **2**
-- Duplicate rate: **0.6%**
+- Runs: **209**
+- Net new: **330** · re-seen: **3**
+- Duplicate rate: **0.9%**
 
 ## Sentiment drift
 
@@ -31,11 +36,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge, graham platner (2226 posts · 36 authors · 57 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, graham platner (2214 posts · 31 authors · 57 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (15 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · american thinker, bleak existence (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -90,8 +95,8 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- biden holds (7 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, speech republican (81 posts)
+- biden holds, maine unless (7 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, speech republican (82 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (69 posts)
@@ -102,7 +107,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4025 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4035 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
