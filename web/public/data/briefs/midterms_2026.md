@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-16 14:47:05 UTC
+> Tactical snapshot · 2026-09-16 15:28:57 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2921 / 1174 |
-| Distinct themes | 185 |
+| Distinct themes | 184 |
 | Duplicate clusters (full DB) | 207 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2213 authors |
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge, graham platner (2232 posts · 30 authors · 56 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2234 posts · 30 authors · 57 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (68 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
