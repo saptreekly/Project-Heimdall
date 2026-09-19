@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-19 05:31:16 UTC
+> Tactical snapshot · 2026-09-19 06:32:27 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2942 / 1194 |
-| Distinct themes | 188 |
+| Distinct themes | 189 |
 | Duplicate clusters (full DB) | 207 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2214 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **273**
+- Runs: **274**
 - Net new: **373** · re-seen: **4**
 - Duplicate rate: **1.1%**
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2246 posts · 28 authors · 57 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2249 posts · 28 authors · 57 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (68 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -98,7 +98,7 @@ _None spanning multiple narratives._
 - illegals count, seats support, breaking president donald (7 posts)
 - union historically (7 posts)
 - impeachment crimes, urgently warranted, mullin considering, dhs sec markwayne (5 posts)
-- _…135 more emerging theme(s)._
+- _…136 more emerging theme(s)._
 
 ## Scope note
 
