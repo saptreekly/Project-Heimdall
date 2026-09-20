@@ -1,30 +1,27 @@
 {
-  "generated_at": "2026-09-13T10:03:43.080057+00:00",
+  "generated_at": "2026-09-20T09:49:51.485904+00:00",
   "window_days": 7,
   "dead_keywords": [
+    "2026 midterms",
     "2026 midterm fraud",
+    "2026 red wave",
     "2026 supreme court",
     "2026 election integrity",
     "2026 gerrymandering",
+    "2026 midwest democrat",
     "2026 resigns electoral"
   ],
   "suggestions": [
     {
-      "query": "2026 district judge",
-      "source": "theme cluster (reuters reported \u00b7 district judge \u00b7 graham platner, 2215 posts)",
-      "score": 2215.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
       "query": "2026 save america midterms",
       "source": "corpus c-TF-IDF",
-      "score": 154.702,
+      "score": 148.213,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
     },
     {
       "query": "2026 speech republican",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 81 posts)",
-      "score": 81.0,
+      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 77 posts)",
+      "score": 77.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
@@ -35,8 +32,8 @@
     },
     {
       "query": "2026 voters pushing",
-      "source": "theme cluster (voters pushing \u00b7 hard silicon \u00b7 backing candidates \u00b7 crypto's cycle, 20 posts)",
-      "score": 20.0,
+      "source": "theme cluster (voters pushing \u00b7 hard silicon \u00b7 backing candidates \u00b7 crypto's cycle, 21 posts)",
+      "score": 21.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
@@ -52,8 +49,14 @@
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
+      "query": "2026 surge gop",
+      "source": "theme cluster (surge gop \u00b7 turnout lfg, 10 posts)",
+      "score": 10.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
       "query": "2026 turnout lfg",
-      "source": "theme cluster (turnout lfg, 10 posts)",
+      "source": "theme cluster (surge gop \u00b7 turnout lfg, 10 posts)",
       "score": 10.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
