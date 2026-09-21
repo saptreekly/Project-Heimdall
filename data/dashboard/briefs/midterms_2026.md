@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-21 05:49:36 UTC
+> Tactical snapshot · 2026-09-21 07:01:45 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 2977 / 1221 |
-| Distinct themes | 185 |
+| Distinct themes | 188 |
 | Duplicate clusters (full DB) | 209 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2234 authors |
@@ -22,7 +22,7 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **278**
-- Net new: **424** · re-seen: **8**
+- Net new: **418** · re-seen: **8**
 - Duplicate rate: **1.9%**
 
 ## Sentiment drift
@@ -31,8 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2258 posts · 44 authors · 58 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (67 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2267 posts · 44 authors · 59 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (68 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · congressional map, upheld state, map allowing, allowing effect, midterms seat (15 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
@@ -94,11 +94,11 @@ _None spanning multiple narratives._
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (94 posts)
 - focus flipping (5 posts)
 - heritage foundation, mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (15 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (67 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (68 posts)
 - illegals count, seats support (7 posts)
 - union historically (7 posts)
-- urgently warranted (4 posts)
-- _…134 more emerging theme(s)._
+- urgently warranted, mullin considering, dhs sec markwayne (5 posts)
+- _…132 more emerging theme(s)._
 
 ## Scope note
 
