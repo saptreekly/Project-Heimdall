@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-21 20:51:55 UTC
+> Tactical snapshot · 2026-09-21 22:01:39 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4147** |
+| Posts in database | **4150** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3013 / 1229 |
-| Distinct themes | 192 |
+| Graph nodes / edges | 3015 / 1230 |
+| Distinct themes | 195 |
 | Duplicate clusters (full DB) | 210 |
 | Fuzzy clusters (snapshot cohort) | 4 |
-| IU astroturf overlap | 2 bots / 2264 authors |
+| IU astroturf overlap | 2 bots / 2266 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **5**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **276**
-- Net new: **464** · re-seen: **25**
-- Duplicate rate: **5.1%**
+- Net new: **467** · re-seen: **30**
+- Duplicate rate: **6.0%**
 
 ## Sentiment drift
 
@@ -32,8 +37,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2283 posts · 62 authors · 60 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2270 posts · 62 authors · 60 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (69 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · congressional map, upheld state, map allowing, allowing effect, midterms seat (15 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
@@ -96,15 +101,15 @@ _None spanning multiple narratives._
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (98 posts)
 - focus flipping (5 posts)
 - heritage foundation, mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (15 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (70 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (69 posts)
+- rating given, results conservatives (11 posts)
 - illegals count, seats support (7 posts)
 - union historically (7 posts)
-- urgently warranted, mullin considering, dhs sec markwayne (5 posts)
-- _…137 more emerging theme(s)._
+- _…138 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4147 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4150 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
