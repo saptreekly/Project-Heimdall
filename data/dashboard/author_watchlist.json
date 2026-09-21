@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1852,
+      "run_counter": 1853,
       "authors": {
         "111": {
           "author_id": "111",
@@ -674,19 +674,6 @@
           "priority": 0.6900000000000001,
           "last_polled_at": "2026-06-15T21:31:33.551660+00:00",
           "last_tweet_at": "2026-06-15T20:40:17+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "3085410827": {
-          "author_id": "3085410827",
-          "handle": "jmmjrjmmjr",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-15T06:10:06.470730+00:00",
-          "last_tweet_at": "2026-06-15T04:23:17+00:00",
           "inserted_total": 2,
           "polls": 1,
           "inserts_from_polls": 0,
@@ -1857,7 +1844,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-09-16T14:30:35.532277+00:00",
           "last_tweet_at": "2026-09-14T14:46:09+00:00",
-          "inserted_total": 27,
+          "inserted_total": 28,
           "polls": 4,
           "inserts_from_polls": 13,
           "status": "active"
@@ -1932,7 +1919,7 @@
           "handle": "ruok_2day",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 1.05,
+          "priority": 1.0,
           "last_polled_at": "2026-09-20T23:32:44.696161+00:00",
           "last_tweet_at": null,
           "inserted_total": 18,
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1305505802": {
-          "author_id": "1305505802",
+        "1674784140426878980": {
+          "author_id": "1674784140426878980",
+          "handle": "KatelyShatzi",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2087321767715221504": {
+          "author_id": "2087321767715221504",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
