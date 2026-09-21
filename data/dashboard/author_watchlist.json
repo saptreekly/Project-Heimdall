@@ -705,19 +705,6 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1684191861240483846": {
-          "author_id": "1684191861240483846",
-          "handle": "WklyMarkets",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-15T22:25:44.955665+00:00",
-          "last_tweet_at": "2026-06-15T18:24:17+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "367290245": {
           "author_id": "367290245",
           "handle": "spindetective",
@@ -1919,11 +1906,24 @@
           "handle": "ruok_2day",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 1.0,
+          "priority": 1.05,
           "last_polled_at": "2026-09-20T23:32:44.696161+00:00",
           "last_tweet_at": null,
           "inserted_total": 18,
           "polls": 1,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2092969852965212160": {
+          "author_id": "2092969852965212160",
+          "handle": "HiddenForggpma",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
