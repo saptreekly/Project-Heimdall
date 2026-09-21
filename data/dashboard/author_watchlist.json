@@ -731,19 +731,6 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "2043808764919246848": {
-          "author_id": "2043808764919246848",
-          "handle": "JDBNYC67",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-16T21:25:26.294645+00:00",
-          "last_tweet_at": "2026-06-16T19:23:32+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "373607124": {
           "author_id": "373607124",
           "handle": "pamalamalamala2",
@@ -788,10 +775,10 @@
           "handle": "PollTracker2024",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.93,
+          "priority": 1.0,
           "last_polled_at": "2026-06-17T19:40:00.076879+00:00",
           "last_tweet_at": "2026-06-17T15:42:39+00:00",
-          "inserted_total": 4,
+          "inserted_total": 5,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1136977663514632192": {
-          "author_id": "1136977663514632192",
+        "144271730": {
+          "author_id": "144271730",
+          "handle": "Burnouts3s3",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1427476600744988672": {
+          "author_id": "1427476600744988672",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
