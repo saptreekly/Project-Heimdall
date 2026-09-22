@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-22 15:10:42 UTC
+> Tactical snapshot · 2026-09-22 15:37:58 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3058 / 1245 |
-| Distinct themes | 193 |
+| Distinct themes | 195 |
 | Duplicate clusters (full DB) | 211 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2300 authors |
@@ -32,7 +32,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2298 posts · 85 authors · 61 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2293 posts · 85 authors · 61 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -93,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes (19 posts)
+- ceuta melilla, doe completely, denied asylum (20 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (102 posts)
 - focus flipping (5 posts)
 - heritage foundation, mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (15 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (70 posts)
 - seek republican, seek republican presidential, republican presidential nomination, vice president, president vance (5 posts)
-- lower approval, results conservatives (12 posts)
+- lower approval, results conservatives, check groypers (10 posts)
 - illegals count, seats support (7 posts)
-- _…139 more emerging theme(s)._
+- _…140 more emerging theme(s)._
 
 ## Scope note
 
