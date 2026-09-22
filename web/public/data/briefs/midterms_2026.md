@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-22 01:01:21 UTC
+> Tactical snapshot · 2026-09-22 01:23:17 UTC
 
 ## Corpus
 
@@ -13,15 +13,15 @@
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3032 / 1238 |
-| Distinct themes | 174 |
+| Graph nodes / edges | 3029 / 1240 |
+| Distinct themes | 190 |
 | Duplicate clusters (full DB) | 210 |
 | Fuzzy clusters (snapshot cohort) | 3 |
-| IU astroturf overlap | 2 bots / 2279 authors |
+| IU astroturf overlap | 2 bots / 2274 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **275**
+- Runs: **276**
 - Net new: **477** · re-seen: **35**
 - Duplicate rate: **6.8%**
 
@@ -32,14 +32,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, citizenship register (1877 posts · 55 authors · 49 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, ruling (755 posts · 30 authors · 19 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, left leaning (2287 posts · 68 authors · 61 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dems defeat, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · racially drawn (11 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -47,7 +47,7 @@
 - dense_cluster_74_size_3
 - dense_cluster_91_size_3
 - dense_cluster_556_size_3
-- dense_cluster_1413_size_3
+- dense_cluster_1412_size_3
 - cross_author_fuzzy_31authors_33posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -91,15 +91,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- ceuta melilla, hot returns, doe completely (23 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (107 posts)
 - focus flipping (5 posts)
-- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (5 posts)
-- illegals count, seats support, breaking president donald (7 posts)
-- urgently warranted, mullin considering (7 posts)
-- texas primaries, red foundation, remove cheating, lse united (13 posts)
-- attorney central, economic concerns (23 posts)
-- union historically (5 posts)
-- existing federal, titled ensuring (18 posts)
-- _…126 more emerging theme(s)._
+- heritage foundation, mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (15 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (70 posts)
+- lower approval, results conservatives, check groypers (10 posts)
+- illegals count, seats support (7 posts)
+- union historically (7 posts)
+- _…134 more emerging theme(s)._
 
 ## Scope note
 
