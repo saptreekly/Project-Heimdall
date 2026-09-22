@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1864,
+      "run_counter": 1865,
       "authors": {
         "111": {
           "author_id": "111",
@@ -729,19 +729,6 @@
           "inserted_total": 5,
           "polls": 8,
           "inserts_from_polls": 2,
-          "status": "active"
-        },
-        "373607124": {
-          "author_id": "373607124",
-          "handle": "pamalamalamala2",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-16T22:36:37.124534+00:00",
-          "last_tweet_at": "2026-06-16T16:18:01+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1530536407521009664": {
@@ -1893,10 +1880,10 @@
           "handle": "ruok_2day",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 1.05,
+          "priority": 1.0,
           "last_polled_at": "2026-09-21T20:51:51.964728+00:00",
           "last_tweet_at": null,
-          "inserted_total": 18,
+          "inserted_total": 25,
           "polls": 4,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "168963199": {
-          "author_id": "168963199",
+        "1526697104403570688": {
+          "author_id": "1526697104403570688",
+          "handle": "anu2033",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "705073310925590528": {
+          "author_id": "705073310925590528",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

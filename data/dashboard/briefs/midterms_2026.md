@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-21 23:07:38 UTC
+> Tactical snapshot · 2026-09-22 00:17:35 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4150** |
+| Posts in database | **4169** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3015 / 1230 |
-| Distinct themes | 188 |
+| Graph nodes / edges | 3029 / 1240 |
+| Distinct themes | 172 |
 | Duplicate clusters (full DB) | 210 |
-| Fuzzy clusters (snapshot cohort) | 4 |
-| IU astroturf overlap | 2 bots / 2266 authors |
+| Fuzzy clusters (snapshot cohort) | 3 |
+| IU astroturf overlap | 2 bots / 2274 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **276**
-- Net new: **463** · re-seen: **30**
-- Duplicate rate: **6.1%**
+- Net new: **481** · re-seen: **35**
+- Duplicate rate: **6.8%**
 
 ## Sentiment drift
 
@@ -32,22 +32,22 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, postal service (2270 posts · 60 authors · 61 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, citizenship register (1878 posts · 50 authors · 50 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, ruling (755 posts · 30 authors · 19 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dems defeat, making mail, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dems defeat, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
 - dense_cluster_74_size_3
 - dense_cluster_91_size_3
-- dense_cluster_557_size_3
-- dense_cluster_1415_size_3
+- dense_cluster_556_size_3
+- dense_cluster_1412_size_3
 - cross_author_fuzzy_31authors_33posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -79,7 +79,6 @@ _None (need ≥5 authors in 90s window)._
 
 - **5 posts** · 5 authors · ~100% Jaccard — Kamala Harris launches into the 2026 midterms as her 2028 decision looms - 10TV via
 - **2 posts** · 2 authors · ~95% Jaccard — 🚨 NOW: President Trump announces the war in Iran will end immediately AFTER the 2026 midterms, saying Iran's whole game plan was to use the election as leverage "The war's gonna end immediately after…
-- **2 posts** · 2 authors · ~90% Jaccard — 🔥 President Trump just DROPPED this chilling line on the Democrats when he was asked if he'll declare a "NATIONAL EMERGENCY" to secure the 2026 midterms until the SAVE America Act is law: "Stranger t…
 - **2 posts** · 2 authors · ~85% Jaccard — 🚨 BREAKING — REDISTRICTING WIN: The 8th Circuit Federal Court has just BLOCKED the Democrat-led effort to reinstate Missouri's 6R-2D map for the 2026 midterms, upholding the 7R-1D map LET'S GO! 🔥 The…
 
 ## Cross-narrative actors (this narrative)
@@ -92,19 +91,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (98 posts)
 - focus flipping (5 posts)
-- heritage foundation, mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (15 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (70 posts)
-- seek republican, seek republican presidential, republican presidential nomination, vice president, president vance (6 posts)
-- lower approval, results conservatives (11 posts)
-- illegals count, seats support (7 posts)
-- union historically (7 posts)
-- _…138 more emerging theme(s)._
+- illegals count, seats support, breaking president donald (7 posts)
+- urgently warranted, mullin considering (7 posts)
+- texas primaries, red foundation, remove cheating, lse united (13 posts)
+- attorney central, economic concerns, buyer's remorse (20 posts)
+- union historically (5 posts)
+- existing federal, titled ensuring (18 posts)
+- making democratic (5 posts)
+- _…124 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4150 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4169 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
