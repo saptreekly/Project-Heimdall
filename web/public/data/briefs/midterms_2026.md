@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-22 20:34:53 UTC
+> Tactical snapshot · 2026-09-22 22:19:00 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4191** |
+| Posts in database | **4192** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3058 / 1245 |
-| Distinct themes | 193 |
+| Graph nodes / edges | 3059 / 1245 |
+| Distinct themes | 194 |
 | Duplicate clusters (full DB) | 211 |
 | Fuzzy clusters (snapshot cohort) | 5 |
-| IU astroturf overlap | 2 bots / 2300 authors |
+| IU astroturf overlap | 2 bots / 2301 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **7**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **275**
-- Net new: **450** · re-seen: **158**
-- Duplicate rate: **26.0%**
+- Net new: **420** · re-seen: **197**
+- Duplicate rate: **31.9%**
 
 ## Sentiment drift
 
@@ -32,7 +37,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2298 posts · 85 authors · 61 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2295 posts · 86 authors · 61 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -93,19 +98,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes (19 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (102 posts)
 - focus flipping (5 posts)
 - heritage foundation, mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (15 posts)
 - judgment supreme, civil discourse, forced labor, board trustees (70 posts)
-- seek republican, seek republican presidential, republican presidential nomination, vice president, president vance (5 posts)
-- lower approval, results conservatives (12 posts)
+- lower approval, results conservatives (11 posts)
 - illegals count, seats support (7 posts)
+- union historically (7 posts)
+- urgently warranted (3 posts)
 - _…139 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4191 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4192 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
