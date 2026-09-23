@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-23 13:56:29 UTC
+> Tactical snapshot · 2026-09-23 14:46:39 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4223** |
+| Posts in database | **4222** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3087 / 1254 |
-| Distinct themes | 177 |
-| Duplicate clusters (full DB) | 213 |
+| Graph nodes / edges | 3088 / 1254 |
+| Distinct themes | 149 |
+| Duplicate clusters (full DB) | 214 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 2327 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **273**
-- Net new: **450** · re-seen: **246**
-- Duplicate rate: **35.3%**
+- Runs: **271**
+- Net new: **449** · re-seen: **246**
+- Duplicate rate: **35.4%**
 
 ## Sentiment drift
 
@@ -32,22 +32,22 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (1900 posts · 86 authors · 52 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, ruling (760 posts · 32 authors · 19 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, ruling (759 posts · 31 authors · 19 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, years old, nuclear weapon, administration multiple (54 posts · 12 authors · 14 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · radical left (43 posts · 2 authors · 10 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · excuses games yes, fraud cold, excuses games, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, disaster republicans, democrats ninepercent, source center, bastards anyways (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stop fraud, cold excuses, voter laws, games yes (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
-- dense_cluster_74_size_3
-- dense_cluster_91_size_3
-- dense_cluster_556_size_3
-- dense_cluster_1413_size_3
+- dense_cluster_73_size_3
+- dense_cluster_90_size_3
+- dense_cluster_555_size_3
+- dense_cluster_1412_size_3
 - cross_author_fuzzy_31authors_33posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -69,7 +69,7 @@
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
-- _…203 more exact-duplicate cluster(s) in database._
+- _…204 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -78,11 +78,11 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **5 posts** · 5 authors · ~100% Jaccard — Kamala Harris launches into the 2026 midterms as her 2028 decision looms - 10TV via
+- **3 posts** · 3 authors · ~100% Jaccard — Poll: Most voters agree the 2026 midterms are all about Trump — and they disapprove - NPR
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: The Trump DOJ is stepping up big time to secure the 2026 midterms! Acting Deputy AG Trent McCotter confirmed aggressive actions and sending 1,000 monitors to protect ballot integrity. No…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: An RNC lawsuit just FORCED Democrat-leaning Cobb County, Georgia to ABOLISH their proposed illegal drop box ballot "collection scheme" for the 2026 midterms GREAT NEWS! Keep fighting! 👏🏻…
 - **2 posts** · 2 authors · ~100% Jaccard — Poll-based forecasters expect a big Democratic wave, and race-rating ‘experts’ are more cautious about it. They have different perspectives on how the 2026 midterms will unfold. Somebody’s going to b…
 - **2 posts** · 2 authors · ~95% Jaccard — President Trump tells Iran their efforts to weaponize the 2026 midterms against him WON'T WORK, he's not taking ANY elections into account when it comes to Iran policy "I don't think about the electi…
-- **2 posts** · 2 authors · ~95% Jaccard — 🚨 NOW: President Trump announces the war in Iran will end immediately AFTER the 2026 midterms, saying Iran's whole game plan was to use the election as leverage "The war's gonna end immediately after…
 - _…3 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -96,18 +96,18 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - focus flipping (5 posts)
-- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (8 posts)
-- illegals count, seats support, breaking president donald (7 posts)
-- texas primaries, red foundation, remove cheating, lse united (13 posts)
-- attorney central, economic concerns, buyer's remorse (20 posts)
+- vice president, president vance, vice president vance, wait midterms, usha vance (8 posts)
+- polling stations (8 posts)
+- illegals count, seats support (7 posts)
+- primaries cracks, remove cheating, lse united (13 posts)
+- attorney central, economic concerns (23 posts)
 - union historically (5 posts)
-- citizenship lists, titled ensuring (16 posts)
-- making democratic (5 posts)
-- _…129 more emerging theme(s)._
+- citizenship lists, plaintiff states (18 posts)
+- _…133 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4223 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4222 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
