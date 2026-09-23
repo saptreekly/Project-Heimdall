@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-22 23:04:28 UTC
+> Tactical snapshot · 2026-09-22 23:53:28 UTC
 
 ## Corpus
 
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3059 / 1245 |
-| Distinct themes | 192 |
+| Distinct themes | 194 |
 | Duplicate clusters (full DB) | 211 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2301 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **7**
-- Net-new posts logged: **1**
-
 ## Ingest yield (last 14 days)
 
-- Runs: **273**
-- Net new: **420** · re-seen: **197**
-- Duplicate rate: **31.9%**
+- Runs: **274**
+- Net new: **417** · re-seen: **204**
+- Duplicate rate: **32.9%**
 
 ## Sentiment drift
 
@@ -37,7 +32,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2305 posts · 86 authors · 62 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2295 posts · 86 authors · 61 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
