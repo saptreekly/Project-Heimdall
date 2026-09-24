@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1894,
+      "run_counter": 1895,
       "authors": {
         "111": {
           "author_id": "111",
@@ -710,10 +710,10 @@
           "handle": "spindetective",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.93,
+          "priority": 1.0,
           "last_polled_at": "2026-06-16T13:03:27.415087+00:00",
           "last_tweet_at": "2026-06-16T01:01:07+00:00",
-          "inserted_total": 4,
+          "inserted_total": 5,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -817,19 +817,6 @@
           "priority": 0.6900000000000001,
           "last_polled_at": "2026-06-19T15:54:47.909852+00:00",
           "last_tweet_at": "2026-06-19T12:19:29+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1834547916549091330": {
-          "author_id": "1834547916549091330",
-          "handle": "quabbin8",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-19T16:45:45.735617+00:00",
-          "last_tweet_at": "2026-06-19T12:59:36+00:00",
           "inserted_total": 2,
           "polls": 1,
           "inserts_from_polls": 0,
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "168963199": {
-          "author_id": "168963199",
+        "1853696416981348352": {
+          "author_id": "1853696416981348352",
+          "handle": "trgstlofficial",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.81,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 3,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "21651982": {
+          "author_id": "21651982",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
