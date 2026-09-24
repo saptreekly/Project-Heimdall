@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-24 16:09:24 UTC
+> Tactical snapshot · 2026-09-24 20:16:55 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4262** |
+| Posts in database | **4265** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3118 / 1265 |
-| Distinct themes | 199 |
+| Graph nodes / edges | 3123 / 1267 |
+| Distinct themes | 201 |
 | Duplicate clusters (full DB) | 214 |
 | Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 2 bots / 2356 authors |
+| IU astroturf overlap | 2 bots / 2359 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **4**
+- Net-new posts logged: **3**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **272**
-- Net new: **511** · re-seen: **358**
-- Duplicate rate: **41.2%**
+- Runs: **270**
+- Net new: **513** · re-seen: **362**
+- Duplicate rate: **41.4%**
 
 ## Sentiment drift
 
@@ -32,7 +37,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, markwayne mullin (2334 posts · 116 authors · 60 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, markwayne mullin (2332 posts · 119 authors · 61 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 4 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -95,7 +100,7 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- hot returns, ceuta melilla, doe completely (22 posts)
+- ceuta melilla, hot returns, doe completely (23 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (103 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
@@ -103,11 +108,11 @@ _None spanning multiple narratives._
 - seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (7 posts)
 - check groypers (7 posts)
 - illegals count, seats support (7 posts)
-- _…146 more emerging theme(s)._
+- _…147 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4262 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4265 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
