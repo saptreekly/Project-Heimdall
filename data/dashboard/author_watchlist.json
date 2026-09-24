@@ -399,7 +399,7 @@
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 1.0,
-          "last_polled_at": "2026-09-23T22:38:57.381905+00:00",
+          "last_polled_at": "2026-09-23T23:07:08.282122+00:00",
           "last_tweet_at": "2026-06-07T22:12:52+00:00",
           "inserted_total": 8,
           "polls": 9,
@@ -412,10 +412,10 @@
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 1.0,
-          "last_polled_at": "2026-09-24T01:05:59.007452+00:00",
+          "last_polled_at": "2026-09-15T05:33:27.445283+00:00",
           "last_tweet_at": "2026-09-13T14:09:27+00:00",
           "inserted_total": 105,
-          "polls": 9,
+          "polls": 8,
           "inserts_from_polls": 42,
           "status": "active"
         },
@@ -768,19 +768,6 @@
           "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 1,
-          "status": "active"
-        },
-        "3242723604": {
-          "author_id": "3242723604",
-          "handle": "electbarnhill",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-17T21:21:50.870028+00:00",
-          "last_tweet_at": "2026-06-17T17:43:48+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1427299921330376707": {
@@ -1919,10 +1906,10 @@
           "handle": "anu2033",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.8099999999999999,
+          "priority": 0.69,
           "last_polled_at": "2026-09-22T01:45:10.953088+00:00",
           "last_tweet_at": null,
-          "inserted_total": 3,
+          "inserted_total": 2,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "133938408": {
-          "author_id": "133938408",
+        "820355193749590016": {
+          "author_id": "820355193749590016",
+          "handle": "mdveritas",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": "2026-09-24T01:34:37.219559+00:00",
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 1,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "793542678377926656": {
+          "author_id": "793542678377926656",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
