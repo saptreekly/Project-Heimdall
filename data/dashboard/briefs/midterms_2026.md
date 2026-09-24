@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-23 23:07:10 UTC
+> Tactical snapshot · 2026-09-23 23:58:56 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4225** |
+| Posts in database | **4241** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3089 / 1254 |
-| Distinct themes | 199 |
-| Duplicate clusters (full DB) | 213 |
-| Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 2329 authors |
+| Graph nodes / edges | 3102 / 1257 |
+| Distinct themes | 175 |
+| Duplicate clusters (full DB) | 214 |
+| Fuzzy clusters (snapshot cohort) | 8 |
+| IU astroturf overlap | 2 bots / 2342 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **271**
-- Net new: **462** · re-seen: **286**
-- Duplicate rate: **38.2%**
+- Net new: **478** · re-seen: **286**
+- Duplicate rate: **37.4%**
 
 ## Sentiment drift
 
@@ -32,14 +32,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2312 posts · 105 authors · 60 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (71 posts · 4 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, citizenship register (1931 posts · 98 authors · 52 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, ruling (764 posts · 35 authors · 19 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (18 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · racially drawn (11 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -69,7 +69,7 @@
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
-- _…203 more exact-duplicate cluster(s) in database._
+- _…204 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -82,8 +82,8 @@ _None (need ≥5 authors in 90s window)._
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: An RNC lawsuit just FORCED Democrat-leaning Cobb County, Georgia to ABOLISH their proposed illegal drop box ballot "collection scheme" for the 2026 midterms GREAT NEWS! Keep fighting! 👏🏻…
 - **2 posts** · 2 authors · ~100% Jaccard — Poll-based forecasters expect a big Democratic wave, and race-rating ‘experts’ are more cautious about it. They have different perspectives on how the 2026 midterms will unfold. Somebody’s going to b…
 - **2 posts** · 2 authors · ~95% Jaccard — President Trump tells Iran their efforts to weaponize the 2026 midterms against him WON'T WORK, he's not taking ANY elections into account when it comes to Iran policy "I don't think about the electi…
-- **2 posts** · 2 authors · ~95% Jaccard — 🚨 NOW: President Trump announces the war in Iran will end immediately AFTER the 2026 midterms, saying Iran's whole game plan was to use the election as leverage "The war's gonna end immediately after…
-- _…3 more fuzzy cluster(s) in snapshot cohort._
+- **2 posts** · 2 authors · ~93% Jaccard — Poll: Most voters agree the 2026 midterms are all about Trump — and they disapprove - NPR
+- _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -95,19 +95,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (102 posts)
 - focus flipping (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (71 posts)
 - seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (7 posts)
-- check groypers (7 posts)
-- illegals count, seats support (7 posts)
-- union historically (7 posts)
-- _…146 more emerging theme(s)._
+- illegals count, seats support, breaking president donald (7 posts)
+- texas primaries, red foundation, remove cheating, lse united (13 posts)
+- attorney central, economic concerns, buyer's remorse (20 posts)
+- union historically (5 posts)
+- existing federal, titled ensuring (16 posts)
+- making democratic (5 posts)
+- _…125 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4225 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4241 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
