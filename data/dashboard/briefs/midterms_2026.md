@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-24 23:00:08 UTC
+> Tactical snapshot · 2026-09-24 23:38:00 UTC
 
 ## Corpus
 
@@ -13,15 +13,15 @@
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3136 / 1269 |
-| Distinct themes | 176 |
+| Graph nodes / edges | 3134 / 1269 |
+| Distinct themes | 178 |
 | Duplicate clusters (full DB) | 215 |
 | Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 2370 authors |
+| IU astroturf overlap | 2 bots / 2369 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **270**
+- Runs: **269**
 - Net new: **531** · re-seen: **365**
 - Duplicate rate: **40.7%**
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, citizenship checks (1951 posts · 111 authors · 53 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, citizenship register, left leaning (1935 posts · 109 authors · 53 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · court, supreme, trump, ruling (767 posts · 37 authors · 19 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (17 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -95,10 +95,10 @@ _None spanning multiple narratives._
 ## Emerging themes
 
 - focus flipping (5 posts)
-- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (8 posts)
+- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (7 posts)
 - illegals count, seats support, breaking president donald (7 posts)
-- texas primaries, red foundation, remove cheating, lse united, states politics (14 posts)
-- attorney central, economic concerns (22 posts)
+- texas primaries, red foundation, remove cheating, lse united (13 posts)
+- attorney central, economic concerns (23 posts)
 - union historically (5 posts)
 - existing federal, biden appointed (15 posts)
 - making democratic (5 posts)

@@ -861,19 +861,6 @@
           "inserts_from_polls": 2,
           "status": "active"
         },
-        "1361303586643320833": {
-          "author_id": "1361303586643320833",
-          "handle": "jmae5141",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-19T21:51:00.161843+00:00",
-          "last_tweet_at": "2026-06-19T16:39:16+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1976750489950965760": {
           "author_id": "1976750489950965760",
           "handle": "Polyspeedo",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "3932768472": {
-          "author_id": "3932768472",
+        "1585962088400392198": {
+          "author_id": "1585962088400392198",
+          "handle": "Chaps_H2Heroes",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "392688294": {
+          "author_id": "392688294",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
