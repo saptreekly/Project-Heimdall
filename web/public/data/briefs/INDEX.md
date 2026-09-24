@@ -1,6 +1,6 @@
 # Heimdall narrative briefings
 
-_Auto-generated · snapshot `2026-09-24T04:29:51.414716+00:00`_
+_Auto-generated · snapshot `2026-09-24T05:29:08.186243+00:00`_
 
 | Narrative | DB posts | Brief |
 | --- | ---: | --- |
