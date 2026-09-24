@@ -1,45 +1,44 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-24 21:53:33 UTC
+> Tactical snapshot · 2026-09-24 23:00:08 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4265** |
+| Posts in database | **4280** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3123 / 1267 |
-| Distinct themes | 201 |
-| Duplicate clusters (full DB) | 214 |
-| Fuzzy clusters (snapshot cohort) | 8 |
-| IU astroturf overlap | 2 bots / 2359 authors |
+| Graph nodes / edges | 3136 / 1269 |
+| Distinct themes | 176 |
+| Duplicate clusters (full DB) | 215 |
+| Fuzzy clusters (snapshot cohort) | 9 |
+| IU astroturf overlap | 2 bots / 2370 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **270**
-- Net new: **516** · re-seen: **365**
-- Duplicate rate: **41.4%**
+- Net new: **531** · re-seen: **365**
+- Duplicate rate: **40.7%**
 
 ## Sentiment drift
 
 - Trend: **stable**
-- Week-over-week alert: **volume_spike_low_outrage**
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, markwayne mullin (2332 posts · 119 authors · 61 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 4 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, citizenship checks (1951 posts · 111 authors · 53 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, ruling (767 posts · 37 authors · 19 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (17 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · racially drawn (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -69,7 +68,7 @@
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
 - **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
-- _…204 more exact-duplicate cluster(s) in database._
+- _…205 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -78,12 +77,12 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **5 posts** · 5 authors · ~100% Jaccard — Kamala Harris launches into the 2026 midterms as her 2028 decision looms - 10TV via
+- **2 posts** · 2 authors · ~100% Jaccard — Texas RINO's Plot SABOTAGE of Republican Party in 2026 Midterms via
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: The Trump DOJ is stepping up big time to secure the 2026 midterms! Acting Deputy AG Trent McCotter confirmed aggressive actions and sending 1,000 monitors to protect ballot integrity. No…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: An RNC lawsuit just FORCED Democrat-leaning Cobb County, Georgia to ABOLISH their proposed illegal drop box ballot "collection scheme" for the 2026 midterms GREAT NEWS! Keep fighting! 👏🏻…
 - **2 posts** · 2 authors · ~100% Jaccard — Poll-based forecasters expect a big Democratic wave, and race-rating ‘experts’ are more cautious about it. They have different perspectives on how the 2026 midterms will unfold. Somebody’s going to b…
 - **2 posts** · 2 authors · ~95% Jaccard — President Trump tells Iran their efforts to weaponize the 2026 midterms against him WON'T WORK, he's not taking ANY elections into account when it comes to Iran policy "I don't think about the electi…
-- **2 posts** · 2 authors · ~93% Jaccard — Poll: Most voters agree the 2026 midterms are all about Trump — and they disapprove - NPR
-- _…2 more fuzzy cluster(s) in snapshot cohort._
+- _…3 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -95,19 +94,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- ceuta melilla, hot returns, doe completely (23 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (103 posts)
 - focus flipping (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (70 posts)
-- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (7 posts)
-- check groypers (7 posts)
-- illegals count, seats support (7 posts)
-- _…147 more emerging theme(s)._
+- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (8 posts)
+- illegals count, seats support, breaking president donald (7 posts)
+- texas primaries, red foundation, remove cheating, lse united, states politics (14 posts)
+- attorney central, economic concerns (22 posts)
+- union historically (5 posts)
+- existing federal, biden appointed (15 posts)
+- making democratic (5 posts)
+- _…129 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4265 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4280 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
