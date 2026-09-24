@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-24 21:00:47 UTC
+> Tactical snapshot · 2026-09-24 21:25:41 UTC
 
 ## Corpus
 
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3123 / 1267 |
-| Distinct themes | 201 |
+| Distinct themes | 198 |
 | Duplicate clusters (full DB) | 214 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2359 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **3**
-- Net-new posts logged: **3**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **269**
-- Net new: **513** · re-seen: **361**
-- Duplicate rate: **41.3%**
+- Net new: **513** · re-seen: **362**
+- Duplicate rate: **41.4%**
 
 ## Sentiment drift
 
@@ -37,8 +32,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, markwayne mullin (2332 posts · 119 authors · 61 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (70 posts · 4 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, markwayne mullin (2362 posts · 119 authors · 60 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (71 posts · 4 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -100,15 +95,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- ceuta melilla, hot returns, doe completely (23 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (103 posts)
+- ceuta melilla, hot returns, doe completely (22 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, harris president (85 posts)
+- didn learn, lesson fictional (4 posts)
 - focus flipping (5 posts)
 - mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (70 posts)
+- judgment supreme, civil discourse, forced labor, board trustees (71 posts)
 - seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (7 posts)
 - check groypers (7 posts)
-- illegals count, seats support (7 posts)
-- _…147 more emerging theme(s)._
+- _…145 more emerging theme(s)._
 
 ## Scope note
 
