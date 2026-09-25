@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-25 13:37:16 UTC
+> Tactical snapshot · 2026-09-25 14:15:52 UTC
 
 ## Corpus
 
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3153 / 1276 |
-| Distinct themes | 200 |
+| Distinct themes | 92 |
 | Duplicate clusters (full DB) | 215 |
 | Fuzzy clusters (snapshot cohort) | 9 |
 | IU astroturf overlap | 2 bots / 2385 authors |
 
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **31**
-- Net-new posts logged: **0**
-
 ## Ingest yield (last 14 days)
 
 - Runs: **269**
-- Net new: **566** · re-seen: **439**
-- Duplicate rate: **43.7%**
+- Net new: **554** · re-seen: **439**
+- Duplicate rate: **44.2%**
 
 ## Sentiment drift
 
@@ -36,15 +31,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2376 posts · 137 authors · 59 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, civil discourse, forced labor, board trustees (72 posts · 3 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, texas rino's, plot sabotage, source center (22 posts · 3 authors · 4 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · california hit, similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, wargaming steal, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3609 posts · 161 authors · 174 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · paid creators, times reports, sideshift flood, media affordability (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -99,15 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- ceuta melilla, hot returns, doe completely (25 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, harris president (85 posts)
-- focus flipping (5 posts)
-- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, civil discourse, forced labor, board trustees (72 posts)
-- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (7 posts)
-- avoid impeachment, crimes urgently (15 posts)
-- illegals count, seats support (7 posts)
-- _…132 more emerging theme(s)._
+- claimed china (6 posts)
+- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
+- corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (44 posts)
+- awakening largest, affordable homes, power register (6 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- cair jetpac, known muslim, include abdul (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
+- _…24 more emerging theme(s)._
 
 ## Scope note
 
