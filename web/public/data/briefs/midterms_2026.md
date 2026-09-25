@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-25 15:33:49 UTC
+> Tactical snapshot · 2026-09-25 16:21:25 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4303** |
+| Posts in database | **4321** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3154 / 1277 |
-| Distinct themes | 91 |
-| Duplicate clusters (full DB) | 215 |
-| Fuzzy clusters (snapshot cohort) | 9 |
-| IU astroturf overlap | 2 bots / 2386 authors |
+| Graph nodes / edges | 3166 / 1279 |
+| Distinct themes | 72 |
+| Duplicate clusters (full DB) | 216 |
+| Fuzzy clusters (snapshot cohort) | 10 |
+| IU astroturf overlap | 2 bots / 2398 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **269**
-- Net new: **544** · re-seen: **444**
-- Duplicate rate: **44.9%**
+- Runs: **270**
+- Net new: **562** · re-seen: **444**
+- Duplicate rate: **44.1%**
 
 ## Sentiment drift
 
@@ -31,11 +31,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3613 posts · 162 authors · 174 exact · 6 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · paid creators, times reports, sideshift flood, media affordability (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, win house, george soros, postmaster general, president donald (2995 posts · 147 authors · 163 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, ruling (774 posts · 33 authors · 19 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime, trump ally (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (3 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · doj stepping, acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -47,10 +47,10 @@
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
 - cross_author_fuzzy_5authors_5posts_j1.00
+- cross_author_fuzzy_4authors_5posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_2authors_3posts_j1.00
-- cross_author_fuzzy_2authors_2posts_j1.00
 
 ## Exact duplicate text (Layer 1 — copy coordination)
 
@@ -59,12 +59,12 @@
 - **3 posts** · 3 author(s) — Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \| FULL INTERVIEW
 - **7 posts** · 6 author(s) — 🚨 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms — WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY…
 - **4 posts** · 4 author(s) — Kamala Harris launches into the 2026 midterms as her 2028 decision looms
+- **4 posts** · 3 author(s) — 🚨BREAKING — HUGE SCOTUS WIN: The Supreme Court 6-3 has GREENLIT the Trump administration's revamped SAVE citizenship verification database for states to PURGE the voter rolls of illegal voters during…
 - **3 posts** · 3 author(s) — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
-- **2 posts** · 2 author(s) — Louisiana likely to use new congressional map for 2026 midterms despite looming court challenge
-- _…205 more exact-duplicate cluster(s) in database._
+- _…206 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -73,12 +73,12 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **5 posts** · 5 authors · ~100% Jaccard — Kamala Harris launches into the 2026 midterms as her 2028 decision looms - 10TV via
+- **5 posts** · 4 authors · ~100% Jaccard — 🚨BREAKING — HUGE SCOTUS WIN: The Supreme Court 6-3 has GREENLIT the Trump administration's revamped SAVE citizenship verification database for states to PURGE the voter rolls of illegal voters during…
 - **3 posts** · 3 authors · ~100% Jaccard — Texas RINO's Plot SABOTAGE of Republican Party in 2026 Midterms via
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: The Trump DOJ is stepping up big time to secure the 2026 midterms! Acting Deputy AG Trent McCotter confirmed aggressive actions and sending 1,000 monitors to protect ballot integrity. No…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: An RNC lawsuit just FORCED Democrat-leaning Cobb County, Georgia to ABOLISH their proposed illegal drop box ballot "collection scheme" for the 2026 midterms GREAT NEWS! Keep fighting! 👏🏻…
 - **2 posts** · 2 authors · ~100% Jaccard — Poll-based forecasters expect a big Democratic wave, and race-rating ‘experts’ are more cautious about it. They have different perspectives on how the 2026 midterms will unfold. Somebody’s going to b…
-- **2 posts** · 2 authors · ~95% Jaccard — President Trump tells Iran their efforts to weaponize the 2026 midterms against him WON'T WORK, he's not taking ANY elections into account when it comes to Iran policy "I don't think about the electi…
-- _…3 more fuzzy cluster(s) in snapshot cohort._
+- _…4 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -90,19 +90,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china (6 posts)
-- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (44 posts)
-- awakening largest, affordable homes, power register (6 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- cair jetpac, known muslim, include abdul (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- _…24 more emerging theme(s)._
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
+- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
+- beautiful delay, planned project, rules dec (5 posts)
+- americans replaced, end unregulated, dirty water, sucking data, higher taxes working (25 posts)
+- _…17 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4303 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4321 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
