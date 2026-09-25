@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1916,
+      "run_counter": 1917,
       "authors": {
         "111": {
           "author_id": "111",
@@ -883,19 +883,6 @@
           "last_polled_at": "2026-06-21T14:28:59.978857+00:00",
           "last_tweet_at": "2026-06-21T01:20:34+00:00",
           "inserted_total": 3,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1469917767084044291": {
-          "author_id": "1469917767084044291",
-          "handle": "DBADBA777",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-21T15:30:43.069151+00:00",
-          "last_tweet_at": "2026-06-21T08:40:21+00:00",
-          "inserted_total": 2,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1830302921789259776": {
-          "author_id": "1830302921789259776",
+        "1755910450431356928": {
+          "author_id": "1755910450431356928",
+          "handle": "magamanvegas",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 1.05,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 7,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1772439922521292800": {
+          "author_id": "1772439922521292800",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
