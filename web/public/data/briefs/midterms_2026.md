@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-26 14:04:25 UTC
+> Tactical snapshot · 2026-09-26 14:37:18 UTC
 
 ## Corpus
 
@@ -14,15 +14,10 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3207 / 1301 |
-| Distinct themes | 91 |
+| Distinct themes | 94 |
 | Duplicate clusters (full DB) | 218 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 2427 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **9**
-- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
@@ -36,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3695 posts · 178 authors · 178 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3691 posts · 177 authors · 178 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
@@ -95,15 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- claimed china, bigger majorities (7 posts)
 - orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (44 posts)
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- cair jetpac, known muslim, include abdul, sayed senate (3 posts)
+- cair jetpac, include abdul, sayed senate (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- inbreeds cuz, 10000's fascist (7 posts)
-- _…24 more emerging theme(s)._
+- _…25 more emerging theme(s)._
 
 ## Scope note
 
