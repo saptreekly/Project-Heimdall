@@ -154,7 +154,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-09-20T13:55:28.165396+00:00",
           "last_tweet_at": "2026-09-11T21:12:18+00:00",
-          "inserted_total": 76,
+          "inserted_total": 77,
           "polls": 9,
           "inserts_from_polls": 26,
           "status": "active"
@@ -1940,8 +1940,8 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "44196397": {
-          "author_id": "44196397",
+        "1411163296317775873": {
+          "author_id": "1411163296317775873",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
