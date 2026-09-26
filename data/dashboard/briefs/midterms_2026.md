@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-26 04:44:06 UTC
+> Tactical snapshot · 2026-09-26 05:44:03 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4353** |
+| Posts in database | **4355** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3189 / 1295 |
-| Distinct themes | 89 |
+| Graph nodes / edges | 3190 / 1296 |
+| Distinct themes | 93 |
 | Duplicate clusters (full DB) | 218 |
 | Fuzzy clusters (snapshot cohort) | 10 |
-| IU astroturf overlap | 2 bots / 2414 authors |
+| IU astroturf overlap | 2 bots / 2415 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **10**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **269**
-- Net new: **579** · re-seen: **510**
-- Duplicate rate: **46.8%**
+- Net new: **561** · re-seen: **520**
+- Duplicate rate: **48.1%**
 
 ## Sentiment drift
 
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3676 posts · 175 authors · 177 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3671 posts · 175 authors · 177 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
@@ -90,19 +95,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- claimed china, bigger majorities (7 posts)
 - orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (44 posts)
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- cair jetpac, known muslim, include abdul, sayed senate (3 posts)
+- cair jetpac, include abdul, sayed senate (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- inbreeds cuz, 10000's fascist (7 posts)
-- _…24 more emerging theme(s)._
+- _…25 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4353 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4355 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

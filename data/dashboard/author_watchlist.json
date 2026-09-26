@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1922,
+      "run_counter": 1923,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1932,7 +1932,7 @@
           "handle": "magamanvegas",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 1.05,
+          "priority": 1.0,
           "last_polled_at": "2026-09-26T04:44:04.588905+00:00",
           "last_tweet_at": null,
           "inserted_total": 7,
@@ -1940,8 +1940,8 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1830302921789259776": {
-          "author_id": "1830302921789259776",
+        "1772439922521292800": {
+          "author_id": "1772439922521292800",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
