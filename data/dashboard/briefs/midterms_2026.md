@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-26 13:32:04 UTC
+> Tactical snapshot · 2026-09-26 14:04:25 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4370** |
+| Posts in database | **4372** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3205 / 1301 |
-| Distinct themes | 92 |
+| Graph nodes / edges | 3207 / 1301 |
+| Distinct themes | 91 |
 | Duplicate clusters (full DB) | 218 |
-| Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 2425 authors |
+| Fuzzy clusters (snapshot cohort) | 10 |
+| IU astroturf overlap | 2 bots / 2427 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **9**
+- Net-new posts logged: **2**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **268**
-- Net new: **576** · re-seen: **551**
-- Duplicate rate: **48.9%**
+- Net new: **578** · re-seen: **560**
+- Duplicate rate: **49.2%**
 
 ## Sentiment drift
 
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3686 posts · 179 authors · 177 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3695 posts · 178 authors · 178 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
@@ -78,7 +83,7 @@ _None (need ≥5 authors in 90s window)._
 - **2 posts** · 2 authors · ~100% Jaccard — BREAKING EXCLUSIVE: If Democrats win the 2026 midterms, they plan to pass a bill called the Alex Pretti Act that will end qualified immunity for ICE agents, allowing them to be sued or jailed for wro…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: The Trump DOJ is stepping up big time to secure the 2026 midterms! Acting Deputy AG Trent McCotter confirmed aggressive actions and sending 1,000 monitors to protect ballot integrity. No…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: An RNC lawsuit just FORCED Democrat-leaning Cobb County, Georgia to ABOLISH their proposed illegal drop box ballot "collection scheme" for the 2026 midterms GREAT NEWS! Keep fighting! 👏🏻…
-- _…5 more fuzzy cluster(s) in snapshot cohort._
+- _…4 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -102,7 +107,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4370 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4372 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
