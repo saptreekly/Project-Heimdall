@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1930,
+      "run_counter": 1931,
       "authors": {
         "111": {
           "author_id": "111",
@@ -154,7 +154,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-09-20T13:55:28.165396+00:00",
           "last_tweet_at": "2026-09-11T21:12:18+00:00",
-          "inserted_total": 77,
+          "inserted_total": 79,
           "polls": 9,
           "inserts_from_polls": 26,
           "status": "active"
@@ -925,19 +925,6 @@
           "polls": 6,
           "inserts_from_polls": 0,
           "status": "pruned"
-        },
-        "1824789665162891264": {
-          "author_id": "1824789665162891264",
-          "handle": "SpeakFreely1789",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-23T11:46:14.242062+00:00",
-          "last_tweet_at": "2026-06-23T10:25:40+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
         },
         "1694888597726330880": {
           "author_id": "1694888597726330880",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1772439922521292800": {
-          "author_id": "1772439922521292800",
+        "1006652004": {
+          "author_id": "1006652004",
+          "handle": "Gigisaysthis1",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1432031941596000256": {
+          "author_id": "1432031941596000256",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-26 14:37:18 UTC
+> Tactical snapshot · 2026-09-26 15:22:03 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4372** |
+| Posts in database | **4389** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3207 / 1301 |
-| Distinct themes | 94 |
-| Duplicate clusters (full DB) | 218 |
+| Graph nodes / edges | 3227 / 1310 |
+| Distinct themes | 181 |
+| Duplicate clusters (full DB) | 219 |
 | Fuzzy clusters (snapshot cohort) | 10 |
-| IU astroturf overlap | 2 bots / 2427 authors |
+| IU astroturf overlap | 2 bots / 2440 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **268**
-- Net new: **578** · re-seen: **560**
-- Duplicate rate: **49.2%**
+- Runs: **269**
+- Net new: **595** · re-seen: **560**
+- Duplicate rate: **48.5%**
 
 ## Sentiment drift
 
@@ -31,11 +31,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3691 posts · 177 authors · 178 exact · 7 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · paid creators, times reports, sideshift flood, media affordability (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, left leaning (1991 posts · 130 authors · 54 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (791 posts · 30 authors · 20 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (17 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -64,7 +68,7 @@
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
-- _…208 more exact-duplicate cluster(s) in database._
+- _…209 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -73,9 +77,9 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **6 posts** · 5 authors · ~100% Jaccard — 🚨BREAKING — HUGE SCOTUS WIN: The Supreme Court 6-3 has GREENLIT the Trump administration's revamped SAVE citizenship verification database for states to PURGE the voter rolls of illegal voters during…
-- **5 posts** · 5 authors · ~100% Jaccard — Kamala Harris launches into the 2026 midterms as her 2028 decision looms - 10TV via
-- **3 posts** · 3 authors · ~100% Jaccard — Texas RINO's Plot SABOTAGE of Republican Party in 2026 Midterms via
+- **2 posts** · 2 authors · ~100% Jaccard — AI ads are popular in the 2026 midterms, but state laws haven’t stopped a lack of disclosure
 - **2 posts** · 2 authors · ~100% Jaccard — BREAKING EXCLUSIVE: If Democrats win the 2026 midterms, they plan to pass a bill called the Alex Pretti Act that will end qualified immunity for ICE agents, allowing them to be sued or jailed for wro…
+- **2 posts** · 2 authors · ~100% Jaccard — Texas RINO's Plot SABOTAGE of Republican Party in 2026 Midterms via
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: The Trump DOJ is stepping up big time to secure the 2026 midterms! Acting Deputy AG Trent McCotter confirmed aggressive actions and sending 1,000 monitors to protect ballot integrity. No…
 - **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: An RNC lawsuit just FORCED Democrat-leaning Cobb County, Georgia to ABOLISH their proposed illegal drop box ballot "collection scheme" for the 2026 midterms GREAT NEWS! Keep fighting! 👏🏻…
 - _…4 more fuzzy cluster(s) in snapshot cohort._
@@ -90,19 +94,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (7 posts)
-- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (44 posts)
-- awakening largest, affordable homes, power register (6 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- cair jetpac, include abdul, sayed senate (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- _…25 more emerging theme(s)._
+- focus flipping (5 posts)
+- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (8 posts)
+- agents posted, posted polling, stations stop, voting yes, ice agents posted (5 posts)
+- illegals count, seats support, breaking president donald (7 posts)
+- texas primaries, cracks state, red foundation, remove cheating, trump attacked (14 posts)
+- attorney central, economic concerns (23 posts)
+- union historically (5 posts)
+- titled ensuring (19 posts)
+- _…133 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4372 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4389 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
