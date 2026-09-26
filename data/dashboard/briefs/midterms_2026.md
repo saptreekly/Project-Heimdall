@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-26 22:09:32 UTC
+> Tactical snapshot · 2026-09-26 22:41:35 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3246 / 1317 |
-| Distinct themes | 174 |
+| Distinct themes | 86 |
 | Duplicate clusters (full DB) | 221 |
 | Fuzzy clusters (snapshot cohort) | 11 |
 | IU astroturf overlap | 2 bots / 2456 authors |
@@ -31,15 +31,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, super pacs (2023 posts · 126 authors · 59 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, election (795 posts · 31 authors · 20 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (17 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3724 posts · 172 authors · 181 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
+- **Near-copy campaign** · paid creators, times reports, sideshift flood, media affordability (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -94,15 +90,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- focus flipping (5 posts)
-- agents posted, posted polling, stations stop, voting yes, ice agents posted (6 posts)
-- illegals count, seats support, breaking president donald (7 posts)
-- texas primaries, cracks state, red foundation, remove cheating, trump attacked (14 posts)
-- attorney central, economic concerns (24 posts)
-- union historically (5 posts)
-- titled ensuring (19 posts)
-- plan impeach, plan impeach remove, remove trump vance, impeach remove, impeach remove trump (5 posts)
-- _…132 more emerging theme(s)._
+- claimed china, bigger majorities (7 posts)
+- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (44 posts)
+- awakening largest, affordable homes, power register (6 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- cair jetpac, known muslim, include abdul, sayed senate (3 posts)
+- _…24 more emerging theme(s)._
 
 ## Scope note
 
