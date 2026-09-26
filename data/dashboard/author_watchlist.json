@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 1936,
+      "run_counter": 1937,
       "authors": {
         "111": {
           "author_id": "111",
@@ -925,32 +925,6 @@
           "polls": 6,
           "inserts_from_polls": 0,
           "status": "pruned"
-        },
-        "1694888597726330880": {
-          "author_id": "1694888597726330880",
-          "handle": "bravoCo104498",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-23T16:13:44.017374+00:00",
-          "last_tweet_at": "2026-06-23T15:23:45+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1699453598961168384": {
-          "author_id": "1699453598961168384",
-          "handle": "TheActaDiurna",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-23T17:22:54.879371+00:00",
-          "last_tweet_at": "2026-06-23T15:22:39+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
         },
         "2060430086629675009": {
           "author_id": "2060430086629675009",
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1772439922521292800": {
-          "author_id": "1772439922521292800",
+        "907109218309869569": {
+          "author_id": "907109218309869569",
+          "handle": "LFTAMERICAFIRST",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.9299999999999999,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 4,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2034843446331285508": {
+          "author_id": "2034843446331285508",
+          "handle": "jonathan_f32966",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1028770525160660993": {
+          "author_id": "1028770525160660993",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
