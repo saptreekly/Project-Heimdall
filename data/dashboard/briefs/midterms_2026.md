@@ -1,41 +1,45 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-27 01:25:54 UTC
+> Tactical snapshot · 2026-09-27 05:17:25 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4410** |
+| Posts in database | **4430** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3246 / 1317 |
-| Distinct themes | 86 |
+| Graph nodes / edges | 3268 / 1323 |
+| Distinct themes | 181 |
 | Duplicate clusters (full DB) | 221 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 2456 authors |
+| IU astroturf overlap | 2 bots / 2476 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **267**
-- Net new: **615** · re-seen: **653**
-- Duplicate rate: **51.5%**
+- Net new: **635** · re-seen: **653**
+- Duplicate rate: **50.7%**
 
 ## Sentiment drift
 
-- Trend: **stable**
+- Trend: **escalating**
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3724 posts · 172 authors · 181 exact · 8 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
-- **Near-copy campaign** · paid creators, times reports, sideshift flood, media affordability (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2029 posts · 124 authors · 57 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (796 posts · 31 authors · 20 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (17 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · magna carta, american thinker, attention washington (16 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · maga points, truth passing, pressure secure (14 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -73,11 +77,11 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **6 posts** · 5 authors · ~100% Jaccard — 🚨BREAKING — HUGE SCOTUS WIN: The Supreme Court 6-3 has GREENLIT the Trump administration's revamped SAVE citizenship verification database for states to PURGE the voter rolls of illegal voters during…
+- **2 posts** · 2 authors · ~100% Jaccard — POLYMARKET PUTS DEMOCRATS’ CHANCES OF SWEEPING 2026 MIDTERMS AT 64% ...
 - **2 posts** · 2 authors · ~100% Jaccard — For the 2026 midterms and the 2028 presidential election, should ICE agents be posted at polling stations to stop illegal immigrants from voting? A. Huge Yes B. No IF Yes, Give me a THUMBS-UP👍!!
 - **2 posts** · 2 authors · ~100% Jaccard — AI ads are popular in the 2026 midterms, but state laws haven’t stopped a lack of disclosure
 - **2 posts** · 2 authors · ~100% Jaccard — BREAKING EXCLUSIVE: If Democrats win the 2026 midterms, they plan to pass a bill called the Alex Pretti Act that will end qualified immunity for ICE agents, allowing them to be sued or jailed for wro…
 - **2 posts** · 2 authors · ~100% Jaccard — Texas RINO's Plot SABOTAGE of Republican Party in 2026 Midterms via
-- **2 posts** · 2 authors · ~100% Jaccard — 🚨 BREAKING: The Trump DOJ is stepping up big time to secure the 2026 midterms! Acting Deputy AG Trent McCotter confirmed aggressive actions and sending 1,000 monitors to protect ballot integrity. No…
 - _…5 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -90,18 +94,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (7 posts)
-- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (44 posts)
-- awakening largest, affordable homes, power register (6 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- cair jetpac, known muslim, include abdul, sayed senate (3 posts)
-- _…24 more emerging theme(s)._
+- focus flipping (5 posts)
+- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
+- check groypers (11 posts)
+- illegals count, seats support, breaking president donald (7 posts)
+- texas primaries, cracks state, red foundation, remove cheating, trump attacked (14 posts)
+- economic concerns (6 posts)
+- union historically (5 posts)
+- mail ballot, executive order, order ahead, mailing ballots, order ahead midterms (13 posts)
+- _…139 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4410 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4430 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
