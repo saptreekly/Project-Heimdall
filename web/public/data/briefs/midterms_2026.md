@@ -1,29 +1,34 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-27 08:24:42 UTC
+> Tactical snapshot · 2026-09-27 09:24:14 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4430** |
+| Posts in database | **4431** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3268 / 1323 |
+| Graph nodes / edges | 3269 / 1324 |
 | Distinct themes | 88 |
 | Duplicate clusters (full DB) | 221 |
 | Fuzzy clusters (snapshot cohort) | 11 |
-| IU astroturf overlap | 2 bots / 2476 authors |
+| IU astroturf overlap | 2 bots / 2477 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **12**
+- Net-new posts logged: **1**
 
 ## Ingest yield (last 14 days)
 
 - Runs: **267**
-- Net new: **628** · re-seen: **684**
-- Duplicate rate: **52.1%**
+- Net new: **623** · re-seen: **696**
+- Duplicate rate: **52.8%**
 
 ## Sentiment drift
 
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, open border (3737 posts · 172 authors · 181 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, open border (3738 posts · 172 authors · 181 exact · 8 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · acting deputy, trent mccotter, confirmed aggressive, actions sending (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 - **Near-copy campaign** · ending nuclear, threat iran, efforts weaponize (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
@@ -101,7 +106,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4430 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4431 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
