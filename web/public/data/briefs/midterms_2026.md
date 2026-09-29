@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-29 21:37:14 UTC
+> Tactical snapshot · 2026-09-29 22:28:04 UTC
 
 ## Corpus
 
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3287 / 1342 |
-| Distinct themes | 89 |
+| Distinct themes | 85 |
 | Duplicate clusters (full DB) | 221 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 2477 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **265**
-- Net new: **629** · re-seen: **697**
-- Duplicate rate: **52.6%**
+- Runs: **264**
+- Net new: **619** · re-seen: **696**
+- Duplicate rate: **52.9%**
 
 ## Sentiment drift
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, open border (3760 posts · 158 authors · 179 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3780 posts · 160 authors · 183 exact · 9 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · paid creators, times reports, sideshift flood, media affordability (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
 
@@ -90,13 +90,12 @@ _None spanning multiple narratives._
 
 - claimed china (7 posts)
 - orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (44 posts)
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - cair jetpac, known muslim, include abdul (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- _…25 more emerging theme(s)._
+- _…24 more emerging theme(s)._
 
 ## Scope note
 
