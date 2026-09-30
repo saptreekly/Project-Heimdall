@@ -1,19 +1,19 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-30 09:40:19 UTC
+> Tactical snapshot · 2026-09-30 15:03:51 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4493** |
+| Posts in database | **4496** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3289 / 1349 |
+| Graph nodes / edges | 3292 / 1352 |
 | Distinct themes | 87 |
 | Duplicate clusters (full DB) | 222 |
 | Fuzzy clusters (snapshot cohort) | 8 |
@@ -21,9 +21,9 @@
 
 ## Ingest yield (last 14 days)
 
-- Runs: **265**
-- Net new: **641** · re-seen: **696**
-- Duplicate rate: **52.1%**
+- Runs: **263**
+- Net new: **643** · re-seen: **696**
+- Duplicate rate: **52.0%**
 
 ## Sentiment drift
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3783 posts · 141 authors · 181 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3784 posts · 140 authors · 181 exact · 8 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -90,7 +90,7 @@ _None spanning multiple narratives._
 - claimed china (7 posts)
 - orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (44 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (47 posts)
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - cair jetpac, known muslim, include abdul (3 posts)
@@ -99,7 +99,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4493 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4496 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
