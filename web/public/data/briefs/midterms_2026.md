@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-30 02:13:46 UTC
+> Tactical snapshot · 2026-09-30 05:19:35 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3287 / 1342 |
-| Distinct themes | 86 |
+| Distinct themes | 87 |
 | Duplicate clusters (full DB) | 221 |
 | Fuzzy clusters (snapshot cohort) | 10 |
 | IU astroturf overlap | 2 bots / 2477 authors |
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, open border (3765 posts · 159 authors · 180 exact · 9 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, open border (3760 posts · 159 authors · 179 exact · 9 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · paid creators, times reports, sideshift flood, media affordability (2 posts · 2 authors · 0 exact · 1 fuzzy subclusters)
 
