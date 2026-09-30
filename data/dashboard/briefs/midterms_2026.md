@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-30 16:35:13 UTC
+> Tactical snapshot · 2026-09-30 16:59:24 UTC
 
 ## Corpus
 
@@ -31,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2040 posts · 95 authors · 55 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · sanctuary cities, reuters reported (2083 posts · 97 authors · 59 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · court, supreme, trump, election (805 posts · 30 authors · 20 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, plot sabotage, source center (21 posts · 2 authors · 4 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · maga points, truth passing, pressure secure (14 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (17 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · enthusiastic vote, maga points, truth passing, pressure secure (14 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -96,13 +96,13 @@ _None spanning multiple narratives._
 
 - focus flipping (5 posts)
 - seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (9 posts)
-- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
-- illegals count, breaking president donald (7 posts)
-- crimes urgently (14 posts)
+- illegal immigrants voting (7 posts)
+- illegals count, seats support (7 posts)
 - union historically (6 posts)
-- texas primaries, red foundation, remove cheating, judge ordered (15 posts)
+- urgently warranted, mullin considering, dhs sec markwayne (4 posts)
+- texas primaries, red foundation, remove cheating, lse united (14 posts)
 - attorney central, economic concerns (25 posts)
-- _…131 more emerging theme(s)._
+- _…137 more emerging theme(s)._
 
 ## Scope note
 
