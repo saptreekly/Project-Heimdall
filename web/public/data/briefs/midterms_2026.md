@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-09-30 22:27:14 UTC
+> Tactical snapshot · 2026-09-30 23:12:20 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4496** |
+| Posts in database | **4500** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -19,11 +19,16 @@
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2477 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **4**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **264**
-- Net new: **642** · re-seen: **696**
-- Duplicate rate: **52.0%**
+- Net new: **646** · re-seen: **697**
+- Duplicate rate: **51.9%**
 
 ## Sentiment drift
 
@@ -31,7 +36,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3784 posts · 140 authors · 181 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3785 posts · 137 authors · 181 exact · 8 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -95,11 +100,11 @@ _None spanning multiple narratives._
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - cair jetpac, known muslim, include abdul (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- _…24 more emerging theme(s)._
+- _…25 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4496 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4500 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
