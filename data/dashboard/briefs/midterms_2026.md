@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-01 17:36:53 UTC
+> Tactical snapshot · 2026-10-01 20:59:54 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3292 / 1352 |
-| Distinct themes | 85 |
+| Distinct themes | 87 |
 | Duplicate clusters (full DB) | 223 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2477 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **262**
+- Runs: **260**
 - Net new: **654** · re-seen: **697**
 - Duplicate rate: **51.6%**
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, white house, deliver mail ballots, sanctuary cities, postmaster general (3800 posts · 137 authors · 182 exact · 8 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3797 posts · 138 authors · 182 exact · 8 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -87,7 +87,6 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china (7 posts)
 - orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
 - accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (47 posts)
@@ -95,7 +94,8 @@ _None spanning multiple narratives._
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - cair jetpac, known muslim, include abdul (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- _…24 more emerging theme(s)._
+- inbreeds cuz, 10000's fascist (7 posts)
+- _…25 more emerging theme(s)._
 
 ## Scope note
 
