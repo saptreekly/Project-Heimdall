@@ -1,57 +1,62 @@
 {
-  "generated_at": "2026-09-27T10:26:08.820589+00:00",
+  "generated_at": "2026-10-04T10:57:29.450178+00:00",
   "window_days": 7,
   "dead_keywords": [
-    "2026 speech republican",
-    "2026 party win house"
+    "2026 midterms",
+    "2026 midterm fraud",
+    "2026 red wave",
+    "2026 supreme court",
+    "2026 election integrity",
+    "2026 gerrymandering",
+    "2026 deliver mail ballots"
   ],
   "suggestions": [
     {
-      "query": "2026 deliver mail ballots",
-      "source": "theme cluster (red wave \u00b7 win house \u00b7 deliver mail ballots \u00b7 sanctuary cities, 3738 posts)",
-      "score": 3738.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 open border",
-      "source": "theme cluster (red wave \u00b7 win house \u00b7 deliver mail ballots \u00b7 sanctuary cities, 3738 posts)",
-      "score": 3738.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 sanctuary cities midterms",
+      "query": "2026 executive order midterms",
       "source": "corpus c-TF-IDF",
-      "score": 134.554,
+      "score": 135.064,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
     },
     {
+      "query": "2026 immigrants vote",
+      "source": "theme cluster (sanctuary cities \u00b7 open borders teen \u00b7 dem's sticking \u00b7 immigrants vote, 19 posts)",
+      "score": 19.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 voters pushing",
+      "source": "theme cluster (voters pushing \u00b7 hard silicon \u00b7 backing candidates \u00b7 crypto's cycle, 19 posts)",
+      "score": 19.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 democrats ninepercent",
+      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 source center \u00b7 bastards anyways, 17 posts)",
+      "score": 17.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 republicans reveal",
+      "source": "theme cluster (marxist wing \u00b7 preparing shut government \u00b7 republicans reveal, 17 posts)",
+      "score": 17.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 turnout lfg",
+      "source": "theme cluster (turnout lfg, 11 posts)",
+      "score": 11.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 democrat donor",
+      "source": "theme cluster (confirmed george \u00b7 soros largest \u00b7 democrat donor \u00b7 musk warned, 9 posts)",
+      "score": 9.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
       "query": "2026 bare ballot harvesting",
-      "source": "theme cluster (election pratt \u00b7 bare ballot harvesting \u00b7 california communists \u00b7 poised steal, 10 posts)",
-      "score": 10.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 vote dilution",
-      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 elections executive order \u00b7 vote dilution, 4 posts)",
-      "score": 4.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 ineligible voting",
-      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 elections executive order \u00b7 vote dilution, 4 posts)",
-      "score": 4.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 republicans plan",
-      "source": "theme cluster (entitlement programs \u00b7 adjusted fixed \u00b7 medicare medicaid \u00b7 republicans plan, 3 posts)",
-      "score": 3.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 sayed senate",
-      "source": "theme cluster (cair jetpac \u00b7 known muslim \u00b7 include abdul \u00b7 sayed senate, 3 posts)",
-      "score": 3.0,
+      "source": "theme cluster (bare ballot harvesting \u00b7 california communists \u00b7 poised steal \u00b7 hilton aren, 9 posts)",
+      "score": 9.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
   ]

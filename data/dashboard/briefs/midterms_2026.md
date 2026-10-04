@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-04 09:43:56 UTC
+> Tactical snapshot · 2026-10-04 10:58:29 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3292 / 1352 |
-| Distinct themes | 177 |
+| Distinct themes | 178 |
 | Duplicate clusters (full DB) | 223 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2477 authors |
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2085 posts · 93 authors · 60 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2080 posts · 93 authors · 60 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · court, supreme, trump, election (805 posts · 30 authors · 20 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (17 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -99,10 +99,10 @@ _None spanning multiple narratives._
 - illegals count, seats support (7 posts)
 - union historically (6 posts)
 - urgently warranted, mullin considering, dhs sec markwayne (4 posts)
-- texas primaries, red foundation, remove cheating, lse united (15 posts)
+- texas primaries, red foundation, remove cheating, judge ordered (16 posts)
 - attorney central, economic concerns (25 posts)
-- federal judge (12 posts)
-- _…137 more emerging theme(s)._
+- mail ballot, executive order, order ahead, mailing ballots, order ahead midterms (12 posts)
+- _…139 more emerging theme(s)._
 
 ## Scope note
 
