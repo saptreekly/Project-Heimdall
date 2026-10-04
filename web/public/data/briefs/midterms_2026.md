@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-04 20:01:47 UTC
+> Tactical snapshot · 2026-10-04 20:26:30 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3292 / 1352 |
-| Distinct themes | 205 |
+| Distinct themes | 201 |
 | Duplicate clusters (full DB) | 223 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2477 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **252**
+- Runs: **253**
 - Net new: **640** · re-seen: **697**
 - Duplicate rate: **52.1%**
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2468 posts · 108 authors · 54 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, postal service (2488 posts · 107 authors · 55 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · congressional map (38 posts · 3 authors · 3 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
@@ -102,7 +102,7 @@ _None spanning multiple narratives._
 - agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
 - check groypers (5 posts)
 - illegals count, seats support (7 posts)
-- _…141 more emerging theme(s)._
+- _…138 more emerging theme(s)._
 
 ## Scope note
 
