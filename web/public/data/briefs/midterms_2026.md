@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-05 00:18:22 UTC
+> Tactical snapshot · 2026-10-05 01:13:22 UTC
 
 ## Corpus
 
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3292 / 1352 |
-| Distinct themes | 205 |
+| Distinct themes | 177 |
 | Duplicate clusters (full DB) | 223 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2477 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **253**
-- Net new: **595** · re-seen: **697**
-- Duplicate rate: **53.9%**
+- Runs: **254**
+- Net new: **582** · re-seen: **694**
+- Duplicate rate: **54.4%**
 
 ## Sentiment drift
 
@@ -31,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2468 posts · 108 authors · 54 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · congressional map (38 posts · 3 authors · 3 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2085 posts · 93 authors · 60 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (805 posts · 30 authors · 20 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, texas rino's, plot sabotage, source center (22 posts · 2 authors · 4 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bastards anyways, hahahahahahahahaha elect (17 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · maga points, truth passing, pressure secure (14 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (12 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · officials prosecuted, dhillon warpath (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -94,15 +94,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, harris president (91 posts)
 - focus flipping (5 posts)
-- claimed china (7 posts)
-- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
 - agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
-- check groypers (5 posts)
 - illegals count, seats support (7 posts)
-- _…141 more emerging theme(s)._
+- union historically (6 posts)
+- urgently warranted, mullin considering, dhs sec markwayne (4 posts)
+- texas primaries, red foundation, remove cheating, lse united (15 posts)
+- attorney central, economic concerns (25 posts)
+- federal judge (12 posts)
+- _…137 more emerging theme(s)._
 
 ## Scope note
 
