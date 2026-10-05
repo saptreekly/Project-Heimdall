@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-05 17:07:52 UTC
+> Tactical snapshot · 2026-10-05 17:38:25 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3292 / 1352 |
-| Distinct themes | 205 |
+| Distinct themes | 206 |
 | Duplicate clusters (full DB) | 223 |
 | Fuzzy clusters (snapshot cohort) | 8 |
 | IU astroturf overlap | 2 bots / 2477 authors |
@@ -31,9 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2477 posts · 105 authors · 56 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, postal service (2472 posts · 104 authors · 54 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · congressional map (35 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · congressional map (38 posts · 3 authors · 3 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, texas rino's, plot sabotage, source center (22 posts · 2 authors · 4 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
@@ -94,7 +94,7 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- doe completely, denied asylum, claim routes (21 posts)
+- doe completely, denied asylum (22 posts)
 - red wave, midwest democrat, resigns electoral, disaster looms, harris president (91 posts)
 - focus flipping (5 posts)
 - claimed china (7 posts)
@@ -102,7 +102,7 @@ _None spanning multiple narratives._
 - judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
 - agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
 - check groypers (5 posts)
-- _…140 more emerging theme(s)._
+- _…141 more emerging theme(s)._
 
 ## Scope note
 
