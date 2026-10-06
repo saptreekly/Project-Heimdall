@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-06 02:26:07 UTC
+> Tactical snapshot · 2026-10-06 03:24:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4520** |
+| Posts in database | **4540** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3292 / 1352 |
-| Distinct themes | 170 |
+| Graph nodes / edges | 3311 / 1372 |
+| Distinct themes | 208 |
 | Duplicate clusters (full DB) | 223 |
-| Fuzzy clusters (snapshot cohort) | 8 |
+| Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2477 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **247**
-- Net new: **468** · re-seen: **666**
-- Duplicate rate: **58.7%**
+- Runs: **249**
+- Net new: **488** · re-seen: **666**
+- Duplicate rate: **57.7%**
 
 ## Sentiment drift
 
@@ -31,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · forced labor, omo agege, civil discourse, board trustees (76 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control (66 posts · 2 authors · 17 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · excuses games yes, fraud cold, excuses games, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, midterms source (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · national committee (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, republicans win maga, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · head special (12 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2487 posts · 92 authors · 56 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · congressional map (36 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, texas rino's, plot sabotage, source center (22 posts · 1 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -80,9 +80,8 @@ _None (need ≥5 authors in 90s window)._
 - **2 posts** · 2 authors · ~100% Jaccard — POLYMARKET PUTS DEMOCRATS’ CHANCES OF SWEEPING 2026 MIDTERMS AT 64% ...
 - **2 posts** · 2 authors · ~100% Jaccard — For the 2026 midterms and the 2028 presidential election, should ICE agents be posted at polling stations to stop illegal immigrants from voting? A. Huge Yes B. No IF Yes, Give me a THUMBS-UP👍!!
 - **2 posts** · 2 authors · ~100% Jaccard — AI ads are popular in the 2026 midterms, but state laws haven’t stopped a lack of disclosure
-- **2 posts** · 2 authors · ~100% Jaccard — BREAKING EXCLUSIVE: If Democrats win the 2026 midterms, they plan to pass a bill called the Alex Pretti Act that will end qualified immunity for ICE agents, allowing them to be sued or jailed for wro…
-- **2 posts** · 2 authors · ~100% Jaccard — Texas RINO's Plot SABOTAGE of Republican Party in 2026 Midterms via
-- _…2 more fuzzy cluster(s) in snapshot cohort._
+- **2 posts** · 2 authors · ~98% Jaccard — 🚨 NOW: SecWar Pete Hegseth is launching a MAJOR effort to get hundreds of thousands of US troops to VOTE in the 2026 midterms YES! These patriots love America and likely lean RED 🇺🇸 "I'm urging all o…
+- _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -94,19 +93,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (89 posts)
+- doe completely, denied asylum (22 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, harris president (91 posts)
 - focus flipping (5 posts)
-- claimed china (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (14 posts)
-- forced labor, omo agege, civil discourse, board trustees (76 posts)
-- vice president, president vance, vice president vance, wait midterms, usha vance (5 posts)
-- agents posted, posted polling, stations stop, stop illegal, immigrants voting (7 posts)
+- claimed china (7 posts)
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
+- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
 - check groypers (6 posts)
-- _…153 more emerging theme(s)._
+- _…144 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4520 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4540 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
