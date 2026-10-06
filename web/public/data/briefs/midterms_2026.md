@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-06 12:14:49 UTC
+> Tactical snapshot · 2026-10-06 16:53:31 UTC
 
 ## Corpus
 
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3311 / 1372 |
-| Distinct themes | 87 |
+| Distinct themes | 62 |
 | Duplicate clusters (full DB) | 223 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2477 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **248**
-- Net new: **485** · re-seen: **575**
-- Duplicate rate: **54.2%**
+- Runs: **245**
+- Net new: **466** · re-seen: **575**
+- Duplicate rate: **55.2%**
 
 ## Sentiment drift
 
@@ -31,7 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, white house, deliver mail ballots, sanctuary cities, postmaster general (3829 posts · 112 authors · 182 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballots, win house, president donald, george soros (3207 posts · 100 authors · 168 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (806 posts · 26 authors · 20 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -86,15 +87,14 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china (7 posts)
-- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- newsom signs, gavin promised (4 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (47 posts)
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- cair jetpac, known muslim, include abdul (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- _…26 more emerging theme(s)._
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
+- _…17 more emerging theme(s)._
 
 ## Scope note
 
