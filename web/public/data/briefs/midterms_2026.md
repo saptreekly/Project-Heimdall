@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-06 23:15:39 UTC
+> Tactical snapshot · 2026-10-06 23:58:54 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3311 / 1372 |
-| Distinct themes | 198 |
+| Distinct themes | 206 |
 | Duplicate clusters (full DB) | 223 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2477 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **245**
+- Runs: **246**
 - Net new: **464** · re-seen: **497**
 - Duplicate rate: **51.7%**
 
@@ -31,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2294 posts · 82 authors · 56 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (76 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2535 posts · 90 authors · 63 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · california hit, similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dems defeat, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · american thinker, bleak existence, steal mid (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -93,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- hot returns, doe completely (24 posts)
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (88 posts)
+- doe completely, denied asylum, claim routes (21 posts)
+- biden holds, maine unless (8 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, harris president (83 posts)
 - focus flipping (5 posts)
 - claimed china, bigger majorities (5 posts)
 - sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
-- judgment supreme, omo agege, civil discourse, forced labor, board trustees (76 posts)
-- presidential nomination (5 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
 - agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
-- _…144 more emerging theme(s)._
+- _…152 more emerging theme(s)._
 
 ## Scope note
 
