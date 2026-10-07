@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-07 22:33:23 UTC
+> Tactical snapshot · 2026-10-07 23:14:20 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3315 / 1381 |
-| Distinct themes | 86 |
+| Distinct themes | 205 |
 | Duplicate clusters (full DB) | 223 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2478 authors |
@@ -31,8 +31,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, sanctuary cities, postmaster general (3852 posts · 94 authors · 182 exact · 6 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2278 posts · 67 authors · 55 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (73 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dems defeat, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -86,15 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china (7 posts)
-- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (47 posts)
-- awakening largest, affordable homes, power register (6 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- cair jetpac, known muslim, include abdul (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- _…26 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (84 posts)
+- focus flipping (5 posts)
+- claimed china, bigger majorities (5 posts)
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, voter trust (14 posts)
+- making economy (3 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (73 posts)
+- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
+- check groypers (7 posts)
+- _…151 more emerging theme(s)._
 
 ## Scope note
 
