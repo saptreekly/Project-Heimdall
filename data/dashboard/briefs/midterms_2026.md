@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-07 01:25:48 UTC
+> Tactical snapshot · 2026-10-07 02:22:39 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3311 / 1372 |
-| Distinct themes | 62 |
+| Distinct themes | 206 |
 | Duplicate clusters (full DB) | 223 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2477 authors |
@@ -22,8 +22,8 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **247**
-- Net new: **448** · re-seen: **497**
-- Duplicate rate: **52.6%**
+- Net new: **432** · re-seen: **497**
+- Duplicate rate: **53.5%**
 
 ## Sentiment drift
 
@@ -31,9 +31,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballots, win house, president donald, george soros (3207 posts · 100 authors · 168 exact · 7 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, election (806 posts · 26 authors · 20 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2535 posts · 90 authors · 63 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · california hit, similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · american thinker, bleak existence, steal mid (11 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -87,14 +93,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- newsom signs, gavin promised (4 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (47 posts)
-- awakening largest, affordable homes, power register (6 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- inbreeds cuz, 10000's fascist, loves winners (8 posts)
-- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- _…17 more emerging theme(s)._
+- doe completely, denied asylum, claim routes (21 posts)
+- biden holds, maine unless (8 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, harris president (83 posts)
+- focus flipping (5 posts)
+- claimed china, bigger majorities (5 posts)
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
+- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
+- _…152 more emerging theme(s)._
 
 ## Scope note
 
