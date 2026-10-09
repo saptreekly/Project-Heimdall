@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-09 15:43:04 UTC
+> Tactical snapshot · 2026-10-09 17:12:40 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4580** |
+| Posts in database | **4587** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,21 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3318 / 1383 |
-| Distinct themes | 202 |
-| Duplicate clusters (full DB) | 223 |
-| Fuzzy clusters (snapshot cohort) | 6 |
+| Distinct themes | 211 |
+| Duplicate clusters (full DB) | 224 |
+| Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2480 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **1**
-- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **233**
-- Net new: **333** · re-seen: **260**
-- Duplicate rate: **43.8%**
+- Runs: **234**
+- Net new: **322** · re-seen: **261**
+- Duplicate rate: **44.8%**
 
 ## Sentiment drift
 
@@ -36,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2305 posts · 63 authors · 55 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (73 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, postal service (2525 posts · 69 authors · 57 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · congressional map (36 posts · 3 authors · 2 exact · 1 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, plot sabotage, source center (22 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dollars help, rich patriot, contributes humanity (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dems defeat, making mail, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -73,7 +68,7 @@
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
-- _…213 more exact-duplicate cluster(s) in database._
+- _…214 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -81,12 +76,11 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **6 posts** · 5 authors · ~100% Jaccard — 🚨BREAKING — HUGE SCOTUS WIN: The Supreme Court 6-3 has GREENLIT the Trump administration's revamped SAVE citizenship verification database for states to PURGE the voter rolls of illegal voters during…
 - **2 posts** · 2 authors · ~100% Jaccard — POLYMARKET PUTS DEMOCRATS’ CHANCES OF SWEEPING 2026 MIDTERMS AT 64% ...
 - **2 posts** · 2 authors · ~100% Jaccard — For the 2026 midterms and the 2028 presidential election, should ICE agents be posted at polling stations to stop illegal immigrants from voting? A. Huge Yes B. No IF Yes, Give me a THUMBS-UP👍!!
 - **2 posts** · 2 authors · ~100% Jaccard — AI ads are popular in the 2026 midterms, but state laws haven’t stopped a lack of disclosure
 - **2 posts** · 2 authors · ~92% Jaccard — 🚨 BREAKING: MISSOURI REDISTRICTING IS DEAD, Supreme Court strikes down 7R-1D map being used in the 2026 midterms This REVERTS Missouri's map to 6R-2D DESPITE primaries already happening under the new…
-- _…1 more fuzzy cluster(s) in snapshot cohort._
+- **2 posts** · 2 authors · ~88% Jaccard — 🚨 HOLY CRAP. The IRGC just endorsed the Democrat Party for the 2026 midterms to punish President Trump Iran tells voters that Trump concealed Iran's "peaceful nature" of their nuclear program and urg…
 
 ## Cross-narrative actors (this narrative)
 
@@ -98,19 +92,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (84 posts)
+- ceuta melilla, doe completely, denied asylum (22 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, harris president (90 posts)
 - focus flipping (5 posts)
-- sweeping constitutional, petition nilepostnews, congressman hamadeh, voter trust (14 posts)
-- terrified trump, ready red wave, democrats concubines, concubines media, media terrified (3 posts)
-- judgment supreme, omo agege, civil discourse, forced labor, board trustees (73 posts)
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
 - agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
-- check groypers (7 posts)
+- check groypers (6 posts)
 - illegals count, seats support (7 posts)
-- _…148 more emerging theme(s)._
+- _…145 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4580 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4587 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
