@@ -1,6 +1,6 @@
 # Sentiment watchlist
 
-_Updated from snapshot generated at 2026-10-09T17:12:40.055446+00:00_
+_Updated from snapshot generated at 2026-10-10T16:23:56.814925+00:00_
 
 ## Current narrative status
 
@@ -10,4 +10,4 @@ _Updated from snapshot generated at 2026-10-09T17:12:40.055446+00:00_
 
 ## Recent alerts
 
-- **midterms_2026** — volume_outrage_divergence: 2026-09-25: 35 posts, mean outrage 0.098
+_No new sentiment alerts this run._
