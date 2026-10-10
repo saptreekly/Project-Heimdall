@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-10 20:50:06 UTC
+> Tactical snapshot · 2026-10-10 21:13:15 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4595** |
+| Posts in database | **4596** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -21,9 +21,9 @@
 
 ## Ingest yield (last 14 days)
 
-- Runs: **225**
-- Net new: **245** · re-seen: **103**
-- Duplicate rate: **29.6%**
+- Runs: **224**
+- Net new: **246** · re-seen: **103**
+- Duplicate rate: **29.5%**
 
 ## Sentiment drift
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, integrity executive order, postmaster general, eliminate filibuster (3863 posts · 84 authors · 183 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, open border (3868 posts · 83 authors · 183 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -90,14 +90,14 @@ _None spanning multiple narratives._
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (51 posts)
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, isn amusing (3 posts)
+- unfortunate reality, inadvertently joined, politicize issues, isn amusing, problems mtg (3 posts)
 - judges cut (4 posts)
 - cair jetpac, known muslim, include abdul (3 posts)
-- _…27 more emerging theme(s)._
+- _…28 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4595 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4596 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
