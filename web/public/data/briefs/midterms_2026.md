@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-11 16:10:14 UTC
+> Tactical snapshot · 2026-10-11 16:27:03 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3318 / 1384 |
-| Distinct themes | 167 |
+| Distinct themes | 91 |
 | Duplicate clusters (full DB) | 224 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 2 bots / 2481 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **224**
+- Runs: **225**
 - Net new: **217** · re-seen: **9**
 - Duplicate rate: **4.0%**
 
@@ -31,15 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · forced labor, omo agege, civil discourse, board trustees (73 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control (56 posts · 0 authors · 16 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · nuclear weapon, ending nuclear, nuclear threat, threat iran, ending nuclear threat (48 posts · 2 authors · 11 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · excuses games yes, fraud cold, excuses games, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · national committee (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, eliminate filibuster (3868 posts · 83 authors · 183 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · ecstatic (5 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -91,15 +85,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (84 posts)
-- focus flipping (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (14 posts)
-- forced labor, omo agege, civil discourse, board trustees (73 posts)
-- vice president, president vance, vice president vance, wait midterms, usha vance (5 posts)
-- agents posted, posted polling, stations stop, stop illegal, immigrants voting (7 posts)
-- check groypers (7 posts)
-- illegals count, seats support (7 posts)
-- _…152 more emerging theme(s)._
+- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (51 posts)
+- awakening largest, affordable homes, power register (6 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- judges cut, chase block (4 posts)
+- cair jetpac, include abdul, hamawy house (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
+- _…26 more emerging theme(s)._
 
 ## Scope note
 
