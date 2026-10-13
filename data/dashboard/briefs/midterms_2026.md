@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-13 01:58:43 UTC
+> Tactical snapshot · 2026-10-13 02:16:45 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3318 / 1384 |
-| Distinct themes | 96 |
+| Distinct themes | 93 |
 | Duplicate clusters (full DB) | 224 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 2 bots / 2481 authors |
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3886 posts · 82 authors · 183 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3885 posts · 81 authors · 182 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic (5 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
@@ -91,8 +91,8 @@ _None spanning multiple narratives._
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - unfortunate reality, inadvertently joined, politicize issues, problems mtg (3 posts)
-- judges cut, chase block (4 posts)
-- cair jetpac, include abdul (3 posts)
+- judges cut (4 posts)
+- cair jetpac, known muslim, include abdul (3 posts)
 - _…26 more emerging theme(s)._
 
 ## Scope note
