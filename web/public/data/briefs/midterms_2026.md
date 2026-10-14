@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-14 06:40:15 UTC
+> Tactical snapshot · 2026-10-14 08:12:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4610** |
+| Posts in database | **4630** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3318 / 1384 |
-| Distinct themes | 167 |
+| Graph nodes / edges | 3336 / 1403 |
+| Distinct themes | 213 |
 | Duplicate clusters (full DB) | 224 |
-| Fuzzy clusters (snapshot cohort) | 4 |
+| Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2481 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **222**
-- Net new: **167** · re-seen: **7**
-- Duplicate rate: **4.0%**
+- Net new: **187** · re-seen: **7**
+- Duplicate rate: **3.6%**
 
 ## Sentiment drift
 
@@ -31,22 +31,22 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · forced labor, omo agege, civil discourse, board trustees (73 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · election fraud, task force, voter fraud, lose control, years old (56 posts · 0 authors · 16 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · nuclear weapon, ending nuclear, nuclear threat, threat iran, ending nuclear threat (48 posts · 2 authors · 11 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · excuses games yes, fraud cold, excuses games, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, center square, months midterm elections (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · magna carta, american thinker, pay attention (15 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · national committee (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · points enthusiastic, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2546 posts · 59 authors · 55 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (75 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, plot sabotage, source center (22 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · help maga republicans, musk reportedly surged, rich patriot, contributes humanity, soros flooded (14 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
-- dense_cluster_74_size_3
-- dense_cluster_90_size_3
-- dense_cluster_554_size_3
-- dense_cluster_1409_size_3
+- dense_cluster_73_size_3
+- dense_cluster_89_size_3
+- dense_cluster_553_size_3
+- dense_cluster_1408_size_3
 - cross_author_fuzzy_31authors_33posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -78,7 +78,6 @@ _None (need ≥5 authors in 90s window)._
 
 - **2 posts** · 2 authors · ~100% Jaccard — POLYMARKET PUTS DEMOCRATS’ CHANCES OF SWEEPING 2026 MIDTERMS AT 64% ...
 - **2 posts** · 2 authors · ~100% Jaccard — For the 2026 midterms and the 2028 presidential election, should ICE agents be posted at polling stations to stop illegal immigrants from voting? A. Huge Yes B. No IF Yes, Give me a THUMBS-UP👍!!
-- **2 posts** · 2 authors · ~100% Jaccard — AI ads are popular in the 2026 midterms, but state laws haven’t stopped a lack of disclosure
 - **2 posts** · 2 authors · ~88% Jaccard — 🚨 HOLY CRAP. The IRGC just endorsed the Democrat Party for the 2026 midterms to punish President Trump Iran tells voters that Trump concealed Iran's "peaceful nature" of their nuclear program and urg…
 
 ## Cross-narrative actors (this narrative)
@@ -91,19 +90,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (84 posts)
+- ceuta melilla, hot returns, doe completely (30 posts)
+- red wave, midwest democrat, resigns electoral, disaster looms, harris president (89 posts)
 - focus flipping (5 posts)
-- mpuuga challenge, sweeping constitutional, petition nilepostnews, congressman hamadeh (14 posts)
-- forced labor, omo agege, civil discourse, board trustees (73 posts)
-- vice president, president vance, vice president vance, wait midterms, usha vance (5 posts)
-- agents posted, posted polling, stations stop, stop illegal, immigrants voting (7 posts)
-- check groypers (6 posts)
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, champion award (14 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (75 posts)
+- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
+- check groypers (5 posts)
 - illegals count, seats support (7 posts)
-- _…151 more emerging theme(s)._
+- _…147 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4610 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4630 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
