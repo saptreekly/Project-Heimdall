@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-14 00:25:53 UTC
+> Tactical snapshot · 2026-10-14 00:43:38 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3318 / 1384 |
-| Distinct themes | 90 |
+| Distinct themes | 200 |
 | Duplicate clusters (full DB) | 224 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 2 bots / 2481 authors |
@@ -31,9 +31,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, pass save america, deliver mail ballots, sanctuary cities (3889 posts · 81 authors · 183 exact · 4 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · ecstatic (5 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2316 posts · 62 authors · 56 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (73 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, chances maintaining (19 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dems defeat, making mail, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -85,15 +91,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- orders fbi, probe case, stems october, city clerk, ann meisch (4 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (51 posts)
-- awakening largest, affordable homes, power register (6 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- unfortunate reality, inadvertently joined, politicize issues, problems mtg (3 posts)
-- judges cut, chase block (4 posts)
-- cair jetpac, include abdul (3 posts)
-- _…25 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (84 posts)
+- focus flipping (5 posts)
+- sweeping constitutional, petition nilepostnews, congressman hamadeh, voter trust (14 posts)
+- terrified trump, ready red wave, democrats concubines, concubines media, media terrified (3 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (73 posts)
+- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (5 posts)
+- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
+- democrats lose midterms, lose midterms, democrats lose, trump implement, check groypers (6 posts)
+- _…149 more emerging theme(s)._
 
 ## Scope note
 
