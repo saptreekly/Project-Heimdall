@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-14 20:09:15 UTC
+> Tactical snapshot · 2026-10-14 20:39:55 UTC
 
 ## Corpus
 
@@ -21,7 +21,7 @@
 
 ## Ingest yield (last 14 days)
 
-- Runs: **222**
+- Runs: **221**
 - Net new: **163** · re-seen: **7**
 - Duplicate rate: **4.1%**
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported (2340 posts · 52 authors · 58 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported (2333 posts · 52 authors · 57 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (75 posts · 2 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
@@ -98,7 +98,7 @@ _None spanning multiple narratives._
 - agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
 - check groypers (6 posts)
 - illegals count, seats support (7 posts)
-- _…147 more emerging theme(s)._
+- _…148 more emerging theme(s)._
 
 ## Scope note
 
