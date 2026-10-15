@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-15 15:32:38 UTC
+> Tactical snapshot · 2026-10-15 16:02:58 UTC
 
 ## Corpus
 
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3336 / 1403 |
-| Distinct themes | 89 |
+| Distinct themes | 92 |
 | Duplicate clusters (full DB) | 224 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2481 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **226**
-- Net new: **155** · re-seen: **6**
-- Duplicate rate: **3.7%**
+- Runs: **225**
+- Net new: **150** · re-seen: **6**
+- Duplicate rate: **3.8%**
 
 ## Sentiment drift
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, open border (3909 posts · 71 authors · 184 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, open border (3902 posts · 70 authors · 184 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic (5 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
@@ -92,7 +92,7 @@ _None spanning multiple narratives._
 - unfortunate reality, inadvertently joined, politicize issues, problems mtg (3 posts)
 - cair jetpac, known muslim, include abdul, hamawy house (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- _…24 more emerging theme(s)._
+- _…25 more emerging theme(s)._
 
 ## Scope note
 
