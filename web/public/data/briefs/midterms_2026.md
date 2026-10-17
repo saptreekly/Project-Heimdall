@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-17 01:05:26 UTC
+> Tactical snapshot · 2026-10-17 01:19:33 UTC
 
 ## Corpus
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, open border (3914 posts · 55 authors · 185 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, eliminate filibuster (3920 posts · 55 authors · 185 exact · 2 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic (5 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
@@ -89,9 +89,9 @@ _None spanning multiple narratives._
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - unfortunate reality, inadvertently joined, politicize issues, problems mtg (3 posts)
-- judges cut, chase block (4 posts)
 - cair jetpac, known muslim, include abdul, sayed senate, hamawy house (3 posts)
-- _…27 more emerging theme(s)._
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
+- _…25 more emerging theme(s)._
 
 ## Scope note
 
