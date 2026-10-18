@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 2246,
+      "run_counter": 2247,
       "authors": {
         "111": {
           "author_id": "111",
@@ -926,19 +926,6 @@
           "inserts_from_polls": 0,
           "status": "pruned"
         },
-        "2060430086629675009": {
-          "author_id": "2060430086629675009",
-          "handle": "Forecaster_co",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-23T18:32:52.500408+00:00",
-          "last_tweet_at": "2026-06-23T13:39:47+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1953661742": {
           "author_id": "1953661742",
           "handle": "polypredictionx",
@@ -976,19 +963,6 @@
           "inserted_total": 59,
           "polls": 11,
           "inserts_from_polls": 30,
-          "status": "active"
-        },
-        "1573674135816904705": {
-          "author_id": "1573674135816904705",
-          "handle": "adamkjohnston",
-          "discovered_via": "author_poll",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-24T20:16:46.432307+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1802794677621432321": {
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1829787389817978880": {
-          "author_id": "1829787389817978880",
+        "1604712300165881856": {
+          "author_id": "1604712300165881856",
+          "handle": "Mplspatriot",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.9299999999999999,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 4,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "10168082": {
+          "author_id": "10168082",
+          "handle": "Heritage",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2081054820782239745": {
+          "author_id": "2081054820782239745",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
