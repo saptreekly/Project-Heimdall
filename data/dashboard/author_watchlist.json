@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 2250,
+      "run_counter": 2251,
       "authors": {
         "111": {
           "author_id": "111",
@@ -1082,19 +1082,6 @@
           "inserts_from_polls": 7,
           "status": "active"
         },
-        "374712154": {
-          "author_id": "374712154",
-          "handle": "TRobinsonNewEra",
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-27T09:36:05.935869+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1300522976446619648": {
           "author_id": "1300522976446619648",
           "handle": "SmindCrypto",
@@ -1933,15 +1920,28 @@
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 0.69,
-          "last_polled_at": "2026-10-18T18:47:02.415652+00:00",
+          "last_polled_at": "2026-10-18T18:15:07.373583+00:00",
           "last_tweet_at": null,
           "inserted_total": 2,
           "polls": 1,
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "2081054820782239745": {
-          "author_id": "2081054820782239745",
+        "33795371": {
+          "author_id": "33795371",
+          "handle": "WileyNickel",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "1329891389430243330": {
+          "author_id": "1329891389430243330",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
