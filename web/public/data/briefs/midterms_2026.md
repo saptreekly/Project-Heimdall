@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-18 13:41:05 UTC
+> Tactical snapshot · 2026-10-18 14:12:20 UTC
 
 ## Corpus
 
@@ -31,14 +31,14 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · mail ballot, reuters reported, federal elections, federal judge, fake news (2373 posts · 41 authors · 59 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (75 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2368 posts · 42 authors · 59 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (73 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dems defeat, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · dhillon warpath, prosecuted allow, comply federal (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -94,9 +94,9 @@ _None spanning multiple narratives._
 - focus flipping (5 posts)
 - sweeping constitutional, petition nilepostnews, congressman hamadeh, voter trust (14 posts)
 - making economy (3 posts)
-- judgment supreme, omo agege, civil discourse, forced labor, board trustees (75 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (73 posts)
+- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (5 posts)
 - agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
-- illegals count, seats support (7 posts)
 - _…151 more emerging theme(s)._
 
 ## Scope note
