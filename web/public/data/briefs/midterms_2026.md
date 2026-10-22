@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-22 20:07:06 UTC
+> Tactical snapshot · 2026-10-22 20:39:18 UTC
 
 ## Corpus
 
