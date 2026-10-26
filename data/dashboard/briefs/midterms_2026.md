@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-26 23:10:58 UTC
+> Tactical snapshot · 2026-10-26 23:35:03 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4757** |
+| Posts in database | **4755** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3418 / 1433 |
-| Distinct themes | 77 |
-| Duplicate clusters (full DB) | 230 |
+| Graph nodes / edges | 3415 / 1433 |
+| Distinct themes | 72 |
+| Duplicate clusters (full DB) | 229 |
 | Fuzzy clusters (snapshot cohort) | 3 |
-| IU astroturf overlap | 2 bots / 2548 authors |
+| IU astroturf overlap | 2 bots / 2545 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **272**
-- Net new: **169** · re-seen: **946**
-- Duplicate rate: **84.8%**
+- Net new: **167** · re-seen: **946**
+- Duplicate rate: **85.0%**
 
 ## Sentiment drift
 
@@ -31,8 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · deliver mail ballots, george soros, postmaster general, radical left (3328 posts · 64 authors · 173 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, election (840 posts · 21 authors · 22 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · deliver mail ballots, george soros, white house, postmaster general, radical left (3345 posts · 64 authors · 172 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (839 posts · 22 authors · 22 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic (6 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 
@@ -49,7 +49,7 @@
 - cross_author_fuzzy_5authors_5posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
 - cross_author_fuzzy_4authors_4posts_j1.00
-- cross_author_fuzzy_4authors_4posts_j1.00
+- cross_author_fuzzy_2authors_3posts_j1.00
 
 ## Exact duplicate text (Layer 1 — copy coordination)
 
@@ -63,7 +63,7 @@
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
-- _…220 more exact-duplicate cluster(s) in database._
+- _…219 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -71,8 +71,8 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
-- **4 posts** · 4 authors · ~100% Jaccard — 🚨 WOW! President Trump just announced anyone who successfully reports voter fraud in the 2026 midterms or ANY election will receive $1 MILLION DOLLARS upon the arrest and conviction Amazing idea 👏🏻 "…
 - **2 posts** · 2 authors · ~100% Jaccard — Kamala Harris on what she's seeing on the ground in the 2026 midterms. via
+- **2 posts** · 2 authors · ~93% Jaccard — 🚨 WOW! President Trump just announced anyone who successfully reports voter fraud in the 2026 midterms or ANY election will receive $1 MILLION DOLLARS upon the arrest and conviction Amazing idea 👏🏻
 - **2 posts** · 2 authors · ~88% Jaccard — 🚨 HOLY CRAP. The IRGC just endorsed the Democrat Party for the 2026 midterms to punish President Trump Iran tells voters that Trump concealed Iran's "peaceful nature" of their nuclear program and urg…
 
 ## Cross-narrative actors (this narrative)
@@ -85,18 +85,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- newsom signs, gavin promised (4 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (55 posts)
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
 - spicer teddy, daniels chris (5 posts)
-- _…18 more emerging theme(s)._
+- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
+- _…16 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4757 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4755 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

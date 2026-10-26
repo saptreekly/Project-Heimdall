@@ -804,7 +804,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-10-26T01:12:42.608264+00:00",
           "last_tweet_at": "2026-10-07T19:06:18+00:00",
-          "inserted_total": 54,
+          "inserted_total": 55,
           "polls": 13,
           "inserts_from_polls": 22,
           "status": "active"
@@ -1145,6 +1145,19 @@
           "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 1,
+          "status": "active"
+        },
+        "1403106972443021312": {
+          "author_id": "1403106972443021312",
+          "handle": "SaveSJarrah",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": "2026-06-29T20:20:43.101780+00:00",
+          "last_tweet_at": "2026-06-29T16:46:16+00:00",
+          "inserted_total": 2,
+          "polls": 1,
+          "inserts_from_polls": 0,
           "status": "active"
         },
         "1849952301290504193": {
@@ -1927,21 +1940,8 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "1449946814": {
-          "author_id": "1449946814",
-          "handle": "melsorbit",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 2,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1007407913856651265": {
-          "author_id": "1007407913856651265",
+        "50772918": {
+          "author_id": "50772918",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
