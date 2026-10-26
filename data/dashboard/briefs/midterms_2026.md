@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-26 07:58:00 UTC
+> Tactical snapshot · 2026-10-26 09:02:37 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4716** |
+| Posts in database | **4734** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3382 / 1423 |
-| Distinct themes | 207 |
-| Duplicate clusters (full DB) | 227 |
-| Fuzzy clusters (snapshot cohort) | 1 |
-| IU astroturf overlap | 2 bots / 2516 authors |
+| Graph nodes / edges | 3399 / 1428 |
+| Distinct themes | 71 |
+| Duplicate clusters (full DB) | 229 |
+| Fuzzy clusters (snapshot cohort) | 2 |
+| IU astroturf overlap | 2 bots / 2530 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **269**
-- Net new: **127** · re-seen: **886**
-- Duplicate rate: **87.5%**
+- Runs: **270**
+- Net new: **145** · re-seen: **886**
+- Duplicate rate: **85.9%**
 
 ## Sentiment drift
 
@@ -31,15 +31,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2386 posts · 38 authors · 59 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (75 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dems defeat, makes sure (10 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · mail ballots, voter proof, executive order, military disabled, george soros (3329 posts · 50 authors · 173 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (835 posts · 18 authors · 22 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · ecstatic (6 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -68,7 +63,7 @@
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
 - **2 posts** · 2 author(s) — Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live – and they could be used for fraud, phishing, or worse
-- _…217 more exact-duplicate cluster(s) in database._
+- _…219 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -76,6 +71,7 @@ _None (need ≥5 authors in 90s window)._
 
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
+- **2 posts** · 2 authors · ~100% Jaccard — Kamala Harris on what she's seeing on the ground in the 2026 midterms. via
 - **2 posts** · 2 authors · ~88% Jaccard — 🚨 HOLY CRAP. The IRGC just endorsed the Democrat Party for the 2026 midterms to punish President Trump Iran tells voters that Trump concealed Iran's "peaceful nature" of their nuclear program and urg…
 
 ## Cross-narrative actors (this narrative)
@@ -88,19 +84,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (85 posts)
-- focus flipping (5 posts)
-- sweeping constitutional, petition nilepostnews, congressman hamadeh, voter trust (16 posts)
-- making economy (3 posts)
-- judgment supreme, omo agege, civil discourse, forced labor, board trustees (75 posts)
-- seek republican, presidential nomination, seek republican presidential, republican presidential nomination, vice president (9 posts)
-- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
-- illegals count, seats support (7 posts)
-- _…152 more emerging theme(s)._
+- newsom signs, gavin promised (4 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (55 posts)
+- awakening largest, affordable homes, power register (6 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- 10000's fascist, inbreeds cuz, loves winners (9 posts)
+- spicer teddy, daniels chris (5 posts)
+- _…16 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4716 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4734 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
