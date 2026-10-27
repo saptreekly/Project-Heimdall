@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-27 14:20:53 UTC
+> Tactical snapshot · 2026-10-27 15:17:25 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3431 / 1436 |
-| Distinct themes | 202 |
+| Distinct themes | 92 |
 | Duplicate clusters (full DB) | 229 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2560 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **16**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **271**
-- Net new: **211** · re-seen: **976**
-- Duplicate rate: **82.2%**
+- Net new: **211** · re-seen: **992**
+- Duplicate rate: **82.5%**
 
 ## Sentiment drift
 
@@ -31,15 +36,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2461 posts · 76 authors · 65 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · billionaires poured, bullish chances (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, eliminate filibuster (4012 posts · 91 authors · 190 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · ecstatic, yes (8 posts · 5 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -90,15 +89,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- red wave, midwest democrat, resigns electoral, disaster looms, state setting (84 posts)
-- focus flipping (5 posts)
-- claimed china, bigger majorities (5 posts)
-- sweeping constitutional, petition nilepostnews (19 posts)
-- making economy (3 posts)
-- judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
-- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
-- democrats lose midterms, lose midterms, democrats lose, trump implement, check groypers (6 posts)
-- _…144 more emerging theme(s)._
+- claimed china, bigger majorities (7 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (55 posts)
+- awakening largest, affordable homes, power register (6 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- unfortunate reality, inadvertently joined, politicize issues, problems mtg (3 posts)
+- judges cut, chase block (4 posts)
+- cair jetpac, known muslim, include abdul, hamawy house (3 posts)
+- _…28 more emerging theme(s)._
 
 ## Scope note
 
