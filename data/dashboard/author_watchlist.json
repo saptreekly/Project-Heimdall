@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 2388,
+      "run_counter": 2389,
       "authors": {
         "111": {
           "author_id": "111",
@@ -167,7 +167,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-10-23T22:16:30.943193+00:00",
           "last_tweet_at": "2026-10-16T11:37:01+00:00",
-          "inserted_total": 153,
+          "inserted_total": 154,
           "polls": 13,
           "inserts_from_polls": 67,
           "status": "active"
@@ -1147,19 +1147,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1403106972443021312": {
-          "author_id": "1403106972443021312",
-          "handle": "SaveSJarrah",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-06-29T20:20:43.101780+00:00",
-          "last_tweet_at": "2026-06-29T16:46:16+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1849952301290504193": {
           "author_id": "1849952301290504193",
           "handle": "RepAbeHamadeh",
@@ -1249,19 +1236,6 @@
           "inserted_total": 3,
           "polls": 1,
           "inserts_from_polls": 1,
-          "status": "active"
-        },
-        "1861460408072065024": {
-          "author_id": "1861460408072065024",
-          "handle": "FlipChicagoRed",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-07-03T18:49:38.580315+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
           "status": "active"
         },
         "1716838183483183104": {
@@ -1940,8 +1914,34 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "2081054820782239745": {
-          "author_id": "2081054820782239745",
+        "2106052067626516480": {
+          "author_id": "2106052067626516480",
+          "handle": "OutsideTheBbox",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 1.05,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 5,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2069954818236694528": {
+          "author_id": "2069954818236694528",
+          "handle": "JackWild34",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "919797216188829697": {
+          "author_id": "919797216188829697",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
