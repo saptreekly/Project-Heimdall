@@ -1,28 +1,28 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-27 22:43:03 UTC
+> Tactical snapshot · 2026-10-27 23:10:58 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4799** |
+| Posts in database | **4798** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3445 / 1449 |
-| Distinct themes | 192 |
+| Graph nodes / edges | 3444 / 1445 |
+| Distinct themes | 202 |
 | Duplicate clusters (full DB) | 230 |
 | Fuzzy clusters (snapshot cohort) | 2 |
-| IU astroturf overlap | 2 bots / 2572 authors |
+| IU astroturf overlap | 2 bots / 2570 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **273**
-- Net new: **232** · re-seen: **1007**
+- Runs: **274**
+- Net new: **231** · re-seen: **1007**
 - Duplicate rate: **81.3%**
 
 ## Sentiment drift
@@ -32,21 +32,21 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, super pacs (2188 posts · 69 authors · 59 exact · 1 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, election (845 posts · 22 authors · 22 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge, postal service (2485 posts · 82 authors · 65 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · poll spells, democrats ninepercent, plot sabotage, source center (21 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · freedom democrat, magna carta, american thinker, renew spirit (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dollars help, musk reportedly surged, rich patriot, contributes humanity, soros flooded (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · dnc scrambling, bombshell hits, exposed globalists, freaking scandal (13 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · double cash, filed nationwide (18 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
 
 - dense_cluster_73_size_3
 - dense_cluster_89_size_3
-- dense_cluster_553_size_3
+- dense_cluster_552_size_3
 - dense_cluster_1407_size_3
 - cross_author_fuzzy_31authors_33posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
@@ -90,19 +90,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (84 posts)
 - focus flipping (5 posts)
+- claimed china, bigger majorities (5 posts)
+- sweeping constitutional, petition nilepostnews (20 posts)
+- making economy (3 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
 - agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
-- check groypers (7 posts)
-- illegals count, seats support, breaking president donald (7 posts)
-- cryptic 'poll (8 posts)
-- union historically (5 posts)
-- judge nichols, ketanji brown (8 posts)
-- plan impeach, plan impeach remove, remove trump vance, impeach remove, impeach remove trump (5 posts)
-- _…133 more emerging theme(s)._
+- illegals count, seats support (7 posts)
+- _…143 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4799 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4798 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._

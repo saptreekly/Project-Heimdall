@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 2389,
+      "run_counter": 2390,
       "authors": {
         "111": {
           "author_id": "111",
@@ -167,7 +167,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-10-23T22:16:30.943193+00:00",
           "last_tweet_at": "2026-10-16T11:37:01+00:00",
-          "inserted_total": 153,
+          "inserted_total": 154,
           "polls": 13,
           "inserts_from_polls": 67,
           "status": "active"
@@ -1238,19 +1238,6 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
-        "1861460408072065024": {
-          "author_id": "1861460408072065024",
-          "handle": "FlipChicagoRed",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-07-03T18:49:38.580315+00:00",
-          "last_tweet_at": null,
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1716838183483183104": {
           "author_id": "1716838183483183104",
           "handle": "StephenGardnerX",
@@ -1933,15 +1920,28 @@
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 1.05,
+          "last_polled_at": "2026-10-27T23:10:52.527347+00:00",
+          "last_tweet_at": null,
+          "inserted_total": 5,
+          "polls": 1,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "2069954818236694528": {
+          "author_id": "2069954818236694528",
+          "handle": "JackWild34",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 10,
+          "inserted_total": 2,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "95717760": {
-          "author_id": "95717760",
+        "919797216188829697": {
+          "author_id": "919797216188829697",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,
