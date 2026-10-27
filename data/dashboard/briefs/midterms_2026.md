@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-27 15:43:01 UTC
+> Tactical snapshot · 2026-10-27 16:02:08 UTC
 
 ## Corpus
 
@@ -31,13 +31,13 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · reuters reported, district judge (2459 posts · 76 authors · 64 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge (2461 posts · 76 authors · 65 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · double cash, filed nationwide (18 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · billionaires poured, bullish chances (12 posts · 1 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
@@ -92,12 +92,12 @@ _None spanning multiple narratives._
 
 - red wave, midwest democrat, resigns electoral, disaster looms, state setting (84 posts)
 - focus flipping (5 posts)
+- claimed china, bigger majorities (5 posts)
 - sweeping constitutional, petition nilepostnews (19 posts)
 - making economy (3 posts)
 - judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
 - agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
-- illegals count, seats support (7 posts)
-- union historically (7 posts)
+- democrats lose midterms, lose midterms, democrats lose, trump implement, check groypers (6 posts)
 - _…144 more emerging theme(s)._
 
 ## Scope note
