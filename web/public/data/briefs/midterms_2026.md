@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-28 21:12:40 UTC
+> Tactical snapshot · 2026-10-28 21:40:49 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4832** |
+| Posts in database | **4831** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3474 / 1453 |
-| Distinct themes | 75 |
+| Graph nodes / edges | 3473 / 1454 |
+| Distinct themes | 74 |
 | Duplicate clusters (full DB) | 231 |
 | Fuzzy clusters (snapshot cohort) | 2 |
-| IU astroturf overlap | 2 bots / 2598 authors |
+| IU astroturf overlap | 2 bots / 2597 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **271**
-- Net new: **261** · re-seen: **1105**
-- Duplicate rate: **80.9%**
+- Runs: **270**
+- Net new: **260** · re-seen: **1105**
+- Duplicate rate: **81.0%**
 
 ## Sentiment drift
 
@@ -32,9 +32,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · win house, deliver mail ballots, blue wave, george soros, integrity executive order (3394 posts · 109 authors · 172 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, election (849 posts · 24 authors · 22 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · election fraud, task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · mail ballot, win house, george soros, postmaster general, radical left (3386 posts · 103 authors · 172 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (850 posts · 25 authors · 22 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes (8 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -90,13 +90,13 @@ _None spanning multiple narratives._
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - inbreeds cuz, 10000's fascist, loves winners (8 posts)
-- spicer teddy, daniels chris (5 posts)
 - cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- _…19 more emerging theme(s)._
+- spicer teddy, daniels chris (4 posts)
+- _…20 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4832 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4831 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
