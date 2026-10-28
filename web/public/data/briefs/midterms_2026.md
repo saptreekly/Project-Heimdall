@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-28 15:02:20 UTC
+> Tactical snapshot · 2026-10-28 15:34:03 UTC
 
 ## Corpus
 
@@ -21,7 +21,7 @@
 
 ## Ingest yield (last 14 days)
 
-- Runs: **271**
+- Runs: **269**
 - Net new: **246** · re-seen: **1061**
 - Duplicate rate: **81.2%**
 
