@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-28 05:20:56 UTC
+> Tactical snapshot · 2026-10-28 06:20:31 UTC
 
 ## Corpus
 
@@ -14,15 +14,10 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3444 / 1445 |
-| Distinct themes | 97 |
+| Distinct themes | 202 |
 | Duplicate clusters (full DB) | 230 |
 | Fuzzy clusters (snapshot cohort) | 2 |
 | IU astroturf overlap | 2 bots / 2570 authors |
-
-## Ingest activity
-
-- Re-sightings (duplicate encounters): **22**
-- Net-new posts logged: **0**
 
 ## Ingest yield (last 14 days)
 
@@ -37,9 +32,15 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, eliminate filibuster (4014 posts · 99 authors · 190 exact · 2 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · ecstatic, yes (8 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · reuters reported, district judge, postal service (2485 posts · 82 authors · 65 exact · 2 fuzzy subclusters)
+- **Exact duplicate campaign** · judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts · 0 authors · 4 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · games yes, excuses games yes, cold excuses, laws midterms stop, midterms stop fraud (22 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · poll spells, democrats ninepercent, source center, months midterm elections, bravo pennlive (20 posts · 0 authors · 3 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · double cash, filed nationwide (18 posts · 1 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · similar rules (14 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · maga points, truth passing, pressure secure (13 posts · 0 authors · 2 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · fraud cold, excuses games (11 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -89,15 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (7 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (55 posts)
-- awakening largest, affordable homes, power register (6 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- unfortunate reality, inadvertently joined, politicize issues, problems mtg (3 posts)
-- judges cut, chase block (4 posts)
-- include abdul, hamawy house (3 posts)
-- _…30 more emerging theme(s)._
+- red wave, midwest democrat, resigns electoral, disaster looms, state setting (84 posts)
+- focus flipping (5 posts)
+- claimed china, bigger majorities (5 posts)
+- sweeping constitutional, petition nilepostnews (20 posts)
+- making economy (3 posts)
+- judgment supreme, omo agege, civil discourse, forced labor, board trustees (74 posts)
+- agents posted, posted polling, stations stop, ice agents posted, agents posted polling (7 posts)
+- illegals count, seats support (7 posts)
+- _…143 more emerging theme(s)._
 
 ## Scope note
 
