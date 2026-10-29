@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 2418,
+      "run_counter": 2419,
       "authors": {
         "111": {
           "author_id": "111",
@@ -193,7 +193,7 @@
           "priority": 1.0,
           "last_polled_at": "2026-10-22T23:14:07.584286+00:00",
           "last_tweet_at": "2026-10-15T17:43:54+00:00",
-          "inserted_total": 117,
+          "inserted_total": 118,
           "polls": 13,
           "inserts_from_polls": 40,
           "status": "active"
@@ -1355,19 +1355,6 @@
           "inserts_from_polls": 4,
           "status": "active"
         },
-        "34109146": {
-          "author_id": "34109146",
-          "handle": "AmericanThinker",
-          "discovered_via": "keyword",
-          "depth": 0,
-          "priority": 0.69,
-          "last_polled_at": "2026-07-08T14:35:30.570350+00:00",
-          "last_tweet_at": "2026-07-08T09:30:24+00:00",
-          "inserted_total": 2,
-          "polls": 1,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
         "1438157928": {
           "author_id": "1438157928",
           "handle": "Clh1992Hahn",
@@ -1940,8 +1927,21 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "2081054820782239745": {
-          "author_id": "2081054820782239745",
+        "1158740854787465217": {
+          "author_id": "1158740854787465217",
+          "handle": "standforhealth1",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": null,
+          "last_tweet_at": null,
+          "inserted_total": 2,
+          "polls": 0,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
+        "727648168171610112": {
+          "author_id": "727648168171610112",
           "handle": null,
           "discovered_via": "reply",
           "depth": 1,

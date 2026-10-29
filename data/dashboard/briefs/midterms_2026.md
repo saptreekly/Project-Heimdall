@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-29 22:54:22 UTC
+> Tactical snapshot · 2026-10-29 23:38:07 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4864** |
+| Posts in database | **4883** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3498 / 1459 |
-| Distinct themes | 104 |
+| Graph nodes / edges | 3515 / 1463 |
+| Distinct themes | 75 |
 | Duplicate clusters (full DB) | 233 |
 | Fuzzy clusters (snapshot cohort) | 4 |
-| IU astroturf overlap | 2 bots / 2620 authors |
+| IU astroturf overlap | 2 bots / 2636 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **269**
-- Net new: **301** · re-seen: **1233**
-- Duplicate rate: **80.4%**
+- Runs: **268**
+- Net new: **320** · re-seen: **1233**
+- Duplicate rate: **79.4%**
 
 ## Sentiment drift
 
@@ -32,11 +32,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, eliminate filibuster (3794 posts · 128 authors · 185 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · george soros, blue wave, radical left, postmaster general (3431 posts · 135 authors · 173 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (853 posts · 26 authors · 22 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (309 posts · 21 authors · 7 exact · 0 fuzzy subclusters)
-- **Shared frame** · ecstatic, yes (8 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · likely noncitizens, registered voter, ninth circuit, california set (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · ecstatic, yes, vote, republican (9 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · likely noncitizens, set aside, sequester ballots, angeles county, registered voter (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -89,19 +89,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (6 posts)
-- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (56 posts)
-- awakening largest, affordable homes, power register (5 posts)
+- tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (61 posts)
+- awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- cowardfacist nazi (9 posts)
+- 10000's fascist, loves winners (9 posts)
 - cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
-- _…26 more emerging theme(s)._
+- irgc endorsed, iran's peaceful (3 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4864 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4883 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
