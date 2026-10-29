@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-29 15:10:36 UTC
+> Tactical snapshot · 2026-10-29 15:49:01 UTC
 
 ## Corpus
 
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3488 / 1456 |
-| Distinct themes | 100 |
+| Distinct themes | 104 |
 | Duplicate clusters (full DB) | 232 |
 | Fuzzy clusters (snapshot cohort) | 3 |
 | IU astroturf overlap | 2 bots / 2611 authors |
 
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **22**
+- Net-new posts logged: **0**
+
 ## Ingest yield (last 14 days)
 
 - Runs: **268**
-- Net new: **291** · re-seen: **1175**
-- Duplicate rate: **80.2%**
+- Net new: **290** · re-seen: **1197**
+- Duplicate rate: **80.5%**
 
 ## Sentiment drift
 
@@ -32,11 +37,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, eliminate filibuster (3782 posts · 119 authors · 186 exact · 3 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, eliminate filibuster (4055 posts · 133 authors · 191 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, fraud (307 posts · 19 authors · 7 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes (8 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · likely noncitizens, registered voter, ninth circuit, california set (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -87,15 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china (6 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (55 posts)
-- awakening largest, affordable homes, power register (5 posts)
+- awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- unfortunate reality, inadvertently joined, politicize issues, problems mtg (3 posts)
+- judges cut, chase block (4 posts)
+- include abdul, hamawy house (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- inbreeds cuz, 10000's fascist (7 posts)
-- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
-- _…24 more emerging theme(s)._
+- _…29 more emerging theme(s)._
 
 ## Scope note
 
