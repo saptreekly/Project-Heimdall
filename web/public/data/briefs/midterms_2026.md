@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-29 23:38:07 UTC
+> Tactical snapshot · 2026-10-30 05:31:57 UTC
 
 ## Corpus
 
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3515 / 1463 |
-| Distinct themes | 75 |
+| Distinct themes | 107 |
 | Duplicate clusters (full DB) | 233 |
 | Fuzzy clusters (snapshot cohort) | 4 |
 | IU astroturf overlap | 2 bots / 2636 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **268**
-- Net new: **320** · re-seen: **1233**
-- Duplicate rate: **79.4%**
+- Runs: **264**
+- Net new: **314** · re-seen: **1233**
+- Duplicate rate: **79.7%**
 
 ## Sentiment drift
 
@@ -32,11 +32,11 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · george soros, blue wave, radical left, postmaster general (3431 posts · 135 authors · 173 exact · 3 fuzzy subclusters)
-- **Exact duplicate campaign** · court, supreme, trump, election (853 posts · 26 authors · 22 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, deliver mail ballots, sanctuary cities, postmaster general, eliminate filibuster (3802 posts · 135 authors · 185 exact · 3 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · trump, midterms, elections, election (309 posts · 20 authors · 7 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes, vote, republican (9 posts · 4 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · likely noncitizens, set aside, sequester ballots, angeles county, registered voter (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · likely noncitizens, registered voter, ninth circuit, california set (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -89,14 +89,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (61 posts)
-- awakening largest, affordable homes, power register (6 posts)
+- claimed china, bigger majorities (6 posts)
+- initial success, gerrymandering strategy, facing roadblocks, surging ground (4 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (57 posts)
+- awakening largest, affordable homes, power register (5 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- cowardfacist nazi (9 posts)
-- 10000's fascist, loves winners (9 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
 - cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- irgc endorsed, iran's peaceful (3 posts)
-- _…18 more emerging theme(s)._
+- _…25 more emerging theme(s)._
 
 ## Scope note
 
