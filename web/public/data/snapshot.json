@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "generated_at": "2026-10-30T22:41:01.468439+00:00",
+  "generated_at": "2026-10-30T22:58:48.184335+00:00",
   "narratives": [
     {
       "id": 3,
@@ -6417,8 +6417,8 @@
             "internal_density": 0.5,
             "members": [
               "399178595",
-              "38108253",
-              "3085410827"
+              "3085410827",
+              "38108253"
             ]
           },
           {
@@ -6436,8 +6436,8 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "16513335",
               "1746263545648680960",
+              "16513335",
               "26424178"
             ]
           },
@@ -6446,8 +6446,8 @@
             "size": 3,
             "internal_density": 0.5,
             "members": [
-              "31047836",
               "1514818433342337039",
+              "31047836",
               "1796948479794692097"
             ]
           }
@@ -83286,38 +83286,34 @@
             "cluster_count": 2,
             "clusters": [
               {
-                "cluster_id": 0,
-                "label": "black president",
+                "cluster_id": 1,
+                "label": "red wave",
                 "size": 4,
                 "post_ids": [
-                  762,
-                  760,
-                  759,
-                  758
+                  389,
+                  387,
+                  757,
+                  2531
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 1,
-                "label": "red wave",
-                "size": 7,
+                "cluster_id": 0,
+                "label": "supreme court",
+                "size": 3,
                 "post_ids": [
+                  762,
                   761,
-                  389,
-                  388,
-                  387,
-                  757,
-                  2446,
-                  2531
+                  760
                 ],
-                "emerging_theme": false
+                "emerging_theme": true
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W22",
-            "cluster_count": 9,
+            "cluster_count": 6,
             "clusters": [
               {
                 "cluster_id": 0,
@@ -83334,7 +83330,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
+                "cluster_id": 2,
                 "label": "gen millennials",
                 "size": 5,
                 "post_ids": [
@@ -83358,7 +83354,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
+                "cluster_id": 3,
                 "label": "election integrity",
                 "size": 3,
                 "post_ids": [
@@ -83369,76 +83365,47 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 6,
-                "label": "cash party",
-                "size": 2,
-                "post_ids": [
-                  461,
-                  460
-                ],
-                "emerging_theme": false
-              },
-              {
-                "cluster_id": 2,
+                "cluster_id": 4,
                 "label": "supreme court",
                 "size": 12,
                 "post_ids": [
                   756,
-                  56,
+                  3649,
                   2492,
-                  650,
+                  633,
                   149,
                   503,
                   618,
                   755,
                   754,
                   502,
-                  73,
-                  39
-                ],
-                "emerging_theme": false
-              },
-              {
-                "cluster_id": 5,
-                "label": "north carolina",
-                "size": 2,
-                "post_ids": [
-                  3649,
-                  737
-                ],
-                "emerging_theme": false
-              },
-              {
-                "cluster_id": 7,
-                "label": "tracked groups",
-                "size": 2,
-                "post_ids": [
-                  633,
+                  737,
                   40
                 ],
                 "emerging_theme": false
               },
               {
-                "cluster_id": 8,
-                "label": "bernie sanders",
-                "size": 2,
+                "cluster_id": 5,
+                "label": "unfortunate reality",
+                "size": 3,
                 "post_ids": [
+                  650,
                   38,
                   137
                 ],
-                "emerging_theme": false
+                "emerging_theme": true
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W23",
-            "cluster_count": 35,
+            "cluster_count": 34,
             "clusters": [
               {
-                "cluster_id": 17,
+                "cluster_id": 18,
                 "label": "mail voting",
-                "size": 19,
+                "size": 20,
                 "post_ids": [
                   124,
                   119,
@@ -83456,6 +83423,7 @@
                   682,
                   812,
                   832,
+                  829,
                   821,
                   894,
                   884
@@ -83463,7 +83431,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 21,
+                "cluster_id": 22,
                 "label": "pre rigged",
                 "size": 17,
                 "post_ids": [
@@ -83488,12 +83456,11 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 22,
+                "cluster_id": 23,
                 "label": "pro republican",
-                "size": 14,
+                "size": 13,
                 "post_ids": [
                   173,
-                  234,
                   383,
                   382,
                   377,
@@ -83501,11 +83468,51 @@
                   430,
                   428,
                   427,
+                  424,
                   466,
                   552,
                   551,
-                  636,
                   845
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 20,
+                "label": "laying groundwork",
+                "size": 12,
+                "post_ids": [
+                  170,
+                  200,
+                  198,
+                  237,
+                  268,
+                  288,
+                  338,
+                  365,
+                  419,
+                  550,
+                  678,
+                  834
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 7,
+                "label": "level touch",
+                "size": 12,
+                "post_ids": [
+                  165,
+                  174,
+                  196,
+                  222,
+                  433,
+                  448,
+                  445,
+                  611,
+                  655,
+                  654,
+                  765,
+                  808
                 ],
                 "emerging_theme": true
               },
@@ -83529,26 +83536,26 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 7,
-                "label": "level touch",
+                "cluster_id": 12,
+                "label": "requiring proof",
                 "size": 11,
                 "post_ids": [
-                  165,
-                  174,
-                  196,
-                  222,
-                  433,
-                  448,
-                  445,
-                  611,
-                  655,
-                  654,
-                  765
+                  156,
+                  230,
+                  456,
+                  515,
+                  592,
+                  632,
+                  625,
+                  651,
+                  700,
+                  770,
+                  870
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 28,
+                "cluster_id": 1,
                 "label": "millennials gen",
                 "size": 10,
                 "post_ids": [
@@ -83584,7 +83591,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
+                "cluster_id": 4,
                 "label": "war powers",
                 "size": 10,
                 "post_ids": [
@@ -83602,20 +83609,20 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 12,
-                "label": "listening voted",
+                "cluster_id": 19,
+                "label": "voter days",
                 "size": 10,
                 "post_ids": [
-                  156,
-                  230,
-                  456,
-                  515,
-                  592,
-                  632,
-                  625,
-                  651,
-                  700,
-                  770
+                  1733,
+                  681,
+                  693,
+                  707,
+                  704,
+                  810,
+                  802,
+                  848,
+                  843,
+                  878
                 ],
                 "emerging_theme": true
               },
@@ -83637,23 +83644,6 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 18,
-                "label": "voter days",
-                "size": 9,
-                "post_ids": [
-                  1733,
-                  681,
-                  693,
-                  704,
-                  810,
-                  802,
-                  848,
-                  843,
-                  878
-                ],
-                "emerging_theme": true
-              },
-              {
                 "cluster_id": 11,
                 "label": "executive orders",
                 "size": 8,
@@ -83670,26 +83660,11 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 5,
-                "label": "awakening largest",
+                "cluster_id": 24,
+                "label": "breaking trump",
                 "size": 8,
                 "post_ids": [
-                  167,
-                  247,
-                  472,
-                  599,
-                  598,
-                  597,
-                  837,
-                  876
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 23,
-                "label": "breaking trump",
-                "size": 7,
-                "post_ids": [
+                  234,
                   454,
                   453,
                   451,
@@ -83716,7 +83691,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 29,
+                "cluster_id": 30,
                 "label": "graham platner",
                 "size": 7,
                 "post_ids": [
@@ -83731,7 +83706,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 1,
+                "cluster_id": 2,
                 "label": "lose country",
                 "size": 6,
                 "post_ids": [
@@ -83745,7 +83720,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 31,
+                "cluster_id": 32,
                 "label": "liveprayer tuesday",
                 "size": 6,
                 "post_ids": [
@@ -83755,20 +83730,6 @@
                   671,
                   670,
                   669
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 19,
-                "label": "nearly points",
-                "size": 6,
-                "post_ids": [
-                  252,
-                  282,
-                  565,
-                  833,
-                  864,
-                  891
                 ],
                 "emerging_theme": true
               },
@@ -83787,7 +83748,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
+                "cluster_id": 5,
                 "label": "beautiful delay",
                 "size": 5,
                 "post_ids": [
@@ -83796,19 +83757,6 @@
                   240,
                   239,
                   380
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 33,
-                "label": "laying groundwork",
-                "size": 5,
-                "post_ids": [
-                  198,
-                  268,
-                  288,
-                  365,
-                  834
                 ],
                 "emerging_theme": true
               },
@@ -83826,6 +83774,32 @@
                 "emerging_theme": true
               },
               {
+                "cluster_id": 21,
+                "label": "plan impeach",
+                "size": 5,
+                "post_ids": [
+                  252,
+                  282,
+                  565,
+                  833,
+                  864
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 17,
+                "label": "percentage points",
+                "size": 5,
+                "post_ids": [
+                  657,
+                  875,
+                  868,
+                  891,
+                  889
+                ],
+                "emerging_theme": true
+              },
+              {
                 "cluster_id": 16,
                 "label": "governor race",
                 "size": 5,
@@ -83839,31 +83813,43 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 36,
-                "label": "position steelmanned",
-                "size": 4,
-                "post_ids": [
-                  379,
-                  424,
-                  455,
-                  438
-                ],
-                "emerging_theme": true
-              },
-              {
                 "cluster_id": 9,
                 "label": "tie trumps",
-                "size": 4,
+                "size": 5,
                 "post_ids": [
                   171,
                   206,
                   658,
+                  818,
                   862
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 37,
+                "cluster_id": 33,
+                "label": "majority black",
+                "size": 4,
+                "post_ids": [
+                  216,
+                  370,
+                  485,
+                  636
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 27,
+                "label": "awakening largest",
+                "size": 3,
+                "post_ids": [
+                  599,
+                  598,
+                  597
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 36,
                 "label": "coward facist",
                 "size": 3,
                 "post_ids": [
@@ -83874,7 +83860,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 38,
+                "cluster_id": 37,
                 "label": "tolerate patheticlosers",
                 "size": 3,
                 "post_ids": [
@@ -83885,7 +83871,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 35,
+                "cluster_id": 34,
                 "label": "louisiana likely",
                 "size": 3,
                 "post_ids": [
@@ -83896,29 +83882,18 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 34,
-                "label": "black district",
+                "cluster_id": 35,
+                "label": "position steelmanned",
                 "size": 3,
                 "post_ids": [
-                  216,
-                  370,
-                  485
+                  379,
+                  455,
+                  438
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 20,
-                "label": "local governments",
-                "size": 3,
-                "post_ids": [
-                  170,
-                  419,
-                  678
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 2,
+                "cluster_id": 3,
                 "label": "post you're",
                 "size": 5,
                 "post_ids": [
@@ -83931,7 +83906,7 @@
                 "emerging_theme": false
               },
               {
-                "cluster_id": 39,
+                "cluster_id": 38,
                 "label": "vote thune",
                 "size": 4,
                 "post_ids": [
@@ -83943,7 +83918,7 @@
                 "emerging_theme": false
               },
               {
-                "cluster_id": 40,
+                "cluster_id": 39,
                 "label": "eliminate filibuster",
                 "size": 3,
                 "post_ids": [
@@ -83952,23 +83927,13 @@
                   375
                 ],
                 "emerging_theme": false
-              },
-              {
-                "cluster_id": 32,
-                "label": "postal service",
-                "size": 2,
-                "post_ids": [
-                  707,
-                  829
-                ],
-                "emerging_theme": false
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W24",
-            "cluster_count": 30,
+            "cluster_count": 33,
             "clusters": [
               {
                 "cluster_id": 0,
@@ -84005,7 +83970,7 @@
                   1033,
                   1032,
                   2801,
-                  1196,
+                  1135,
                   1157,
                   1154,
                   1153,
@@ -84023,7 +83988,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 7,
+                "cluster_id": 12,
                 "label": "poll spells",
                 "size": 17,
                 "post_ids": [
@@ -84048,61 +84013,24 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 20,
-                "label": "doj quietly",
-                "size": 13,
+                "cluster_id": 11,
+                "label": "courtside curse",
+                "size": 14,
                 "post_ids": [
-                  939,
-                  938,
-                  937,
-                  977,
-                  1252,
-                  992,
-                  1251,
-                  983,
-                  1057,
-                  1012,
-                  1250,
-                  1249,
-                  1248
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 8,
-                "label": "mail ballots",
-                "size": 11,
-                "post_ids": [
-                  908,
-                  906,
-                  1356,
-                  941,
-                  979,
-                  1105,
-                  1133,
-                  1165,
-                  1206,
-                  1238,
-                  1391
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 6,
-                "label": "federal spending",
-                "size": 11,
-                "post_ids": [
-                  916,
-                  912,
-                  900,
-                  934,
-                  1100,
-                  1179,
-                  1226,
-                  1264,
-                  1262,
-                  1324,
-                  1353
+                  961,
+                  960,
+                  1095,
+                  1094,
+                  1110,
+                  1212,
+                  1228,
+                  1316,
+                  1302,
+                  1335,
+                  1317,
+                  1351,
+                  1365,
+                  1429
                 ],
                 "emerging_theme": true
               },
@@ -84126,24 +84054,24 @@
               },
               {
                 "cluster_id": 19,
-                "label": "central district",
+                "label": "setting stage",
                 "size": 10,
                 "post_ids": [
-                  961,
-                  960,
-                  1095,
-                  1094,
-                  1228,
-                  1316,
-                  1302,
-                  1317,
-                  1351,
-                  1365
+                  902,
+                  919,
+                  959,
+                  1066,
+                  1117,
+                  1149,
+                  1223,
+                  1313,
+                  1347,
+                  1385
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 25,
+                "cluster_id": 31,
                 "label": "dnc scrambling",
                 "size": 9,
                 "post_ids": [
@@ -84160,41 +84088,75 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 21,
-                "label": "party registration",
+                "cluster_id": 20,
+                "label": "doj quietly",
                 "size": 9,
                 "post_ids": [
-                  998,
-                  1022,
+                  939,
+                  938,
+                  937,
+                  1252,
+                  1251,
+                  983,
+                  1250,
+                  1249,
+                  1248
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 7,
+                "label": "mail ballots",
+                "size": 9,
+                "post_ids": [
+                  908,
+                  1356,
+                  941,
+                  979,
+                  1085,
+                  1105,
+                  1165,
+                  1206,
+                  1238
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 6,
+                "label": "announced campaign",
+                "size": 9,
+                "post_ids": [
+                  916,
+                  912,
+                  934,
+                  1100,
+                  1179,
+                  1264,
+                  1262,
+                  1324,
+                  1353
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 16,
+                "label": "international brotherhood",
+                "size": 9,
+                "post_ids": [
                   1054,
-                  1097,
-                  1130,
-                  1175,
-                  1161,
-                  1293,
-                  1305
+                  1112,
+                  1137,
+                  1299,
+                  1305,
+                  1390,
+                  1398,
+                  1394,
+                  1428
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 11,
-                "label": "sec markwayne",
-                "size": 9,
-                "post_ids": [
-                  1103,
-                  1261,
-                  1298,
-                  1388,
-                  1381,
-                  2676,
-                  1406,
-                  1404,
-                  1395
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 18,
+                "cluster_id": 9,
                 "label": "latest inside",
                 "size": 8,
                 "post_ids": [
@@ -84210,24 +84172,40 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 23,
-                "label": "act passed",
+                "cluster_id": 14,
+                "label": "eliminate filibuster",
                 "size": 8,
                 "post_ids": [
-                  1002,
-                  1016,
-                  1014,
-                  1043,
-                  1139,
-                  1162,
-                  1234,
-                  1341
+                  1025,
+                  2793,
+                  2792,
+                  1106,
+                  1205,
+                  1227,
+                  1289,
+                  1360
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 17,
+                "label": "false major",
+                "size": 8,
+                "post_ids": [
+                  999,
+                  1040,
+                  1039,
+                  1167,
+                  1207,
+                  1221,
+                  1377,
+                  1430
                 ],
                 "emerging_theme": true
               },
               {
                 "cluster_id": 4,
-                "label": "vote dilution",
+                "label": "civil rights",
                 "size": 8,
                 "post_ids": [
                   958,
@@ -84242,7 +84220,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 14,
+                "cluster_id": 18,
                 "label": "ken paxton",
                 "size": 8,
                 "post_ids": [
@@ -84254,22 +84232,6 @@
                   1288,
                   1307,
                   1350
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 15,
-                "label": "setting stage",
-                "size": 8,
-                "post_ids": [
-                  902,
-                  919,
-                  959,
-                  1027,
-                  1044,
-                  1066,
-                  1223,
-                  1347
                 ],
                 "emerging_theme": true
               },
@@ -84289,22 +84251,22 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 16,
-                "label": "lose control",
+                "cluster_id": 23,
+                "label": "reconciliation package",
                 "size": 7,
                 "post_ids": [
-                  999,
-                  1207,
-                  1451,
-                  1295,
-                  1286,
-                  1393,
-                  1430
+                  1002,
+                  1016,
+                  1014,
+                  1043,
+                  1139,
+                  1162,
+                  1234
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 9,
+                "cluster_id": 13,
                 "label": "urgent share",
                 "size": 7,
                 "post_ids": [
@@ -84315,6 +84277,21 @@
                   1048,
                   1186,
                   1306
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 15,
+                "label": "sec markwayne",
+                "size": 7,
+                "post_ids": [
+                  1103,
+                  1261,
+                  1381,
+                  2676,
+                  1406,
+                  1404,
+                  1395
                 ],
                 "emerging_theme": true
               },
@@ -84333,7 +84310,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 17,
+                "cluster_id": 8,
                 "label": "keeps winning",
                 "size": 6,
                 "post_ids": [
@@ -84361,7 +84338,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 12,
+                "cluster_id": 10,
                 "label": "task force",
                 "size": 5,
                 "post_ids": [
@@ -84374,44 +84351,81 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 13,
-                "label": "false major",
+                "cluster_id": 21,
+                "label": "administration multiple",
                 "size": 5,
                 "post_ids": [
-                  1040,
-                  1039,
-                  1167,
-                  1221,
-                  1377
+                  1057,
+                  1012,
+                  1011,
+                  1116,
+                  1172
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 30,
-                "label": "delimitation america",
-                "size": 4,
+                "cluster_id": 28,
+                "label": "reshaped electoral",
+                "size": 5,
                 "post_ids": [
                   1074,
                   1109,
+                  1130,
                   1311,
                   1431
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 26,
-                "label": "pure simple",
+                "cluster_id": 27,
+                "label": "party registration",
                 "size": 4,
                 "post_ids": [
-                  1117,
-                  1149,
-                  1313,
-                  1385
+                  998,
+                  1022,
+                  1097,
+                  1161
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 24,
+                "cluster_id": 29,
+                "label": "lose control",
+                "size": 4,
+                "post_ids": [
+                  1451,
+                  1295,
+                  1286,
+                  1393
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 26,
+                "label": "sabato looks",
+                "size": 4,
+                "post_ids": [
+                  1030,
+                  1175,
+                  1174,
+                  1293
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 33,
+                "label": "wow scott",
+                "size": 4,
+                "post_ids": [
+                  906,
+                  1133,
+                  1341,
+                  1391
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 30,
                 "label": "exposed globalists",
                 "size": 3,
                 "post_ids": [
@@ -84422,18 +84436,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 29,
-                "label": "administration multiple",
-                "size": 3,
-                "post_ids": [
-                  1011,
-                  1116,
-                  1172
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 28,
+                "cluster_id": 25,
                 "label": "tren aragua",
                 "size": 3,
                 "post_ids": [
@@ -84444,17 +84447,12 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 10,
-                "label": "eliminate filibuster",
-                "size": 7,
+                "cluster_id": 32,
+                "label": "department reportedly",
+                "size": 2,
                 "post_ids": [
-                  1025,
-                  2793,
-                  2792,
-                  1106,
-                  1205,
-                  1227,
-                  1289
+                  977,
+                  992
                 ],
                 "emerging_theme": false
               }
@@ -84463,35 +84461,10 @@
           },
           {
             "week": "2026-W25",
-            "cluster_count": 27,
+            "cluster_count": 29,
             "clusters": [
               {
-                "cluster_id": 10,
-                "label": "executive order",
-                "size": 17,
-                "post_ids": [
-                  1427,
-                  1426,
-                  1448,
-                  1471,
-                  1498,
-                  1487,
-                  1523,
-                  1591,
-                  1642,
-                  1718,
-                  1710,
-                  1743,
-                  1772,
-                  1808,
-                  1798,
-                  1848,
-                  1847
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 28,
+                "cluster_id": 30,
                 "label": "tolerate pathetic",
                 "size": 16,
                 "post_ids": [
@@ -84536,6 +84509,46 @@
                 "emerging_theme": true
               },
               {
+                "cluster_id": 13,
+                "label": "defends citizenship",
+                "size": 13,
+                "post_ids": [
+                  1427,
+                  1426,
+                  1448,
+                  1471,
+                  1498,
+                  1487,
+                  1523,
+                  1710,
+                  1772,
+                  1808,
+                  1798,
+                  1848,
+                  1847
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 24,
+                "label": "funding anti",
+                "size": 11,
+                "post_ids": [
+                  1586,
+                  1577,
+                  1600,
+                  2867,
+                  1655,
+                  1762,
+                  1754,
+                  1805,
+                  1804,
+                  1818,
+                  1817
+                ],
+                "emerging_theme": true
+              },
+              {
                 "cluster_id": 2,
                 "label": "freedom democrat",
                 "size": 10,
@@ -84554,25 +84567,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 16,
-                "label": "unproven minnesota",
-                "size": 10,
-                "post_ids": [
-                  1445,
-                  1499,
-                  1497,
-                  1496,
-                  1495,
-                  1549,
-                  1546,
-                  1583,
-                  1836,
-                  1842
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 11,
+                "cluster_id": 14,
                 "label": "data analyst",
                 "size": 9,
                 "post_ids": [
@@ -84589,57 +84584,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 9,
-                "label": "gains democratic",
-                "size": 9,
-                "post_ids": [
-                  1438,
-                  1456,
-                  1514,
-                  1513,
-                  1528,
-                  1527,
-                  1568,
-                  1654,
-                  1692
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 18,
-                "label": "red wave",
-                "size": 8,
-                "post_ids": [
-                  1455,
-                  1586,
-                  1577,
-                  2867,
-                  1762,
-                  1754,
-                  1818,
-                  1817
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 5,
-                "label": "south korea",
-                "size": 8,
-                "post_ids": [
-                  1569,
-                  1599,
-                  1664,
-                  1662,
-                  1698,
-                  1697,
-                  1726,
-                  1775
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 19,
-                "label": "pig bonespurdraftdodger",
+                "cluster_id": 15,
+                "label": "loves winners",
                 "size": 7,
                 "post_ids": [
                   1434,
@@ -84653,7 +84599,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 7,
+                "cluster_id": 9,
                 "label": "gop senate",
                 "size": 7,
                 "post_ids": [
@@ -84668,37 +84614,52 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 14,
-                "label": "fucking retard",
+                "cluster_id": 25,
+                "label": "lack intellectual",
                 "size": 7,
                 "post_ids": [
-                  1417,
-                  1453,
-                  1548,
-                  1796,
-                  1801,
-                  1825,
-                  1844
+                  1477,
+                  1684,
+                  1706,
+                  1800,
+                  1834,
+                  1833,
+                  1870
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 6,
-                "label": "odds likelyhood",
+                "cluster_id": 7,
+                "label": "south korea",
+                "size": 7,
+                "post_ids": [
+                  1569,
+                  1599,
+                  1662,
+                  1698,
+                  1697,
+                  1726,
+                  1775
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 8,
+                "label": "add puerto",
                 "size": 7,
                 "post_ids": [
                   1444,
                   1478,
+                  1525,
                   1594,
                   1595,
-                  1705,
                   1763,
                   1831
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 8,
+                "cluster_id": 19,
                 "label": "reveals president",
                 "size": 6,
                 "post_ids": [
@@ -84712,49 +84673,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 17,
-                "label": "lack intellectual",
-                "size": 6,
-                "post_ids": [
-                  1477,
-                  1706,
-                  1800,
-                  1834,
-                  1833,
-                  1870
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 13,
-                "label": "chair bob",
-                "size": 6,
-                "post_ids": [
-                  1475,
-                  1474,
-                  1473,
-                  1488,
-                  1589,
-                  1606
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 4,
-                "label": "charlie kirk",
-                "size": 6,
-                "post_ids": [
-                  1621,
-                  1721,
-                  1715,
-                  1734,
-                  1787,
-                  1851
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 12,
+                "cluster_id": 6,
                 "label": "trump's strategy",
                 "size": 6,
                 "post_ids": [
@@ -84768,34 +84687,73 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 15,
-                "label": "presidential election",
+                "cluster_id": 5,
+                "label": "kirk truth",
                 "size": 6,
                 "post_ids": [
-                  1565,
-                  1607,
-                  1632,
-                  1639,
-                  1746,
-                  1840
+                  1621,
+                  1721,
+                  1715,
+                  1734,
+                  1787,
+                  1851
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 24,
+                "cluster_id": 12,
+                "label": "presidential election",
+                "size": 5,
+                "post_ids": [
+                  1490,
+                  1553,
+                  1544,
+                  1610,
+                  1816
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 10,
+                "label": "nancy delay",
+                "size": 5,
+                "post_ids": [
+                  1417,
+                  1453,
+                  1796,
+                  1801,
+                  1844
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 23,
+                "label": "sec markwayne",
+                "size": 5,
+                "post_ids": [
+                  1445,
+                  1546,
+                  1583,
+                  1836,
+                  1842
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 22,
                 "label": "mike collins",
                 "size": 5,
                 "post_ids": [
                   1493,
-                  1525,
                   1631,
                   1672,
+                  1705,
                   1802
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 27,
+                "cluster_id": 26,
                 "label": "spirit liberty",
                 "size": 4,
                 "post_ids": [
@@ -84807,19 +84765,54 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 26,
-                "label": "funding anti",
+                "cluster_id": 28,
+                "label": "unproven minnesota",
                 "size": 4,
                 "post_ids": [
-                  1600,
-                  1655,
-                  1805,
-                  1804
+                  1499,
+                  1497,
+                  1496,
+                  1549
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 22,
+                "cluster_id": 29,
+                "label": "gains democratic",
+                "size": 4,
+                "post_ids": [
+                  1438,
+                  1528,
+                  1527,
+                  1568
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 4,
+                "label": "plans active",
+                "size": 4,
+                "post_ids": [
+                  1606,
+                  1753,
+                  1777,
+                  1797
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 18,
+                "label": "chair bob",
+                "size": 3,
+                "post_ids": [
+                  1475,
+                  1474,
+                  1473
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 20,
                 "label": "regular americans",
                 "size": 3,
                 "post_ids": [
@@ -84830,7 +84823,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 23,
+                "cluster_id": 21,
                 "label": "everyday conservative",
                 "size": 3,
                 "post_ids": [
@@ -84841,18 +84834,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 25,
-                "label": "midterm elections",
-                "size": 3,
-                "post_ids": [
-                  1753,
-                  1777,
-                  1797
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 29,
+                "cluster_id": 31,
                 "label": "facistnazi pig bonespur",
                 "size": 3,
                 "post_ids": [
@@ -84861,6 +84843,43 @@
                   1690
                 ],
                 "emerging_theme": true
+              },
+              {
+                "cluster_id": 27,
+                "label": "white house",
+                "size": 29,
+                "post_ids": [
+                  1422,
+                  1437,
+                  1455,
+                  1472,
+                  1481,
+                  1504,
+                  1538,
+                  1565,
+                  1592,
+                  1587,
+                  1578,
+                  1598,
+                  1608,
+                  1607,
+                  1632,
+                  1630,
+                  1625,
+                  1644,
+                  1640,
+                  1639,
+                  1680,
+                  1746,
+                  1752,
+                  1811,
+                  1830,
+                  1820,
+                  1819,
+                  1840,
+                  1832
+                ],
+                "emerging_theme": false
               },
               {
                 "cluster_id": 3,
@@ -84872,10 +84891,26 @@
                   1512,
                   1648,
                   1645,
+                  1702,
                   1737,
                   1736,
-                  1776,
                   1792
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 11,
+                "label": "hezbollah rockets",
+                "size": 8,
+                "post_ids": [
+                  1418,
+                  1495,
+                  1502,
+                  1501,
+                  1555,
+                  1543,
+                  1641,
+                  1688
                 ],
                 "emerging_theme": false
               }
@@ -84884,10 +84919,10 @@
           },
           {
             "week": "2026-W26",
-            "cluster_count": 36,
+            "cluster_count": 35,
             "clusters": [
               {
-                "cluster_id": 37,
+                "cluster_id": 36,
                 "label": "executive order erik",
                 "size": 29,
                 "post_ids": [
@@ -84926,10 +84961,9 @@
               {
                 "cluster_id": 0,
                 "label": "silicon valley",
-                "size": 23,
+                "size": 22,
                 "post_ids": [
                   1989,
-                  2014,
                   2437,
                   2341,
                   2340,
@@ -84955,14 +84989,13 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 8,
+                "cluster_id": 9,
                 "label": "farm bureau",
-                "size": 14,
+                "size": 13,
                 "post_ids": [
-                  1959,
                   2124,
+                  2938,
                   2125,
-                  2188,
                   2187,
                   2981,
                   2416,
@@ -84977,10 +85010,11 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 19,
+                "cluster_id": 17,
                 "label": "largest individual",
-                "size": 11,
+                "size": 12,
                 "post_ids": [
+                  2165,
                   2448,
                   2174,
                   2303,
@@ -84996,8 +85030,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 12,
-                "label": "taxilogicforall save",
+                "cluster_id": 11,
+                "label": "contagious bring",
                 "size": 11,
                 "post_ids": [
                   1881,
@@ -85015,7 +85049,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 21,
+                "cluster_id": 19,
                 "label": "patriot contributes",
                 "size": 10,
                 "post_ids": [
@@ -85033,40 +85067,56 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 22,
-                "label": "million support",
-                "size": 9,
-                "post_ids": [
-                  2151,
-                  2148,
-                  2196,
-                  2383,
-                  2415,
-                  2408,
-                  2407,
-                  2404,
-                  2936
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 3,
+                "cluster_id": 1,
                 "label": "magna carta",
-                "size": 8,
+                "size": 9,
                 "post_ids": [
                   1859,
                   1858,
                   1856,
-                  1889,
                   1928,
                   1925,
+                  2177,
                   2170,
+                  2242,
                   2286
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 27,
+                "cluster_id": 21,
+                "label": "thom tillis",
+                "size": 8,
+                "post_ids": [
+                  2159,
+                  2946,
+                  2184,
+                  2181,
+                  2172,
+                  2191,
+                  2239,
+                  2405
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 8,
+                "label": "georgia governor",
+                "size": 8,
+                "post_ids": [
+                  1911,
+                  1935,
+                  1959,
+                  1948,
+                  1972,
+                  1996,
+                  1995,
+                  2114
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 25,
                 "label": "voting secure",
                 "size": 7,
                 "post_ids": [
@@ -85081,7 +85131,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 25,
+                "cluster_id": 23,
                 "label": "hammer congress",
                 "size": 7,
                 "post_ids": [
@@ -85092,51 +85142,6 @@
                   2083,
                   2102,
                   2132
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 23,
-                "label": "thom tillis",
-                "size": 7,
-                "post_ids": [
-                  2159,
-                  2946,
-                  2184,
-                  2181,
-                  2191,
-                  2239,
-                  2405
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 17,
-                "label": "democratic socialists",
-                "size": 7,
-                "post_ids": [
-                  2079,
-                  2214,
-                  2252,
-                  2251,
-                  2357,
-                  2349,
-                  2346
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 29,
-                "label": "liveprayer tuesday",
-                "size": 7,
-                "post_ids": [
-                  1919,
-                  1968,
-                  2002,
-                  2094,
-                  2093,
-                  2177,
-                  2417
                 ],
                 "emerging_theme": true
               },
@@ -85156,7 +85161,22 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 2,
+                "cluster_id": 15,
+                "label": "sanctuary cities",
+                "size": 7,
+                "post_ids": [
+                  1963,
+                  2079,
+                  2141,
+                  2252,
+                  2251,
+                  2357,
+                  2350
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 3,
                 "label": "republican beautiful",
                 "size": 6,
                 "post_ids": [
@@ -85170,35 +85190,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 24,
-                "label": "deep state",
-                "size": 6,
-                "post_ids": [
-                  2392,
-                  2110,
-                  2248,
-                  2257,
-                  2247,
-                  2259
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 18,
-                "label": "tina peters",
-                "size": 6,
-                "post_ids": [
-                  1963,
-                  2977,
-                  2101,
-                  2121,
-                  2173,
-                  2260
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 32,
+                "cluster_id": 29,
                 "label": "prediction markets",
                 "size": 6,
                 "post_ids": [
@@ -85207,35 +85199,7 @@
                   2273,
                   2318,
                   2316,
-                  2361
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 15,
-                "label": "uselection politics",
-                "size": 6,
-                "post_ids": [
-                  2067,
-                  1990,
-                  2092,
-                  2258,
-                  2347,
                   2364
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 4,
-                "label": "southern lebanon",
-                "size": 6,
-                "post_ids": [
-                  1854,
-                  1872,
-                  1921,
-                  1916,
-                  1988,
-                  2289
                 ],
                 "emerging_theme": true
               },
@@ -85253,7 +85217,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 13,
+                "cluster_id": 12,
                 "label": "launch program",
                 "size": 5,
                 "post_ids": [
@@ -85266,8 +85230,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 14,
-                "label": "tax money",
+                "cluster_id": 13,
+                "label": "leaving office",
                 "size": 5,
                 "post_ids": [
                   2311,
@@ -85280,6 +85244,32 @@
               },
               {
                 "cluster_id": 20,
+                "label": "reportedly given",
+                "size": 5,
+                "post_ids": [
+                  2151,
+                  2148,
+                  2196,
+                  2383,
+                  2936
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 22,
+                "label": "deep state",
+                "size": 5,
+                "post_ids": [
+                  2110,
+                  2248,
+                  2257,
+                  2247,
+                  2259
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 18,
                 "label": "ballot harvesting",
                 "size": 5,
                 "post_ids": [
@@ -85292,15 +85282,41 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 10,
-                "label": "georgia governor",
+                "cluster_id": 30,
+                "label": "tina peters",
                 "size": 5,
                 "post_ids": [
-                  1948,
-                  1972,
-                  1996,
-                  1995,
-                  2114
+                  2977,
+                  2101,
+                  2121,
+                  2173,
+                  2260
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 28,
+                "label": "likely outcome",
+                "size": 5,
+                "post_ids": [
+                  2563,
+                  2205,
+                  2198,
+                  2292,
+                  2361
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 26,
+                "label": "subpoena power",
+                "size": 5,
+                "post_ids": [
+                  1872,
+                  1988,
+                  2235,
+                  2264,
+                  2530
                 ],
                 "emerging_theme": true
               },
@@ -85318,7 +85334,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 36,
+                "cluster_id": 35,
                 "label": "executive order",
                 "size": 4,
                 "post_ids": [
@@ -85330,19 +85346,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 31,
-                "label": "likely outcome",
-                "size": 4,
-                "post_ids": [
-                  2563,
-                  2205,
-                  2198,
-                  2292
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 11,
+                "cluster_id": 10,
                 "label": "johnson vows",
                 "size": 4,
                 "post_ids": [
@@ -85354,7 +85358,19 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 30,
+                "cluster_id": 14,
+                "label": "uselection politics",
+                "size": 4,
+                "post_ids": [
+                  2067,
+                  1990,
+                  2092,
+                  2258
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 27,
                 "label": "economic victory",
                 "size": 4,
                 "post_ids": [
@@ -85366,19 +85382,19 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 9,
-                "label": "administration multiple",
+                "cluster_id": 4,
+                "label": "southern lebanon",
                 "size": 4,
                 "post_ids": [
-                  1911,
-                  1935,
-                  1964,
-                  2179
+                  1854,
+                  1921,
+                  1916,
+                  2289
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 34,
+                "cluster_id": 33,
                 "label": "wow scott",
                 "size": 3,
                 "post_ids": [
@@ -85389,7 +85405,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 35,
+                "cluster_id": 34,
                 "label": "midterms wapo",
                 "size": 3,
                 "post_ids": [
@@ -85400,18 +85416,18 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 28,
-                "label": "subpoena power",
+                "cluster_id": 31,
+                "label": "democratic socialists",
                 "size": 3,
                 "post_ids": [
-                  2235,
-                  2264,
-                  2530
+                  2214,
+                  2349,
+                  2346
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 1,
+                "cluster_id": 2,
                 "label": "eliminate filibuster",
                 "size": 8,
                 "post_ids": [
@@ -85445,10 +85461,10 @@
           },
           {
             "week": "2026-W27",
-            "cluster_count": 17,
+            "cluster_count": 15,
             "clusters": [
               {
-                "cluster_id": 16,
+                "cluster_id": 14,
                 "label": "nationwide voter",
                 "size": 21,
                 "post_ids": [
@@ -85477,9 +85493,9 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 6,
+                "cluster_id": 5,
                 "label": "shut government",
-                "size": 17,
+                "size": 15,
                 "post_ids": [
                   2621,
                   2626,
@@ -85495,16 +85511,14 @@
                   2604,
                   2634,
                   2644,
-                  2672,
-                  2677,
-                  2692
+                  2672
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 12,
+                "cluster_id": 9,
                 "label": "sexual abuse",
-                "size": 13,
+                "size": 15,
                 "post_ids": [
                   2451,
                   2469,
@@ -85513,32 +85527,14 @@
                   2454,
                   2637,
                   2571,
-                  2499,
                   2479,
+                  2476,
                   2654,
-                  2542,
+                  2523,
+                  2496,
+                  2511,
                   2588,
                   2522
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 7,
-                "label": "mail ballots",
-                "size": 12,
-                "post_ids": [
-                  2466,
-                  2480,
-                  2500,
-                  2520,
-                  2511,
-                  2596,
-                  2555,
-                  2628,
-                  2606,
-                  2670,
-                  2773,
-                  2671
                 ],
                 "emerging_theme": true
               },
@@ -85561,7 +85557,24 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 9,
+                "cluster_id": 2,
+                "label": "ballot harvesting",
+                "size": 9,
+                "post_ids": [
+                  2535,
+                  2441,
+                  2470,
+                  2529,
+                  2586,
+                  2599,
+                  2577,
+                  2657,
+                  2687
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 7,
                 "label": "save america",
                 "size": 9,
                 "post_ids": [
@@ -85574,6 +85587,23 @@
                   2690,
                   2675,
                   2681
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 6,
+                "label": "open border",
+                "size": 9,
+                "post_ids": [
+                  2517,
+                  2459,
+                  2506,
+                  2516,
+                  2549,
+                  2544,
+                  2620,
+                  2669,
+                  2952
                 ],
                 "emerging_theme": true
               },
@@ -85594,22 +85624,6 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 2,
-                "label": "ballot harvesting",
-                "size": 8,
-                "post_ids": [
-                  2535,
-                  2441,
-                  2470,
-                  2529,
-                  2586,
-                  2599,
-                  2577,
-                  2657
-                ],
-                "emerging_theme": true
-              },
-              {
                 "cluster_id": 8,
                 "label": "birthright citizenship",
                 "size": 8,
@@ -85622,20 +85636,6 @@
                   2631,
                   2662,
                   2642
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 4,
-                "label": "lake geneva",
-                "size": 6,
-                "post_ids": [
-                  2465,
-                  2702,
-                  2622,
-                  2652,
-                  2674,
-                  2965
                 ],
                 "emerging_theme": true
               },
@@ -85653,7 +85653,20 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 15,
+                "cluster_id": 10,
+                "label": "ruling mullin",
+                "size": 5,
+                "post_ids": [
+                  2433,
+                  2435,
+                  2434,
+                  2558,
+                  2670
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 11,
                 "label": "political parties",
                 "size": 5,
                 "post_ids": [
@@ -85666,7 +85679,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 5,
+                "cluster_id": 4,
                 "label": "monumental defeat",
                 "size": 5,
                 "post_ids": [
@@ -85679,19 +85692,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 11,
-                "label": "ruling mullin",
-                "size": 4,
-                "post_ids": [
-                  2433,
-                  2435,
-                  2434,
-                  2558
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 14,
+                "cluster_id": 12,
                 "label": "election integrity",
                 "size": 3,
                 "post_ids": [
@@ -85702,47 +85703,26 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 17,
-                "label": "cause removal",
+                "cluster_id": 15,
+                "label": "hakeem jeffries",
                 "size": 3,
                 "post_ids": [
-                  2476,
-                  2523,
-                  2496
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 10,
-                "label": "hakeem jeffries",
-                "size": 13,
-                "post_ids": [
-                  2459,
-                  2506,
                   2934,
                   2484,
-                  2516,
-                  2682,
-                  2594,
-                  2576,
-                  2549,
-                  2544,
-                  2620,
-                  2669,
-                  2952
+                  2682
                 ],
-                "emerging_theme": false
+                "emerging_theme": true
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W28",
-            "cluster_count": 22,
+            "cluster_count": 21,
             "clusters": [
               {
-                "cluster_id": 6,
-                "label": "commission eac",
+                "cluster_id": 4,
+                "label": "executive order",
                 "size": 16,
                 "post_ids": [
                   2907,
@@ -85765,7 +85745,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 11,
+                "cluster_id": 13,
                 "label": "election officer",
                 "size": 12,
                 "post_ids": [
@@ -85785,7 +85765,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 19,
+                "cluster_id": 17,
                 "label": "court minus",
                 "size": 10,
                 "post_ids": [
@@ -85803,7 +85783,43 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 13,
+                "cluster_id": 8,
+                "label": "battle freedom",
+                "size": 10,
+                "post_ids": [
+                  2694,
+                  2901,
+                  2698,
+                  2898,
+                  3000,
+                  2897,
+                  2812,
+                  2827,
+                  2906,
+                  3002
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 5,
+                "label": "dominion list",
+                "size": 10,
+                "post_ids": [
+                  2712,
+                  2724,
+                  2725,
+                  2737,
+                  2927,
+                  2855,
+                  3001,
+                  2994,
+                  3087,
+                  3172
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 15,
                 "label": "soon leader",
                 "size": 9,
                 "post_ids": [
@@ -85816,23 +85832,6 @@
                   2783,
                   2797,
                   3004
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 5,
-                "label": "dominion list",
-                "size": 9,
-                "post_ids": [
-                  2712,
-                  2724,
-                  2725,
-                  2737,
-                  2927,
-                  2855,
-                  3001,
-                  2994,
-                  3172
                 ],
                 "emerging_theme": true
               },
@@ -85853,21 +85852,21 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 14,
+                "cluster_id": 16,
                 "label": "red wave",
                 "size": 6,
                 "post_ids": [
-                  2698,
                   2900,
+                  2769,
+                  2899,
                   2940,
                   2896,
-                  2906,
-                  3002
+                  2895
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 10,
+                "cluster_id": 9,
                 "label": "term produced",
                 "size": 5,
                 "post_ids": [
@@ -85880,7 +85879,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
+                "cluster_id": 12,
                 "label": "party win",
                 "size": 5,
                 "post_ids": [
@@ -85893,7 +85892,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
+                "cluster_id": 11,
                 "label": "midterms shift",
                 "size": 5,
                 "post_ids": [
@@ -85906,20 +85905,20 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 9,
-                "label": "national constitution",
+                "cluster_id": 3,
+                "label": "approve disapprove",
                 "size": 5,
                 "post_ids": [
-                  2757,
-                  2860,
-                  2764,
-                  3142,
-                  2924
+                  2803,
+                  2988,
+                  3003,
+                  2993,
+                  2991
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 8,
+                "cluster_id": 7,
                 "label": "david clements",
                 "size": 5,
                 "post_ids": [
@@ -85932,7 +85931,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 17,
+                "cluster_id": 18,
                 "label": "breakdown ideological",
                 "size": 5,
                 "post_ids": [
@@ -85945,15 +85944,15 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 15,
-                "label": "firing fec",
+                "cluster_id": 6,
+                "label": "stop trump",
                 "size": 5,
                 "post_ids": [
-                  2901,
-                  2898,
-                  3000,
-                  2812,
-                  2840
+                  2742,
+                  2794,
+                  2904,
+                  2905,
+                  2915
                 ],
                 "emerging_theme": true
               },
@@ -85971,7 +85970,19 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 18,
+                "cluster_id": 10,
+                "label": "national constitution",
+                "size": 4,
+                "post_ids": [
+                  2757,
+                  2860,
+                  2764,
+                  3142
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 19,
                 "label": "remove independent",
                 "size": 4,
                 "post_ids": [
@@ -85995,7 +86006,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 12,
+                "cluster_id": 14,
                 "label": "lee senate",
                 "size": 3,
                 "post_ids": [
@@ -86006,53 +86017,12 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 16,
-                "label": "republican yes",
-                "size": 3,
-                "post_ids": [
-                  2794,
-                  2904,
-                  2905
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 21,
-                "label": "primaries cracks",
-                "size": 3,
-                "post_ids": [
-                  2899,
-                  2897,
-                  2895
-                ],
-                "emerging_theme": true
-              },
-              {
                 "cluster_id": 1,
                 "label": "congress pass",
-                "size": 3,
+                "size": 2,
                 "post_ids": [
                   2722,
-                  2854,
                   2985
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 7,
-                "label": "days presidential",
-                "size": 10,
-                "post_ids": [
-                  2875,
-                  2742,
-                  2768,
-                  2776,
-                  2771,
-                  2778,
-                  2808,
-                  2827,
-                  2909,
-                  2915
                 ],
                 "emerging_theme": false
               }
@@ -86061,10 +86031,10 @@
           },
           {
             "week": "2026-W29",
-            "cluster_count": 19,
+            "cluster_count": 18,
             "clusters": [
               {
-                "cluster_id": 8,
+                "cluster_id": 9,
                 "label": "address nation",
                 "size": 15,
                 "post_ids": [
@@ -86087,7 +86057,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 10,
+                "cluster_id": 11,
                 "label": "summer recess",
                 "size": 12,
                 "post_ids": [
@@ -86109,7 +86079,7 @@
               {
                 "cluster_id": 2,
                 "label": "points enthusiastic",
-                "size": 11,
+                "size": 10,
                 "post_ids": [
                   2995,
                   2990,
@@ -86120,31 +86090,12 @@
                   2996,
                   3098,
                   3019,
-                  3110,
-                  3490
+                  3110
                 ],
                 "emerging_theme": true
               },
               {
                 "cluster_id": 3,
-                "label": "ieepa tariffs",
-                "size": 10,
-                "post_ids": [
-                  3116,
-                  3061,
-                  3062,
-                  3074,
-                  3237,
-                  3147,
-                  3174,
-                  3190,
-                  3205,
-                  3344
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 4,
                 "label": "open border",
                 "size": 9,
                 "post_ids": [
@@ -86161,24 +86112,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 5,
-                "label": "rino chris",
-                "size": 9,
-                "post_ids": [
-                  3012,
-                  3338,
-                  3032,
-                  3119,
-                  3112,
-                  3111,
-                  3122,
-                  3219,
-                  3175
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 7,
+                "cluster_id": 8,
                 "label": "power elections",
                 "size": 8,
                 "post_ids": [
@@ -86194,7 +86128,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 11,
+                "cluster_id": 12,
                 "label": "senate super",
                 "size": 7,
                 "post_ids": [
@@ -86209,7 +86143,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 13,
+                "cluster_id": 5,
                 "label": "tps parole",
                 "size": 7,
                 "post_ids": [
@@ -86224,7 +86158,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 9,
+                "cluster_id": 10,
                 "label": "massive victories",
                 "size": 7,
                 "post_ids": [
@@ -86254,7 +86188,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 6,
+                "cluster_id": 7,
                 "label": "proposed rule",
                 "size": 6,
                 "post_ids": [
@@ -86294,6 +86228,19 @@
                 "emerging_theme": true
               },
               {
+                "cluster_id": 4,
+                "label": "corporate health",
+                "size": 5,
+                "post_ids": [
+                  3116,
+                  3074,
+                  3237,
+                  3190,
+                  3344
+                ],
+                "emerging_theme": true
+              },
+              {
                 "cluster_id": 15,
                 "label": "party win",
                 "size": 4,
@@ -86317,18 +86264,26 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 18,
-                "label": "group survival",
-                "size": 3,
+                "cluster_id": 6,
+                "label": "rino chris",
+                "size": 11,
                 "post_ids": [
+                  3012,
+                  3338,
+                  3032,
                   3071,
+                  3119,
+                  3112,
+                  3111,
+                  3122,
+                  3219,
                   3211,
-                  3326
+                  3175
                 ],
-                "emerging_theme": true
+                "emerging_theme": false
               },
               {
-                "cluster_id": 12,
+                "cluster_id": 13,
                 "label": "july registered",
                 "size": 2,
                 "post_ids": [
@@ -86355,15 +86310,14 @@
             "cluster_count": 17,
             "clusters": [
               {
-                "cluster_id": 7,
+                "cluster_id": 6,
                 "label": "forced labor",
-                "size": 11,
+                "size": 10,
                 "post_ids": [
                   3528,
-                  3422,
                   3325,
                   3386,
-                  3421,
+                  3384,
                   3383,
                   3413,
                   3468,
@@ -86374,9 +86328,9 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 8,
-                "label": "june supreme",
-                "size": 9,
+                "cluster_id": 7,
+                "label": "haitians springfield",
+                "size": 8,
                 "post_ids": [
                   3301,
                   3300,
@@ -86385,25 +86339,7 @@
                   3395,
                   3363,
                   3329,
-                  3382,
-                  3384
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 6,
-                "label": "red wave",
-                "size": 9,
-                "post_ids": [
-                  3403,
-                  3511,
-                  3425,
-                  3437,
-                  3462,
-                  3570,
-                  3475,
-                  3476,
-                  3547
+                  3382
                 ],
                 "emerging_theme": true
               },
@@ -86423,21 +86359,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
-                "label": "minnesota keith",
-                "size": 6,
-                "post_ids": [
-                  3334,
-                  3496,
-                  3376,
-                  3452,
-                  3523,
-                  3614
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 11,
+                "cluster_id": 10,
                 "label": "federal elections",
                 "size": 6,
                 "post_ids": [
@@ -86451,22 +86373,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
-                "label": "karoline leavitt",
-                "size": 6,
-                "post_ids": [
-                  3527,
-                  3445,
-                  3491,
-                  3469,
-                  3492,
-                  3715
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 10,
-                "label": "midterms save",
+                "cluster_id": 9,
+                "label": "isn passed",
                 "size": 5,
                 "post_ids": [
                   3625,
@@ -86491,34 +86399,34 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 9,
-                "label": "hold majority",
+                "cluster_id": 4,
+                "label": "minnesota keith",
                 "size": 5,
                 "post_ids": [
-                  3399,
-                  3515,
-                  3658,
-                  3473,
-                  3539
+                  3334,
+                  3496,
+                  3376,
+                  3452,
+                  3614
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 0,
-                "label": "fbi reopen",
+                "cluster_id": 1,
+                "label": "karoline leavitt",
                 "size": 5,
                 "post_ids": [
-                  3458,
-                  3564,
-                  3534,
-                  3428,
-                  3536
+                  3527,
+                  3445,
+                  3491,
+                  3469,
+                  3715
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 12,
-                "label": "mail voting",
+                "cluster_id": 11,
+                "label": "voter fraud",
                 "size": 4,
                 "post_ids": [
                   3526,
@@ -86529,7 +86437,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 16,
+                "cluster_id": 15,
                 "label": "double cash",
                 "size": 4,
                 "post_ids": [
@@ -86541,7 +86449,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 1,
+                "cluster_id": 0,
                 "label": "deep state",
                 "size": 3,
                 "post_ids": [
@@ -86552,8 +86460,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 13,
-                "label": "win house",
+                "cluster_id": 12,
+                "label": "parentforderivative unitedstates",
                 "size": 3,
                 "post_ids": [
                   3481,
@@ -86563,7 +86471,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 15,
+                "cluster_id": 14,
                 "label": "piie analysis",
                 "size": 3,
                 "post_ids": [
@@ -86574,7 +86482,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 14,
+                "cluster_id": 13,
                 "label": "balance power",
                 "size": 3,
                 "post_ids": [
@@ -86583,78 +86491,158 @@
                   3670
                 ],
                 "emerging_theme": true
+              },
+              {
+                "cluster_id": 3,
+                "label": "red wave",
+                "size": 10,
+                "post_ids": [
+                  3299,
+                  3393,
+                  3373,
+                  3403,
+                  3449,
+                  3523,
+                  3437,
+                  3475,
+                  3476,
+                  3547
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 16,
+                "label": "world cup",
+                "size": 2,
+                "post_ids": [
+                  3422,
+                  3421
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 8,
+                "label": "hold majority",
+                "size": 5,
+                "post_ids": [
+                  3399,
+                  3515,
+                  3658,
+                  3473,
+                  3539
+                ],
+                "emerging_theme": true
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W31",
-            "cluster_count": 19,
+            "cluster_count": 16,
             "clusters": [
               {
-                "cluster_id": 8,
-                "label": "fence crossings",
-                "size": 19,
+                "cluster_id": 6,
+                "label": "hot returns",
+                "size": 26,
                 "post_ids": [
                   3711,
                   3691,
                   3656,
                   3719,
                   3689,
-                  3660,
-                  3692,
+                  3655,
                   3779,
+                  3659,
                   3707,
                   3685,
-                  3710,
-                  3687,
                   3671,
+                  3690,
                   3688,
+                  3686,
+                  3709,
                   3712,
+                  3708,
                   3713,
+                  3706,
                   3777,
+                  3776,
                   3757,
-                  3778
+                  3756,
+                  3753,
+                  3778,
+                  3755
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
-                "label": "america pac",
-                "size": 17,
+                "cluster_id": 5,
+                "label": "digital advertising",
+                "size": 14,
                 "post_ids": [
-                  3632,
                   3642,
                   3674,
                   3730,
                   3703,
                   3694,
-                  3701,
                   3724,
-                  3680,
                   3672,
                   3662,
                   3744,
                   3700,
                   3742,
                   3738,
-                  3762,
-                  3760
+                  3760,
+                  3784
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 16,
-                "label": "exploiting june",
+                "cluster_id": 8,
+                "label": "ieepa authorize",
+                "size": 11,
+                "post_ids": [
+                  3573,
+                  3579,
+                  3654,
+                  3577,
+                  3610,
+                  3611,
+                  3646,
+                  3740,
+                  3754,
+                  3752,
+                  3761
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 1,
+                "label": "election integrity",
+                "size": 8,
+                "post_ids": [
+                  3620,
+                  3602,
+                  3589,
+                  3619,
+                  3792,
+                  3661,
+                  3827,
+                  3826
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 15,
+                "label": "america founding",
                 "size": 7,
                 "post_ids": [
-                  3655,
-                  3659,
-                  3690,
-                  3686,
-                  3709,
-                  3708,
-                  3776
+                  3601,
+                  3586,
+                  3618,
+                  3647,
+                  3728,
+                  3788,
+                  3773
                 ],
                 "emerging_theme": true
               },
@@ -86673,21 +86661,35 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 12,
-                "label": "midterms days",
+                "cluster_id": 2,
+                "label": "national committee",
                 "size": 6,
                 "post_ids": [
-                  3563,
-                  3601,
-                  3651,
-                  3675,
-                  3673,
-                  3767
+                  3561,
+                  3594,
+                  3677,
+                  3681,
+                  3748,
+                  3823
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 2,
+                "cluster_id": 13,
+                "label": "appeals panel",
+                "size": 6,
+                "post_ids": [
+                  3743,
+                  3567,
+                  3608,
+                  3629,
+                  3764,
+                  3803
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 3,
                 "label": "party win",
                 "size": 5,
                 "post_ids": [
@@ -86700,20 +86702,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 9,
-                "label": "isn passed",
-                "size": 5,
-                "post_ids": [
-                  3620,
-                  3619,
-                  3792,
-                  3827,
-                  3826
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 1,
+                "cluster_id": 4,
                 "label": "balance power",
                 "size": 5,
                 "post_ids": [
@@ -86726,7 +86715,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 11,
+                "cluster_id": 12,
                 "label": "strong mayors",
                 "size": 5,
                 "post_ids": [
@@ -86744,67 +86733,28 @@
                 "size": 5,
                 "post_ids": [
                   3596,
+                  3595,
                   3818,
                   3817,
-                  3816,
                   3815
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 5,
-                "label": "national committee",
-                "size": 5,
-                "post_ids": [
-                  3561,
-                  3594,
-                  3677,
-                  3729,
-                  3823
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 13,
-                "label": "appeals panel",
-                "size": 5,
-                "post_ids": [
-                  3743,
-                  3567,
-                  3608,
-                  3764,
-                  3803
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 17,
-                "label": "open civic",
-                "size": 5,
-                "post_ids": [
-                  3603,
-                  3586,
-                  3618,
-                  3728,
-                  3773
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 18,
-                "label": "sea arrivals",
+                "cluster_id": 11,
+                "label": "asylum rules",
                 "size": 4,
                 "post_ids": [
-                  3706,
-                  3756,
-                  3753,
-                  3755
+                  3660,
+                  3692,
+                  3710,
+                  3687
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
-                "label": "million dollars",
+                "cluster_id": 9,
+                "label": "help president",
                 "size": 3,
                 "post_ids": [
                   3702,
@@ -86815,86 +86765,56 @@
               },
               {
                 "cluster_id": 10,
-                "label": "john thune",
+                "label": "field program",
                 "size": 3,
                 "post_ids": [
-                  3602,
-                  3589,
-                  3661
+                  3701,
+                  3680,
+                  3762
                 ],
                 "emerging_theme": true
-              },
-              {
-                "cluster_id": 15,
-                "label": "ieepa authorize",
-                "size": 3,
-                "post_ids": [
-                  3646,
-                  3752,
-                  3761
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 6,
-                "label": "fake news",
-                "size": 12,
-                "post_ids": [
-                  3551,
-                  3595,
-                  3607,
-                  3631,
-                  3629,
-                  3647,
-                  3682,
-                  3727,
-                  3821,
-                  3726,
-                  3788,
-                  3780
-                ],
-                "emerging_theme": false
               },
               {
                 "cluster_id": 7,
-                "label": "roundup federalist",
-                "size": 8,
+                "label": "high court",
+                "size": 9,
                 "post_ids": [
-                  3573,
-                  3579,
-                  3654,
-                  3577,
-                  3610,
-                  3611,
-                  3740,
-                  3754
+                  3551,
+                  3731,
+                  3607,
+                  3816,
+                  3682,
+                  3727,
+                  3821,
+                  3729,
+                  3726
                 ],
-                "emerging_theme": true
+                "emerging_theme": false
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W32",
-            "cluster_count": 10,
+            "cluster_count": 9,
             "clusters": [
               {
-                "cluster_id": 8,
-                "label": "strait hormuz",
+                "cluster_id": 3,
+                "label": "president trump",
                 "size": 6,
                 "post_ids": [
+                  3814,
+                  3783,
                   3813,
-                  3860,
-                  3859,
-                  3858,
-                  3850,
-                  3886
+                  3805,
+                  3886,
+                  3990
                 ],
                 "emerging_theme": true
               },
               {
                 "cluster_id": 1,
-                "label": "court ruling",
+                "label": "importers paid",
                 "size": 5,
                 "post_ids": [
                   3785,
@@ -86906,7 +86826,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 2,
+                "cluster_id": 0,
                 "label": "results sancturary",
                 "size": 5,
                 "post_ids": [
@@ -86919,20 +86839,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
-                "label": "balance power",
-                "size": 4,
-                "post_ids": [
-                  3837,
-                  3836,
-                  3835,
-                  3834
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 7,
-                "label": "june supreme",
+                "cluster_id": 5,
+                "label": "court order",
                 "size": 4,
                 "post_ids": [
                   3799,
@@ -86943,7 +86851,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 6,
+                "cluster_id": 7,
                 "label": "days midterms",
                 "size": 3,
                 "post_ids": [
@@ -86954,8 +86862,19 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 5,
-                "label": "takes summer",
+                "cluster_id": 4,
+                "label": "abdul sayed",
+                "size": 3,
+                "post_ids": [
+                  3893,
+                  3974,
+                  3969
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 6,
+                "label": "legislation blocking",
                 "size": 3,
                 "post_ids": [
                   3786,
@@ -86965,41 +86884,29 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
-                "label": "radical left",
-                "size": 3,
+                "cluster_id": 2,
+                "label": "balance power",
+                "size": 9,
                 "post_ids": [
-                  3783,
-                  3805,
-                  3990
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 0,
-                "label": "senate judiciary",
-                "size": 8,
-                "post_ids": [
-                  3810,
-                  3814,
-                  3864,
+                  3837,
+                  3836,
                   3828,
-                  3893,
+                  3835,
+                  3859,
+                  3834,
+                  3858,
                   3844,
-                  3974,
-                  3969
+                  3899
                 ],
                 "emerging_theme": false
               },
               {
-                "cluster_id": 9,
+                "cluster_id": 8,
                 "label": "peak operational",
-                "size": 6,
+                "size": 4,
                 "post_ids": [
                   3832,
                   3865,
-                  3843,
-                  3899,
                   3892,
                   3926
                 ],
@@ -87013,43 +86920,39 @@
             "cluster_count": 2,
             "clusters": [
               {
-                "cluster_id": 1,
-                "label": "executive order",
-                "size": 4,
-                "post_ids": [
-                  3955,
-                  3995,
-                  3878,
-                  3940
-                ],
-                "emerging_theme": true
-              },
-              {
                 "cluster_id": 0,
-                "label": "days midterms",
-                "size": 9,
+                "label": "louisiana tennessee",
+                "size": 5,
                 "post_ids": [
-                  3970,
                   3884,
-                  3996,
                   3903,
                   3902,
                   3891,
-                  3898,
-                  3989,
-                  3907
+                  3898
                 ],
                 "emerging_theme": false
+              },
+              {
+                "cluster_id": 1,
+                "label": "donald trump",
+                "size": 4,
+                "post_ids": [
+                  3995,
+                  3878,
+                  3940,
+                  3989
+                ],
+                "emerging_theme": true
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W34",
-            "cluster_count": 5,
+            "cluster_count": 4,
             "clusters": [
               {
-                "cluster_id": 3,
+                "cluster_id": 2,
                 "label": "missouri judge",
                 "size": 5,
                 "post_ids": [
@@ -87058,18 +86961,6 @@
                   4036,
                   3922,
                   4730
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 2,
-                "label": "harmeet dhillon",
-                "size": 4,
-                "post_ids": [
-                  3923,
-                  3938,
-                  3963,
-                  3937
                 ],
                 "emerging_theme": true
               },
@@ -87085,11 +86976,30 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
+                "cluster_id": 1,
+                "label": "harmeet dhillon",
+                "size": 10,
+                "post_ids": [
+                  3957,
+                  3897,
+                  3973,
+                  3906,
+                  3873,
+                  3872,
+                  3923,
+                  3938,
+                  3963,
+                  3937
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 3,
                 "label": "win house",
-                "size": 7,
+                "size": 8,
                 "post_ids": [
                   3968,
+                  3883,
                   3964,
                   3994,
                   4037,
@@ -87098,48 +87008,20 @@
                   3936
                 ],
                 "emerging_theme": false
-              },
-              {
-                "cluster_id": 1,
-                "label": "timeline midterms",
-                "size": 7,
-                "post_ids": [
-                  3957,
-                  3897,
-                  3973,
-                  3906,
-                  3873,
-                  3883,
-                  3872
-                ],
-                "emerging_theme": false
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W35",
-            "cluster_count": 4,
+            "cluster_count": 3,
             "clusters": [
-              {
-                "cluster_id": 1,
-                "label": "national security",
-                "size": 4,
-                "post_ids": [
-                  3967,
-                  3896,
-                  3956,
-                  3905
-                ],
-                "emerging_theme": true
-              },
               {
                 "cluster_id": 0,
                 "label": "mail ballot",
-                "size": 10,
+                "size": 9,
                 "post_ids": [
                   3986,
-                  4733,
                   3921,
                   3977,
                   3920,
@@ -87149,45 +87031,50 @@
                   3890,
                   3918
                 ],
-                "emerging_theme": false
+                "emerging_theme": true
               },
               {
-                "cluster_id": 3,
-                "label": "trump dropped",
-                "size": 2,
+                "cluster_id": 1,
+                "label": "national security",
+                "size": 5,
                 "post_ids": [
+                  3967,
+                  3905,
                   4031,
-                  3984
+                  3984,
+                  3992
                 ],
-                "emerging_theme": false
+                "emerging_theme": true
               },
               {
                 "cluster_id": 2,
-                "label": "chatbot election",
-                "size": 2,
+                "label": "presidential election",
+                "size": 3,
                 "post_ids": [
+                  3896,
                   3871,
-                  3992
+                  3956
                 ],
-                "emerging_theme": false
+                "emerging_theme": true
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W36",
-            "cluster_count": 5,
+            "cluster_count": 6,
             "clusters": [
               {
-                "cluster_id": 1,
-                "label": "insider trading",
-                "size": 5,
+                "cluster_id": 5,
+                "label": "i'm gonna",
+                "size": 6,
                 "post_ids": [
-                  3962,
-                  3960,
-                  3895,
-                  3904,
-                  3894
+                  3932,
+                  4026,
+                  4025,
+                  4024,
+                  4023,
+                  3913
                 ],
                 "emerging_theme": true
               },
@@ -87204,7 +87091,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 2,
+                "cluster_id": 1,
                 "label": "america pac",
                 "size": 3,
                 "post_ids": [
@@ -87216,33 +87103,38 @@
               },
               {
                 "cluster_id": 3,
-                "label": "donald trump",
-                "size": 13,
+                "label": "burden sharing",
+                "size": 3,
                 "post_ids": [
                   3917,
-                  3932,
-                  3954,
-                  4026,
-                  4025,
-                  3951,
-                  4024,
-                  3972,
-                  4023,
-                  3913,
                   3946,
-                  3945,
-                  3944
+                  3945
                 ],
-                "emerging_theme": false
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 2,
+                "label": "insider trading",
+                "size": 4,
+                "post_ids": [
+                  3962,
+                  3960,
+                  3904,
+                  3991
+                ],
+                "emerging_theme": true
               },
               {
                 "cluster_id": 4,
                 "label": "defund police",
-                "size": 3,
+                "size": 6,
                 "post_ids": [
+                  3870,
+                  3887,
                   3901,
                   3900,
-                  3914
+                  3914,
+                  3972
                 ],
                 "emerging_theme": true
               }
@@ -87251,49 +87143,14 @@
           },
           {
             "week": "2026-W37",
-            "cluster_count": 6,
+            "cluster_count": 5,
             "clusters": [
-              {
-                "cluster_id": 5,
-                "label": "lake ontario",
-                "size": 11,
-                "post_ids": [
-                  3943,
-                  3942,
-                  3941,
-                  4075,
-                  4074,
-                  4019,
-                  4079,
-                  4073,
-                  4072,
-                  4071,
-                  4070
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 0,
-                "label": "dominion list",
-                "size": 9,
-                "post_ids": [
-                  4057,
-                  4008,
-                  4007,
-                  4006,
-                  4005,
-                  4004,
-                  4003,
-                  3999,
-                  3998
-                ],
-                "emerging_theme": true
-              },
               {
                 "cluster_id": 3,
                 "label": "house senate",
-                "size": 9,
+                "size": 11,
                 "post_ids": [
+                  3908,
                   3978,
                   4076,
                   4016,
@@ -87302,7 +87159,24 @@
                   4010,
                   4009,
                   4002,
+                  4001,
                   4000
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 0,
+                "label": "dominion list",
+                "size": 8,
+                "post_ids": [
+                  4008,
+                  4007,
+                  4006,
+                  4005,
+                  4004,
+                  4003,
+                  3999,
+                  3998
                 ],
                 "emerging_theme": true
               },
@@ -87322,7 +87196,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 2,
+                "cluster_id": 1,
                 "label": "federal court",
                 "size": 6,
                 "post_ids": [
@@ -87336,14 +87210,16 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 1,
-                "label": "mail ballots",
-                "size": 4,
+                "cluster_id": 2,
+                "label": "counter tariffs",
+                "size": 6,
                 "post_ids": [
-                  3910,
-                  3909,
-                  4077,
-                  4039
+                  3943,
+                  3941,
+                  4075,
+                  4074,
+                  4073,
+                  4070
                 ],
                 "emerging_theme": true
               }
@@ -87352,7 +87228,7 @@
           },
           {
             "week": "2026-W38",
-            "cluster_count": 7,
+            "cluster_count": 8,
             "clusters": [
               {
                 "cluster_id": 1,
@@ -87381,24 +87257,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
-                "label": "postal service",
-                "size": 9,
-                "post_ids": [
-                  4109,
-                  4160,
-                  4103,
-                  4102,
-                  4097,
-                  4106,
-                  4090,
-                  4087,
-                  4143
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 2,
+                "cluster_id": 6,
                 "label": "house senate",
                 "size": 7,
                 "post_ids": [
@@ -87414,39 +87273,72 @@
               },
               {
                 "cluster_id": 3,
-                "label": "diesel fuel",
-                "size": 4,
+                "label": "election integrity",
+                "size": 7,
+                "post_ids": [
+                  4050,
+                  4727,
+                  4083,
+                  4726,
+                  4724,
+                  4723,
+                  4110
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 2,
+                "label": "postal service",
+                "size": 7,
+                "post_ids": [
+                  4109,
+                  4160,
+                  4102,
+                  4097,
+                  4090,
+                  4087,
+                  4143
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 5,
+                "label": "donald trump",
+                "size": 5,
                 "post_ids": [
                   4069,
+                  4068,
                   4067,
                   4066,
-                  4108
+                  4094
                 ],
                 "emerging_theme": true
               },
               {
                 "cluster_id": 0,
-                "label": "election integrity",
-                "size": 21,
+                "label": "super pac",
+                "size": 23,
                 "post_ids": [
-                  4050,
-                  4068,
+                  4162,
                   4184,
-                  4727,
-                  4083,
-                  4726,
                   4161,
-                  4724,
+                  4725,
+                  4107,
+                  4159,
                   4212,
+                  4103,
                   4084,
+                  4101,
                   4100,
-                  4094,
+                  4098,
+                  4106,
+                  4092,
+                  4088,
                   4086,
                   4085,
-                  4723,
+                  4151,
                   4510,
                   4149,
-                  4110,
                   4146,
                   4145,
                   4144
@@ -87454,36 +87346,28 @@
                 "emerging_theme": false
               },
               {
-                "cluster_id": 6,
-                "label": "supreme court",
-                "size": 13,
+                "cluster_id": 7,
+                "label": "connecticut biological",
+                "size": 2,
                 "post_ids": [
-                  4082,
-                  4081,
-                  4080,
-                  4162,
-                  4725,
-                  4159,
-                  4158,
                   4157,
-                  4156,
-                  4155,
-                  4152,
-                  4151,
-                  4150
+                  4152
                 ],
                 "emerging_theme": false
               },
               {
-                "cluster_id": 5,
-                "label": "blue wave",
-                "size": 7,
+                "cluster_id": 4,
+                "label": "poll result",
+                "size": 10,
                 "post_ids": [
-                  4107,
-                  4101,
-                  4098,
-                  4092,
-                  4088,
+                  4082,
+                  4081,
+                  4080,
+                  4158,
+                  4156,
+                  4155,
+                  4108,
+                  4150,
                   4504,
                   4112
                 ],
@@ -87494,12 +87378,12 @@
           },
           {
             "week": "2026-W39",
-            "cluster_count": 19,
+            "cluster_count": 20,
             "clusters": [
               {
                 "cluster_id": 12,
                 "label": "trump administration's",
-                "size": 14,
+                "size": 13,
                 "post_ids": [
                   4351,
                   4350,
@@ -87513,45 +87397,47 @@
                   4373,
                   4394,
                   4401,
-                  4398,
                   4468
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 16,
-                "label": "8th circuit",
-                "size": 11,
+                "cluster_id": 14,
+                "label": "forecasters expect",
+                "size": 13,
                 "post_ids": [
-                  4208,
-                  4204,
-                  4200,
-                  4197,
+                  4230,
+                  4229,
+                  4223,
+                  4236,
                   4276,
                   4268,
-                  4287,
-                  4549,
-                  4500,
-                  4380,
-                  4473
+                  4338,
+                  4330,
+                  4544,
+                  4379,
+                  4423,
+                  4414,
+                  4464
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 13,
-                "label": "second amendment",
-                "size": 10,
+                "cluster_id": 11,
+                "label": "november 3rd",
+                "size": 11,
                 "post_ids": [
-                  4232,
-                  4264,
-                  4305,
-                  4304,
-                  4303,
-                  4369,
-                  4412,
-                  4411,
-                  4431,
-                  4430
+                  4135,
+                  4203,
+                  4191,
+                  4244,
+                  4260,
+                  4318,
+                  4352,
+                  4396,
+                  4448,
+                  4467,
+                  4466
                 ],
                 "emerging_theme": true
               },
@@ -87573,9 +87459,26 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 1,
-                "label": "kamala harris",
+                "cluster_id": 13,
+                "label": "second amendment",
                 "size": 9,
+                "post_ids": [
+                  4232,
+                  4264,
+                  4305,
+                  4304,
+                  4303,
+                  4369,
+                  4412,
+                  4431,
+                  4430
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 2,
+                "label": "kamala harris",
+                "size": 8,
                 "post_ids": [
                   4133,
                   4181,
@@ -87584,29 +87487,28 @@
                   4175,
                   4167,
                   4166,
-                  4196,
-                  4216
+                  4196
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 14,
-                "label": "rolls noncitizens",
+                "cluster_id": 15,
+                "label": "8th circuit",
                 "size": 8,
                 "post_ids": [
-                  4135,
-                  4203,
-                  4191,
-                  4260,
-                  4352,
-                  4396,
-                  4448,
-                  4466
+                  4208,
+                  4204,
+                  4200,
+                  4197,
+                  4287,
+                  4549,
+                  4500,
+                  4473
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
+                "cluster_id": 8,
                 "label": "list maintenance",
                 "size": 7,
                 "post_ids": [
@@ -87621,7 +87523,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
+                "cluster_id": 3,
                 "label": "rnc lawsuit",
                 "size": 7,
                 "post_ids": [
@@ -87636,37 +87538,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 15,
-                "label": "forecasters expect",
-                "size": 7,
-                "post_ids": [
-                  4207,
-                  4230,
-                  4229,
-                  4223,
-                  4338,
-                  4330,
-                  4423
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 9,
-                "label": "america first",
-                "size": 6,
-                "post_ids": [
-                  4348,
-                  4391,
-                  4438,
-                  4437,
-                  4436,
-                  4435
-                ],
-                "emerging_theme": true
-              },
-              {
                 "cluster_id": 6,
-                "label": "blue wave",
+                "label": "chance democrats",
                 "size": 6,
                 "post_ids": [
                   4409,
@@ -87679,21 +87552,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 5,
-                "label": "texas rino's",
-                "size": 6,
-                "post_ids": [
-                  4177,
-                  4176,
-                  4173,
-                  4243,
-                  4317,
-                  4335
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 2,
+                "cluster_id": 1,
                 "label": "ending nuclear",
                 "size": 6,
                 "post_ids": [
@@ -87707,7 +87566,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 11,
+                "cluster_id": 10,
                 "label": "absentee person",
                 "size": 6,
                 "post_ids": [
@@ -87721,7 +87580,20 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 10,
+                "cluster_id": 4,
+                "label": "america first",
+                "size": 5,
+                "post_ids": [
+                  4391,
+                  4438,
+                  4437,
+                  4436,
+                  4435
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 9,
                 "label": "americans abroad",
                 "size": 5,
                 "post_ids": [
@@ -87747,7 +87619,32 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 17,
+                "cluster_id": 5,
+                "label": "reuters ipsos",
+                "size": 5,
+                "post_ids": [
+                  4248,
+                  4405,
+                  4417,
+                  4416,
+                  4452
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 19,
+                "label": "alex pretti",
+                "size": 4,
+                "post_ids": [
+                  4477,
+                  4476,
+                  4284,
+                  4400
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 16,
                 "label": "york times",
                 "size": 4,
                 "post_ids": [
@@ -87759,19 +87656,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 8,
-                "label": "reuters ipsos",
-                "size": 4,
-                "post_ids": [
-                  4248,
-                  4405,
-                  4417,
-                  4416
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 18,
+                "cluster_id": 17,
                 "label": "troops vote",
                 "size": 3,
                 "post_ids": [
@@ -87780,16 +87665,27 @@
                   4355
                 ],
                 "emerging_theme": true
+              },
+              {
+                "cluster_id": 18,
+                "label": "ads popular",
+                "size": 3,
+                "post_ids": [
+                  4221,
+                  4375,
+                  4426
+                ],
+                "emerging_theme": true
               }
             ],
             "continues_from": []
           },
           {
             "week": "2026-W40",
-            "cluster_count": 10,
+            "cluster_count": 8,
             "clusters": [
               {
-                "cluster_id": 0,
+                "cluster_id": 1,
                 "label": "prepared dhs",
                 "size": 20,
                 "post_ids": [
@@ -87817,7 +87713,7 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 1,
+                "cluster_id": 2,
                 "label": "prepared department",
                 "size": 11,
                 "post_ids": [
@@ -87836,57 +87732,25 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 4,
-                "label": "courts blocked",
-                "size": 5,
-                "post_ids": [
-                  4491,
-                  4488,
-                  4484,
-                  4481,
-                  4478
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 2,
-                "label": "supreme court",
-                "size": 5,
-                "post_ids": [
-                  4546,
-                  4495,
-                  4490,
-                  4487,
-                  4482
-                ],
-                "emerging_theme": true
-              },
-              {
                 "cluster_id": 5,
-                "label": "away republican",
-                "size": 4,
-                "post_ids": [
-                  4555,
-                  4494,
-                  4538,
-                  4537
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 7,
-                "label": "hold house",
-                "size": 4,
+                "label": "update cnn",
+                "size": 10,
                 "post_ids": [
                   4496,
+                  4494,
+                  4493,
                   4499,
                   4560,
-                  4483
+                  4483,
+                  4543,
+                  4542,
+                  4627,
+                  4626
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 9,
+                "cluster_id": 4,
                 "label": "radical left",
                 "size": 3,
                 "post_ids": [
@@ -87898,41 +87762,62 @@
               },
               {
                 "cluster_id": 3,
-                "label": "judge amir",
-                "size": 12,
+                "label": "away republican",
+                "size": 3,
                 "post_ids": [
+                  4555,
+                  4538,
+                  4537
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 0,
+                "label": "supreme court",
+                "size": 24,
+                "post_ids": [
+                  4546,
+                  4495,
                   4492,
                   4505,
+                  4491,
+                  4490,
+                  4489,
+                  4488,
+                  4487,
+                  4486,
                   4485,
+                  4484,
+                  4482,
+                  4481,
                   4480,
                   4479,
+                  4478,
                   4548,
-                  4551,
+                  4556,
+                  4552,
                   4719,
                   4559,
                   4541,
-                  4626,
                   4557
                 ],
                 "emerging_theme": false
               },
               {
-                "cluster_id": 8,
-                "label": "primaries cracks",
-                "size": 3,
+                "cluster_id": 7,
+                "label": "judge amir",
+                "size": 2,
                 "post_ids": [
-                  4543,
-                  4542,
-                  4627
+                  4551,
+                  4550
                 ],
-                "emerging_theme": true
+                "emerging_theme": false
               },
               {
                 "cluster_id": 6,
-                "label": "nick fuentes",
-                "size": 4,
+                "label": "awesome nicki",
+                "size": 3,
                 "post_ids": [
-                  4493,
                   4498,
                   4583,
                   4582
@@ -87944,7 +87829,7 @@
           },
           {
             "week": "2026-W41",
-            "cluster_count": 4,
+            "cluster_count": 9,
             "clusters": [
               {
                 "cluster_id": 1,
@@ -87964,12 +87849,14 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 2,
-                "label": "midterms days",
-                "size": 5,
+                "cluster_id": 6,
+                "label": "america first",
+                "size": 7,
                 "post_ids": [
                   4643,
+                  4567,
                   4620,
+                  4563,
                   4619,
                   4618,
                   4689
@@ -87977,72 +87864,110 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
-                "label": "polling places",
-                "size": 4,
+                "cluster_id": 8,
+                "label": "early voting",
+                "size": 7,
                 "post_ids": [
-                  4572,
-                  4634,
-                  4633,
-                  4629
+                  4588,
+                  4587,
+                  4586,
+                  4585,
+                  4584,
+                  4675,
+                  4674
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 2,
+                "label": "primaries showed",
+                "size": 6,
+                "post_ids": [
+                  4623,
+                  4622,
+                  4621,
+                  4616,
+                  4699,
+                  4630
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 4,
+                "label": "control house senate",
+                "size": 5,
+                "post_ids": [
+                  4580,
+                  4574,
+                  4573,
+                  4569,
+                  4562
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 3,
+                "label": "republican turnout",
+                "size": 5,
+                "post_ids": [
+                  4635,
+                  4571,
+                  4568,
+                  4565,
+                  4561
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 7,
+                "label": "foreign intelligence",
+                "size": 5,
+                "post_ids": [
+                  4570,
+                  4648,
+                  4646,
+                  4628,
+                  4632
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 5,
+                "label": "road 120th",
+                "size": 3,
+                "post_ids": [
+                  4624,
+                  4698,
+                  4645
                 ],
                 "emerging_theme": true
               },
               {
                 "cluster_id": 0,
                 "label": "firing squad",
-                "size": 51,
+                "size": 22,
                 "post_ids": [
                   4625,
-                  4580,
                   4579,
                   4577,
-                  4588,
                   4576,
-                  4635,
                   4575,
-                  4574,
                   4640,
-                  4573,
-                  4571,
-                  4570,
-                  4569,
-                  4624,
-                  4648,
-                  4568,
-                  4567,
+                  4572,
+                  4634,
                   4566,
-                  4565,
                   4564,
-                  4563,
-                  4562,
-                  4561,
-                  4623,
-                  4587,
                   4639,
-                  4586,
                   4638,
-                  4585,
                   4647,
+                  4633,
                   4637,
-                  4584,
                   4642,
-                  4622,
-                  4646,
-                  4675,
-                  4621,
                   4650,
-                  4616,
-                  4674,
-                  4628,
                   4631,
                   4686,
-                  4699,
-                  4698,
-                  4630,
+                  4629,
                   4697,
-                  4632,
-                  4645,
                   4644
                 ],
                 "emerging_theme": false
@@ -88052,17 +87977,18 @@
           },
           {
             "week": "2026-W42",
-            "cluster_count": 4,
+            "cluster_count": 3,
             "clusters": [
               {
-                "cluster_id": 2,
+                "cluster_id": 0,
                 "label": "leadership fund",
-                "size": 11,
+                "size": 12,
                 "post_ids": [
                   4705,
                   4711,
                   4710,
                   4707,
+                  4670,
                   4669,
                   4668,
                   4667,
@@ -88074,43 +88000,37 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
+                "cluster_id": 1,
                 "label": "prediction markets",
-                "size": 7,
+                "size": 8,
                 "post_ids": [
                   4665,
-                  4664,
                   4663,
-                  4661,
                   4660,
                   4657,
-                  4652
+                  4655,
+                  4653,
+                  4652,
+                  4702
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 0,
-                "label": "midterms writes",
-                "size": 5,
+                "cluster_id": 2,
+                "label": "white house",
+                "size": 11,
                 "post_ids": [
+                  4696,
                   4695,
+                  4701,
+                  4666,
+                  4706,
+                  4651,
+                  4694,
                   4693,
                   4692,
                   4691,
                   4690
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 1,
-                "label": "white house",
-                "size": 5,
-                "post_ids": [
-                  4701,
-                  4670,
-                  4666,
-                  4706,
-                  4653
                 ],
                 "emerging_theme": true
               }
@@ -88139,22 +88059,22 @@
           },
           {
             "week": "2026-W44",
-            "cluster_count": 14,
+            "cluster_count": 17,
             "clusters": [
               {
-                "cluster_id": 7,
-                "label": "radical left",
+                "cluster_id": 3,
+                "label": "spent million",
                 "size": 9,
                 "post_ids": [
-                  4748,
-                  4765,
-                  4787,
-                  4802,
-                  4801,
-                  4860,
-                  4892,
-                  4908,
-                  4935
+                  4752,
+                  4757,
+                  4840,
+                  4859,
+                  4878,
+                  4877,
+                  4876,
+                  4890,
+                  4924
                 ],
                 "emerging_theme": true
               },
@@ -88175,24 +88095,8 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 3,
-                "label": "open society",
-                "size": 8,
-                "post_ids": [
-                  4752,
-                  4738,
-                  4757,
-                  4840,
-                  4859,
-                  4878,
-                  4877,
-                  4876
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 4,
-                "label": "midterms november",
+                "cluster_id": 2,
+                "label": "senate majority",
                 "size": 7,
                 "post_ids": [
                   4739,
@@ -88202,21 +88106,6 @@
                   4843,
                   4842,
                   4939
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 2,
-                "label": "voting kansas",
-                "size": 7,
-                "post_ids": [
-                  4745,
-                  4774,
-                  4775,
-                  4796,
-                  4818,
-                  4909,
-                  4934
                 ],
                 "emerging_theme": true
               },
@@ -88234,148 +88123,167 @@
                 "emerging_theme": true
               },
               {
-                "cluster_id": 8,
-                "label": "turning point",
+                "cluster_id": 4,
+                "label": "latest generic",
                 "size": 5,
                 "post_ids": [
-                  4760,
-                  4813,
-                  4883,
-                  4879,
-                  4913
+                  4787,
+                  4802,
+                  4860,
+                  4908,
+                  4935
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 11,
-                "label": "i'm interested",
-                "size": 4,
-                "post_ids": [
-                  4749,
-                  4900,
-                  4895,
-                  4925
-                ],
-                "emerging_theme": true
-              },
-              {
-                "cluster_id": 13,
+                "cluster_id": 16,
                 "label": "kamala harris",
-                "size": 3,
+                "size": 4,
                 "post_ids": [
                   4772,
                   4771,
+                  4786,
                   4901
                 ],
                 "emerging_theme": true
               },
               {
-                "cluster_id": 0,
-                "label": "net worth",
-                "size": 59,
+                "cluster_id": 8,
+                "label": "likely noncitizens",
+                "size": 3,
                 "post_ids": [
-                  4750,
-                  4747,
-                  4746,
                   4744,
+                  4812,
+                  4886
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 12,
+                "label": "washington post",
+                "size": 3,
+                "post_ids": [
+                  4822,
+                  4841,
+                  4937
+                ],
+                "emerging_theme": true
+              },
+              {
+                "cluster_id": 0,
+                "label": "blue wave",
+                "size": 92,
+                "post_ids": [
+                  4751,
+                  4749,
+                  4748,
+                  4747,
+                  4745,
+                  4743,
                   4741,
                   4740,
                   4737,
-                  4769,
+                  4774,
+                  4765,
                   4763,
+                  4762,
                   4761,
                   4759,
+                  4758,
+                  4775,
+                  4796,
                   4791,
+                  4790,
                   4785,
                   4778,
-                  4815,
-                  4812,
+                  4776,
+                  4814,
                   4811,
                   4810,
+                  4809,
                   4808,
+                  4806,
+                  4803,
+                  4801,
+                  4800,
                   4799,
                   4798,
+                  4797,
+                  4818,
+                  4835,
+                  4834,
+                  4831,
                   4829,
+                  4827,
                   4826,
                   4825,
-                  4822,
-                  4849,
+                  4854,
+                  4853,
+                  4852,
                   4848,
-                  4847,
                   4844,
-                  4841,
                   4870,
                   4869,
                   4868,
                   4867,
+                  4866,
                   4864,
                   4863,
                   4862,
-                  4858,
-                  4886,
-                  4885,
+                  4861,
+                  4884,
+                  4881,
+                  4880,
                   4875,
+                  4874,
+                  4873,
+                  4902,
+                  4900,
+                  4899,
                   4898,
                   4897,
-                  4894,
+                  4896,
+                  4895,
                   4893,
+                  4892,
+                  4922,
+                  4921,
+                  4920,
                   4919,
                   4918,
                   4917,
                   4915,
                   4914,
                   4911,
-                  4910,
+                  4909,
                   4907,
+                  4905,
                   4938,
-                  4937,
-                  4936,
-                  4931,
-                  4927,
-                  4924
-                ],
-                "emerging_theme": false
-              },
-              {
-                "cluster_id": 9,
-                "label": "blue wave",
-                "size": 20,
-                "post_ids": [
-                  4751,
-                  4743,
-                  4758,
-                  4789,
-                  4776,
-                  4809,
-                  4806,
-                  4803,
-                  4834,
-                  4831,
-                  4827,
-                  4861,
-                  4880,
-                  4873,
-                  4922,
-                  4921,
-                  4920,
-                  4916,
+                  4934,
                   4933,
-                  4932
+                  4932,
+                  4931,
+                  4930,
+                  4927,
+                  4925
                 ],
                 "emerging_theme": false
               },
               {
-                "cluster_id": 12,
-                "label": "america usa",
-                "size": 18,
+                "cluster_id": 5,
+                "label": "late october",
+                "size": 25,
                 "post_ids": [
                   4753,
+                  4750,
+                  4742,
                   4773,
                   4770,
                   4764,
                   4783,
                   4781,
                   4780,
+                  4807,
                   4833,
                   4832,
                   4820,
@@ -88385,32 +88293,10 @@
                   4845,
                   4839,
                   4865,
-                  4912,
-                  4906
-                ],
-                "emerging_theme": false
-              },
-              {
-                "cluster_id": 5,
-                "label": "central forecast",
-                "size": 18,
-                "post_ids": [
-                  4742,
-                  4762,
-                  4786,
-                  4807,
-                  4797,
-                  4854,
-                  4853,
-                  4852,
-                  4866,
                   4882,
-                  4881,
-                  4902,
-                  4896,
                   4889,
-                  4905,
-                  4929,
+                  4912,
+                  4906,
                   4928,
                   4926
                 ],
@@ -88418,19 +88304,77 @@
               },
               {
                 "cluster_id": 10,
-                "label": "executive order",
-                "size": 10,
+                "label": "turning point",
+                "size": 8,
                 "post_ids": [
-                  4790,
-                  4814,
-                  4800,
-                  4835,
-                  4884,
-                  4874,
-                  4899,
-                  4891,
-                  4890,
-                  4930
+                  4769,
+                  4760,
+                  4815,
+                  4813,
+                  4849,
+                  4883,
+                  4879,
+                  4913
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 15,
+                "label": "sorry senile",
+                "size": 2,
+                "post_ids": [
+                  4894,
+                  4910
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 11,
+                "label": "jon ossoff",
+                "size": 2,
+                "post_ids": [
+                  4789,
+                  4916
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 14,
+                "label": "covid vaccines",
+                "size": 2,
+                "post_ids": [
+                  4885,
+                  4936
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 9,
+                "label": "threatening ukraine",
+                "size": 2,
+                "post_ids": [
+                  4738,
+                  4858
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 7,
+                "label": "fyi wrong",
+                "size": 2,
+                "post_ids": [
+                  4746,
+                  4891
+                ],
+                "emerging_theme": false
+              },
+              {
+                "cluster_id": 13,
+                "label": "bloomberg affiliates",
+                "size": 2,
+                "post_ids": [
+                  4847,
+                  4929
                 ],
                 "emerging_theme": false
               }
@@ -111485,8 +111429,8 @@
       },
       "brief": {
         "version": 1,
-        "generated_at": "2026-10-30T22:41:01.468439+00:00",
-        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-10-30 22:41:01 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **4899** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.40 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 3532 / 1466 |\n| Distinct themes | 97 |\n| Duplicate clusters (full DB) | 233 |\n| Fuzzy clusters (snapshot cohort) | 4 |\n| IU astroturf overlap | 2 bots / 2651 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **1**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **264**\n- Net new: **336** \u00b7 re-seen: **1326**\n- Duplicate rate: **79.8%**\n\n## Sentiment drift\n\n- Trend: **stable**\n- Week-over-week alert: **volume_spike_low_outrage**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 red wave, win house, deliver mail ballots, election integrity executive, sanctuary cities (3854 posts \u00b7 149 authors \u00b7 188 exact \u00b7 4 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 task force, breaking longtime (4 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame** \u00b7 trump, midterms, elections, election (309 posts \u00b7 19 authors \u00b7 7 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame** \u00b7 ecstatic, yes, vote, republican (9 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame** \u00b7 likely noncitizens, ninth circuit, california set, clinton appointed (3 posts \u00b7 2 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n\n## CIB warning signals\n\n- dense_cluster_73_size_3\n- dense_cluster_89_size_3\n- dense_cluster_552_size_3\n- dense_cluster_1407_size_3\n- cross_author_fuzzy_31authors_33posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_7authors_8posts_j1.00\n- cross_author_fuzzy_5authors_6posts_j1.00\n- cross_author_fuzzy_5authors_5posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_2authors_3posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **10 posts** \u00b7 10 author(s) \u2014 !!\ufe0f SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games \ud83c\udd70\ufe0f. Yes \ud83c\udd71\ufe0f. No\n- **9 posts** \u00b7 9 author(s) \u2014 \ud83d\udea8SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **7 posts** \u00b7 6 author(s) \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **5 posts** \u00b7 4 author(s) \u2014 \ud83d\udea8BREAKING \u2014 HUGE SCOTUS WIN: The Supreme Court 6-3 has GREENLIT the Trump administration's revamped SAVE citizenship verification database for states to PURGE the voter rolls of illegal voters during\u2026\n- **4 posts** \u00b7 4 author(s) \u2014 Kamala Harris launches into the 2026 midterms as her 2028 decision looms\n- **3 posts** \u00b7 3 author(s) \u2014 \ud83d\udea8 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms \u2014 NYT AAG Harmeet Dhillon is on a WARPATH for sec\u2026\n- **3 posts** \u00b7 2 author(s) \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- _\u2026223 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Kamala Harris on what she's seeing on the ground in the 2026 midterms. via\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 WHO WILL WIN TEXAS IN THE 2026 MIDTERMS? \ud83d\uddf3\ufe0f Republicans or Democrats? Texas could be a major battleground in the fight for political power. \ud83d\udc40 \ud83d\udc47 Who do you think will come out on top? \u2764\ufe0f A. Republ\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Elon Musk has spent $446 million in the 2026 midterms. The average salary for a family of 4 in the US is $70,000 per year. You would need to work 6,371 YEARS to make what Elon has spent in this elect\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~93% Jaccard \u2014 \ud83d\udea8 WOW! President Trump just announced anyone who successfully reports voter fraud in the 2026 midterms or ANY election will receive $1 MILLION DOLLARS upon the arrest and conviction Amazing idea \ud83d\udc4f\ud83c\udffb\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- claimed china, bigger majorities (6 posts)\n- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (57 posts)\n- awakening largest, affordable homes, power register (5 posts)\n- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)\n- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)\n- inbreeds cuz, 10000's fascist, loves winners (8 posts)\n- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)\n- _\u202623 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 4899 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
+        "generated_at": "2026-10-30T22:58:48.184335+00:00",
+        "markdown": "# Heimdall briefing \u2014 midterms_2026\n\n> Tactical snapshot \u00b7 2026-10-30 22:58:48 UTC\n\n## Corpus\n\n| Metric | Value |\n| --- | --- |\n| Posts in database | **4899** |\n| Posts in snapshot cohort | 250 |\n| Snapshot truncated | yes |\n| CIB suspicion | **0.55** |\n| Text coordination | 0.55 |\n| Graph suspicion | 0.40 |\n| Organic score | 0.45 |\n| Graph nodes / edges | 3532 / 1466 |\n| Distinct themes | 97 |\n| Duplicate clusters (full DB) | 233 |\n| Fuzzy clusters (snapshot cohort) | 4 |\n| IU astroturf overlap | 2 bots / 2651 authors |\n\n## Ingest activity\n\n- Re-sightings (duplicate encounters): **1**\n- Net-new posts logged: **0**\n\n## Ingest yield (last 14 days)\n\n- Runs: **263**\n- Net new: **326** \u00b7 re-seen: **1326**\n- Duplicate rate: **80.3%**\n\n## Sentiment drift\n\n- Trend: **stable**\n- Week-over-week alert: **volume_spike_low_outrage**\n\n## Layered coordination (frames)\n\n- **Exact duplicate campaign** \u00b7 red wave, win house, deliver mail ballots, election integrity executive, sanctuary cities (3854 posts \u00b7 149 authors \u00b7 188 exact \u00b7 4 fuzzy subclusters)\n- **Exact duplicate campaign** \u00b7 task force, breaking longtime (4 posts \u00b7 0 authors \u00b7 1 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame** \u00b7 trump, midterms, elections, election (309 posts \u00b7 19 authors \u00b7 7 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame** \u00b7 ecstatic, yes, vote, republican (9 posts \u00b7 3 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n- **Shared frame** \u00b7 likely noncitizens, ninth circuit, california set, clinton appointed (3 posts \u00b7 2 authors \u00b7 0 exact \u00b7 0 fuzzy subclusters)\n\n## CIB warning signals\n\n- dense_cluster_73_size_3\n- dense_cluster_89_size_3\n- dense_cluster_552_size_3\n- dense_cluster_1407_size_3\n- cross_author_fuzzy_31authors_33posts_j1.00\n- cross_author_fuzzy_3authors_3posts_j1.00\n- cross_author_fuzzy_7authors_8posts_j1.00\n- cross_author_fuzzy_5authors_6posts_j1.00\n- cross_author_fuzzy_5authors_5posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_4authors_4posts_j1.00\n- cross_author_fuzzy_2authors_3posts_j1.00\n\n## Exact duplicate text (Layer 1 \u2014 copy coordination)\n\n- **10 posts** \u00b7 10 author(s) \u2014 !!\ufe0f SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games \ud83c\udd70\ufe0f. Yes \ud83c\udd71\ufe0f. No\n- **9 posts** \u00b7 9 author(s) \u2014 \ud83d\udea8SECURE THE VOTE: SHOULD CONGRESS PASS NATIONWIDE VOTER ID LAWS before the 2026 midterms to stop fraud cold? No more excuses. No more games A. Yes B. No\n- **3 posts** \u00b7 3 author(s) \u2014 Illinois GOP chair Bob Grogan talks Trump, Pritzker, 2026 midterms \\| FULL INTERVIEW\n- **7 posts** \u00b7 6 author(s) \u2014 \ud83d\udea8 JUST IN: Elon Musk has reportedly surged over $85 MILLION DOLLARS to help MAGA, Republicans and President Trump in the 2026 midterms \u2014 WaPo GREAT! Glad Elon is our rich patriot! He contributes WAY\u2026\n- **5 posts** \u00b7 4 author(s) \u2014 \ud83d\udea8BREAKING \u2014 HUGE SCOTUS WIN: The Supreme Court 6-3 has GREENLIT the Trump administration's revamped SAVE citizenship verification database for states to PURGE the voter rolls of illegal voters during\u2026\n- **4 posts** \u00b7 4 author(s) \u2014 Kamala Harris launches into the 2026 midterms as her 2028 decision looms\n- **3 posts** \u00b7 3 author(s) \u2014 \ud83d\udea8 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms \u2014 NYT AAG Harmeet Dhillon is on a WARPATH for sec\u2026\n- **3 posts** \u00b7 2 author(s) \u2014 Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the\u2026\n- **2 posts** \u00b7 2 author(s) \u2014 Over 5,000 malicious domains targeting 2026 US Midterm elections spotted going live \u2013 and they could be used for fraud, phishing, or worse\n- _\u2026223 more exact-duplicate cluster(s) in database._\n\n## Synchronized bursts (exact text)\n\n_None (need \u22655 authors in 90s window)._\n\n## Cross-author fuzzy amplification (Layer 2 \u2014 frame coordination)\n\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Kamala Harris on what she's seeing on the ground in the 2026 midterms. via\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 WHO WILL WIN TEXAS IN THE 2026 MIDTERMS? \ud83d\uddf3\ufe0f Republicans or Democrats? Texas could be a major battleground in the fight for political power. \ud83d\udc40 \ud83d\udc47 Who do you think will come out on top? \u2764\ufe0f A. Republ\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~100% Jaccard \u2014 Elon Musk has spent $446 million in the 2026 midterms. The average salary for a family of 4 in the US is $70,000 per year. You would need to work 6,371 YEARS to make what Elon has spent in this elect\u2026\n- **2 posts** \u00b7 2 authors \u00b7 ~93% Jaccard \u2014 \ud83d\udea8 WOW! President Trump just announced anyone who successfully reports voter fraud in the 2026 midterms or ANY election will receive $1 MILLION DOLLARS upon the arrest and conviction Amazing idea \ud83d\udc4f\ud83c\udffb\n\n## Cross-narrative actors (this narrative)\n\n_None flagged for this narrative._\n\n## Cross-narrative actors (global)\n\n_None spanning multiple narratives._\n\n## Emerging themes\n\n- claimed china, bigger majorities (6 posts)\n- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (57 posts)\n- awakening largest, affordable homes, power register (5 posts)\n- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)\n- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)\n- inbreeds cuz, 10000's fascist, loves winners (8 posts)\n- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)\n- _\u202623 more emerging theme(s)._\n\n## Scope note\n\nCoordination dupes and CIB text signals scan **all 4899 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).\n\n---\n_Auto-generated at export \u00b7 verify against live snapshot before operational use._",
         "meta": {
           "narrative_name": "midterms_2026",
           "posts_total_db": 4899,
@@ -111520,13 +111464,13 @@
           "ingest_yield": {
             "available": true,
             "window_days": 14,
-            "runs": 264,
-            "net_new": 336,
+            "runs": 263,
+            "net_new": 326,
             "duplicates": 1326,
             "filtered": 2161,
-            "fetched": 3789,
-            "duplicate_rate": 0.798,
-            "latest_run_at": "2026-10-30T22:40:59.878852+00:00"
+            "fetched": 3779,
+            "duplicate_rate": 0.803,
+            "latest_run_at": "2026-10-30T22:58:47.034198+00:00"
           },
           "sightings": {
             "total_resightings": 1,
