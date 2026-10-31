@@ -1,42 +1,40 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-10-31 21:47:09 UTC
+> Tactical snapshot · 2026-10-31 22:39:02 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4932** |
+| Posts in database | **4949** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3560 / 1468 |
-| Distinct themes | 96 |
-| Duplicate clusters (full DB) | 235 |
-| Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 2679 authors |
+| Graph nodes / edges | 3574 / 1469 |
+| Distinct themes | 76 |
+| Duplicate clusters (full DB) | 236 |
+| Fuzzy clusters (snapshot cohort) | 7 |
+| IU astroturf overlap | 2 bots / 2693 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **258**
-- Net new: **349** · re-seen: **1420**
-- Duplicate rate: **80.3%**
+- Net new: **366** · re-seen: **1420**
+- Duplicate rate: **79.5%**
 
 ## Sentiment drift
 
 - Trend: **stable**
-- Week-over-week alert: **volume_spike_low_outrage**
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3871 posts · 169 authors · 190 exact · 6 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (310 posts · 20 authors · 7 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · win house, deliver mail ballots, blue wave, george soros, integrity executive order (3495 posts · 180 authors · 177 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · court, supreme, trump, election (856 posts · 21 authors · 22 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · election fraud, task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes, vote, republican (9 posts · 3 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · likely noncitizens, ninth circuit, california set, clinton appointed (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -65,7 +63,7 @@
 - **3 posts** · 3 author(s) — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
-- _…225 more exact-duplicate cluster(s) in database._
+- _…226 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -75,10 +73,10 @@ _None (need ≥5 authors in 90s window)._
 
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: The Supreme Court has ruled that drawing Congressional districts based on race under the Voting Rights Act is UNCONSTITUTIONAL, 6-3 This is a HUGE win, and could have MASSIVE ramification…
 - **2 posts** · 2 authors · ~100% Jaccard — Kamala Harris on what she's seeing on the ground in the 2026 midterms. via
+- **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸 If Democrats win the 2026 midterms, will they try to impeach Trump? 🅰️ YES 🔥 🅱️ NO 🇺🇸
 - **2 posts** · 2 authors · ~100% Jaccard — Off-cycle redistricting could reshape the political map for the 2026 midterms, with Republicans poised to gain a handful of seats under new maps.
 - **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸🔥 WHO WILL WIN TEXAS IN THE 2026 MIDTERMS? 🗳️ Republicans or Democrats? Texas could be a major battleground in the fight for political power. 👀 👇 Who do you think will come out on top? ❤️ A. Republ…
-- **2 posts** · 2 authors · ~100% Jaccard — Elon Musk has spent $446 million in the 2026 midterms. The average salary for a family of 4 in the US is $70,000 per year. You would need to work 6,371 YEARS to make what Elon has spent in this elect…
-- _…1 more fuzzy cluster(s) in snapshot cohort._
+- _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -90,18 +88,18 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (6 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (57 posts)
-- awakening largest, affordable homes, power register (5 posts)
+- awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - inbreeds cuz, 10000's fascist, loves winners (8 posts)
 - cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- _…24 more emerging theme(s)._
+- facistnazi pig bonespur, coward facistnazi, facistnazi pig, senile coward facistnazi, coward facistnazi pig (5 posts)
+- _…18 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4932 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4949 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
