@@ -1368,6 +1368,19 @@
           "inserts_from_polls": 1,
           "status": "active"
         },
+        "1896621704627294208": {
+          "author_id": "1896621704627294208",
+          "handle": "alhajimobola2",
+          "discovered_via": "keyword",
+          "depth": 0,
+          "priority": 0.69,
+          "last_polled_at": "2026-07-10T04:03:47.821506+00:00",
+          "last_tweet_at": "2026-07-09T15:45:01+00:00",
+          "inserted_total": 2,
+          "polls": 1,
+          "inserts_from_polls": 0,
+          "status": "active"
+        },
         "1663701168839872512": {
           "author_id": "1663701168839872512",
           "handle": "MAGAVoice",
@@ -1927,28 +1940,15 @@
           "inserts_from_polls": 0,
           "status": "active"
         },
-        "20269833": {
-          "author_id": "20269833",
-          "handle": "TribLIVE",
+        "2785976885": {
+          "author_id": "2785976885",
+          "handle": "ArthurPhilpot",
           "discovered_via": "keyword",
           "depth": 0,
-          "priority": 0.69,
+          "priority": 0.5700000000000001,
           "last_polled_at": null,
           "last_tweet_at": null,
-          "inserted_total": 2,
-          "polls": 0,
-          "inserts_from_polls": 0,
-          "status": "active"
-        },
-        "1540801222772494336": {
-          "author_id": "1540801222772494336",
-          "handle": null,
-          "discovered_via": "reply",
-          "depth": 1,
-          "priority": 0.45,
-          "last_polled_at": null,
-          "last_tweet_at": null,
-          "inserted_total": 0,
+          "inserted_total": 1,
           "polls": 0,
           "inserts_from_polls": 0,
           "status": "active"
