@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-01 11:46:23 UTC
+> Tactical snapshot · 2026-11-01 15:11:42 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4964** |
+| Posts in database | **4965** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3586 / 1472 |
-| Distinct themes | 99 |
+| Distinct themes | 100 |
 | Duplicate clusters (full DB) | 236 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2704 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **259**
-- Net new: **377** · re-seen: **1491**
-- Duplicate rate: **79.8%**
+- Runs: **255**
+- Net new: **361** · re-seen: **1491**
+- Duplicate rate: **80.5%**
 
 ## Sentiment drift
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (4184 posts · 196 authors · 196 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (4183 posts · 196 authors · 196 exact · 7 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes, vote, republican (9 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
@@ -72,9 +72,9 @@ _None (need ≥5 authors in 90s window)._
 
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: The Supreme Court has ruled that drawing Congressional districts based on race under the Voting Rights Act is UNCONSTITUTIONAL, 6-3 This is a HUGE win, and could have MASSIVE ramification…
 - **2 posts** · 2 authors · ~100% Jaccard — Kamala Harris on what she's seeing on the ground in the 2026 midterms. via
+- **4 posts** · 4 authors · ~94% Jaccard — 🚨 WOW! President Trump just announced anyone who successfully reports voter fraud in the 2026 midterms or ANY election will receive $1 MILLION DOLLARS upon the arrest and conviction Amazing idea 👏🏻 "…
 - **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸 If Democrats win the 2026 midterms, will they try to impeach Trump? 🅰️ YES 🔥 🅱️ NO 🇺🇸
 - **2 posts** · 2 authors · ~100% Jaccard — Off-cycle redistricting could reshape the political map for the 2026 midterms, with Republicans poised to gain a handful of seats under new maps.
-- **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸🔥 WHO WILL WIN TEXAS IN THE 2026 MIDTERMS? 🗳️ Republicans or Democrats? Texas could be a major battleground in the fight for political power. 👀 👇 Who do you think will come out on top? ❤️ A. Republ…
 - _…2 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -99,7 +99,7 @@ _None spanning multiple narratives._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4964 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4965 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
