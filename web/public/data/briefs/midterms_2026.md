@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-01 20:26:45 UTC
+> Tactical snapshot · 2026-11-01 21:12:06 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4965** |
+| Posts in database | **4985** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3586 / 1472 |
-| Distinct themes | 101 |
+| Graph nodes / edges | 3604 / 1492 |
+| Distinct themes | 105 |
 | Duplicate clusters (full DB) | 236 |
-| Fuzzy clusters (snapshot cohort) | 7 |
+| Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2704 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **254**
-- Net new: **357** · re-seen: **1468**
-- Duplicate rate: **80.4%**
+- Net new: **377** · re-seen: **1452**
+- Duplicate rate: **79.4%**
 
 ## Sentiment drift
 
@@ -31,18 +31,16 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3882 posts · 180 authors · 191 exact · 7 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (4182 posts · 180 authors · 196 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (313 posts · 17 authors · 7 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes, vote, republican (9 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- **Shared frame** · likely noncitizens, ninth circuit, california set, clinton appointed (3 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
 - dense_cluster_73_size_3
 - dense_cluster_89_size_3
 - dense_cluster_552_size_3
-- dense_cluster_1407_size_3
+- dense_cluster_1405_size_3
 - cross_author_fuzzy_31authors_33posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -73,11 +71,11 @@ _None (need ≥5 authors in 90s window)._
 ## Cross-author fuzzy amplification (Layer 2 — frame coordination)
 
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: The Supreme Court has ruled that drawing Congressional districts based on race under the Voting Rights Act is UNCONSTITUTIONAL, 6-3 This is a HUGE win, and could have MASSIVE ramification…
-- **2 posts** · 2 authors · ~100% Jaccard — Kamala Harris on what she's seeing on the ground in the 2026 midterms. via
 - **4 posts** · 4 authors · ~94% Jaccard — 🚨 WOW! President Trump just announced anyone who successfully reports voter fraud in the 2026 midterms or ANY election will receive $1 MILLION DOLLARS upon the arrest and conviction Amazing idea 👏🏻 "…
 - **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸 If Democrats win the 2026 midterms, will they try to impeach Trump? 🅰️ YES 🔥 🅱️ NO 🇺🇸
 - **2 posts** · 2 authors · ~100% Jaccard — Off-cycle redistricting could reshape the political map for the 2026 midterms, with Republicans poised to gain a handful of seats under new maps.
-- _…2 more fuzzy cluster(s) in snapshot cohort._
+- **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸🔥 WHO WILL WIN TEXAS IN THE 2026 MIDTERMS? 🗳️ Republicans or Democrats? Texas could be a major battleground in the fight for political power. 👀 👇 Who do you think will come out on top? ❤️ A. Republ…
+- _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -89,19 +87,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (6 posts)
-- initial success, gerrymandering strategy, facing roadblocks, surging ground (4 posts)
+- claimed china, bigger majorities (7 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (57 posts)
-- awakening largest, affordable homes, power register (5 posts)
+- awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
-- inbreeds cuz, 10000's fascist, loves winners (8 posts)
-- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- _…25 more emerging theme(s)._
+- include abdul (3 posts)
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
+- inbreeds cuz, 10000's fascist (7 posts)
+- _…28 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4965 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4985 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
