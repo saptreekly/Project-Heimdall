@@ -1,61 +1,59 @@
 {
-  "generated_at": "2026-10-25T09:37:58.986092+00:00",
+  "generated_at": "2026-11-01T11:44:49.819191+00:00",
   "window_days": 7,
   "dead_keywords": [
-    "2026 midterms",
-    "2026 midterm fraud",
     "2026 red wave",
     "2026 supreme court",
-    "2026 deliver mail ballots",
-    "2026 impossible vote"
+    "2026 midwest democrat",
+    "2026 resigns electoral"
   ],
   "suggestions": [
     {
-      "query": "2026 executive order midterms",
+      "query": "2026 win house",
+      "source": "theme cluster (red wave \u00b7 win house \u00b7 deliver mail ballots \u00b7 sanctuary cities, 4184 posts)",
+      "score": 4184.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 deliver mail ballots",
+      "source": "theme cluster (red wave \u00b7 win house \u00b7 deliver mail ballots \u00b7 sanctuary cities, 4184 posts)",
+      "score": 4184.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 president trump midterms",
       "source": "corpus c-TF-IDF",
-      "score": 164.093,
+      "score": 155.614,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
     },
     {
-      "query": "2026 midwest democrat",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 84 posts)",
-      "score": 84.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 resigns electoral",
-      "source": "theme cluster (red wave \u00b7 midwest democrat \u00b7 resigns electoral \u00b7 disaster looms, 84 posts)",
-      "score": 84.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 party win house",
-      "source": "theme cluster (party win house \u00b7 parentforderivative unitedstates \u00b7 uselection politics \u00b7 slight edge, 22 posts)",
-      "score": 22.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 democrats ninepercent",
-      "source": "theme cluster (poll spells \u00b7 democrats ninepercent \u00b7 source center \u00b7 months midterm elections, 19 posts)",
-      "score": 19.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 voters pushing",
-      "source": "theme cluster (voters pushing \u00b7 hard silicon \u00b7 backing candidates \u00b7 crypto's cycle, 19 posts)",
-      "score": 19.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 voter trust",
-      "source": "theme cluster (sweeping constitutional \u00b7 petition nilepostnews \u00b7 congressman hamadeh \u00b7 voter trust, 16 posts)",
-      "score": 16.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
       "query": "2026 bare ballot harvesting",
-      "source": "theme cluster (bare ballot harvesting \u00b7 california communists \u00b7 poised steal \u00b7 hilton aren, 9 posts)",
-      "score": 9.0,
+      "source": "theme cluster (election pratt \u00b7 bare ballot harvesting \u00b7 california communists \u00b7 poised steal, 10 posts)",
+      "score": 10.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 ineligible voting",
+      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 ineligible voting \u00b7 vote dilution, 4 posts)",
+      "score": 4.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 vote dilution",
+      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 ineligible voting \u00b7 vote dilution, 4 posts)",
+      "score": 4.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 republicans plan",
+      "source": "theme cluster (entitlement programs \u00b7 mandatory spending \u00b7 adjusted fixed \u00b7 medicare medicaid, 3 posts)",
+      "score": 3.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 census voter",
+      "source": "theme cluster (visa holder \u00b7 census voter \u00b7 prosecute member \u00b7 congress refusing, 3 posts)",
+      "score": 3.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
   ]
