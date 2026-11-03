@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-03 03:54:55 UTC
+> Tactical snapshot · 2026-11-03 04:13:52 UTC
 
 ## Corpus
 
@@ -21,9 +21,9 @@
 
 ## Ingest yield (last 14 days)
 
-- Runs: **252**
-- Net new: **409** · re-seen: **1323**
-- Duplicate rate: **76.4%**
+- Runs: **253**
+- Net new: **412** · re-seen: **1323**
+- Duplicate rate: **76.3%**
 
 ## Sentiment drift
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, election integrity executive, sanctuary cities (3944 posts · 167 authors · 194 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, election integrity executive, sanctuary cities (3943 posts · 167 authors · 195 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · trump, midterms, elections, election (313 posts · 15 authors · 7 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes, vote, republican (9 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
@@ -91,10 +91,11 @@ _None spanning multiple narratives._
 - claimed china, bigger majorities (6 posts)
 - initial success, gerrymandering strategy, facing roadblocks, surging ground (4 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (57 posts)
-- awakening largest, affordable homes, power register (6 posts)
+- awakening largest, affordable homes, power register (5 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
 - inbreeds cuz, 10000's fascist (7 posts)
+- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
 - _…24 more emerging theme(s)._
 
 ## Scope note
