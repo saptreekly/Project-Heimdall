@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-03 02:11:35 UTC
+> Tactical snapshot · 2026-11-03 02:58:34 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **4995** |
+| Posts in database | **4998** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3604 / 1492 |
-| Distinct themes | 101 |
-| Duplicate clusters (full DB) | 240 |
+| Graph nodes / edges | 3604 / 1493 |
+| Distinct themes | 107 |
+| Duplicate clusters (full DB) | 241 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2704 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **250**
-- Net new: **406** · re-seen: **1323**
-- Duplicate rate: **76.5%**
+- Runs: **251**
+- Net new: **409** · re-seen: **1323**
+- Duplicate rate: **76.4%**
 
 ## Sentiment drift
 
@@ -31,9 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, mail ballot, win house, election integrity executive, sanctuary cities (3947 posts · 168 authors · 193 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, sanctuary cities, postmaster general (4189 posts · 177 authors · 199 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (313 posts · 15 authors · 7 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes, vote, republican (9 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -41,7 +40,7 @@
 - dense_cluster_73_size_3
 - dense_cluster_89_size_3
 - dense_cluster_552_size_3
-- dense_cluster_1405_size_3
+- dense_cluster_1404_size_3
 - cross_author_fuzzy_31authors_33posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -63,7 +62,7 @@
 - **3 posts** · 3 author(s) — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
-- _…230 more exact-duplicate cluster(s) in database._
+- _…231 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -88,18 +87,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (6 posts)
-- initial success, gerrymandering strategy, facing roadblocks, surging ground (4 posts)
+- claimed china, bigger majorities (7 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (57 posts)
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- unfortunate reality, inadvertently joined, politicize issues, problems mtg (3 posts)
+- include abdul (3 posts)
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- inbreeds cuz, 10000's fascist (7 posts)
-- _…24 more emerging theme(s)._
+- _…29 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 4995 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 4998 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
