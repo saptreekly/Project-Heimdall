@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-03 12:41:04 UTC
+> Tactical snapshot · 2026-11-03 13:01:39 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3604 / 1494 |
-| Distinct themes | 109 |
+| Distinct themes | 103 |
 | Duplicate clusters (full DB) | 242 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2704 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **250**
+- Runs: **251**
 - Net new: **417** · re-seen: **1285**
 - Duplicate rate: **75.5%**
 
@@ -31,8 +31,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (4190 posts · 176 authors · 200 exact · 6 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, election integrity executive, sanctuary cities (3945 posts · 167 authors · 194 exact · 6 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, democrat years, old harvard, professor emeritus, recognized legal (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · trump, midterms, elections, election (313 posts · 14 authors · 7 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes, vote, republican (9 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
@@ -87,15 +89,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- claimed china, bigger majorities (7 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- claimed china, bigger majorities (6 posts)
+- initial success, gerrymandering strategy, facing roadblocks, surging ground (4 posts)
 - senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (57 posts)
 - awakening largest, affordable homes, power register (6 posts)
 - don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
-- include abdul (3 posts)
-- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (10 posts)
-- inbreeds cuz, 10000's fascist (7 posts)
-- _…28 more emerging theme(s)._
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist, loves winners (8 posts)
+- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
+- _…25 more emerging theme(s)._
 
 ## Scope note
 
