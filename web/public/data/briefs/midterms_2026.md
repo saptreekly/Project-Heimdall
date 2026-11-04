@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-04 18:37:45 UTC
+> Tactical snapshot · 2026-11-04 20:04:18 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **5039** |
+| Posts in database | **5040** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3614 / 1505 |
-| Distinct themes | 119 |
+| Distinct themes | 118 |
 | Duplicate clusters (full DB) | 242 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2704 authors |
@@ -22,7 +22,7 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **245**
-- Net new: **458** · re-seen: **1163**
+- Net new: **459** · re-seen: **1163**
 - Duplicate rate: **71.7%**
 
 ## Sentiment drift
@@ -31,9 +31,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · blue wave, win house, sanctuary cities, postmaster general (4162 posts · 155 authors · 195 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · ecstatic, yes, vote, republican (9 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · win house, deliver mail ballots, red wave, integrity executive order, postmaster general (3897 posts · 148 authors · 190 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · election fraud, task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, democrat years, old harvard, professor emeritus, recognized legal (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stephen miller, plans active, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · trump, midterms, elections, election (314 posts · 13 authors · 7 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -86,19 +89,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- rule applies, kids package, pass items (3 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
-- awakening largest, affordable homes, power register (5 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
-- _…32 more emerging theme(s)._
+- gas prices, elias suing, gladly neuter (5 posts)
+- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
+- _…30 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 5039 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 5040 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
