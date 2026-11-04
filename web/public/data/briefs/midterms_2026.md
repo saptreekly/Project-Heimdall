@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-04 07:59:51 UTC
+> Tactical snapshot · 2026-11-04 09:45:39 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **5024** |
+| Posts in database | **5034** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3614 / 1505 |
-| Distinct themes | 120 |
+| Distinct themes | 121 |
 | Duplicate clusters (full DB) | 242 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2704 authors |
@@ -22,8 +22,8 @@
 ## Ingest yield (last 14 days)
 
 - Runs: **244**
-- Net new: **443** · re-seen: **1185**
-- Duplicate rate: **72.8%**
+- Net new: **453** · re-seen: **1185**
+- Duplicate rate: **72.3%**
 
 ## Sentiment drift
 
@@ -31,12 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, postmaster general, eliminate filibuster (3853 posts · 153 authors · 188 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · stephen miller, plans active, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (313 posts · 14 authors · 7 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · blue wave, win house, postmaster general, eliminate filibuster (4146 posts · 156 authors · 194 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · ecstatic, yes, vote, republican (9 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -89,19 +86,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- awakening largest, affordable homes, power register (5 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
 - gas prices, elias suing, gladly neuter (5 posts)
-- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- _…31 more emerging theme(s)._
+- _…30 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 5024 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 5034 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
