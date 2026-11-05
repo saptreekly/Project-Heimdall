@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-05 12:46:57 UTC
+> Tactical snapshot · 2026-11-05 17:51:21 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **5064** |
+| Posts in database | **5066** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3615 / 1506 |
-| Distinct themes | 117 |
-| Duplicate clusters (full DB) | 247 |
-| Fuzzy clusters (snapshot cohort) | 5 |
-| IU astroturf overlap | 2 bots / 2704 authors |
+| Graph nodes / edges | 3616 / 1507 |
+| Distinct themes | 119 |
+| Duplicate clusters (full DB) | 248 |
+| Fuzzy clusters (snapshot cohort) | 6 |
+| IU astroturf overlap | 2 bots / 2705 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **241**
-- Net new: **484** · re-seen: **1073**
-- Duplicate rate: **68.9%**
+- Runs: **237**
+- Net new: **486** · re-seen: **1057**
+- Duplicate rate: **68.5%**
 
 ## Sentiment drift
 
@@ -31,11 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (3918 posts · 134 authors · 195 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, democrat years, old harvard, professor emeritus, recognized legal (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · stephen miller, plans active, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (315 posts · 13 authors · 7 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, integrity executive order, postmaster general, eliminate filibuster (4168 posts · 143 authors · 198 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · bench files, chief judge, boasberg ordered, elias list (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -64,7 +62,7 @@
 - **3 posts** · 3 author(s) — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
-- _…237 more exact-duplicate cluster(s) in database._
+- _…238 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -75,8 +73,9 @@ _None (need ≥5 authors in 90s window)._
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: The Supreme Court has ruled that drawing Congressional districts based on race under the Voting Rights Act is UNCONSTITUTIONAL, 6-3 This is a HUGE win, and could have MASSIVE ramification…
 - **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸 If Democrats win the 2026 midterms, will they try to impeach Trump? 🅰️ YES 🔥 🅱️ NO 🇺🇸
 - **2 posts** · 2 authors · ~100% Jaccard — Off-cycle redistricting could reshape the political map for the 2026 midterms, with Republicans poised to gain a handful of seats under new maps.
+- **2 posts** · 2 authors · ~100% Jaccard — THE BENCH FILES (Part 7): The Pre-Midterm Endgame We are 4 days out from the November 3, 2026 midterms. Yesterday, D.C. Chief Judge James Boasberg ordered DOJ & DHS to hand Marc Elias a list of EVERY…
 - **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸🔥 WHO WILL WIN TEXAS IN THE 2026 MIDTERMS? 🗳️ Republicans or Democrats? Texas could be a major battleground in the fight for political power. 👀 👇 Who do you think will come out on top? ❤️ A. Republ…
-- **2 posts** · 2 authors · ~100% Jaccard — Elon Musk has spent $446 million in the 2026 midterms. The average salary for a family of 4 in the US is $70,000 per year. You would need to work 6,371 YEARS to make what Elon has spent in this elect…
+- _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -88,19 +87,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- rule applies, kids package, pass items (3 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- awakening largest, affordable homes, power register (5 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
-- gas prices, elias suing, gladly neuter (5 posts)
-- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- _…32 more emerging theme(s)._
+- _…31 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 5064 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 5066 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
