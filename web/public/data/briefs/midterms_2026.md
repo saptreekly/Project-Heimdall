@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-05 08:26:12 UTC
+> Tactical snapshot · 2026-11-05 09:55:17 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **5060** |
+| Posts in database | **5064** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3615 / 1506 |
-| Distinct themes | 118 |
-| Duplicate clusters (full DB) | 246 |
+| Distinct themes | 123 |
+| Duplicate clusters (full DB) | 247 |
 | Fuzzy clusters (snapshot cohort) | 5 |
 | IU astroturf overlap | 2 bots / 2704 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **237**
-- Net new: **480** · re-seen: **1073**
-- Duplicate rate: **69.1%**
+- Runs: **238**
+- Net new: **484** · re-seen: **1073**
+- Duplicate rate: **68.9%**
 
 ## Sentiment drift
 
@@ -31,11 +31,8 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · win house, deliver mail ballots, red wave, integrity executive order, postmaster general (3911 posts · 136 authors · 194 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · election fraud, task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · lose control, democrat years, old harvard, professor emeritus, recognized legal (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · stephen miller, plans active, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (315 posts · 13 authors · 7 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · blue wave, win house, postmaster general, eliminate filibuster (4166 posts · 143 authors · 198 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -64,7 +61,7 @@
 - **3 posts** · 3 author(s) — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
-- _…236 more exact-duplicate cluster(s) in database._
+- _…237 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -88,19 +85,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- rule applies, kids package, pass items (3 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- awakening largest, affordable homes, power register (5 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
-- gas prices, elias suing, gladly neuter (5 posts)
-- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- _…31 more emerging theme(s)._
+- _…32 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 5060 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 5064 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
