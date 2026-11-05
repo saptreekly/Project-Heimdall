@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-05 17:51:21 UTC
+> Tactical snapshot · 2026-11-05 18:27:01 UTC
 
 ## Corpus
 
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, integrity executive order, postmaster general, eliminate filibuster (4168 posts · 143 authors · 198 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, integrity executive order, postmaster general, eliminate filibuster (4169 posts · 144 authors · 198 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · bench files, chief judge, boasberg ordered, elias list (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
@@ -95,7 +95,7 @@ _None spanning multiple narratives._
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
-- _…31 more emerging theme(s)._
+- _…30 more emerging theme(s)._
 
 ## Scope note
 
