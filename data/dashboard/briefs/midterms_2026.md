@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-05 18:27:01 UTC
+> Tactical snapshot · 2026-11-05 18:49:25 UTC
 
 ## Corpus
 
@@ -14,14 +14,14 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3616 / 1507 |
-| Distinct themes | 119 |
+| Distinct themes | 118 |
 | Duplicate clusters (full DB) | 248 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2705 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **237**
+- Runs: **238**
 - Net new: **486** · re-seen: **1057**
 - Duplicate rate: **68.5%**
 
@@ -31,9 +31,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, integrity executive order, postmaster general, eliminate filibuster (4169 posts · 144 authors · 198 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · bench files, chief judge, boasberg ordered, elias list (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · win house, deliver mail ballots, red wave, integrity executive order, postmaster general (3914 posts · 134 authors · 194 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · election fraud, task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, democrat years, old harvard, professor emeritus, recognized legal (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stephen miller, plans active, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · trump, midterms, elections, election (315 posts · 13 authors · 7 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -87,15 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- rule applies, kids package, pass items (3 posts)
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
-- awakening largest, affordable homes, power register (5 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
-- _…30 more emerging theme(s)._
+- gas prices, gladly neuter (6 posts)
+- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
+- _…32 more emerging theme(s)._
 
 ## Scope note
 
