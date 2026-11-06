@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-06 18:01:45 UTC
+> Tactical snapshot · 2026-11-06 19:54:33 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **5100** |
+| Posts in database | **5108** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3616 / 1508 |
-| Distinct themes | 115 |
+| Distinct themes | 117 |
 | Duplicate clusters (full DB) | 251 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2705 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **233**
-- Net new: **520** · re-seen: **952**
-- Duplicate rate: **64.7%**
+- Runs: **234**
+- Net new: **534** · re-seen: **936**
+- Duplicate rate: **63.7%**
 
 ## Sentiment drift
 
@@ -31,12 +31,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · win house, deliver mail ballots, red wave, sanctuary cities, postmaster general (3943 posts · 123 authors · 198 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · stephen miller, plans active, arguing republican, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (315 posts · 11 authors · 7 exact · 0 fuzzy subclusters)
-- **Shared frame** · prelim hearing, fake news, hospital feds (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · red wave, win house, sanctuary cities, postmaster general (4204 posts · 131 authors · 202 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · prelim hearing, fake news, hospital feds (7 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · bench files, chief judge, boasberg ordered (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -90,19 +88,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- initial success, texas trump's, gerrymandering strategy, facing roadblocks, paxton surging (4 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
 - tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- awakening largest, affordable homes, power register (5 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
-- gas prices, elias suing, gladly neuter (5 posts)
-- _…28 more emerging theme(s)._
+- cheated threw, neveragain voteblue, toobigtorig 'your (4 posts)
+- _…31 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 5100 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 5108 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
