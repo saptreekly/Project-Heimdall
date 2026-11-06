@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-06 06:35:07 UTC
+> Tactical snapshot · 2026-11-06 08:28:50 UTC
 
 ## Corpus
 
@@ -14,16 +14,16 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3616 / 1508 |
-| Distinct themes | 122 |
+| Distinct themes | 119 |
 | Duplicate clusters (full DB) | 251 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2705 authors |
 
 ## Ingest yield (last 14 days)
 
-- Runs: **233**
-- Net new: **513** · re-seen: **978**
-- Duplicate rate: **65.6%**
+- Runs: **232**
+- Net new: **513** · re-seen: **955**
+- Duplicate rate: **65.1%**
 
 ## Sentiment drift
 
@@ -31,9 +31,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, deliver mail ballots, sanctuary cities, postmaster general (4186 posts · 134 authors · 202 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · bench files, chief judge, boasberg ordered (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Exact duplicate campaign** · red wave, win house, sanctuary cities, postmaster general (3920 posts · 127 authors · 194 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · lose control, democrat years, old harvard, professor emeritus, recognized legal (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Exact duplicate campaign** · stephen miller, plans active, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · trump, midterms, elections, election (315 posts · 11 authors · 7 exact · 0 fuzzy subclusters)
+- _…and more frames in dashboard._
 
 ## CIB warning signals
 
@@ -87,15 +90,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- initial success, texas trump's, gerrymandering strategy, facing roadblocks, paxton surging (4 posts)
 - tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
-- awakening largest, affordable homes, power register (5 posts)
-- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
+- awakening largest, power register (5 posts)
+- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
 - gas prices, elias suing, gladly neuter (5 posts)
-- _…33 more emerging theme(s)._
+- _…32 more emerging theme(s)._
 
 ## Scope note
 
