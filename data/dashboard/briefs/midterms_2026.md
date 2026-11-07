@@ -1,12 +1,12 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-07 22:21:35 UTC
+> Tactical snapshot · 2026-11-07 23:20:50 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **5132** |
+| Posts in database | **5140** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
@@ -14,16 +14,21 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3622 / 1519 |
-| Distinct themes | 116 |
+| Distinct themes | 121 |
 | Duplicate clusters (full DB) | 253 |
-| Fuzzy clusters (snapshot cohort) | 7 |
+| Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2707 authors |
+
+## Ingest activity
+
+- Re-sightings (duplicate encounters): **1**
+- Net-new posts logged: **8**
 
 ## Ingest yield (last 14 days)
 
-- Runs: **228**
-- Net new: **572** · re-seen: **764**
-- Duplicate rate: **57.2%**
+- Runs: **227**
+- Net new: **580** · re-seen: **765**
+- Duplicate rate: **56.9%**
 
 ## Sentiment drift
 
@@ -31,12 +36,10 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · win house, deliver mail ballots, red wave, sanctuary cities, postmaster general (3964 posts · 118 authors · 198 exact · 6 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · stephen miller, plans active, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (318 posts · 10 authors · 7 exact · 0 fuzzy subclusters)
-- **Shared frame** · prelim hearing, fake news, hospital feds (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · win house, deliver mail ballots, sanctuary cities, open border, red wave (4245 posts · 121 authors · 204 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · prelim hearing, fake news, hospital feds (7 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · bench files, chief judge, boasberg ordered (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
@@ -78,7 +81,7 @@ _None (need ≥5 authors in 90s window)._
 - **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸 If Democrats win the 2026 midterms, will they try to impeach Trump? 🅰️ YES 🔥 🅱️ NO 🇺🇸
 - **2 posts** · 2 authors · ~100% Jaccard — Off-cycle redistricting could reshape the political map for the 2026 midterms, with Republicans poised to gain a handful of seats under new maps.
 - **2 posts** · 2 authors · ~100% Jaccard — THE BENCH FILES (Part 7): The Pre-Midterm Endgame We are 4 days out from the November 3, 2026 midterms. Yesterday, D.C. Chief Judge James Boasberg ordered DOJ & DHS to hand Marc Elias a list of EVERY…
-- _…2 more fuzzy cluster(s) in snapshot cohort._
+- _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
 
@@ -90,19 +93,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- initial success, texas trump's, gerrymandering strategy, facing roadblocks, paxton surging (4 posts)
-- tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (75 posts)
+- awakening largest, affordable homes, power register (5 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
-- cowardfacist nazi (9 posts)
-- 10000's fascist, loves winners (9 posts)
-- gas prices, elias suing, gladly neuter (5 posts)
-- _…29 more emerging theme(s)._
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist (8 posts)
+- cheated threw, neveragain voteblue, toobigtorig 'your (4 posts)
+- _…32 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 5132 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 5140 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
