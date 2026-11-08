@@ -1,29 +1,29 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-08 05:46:50 UTC
+> Tactical snapshot · 2026-11-08 06:58:29 UTC
 
 ## Corpus
 
 | Metric | Value |
 | --- | --- |
-| Posts in database | **5141** |
+| Posts in database | **5163** |
 | Posts in snapshot cohort | 250 |
 | Snapshot truncated | yes |
 | CIB suspicion | **0.55** |
 | Text coordination | 0.55 |
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
-| Graph nodes / edges | 3623 / 1520 |
-| Distinct themes | 116 |
-| Duplicate clusters (full DB) | 253 |
+| Graph nodes / edges | 3628 / 1533 |
+| Distinct themes | 118 |
+| Duplicate clusters (full DB) | 256 |
 | Fuzzy clusters (snapshot cohort) | 6 |
-| IU astroturf overlap | 2 bots / 2707 authors |
+| IU astroturf overlap | 2 bots / 2708 authors |
 
 ## Ingest yield (last 14 days)
 
 - Runs: **227**
-- Net new: **581** · re-seen: **727**
-- Duplicate rate: **55.6%**
+- Net new: **603** · re-seen: **727**
+- Duplicate rate: **54.7%**
 
 ## Sentiment drift
 
@@ -31,19 +31,17 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · win house, deliver mail ballots, red wave, sanctuary cities, postmaster general (3974 posts · 114 authors · 200 exact · 5 fuzzy subclusters)
-- **Exact duplicate campaign** · task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Exact duplicate campaign** · stephen miller, plans active, arguing republican, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · trump, midterms, elections, election (318 posts · 9 authors · 7 exact · 0 fuzzy subclusters)
-- **Shared frame** · prelim hearing, fake news, hospital feds (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
-- _…and more frames in dashboard._
+- **Exact duplicate campaign** · win house, red wave, deliver mail ballots, sanctuary cities, open border (4277 posts · 108 authors · 208 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
+- **Shared frame** · prelim hearing, fake news, hospital feds (7 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Near-copy campaign** · bench files, chief judge, boasberg ordered (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
 
-- dense_cluster_72_size_3
-- dense_cluster_88_size_3
-- dense_cluster_548_size_3
-- dense_cluster_1399_size_3
+- dense_cluster_69_size_3
+- dense_cluster_85_size_3
+- dense_cluster_544_size_3
+- dense_cluster_1393_size_3
 - cross_author_fuzzy_31authors_33posts_j1.00
 - cross_author_fuzzy_3authors_3posts_j1.00
 - cross_author_fuzzy_7authors_8posts_j1.00
@@ -65,7 +63,7 @@
 - **3 posts** · 3 author(s) — 🚨 BREAKING: DOJ has just told at least 10 states that top election officials can be PROSECUTED if they allow noncitizens to vote in the 2026 midterms — NYT AAG Harmeet Dhillon is on a WARPATH for sec…
 - **3 posts** · 2 author(s) — Some of the military veterans running for Congress as Democrats in the 2026 midterms see themselves as part of the party's push to showcase itself as patriotic amid polling showing Democrats broadly…
 - **2 posts** · 2 author(s) — These fascist/redneck judges might as well cut to the chase and block each and every Democrat throughout America of his/her voting rights, and/or stop the 2026 midterms entirely. I don't see what the…
-- _…243 more exact-duplicate cluster(s) in database._
+- _…246 more exact-duplicate cluster(s) in database._
 
 ## Synchronized bursts (exact text)
 
@@ -75,9 +73,9 @@ _None (need ≥5 authors in 90s window)._
 
 - **4 posts** · 4 authors · ~100% Jaccard — 🚨 BREAKING: The Supreme Court has ruled that drawing Congressional districts based on race under the Voting Rights Act is UNCONSTITUTIONAL, 6-3 This is a HUGE win, and could have MASSIVE ramification…
 - **2 posts** · 2 authors · ~100% Jaccard — Maine, Minnesota, and Michigan had the highest voter turnout in the 2026 midterms, the University of Florida's Election Lab reports. Maine and Minnesota's turnout exceeded 65%. (
+- **2 posts** · 2 authors · ~100% Jaccard — AtlasIntel was the most accurate pollster of the 2026 Midterms.
 - **2 posts** · 2 authors · ~100% Jaccard — 🇺🇸 If Democrats win the 2026 midterms, will they try to impeach Trump? 🅰️ YES 🔥 🅱️ NO 🇺🇸
 - **2 posts** · 2 authors · ~100% Jaccard — Off-cycle redistricting could reshape the political map for the 2026 midterms, with Republicans poised to gain a handful of seats under new maps.
-- **2 posts** · 2 authors · ~100% Jaccard — THE BENCH FILES (Part 7): The Pre-Midterm Endgame We are 4 days out from the November 3, 2026 midterms. Yesterday, D.C. Chief Judge James Boasberg ordered DOJ & DHS to hand Marc Elias a list of EVERY…
 - _…1 more fuzzy cluster(s) in snapshot cohort._
 
 ## Cross-narrative actors (this narrative)
@@ -90,19 +88,19 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
-- initial success, texas trump's, gerrymandering strategy, facing roadblocks, paxton surging (4 posts)
-- tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
-- awakening largest, power register (5 posts)
-- dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- accountability midterm, corrupt doj, stop gaslighting, happy talk (9 posts)
+- senile coward facist, tolerate pathetic, losers killed, nazi pig bonespur, draft dodger (75 posts)
+- awakening largest, affordable homes, power register (5 posts)
+- don't dream, rewriting gen, turning midterms, demand affordable, future works (3 posts)
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
-- cowardfacist nazi (9 posts)
-- 10000's fascist, loves winners (9 posts)
-- gas prices, elias suing, gladly neuter (5 posts)
-- _…28 more emerging theme(s)._
+- tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
+- inbreeds cuz, 10000's fascist (8 posts)
+- cheated threw, neveragain voteblue, toobigtorig 'your (4 posts)
+- _…31 more emerging theme(s)._
 
 ## Scope note
 
-Coordination dupes and CIB text signals scan **all 5141 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
+Coordination dupes and CIB text signals scan **all 5163 database posts**. Fuzzy clusters and sentiment charts use the **250-post snapshot cohort** (limit 250).
 
 ---
 _Auto-generated at export · verify against live snapshot before operational use._
