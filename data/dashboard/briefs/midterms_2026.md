@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-08 21:07:49 UTC
+> Tactical snapshot · 2026-11-08 21:29:10 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3628 / 1534 |
-| Distinct themes | 117 |
+| Distinct themes | 115 |
 | Duplicate clusters (full DB) | 256 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2708 authors |
@@ -31,7 +31,7 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · win house, deliver mail ballots, red wave, sanctuary cities, postmaster general (3998 posts · 102 authors · 203 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · win house, deliver mail ballots, red wave, sanctuary cities, postmaster general (4015 posts · 103 authors · 203 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · stephen miller, plans active, arguing republican, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · trump, midterms, elections, election (319 posts · 10 authors · 7 exact · 0 fuzzy subclusters)
@@ -97,7 +97,7 @@ _None spanning multiple narratives._
 - unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
-- gas prices, elias suing, gladly neuter (5 posts)
+- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
 - _…28 more emerging theme(s)._
 
 ## Scope note
