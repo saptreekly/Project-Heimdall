@@ -1,47 +1,45 @@
 {
-  "generated_at": "2026-11-01T11:44:49.819191+00:00",
+  "generated_at": "2026-11-08T11:45:25.290092+00:00",
   "window_days": 7,
   "dead_keywords": [
+    "2026 midterms",
+    "2026 midterm fraud",
     "2026 red wave",
     "2026 supreme court",
-    "2026 midwest democrat",
-    "2026 resigns electoral"
+    "2026 election integrity",
+    "2026 gerrymandering",
+    "2026 win house",
+    "2026 deliver mail ballots"
   ],
   "suggestions": [
     {
-      "query": "2026 win house",
-      "source": "theme cluster (red wave \u00b7 win house \u00b7 deliver mail ballots \u00b7 sanctuary cities, 4184 posts)",
-      "score": 4184.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
-      "query": "2026 deliver mail ballots",
-      "source": "theme cluster (red wave \u00b7 win house \u00b7 deliver mail ballots \u00b7 sanctuary cities, 4184 posts)",
-      "score": 4184.0,
-      "rationale": "Distinctive theme term not matched by current keywords."
-    },
-    {
       "query": "2026 president trump midterms",
       "source": "corpus c-TF-IDF",
-      "score": 155.614,
+      "score": 91.386,
       "rationale": "High-lift term in recent posts, uncovered by keyword list."
     },
     {
       "query": "2026 bare ballot harvesting",
-      "source": "theme cluster (election pratt \u00b7 bare ballot harvesting \u00b7 california communists \u00b7 poised steal, 10 posts)",
-      "score": 10.0,
+      "source": "theme cluster (election pratt \u00b7 bare ballot harvesting \u00b7 california communists \u00b7 poised steal, 9 posts)",
+      "score": 9.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
-      "query": "2026 ineligible voting",
-      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 ineligible voting \u00b7 vote dilution, 4 posts)",
-      "score": 4.0,
+      "query": "2026 scotus order",
+      "source": "theme cluster (scotus order \u00b7 legislation amend \u00b7 amendment united \u00b7 states non, 5 posts)",
+      "score": 5.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
       "query": "2026 vote dilution",
-      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 ineligible voting \u00b7 vote dilution, 4 posts)",
+      "source": "theme cluster (civil rights \u00b7 accurate rolls \u00b7 vote dilution, 4 posts)",
       "score": 4.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 arguing republican",
+      "source": "theme cluster (stephen miller \u00b7 plans active \u00b7 arguing republican \u00b7 candidates perform, 3 posts)",
+      "score": 3.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     },
     {
@@ -52,8 +50,14 @@
     },
     {
       "query": "2026 census voter",
-      "source": "theme cluster (visa holder \u00b7 census voter \u00b7 prosecute member \u00b7 congress refusing, 3 posts)",
+      "source": "theme cluster (visa holder \u00b7 census voter \u00b7 prosecute member, 3 posts)",
       "score": 3.0,
+      "rationale": "Distinctive theme term not matched by current keywords."
+    },
+    {
+      "query": "2026 warning democrats",
+      "source": "theme cluster (immediate impeachment \u00b7 warning democrats \u00b7 fighter summit, 2 posts)",
+      "score": 2.0,
       "rationale": "Distinctive theme term not matched by current keywords."
     }
   ]
