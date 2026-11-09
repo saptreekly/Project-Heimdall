@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-09 19:39:06 UTC
+> Tactical snapshot · 2026-11-09 20:17:04 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3648 / 1553 |
-| Distinct themes | 118 |
+| Distinct themes | 120 |
 | Duplicate clusters (full DB) | 256 |
 | Fuzzy clusters (snapshot cohort) | 6 |
 | IU astroturf overlap | 2 bots / 2709 authors |
@@ -31,9 +31,9 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · red wave, win house, sanctuary cities (4314 posts · 95 authors · 208 exact · 5 fuzzy subclusters)
+- **Exact duplicate campaign** · win house, red wave, sanctuary cities, postmaster general (4295 posts · 98 authors · 207 exact · 5 fuzzy subclusters)
 - **Exact duplicate campaign** · breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
-- **Shared frame** · fake news, half brian, lehrer monday (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
+- **Shared frame** · chance outearning, half brian, lehrer monday (5 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - **Near-copy campaign** · bench files, chief judge, boasberg ordered (2 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
 
 ## CIB warning signals
@@ -96,7 +96,7 @@ _None spanning multiple narratives._
 - tolerate patheticlosers, patheticlosers killed, won't tolerate patheticlosers, tolerate patheticlosers killed, patheticlosers killed 10000's (9 posts)
 - inbreeds cuz, 10000's fascist (8 posts)
 - cheated threw, neveragain voteblue, toobigtorig 'your (4 posts)
-- _…31 more emerging theme(s)._
+- _…33 more emerging theme(s)._
 
 ## Scope note
 
