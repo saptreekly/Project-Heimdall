@@ -1,6 +1,6 @@
 # Heimdall briefing — midterms_2026
 
-> Tactical snapshot · 2026-11-12 17:07:06 UTC
+> Tactical snapshot · 2026-11-12 17:46:38 UTC
 
 ## Corpus
 
@@ -14,7 +14,7 @@
 | Graph suspicion | 0.40 |
 | Organic score | 0.45 |
 | Graph nodes / edges | 3648 / 1553 |
-| Distinct themes | 115 |
+| Distinct themes | 117 |
 | Duplicate clusters (full DB) | 256 |
 | Fuzzy clusters (snapshot cohort) | 7 |
 | IU astroturf overlap | 2 bots / 2709 authors |
@@ -31,12 +31,12 @@
 
 ## Layered coordination (frames)
 
-- **Exact duplicate campaign** · blue wave, win house, postmaster general, eliminate filibuster (4055 posts · 88 authors · 203 exact · 4 fuzzy subclusters)
+- **Exact duplicate campaign** · win house, deliver mail ballots, red wave, integrity executive order, postmaster general (4046 posts · 88 authors · 203 exact · 4 fuzzy subclusters)
 - **Exact duplicate campaign** · task force, breaking longtime, special government (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · lose control, democrat years, old harvard, professor emeritus, recognized legal (4 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Exact duplicate campaign** · stephen miller, plans active, arguing republican, candidates perform (3 posts · 0 authors · 1 exact · 0 fuzzy subclusters)
 - **Shared frame** · trump, midterms, elections, election (319 posts · 10 authors · 7 exact · 0 fuzzy subclusters)
-- **Near-copy campaign** · haven woman (5 posts · 2 authors · 1 exact · 1 fuzzy subclusters)
+- **Shared frame** · prelim hearing, hospital feds (6 posts · 2 authors · 0 exact · 0 fuzzy subclusters)
 - _…and more frames in dashboard._
 
 ## CIB warning signals
@@ -91,15 +91,15 @@ _None spanning multiple narratives._
 
 ## Emerging themes
 
+- initial success, texas trump's, gerrymandering strategy, facing roadblocks, paxton surging (4 posts)
 - tolerate pathetic, losers killed, senile coward facist, bonespur draft, dodger inbreeds (79 posts)
 - awakening largest, power register (5 posts)
 - dream we're, rewriting gen, millennials turning, midterms demand, future works (3 posts)
+- unfortunate reality, inadvertently joined, ranks attempting, politicize issues, problems mtg (3 posts)
 - cowardfacist nazi (9 posts)
 - 10000's fascist, loves winners (9 posts)
 - gas prices, elias suing, gladly neuter (5 posts)
-- cheated threw, cheat upcoming, neveragain voteblue, numbers toobigtorig (4 posts)
-- beautiful delay, planned project, rules dec (4 posts)
-- _…29 more emerging theme(s)._
+- _…31 more emerging theme(s)._
 
 ## Scope note
 
