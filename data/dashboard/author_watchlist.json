@@ -1,7 +1,7 @@
 {
   "narratives": {
     "midterms_2026": {
-      "run_counter": 2611,
+      "run_counter": 2612,
       "authors": {
         "111": {
           "author_id": "111",
@@ -412,10 +412,10 @@
           "discovered_via": "keyword",
           "depth": 0,
           "priority": 1.0,
-          "last_polled_at": "2026-11-05T20:19:11.579945+00:00",
+          "last_polled_at": "2026-11-13T14:46:11.669766+00:00",
           "last_tweet_at": "2026-11-05T02:51:23+00:00",
           "inserted_total": 133,
-          "polls": 14,
+          "polls": 15,
           "inserts_from_polls": 56,
           "status": "active"
         },
