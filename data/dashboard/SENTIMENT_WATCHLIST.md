@@ -1,6 +1,6 @@
 # Sentiment watchlist
 
-_Updated from snapshot generated at 2026-11-21T15:32:21.204638+00:00_
+_Updated from snapshot generated at 2026-11-22T18:03:27.701960+00:00_
 
 ## Current narrative status
 
